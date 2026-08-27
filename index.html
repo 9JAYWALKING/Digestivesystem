@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="2026학년도 2학기 의학과 1학년 소화기계 강의 정리" />
+  <title>소화기계 · 강의 정리</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #6c7680;
+      --paper: #ffffff;
+      --card: #ffffff;
+      --line: #dce7ed;
+      --deep: #3f7894;
+      --deep-2: #5791ad;
+      --basic: #53aed8;
+      --basic-soft: #e9f7ff;
+      --clinical: #dc7f87;
+      --clinical-soft: #fff0f1;
+      --violet: #6657b6;
+      --topbar: #e7f7ff;
+      --topbar-ink: #315f75;
+      --shadow: 0 16px 38px rgba(61, 111, 137, .09);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #ffffff;
+      font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+      line-height: 1.55;
+    }
+
+    button { font: inherit; }
+
+    .site-shell { min-height: 100vh; }
+
+    .masthead {
+      padding: 18px clamp(20px, 5vw, 72px);
+      color: #ffffff;
+      background: var(--deep);
+      border-bottom: 1px solid #356a83;
+    }
+
+    .masthead-inner,
+    main { width: min(1180px, 100%); margin: 0 auto; }
+
+    .masthead-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: inherit;
+      font-size: clamp(21px, 3.2vw, 30px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .top-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+
+    .nav-button,
+    .back-button {
+      border: 1px solid #abd7ea;
+      border-radius: 999px;
+      padding: 11px 17px;
+      color: #315f75;
+      background: rgba(255,255,255,.68);
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .nav-button:hover,
+    .nav-button:focus-visible,
+    .back-button:hover,
+    .back-button:focus-visible {
+      background: #ffffff;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .nav-button.primary { color: #244f63; background: #a8dff5; border-color: #8bcfea; font-weight: 800; }
+    .nav-button[data-go="catalog"] { color: #244f63; background: #ffffff; border-color: #ffffff; }
+
+    main { padding: 28px clamp(16px, 4vw, 48px) 80px; }
+
+    .view[hidden] { display: none !important; }
+
+    .domain-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .domain-tab {
+      position: relative;
+      overflow: hidden;
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      color: var(--ink);
+      background: #ffffff;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .domain-tab::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 5px; background: var(--tab-color); }
+    .domain-tab.active { border-color: var(--tab-color); background: var(--tab-soft); box-shadow: 0 10px 30px rgba(36, 44, 48, .06); }
+    .domain-tab strong { display: block; font-family: inherit; font-size: 20px; }
+
+    .discipline-grid { display: grid; gap: 18px; }
+
+    .discipline-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .discipline-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 22px 24px 17px;
+      border-bottom: 1px solid #e8f0f4;
+    }
+
+    .discipline-icon {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--soft);
+      font-size: 21px;
+    }
+
+    .discipline-head h3 { margin: 0; font-size: 20px; letter-spacing: -.02em; }
+    .discipline-head p { margin: 1px 0 0; color: var(--muted); font-size: 12px; }
+    .discipline-count { margin-left: auto; padding: 4px 9px; border-radius: 999px; color: var(--accent); background: var(--soft); font-size: 12px; font-weight: 800; }
+
+    .section-block { padding: 17px 24px 22px; }
+    .section-block + .section-block { border-top: 1px dashed #d9e7ed; }
+    .section-title { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; color: var(--muted); font-size: 12px; font-weight: 900; letter-spacing: .04em; }
+    .section-title::before { content: ""; width: 18px; height: 2px; background: var(--accent); }
+
+    .professor-list { display: grid; gap: 8px; }
+
+    .professor {
+      border: 1px solid #dfeaf0;
+      border-radius: 14px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .professor-toggle {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 15px;
+      border: 0;
+      color: inherit;
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .professor-toggle:hover { background: #f5fbfe; }
+    .professor-name { font-weight: 850; }
+    .professor-meta { margin-left: auto; color: var(--muted); font-size: 12px; }
+    .chevron { color: var(--accent); transition: transform .2s ease; }
+    .professor.open .chevron { transform: rotate(180deg); }
+
+    .lecture-list { display: none; margin: 0; padding: 0 15px 14px; list-style: none; }
+    .professor.open .lecture-list { display: grid; gap: 6px; }
+
+    .lecture-link {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 34px minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 11px;
+      border: 0;
+      border-radius: 10px;
+      color: var(--ink);
+      background: #f6fafc;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .lecture-link:hover,
+    .lecture-link:focus-visible { background: var(--soft); outline: 2px solid color-mix(in srgb, var(--accent) 25%, transparent); }
+    .lecture-no { color: var(--accent); font-family: inherit; font-size: 16px; font-weight: 800; }
+    .lecture-link small { color: var(--muted); }
+    .lecture-arrow { color: var(--accent); }
+
+    .schedule-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 20px; }
+    .schedule-toolbar h2 { margin: 0; font-family: inherit; font-size: clamp(24px, 4vw, 32px); }
+
+    .legend { display: flex; gap: 8px; flex-wrap: wrap; }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; padding: 6px 9px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 11px; }
+    .legend i { width: 9px; height: 9px; border-radius: 3px; }
+
+    .week-stack { display: grid; gap: 22px; }
+    .week-card { border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: var(--shadow); overflow: hidden; }
+    .week-title { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 16px; color: #fff; background: var(--deep); }
+    .week-title strong { font-family: inherit; font-size: 18px; }
+    .week-title span { color: #d7e8f0; font-size: 12px; }
+    .timetable-scroll { overflow-x: auto; }
+
+    .timetable {
+      min-width: 860px;
+      display: grid;
+      grid-template-columns: 72px repeat(5, minmax(150px, 1fr));
+      grid-template-rows: 58px repeat(9, minmax(70px, auto));
+      position: relative;
+    }
+
+    .grid-cell { min-width: 0; padding: 8px; border-right: 1px solid #ddd9d0; border-bottom: 1px solid #ddd9d0; background: #fff; }
+    .day-head { display: grid; place-items: center; color: #314049; background: #eceae5; text-align: center; font-weight: 850; }
+    .day-head small { display: block; margin-top: 1px; color: var(--muted); font-weight: 500; }
+    .time-cell { display: grid; place-items: center; color: var(--muted); background: #f5fafc; font-size: 12px; font-weight: 800; }
+    .lunch-cell { background: repeating-linear-gradient(135deg, #f5f9fb, #f5f9fb 8px, #edf4f7 8px, #edf4f7 16px); }
+
+    .holiday-column {
+      z-index: 5;
+      display: grid;
+      place-items: center;
+      border-right: 1px solid #d1d7da;
+      border-bottom: 1px solid #d1d7da;
+      color: #dc858c;
+      background: repeating-linear-gradient(135deg, #f5f9fb, #f5f9fb 8px, #edf4f7 8px, #edf4f7 16px);
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      pointer-events: none;
+    }
+
+    .course-slot { position: relative; z-index: 2; margin: 5px; min-width: 0; }
+    .course-card {
+      display: flex;
+      width: 100%;
+      height: calc(100% - 2px);
+      min-height: 58px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 3px;
+      padding: 9px 10px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--ink);
+      background: var(--course-soft);
+      text-align: left;
+      cursor: pointer;
+      transition: transform .16s ease, box-shadow .16s ease;
+    }
+
+    .course-card:hover,
+    .course-card:focus-visible { z-index: 8; transform: translateY(-2px); box-shadow: 0 10px 23px rgba(20, 34, 40, .16); border-color: var(--course-color); outline: none; }
+    .course-card .number { color: var(--course-color); font-family: inherit; font-size: 12px; font-weight: 900; }
+    .course-card .name { display: -webkit-box; overflow: hidden; font-size: 12px; font-weight: 800; line-height: 1.35; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+    .course-card .teacher { color: var(--muted); font-size: 10px; }
+
+    .course-tooltip {
+      position: absolute;
+      left: 50%;
+      bottom: calc(100% + 9px);
+      width: max-content;
+      max-width: 300px;
+      z-index: 20;
+      padding: 9px 11px;
+      border-radius: 9px;
+      color: #fff;
+      background: #14272f;
+      box-shadow: 0 10px 25px rgba(0,0,0,.22);
+      font-size: 11px;
+      line-height: 1.4;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, 5px);
+      transition: opacity .15s ease, transform .15s ease;
+    }
+
+    .course-tooltip::after { content: ""; position: absolute; left: 50%; top: 100%; border: 6px solid transparent; border-top-color: #14272f; transform: translateX(-50%); }
+    .course-card:hover .course-tooltip,
+    .course-card:focus-visible .course-tooltip { opacity: 1; transform: translate(-50%, 0); }
+
+    .detail-wrap { max-width: 980px; margin: 0 auto; }
+    .detail-bar {
+      padding: 26px;
+      border-radius: var(--radius);
+      color: #fff;
+      background: var(--deep);
+      box-shadow: var(--shadow);
+    }
+
+    .detail-topline { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+    .detail-breadcrumb { margin: 0 0 8px; color: #b9ced3; font-size: 12px; }
+    .detail-bar h2 { margin: 0; font-family: inherit; font-size: clamp(27px, 5vw, 42px); line-height: 1.18; letter-spacing: -.04em; }
+    .detail-info { margin: 12px 0 0; color: #d7e2e5; font-size: 13px; }
+    .detail-number { display: grid; min-width: 58px; height: 58px; place-items: center; border-radius: 18px; color: var(--deep); background: #f2d492; font-family: inherit; font-size: 27px; font-weight: 900; }
+
+    .content-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 24px; }
+    .content-tab { padding: 12px 10px; border: 1px solid rgba(255,255,255,.22); border-radius: 12px; color: #fff; background: rgba(255,255,255,.07); font-weight: 850; cursor: pointer; }
+    .content-tab.active { color: var(--deep); background: #fff; }
+
+    .content-panel { margin-top: 20px; padding: clamp(24px, 5vw, 48px); min-height: 440px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); }
+    .panel-label { display: inline-block; margin-bottom: 18px; padding: 5px 10px; border-radius: 999px; color: var(--clinical); background: var(--clinical-soft); font-size: 11px; font-weight: 900; }
+    .content-panel h3 { margin: 0 0 10px; font-family: inherit; font-size: 28px; }
+    .content-panel p { color: var(--muted); }
+    .empty-state { display: grid; min-height: 270px; place-items: center; border: 1px dashed #cbdde6; border-radius: 17px; background: #f7fbfd; text-align: center; }
+    .empty-state strong { display: block; color: var(--ink); font-size: 17px; }
+    .empty-state span { display: block; max-width: 440px; margin-top: 7px; color: var(--muted); font-size: 13px; }
+
+    /* Wiki-style lecture notes */
+    .content-panel.notes-mode { padding: 0; overflow: hidden; }
+    .wiki-note { color: #1e293b; line-height: 1.75; }
+    .wiki-hero { padding: clamp(28px,5vw,52px); background: linear-gradient(135deg,#eef9ff 0%,#f8fcff 56%,#fff 100%); border-bottom: 1px solid #dcecf4; }
+    .wiki-kicker { margin: 0 0 8px; color: #1683ad; font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+    .wiki-hero h3 { margin: 0; color: #153746; font-size: clamp(30px,5vw,46px); line-height: 1.2; }
+    .wiki-hero > p { max-width: 720px; margin: 14px 0 0; color: #52707d; font-size: 16px; }
+    .wiki-stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
+    .wiki-stat { padding: 9px 13px; border: 1px solid #cfe6f0; border-radius: 999px; background: rgba(255,255,255,.82); color: #24566a; font-size: 13px; font-weight: 850; }
+    .wiki-layout { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; padding: clamp(24px,5vw,48px); }
+    .wiki-toc { align-self: start; position: sticky; top: 24px; display: grid; gap: 5px; padding: 16px; border: 1px solid #dbe8ee; border-radius: 18px; background: #f8fbfc; }
+    .wiki-toc strong { margin-bottom: 6px; color: #315665; font-size: 13px; }
+    .wiki-toc-link { width: 100%; padding: 8px 9px; border: 0; border-radius: 10px; background: transparent; color: #5f7883; text-align: left; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; }
+    .wiki-toc-link:hover { background: #e7f5fb; color: #0b729c; }
+    .wiki-article { min-width: 0; }
+    .wiki-section { scroll-margin-top: 24px; padding: 0 0 38px; margin: 0 0 38px; border-bottom: 1px solid #e7eef2; }
+    .wiki-section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+    .wiki-section h4 { margin: 0 0 16px; color: #173f50; font-size: 25px; line-height: 1.35; }
+    .wiki-section h5 { margin: 24px 0 9px; color: #28586b; font-size: 18px; }
+    .wiki-section p { margin: 0 0 14px; color: #4d6874; }
+    .wiki-section ul { margin: 10px 0 18px; padding-left: 22px; color: #415d69; }
+    .wiki-section li { margin: 7px 0; }
+    .wiki-term { color: #0b789f; font-weight: 900; }
+    .wiki-callout { margin: 18px 0; padding: 15px 17px; border-left: 4px solid #38a9cf; border-radius: 0 14px 14px 0; background: #eef9fd; color: #315c6d; }
+    .wiki-callout.exam { border-left-color: #e87972; background: #fff4f3; color: #7b3c38; }
+    .wiki-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; margin: 20px 0; }
+    .wiki-figure { margin: 0; padding: 14px; border: 1px solid #dce8ed; border-radius: 18px; background: #fff; box-shadow: 0 8px 22px rgba(25,64,79,.06); }
+    .wiki-figure img { width: 100%; max-height: 560px; display: block; object-fit: contain; border-radius: 12px; background: #fff; cursor: zoom-in; }
+    .wiki-figure figcaption { margin-top: 10px; color: #6a818b; font-size: 12px; line-height: 1.55; }
+    .wiki-table-wrap { overflow-x: auto; margin: 20px 0; border: 1px solid #dce8ed; border-radius: 16px; }
+    .wiki-table { width: 100%; border-collapse: collapse; min-width: 620px; background: #fff; font-size: 14px; }
+    .wiki-table th, .wiki-table td { padding: 13px 14px; border-bottom: 1px solid #e7eef2; text-align: left; vertical-align: top; }
+    .wiki-table th { background: #edf8fc; color: #28586b; font-weight: 900; }
+    .wiki-table tr:last-child td { border-bottom: 0; }
+
+    /* JBL question viewer — copied from question_viewer_updated.html */
+    body.jbl-mode { background: #f1f5f9; color: #0f172a; }
+    body.jbl-mode .masthead { display: none; }
+    body.jbl-mode main { width: 100%; max-width: none; padding: 0; }
+    .nav-button.jbl-launch { color: #fff; background: #0f172a; border-color: #0f172a; font-weight: 900; }
+    .content-panel.j-mode { padding: 0; border: 0; background: transparent; box-shadow: none; }
+
+    .jbl-standalone,
+    .jbl-embed {
+      color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .jbl-standalone { min-height: 100vh; background: #f1f5f9; }
+    .jbl-wrap { max-width: 980px; margin: 0 auto; padding: 24px 18px 108px; }
+    .jbl-embed { width: 100%; }
+    .jbl-panel,
+    .jbl-card,
+    .jbl-filter-panel {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 24px;
+      box-shadow: 0 8px 24px rgba(15,23,42,.05);
+    }
+    .jbl-panel { padding: 16px 18px; margin-bottom: 18px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; }
+    .jbl-topbar { position: sticky; top: 0; z-index: 900; border-radius: 0 0 22px 22px; }
+    .jbl-top-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .jbl-toolbar-btn.active { background: #0f172a; border-color: #0f172a; color: #fff; }
+    .jbl-control-group,
+    .jbl-jump-box,
+    .jbl-filter-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .jbl-filter-panel { margin-bottom: 18px; padding: 18px; }
+    .jbl-filter-title { margin: 0 0 14px; color: #0f172a; font-size: 17px; font-weight: 900; }
+    .jbl-filter-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 10px 14px; }
+    .jbl-filter-item { display: grid; gap: 7px; background: #f8fafc; border-radius: 14px; padding: 10px 12px; }
+    .jbl-filter-item label { color: #475569; font-size: 13px; font-weight: 900; }
+    .jbl-select,
+    .jbl-jump-box input { border: 1px solid #cbd5e1; background: #fff; border-radius: 14px; padding: 11px 12px; font-size: 15px; font-weight: 700; color: #0f172a; outline: none; }
+    .jbl-select { width: 100%; }
+    .jbl-favorite-filter { min-height: 45px; display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .jbl-favorite-filter input { width: 18px; height: 18px; accent-color: #f59e0b; }
+    .jbl-filter-summary { margin: 14px 2px 0; color: #64748b; font-size: 13px; font-weight: 800; }
+    .jbl-settings-actions { display: grid; gap: 10px; }
+    .jbl-settings-actions .jbl-btn { width: 100%; text-align: left; }
+    .jbl-jump-box input { width: 120px; }
+    .jbl-select:focus,
+    .jbl-jump-box input:focus { border-color: #60a5fa; box-shadow: 0 0 0 4px rgba(96,165,250,.15); }
+    .jbl-btn {
+      border: 0;
+      border-radius: 16px;
+      padding: 12px 18px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 800;
+      transition: transform .15s ease, opacity .15s ease, background .15s ease;
+    }
+    .jbl-btn:hover { transform: translateY(-1px); }
+    .jbl-btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+    .jbl-btn-primary { background: #0f172a; color: #fff; }
+    .jbl-btn-sub { background: #fff; color: #334155; border: 1px solid #cbd5e1; }
+    .jbl-card { overflow: hidden; }
+    .jbl-card-head { padding: 24px 28px 18px; border-bottom: 1px solid #f1f5f9; }
+    .jbl-meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+    .jbl-meta-right { display: flex; align-items: center; gap: 8px; }
+    .jbl-prof { font-size: 14px; color: #64748b; }
+    .jbl-qid { background: #f8fafc; border: 1px solid #e2e8f0; color: #475569; border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 800; }
+    .jbl-favorite { width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #e2e8f0; border-radius: 999px; background: #fff; color: #94a3b8; font-size: 23px; line-height: 1; cursor: pointer; }
+    .jbl-favorite:hover { border-color: #fbbf24; color: #f59e0b; }
+    .jbl-favorite.active { border-color: #fbbf24; background: #fffbeb; color: #f59e0b; }
+    .jbl-title { font-size: 24px; line-height: 1.5; font-weight: 800; margin: 0; white-space: pre-line; }
+    .jbl-source { margin-top: 8px; color: #94a3b8; font-size: 12px; }
+    .jbl-card-body { padding: 26px 28px 28px; }
+    .jbl-passage { margin-bottom: 20px; border: 1px solid #dbeafe; border-radius: 22px; background: #f8fbff; overflow: hidden; }
+    .jbl-passage-title { padding: 10px 16px; background: #eff6ff; color: #2563eb; font-size: 13px; font-weight: 900; letter-spacing: .02em; }
+    .jbl-passage-text { padding: 17px 18px 18px; color: #1e293b; font-size: 18px; font-weight: 650; line-height: 1.8; white-space: pre-line; }
+    .jbl-choices { background: #f8fafc; border-radius: 24px; padding: 18px; }
+    .jbl-choice { display: flex; width: 100%; gap: 14px; align-items: flex-start; background: #fff; border: 1px solid transparent; border-radius: 18px; padding: 14px 16px; margin-bottom: 12px; color: inherit; text-align: left; transition: all .2s ease; font-size: 20px; cursor: pointer; }
+    .jbl-choice:last-child { margin-bottom: 0; }
+    .jbl-choice:hover { border-color: #cbd5e1; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(15,23,42,.06); }
+    .jbl-choice-num { width: 30px; height: 30px; border-radius: 999px; background: #e2e8f0; color: #334155; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; flex-shrink: 0; margin-top: 1px; }
+    .jbl-choice.selected { background: #f1f5f9; border-color: #cbd5e1; color: #334155; }
+    .jbl-choice.selected .jbl-choice-num { background: #cbd5e1; color: #1e293b; }
+    .jbl-choice.correct { background: #eff6ff; border-color: #93c5fd; color: #1d4ed8; }
+    .jbl-choice.correct .jbl-choice-num { background: #dbeafe; color: #1d4ed8; }
+    .jbl-choice.wrong { background: #fef2f2; border-color: #fca5a5; color: #b91c1c; }
+    .jbl-choice.wrong .jbl-choice-num { background: #fee2e2; color: #b91c1c; }
+    .jbl-answer-box { margin-top: 18px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 18px; padding: 14px 16px; font-size: 17px; font-weight: 800; color: #1d4ed8; }
+    .jbl-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .jbl-course-toolbar { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 14px; }
+    .jbl-editor { margin-top: 18px; padding: 20px; border: 1px solid #bae6fd; border-radius: 22px; background: #f0f9ff; }
+    .jbl-editor-grid { display: grid; grid-template-columns: minmax(150px,.45fr) minmax(240px,1fr); gap: 14px; }
+    .jbl-editor-field { display: grid; gap: 7px; }
+    .jbl-editor-field.full { grid-column: 1 / -1; }
+    .jbl-editor-field label { color: #334155; font-size: 13px; font-weight: 900; }
+    .jbl-editor input,
+    .jbl-editor select,
+    .jbl-editor textarea { width: 100%; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 14px; background: #fff; color: #0f172a; font: inherit; font-size: 15px; padding: 11px 12px; outline: none; }
+    .jbl-editor textarea { min-height: 230px; resize: vertical; line-height: 1.65; }
+    .jbl-question-editor textarea { min-height: 130px; }
+    .jbl-editor-help { margin: 10px 0 0; color: #64748b; font-size: 13px; line-height: 1.6; }
+    .jbl-editor input:focus,
+    .jbl-editor select:focus,
+    .jbl-editor textarea:focus { border-color: #38bdf8; box-shadow: 0 0 0 4px rgba(56,189,248,.14); }
+    .jbl-editor-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .jbl-save-btn { background: #0f766e; color: #fff; }
+    .jbl-page-block { margin-top: 18px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 22px; padding: 16px; }
+    .jbl-page-title { font-size: 14px; font-weight: 900; color: #334155; margin-bottom: 10px; }
+    .jbl-page-img { width: 100%; max-width: 760px; display: block; margin: 0 auto 14px; border: 1px solid #cbd5e1; border-radius: 14px; background: #fff; cursor: zoom-in; }
+    .jbl-page-img:last-child { margin-bottom: 0; }
+    .jbl-explanation { margin-top: 18px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 22px; padding: 18px 20px; }
+    .jbl-explanation-title { font-size: 14px; font-weight: 900; color: #334155; margin-bottom: 10px; }
+    .jbl-lecture-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+    .jbl-lecture-map { display: inline-block; padding: 8px 12px; border: 0; border-radius: 12px; background: #e0f2fe; color: #075985; font-size: 14px; font-weight: 800; cursor: pointer; }
+    .jbl-professor-name { display: inline-block; padding: 8px 12px; border-radius: 12px; background: #f1f5f9; color: #475569; font-size: 14px; font-weight: 800; }
+    .jbl-explanation-text { margin: 0; font-size: 17px; color: #475569; white-space: pre-line; }
+    .jbl-empty { padding: 56px 24px; border: 1px dashed #cbd5e1; border-radius: 22px; background: #fff; text-align: center; color: #64748b; }
+    .jbl-inline-nav { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+    .jbl-counter { font-weight: 800; color: #334155; min-width: 110px; text-align: center; }
+    .jbl-bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: #fff; border-top: 1px solid #e2e8f0; box-shadow: 0 -8px 24px rgba(15,23,42,.05); }
+    .jbl-bottom-inner { max-width: 980px; margin: 0 auto; padding: 12px 18px calc(12px + env(safe-area-inset-bottom)); display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .jbl-image-modal { position: fixed; inset: 0; background: rgba(15,23,42,.88); display: none; align-items: center; justify-content: center; z-index: 9999; padding: 24px; }
+    .jbl-image-modal.show { display: flex; }
+    .jbl-image-modal img { max-width: 94vw; max-height: 94vh; display: block; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,.35); background: #fff; }
+    .jbl-image-close { position: fixed; top: 18px; right: 18px; width: 64px; height: 64px; border-radius: 999px; background: #ef4444; border: 4px solid #fff; color: #fff; font-size: 42px; font-weight: 900; line-height: 1; padding: 0; display: flex; align-items: center; justify-content: center; z-index: 10000; box-shadow: 0 0 0 4px rgba(239,68,68,.35),0 14px 34px rgba(0,0,0,.45); cursor: pointer; }
+    .detail-return { margin-bottom: 14px; }
+
+    @media (max-width: 760px) {
+      .masthead-inner { align-items: center; }
+      .schedule-toolbar { align-items: flex-start; flex-direction: column; }
+      .domain-tabs { grid-template-columns: 1fr; }
+      .discipline-head, .section-block { padding-left: 17px; padding-right: 17px; }
+      .detail-topline { flex-direction: column-reverse; }
+      .detail-number { min-width: 50px; height: 50px; }
+      .content-tabs { gap: 5px; }
+      .content-tab { padding: 10px 6px; font-size: 13px; }
+      .jbl-wrap { padding: 14px 12px 100px; }
+      .jbl-title { font-size: 20px; }
+      .jbl-choice { font-size: 17px; }
+      .jbl-card-head, .jbl-card-body { padding-left: 18px; padding-right: 18px; }
+      .jbl-panel { padding: 14px; }
+      .jbl-counter { min-width: auto; }
+      .jbl-editor-grid { grid-template-columns: 1fr; }
+      .jbl-editor-field.full { grid-column: auto; }
+      .wiki-layout { grid-template-columns: 1fr; gap: 24px; }
+      .wiki-toc { position: static; grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .wiki-toc strong { grid-column: 1 / -1; }
+      .wiki-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1>Digestive System</h1>
+        <nav class="top-actions" aria-label="주요 메뉴">
+          <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
+          <button class="nav-button primary" type="button" data-go="schedule">시간표 보기</button>
+          <button class="nav-button jbl-launch" type="button" data-go="jbl">JBL</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="catalog-view" class="view" aria-labelledby="catalog-title">
+        <div id="domain-tabs" class="domain-tabs" aria-label="최상위 범주"></div>
+        <div id="catalog"></div>
+      </section>
+
+      <section id="schedule-view" class="view" aria-labelledby="schedule-title" hidden>
+        <div class="schedule-toolbar">
+          <h2 id="schedule-title">소화기계 시간표</h2>
+          <div class="legend" aria-label="색상 범례">
+            <span><i style="background:var(--basic)"></i>기초의학</span>
+            <span><i style="background:var(--clinical)"></i>임상의학</span>
+            <span><i style="background:var(--violet)"></i>실습</span>
+          </div>
+        </div>
+        <div id="week-stack" class="week-stack"></div>
+      </section>
+
+      <section id="detail-view" class="view" aria-live="polite" hidden>
+        <div id="detail" class="detail-wrap"></div>
+      </section>
+
+      <section id="jbl-view" class="view" aria-label="JBL 전체 문항" hidden>
+        <div id="jbl-standalone" class="jbl-standalone"></div>
+      </section>
+    </main>
+
+  </div>
+
+  <div id="jbl-image-modal" class="jbl-image-modal" role="dialog" aria-modal="true" aria-label="문항 이미지 확대">
+    <button class="jbl-image-close" type="button" aria-label="이미지 닫기">×</button>
+    <img alt="확대된 문항 이미지" />
+  </div>
+
+  <script src="./jbl-data.js"></script>
+  <script>
+    const courseSeed = [
+      [1,'구강 및 소화관의 조직학','이은주','기초의학','조직학','조직학'],
+      [2,'구강 및 소화관의 조직학','이은주','기초의학','조직학','조직학'],
+      [3,'물질의 소화과정','한인옥','기초의학','생리학','생리학'],
+      [4,'영양소의 흡수','한인옥','기초의학','생리학','생리학'],
+      [5,'소화액의 분비','한인옥','기초의학','생리학','생리학'],
+      [6,'간, 이자의 조직학','이은주','기초의학','조직학','조직학'],
+      [7,'간, 이자의 조직학','이은주','기초의학','조직학','조직학'],
+      [8,'소화관의 운동 I','한인옥','기초의학','생리학','생리학'],
+      [9,'소화관의 운동 II','한인옥','기초의학','생리학','생리학'],
+      [10,'식도질환','김준미','기초의학','병리학','상부위장관 병리'],
+      [11,'위질환','김준미','기초의학','병리학','상부위장관 병리'],
+      [12,'장질환','김준미','기초의학','병리학','하부위장관 병리'],
+      [13,'상부위장관 병리실습','김준미','기초의학','병리학','상부위장관 병리'],
+      [14,'하부위장관 병리실습','김준미','기초의학','병리학','하부위장관 병리'],
+      [15,'간과 췌장의 기능','한인옥','기초의학','생리학','생리학'],
+      [16,'간질환','김준미','기초의학','병리학','간 담 췌 병리'],
+      [17,'간질환, 담도, 췌장, 횡경막 질환','김준미','기초의학','병리학','간 담 췌 병리'],
+      [18,'소화기 증상학 및 진단적 접근법','이정남','임상의학','소화기 내과','총론 및 진단'],
+      [19,'영상의학','김미영','임상의학','진단 치료 지원 분과','영상의학'],
+      [20,'소아 소화기 질환 (I)','백남선','임상의학','소아청소년과','소아 소화기'],
+      [21,'소아 소화기 질환 (II)','최윤미','임상의학','소아청소년과','소아 소화기'],
+      [22,'위장관 내시경 진단 및 치료 (위장관 출혈 포함)','차보람','임상의학','소화기 내과','총론 및 진단'],
+      [23,'혈관성 장질환','박호정','임상의학','소화기 내과','하부위장관'],
+      [24,'항문질환','최문석','임상의학','외과','외과'],
+      [25,'소화성궤양치료제','강주희','기초의학','약리학','약리학'],
+      [26,'간질환 실습','김준미','기초의학','병리학','간 담 췌 병리'],
+      [27,'담도, 췌장, 횡경막질환 실습','김준미','기초의학','병리학','간 담 췌 병리'],
+      [28,'소화관 감염성 질환','이세주','임상의학','소화기 내과','하부위장관'],
+      [29,'염증성 장질환','백일현','임상의학','소화기 내과','하부위장관'],
+      [30,'소장 및 대장 종양 (I) 원인, 빈도, 진단, 항암화학요법','백일현','임상의학','소화기 내과','하부위장관'],
+      [31,'위염 및 소화성 궤양','차보람','임상의학','소화기 내과','상부위장관'],
+      [32,'기능성 소화불량증','차보람','임상의학','소화기 내과','상부위장관'],
+      [33,'핵의학 진단검사','유민영','임상의학','진단 치료 지원 분과','핵의학과'],
+      [34,'소화기질환의 방사선 중재적 치료','조순구','임상의학','진단 치료 지원 분과','중재적 영상의학'],
+      [35,'식도질환 (식도암 포함)','차보람','임상의학','소화기 내과','상부위장관'],
+      [36,'위 종양 (I) 원인, 빈도, 진단, 항암 화학요법','차보람','임상의학','소화기 내과','상부위장관'],
+      [37,'식도질환의 외과적 치료','윤용한','임상의학','외과','외과'],
+      [38,'운동성 장질환 (IBS, 가성장폐색, 변비 포함)','권계숙','임상의학','소화기 내과','하부위장관'],
+      [39,'설사','권계숙','임상의학','소화기 내과','하부위장관'],
+      [40,'위장관 흡수장애','권계숙','임상의학','소화기 내과','하부위장관'],
+      [41,'위장관 및 간 질환에서의 약동학','강주희','기초의학','약리학','약리학'],
+      [42,'설사, 변비, 연동장애의 약물치료','김채균','기초의학','약리학','약리학'],
+      [43,'소장 및 대장 종양 (II) 치료, 예후, 합병증','최선근','임상의학','외과','외과'],
+      [44,'간질환 환자의 진단법 / 빌리루빈 대사 질환','진영주','임상의학','소화기 내과','간장학'],
+      [45,'간농양','진영주','임상의학','소화기 내과','간장학'],
+      [46,'소화기계 방사선 종양학','이정심','임상의학','진단 치료 지원 분과','방사선종양학과'],
+      [47,'알코올성 간염','유정환','임상의학','소화기 내과','간장학'],
+      [48,'대사이상 지방간질환 / 대사성 및 유전성 간질환','유정환','임상의학','소화기 내과','간장학'],
+      [49,'급성간염 (바이러스성 / 약물중독성)','고윤미','임상의학','소화기 내과','간장학'],
+      [50,'소화기 종양의 항암약물치료','이문희','기초의학','약리학','약리학'],
+      [51,'만성 바이러스 간염','이진우','임상의학','소화기 내과','간장학'],
+      [52,'자가면역 간질환','이진우','임상의학','소화기 내과','간장학'],
+      [53,'간경변 및 합병증','이진우','임상의학','소화기 내과','간장학'],
+      [54,'간의 종양','김경덕','임상의학','외과','외과'],
+      [55,'급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)','김경덕','임상의학','외과','외과'],
+      [56,'위 종양 (II) 치료, 예후, 합병증','오승종','임상의학','외과','외과'],
+      [57,'복막 및 복벽 질환 (탈장포함)','서지현','임상의학','외과','외과'],
+      [58,'간 담관계의 치료약물','김채균','기초의학','약리학','약리학'],
+      [59,'담낭 및 담도질환 (PSC 포함)','정석','임상의학','소화기 내과','담도 및 췌장'],
+      [60,'담도 종양','신우영','임상의학','외과','외과'],
+      [61,'췌장암','이동행','임상의학','소화기 내과','담도 및 췌장'],
+      [62,'췌장염, 췌장종양','이동행','임상의학','소화기 내과','담도 및 췌장']
+    ];
+
+    const slotSeed = {
+      1:[[2,'월','2026-08-31','09:00',2]], 2:[[2,'월','2026-08-31','11:00',2]],
+      3:[[2,'월','2026-08-31','14:00',2]], 4:[[2,'월','2026-08-31','16:00',2]],
+      5:[[2,'화','2026-09-01','09:00',2]], 6:[[2,'화','2026-09-01','11:00',2]],
+      7:[[2,'화','2026-09-01','16:00',2]], 8:[[2,'수','2026-09-02','09:00',2]],
+      9:[[2,'수','2026-09-02','11:00',2]], 10:[[2,'목','2026-09-03','09:00']],
+      11:[[2,'목','2026-09-03','10:00',2]], 12:[[2,'목','2026-09-03','12:00'],[2,'목','2026-09-03','14:00']],
+      13:[[2,'금','2026-09-04','09:00',2]], 14:[[2,'금','2026-09-04','11:00',2]],
+      15:[[2,'금','2026-09-04','14:00',3]], 16:[[3,'월','2026-09-07','10:00',3]],
+      17:[[3,'월','2026-09-07','14:00',3]], 18:[[3,'화','2026-09-08','09:00']],
+      19:[[3,'화','2026-09-08','11:00',2]], 20:[[3,'화','2026-09-08','14:00',2]],
+      21:[[3,'화','2026-09-08','16:00',2]], 22:[[3,'수','2026-09-09','09:00',2]],
+      23:[[3,'수','2026-09-09','12:00']], 24:[[3,'수','2026-09-09','16:00',2]],
+      25:[[3,'목','2026-09-10','11:00',2]], 26:[[3,'금','2026-09-11','10:00',2]],
+      27:[[3,'금','2026-09-11','12:00',1]], 28:[[3,'금','2026-09-11','14:00']],
+      29:[[4,'월','2026-09-14','09:00',2]], 30:[[4,'월','2026-09-14','11:00',2]],
+      31:[[4,'월','2026-09-14','14:00',2]], 32:[[4,'월','2026-09-14','16:00']],
+      33:[[4,'화','2026-09-15','10:00']], 34:[[4,'화','2026-09-15','14:00']],
+      35:[[4,'수','2026-09-16','09:00',2]], 36:[[4,'수','2026-09-16','11:00',2]],
+      37:[[4,'수','2026-09-16','16:00']], 38:[[4,'목','2026-09-17','09:00',2]],
+      39:[[4,'목','2026-09-17','11:00']], 40:[[4,'목','2026-09-17','12:00']],
+      41:[[4,'금','2026-09-18','09:00',2]], 42:[[4,'금','2026-09-18','11:00',2]],
+      43:[[4,'금','2026-09-18','14:00',2]], 44:[[5,'월','2026-09-21','09:00']],
+      45:[[5,'월','2026-09-21','10:00']], 46:[[5,'월','2026-09-21','11:00']],
+      47:[[5,'월','2026-09-21','14:00']], 48:[[5,'월','2026-09-21','15:00']],
+      49:[[5,'화','2026-09-22','09:00',2]], 50:[[5,'화','2026-09-22','14:00',2]],
+      51:[[6,'월','2026-09-28','09:00']], 52:[[6,'월','2026-09-28','10:00']],
+      53:[[6,'월','2026-09-28','11:00']], 54:[[6,'월','2026-09-28','14:00',2]],
+      55:[[6,'월','2026-09-28','16:00']], 56:[[6,'화','2026-09-29','09:00',2]],
+      57:[[6,'화','2026-09-29','11:00']], 58:[[6,'화','2026-09-29','14:00',2]],
+      59:[[6,'수','2026-09-30','09:00',2]], 60:[[6,'수','2026-09-30','11:00',2]],
+      61:[[6,'목','2026-10-01','09:00']], 62:[[6,'목','2026-10-01','10:00',3]]
+    };
+
+    const disciplineMeta = {
+      '조직학':['🧫','Histology'], '생리학':['⚡','Physiology'], '병리학':['🔬','Pathology'], '약리학':['💊','Pharmacology'],
+      '소화기 내과':['🩺','Gastroenterology'], '외과':['✂️','Surgery'], '소아청소년과':['🧸','Pediatrics'], '진단 치료 지원 분과':['🩻','Radiology and Oncology']
+    };
+    const domainMeta = {
+      '기초의학':{ en:'Basic Medical Science', accent:'var(--basic)', soft:'var(--basic-soft)' },
+      '임상의학':{ en:'Clinical Medicine', accent:'var(--clinical)', soft:'var(--clinical-soft)' }
+    };
+    const sectionOrder = ['조직학','생리학','상부위장관 병리','하부위장관 병리','간 담 췌 병리','약리학','총론 및 진단','상부위장관','하부위장관','간장학','담도 및 췌장','외과','소아 소화기','영상의학','중재적 영상의학','핵의학과','방사선종양학과'];
+    const disciplineOrder = ['조직학','생리학','병리학','약리학','소화기 내과','외과','소아청소년과','진단 치료 지원 분과'];
+    const days = ['월','화','수','목','금'];
+    const hours = ['09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00'];
+    const holidays = new Set(['2026-09-24','2026-09-25']);
+    const weekCalendar = {
+      1:{월:'2026-08-31',화:'2026-09-01',수:'2026-09-02',목:'2026-09-03',금:'2026-09-04'},
+      2:{월:'2026-09-07',화:'2026-09-08',수:'2026-09-09',목:'2026-09-10',금:'2026-09-11'},
+      3:{월:'2026-09-14',화:'2026-09-15',수:'2026-09-16',목:'2026-09-17',금:'2026-09-18'},
+      4:{월:'2026-09-21',화:'2026-09-22',수:'2026-09-23',목:'2026-09-24',금:'2026-09-25'},
+      5:{월:'2026-09-28',화:'2026-09-29',수:'2026-09-30',목:'2026-10-01',금:'2026-10-02'}
+    };
+
+    const courses = courseSeed.map(([id,title,professor,domain,discipline,section]) => ({
+      id,title,professor,domain,discipline,section,
+      slots:(slotSeed[id] || []).map(([week,day,date,time,duration=1]) => ({week:week-1,day,date,time,duration})),
+      isLab:[2,7,13,14,26,27].includes(id)
+    }));
+
+    const byId = id => courses.find(course => course.id === Number(id));
+    const pathText = course => [course.domain, course.discipline, course.section !== course.discipline ? course.section : null].filter(Boolean).join(' · ');
+    const titleText = (course, includeLab = true) => `${includeLab && course.isLab ? '[실습] ' : ''}${course.title}`;
+    const formatDate = iso => { const [,m,d] = iso.split('-'); return `${Number(m)}월 ${Number(d)}일`; };
+
+    let activeDomain = '기초의학';
+    let activeDetailTab = '정리본';
+    let previousView = 'catalog';
+    const jblQuestions = window.JBL_DATA?.questions || [];
+    const jblViewerStates = {};
+    let jblHasUnsavedChanges = false;
+    const jblFavoritesKey = 'digestive-jbl-favorites-v1';
+    let jblFavorites = (() => {
+      try { return new Set(JSON.parse(localStorage.getItem(jblFavoritesKey) || '[]')); }
+      catch { return new Set(); }
+    })();
+
+    const escapeHtml = value => String(value ?? '').replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
+    const viewerState = key => (jblViewerStates[key] ||= { index:0, selected:{}, answerShown:{}, explanationShown:{}, editing:null });
+    const standaloneState = () => {
+      const state = viewerState('jbl-all');
+      state.filters ||= { year:'', lectureId:'', professor:'', favoritesOnly:false };
+      state.panel ??= null;
+      state.randomOrder ||= [];
+      state.randomSignature ||= '';
+      return state;
+    };
+    const saveJblFavorites = () => {
+      try { localStorage.setItem(jblFavoritesKey, JSON.stringify([...jblFavorites])); }
+      catch { /* 파일로 직접 열어 저장소를 쓸 수 없는 환경에서는 현재 세션만 유지한다. */ }
+    };
+    const jblFilterSignature = filters => JSON.stringify([filters.year, filters.lectureId, filters.professor, filters.favoritesOnly]);
+    const filteredJblQuestions = () => {
+      const { filters } = standaloneState();
+      return jblQuestions.filter(question => {
+        if (filters.year && Number(question.year) !== Number(filters.year)) return false;
+        if (filters.lectureId && !question.lectureIds.includes(Number(filters.lectureId))) return false;
+        if (filters.professor && question.professor !== filters.professor) return false;
+        if (filters.favoritesOnly && !jblFavorites.has(question.id)) return false;
+        return true;
+      });
+    };
+    const currentStandaloneQuestions = () => {
+      const state = standaloneState();
+      const filtered = filteredJblQuestions();
+      const signature = jblFilterSignature(state.filters);
+      if (!state.randomOrder.length || state.randomSignature !== signature) return filtered;
+      const byQuestionId = new Map(filtered.map(question => [question.id, question]));
+      return state.randomOrder.map(id => byQuestionId.get(id)).filter(Boolean);
+    };
+    const clearJblRandomOrder = state => { state.randomOrder = []; state.randomSignature = ''; };
+    const shuffleQuestions = questions => {
+      const shuffled = questions.slice();
+      for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const swapIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+      }
+      return shuffled;
+    };
+    const questionCourseText = question => question.lectureIds.map(id => { const course = byId(id); return course ? `${course.id} ${titleText(course)}` : `${id}강`; }).join(' / ');
+    const lectureNotes = {
+      1: `<article class="wiki-note">
+        <header class="wiki-hero">
+          <p class="wiki-kicker">Lecture 01 · Histology Wiki</p>
+          <h3>대장의 조직학</h3>
+          <p>구강 및 소화관의 조직학 중 대장 파트를 구조, 조직 소견, 시험 포인트 중심으로 재구성한 정리본이다.</p>
+          <div class="wiki-stat-row"><span class="wiki-stat">길이 약 180 cm</span><span class="wiki-stat">융모 없음</span><span class="wiki-stat">술잔세포 풍부</span><span class="wiki-stat">결장띠 · 팽대 · 복막주렁</span></div>
+        </header>
+        <div class="wiki-layout">
+          <aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong><button class="wiki-toc-link" type="button" data-note-target="note-01-overview">1. 대장 총론</button><button class="wiki-toc-link" type="button" data-note-target="note-01-wall">2. 대장벽</button><button class="wiki-toc-link" type="button" data-note-target="note-01-colon">3. 맹장과 결장</button><button class="wiki-toc-link" type="button" data-note-target="note-01-appendix">4. 충수</button><button class="wiki-toc-link" type="button" data-note-target="note-01-anorectal">5. 직장과 항문관</button><button class="wiki-toc-link" type="button" data-note-target="note-01-compare">6. 비교 정리</button><button class="wiki-toc-link" type="button" data-note-target="note-01-exam">7. 시험 포인트</button></aside>
+          <div class="wiki-article">
+            <section id="note-01-overview" class="wiki-section">
+              <h4>1. 대장 총론</h4>
+              <div class="wiki-grid"><div><p>대장은 약 <strong>180 cm</strong> 길이의 소화관 마지막 구간이다. 수분과 전해질을 다시 흡수하고, 점액을 분비해 내용물의 이동을 돕는다. 장내 세균에 의한 분해 과정도 이곳에서 일어난다.</p><h5>구성 순서</h5><ul><li><span class="wiki-term">회맹부</span>: 소장과 대장이 만나는 곳. 앞·뒤 점막밑주름과 속돌림근층의 비후가 관찰된다.</li><li><span class="wiki-term">맹장과 결장</span>: 대장의 시작부와 주된 구간이다.</li><li><span class="wiki-term">충수</span>: 맹장에 연결된 가느다란 관 구조이다.</li><li><span class="wiki-term">직장과 항문관</span>: 대장의 말단부이다.</li></ul></div><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-01-large-intestine-overview.jpg" alt="대장의 구역과 주요 구조를 표시한 해부 그림" /><figcaption>대장의 구역과 주요 표면 구조. 원본 강의록 p.1.</figcaption></figure></div>
+              <div class="wiki-callout"><strong>큰 흐름</strong> · 회맹부 &rarr; 맹장·결장 &rarr; 직장 &rarr; 항문관을 먼저 연결한 뒤, 충수를 맹장에서 뻗는 구조로 함께 기억한다.</div>
+            </section>
+
+            <section id="note-01-wall" class="wiki-section">
+              <h4>2. 대장벽의 기본 조직</h4>
+              <p>대장벽도 소화관의 기본 4층 구조인 <strong>점막, 점막밑층, 근육층, 장막 또는 바깥막</strong>으로 구성된다. 소장과 구별되는 핵심은 점막과 바깥세로근층의 형태이다.</p>
+              <h5>점막</h5><ul><li><strong>윤상주름과 융모가 없다.</strong> 표면은 비교적 평평하고 장샘 입구가 pit처럼 보인다.</li><li><strong>장샘은 길고 곧은 단순관상샘</strong>이며 점막근판까지 수직으로 내려간다.</li><li>주요 세포는 흡수세포와 술잔세포이며, 장내분비세포는 소수이다.</li><li>고유판과 점막밑층에는 <strong>MALT/GALT에 해당하는 림프소절</strong>이 풍부할 수 있다.</li></ul>
+              <h5>근육층</h5><p>속돌림근층은 기본적으로 연속되어 있지만, 맹장과 결장에서는 바깥세로근층이 변형되어 세 개의 결장띠를 형성한다.</p>
+              <div class="wiki-grid"><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-03-colon-surface.jpg" alt="융모 없이 샘 입구가 보이는 대장 점막 표면" /><figcaption>융모 없이 장샘 입구가 pit처럼 보이는 대장 표면. 원본 강의록 p.2.</figcaption></figure><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-02-colon-mucosa.jpg" alt="곧은 단순관상샘과 술잔세포가 보이는 대장 점막" /><figcaption>곧고 긴 장샘과 풍부한 술잔세포가 보이는 대장 점막. 원본 강의록 p.2.</figcaption></figure></div>
+              <div class="wiki-callout exam"><strong>소장과의 감별</strong> · 대장은 plicae와 villi가 없고, 길고 곧은 crypt와 풍부한 goblet cell이 두드러진다.</div>
+            </section>
+
+            <section id="note-01-colon" class="wiki-section">
+              <h4>3. 맹장과 결장의 특수구조</h4>
+              <div class="wiki-grid"><div><h5>결장띠 · Teniae coli</h5><p>바깥세로근층이 세 개의 세로 방향 근육다발로 응축된 구조이다. 결장 벽을 부분적으로 짧게 당겨 팽대를 만드는 기반이 된다.</p><h5>잘록창자팽대 · Haustra coli</h5><p>결장띠에 의해 결장벽이 주머니처럼 볼록해진 구획이다.</p><h5>복막주렁 · Appendices epiploicae</h5><p>장막 표면의 지방조직이 자루처럼 돌출된 구조로, omental appendages라고도 한다.</p></div><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-04-colon-modifications.jpg" alt="결장띠, 잘록창자팽대, 복막주렁이 표시된 결장 표본" /><figcaption>TC: 결장띠, HC: 잘록창자팽대, OA: 복막주렁. 원본 강의록 p.3.</figcaption></figure></div>
+              <div class="wiki-callout"><strong>연결해서 기억하기</strong> · 바깥세로근층의 응축 &rarr; 세 개의 결장띠 &rarr; 벽의 단축과 팽대 형성.</div>
+            </section>
+
+            <section id="note-01-appendix" class="wiki-section">
+              <h4>4. 충수</h4>
+              <div class="wiki-grid"><div><ul><li>폭 약 <strong>8 mm</strong>, 길이 약 <strong>10-15 cm</strong>이다.</li><li>곧은 단순관상 장샘을 가지며 융모는 없다.</li><li>술잔세포와 Paneth cell은 소수이고, 장내분비세포가 많이 관찰된다.</li><li>고유판과 점막밑층에 <strong>림프소절이 매우 풍부</strong>하다.</li><li>림프소절이 점막근판의 연속성을 끊어 불완전하게 보이게 할 수 있다.</li><li>강의자료에서는 바깥세로근층과 결장띠의 연속 관계도 함께 강조한다.</li></ul></div><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-05-appendix-cross-section.jpg" alt="림프소절이 풍부한 충수 횡단면 조직 사진" /><figcaption>점막과 점막밑층에 림프소절이 풍부한 충수 횡단면. 원본 강의록 p.4.</figcaption></figure></div>
+              <div class="wiki-callout exam"><strong>한눈에 찾기</strong> · 별 모양 또는 불규칙한 내강 주위로 장샘이 배열되고, 벽 전반에 진한 림프소절이 많이 보이면 충수를 먼저 생각한다.</div>
+            </section>
+
+            <section id="note-01-anorectal" class="wiki-section">
+              <h4>5. 직장과 항문관</h4>
+              <h5>직장</h5><ul><li>가로 방향의 직장주름을 가진다.</li><li>상피는 단층원주상피이며 술잔세포가 풍부하다.</li></ul>
+              <h5>항문관</h5><p>항문관은 약 <strong>4 cm</strong> 길이이다. 8-10개의 세로 방향 항문기둥은 점막과 점막밑층이 함께 돌출되어 형성되고, 아래쪽의 항문판막과 연결된다.</p>
+              <div class="wiki-grid"><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-06-anal-canal-anatomy.jpg" alt="직장, 항문기둥, 항문판막과 항문조임근의 해부 그림" /><figcaption>항문기둥, 항문정맥얼기, 속·바깥항문조임근의 위치. 원본 강의록 p.5.</figcaption></figure><figure class="wiki-figure"><img data-note-image src="./assets/lecture-01/fig-07-anal-canal-histology.jpg" alt="직장항문 경계에서 상피와 근육 구조가 변하는 조직 사진" /><figcaption>직장항문 경계의 조직 변화. CRZ, ATZ, SQZ가 연속해서 보인다. 원본 강의록 p.5.</figcaption></figure></div>
+              <h5>혈관</h5><p>고유판과 점막밑층에는 <strong>내치핵정맥얼기</strong>가 풍부하며, 동정맥문합 때문에 혈관이 굵고 구불구불하게 보일 수 있다. 강의 필기에서는 이 부위 질환에서 출혈량이 많아질 수 있음을 연결해 설명한다. <em>Corpus cavernosum recti</em>도 함께 기억한다.</p>
+              <h5>근육</h5><ul><li><span class="wiki-term">속항문조임근</span>: 속돌림근층이 두꺼워진 평활근, 불수의근.</li><li><span class="wiki-term">바깥항문조임근</span>: 골격근, 수의근.</li></ul>
+              <h5>상피 이행</h5><p>직장의 단층원주상피는 직장항문경계에서 <strong>비각질중층편평상피</strong>로 급격히 바뀐다. 피부부위로 내려가면 색소침착, 항문주위 아포크린땀샘, 털과 피지샘 등 피부의 특징이 나타난다.</p>
+            </section>
+
+            <section id="note-01-compare" class="wiki-section">
+              <h4>6. 부위별 비교</h4>
+              <div class="wiki-table-wrap"><table class="wiki-table"><thead><tr><th>부위</th><th>점막·상피</th><th>샘·세포</th><th>대표 감별점</th></tr></thead><tbody><tr><td>맹장·결장</td><td>융모 없음, 단층원주상피</td><td>곧은 단순관상샘, 술잔세포 풍부</td><td>결장띠, 팽대, 복막주렁</td></tr><tr><td>충수</td><td>불규칙한 내강, 점막근판이 불완전하게 보일 수 있음</td><td>림프소절 풍부, 소수의 술잔세포·Paneth cell</td><td>벽 전반의 풍부한 림프조직</td></tr><tr><td>직장</td><td>단층원주상피, 술잔세포 풍부</td><td>곧은 장샘</td><td>가로직장주름</td></tr><tr><td>항문관</td><td>단층원주 &rarr; 비각질중층편평 &rarr; 피부</td><td>말단에서 땀샘·피지샘 등장</td><td>항문기둥, 정맥얼기, 두 조임근</td></tr></tbody></table></div>
+            </section>
+
+            <section id="note-01-exam" class="wiki-section">
+              <h4>7. 시험 직전 체크</h4>
+              <div class="wiki-callout exam"><strong>반드시 구분할 것</strong><ul><li>대장 점막에는 plicae와 villi가 없다.</li><li>대장 장샘은 길고 곧은 simple tubular gland이다.</li><li>Teniae coli는 바깥세로근층의 변형이다.</li><li>Haustra는 결장벽의 sacculation, appendices epiploicae는 장막 표면의 지방주머니이다.</li><li>충수의 가장 강한 조직학적 단서는 풍부한 림프소절이다.</li><li>속항문조임근은 평활근·불수의근, 바깥항문조임근은 골격근·수의근이다.</li><li>직장항문경계에서 단층원주상피가 비각질중층편평상피로 전환된다.</li></ul></div>
+              <p>현재 정리본은 제공된 6페이지 PDF의 <strong>대장 파트</strong>만 반영한다. 같은 1강의 구강, 식도, 위, 소장 파트 자료가 추가되면 이 문서의 앞부분에 이어서 통합할 수 있다.</p>
+            </section>
+          </div>
+        </div>
+      </article>`
+    };
+
+    function questionCardMarkup(question, state) {
+      const selected = state.selected[question.id];
+      const revealAnswer = Boolean(state.answerShown[question.id]);
+      const revealExplanation = Boolean(state.explanationShown[question.id]);
+      const answerIndices = Array.isArray(question.answerIndices) && question.answerIndices.length ? question.answerIndices : (question.answerIndex ? [question.answerIndex] : []);
+      const selectedIndices = Array.isArray(selected) ? selected : (selected ? [selected] : []);
+      const isMultipleAnswer = answerIndices.length > 1;
+      const selectionComplete = isMultipleAnswer && selectedIndices.length === answerIndices.length;
+      const choices = question.choices.length ? `<div class="jbl-choices">${question.choices.map((choice,index) => {
+        const number = index + 1;
+        let status = '';
+        if (revealAnswer) {
+          if (answerIndices.includes(number)) status = ' correct';
+          else if (selectedIndices.includes(number)) status = ' wrong';
+        } else if (isMultipleAnswer && !selectionComplete) {
+          if (selectedIndices.includes(number)) status = ' selected';
+        } else if (selectedIndices.length) {
+          if (answerIndices.includes(number)) status = ' correct';
+          if (selectedIndices.includes(number) && answerIndices.length && !answerIndices.includes(number)) status = ' wrong';
+        }
+        return `<button class="jbl-choice${status}" type="button" data-jbl-choice="${number}"><span class="jbl-choice-num">${number}</span><span>${escapeHtml(choice)}</span></button>`;
+      }).join('')}</div>` : '';
+      const passageText = (question.passage || '').trim();
+      const passage = passageText ? `<section class="jbl-passage" aria-label="제시문"><div class="jbl-passage-title">제시문</div><div class="jbl-passage-text">${escapeHtml(passageText)}</div></section>` : '';
+      const images = question.images.length ? `<div class="jbl-page-block"><div class="jbl-page-title">문항 이미지</div>${question.images.map(filename => `<figure style="margin:0"><img class="jbl-page-img" data-jbl-image src="${escapeHtml(encodeURI(filename))}" alt="${escapeHtml(question.displayId)} 문항 이미지" /></figure>`).join('')}</div>` : '';
+      const lecturePills = question.lectureIds.map(id => { const course = byId(id); return `<span class="jbl-lecture-map">${escapeHtml(course ? `${course.id} ${titleText(course)}` : `${id}강`)}</span>`; }).join('');
+      const isEditing = state.editing === question.id;
+      const editor = isEditing ? `<section class="jbl-editor jbl-question-editor" aria-label="문제 수정"><div class="jbl-editor-grid"><div class="jbl-editor-field full"><label for="jbl-edit-question-${escapeHtml(question.id)}">문제 발문</label><textarea id="jbl-edit-question-${escapeHtml(question.id)}" data-jbl-edit-question>${escapeHtml(question.question)}</textarea></div><div class="jbl-editor-field full"><label for="jbl-edit-passage-${escapeHtml(question.id)}">제시문 · ㄱ/ㄴ/ㄷ/ㄹ, I/II/III 등</label><textarea id="jbl-edit-passage-${escapeHtml(question.id)}" data-jbl-edit-passage>${escapeHtml(question.passage || '')}</textarea></div><div class="jbl-editor-field full"><label for="jbl-edit-choices-${escapeHtml(question.id)}">선지 · 한 줄에 하나씩 입력</label><textarea id="jbl-edit-choices-${escapeHtml(question.id)}" data-jbl-edit-choices>${escapeHtml(question.choices.join('\n'))}</textarea></div><div class="jbl-editor-field"><label for="jbl-edit-indices-${escapeHtml(question.id)}">정답 번호 · 복수 정답은 쉼표로 구분</label><input id="jbl-edit-indices-${escapeHtml(question.id)}" data-jbl-edit-indices type="text" inputmode="numeric" value="${escapeHtml(answerIndices.join(', '))}" placeholder="예: 2 또는 2, 4" /></div><div class="jbl-editor-field"><label for="jbl-edit-label-${escapeHtml(question.id)}">정답 표시</label><input id="jbl-edit-label-${escapeHtml(question.id)}" data-jbl-edit-label type="text" value="${escapeHtml(question.answerLabel)}" /></div><div class="jbl-editor-field full"><label for="jbl-edit-explanation-${escapeHtml(question.id)}">해설</label><textarea id="jbl-edit-explanation-${escapeHtml(question.id)}" data-jbl-edit-explanation>${escapeHtml(question.explanation)}</textarea></div></div><p class="jbl-editor-help">발문·제시문·선지·정답·해설을 한 번에 수정합니다. 제시문과 선지는 한 줄에 하나씩 입력할 수 있습니다.</p><div class="jbl-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-edit-apply>수정 반영</button></div></section>` : '';
+      return `<article class="jbl-card" data-jbl-question="${escapeHtml(question.id)}">
+        <header class="jbl-card-head"><div class="jbl-meta"><span class="jbl-prof">${escapeHtml(question.legacyProfessor || question.professor)} 교수</span><div class="jbl-meta-right"><span class="jbl-qid">${escapeHtml(question.displayId)}</span><button class="jbl-favorite ${jblFavorites.has(question.id) ? 'active' : ''}" type="button" data-jbl-favorite aria-label="${jblFavorites.has(question.id) ? '즐겨찾기 해제' : '즐겨찾기 추가'}" aria-pressed="${jblFavorites.has(question.id)}">${jblFavorites.has(question.id) ? '★' : '☆'}</button></div></div><h2 class="jbl-title">${escapeHtml(question.question)}</h2><div class="jbl-source">${escapeHtml(question.source)}</div></header>
+        <div class="jbl-card-body">${passage}${images}${choices}<div class="jbl-btns"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-answer>${revealAnswer ? '정답 닫기' : '정답 보기'}</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-explanation>${revealExplanation ? '해설 닫기' : '해설 보기'}</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit>${isEditing ? '문제 수정 닫기' : '문제 수정'}</button></div>${editor}${revealAnswer ? `<div class="jbl-answer-box">${escapeHtml(question.answerLabel)}</div>` : ''}${revealExplanation ? `<section class="jbl-explanation"><div class="jbl-explanation-title">해설</div><div class="jbl-lecture-row">${lecturePills}<span class="jbl-professor-name">${escapeHtml(question.professor)} 교수</span></div><p class="jbl-explanation-text">${escapeHtml(question.explanation)}</p></section>` : ''}</div>
+      </article>`;
+    }
+
+    function bindQuestionCard(container, questions, key, rerender) {
+      const state = viewerState(key);
+      const question = questions[state.index];
+      if (!question) return;
+      container.querySelectorAll('[data-jbl-choice]').forEach(button => button.addEventListener('click', () => {
+        const choiceNumber = Number(button.dataset.jblChoice);
+        const answerIndices = Array.isArray(question.answerIndices) && question.answerIndices.length ? question.answerIndices : (question.answerIndex ? [question.answerIndex] : []);
+        state.answerShown[question.id] = false;
+        if (answerIndices.length > 1) {
+          const current = Array.isArray(state.selected[question.id]) ? state.selected[question.id].slice() : [];
+          const existingIndex = current.indexOf(choiceNumber);
+          if (existingIndex >= 0) current.splice(existingIndex, 1);
+          else if (current.length < answerIndices.length) current.push(choiceNumber);
+          state.selected[question.id] = current;
+        } else {
+          state.selected[question.id] = choiceNumber;
+        }
+        rerender();
+      }));
+      container.querySelector('[data-jbl-answer]')?.addEventListener('click', () => {
+        const willShow = !state.answerShown[question.id];
+        state.answerShown[question.id] = willShow;
+        if (!willShow) delete state.selected[question.id];
+        rerender();
+      });
+      container.querySelector('[data-jbl-explanation]')?.addEventListener('click', () => {
+        state.explanationShown[question.id] = !state.explanationShown[question.id];
+        rerender();
+      });
+      container.querySelector('[data-jbl-favorite]')?.addEventListener('click', () => {
+        if (jblFavorites.has(question.id)) jblFavorites.delete(question.id);
+        else jblFavorites.add(question.id);
+        saveJblFavorites();
+        rerender();
+      });
+      container.querySelector('[data-jbl-edit]')?.addEventListener('click', () => {
+        state.editing = state.editing === question.id ? null : question.id;
+        rerender();
+      });
+      container.querySelector('[data-jbl-edit-cancel]')?.addEventListener('click', () => {
+        state.editing = null;
+        rerender();
+      });
+      container.querySelector('[data-jbl-edit-apply]')?.addEventListener('click', () => {
+        const editedQuestion = container.querySelector('[data-jbl-edit-question]').value.trim();
+        const editedPassage = container.querySelector('[data-jbl-edit-passage]').value.split(/\r?\n/).map(line => line.trim()).filter(Boolean).join('\n');
+        const editedChoices = container.querySelector('[data-jbl-edit-choices]').value.split(/\r?\n/).map(choice => choice.trim()).filter(Boolean);
+        if (!editedQuestion) return;
+        const editedIndices = [...new Set(container.querySelector('[data-jbl-edit-indices]').value.split(/[,·/\s]+/).map(Number).filter(index => Number.isInteger(index) && index >= 1 && index <= editedChoices.length))];
+        const answerLabel = container.querySelector('[data-jbl-edit-label]').value.trim();
+        const explanation = container.querySelector('[data-jbl-edit-explanation]').value.trim();
+        question.question = editedQuestion;
+        question.passage = editedPassage;
+        question.choices = editedChoices;
+        question.answerIndices = editedIndices;
+        question.answerIndex = editedIndices.length === 1 ? editedIndices[0] : null;
+        const numberText = editedIndices.join('·');
+        const choiceText = editedIndices.map(index => editedChoices[index - 1]).join(' / ');
+        question.answerLabel = answerLabel || (editedIndices.length ? `정답: ${numberText}번${choiceText ? ` · ${choiceText}` : ''}` : '정답: 미입력');
+        question.explanation = explanation;
+        delete state.selected[question.id];
+        window.JBL_DATA.modifiedAt = new Date().toISOString();
+        jblHasUnsavedChanges = true;
+        state.editing = null;
+        state.answerShown[question.id] = true;
+        state.explanationShown[question.id] = true;
+        rerender();
+      });
+      container.querySelectorAll('[data-jbl-image]').forEach(image => {
+        image.addEventListener('error', () => {
+          image.closest('figure').hidden = true;
+          const block = image.closest('.jbl-page-block');
+          if (block && !block.querySelector('figure:not([hidden])')) block.hidden = true;
+        });
+        image.addEventListener('click', () => openJblImage(image.src));
+      });
+    }
+
+    function renderQuestionCard(container, questions, key, rerender) {
+      const state = viewerState(key);
+      state.index = Math.max(0, Math.min(state.index, Math.max(questions.length - 1, 0)));
+      if (!questions.length) {
+        container.innerHTML = `<div class="jbl-empty"><strong>${key === 'jbl-all' ? '필터 조건에 맞는 문항이 없습니다.' : '이 강의에 연결된 기출 문항이 없습니다.'}</strong></div>`;
+        return;
+      }
+      container.innerHTML = questionCardMarkup(questions[state.index], state);
+      bindQuestionCard(container, questions, key, rerender);
+    }
+
+    function navMarkup(state, questions) {
+      return `<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-prev ${state.index === 0 ? 'disabled' : ''}>← 이전 문제</button><div class="jbl-counter">${questions.length ? state.index + 1 : 0} / ${questions.length}</div><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-next ${state.index >= questions.length - 1 ? 'disabled' : ''}>다음 문제 →</button>`;
+    }
+
+    function bindViewerNav(container, questions, key, rerender) {
+      const state = viewerState(key);
+      container.querySelector('[data-jbl-prev]')?.addEventListener('click', () => { state.index -= 1; rerender(); window.scrollTo({top:0,behavior:'smooth'}); });
+      container.querySelector('[data-jbl-next]')?.addEventListener('click', () => { state.index += 1; rerender(); window.scrollTo({top:0,behavior:'smooth'}); });
+    }
+
+    function saveModifiedHtml() {
+      const clone = document.documentElement.cloneNode(true);
+      clone.querySelector('body')?.classList.remove('jbl-mode');
+      clone.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== 'catalog-view'; });
+      clone.querySelector('#jbl-image-modal')?.classList.remove('show');
+      clone.querySelector('#jbl-image-modal img')?.removeAttribute('src');
+      const dataScript = clone.querySelector('#jbl-data-script, script[src="./jbl-data.js"]');
+      const payload = JSON.stringify(window.JBL_DATA).replace(/</g, '\\u003c');
+      dataScript.id = 'jbl-data-script';
+      dataScript.removeAttribute('src');
+      dataScript.textContent = `window.JBL_DATA = ${payload};`;
+      const blob = new Blob([`<!DOCTYPE html>\n${clone.outerHTML}`], { type:'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = '소화기계_강의정리_수정본.html';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      jblHasUnsavedChanges = false;
+    }
+
+    function bindHtmlSave(container) {
+      container.querySelectorAll('[data-jbl-save-html]').forEach(button => button.addEventListener('click', saveModifiedHtml));
+    }
+
+    function renderCourseJ(course) {
+      const target = document.querySelector('#content-panel');
+      const questions = jblQuestions.filter(question => question.lectureIds.includes(course.id));
+      const key = `course-${course.id}`;
+      const state = viewerState(key);
+      const rerender = () => renderCourseJ(course);
+      target.innerHTML = `<div class="jbl-embed"><div data-jbl-course-root></div><div class="jbl-inline-nav">${navMarkup(state, questions)}</div></div>`;
+      renderQuestionCard(target.querySelector('[data-jbl-course-root]'), questions, key, rerender);
+      bindViewerNav(target.querySelector('.jbl-inline-nav'), questions, key, rerender);
+    }
+
+    function renderJblStandalone() {
+      const target = document.querySelector('#jbl-standalone');
+      const key = 'jbl-all';
+      const state = standaloneState();
+      const questions = currentStandaloneQuestions();
+      state.index = Math.max(0, Math.min(state.index, Math.max(questions.length - 1, 0)));
+      const currentQuestion = questions[state.index];
+      const years = [...new Set(jblQuestions.map(question => Number(question.year)).filter(Boolean))].sort((a,b) => b-a);
+      const lectureIds = [...new Set(jblQuestions.flatMap(question => question.lectureIds))].sort((a,b) => a-b);
+      const professors = [...new Set(jblQuestions.map(question => question.professor).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ko'));
+      const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? `${course.id} ${titleText(course)}` : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p></section>` : '';
+      const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-html>HTML 저장하기</button></div></section>` : '';
+      target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions"><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-open-lecture ${currentQuestion?.lectureIds?.length ? '' : 'disabled'}>강의 보기</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${filterPanel}${settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
+      const rerender = renderJblStandalone;
+      renderQuestionCard(target.querySelector('[data-jbl-root]'), questions, key, rerender);
+      bindViewerNav(target.querySelector('.jbl-bottom-inner'), questions, key, rerender);
+      bindHtmlSave(target);
+      target.querySelectorAll('[data-jbl-panel]').forEach(button => button.addEventListener('click', () => {
+        state.panel = state.panel === button.dataset.jblPanel ? null : button.dataset.jblPanel;
+        renderJblStandalone();
+      }));
+      const updateFilter = (name, value) => {
+        state.filters[name] = value;
+        state.index = 0;
+        clearJblRandomOrder(state);
+        renderJblStandalone();
+      };
+      target.querySelector('[data-jbl-filter-year]')?.addEventListener('change', event => updateFilter('year', event.target.value));
+      target.querySelector('[data-jbl-filter-lecture]')?.addEventListener('change', event => updateFilter('lectureId', event.target.value));
+      target.querySelector('[data-jbl-filter-professor]')?.addEventListener('change', event => updateFilter('professor', event.target.value));
+      target.querySelector('[data-jbl-filter-favorites]')?.addEventListener('change', event => updateFilter('favoritesOnly', event.target.checked));
+      target.querySelector('[data-jbl-random]')?.addEventListener('click', () => {
+        const filtered = filteredJblQuestions();
+        state.randomOrder = shuffleQuestions(filtered).map(question => question.id);
+        state.randomSignature = jblFilterSignature(state.filters);
+        state.index = 0;
+        renderJblStandalone();
+      });
+      target.querySelector('[data-jbl-exit]')?.addEventListener('click', () => { renderDomainTabs(); renderCatalog(); showView('catalog'); });
+      target.querySelector('[data-jbl-reset]')?.addEventListener('click', () => {
+        state.filters = { year:'', lectureId:'', professor:'', favoritesOnly:false };
+        state.index = 0;
+        state.selected = {};
+        state.answerShown = {};
+        state.explanationShown = {};
+        state.editing = null;
+        clearJblRandomOrder(state);
+        renderJblStandalone();
+      });
+      target.querySelector('[data-jbl-open-lecture]')?.addEventListener('click', () => {
+        const question = currentStandaloneQuestions()[state.index];
+        const courseId = question?.lectureIds?.[0];
+        if (!courseId) return;
+        history.pushState(null, '', `#lecture-${courseId}`);
+        showDetail(courseId, 'jbl');
+      });
+      const jump = () => {
+        const value = target.querySelector('#jbl-jump').value.trim();
+        const globalMatch = value.match(/^\s*(\d+)\s*번?\s*$/);
+        if (globalMatch) {
+          const globalNumber = Number(globalMatch[1]);
+          const globalIndex = questions.findIndex(question => question.globalNumber === globalNumber);
+          if (globalIndex >= 0) { state.index=globalIndex; renderJblStandalone(); }
+          return;
+        }
+        const yearMatch = value.match(/20(?:20|21|22|23|25)/);
+        const requestedYear = yearMatch ? Number(yearMatch[0]) : null;
+        const withoutYear = value.replace(/20(?:20|21|22|23|25)/, ' ').trim();
+        const numberMatch = withoutYear.match(/(\d+)/);
+        let index = -1;
+        if (numberMatch && /오답/.test(value)) {
+          const number = Number(numberMatch[1]);
+          index = questions.findIndex(question => question.sourceType === '오답30'
+            && (!requestedYear || question.year === requestedYear)
+            && (question.sourceOrdinal === number || question.id.endsWith(`wrong30-${number}`)));
+        } else if (numberMatch) {
+          const number = Number(numberMatch[1]);
+          index = questions.findIndex(question => question.originalNumber === number
+            && (!requestedYear || question.year === requestedYear));
+        }
+        if (index >= 0) { state.index=index; renderJblStandalone(); }
+      };
+      target.querySelector('[data-jbl-jump]')?.addEventListener('click', jump);
+      target.querySelector('#jbl-jump')?.addEventListener('keydown', event => { if (event.key === 'Enter') jump(); });
+    }
+
+    function openJblImage(src) {
+      const modal = document.querySelector('#jbl-image-modal');
+      modal.querySelector('img').src = src;
+      modal.classList.add('show');
+    }
+
+    function closeJblImage() {
+      const modal = document.querySelector('#jbl-image-modal');
+      modal.classList.remove('show');
+      modal.querySelector('img').removeAttribute('src');
+    }
+
+    function renderDomainTabs() {
+      const target = document.querySelector('#domain-tabs');
+      target.innerHTML = Object.keys(domainMeta).map(domain => {
+        const meta = domainMeta[domain];
+        const count = courses.filter(course => course.domain === domain).length;
+        return `<button class="domain-tab ${activeDomain === domain ? 'active' : ''}" style="--tab-color:${meta.accent};--tab-soft:${meta.soft}" data-domain="${domain}" type="button"><strong>${domain}</strong></button>`;
+      }).join('');
+      target.querySelectorAll('[data-domain]').forEach(button => button.addEventListener('click', () => {
+        activeDomain = button.dataset.domain;
+        renderDomainTabs();
+        renderCatalog();
+      }));
+    }
+
+    function renderCatalog() {
+      const target = document.querySelector('#catalog');
+      const domainCourses = courses.filter(course => course.domain === activeDomain);
+      const meta = domainMeta[activeDomain];
+      const disciplines = [...new Set(domainCourses.map(course => course.discipline))].sort((a,b) => disciplineOrder.indexOf(a)-disciplineOrder.indexOf(b));
+      target.innerHTML = `<div class="discipline-grid">${disciplines.map(discipline => {
+        const disciplineCourses = domainCourses.filter(course => course.discipline === discipline);
+        const [icon,en] = disciplineMeta[discipline];
+        const sections = [...new Set(disciplineCourses.map(course => course.section))].sort((a,b) => sectionOrder.indexOf(a)-sectionOrder.indexOf(b));
+        return `<article class="discipline-card" style="--accent:${meta.accent};--soft:${meta.soft}">
+          <header class="discipline-head"><span class="discipline-icon" aria-hidden="true">${icon}</span><div><h3>${discipline}</h3></div><span class="discipline-count">${disciplineCourses.length}강</span></header>
+          ${sections.map(section => {
+            const sectionCourses = disciplineCourses.filter(course => course.section === section);
+            const professors = [...new Set(sectionCourses.map(course => course.professor))].sort((a,b) => {
+              const minA = Math.min(...sectionCourses.filter(c => c.professor === a).map(c => c.id));
+              const minB = Math.min(...sectionCourses.filter(c => c.professor === b).map(c => c.id));
+              return minA-minB;
+            });
+            const showSection = sections.length > 1 || section !== discipline;
+            return `<section class="section-block">${showSection ? `<h4 class="section-title">${section}</h4>` : ''}<div class="professor-list">
+              ${professors.map(professor => {
+                const lectures = sectionCourses.filter(course => course.professor === professor).sort((a,b) => a.id-b.id);
+                return `<div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">${professor} 교수</span><span class="professor-meta">${lectures.length}개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list">${lectures.map(course => `<li><button class="lecture-link" type="button" data-course="${course.id}"><span class="lecture-no">${course.id}</span><span>${titleText(course)}</span><small>${course.slots[0] ? `${course.slots[0].week}주차` : ''}</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li>`).join('')}</ul></div>`;
+              }).join('')}
+            </div></section>`;
+          }).join('')}
+        </article>`;
+      }).join('')}</div>`;
+
+      target.querySelectorAll('.professor-toggle').forEach(button => button.addEventListener('click', () => {
+        const professor = button.closest('.professor');
+        const isOpen = professor.classList.toggle('open');
+        button.setAttribute('aria-expanded', String(isOpen));
+      }));
+      target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'catalog')));
+    }
+
+    function renderSchedule() {
+      const target = document.querySelector('#week-stack');
+      target.innerHTML = [1,2,3,4,5].map(week => {
+        const weekSlots = courses.flatMap(course => course.slots.filter(slot => slot.week === week).map(slot => ({course,slot})));
+        const weekDates = weekCalendar[week];
+        return `<article class="week-card"><div class="week-title"><strong>${week}주차</strong><span>${formatDate(weekDates.월)} – ${formatDate(weekDates.금)}</span></div><div class="timetable-scroll"><div class="timetable">
+          <div class="grid-cell day-head" style="grid-column:1;grid-row:1">시간</div>
+          ${days.map((day,index) => `<div class="grid-cell day-head" style="grid-column:${index+2};grid-row:1">${day}<small>${formatDate(weekDates[day])}</small></div>`).join('')}
+          ${hours.map((hour,row) => `<div class="grid-cell time-cell ${hour === '13:00' ? 'lunch-cell' : ''}" style="grid-column:1;grid-row:${row+2}">${hour}</div>${days.map((day,col) => `<div class="grid-cell ${hour === '13:00' ? 'lunch-cell' : ''}" style="grid-column:${col+2};grid-row:${row+2}"></div>`).join('')}`).join('')}
+          ${days.map((day,index) => holidays.has(weekDates[day]) ? `<div class="holiday-column" style="grid-column:${index+2};grid-row:2 / span 9"><span>추석</span></div>` : '').join('')}
+          ${weekSlots.map(({course,slot}) => {
+            const col = days.indexOf(slot.day)+2;
+            const row = hours.indexOf(slot.time)+2;
+            const color = course.isLab ? 'var(--violet)' : (course.domain === '기초의학' ? 'var(--basic)' : 'var(--clinical)');
+            const soft = course.isLab ? '#eeeafb' : (course.domain === '기초의학' ? 'var(--basic-soft)' : 'var(--clinical-soft)');
+            const span = slot.duration || 1;
+            return `<div class="course-slot" style="grid-column:${col};grid-row:${row} / span ${span};--course-color:${color};--course-soft:${soft}"><button class="course-card" type="button" data-course="${course.id}" aria-label="${course.id} ${course.title}, ${pathText(course)}"><span class="number">${course.id}${course.isLab ? ' · 실습' : ''}</span><span class="name">${course.title}</span><span class="teacher">${course.professor} 교수</span><span class="course-tooltip" role="tooltip">${pathText(course)}</span></button></div>`;
+          }).join('')}
+        </div></div></article>`;
+      }).join('');
+      target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'schedule')));
+    }
+
+    function showView(name) {
+      document.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== `${name}-view`; });
+      document.body.classList.toggle('jbl-mode', name === 'jbl');
+      window.scrollTo({top:0, behavior:'smooth'});
+      history.replaceState(null, '', name === 'catalog' ? '#catalog' : `#${name}`);
+    }
+
+    function showDetail(id, from = 'catalog') {
+      const course = byId(id);
+      if (!course) return;
+      previousView = from;
+      activeDetailTab = '정리본';
+      const slotText = course.slots.map(slot => `${slot.week}주차 · ${formatDate(slot.date)}(${slot.day}) ${slot.time} · ${slot.duration}시간`).join(' / ');
+      const target = document.querySelector('#detail');
+      target.innerHTML = `<div class="detail-bar">${from === 'jbl' ? '<div class="detail-return"><button class="jbl-btn jbl-btn-sub" type="button" data-detail-back>← 돌아가기</button></div>' : ''}<div class="detail-topline"><div><p class="detail-breadcrumb">${pathText(course)} · ${course.professor} 교수</p><h2>${titleText(course)}</h2><p class="detail-info">${slotText}</p></div><span class="detail-number">${course.id}</span></div><div class="content-tabs" role="tablist" aria-label="강의 자료 종류">${['정리본','J','KMLE'].map((tab,index) => `<button class="content-tab ${index === 0 ? 'active' : ''}" type="button" role="tab" aria-selected="${index === 0}" data-detail-tab="${tab}">${tab}</button>`).join('')}</div></div><div id="content-panel" class="content-panel"></div>`;
+      target.querySelector('[data-detail-back]')?.addEventListener('click', () => history.back());
+      target.querySelectorAll('[data-detail-tab]').forEach(button => button.addEventListener('click', () => {
+        activeDetailTab = button.dataset.detailTab;
+        target.querySelectorAll('[data-detail-tab]').forEach(tab => { const active = tab === button; tab.classList.toggle('active', active); tab.setAttribute('aria-selected', String(active)); });
+        renderContentPanel(course);
+      }));
+      renderContentPanel(course);
+      showView('detail');
+      history.replaceState(null, '', `#lecture-${course.id}`);
+    }
+
+    function renderContentPanel(course) {
+      const target = document.querySelector('#content-panel');
+      const noteMarkup = lectureNotes[course.id];
+      target.classList.toggle('j-mode', activeDetailTab === 'J');
+      target.classList.toggle('notes-mode', activeDetailTab === '정리본' && Boolean(noteMarkup));
+      if (activeDetailTab === 'J') {
+        renderCourseJ(course);
+        return;
+      }
+      if (activeDetailTab === '정리본' && noteMarkup) {
+        target.innerHTML = noteMarkup;
+        target.querySelectorAll('[data-note-target]').forEach(button => button.addEventListener('click', () => {
+          target.querySelector(`#${button.dataset.noteTarget}`)?.scrollIntoView({ behavior:'smooth', block:'start' });
+        }));
+        target.querySelectorAll('[data-note-image]').forEach(image => {
+          image.addEventListener('click', () => openJblImage(image.src));
+          image.addEventListener('error', () => { image.closest('.wiki-figure').hidden = true; });
+        });
+        return;
+      }
+      target.innerHTML = `<span class="panel-label">${course.id}강 · ${activeDetailTab}</span><h3>${activeDetailTab}</h3><div class="empty-state"><div><strong>아직 작성된 내용이 없습니다.</strong></div></div>`;
+    }
+
+    document.querySelectorAll('[data-go]').forEach(button => button.addEventListener('click', () => {
+      const destination = button.dataset.go;
+      if (destination === 'catalog') { renderDomainTabs(); renderCatalog(); }
+      if (destination === 'schedule') renderSchedule();
+      if (destination === 'jbl') renderJblStandalone();
+      showView(destination);
+    }));
+
+    window.addEventListener('hashchange', routeFromHash);
+    function routeFromHash() {
+      const hash = location.hash;
+      if (hash.startsWith('#lecture-')) return showDetail(hash.replace('#lecture-',''), previousView);
+      if (hash === '#schedule') { renderSchedule(); return showView('schedule'); }
+      if (hash === '#jbl') { renderJblStandalone(); return showView('jbl'); }
+      renderDomainTabs(); renderCatalog(); showView('catalog');
+    }
+
+    function activeQuestionViewer() {
+      if (!document.querySelector('#jbl-view').hidden) {
+        return { questions:currentStandaloneQuestions(), key:'jbl-all', rerender:renderJblStandalone };
+      }
+      if (!document.querySelector('#detail-view').hidden && activeDetailTab === 'J') {
+        const match = location.hash.match(/^#lecture-(\d+)$/);
+        const course = match ? byId(match[1]) : null;
+        if (!course) return null;
+        return {
+          questions:jblQuestions.filter(question => question.lectureIds.includes(course.id)),
+          key:`course-${course.id}`,
+          rerender:() => renderCourseJ(course)
+        };
+      }
+      return null;
+    }
+
+    function handleQuestionShortcut(event) {
+      if (event.repeat || event.altKey || event.ctrlKey || event.metaKey) return;
+      if (event.target instanceof Element && event.target.closest('input, textarea, select, button, [contenteditable="true"]')) return;
+      if (document.querySelector('#jbl-image-modal').classList.contains('show')) return;
+      const viewer = activeQuestionViewer();
+      if (!viewer || !viewer.questions.length) return;
+      const state = viewerState(viewer.key);
+      const question = viewer.questions[state.index];
+      if (!question) return;
+
+      if (event.code === 'Space') {
+        event.preventDefault();
+        state.explanationShown[question.id] = !state.explanationShown[question.id];
+        viewer.rerender();
+        return;
+      }
+
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        if (state.index <= 0) return;
+        state.index -= 1;
+        viewer.rerender();
+        window.scrollTo({top:0, behavior:'smooth'});
+      } else if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        if (state.index >= viewer.questions.length - 1) return;
+        state.index += 1;
+        viewer.rerender();
+        window.scrollTo({top:0, behavior:'smooth'});
+      }
+    }
+
+    document.querySelector('#jbl-image-modal').addEventListener('click', event => { if (event.target.id === 'jbl-image-modal') closeJblImage(); });
+    document.querySelector('.jbl-image-close').addEventListener('click', closeJblImage);
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeJblImage(); });
+    document.addEventListener('keydown', handleQuestionShortcut);
+    window.addEventListener('beforeunload', event => {
+      if (!jblHasUnsavedChanges) return;
+      event.preventDefault();
+      event.returnValue = '';
+    });
+
+    renderDomainTabs();
+    renderCatalog();
+    if (location.hash && location.hash !== '#catalog') routeFromHash();
+  </script>
+</body>
+</html>
