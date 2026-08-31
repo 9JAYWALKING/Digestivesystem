@@ -924,7 +924,6 @@
     const legacyLectureNotes = {
       1: `<article class="wiki-note">
         <header class="wiki-hero">
-          <p class="wiki-kicker">Lecture 01 · Histology Wiki</p>
           <h3>대장의 조직학</h3>
           <p>구강 및 소화관의 조직학 중 대장 파트를 구조, 조직 소견, 시험 포인트 중심으로 재구성한 정리본이다.</p>
           <div class="wiki-stat-row"><span class="wiki-stat">길이 약 180 cm</span><span class="wiki-stat">융모 없음</span><span class="wiki-stat">술잔세포 풍부</span><span class="wiki-stat">결장띠 · 팽대 · 복막주렁</span></div>
@@ -1194,7 +1193,7 @@
 
       const toc = headingRecords.map((record, index) => `<button class="wiki-toc-link" type="button" data-wiki-target="${record.slug}">${index + 1}. ${renderWikiInline(record.heading, course, footnotes, false)}</button>`).join('');
       const tagMarkup = tags.map(tag => `<span class="wiki-stat">${escapeHtml(tag)}</span>`).join('');
-      return `<article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><p class="wiki-kicker">Lecture ${String(course.id).padStart(2,'0')} · Histology Wiki</p><h3>${renderWikiInline(title, course, footnotes, false)}</h3></div><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit>문서 편집</button></div>${summary ? `<p>${renderWikiInline(summary, course, footnotes, false)}</p>` : ''}<div class="wiki-stat-row">${tagMarkup}</div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong>${toc}</aside><div class="wiki-article">${body.join('')}</div></div></article>`;
+      return `<article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>${renderWikiInline(title, course, footnotes, false)}</h3></div><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit>문서 편집</button></div>${summary ? `<p>${renderWikiInline(summary, course, footnotes, false)}</p>` : ''}<div class="wiki-stat-row">${tagMarkup}</div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong>${toc}</aside><div class="wiki-article">${body.join('')}</div></div></article>`;
     }
 
     function renderJblWikiFragment(value, question) {
