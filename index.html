@@ -342,7 +342,9 @@
     .wiki-hero { padding: clamp(28px,5vw,52px); background: linear-gradient(135deg,#eef9ff 0%,#f8fcff 56%,#fff 100%); border-bottom: 1px solid #dcecf4; }
     .wiki-hero-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
     .wiki-hero-title { min-width: 0; }
+    .wiki-hero-actions { display: grid; flex: 0 0 auto; gap: 7px; }
     .wiki-hero-edit { flex: 0 0 auto; padding: 10px 15px; font-size: 14px; }
+    .wiki-toggle-all { padding: 9px 15px; font-size: 13px; }
     .wiki-kicker { margin: 0 0 8px; color: #1683ad; font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
     .wiki-hero h3 { margin: 0; color: #153746; font-size: clamp(30px,5vw,46px); line-height: 1.2; }
     .wiki-hero > p { max-width: 720px; margin: 14px 0 0; color: #52707d; font-size: 16px; }
@@ -638,7 +640,9 @@
       .wiki-toc strong { grid-column: 1 / -1; }
       .wiki-grid { grid-template-columns: 1fr; }
       .wiki-hero-title-row { gap: 10px; }
+      .wiki-hero-actions { gap: 5px; }
       .wiki-hero-edit { padding: 9px 11px; font-size: 12px; }
+      .wiki-toggle-all { padding: 8px 11px; font-size: 11px; }
       .wiki-section-head { gap: 8px; }
       .wiki-section-head h4 { font-size: 21px; }
       .wiki-section-actions { gap: 4px; }
@@ -1101,13 +1105,45 @@
       });
     }
 
+    function wikiSectionTextScore(candidate, requested) {
+      const candidateKey = normalizeWikiKey(candidate);
+      const requestedKey = normalizeWikiKey(requested);
+      if (!candidateKey || !requestedKey) return 0;
+      if (candidateKey === requestedKey) return 100;
+      if (candidateKey.startsWith(`${requestedKey}-`) || candidateKey.endsWith(`-${requestedKey}`)) return 82;
+      const candidateCompact = candidateKey.replace(/-/g, '');
+      const requestedCompact = requestedKey.replace(/-/g, '');
+      if (requestedCompact.length >= 3 && (candidateCompact.startsWith(requestedCompact) || candidateCompact.endsWith(requestedCompact))) return 79;
+      const candidateTokens = candidateKey.split('-').filter(Boolean);
+      const requestedTokens = requestedKey.split('-').filter(Boolean);
+      if (requestedTokens.length > 1 && requestedTokens.every(token => candidateTokens.includes(token))) {
+        return Math.max(55, 76 - Math.max(0, candidateTokens.length - requestedTokens.length));
+      }
+      return 0;
+    }
+
+    function wikiSourceHasSection(course, sectionName) {
+      const source = lectureNoteSources[course?.id] || '';
+      return String(source).split(/\r?\n/).some(line => {
+        const heading = line.match(/^={2,4}\s+(.+?)\s+={2,4}$/)?.[1];
+        return heading && wikiSectionTextScore(heading, sectionName) > 0;
+      });
+    }
+
     function wikiLinkMarkup(rawTarget, rawDisplay, currentCourse) {
       const target = String(rawTarget || '').trim();
       const separator = target.indexOf('#');
       const documentName = separator >= 0 ? target.slice(0, separator).trim() : target;
-      const sectionName = separator >= 0 ? target.slice(separator + 1).trim() : '';
+      let sectionName = separator >= 0 ? target.slice(separator + 1).trim() : '';
       const display = String(rawDisplay || '').trim() || (documentName || `#${sectionName}`);
-      const targetCourse = findWikiCourse(documentName, currentCourse);
+      let targetCourse = findWikiCourse(documentName, currentCourse);
+      if (!documentName && sectionName && !wikiSourceHasSection(currentCourse, sectionName)) {
+        const courseNamedLikeSection = findWikiCourse(sectionName, null);
+        if (courseNamedLikeSection && courseNamedLikeSection.id !== currentCourse.id) {
+          targetCourse = courseNamedLikeSection;
+          sectionName = '';
+        }
+      }
       if (!targetCourse) return `<span class="wiki-link-missing" title="연결할 문서를 찾을 수 없습니다.">${wikiEmphasisMarkup(display)}</span>`;
       return `<a class="wiki-link" href="#lecture-${targetCourse.id}" data-wiki-course="${targetCourse.id}" data-wiki-section="${escapeHtml(sectionName)}">${wikiEmphasisMarkup(display)}</a>`;
     }
@@ -1210,7 +1246,7 @@
 
       let sectionCursor = 0;
       let sectionOpen = false;
-      let listOpen = false;
+      let listType = '';
       let paragraph = [];
       const body = [];
       const flushParagraph = () => {
@@ -1219,9 +1255,15 @@
         paragraph = [];
       };
       const closeList = () => {
-        if (!listOpen) return;
-        body.push('</ul>');
-        listOpen = false;
+        if (!listType) return;
+        body.push(`</${listType}>`);
+        listType = '';
+      };
+      const openList = type => {
+        if (listType === type) return;
+        closeList();
+        body.push(`<${type}>`);
+        listType = type;
       };
       const flushText = () => { flushParagraph(); closeList(); };
 
@@ -1245,7 +1287,11 @@
           body.push(`<h5 data-wiki-section="${normalizeWikiKey(heading)}">${renderWikiInline(heading, course, footnotes)}</h5>`);
         } else if (line.startsWith('* ')) {
           flushParagraph();
-          if (!listOpen) { body.push('<ul>'); listOpen = true; }
+          openList('ul');
+          body.push(`<li>${renderWikiInline(line.slice(2), course, footnotes)}</li>`);
+        } else if (line.startsWith('# ')) {
+          flushParagraph();
+          openList('ol');
           body.push(`<li>${renderWikiInline(line.slice(2), course, footnotes)}</li>`);
         } else if (line.startsWith('> ')) {
           flushText();
@@ -1267,12 +1313,12 @@
       if (sectionOpen) body.push('</div></section>');
 
       if (footnotes.items.length) {
-        body.push(`<section class="wiki-footnotes"><h4>각주</h4><ol>${footnotes.items.map(item => `<li id="wiki-fn-${course.id}-${item.number}" class="wiki-footnote-item" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 ${item.number}의 본문 위치로 이동">${renderWikiInline(item.content, course, footnotes, false)}<span class="wiki-footnote-backs">${Array.from({ length:item.references }, (_, index) => `<a class="wiki-footnote-back" href="#wiki-fnref-${course.id}-${item.number}-${index + 1}" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="${index + 1}" aria-label="본문의 각주 ${item.number} ${index + 1}번째 위치로 돌아가기">↩${item.references > 1 ? index + 1 : ''}</a>`).join('')}</span></li>`).join('')}</ol></section>`);
+        body.push(`<section class="wiki-footnotes"><h4>각주</h4><ol>${footnotes.items.map(item => `<li id="wiki-fn-${course.id}-${item.number}" class="wiki-footnote-item" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 ${item.number}의 본문 위치로 돌아가기">${renderWikiInline(item.content, course, footnotes, false)}<span class="wiki-footnote-backs">${Array.from({ length:item.references }, (_, index) => `<a class="wiki-footnote-back" href="#wiki-fnref-${course.id}-${item.number}-${index + 1}" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="${index + 1}" aria-label="본문의 각주 ${item.number} ${index + 1}번째 위치로 돌아가기">↩${item.references > 1 ? index + 1 : ''}</a>`).join('')}</span></li>`).join('')}</ol></section>`);
       }
 
       const toc = headingRecords.map((record, index) => `<button class="wiki-toc-link" type="button" data-wiki-target="${record.slug}">${index + 1}. ${renderWikiInline(record.heading, course, footnotes, false)}</button>`).join('');
       const tagMarkup = tags.map(tag => `<span class="wiki-stat">${escapeHtml(tag)}</span>`).join('');
-      return `<article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>${renderWikiInline(title, course, footnotes, false)}</h3></div><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit>문서 편집</button></div>${summary ? `<p>${renderWikiInline(summary, course, footnotes, false)}</p>` : ''}<div class="wiki-stat-row">${tagMarkup}</div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong>${toc}</aside><div class="wiki-article">${body.join('')}</div></div></article>`;
+      return `<article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>${renderWikiInline(title, course, footnotes, false)}</h3></div><div class="wiki-hero-actions"><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit>문서 편집</button><button class="jbl-btn jbl-btn-sub wiki-toggle-all" type="button" data-wiki-toggle-all aria-pressed="false">모두 접기</button></div></div>${summary ? `<p>${renderWikiInline(summary, course, footnotes, false)}</p>` : ''}<div class="wiki-stat-row">${tagMarkup}</div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong>${toc}</aside><div class="wiki-article">${body.join('')}</div></div></article>`;
     }
 
     function renderJblWikiFragment(value, question) {
@@ -1282,6 +1328,7 @@
       const output = [];
       let paragraph = [];
       let list = [];
+      let listType = '';
       const flushParagraph = () => {
         if (!paragraph.length) return;
         output.push(`<p>${paragraph.map(line => renderWikiInline(line, course, footnotes)).join('<br>')}</p>`);
@@ -1289,8 +1336,9 @@
       };
       const flushList = () => {
         if (!list.length) return;
-        output.push(`<ul>${list.map(item => `<li>${renderWikiInline(item, course, footnotes)}</li>`).join('')}</ul>`);
+        output.push(`<${listType || 'ul'}>${list.map(item => `<li>${renderWikiInline(item, course, footnotes)}</li>`).join('')}</${listType || 'ul'}>`);
         list = [];
+        listType = '';
       };
       const flushText = () => { flushParagraph(); flushList(); };
 
@@ -1301,7 +1349,20 @@
         const levelThree = line.match(/^===\s+(.+?)\s+===$/);
         if (levelTwo) { flushText(); output.push(`<h3>${renderWikiInline(levelTwo[1], course, footnotes, false)}</h3>`); continue; }
         if (levelThree) { flushText(); output.push(`<h4>${renderWikiInline(levelThree[1], course, footnotes, false)}</h4>`); continue; }
-        if (line.startsWith('* ')) { flushParagraph(); list.push(line.slice(2)); continue; }
+        if (line.startsWith('* ')) {
+          flushParagraph();
+          if (listType && listType !== 'ul') flushList();
+          listType = 'ul';
+          list.push(line.slice(2));
+          continue;
+        }
+        if (line.startsWith('# ')) {
+          flushParagraph();
+          if (listType && listType !== 'ol') flushList();
+          listType = 'ol';
+          list.push(line.slice(2));
+          continue;
+        }
         if (line.startsWith('> ')) { flushText(); output.push(`<blockquote>${renderWikiInline(line.slice(2), course, footnotes)}</blockquote>`); continue; }
         flushList();
         paragraph.push(line);
@@ -1309,24 +1370,56 @@
       flushText();
 
       if (footnotes.items.length) {
-        output.push(`<section class="wiki-footnotes"><h4>각주</h4><ol>${footnotes.items.map(item => `<li id="wiki-fn-${course.id}-${item.number}" class="wiki-footnote-item" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 ${item.number}의 본문 위치로 이동">${renderWikiInline(item.content, course, footnotes, false)}<span class="wiki-footnote-backs">${Array.from({ length:item.references }, (_, index) => `<a class="wiki-footnote-back" href="#wiki-fnref-${course.id}-${item.number}-${index + 1}" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="${index + 1}" aria-label="본문의 각주 ${item.number} ${index + 1}번째 위치로 돌아가기">↩${item.references > 1 ? index + 1 : ''}</a>`).join('')}</span></li>`).join('')}</ol></section>`);
+        output.push(`<section class="wiki-footnotes"><h4>각주</h4><ol>${footnotes.items.map(item => `<li id="wiki-fn-${course.id}-${item.number}" class="wiki-footnote-item" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 ${item.number}의 본문 위치로 돌아가기">${renderWikiInline(item.content, course, footnotes, false)}<span class="wiki-footnote-backs">${Array.from({ length:item.references }, (_, index) => `<a class="wiki-footnote-back" href="#wiki-fnref-${course.id}-${item.number}-${index + 1}" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="${index + 1}" aria-label="본문의 각주 ${item.number} ${index + 1}번째 위치로 돌아가기">↩${item.references > 1 ? index + 1 : ''}</a>`).join('')}</span></li>`).join('')}</ol></section>`);
       }
       return `<div class="jbl-wiki-text">${output.join('')}</div>`;
     }
 
-    function scrollToWikiSection(container, rawSection) {
+    function findWikiSectionTarget(container, rawSection, originElement = null) {
       const requested = String(rawSection || '').replace(/^#/, '').trim();
-      if (!requested) { container.querySelector('.wiki-note')?.scrollIntoView({ behavior:'smooth', block:'start' }); return; }
-      const normalized = normalizeWikiKey(requested);
-      const target = [...container.querySelectorAll('[data-wiki-section], [data-wiki-number]')].find(element =>
-        element.dataset.wikiNumber === requested ||
-        element.dataset.wikiSection === normalized ||
-        normalizeWikiKey(element.dataset.wikiHeading) === normalized ||
-        normalizeWikiKey(element.dataset.wikiHeading).endsWith(normalized)
-      );
-      const parentSection = target?.classList.contains('wiki-section') ? target : target?.closest('.wiki-section');
+      if (!requested) return container.querySelector('.wiki-note');
+      const originSection = originElement?.closest?.('.wiki-section') || null;
+      const candidates = [...container.querySelectorAll('[data-wiki-section], [data-wiki-number]')];
+      const ranked = candidates.map((element, index) => {
+        let score = 0;
+        if (element.dataset.wikiNumber === requested) score = 120;
+        score = Math.max(score, wikiSectionTextScore(element.dataset.wikiSection, requested));
+        score = Math.max(score, wikiSectionTextScore(element.dataset.wikiHeading, requested));
+        if (originSection && (element === originSection || element.closest('.wiki-section') === originSection)) score += 4;
+        return { element, score, index };
+      }).filter(item => item.score > 0);
+      ranked.sort((a, b) => b.score - a.score || a.index - b.index);
+      return ranked[0]?.element || null;
+    }
+
+    function scrollWikiElementIntoView(target, { block = 'start', flash = false } = {}) {
+      if (!target) return false;
+      const parentSection = target.classList?.contains('wiki-section') ? target : target.closest?.('.wiki-section');
       if (parentSection?.classList.contains('is-collapsed')) setWikiSectionExpanded(parentSection, true);
-      target?.scrollIntoView({ behavior:'smooth', block:'start' });
+      const align = behavior => target.scrollIntoView({ behavior, block, inline:'nearest' });
+      align('smooth');
+      const pendingImages = [...document.images].filter(image =>
+        !image.complete && Boolean(image.compareDocumentPosition(target) & Node.DOCUMENT_POSITION_FOLLOWING)
+      );
+      if (pendingImages.length) {
+        Promise.all(pendingImages.map(image => new Promise(resolve => {
+          image.addEventListener('load', resolve, { once:true });
+          image.addEventListener('error', resolve, { once:true });
+        }))).then(() => requestAnimationFrame(() => align('auto')));
+      }
+      if (flash) {
+        target.classList.remove('wiki-footnote-flash');
+        requestAnimationFrame(() => target.classList.add('wiki-footnote-flash'));
+        window.setTimeout(() => target.classList.remove('wiki-footnote-flash'), 1200);
+      }
+      return true;
+    }
+
+    function scrollToWikiSection(container, rawSection, originElement = null) {
+      const target = findWikiSectionTarget(container, rawSection, originElement);
+      const moved = scrollWikiElementIntoView(target, { block:'start' });
+      if (moved) updateWikiToggleAll(container);
+      return moved;
     }
 
     function setWikiSectionExpanded(section, expanded) {
@@ -1336,6 +1429,15 @@
       if (!button) return;
       button.setAttribute('aria-expanded', String(expanded));
       button.textContent = expanded ? '접기' : '펼치기';
+    }
+
+    function updateWikiToggleAll(container) {
+      const button = container?.querySelector('[data-wiki-toggle-all]');
+      const sections = [...(container?.querySelectorAll('.wiki-section') || [])];
+      if (!button || !sections.length) return;
+      const allCollapsed = sections.every(section => section.classList.contains('is-collapsed'));
+      button.textContent = allCollapsed ? '모두 펼치기' : '모두 접기';
+      button.setAttribute('aria-pressed', String(allCollapsed));
     }
 
     function openWikiSectionEditor(course, sectionIndex) {
@@ -1368,11 +1470,18 @@
     }
 
     function bindWikiDocument(container, course) {
-      container.querySelectorAll('[data-wiki-target]').forEach(button => button.addEventListener('click', () => scrollToWikiSection(container, button.dataset.wikiTarget)));
+      container.querySelectorAll('[data-wiki-target]').forEach(button => button.addEventListener('click', () => scrollToWikiSection(container, button.dataset.wikiTarget, button)));
       container.querySelectorAll('[data-wiki-section-toggle]').forEach(button => button.addEventListener('click', () => {
         const section = button.closest('.wiki-section');
         setWikiSectionExpanded(section, section.classList.contains('is-collapsed'));
+        updateWikiToggleAll(container);
       }));
+      container.querySelector('[data-wiki-toggle-all]')?.addEventListener('click', () => {
+        const sections = [...container.querySelectorAll('.wiki-section')];
+        const shouldExpand = sections.length > 0 && sections.every(section => section.classList.contains('is-collapsed'));
+        sections.forEach(section => setWikiSectionExpanded(section, shouldExpand));
+        updateWikiToggleAll(container);
+      });
       container.querySelectorAll('[data-wiki-section-edit]').forEach(button => button.addEventListener('click', () => {
         openWikiSectionEditor(course, Number(button.dataset.wikiSectionEdit));
       }));
@@ -1385,30 +1494,30 @@
         const targetCourseId = Number(link.dataset.wikiCourse);
         const section = link.dataset.wikiSection;
         const fromJblCard = Boolean(container.closest('.jbl-card') || container.querySelector('.jbl-card'));
-        if (targetCourseId === course.id && !fromJblCard) { scrollToWikiSection(container, section); return; }
+        if (targetCourseId === course.id && !fromJblCard) { scrollToWikiSection(container, section, link); return; }
         history.pushState({ detailTab:'정리본' }, '', `#lecture-${targetCourseId}`);
         showDetail(targetCourseId, fromJblCard ? 'jbl' : 'detail', '정리본');
         requestAnimationFrame(() => requestAnimationFrame(() => scrollToWikiSection(document.querySelector('#content-panel'), section)));
       }));
       const flashWikiTarget = target => {
-        if (!target) return;
-        target.scrollIntoView({ behavior:'smooth', block:'center' });
-        target.classList.remove('wiki-footnote-flash');
-        requestAnimationFrame(() => target.classList.add('wiki-footnote-flash'));
-        window.setTimeout(() => target.classList.remove('wiki-footnote-flash'), 1200);
+        scrollWikiElementIntoView(target, { block:'center', flash:true });
       };
       container.querySelectorAll('[data-wiki-footnote]').forEach(link => link.addEventListener('click', event => {
         event.preventDefault();
-        flashWikiTarget(container.querySelector(`#wiki-fn-${course.id}-${link.dataset.wikiFootnote}`));
+        const footnote = container.querySelector(`#wiki-fn-${course.id}-${link.dataset.wikiFootnote}`);
+        if (footnote) footnote.dataset.wikiReturnId = link.id;
+        flashWikiTarget(footnote);
       }));
       container.querySelectorAll('[data-wiki-footnote-back]').forEach(element => {
         const returnToReference = event => {
           if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
-          if (event.currentTarget.classList.contains('wiki-footnote-item') && event.target !== event.currentTarget) return;
+          if (event.currentTarget.classList.contains('wiki-footnote-item') && event.target.closest?.('a, button')) return;
           event.preventDefault();
           event.stopPropagation();
           const reference = element.dataset.wikiFootnoteReference || '1';
-          flashWikiTarget(container.querySelector(`#wiki-fnref-${course.id}-${element.dataset.wikiFootnote}-${reference}`));
+          const rememberedId = element.classList.contains('wiki-footnote-item') ? element.dataset.wikiReturnId : '';
+          const targetId = rememberedId || `wiki-fnref-${course.id}-${element.dataset.wikiFootnote}-${reference}`;
+          flashWikiTarget(container.querySelector(`#${targetId}`));
         };
         element.addEventListener('click', returnToReference);
         if (element.classList.contains('wiki-footnote-item')) element.addEventListener('keydown', returnToReference);
@@ -1422,7 +1531,7 @@
     function wikiSyntaxHelpMarkup() {
       const rows = [
         ['= 문서 제목 =', '문서 제목'], ['== 문단 제목 ==', '목차에 표시되는 상위 문단'], ['=== 하위 제목 ===', '문단 내부의 하위 제목'],
-        ["'''굵은 글자'''", '굵게 표시'], ['* 목록', '글머리표 목록'], ['> 강조 문장', '강조 상자'],
+        ["'''굵은 글자'''", '굵게 표시'], ['* 목록', '글머리표 목록'], ['# 목록', '번호 목록'], ['> 강조 문장', '강조 상자'],
         ['[[문서]]', '해당 강의 문서로 이동'], ['[[문서|출력글자]]', '표시 문구를 다르게 지정'],
         ['[[#문단]]', '현재 문서의 특정 문단으로 이동'], ['[[#문단|출력글자]]', '현재 문서 문단 링크의 표시 문구 지정'],
         ['[[다른 문서#문단|출력글자]]', '다른 강의 문서의 특정 문단으로 이동'],
