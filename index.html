@@ -1,9 +1,8 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="2026학년도 2학기 의학과 1학년 소화기계 강의 정리" />
+<!DOCTYPE html>
+<html lang="ko"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026학년도 2학기 의학과 1학년 소화기계 강의 정리">
   <title>소화기계 · 강의 정리</title>
   <style>
     :root {
@@ -358,6 +357,15 @@
     .wiki-section { scroll-margin-top: 24px; padding: 0 0 38px; margin: 0 0 38px; border-bottom: 1px solid #e7eef2; }
     .wiki-section:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
     .wiki-section h4 { margin: 0 0 16px; color: #173f50; font-size: 25px; line-height: 1.35; }
+    .wiki-section-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin: 0 0 16px; }
+    .wiki-section-head h4 { min-width: 0; margin: 0; }
+    .wiki-section-actions { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 5px; }
+    .wiki-section-action { min-height: 30px; padding: 5px 9px; border: 1px solid #d5e5eb; border-radius: 9px; background: #f8fbfc; color: #5b7480; font: inherit; font-size: 11px; font-weight: 850; cursor: pointer; }
+    .wiki-section-action:hover, .wiki-section-action:focus-visible { border-color: #8dc7dc; background: #edf8fc; color: #0b729c; outline: none; }
+    .wiki-section-content { display: block; }
+    .wiki-section.is-collapsed { padding-bottom: 18px; margin-bottom: 18px; }
+    .wiki-section.is-collapsed .wiki-section-head { margin-bottom: 0; }
+    .wiki-section.is-collapsed .wiki-section-content { display: none; }
     .wiki-section h5 { margin: 24px 0 9px; color: #28586b; font-size: 18px; }
     .wiki-section p { margin: 0 0 14px; color: #4d6874; }
     .wiki-section ul { margin: 10px 0 18px; padding-left: 22px; color: #415d69; }
@@ -410,6 +418,14 @@
     .wiki-syntax-grid code { color: #075985; background: #f4fafc; overflow-wrap: anywhere; }
     .wiki-syntax-grid span { color: #526c77; }
     .wiki-render-warning { margin: 18px 0; padding: 14px 16px; border-left: 4px solid #e87972; border-radius: 0 14px 14px 0; background: #fff4f3; color: #7b3c38; }
+    .wiki-section-editor-overlay { position: fixed; inset: 0; z-index: 2200; display: grid; place-items: center; padding: 18px; background: rgba(15,23,42,.48); backdrop-filter: blur(3px); }
+    .wiki-section-editor-dialog { width: min(880px,100%); max-height: min(86vh,900px); display: flex; flex-direction: column; overflow: hidden; border: 1px solid #c9dfe8; border-radius: 20px; background: #f8fbfc; box-shadow: 0 24px 70px rgba(15,23,42,.28); }
+    .wiki-section-editor-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 18px 20px 12px; }
+    .wiki-section-editor-head h3 { margin: 0; color: #153746; font-size: 21px; }
+    .wiki-section-editor-head p { margin: 4px 0 0; color: #627985; font-size: 12px; }
+    .wiki-section-editor-body { min-height: 0; overflow-y: auto; padding: 0 20px 20px; }
+    .wiki-section-editor-body .wiki-source-editor { min-height: 420px; }
+    .wiki-section-editor-body .wiki-editor-actions { position: sticky; bottom: -20px; margin: 14px -20px -20px; padding: 13px 20px; border-top: 1px solid #dce8ed; background: rgba(248,251,252,.96); }
 
     /* JBL question viewer — copied from question_viewer_updated.html */
     body.jbl-mode { background: #f1f5f9; color: #0f172a; }
@@ -623,6 +639,10 @@
       .wiki-grid { grid-template-columns: 1fr; }
       .wiki-hero-title-row { gap: 10px; }
       .wiki-hero-edit { padding: 9px 11px; font-size: 12px; }
+      .wiki-section-head { gap: 8px; }
+      .wiki-section-head h4 { font-size: 21px; }
+      .wiki-section-actions { gap: 4px; }
+      .wiki-section-action { min-height: 28px; padding: 4px 7px; font-size: 10px; }
       .wiki-editor-shell { padding: 16px 12px; }
       .wiki-editor-head { display: block; }
       .wiki-source-editor { min-height: 560px; padding: 13px; font-size: 13px; }
@@ -630,6 +650,12 @@
       .wiki-editor-actions .jbl-btn { min-width: 0; padding: 11px 6px; font-size: 13px; }
       .wiki-syntax-grid { grid-template-columns: 1fr; }
       .wiki-syntax-grid code { border-bottom: 0; }
+      .wiki-section-editor-overlay { padding: 8px; }
+      .wiki-section-editor-dialog { max-height: 94vh; border-radius: 15px; }
+      .wiki-section-editor-head { padding: 15px 14px 10px; }
+      .wiki-section-editor-body { padding: 0 14px 14px; }
+      .wiki-section-editor-body .wiki-source-editor { min-height: 52vh; }
+      .wiki-section-editor-body .wiki-editor-actions { bottom: -14px; margin: 12px -14px -14px; padding: 11px 14px; }
     }
 
     @media (max-width: 390px) {
@@ -661,11 +687,35 @@
 
     <main>
       <section id="catalog-view" class="view" aria-labelledby="catalog-title">
-        <div id="domain-tabs" class="domain-tabs" aria-label="최상위 범주"></div>
-        <div id="catalog"></div>
+        <div id="domain-tabs" class="domain-tabs" aria-label="최상위 범주"><button class="domain-tab active" style="--tab-color:var(--basic);--tab-soft:var(--basic-soft)" data-domain="기초의학" type="button"><strong>기초의학</strong></button><button class="domain-tab " style="--tab-color:var(--clinical);--tab-soft:var(--clinical-soft)" data-domain="임상의학" type="button"><strong>임상의학</strong></button></div>
+        <div id="catalog"><div class="discipline-grid"><article class="discipline-card" style="--accent:var(--basic);--soft:var(--basic-soft)">
+          <header class="discipline-head"><span class="discipline-icon" aria-hidden="true">🧫</span><div><h3>조직학</h3></div><span class="discipline-count">4강</span></header>
+          <section class="section-block"><div class="professor-list">
+              <div class="professor open"><button class="professor-toggle" type="button" aria-expanded="true"><span class="professor-name">이은주 교수</span><span class="professor-meta">4개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="1"><span class="lecture-no">1</span><span>구강 및 소화관의 조직학</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="2"><span class="lecture-no">2</span><span>[실습] 구강 및 소화관의 조직학</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="6"><span class="lecture-no">6</span><span>간, 이자의 조직학</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="7"><span class="lecture-no">7</span><span>[실습] 간, 이자의 조직학</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section>
+        </article><article class="discipline-card" style="--accent:var(--basic);--soft:var(--basic-soft)">
+          <header class="discipline-head"><span class="discipline-icon" aria-hidden="true">⚡</span><div><h3>생리학</h3></div><span class="discipline-count">6강</span></header>
+          <section class="section-block"><div class="professor-list">
+              <div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">한인옥 교수</span><span class="professor-meta">6개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="3"><span class="lecture-no">3</span><span>물질의 소화과정</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="4"><span class="lecture-no">4</span><span>영양소의 흡수</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="5"><span class="lecture-no">5</span><span>소화액의 분비</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="8"><span class="lecture-no">8</span><span>소화관의 운동 I</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="9"><span class="lecture-no">9</span><span>소화관의 운동 II</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="15"><span class="lecture-no">15</span><span>간과 췌장의 기능</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section>
+        </article><article class="discipline-card" style="--accent:var(--basic);--soft:var(--basic-soft)">
+          <header class="discipline-head"><span class="discipline-icon" aria-hidden="true">🔬</span><div><h3>병리학</h3></div><span class="discipline-count">9강</span></header>
+          <section class="section-block"><h4 class="section-title">상부위장관 병리</h4><div class="professor-list">
+              <div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">김준미 교수</span><span class="professor-meta">3개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="10"><span class="lecture-no">10</span><span>식도질환</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="11"><span class="lecture-no">11</span><span>위질환</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="13"><span class="lecture-no">13</span><span>[실습] 상부위장관 병리실습</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section><section class="section-block"><h4 class="section-title">하부위장관 병리</h4><div class="professor-list">
+              <div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">김준미 교수</span><span class="professor-meta">2개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="12"><span class="lecture-no">12</span><span>장질환</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="14"><span class="lecture-no">14</span><span>[실습] 하부위장관 병리실습</span><small>1주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section><section class="section-block"><h4 class="section-title">간 담 췌 병리</h4><div class="professor-list">
+              <div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">김준미 교수</span><span class="professor-meta">4개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="16"><span class="lecture-no">16</span><span>간질환</span><small>2주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="17"><span class="lecture-no">17</span><span>간질환, 담도, 췌장, 횡경막 질환</span><small>2주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="26"><span class="lecture-no">26</span><span>[실습] 간질환 실습</span><small>2주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="27"><span class="lecture-no">27</span><span>[실습] 담도, 췌장, 횡경막질환 실습</span><small>2주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section>
+        </article><article class="discipline-card" style="--accent:var(--basic);--soft:var(--basic-soft)">
+          <header class="discipline-head"><span class="discipline-icon" aria-hidden="true">💊</span><div><h3>약리학</h3></div><span class="discipline-count">5강</span></header>
+          <section class="section-block"><div class="professor-list">
+              <div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">강주희 교수</span><span class="professor-meta">2개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="25"><span class="lecture-no">25</span><span>소화성궤양치료제</span><small>2주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="41"><span class="lecture-no">41</span><span>위장관 및 간 질환에서의 약동학</span><small>3주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div><div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">김채균 교수</span><span class="professor-meta">2개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="42"><span class="lecture-no">42</span><span>설사, 변비, 연동장애의 약물치료</span><small>3주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li><li><button class="lecture-link" type="button" data-course="58"><span class="lecture-no">58</span><span>간 담관계의 치료약물</span><small>5주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div><div class="professor"><button class="professor-toggle" type="button" aria-expanded="false"><span class="professor-name">이문희 교수</span><span class="professor-meta">1개 강의</span><span class="chevron" aria-hidden="true">⌄</span></button><ul class="lecture-list"><li><button class="lecture-link" type="button" data-course="50"><span class="lecture-no">50</span><span>소화기 종양의 항암약물치료</span><small>4주차</small><span class="lecture-arrow" aria-hidden="true">→</span></button></li></ul></div>
+            </div></section>
+        </article></div></div>
       </section>
 
-      <section id="schedule-view" class="view" aria-labelledby="schedule-title" hidden>
+      <section id="schedule-view" class="view" aria-labelledby="schedule-title" hidden="">
         <div class="schedule-toolbar">
           <h2 id="schedule-title">소화기계 시간표</h2>
           <div class="legend" aria-label="색상 범례">
@@ -677,11 +727,11 @@
         <div id="week-stack" class="week-stack"></div>
       </section>
 
-      <section id="detail-view" class="view" aria-live="polite" hidden>
-        <div id="detail" class="detail-wrap"></div>
+      <section id="detail-view" class="view" aria-live="polite" hidden="">
+        <div id="detail" class="detail-wrap"><div class="detail-bar"><div class="detail-topline"><div><p class="detail-breadcrumb">기초의학 · 조직학 · 이은주 교수</p><h2>간, 이자의 조직학</h2><p class="detail-info">1주차 · 9월 1일(화) 11:00 · 2시간</p></div><div class="detail-course-controls" aria-label="강의 번호 이동"><button class="content-tab detail-course-nav" type="button" data-detail-previous="">← 이전 강의</button><button class="content-tab detail-course-nav" type="button" data-detail-next="">다음 강의 →</button><form class="detail-number-form" data-detail-number-form=""><button class="detail-number" type="button" data-detail-number-button="" title="강의 번호를 입력하여 이동">6</button><input class="detail-number-input" data-detail-number-input="" type="text" inputmode="numeric" pattern="[0-9]*" value="6" aria-label="이동할 강의 번호" autocomplete="off" hidden=""></form></div></div><div class="content-tabs" role="tablist" aria-label="강의 자료 종류"><button class="content-tab active" type="button" role="tab" aria-selected="true" data-detail-tab="정리본">Wiki</button><button class="content-tab " type="button" role="tab" aria-selected="false" data-detail-tab="J">J</button><button class="content-tab " type="button" role="tab" aria-selected="false" data-detail-tab="KMLE">Anki</button></div></div><div id="content-panel" class="content-panel notes-mode"><article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>간, 담낭, 이자의 조직학</h3></div><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit="">문서 편집</button></div><div class="wiki-stat-row"></div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong><button class="wiki-toc-link" type="button" data-wiki-target="침샘-salivary-glands">1. 침샘 · Salivary glands</button><button class="wiki-toc-link" type="button" data-wiki-target="간-담낭-이자의-해부학적-연결">2. 간·담낭·이자의 해부학적 연결</button><button class="wiki-toc-link" type="button" data-wiki-target="간-liver">3. 간 · Liver</button><button class="wiki-toc-link" type="button" data-wiki-target="간소엽과-문맥관세동이">4. 간소엽과 문맥관세동이</button><button class="wiki-toc-link" type="button" data-wiki-target="간세포-hepatocyte">5. 간세포 · Hepatocyte</button><button class="wiki-toc-link" type="button" data-wiki-target="간동굴모세혈관-hepatic-sinusoid">6. 간동굴모세혈관 · Hepatic sinusoid</button><button class="wiki-toc-link" type="button" data-wiki-target="disse-공간-space-of-disse">7. Disse 공간 · Space of Disse</button><button class="wiki-toc-link" type="button" data-wiki-target="간의-기질-stroma">8. 간의 기질 · Stroma</button><button class="wiki-toc-link" type="button" data-wiki-target="쓸개즙-통로-biliary-passages">9. 쓸개즙 통로 · Biliary passages</button><button class="wiki-toc-link" type="button" data-wiki-target="담낭-gallbladder">10. 담낭 · Gallbladder</button><button class="wiki-toc-link" type="button" data-wiki-target="이자-pancreas">11. 이자 · Pancreas</button></aside><div class="wiki-article"><section id="wiki-6-침샘-salivary-glands" class="wiki-section" data-wiki-section="침샘-salivary-glands" data-wiki-heading="침샘 · Salivary glands" data-wiki-number="s-1"><div class="wiki-section-head"><h4>침샘 · Salivary glands</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-침샘-salivary-glands-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="0" aria-label="침샘 · Salivary glands 문단 편집">편집</button></div></div><div id="wiki-6-침샘-salivary-glands-content" class="wiki-section-content"><p><strong>침샘(salivary glands)</strong>은 구강으로 침을 분비하는 외분비샘(exocrine glands)이다.</p><h5 data-wiki-section="큰침샘과-작은침샘">큰침샘과 작은침샘</h5><p>세 쌍의 <strong>큰침샘(major salivary glands)</strong>은 복합관상샘꽈리샘(compound tubuloacinar glands)이다.</p><ul><li><strong>귀밑샘(parotid gland)</strong>: 장액샘(serous gland)이다.</li><li><strong>턱밑샘(submandibular gland)</strong>: 혼합샘(mixed gland)이며 장액 성분이 우세하다.</li><li><strong>혀밑샘(sublingual gland)</strong>: 혼합샘이며 점액 성분이 우세하다.</li></ul><p><strong>작은침샘(minor salivary glands)</strong>: 구강점막에 있는 작고 피막이 없는 샘으로 대부분 점액샘이다. 예외적으로 von Ebner glands는 장액샘이다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p02-img01.jpg" alt="큰침샘과 작은침샘의 위치."><figcaption>큰침샘과 작은침샘의 위치.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p02-img02.jpg" alt="귀밑샘·턱밑샘·혀밑샘의 장액세포와 점액세포 구성 비교. 붉은색이 Serous cell, 노란색이 Mucous cell."><figcaption>귀밑샘·턱밑샘·혀밑샘의 장액세포와 점액세포 구성 비교. 붉은색이 Serous cell, 노란색이 Mucous cell.</figcaption></figure></div><p><sup><a id="wiki-fnref-6-1-1" class="wiki-footnote-ref" href="#wiki-fn-6-1" data-wiki-footnote="1" data-wiki-footnote-preview="Acinar의 구성 성분과 Duct의 순서를 암기해야 한다.">[1]</a></sup></p><h5 data-wiki-section="큰침샘의-구조">큰침샘의 구조</h5><p>결합조직 피막과 사이막(septa)이 샘을 엽(lobe)과 소엽(lobule)으로 나눈다. 분비부와 도관계통으로 구성된다.</p><ul><li><strong>분비끝부분(secretory end pieces)</strong>: 장액샘꽈리(serous acini)와 점액샘꽈리(mucous acini)가 있다. 근육상피세포(myoepithelial cells)가 수축하여 침 배출을 돕는다.</li><li><strong>소엽속도관(intralobular ducts)</strong>: 사이도관(intercalated duct)과 줄무늬도관(striated duct)이다. 줄무늬도관은 전해질 조성을 변형한다.</li><li><strong>소엽사이도관(interlobular ducts)</strong>: 배출도관(excretory ducts)이며 마지막에 주도관(main duct)으로 이어진다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p03-img02.jpg" alt="샘꽈리와 근육상피세포, 사이도관·줄무늬도관·배출도관으로 이어지는 큰침샘 도관계통."><figcaption>샘꽈리와 근육상피세포, 사이도관·줄무늬도관·배출도관으로 이어지는 큰침샘 도관계통.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p04-img01.jpg" alt="구강점막 아래에 분포하는 장액침샘과 점액침샘."><figcaption>구강점막 아래에 분포하는 장액침샘과 점액침샘.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p04-img02.jpg" alt="장액샘꽈리의 조직상. 염색이 전반적으로 붉게 되었으나 핵의 염색상을 비교해보았을 때 Mucous Acinar가 Basophilic함을 알 수 있다."><figcaption>장액샘꽈리의 조직상. 염색이 전반적으로 붉게 되었으나 핵의 염색상을 비교해보았을 때 Mucous Acinar가 Basophilic함을 알 수 있다.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p04-img03.jpg" alt="도관을 포함한 큰침샘의 조직상. Interlobular duct이다."><figcaption>도관을 포함한 큰침샘의 조직상. Interlobular duct이다.</figcaption></figure></div></div></section><section id="wiki-6-간-담낭-이자의-해부학적-연결" class="wiki-section" data-wiki-section="간-담낭-이자의-해부학적-연결" data-wiki-heading="간·담낭·이자의 해부학적 연결" data-wiki-number="s-2"><div class="wiki-section-head"><h4>간·담낭·이자의 해부학적 연결</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간-담낭-이자의-해부학적-연결-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="1" aria-label="간·담낭·이자의 해부학적 연결 문단 편집">편집</button></div></div><div id="wiki-6-간-담낭-이자의-해부학적-연결-content" class="wiki-section-content"><p>오른간관과 왼간관이 온간관(common hepatic duct)을 이루고, 온간관은 쓸개주머니관(cystic duct)과 합쳐져 온쓸개관(common bile duct)이 된다. 온쓸개관은 주이자관(main pancreatic duct)과 만나 간이자팽대(hepatopancreatic ampulla, ampulla of Vater)를 형성한 뒤 큰샘창자유두(major duodenal papilla)를 통해 샘창자로 열린다. 온쓸개관조임근(sphincter of common bile duct)과 간이자팽대조임근(sphincter of hepatopancreatic ampulla, sphincter of Oddi)이 흐름을 조절한다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p05-img01.jpg" alt="간·담낭·이자의 관과 샘창자의 연결."><figcaption>간·담낭·이자의 관과 샘창자의 연결.</figcaption></figure></div></div></section><section id="wiki-6-간-liver" class="wiki-section" data-wiki-section="간-liver" data-wiki-heading="간 · Liver" data-wiki-number="s-3"><div class="wiki-section-head"><h4>간 · Liver</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간-liver-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="2" aria-label="간 · Liver 문단 편집">편집</button></div></div><div id="wiki-6-간-liver-content" class="wiki-section-content"><h5 data-wiki-section="간의-기능">간의 기능</h5><ul><li><strong>쓸개즙 생산과 분비</strong>: 쓸개길(biliary tract)로 분비하는 외분비 기능이다.</li><li><strong>대사</strong>: 탄수화물, 지질과 아미노산 대사에 관여한다.</li><li><strong>혈장단백질 합성</strong>: albumin, clotting factors, transport proteins와 lipoproteins를 합성한다.</li><li><strong>저장</strong>: glycogen, vitamins A·D·B12와 iron을 저장한다.</li><li><strong>해독</strong>: Phase I 반응은 oxidation, reduction과 hydrolysis이고, Phase II 반응은 물에 대한 용해도를 높이는 conjugation이다.</li><li><strong>호르몬 대사</strong>: vitamin D 25-hydroxylation, T4에서 T3로의 전환, insulin과 glucagon 제거를 수행한다.</li><li><strong>내분비 기능</strong>: IGF-1, angiotensinogen, hepcidin과 thrombopoietin을 분비한다.</li></ul><h5 data-wiki-section="간-혈액순환-hepatic-circulation">간 혈액순환 · Hepatic circulation</h5><p>간동맥(hepatic artery)은 간 혈류의 약 25%를 공급하며 산소가 풍부하다. 문맥(portal vein)은 약 75%를 공급하며 영양소가 풍부한 정맥혈을 운반한다. 두 혈액은 <a class="wiki-link" href="#lecture-6" data-wiki-course="6" data-wiki-section="간동굴모세혈관 · Hepatic sinusoid">간동굴모세혈관</a>에서 섞여 간세포와 물질을 교환한다.</p><p>혈액은 다음 순서로 흐른다.</p><p># 간동맥가지와 문맥가지 # 간동굴모세혈관(hepatic sinusoids) # 중심정맥(central vein, terminal hepatic venule) # 소엽밑정맥(sublobular vein) # 간정맥(hepatic vein) # 아래대정맥(inferior vena cava)</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p07-img01.jpg" alt="문맥과 간동맥의 혈액이 간동굴모세혈관에서 섞여 중심정맥·소엽밑정맥·간정맥을 거쳐 아래대정맥으로 흐르는 경로."><figcaption>문맥과 간동맥의 혈액이 간동굴모세혈관에서 섞여 중심정맥·소엽밑정맥·간정맥을 거쳐 아래대정맥으로 흐르는 경로.</figcaption></figure></div></div></section><section id="wiki-6-간소엽과-문맥관세동이" class="wiki-section" data-wiki-section="간소엽과-문맥관세동이" data-wiki-heading="간소엽과 문맥관세동이" data-wiki-number="s-4"><div class="wiki-section-head"><h4>간소엽과 문맥관세동이</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간소엽과-문맥관세동이-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="3" aria-label="간소엽과 문맥관세동이 문단 편집">편집</button></div></div><div id="wiki-6-간소엽과-문맥관세동이-content" class="wiki-section-content"><p><strong>간소엽(hepatic lobule)</strong>의 중심에는 중심정맥이 있고, 간세포판과 동굴모세혈관이 중심정맥을 향해 방사상으로 배열된다. 소엽 주변의 문맥구역(portal area)에는 문맥관세동이(portal triad)가 있다.</p><p><strong>문맥관세동이(portal triad)</strong>는 다음 세 구조로 구성된다.</p><ul><li>문맥가지(portal venule)</li><li>간동맥가지(hepatic arteriole)</li><li>소엽사이쓸개관(interlobular bile duct)</li></ul><p>혈액은 문맥구역에서 중심정맥 방향으로 흐르지만, 쓸개즙은 간세포 사이의 쓸개모세관에서 문맥구역의 쓸개관 방향으로 흐른다. 따라서 <strong>혈액과 쓸개즙의 흐름은 서로 반대</strong>이다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p08-img01.jpg" alt="간소엽·간동굴모세혈관·중심정맥과 문맥관세동이의 구조 및 반대 방향인 혈류와 쓸개즙 흐름. (Bile은 out, 혈류는 In)"><figcaption>간소엽·간동굴모세혈관·중심정맥과 문맥관세동이의 구조 및 반대 방향인 혈류와 쓸개즙 흐름. (Bile은 out, 혈류는 In)</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p09-img01.jpg" alt="돼지와 사람 간소엽의 조직상 비교. 돼지에서는 소엽 경계가 더 뚜렷하다."><figcaption>돼지와 사람 간소엽의 조직상 비교. 돼지에서는 소엽 경계가 더 뚜렷하다.</figcaption></figure></div><h5 data-wiki-section="간소엽의-세-가지-개념">간소엽의 세 가지 개념</h5><ul><li><strong>고전적 간소엽(classic lobule)</strong>: Central vein을 가운데 둔 육각형 단위이다. 중심정맥을 향하는 혈류를 강조한다.</li><li><strong>문맥소엽(portal lobule)</strong>: Bile duct를 가운데 둔 삼각형 단위이다. 문맥구역을 향하는 쓸개즙 흐름을 강조한다.</li><li><strong>간소포(hepatic acinus)</strong>: 혈액공급을 기준으로 한 기능적 단위이다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p10-img01.jpg" alt="고전적 간소엽, 문맥소엽과 간소포의 형태 비교."><figcaption>고전적 간소엽, 문맥소엽과 간소포의 형태 비교.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p11-img01.jpg" alt="중심정맥·문맥구역·혈류·쓸개즙 흐름에 따라 구분한 세 가지 간소엽 개념."><figcaption>중심정맥·문맥구역·혈류·쓸개즙 흐름에 따라 구분한 세 가지 간소엽 개념.</figcaption></figure></div><h5 data-wiki-section="간소포-hepatic-acinus">간소포 · Hepatic acinus</h5><p>간소포는 혈액공급을 기준으로 세 구역으로 나눈다.</p><ul><li><strong>Zone 1</strong>: 문맥관세동이에 가장 가까워 산소 농도가 가장 높다.</li><li><strong>Zone 2</strong>: 산소 농도가 중간이다.</li><li><strong>Zone 3</strong>: 중심정맥에 가장 가까워 산소 농도가 가장 낮다. 허혈(ischemia)에 가장 취약하며 CYP450등 대사 작용이 활발하다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p12-img01.jpg" alt="문맥관세동이에서 중심정맥으로 갈수록 Zone 1·2·3으로 나뉘는 간소포."><figcaption>문맥관세동이에서 중심정맥으로 갈수록 Zone 1·2·3으로 나뉘는 간소포.</figcaption></figure></div></div></section><section id="wiki-6-간세포-hepatocyte" class="wiki-section" data-wiki-section="간세포-hepatocyte" data-wiki-heading="간세포 · Hepatocyte" data-wiki-number="s-5"><div class="wiki-section-head"><h4>간세포 · Hepatocyte</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간세포-hepatocyte-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="4" aria-label="간세포 · Hepatocyte 문단 편집">편집</button></div></div><div id="wiki-6-간세포-hepatocyte-content" class="wiki-section-content"><p>간세포는 지름 약 20-30 μm의 다각형 세포이며, 한 세포 두께의 간세포판(hepatic plates)을 이룬다. 간세포판 사이에는 동굴모세혈관이 놓인다. 재생 능력이 높다.</p><h5 data-wiki-section="세포-표면-영역">세포 표면 영역</h5><ul><li><strong>동굴모세혈관영역(sinusoidal domain)</strong>: 미세융모(microvilli)가 <a class="wiki-link" href="#lecture-6" data-wiki-course="6" data-wiki-section="Disse 공간 · Space of Disse">Disse 공간</a>으로 돌출한다.</li><li><strong>쓸개모세관영역(canalicular domain)</strong>: 이웃한 간세포 사이에서 쓸개모세관(bile canaliculi)을 형성한다. 치밀이음(tight junctions)이 쓸개즙 누출을 막는다.</li></ul><h5 data-wiki-section="세포질과-핵">세포질과 핵</h5><ul><li>많은 mitochondria 때문에 세포질이 과립성이고 호산성이다.</li><li>rER, sER, Golgi apparatus, lysosomes와 peroxisomes가 풍부하다.</li><li>glycogen과 lipid droplets를 포함한다.</li><li>핵은 중심에 있고 원형 또는 난원형이며 euchromatic하다.</li><li>두핵세포(binucleation)와 배수성(polyploidy)이 흔하다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p13-img01.jpg" alt="간세포의 동굴모세혈관영역과 쓸개모세관영역, 세포소기관과 glycogen·lipid droplets."><figcaption>간세포의 동굴모세혈관영역과 쓸개모세관영역, 세포소기관과 glycogen·lipid droplets.</figcaption></figure></div></div></section><section id="wiki-6-간동굴모세혈관-hepatic-sinusoid" class="wiki-section" data-wiki-section="간동굴모세혈관-hepatic-sinusoid" data-wiki-heading="간동굴모세혈관 · Hepatic sinusoid" data-wiki-number="s-6"><div class="wiki-section-head"><h4>간동굴모세혈관 · Hepatic sinusoid</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간동굴모세혈관-hepatic-sinusoid-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="5" aria-label="간동굴모세혈관 · Hepatic sinusoid 문단 편집">편집</button></div></div><div id="wiki-6-간동굴모세혈관-hepatic-sinusoid-content" class="wiki-section-content"><p>간동굴모세혈관은 간세포판 사이에 있는 넓고 불규칙한 혈관통로이다. 문맥세정맥(portal venules)과 간세동맥(hepatic arterioles)에서 혼합혈을 받는다.</p><ul><li><strong>동굴모세혈관내피세포(sinusoidal endothelial cells)</strong>: 창이 있는 내피(fenestrated endothelium)이며 기저막이 불연속적이다. <a class="wiki-link" href="#lecture-6" data-wiki-course="6" data-wiki-section="Disse 공간 · Space of Disse">Disse 공간</a>을 통한 교환을 쉽게 한다.</li><li><strong>Kupffer cells</strong>: 동굴모세혈관 내강에 있는 상주큰포식세포(resident macrophages)이다. 단핵포식세포계(mononuclear phagocyte system)에 속하며 세균, 세포잔해와 늙은 적혈구를 제거하여 면역감시를 수행한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p14-img01.jpg" alt="간세포판 사이 간동굴모세혈관과 쓸개모세관의 배치."><figcaption>간세포판 사이 간동굴모세혈관과 쓸개모세관의 배치.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p14-img02.jpg" alt="간동굴모세혈관의 내피세포, Kupffer cell, Disse 공간, 별세포와 쓸개모세관."><figcaption>간동굴모세혈관의 내피세포, Kupffer cell, Disse 공간, 별세포와 쓸개모세관.</figcaption></figure></div><h5 data-wiki-section="모세혈관의-분류">모세혈관의 분류</h5><ul><li><strong>연속모세혈관(non-fenestrated capillary, continuous, type I)</strong>: 결합조직, 근육, 신경과 외분비샘에 있다. 내피세포가 두껍고 pinocytic vesicles가 있다.</li><li><strong>창문모세혈관(fenestrated capillary, type II)</strong>: 내분비샘, 콩팥과 창자에 있다. 창에는 diaphragm이 있으나 renal glomerulus에는 없다.</li><li><strong>동굴모세혈관(sinusoid capillary, type III)</strong>: 간, 골수와 지라에 있다. 지름이 크고 기저막이 불연속적이며 diaphragm이 없다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p15-img01.jpg" alt="연속모세혈관·창문모세혈관·동굴모세혈관의 내피와 기저막 비교."><figcaption>연속모세혈관·창문모세혈관·동굴모세혈관의 내피와 기저막 비교.</figcaption></figure></div></div></section><section id="wiki-6-disse-공간-space-of-disse" class="wiki-section" data-wiki-section="disse-공간-space-of-disse" data-wiki-heading="Disse 공간 · Space of Disse" data-wiki-number="s-7"><div class="wiki-section-head"><h4>Disse 공간 · Space of Disse</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-disse-공간-space-of-disse-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="6" aria-label="Disse 공간 · Space of Disse 문단 편집">편집</button></div></div><div id="wiki-6-disse-공간-space-of-disse-content" class="wiki-section-content"><p><strong>Disse 공간(space of Disse, perisinusoidal space, 동굴주위공간)</strong>은 간세포와 동굴모세혈관내피세포 사이의 공간이며 혈액과 간세포 사이 물질교환의 주된 장소이다. 주로 제III형 collagen(type III collagen)으로 이루어진 그물섬유(reticular fibers)가 지지한다.</p><p><strong>간별세포(hepatic stellate cells, Ito cells)</strong>는 Disse 공간에 위치한다.</p><ul><li>vitamin A를 retinyl esters 형태로 저장한다.</li><li>간 손상 뒤 myofibroblast-like cells로 변한다.</li><li>collagen을 생산하여 간섬유화(hepatic fibrosis)에 기여한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p16-img01.jpg" alt="간세포와 동굴모세혈관내피세포 사이 Disse 공간과 별세포의 위치."><figcaption>간세포와 동굴모세혈관내피세포 사이 Disse 공간과 별세포의 위치.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p16-img02.jpg" alt="간동굴모세혈관, Kupffer cell, fenestrated endothelium, Disse 공간과 간세포 미세융모의 미세구조."><figcaption>간동굴모세혈관, Kupffer cell, fenestrated endothelium, Disse 공간과 간세포 미세융모의 미세구조.</figcaption></figure></div></div></section><section id="wiki-6-간의-기질-stroma" class="wiki-section" data-wiki-section="간의-기질-stroma" data-wiki-heading="간의 기질 · Stroma" data-wiki-number="s-8"><div class="wiki-section-head"><h4>간의 기질 · Stroma</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-간의-기질-stroma-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="7" aria-label="간의 기질 · Stroma 문단 편집">편집</button></div></div><div id="wiki-6-간의-기질-stroma-content" class="wiki-section-content"><ul><li><strong>Glisson’s capsule</strong>: 간 표면을 덮는 얇은 치밀불규칙결합조직층이다.</li><li><strong>문맥로(portal tracts, portal area)</strong>: 혈관과 쓸개관을 지지하는 결합조직이다.</li><li><strong>그물섬유(reticular fibers)</strong>: 간세포판과 동굴모세혈관을 지지한다.</li></ul><p>만성 간 손상 뒤 세포외기질이 과도하게 쌓이면 간섬유화가 발생하며, 진행성 섬유화는 간경변(cirrhosis)으로 이어진다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p17-img01.jpg" alt="간 표면의 Glisson’s capsule."><figcaption>간 표면의 Glisson’s capsule.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p17-img02.jpg" alt="문맥로를 둘러싼 결합조직과 문맥관세동이."><figcaption>문맥로를 둘러싼 결합조직과 문맥관세동이.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p17-img03.jpg" alt="간세포판과 동굴모세혈관을 지지하는 그물섬유."><figcaption>간세포판과 동굴모세혈관을 지지하는 그물섬유.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p17-img04.jpg" alt="만성 손상에서 세포외기질이 증가하는 간섬유화."><figcaption>만성 손상에서 세포외기질이 증가하는 간섬유화.</figcaption></figure></div></div></section><section id="wiki-6-쓸개즙-통로-biliary-passages" class="wiki-section" data-wiki-section="쓸개즙-통로-biliary-passages" data-wiki-heading="쓸개즙 통로 · Biliary passages" data-wiki-number="s-9"><div class="wiki-section-head"><h4>쓸개즙 통로 · Biliary passages</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-쓸개즙-통로-biliary-passages-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="8" aria-label="쓸개즙 통로 · Biliary passages 문단 편집">편집</button></div></div><div id="wiki-6-쓸개즙-통로-biliary-passages-content" class="wiki-section-content"><h5 data-wiki-section="간속쓸개관-intrahepatic-ducts">간속쓸개관 · Intrahepatic ducts</h5><p>쓸개즙은 다음 순서로 흐른다.</p><p># <strong>쓸개모세관(bile canaliculi)</strong>: 이웃한 간세포의 세포막 사이에 형성되며 독립된 lining cell이 없다. # <strong>Hering관(canal of Hering)</strong> # <strong>쓸개세관(bile ductule)</strong> # <strong>소엽사이쓸개관(interlobular bile duct)</strong>: 문맥구역에 있다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p19-img01.jpg" alt="간세포에서 시작하는 쓸개모세관과 반대 방향으로 흐르는 동굴모세혈관 혈류."><figcaption>간세포에서 시작하는 쓸개모세관과 반대 방향으로 흐르는 동굴모세혈관 혈류.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p19-img02.jpg" alt="쓸개모세관·Hering관·쓸개세관·소엽사이쓸개관의 연결."><figcaption>쓸개모세관·Hering관·쓸개세관·소엽사이쓸개관의 연결.</figcaption></figure></div><h5 data-wiki-section="간밖쓸개관-extrahepatic-ducts">간밖쓸개관 · Extrahepatic ducts</h5><p># 오른간관과 왼간관(right and left hepatic ducts) # 온간관(common hepatic duct)과 담낭의 쓸개주머니관(cystic duct) # 온쓸개관(common bile duct)과 이자관(pancreatic duct) # Oddi 조임근(sphincter of Oddi)을 포함하는 간이자팽대(ampulla of Vater) # 큰샘창자유두(major duodenal papilla)를 거쳐 샘창자(duodenum)로 개구</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p20-img01.jpg" alt="간속·간밖쓸개관, 담낭관, 온쓸개관, 이자관과 큰샘창자유두의 연결."><figcaption>간속·간밖쓸개관, 담낭관, 온쓸개관, 이자관과 큰샘창자유두의 연결.</figcaption></figure></div><h5 data-wiki-section="쓸개관세포-cholangiocytes">쓸개관세포 · Cholangiocytes</h5><p>쓸개관세포(cholangiocytes)는 Hering관부터 쓸개관나무(biliary tree)의 상피를 이룬다.</p><ul><li>작은 관에서는 입방형이고 큰 관에서는 원주형이다.</li><li>치밀이음, 미세융모와 일차섬모(primary cilia)가 있다.</li><li>bicarbonate-rich fluid를 분비하여 쓸개즙을 변형한다.</li><li>큰 쓸개관은 결합조직과 민무늬근으로 둘러싸이며 점액분비샘을 포함할 수 있다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p21-img02.jpg" alt="쓸개관세포의 일차섬모가 쓸개관 내강으로 돌출된 미세구조."><figcaption>쓸개관세포의 일차섬모가 쓸개관 내강으로 돌출된 미세구조.</figcaption></figure></div></div></section><section id="wiki-6-담낭-gallbladder" class="wiki-section" data-wiki-section="담낭-gallbladder" data-wiki-heading="담낭 · Gallbladder" data-wiki-number="s-10"><div class="wiki-section-head"><h4>담낭 · Gallbladder</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-담낭-gallbladder-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="9" aria-label="담낭 · Gallbladder 문단 편집">편집</button></div></div><div id="wiki-6-담낭-gallbladder-content" class="wiki-section-content"><p>담낭은 쓸개주머니관을 통해 온간관과 연결되는 배 모양 주머니이다. 목(neck), 몸통(body), 바닥(fundus)으로 나뉘며 약 30-50 mL의 쓸개즙을 저장하고 농축한다.</p><h5 data-wiki-section="담낭벽">담낭벽</h5><p># <strong>점막(mucosa)</strong>: 단층원주상피(simple columnar epithelium)와 고유판(lamina propria)으로 구성된다. 점막근육층(muscularis mucosae)이 없다. # <strong>점막밑층(submucosa)</strong>: 없다. # <strong>근육층(muscularis externa)</strong>: 불규칙하게 배열된 민무늬근으로 이루어지며, 뚜렷한 속돌림근·바깥세로근 배열이 없다. # <strong>장막 또는 바깥막(serosa or adventitia)</strong>: 위치에 따라 바깥층을 이룬다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p22-img01.jpg" alt="담낭과 쓸개길의 해부학적 연결."><figcaption>담낭과 쓸개길의 해부학적 연결.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p22-img02.jpg" alt="담낭벽의 점막, 근육층과 바깥막."><figcaption>담낭벽의 점막, 근육층과 바깥막.</figcaption></figure></div><h5 data-wiki-section="쓸개즙-농축과-방출">쓸개즙 농축과 방출</h5><p>담낭의 단층원주세포에는 미세융모, 치밀이음을 포함하는 junctional complex와 풍부한 mitochondria가 있다. Na+/K+-ATPase pump를 이용해 전해질과 물을 흡수하여 쓸개즙을 약 5-10배 농축한다.</p><p>샘창자에 지방산과 아미노산이 도달하면 I cell에서 cholecystokinin(CCK)이 분비된다. CCK는 담낭을 수축시키고 Oddi 조임근을 이완시켜 쓸개즙을 방출한다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p23-img01.jpg" alt="담낭 상피세포의 미세융모, junctional complex와 Na+/K+-ATPase를 통한 전해질·물 흡수."><figcaption>담낭 상피세포의 미세융모, junctional complex와 Na+/K+-ATPase를 통한 전해질·물 흡수.</figcaption></figure></div></div></section><section id="wiki-6-이자-pancreas" class="wiki-section" data-wiki-section="이자-pancreas" data-wiki-heading="이자 · Pancreas" data-wiki-number="s-11"><div class="wiki-section-head"><h4>이자 · Pancreas</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-6-이자-pancreas-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="10" aria-label="이자 · Pancreas 문단 편집">편집</button></div></div><div id="wiki-6-이자-pancreas-content" class="wiki-section-content"><p>얇은 결합조직 피막이 이자를 둘러싸고, 피막에서 뻗은 얇은 사이막이 이자를 소엽으로 나눈다. 외분비 부분인 이자샘꽈리(pancreatic acini)와 내분비 부분인 이자섬(pancreatic islets)이 함께 존재한다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p24-img01.jpg" alt="이자의 해부학적 구분과 소엽 안의 외분비 이자샘꽈리·내분비 이자섬."><figcaption>이자의 해부학적 구분과 소엽 안의 외분비 이자샘꽈리·내분비 이자섬.</figcaption></figure></div><h5 data-wiki-section="외분비-부분-exocrine-portion">외분비 부분 · Exocrine portion</h5><p>이자의 외분비 부분은 소엽성 복합샘꽈리샘(lobulated compound acinar gland)이며, 장액샘꽈리와 가지치는 도관계통으로 구성된다.</p><h5 data-wiki-section="이자샘꽈리-pancreatic-acini">이자샘꽈리 · Pancreatic acini</h5><ul><li>작은 내강 주위에 피라미드형 샘꽈리세포가 배열된다.</li><li>꼭대기 쪽 세포질에 호산성 zymogen granules가 있다.</li><li>소화효소를 생산한다.</li><li>비활성 단백질분해효소 전구체에는 trypsinogen, chymotrypsinogen과 proelastase가 있다.</li><li>활성효소에는 amylase, pancreatic lipase와 nucleases가 있다.</li><li>cholecystokinin과 acetylcholine의 조절을 받는다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p25-img01.jpg" alt="호산성 zymogen granules가 있는 이자샘꽈리의 조직상."><figcaption>호산성 zymogen granules가 있는 이자샘꽈리의 조직상.</figcaption></figure></div><h5 data-wiki-section="이자-도관계통">이자 도관계통</h5><p>샘꽈리 중심세포(centroacinar cells)는 사이도관(intercalated ducts)의 시작 부분이다. 흐름은 <strong>샘꽈리 중심세포 → 사이도관 → 소엽속도관 → 소엽사이도관 → 주이자관</strong> 순서이다.</p><p>도관세포는 HCO3--rich fluid를 분비하여 샘창자의 산성 미즙(acidic chyme)을 중화하며 secretin의 조절을 받는다. 이자는 줄무늬도관(striated duct)이 없다는 점에서 침샘과 구분된다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p25-img02.jpg" alt="샘꽈리세포의 zymogen granules와 샘꽈리 중심세포에서 시작하는 이자 도관계통."><figcaption>샘꽈리세포의 zymogen granules와 샘꽈리 중심세포에서 시작하는 이자 도관계통.</figcaption></figure></div><h5 data-wiki-section="외분비-이자의-기능-조절">외분비 이자의 기능 조절</h5><ul><li>샘꽈리세포는 zymogen granules의 trypsinogen, chymotrypsinogen, procarboxypeptidase와 (pro)elastase, 그리고 amylase·triacylglycerol lipase·ribonuclease·deoxyribonuclease를 분비한다.</li><li>이자관세포는 HCO3-와 물을 분비한다.</li><li>acetylcholine, CCK와 secretin이 외분비를 유도한다. CCK는 주로 효소 분비, secretin은 주로 bicarbonate-rich fluid 분비와 연결된다.</li><li>trypsin inhibitor는 이자 안에서 단백질분해효소가 조기 활성화되는 것을 억제한다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p26-img01.png" alt="샘창자에서 secretin·CCK가 분비되어 이자관세포의 bicarbonate와 샘꽈리세포의 소화효소 분비를 조절하는 과정."><figcaption>샘창자에서 secretin·CCK가 분비되어 이자관세포의 bicarbonate와 샘꽈리세포의 소화효소 분비를 조절하는 과정.</figcaption></figure></div><h5 data-wiki-section="내분비-부분-islets-of-langerhans">내분비 부분 · Islets of Langerhans</h5><p>이자섬은 외분비 이자 조직 사이에서 옅게 염색되는 세포무리이며 전체 이자조직의 약 1-2%를 차지한다. 내분비세포는 창문모세혈관 주위에 세포끈(cords)으로 배열되고 호르몬을 혈액으로 직접 분비한다.</p><ul><li><strong>β cells</strong>: insulin을 분비하여 혈당을 낮춘다.</li><li><strong>α cells</strong>: glucagon을 분비하여 혈당을 높인다.</li><li><strong>δ cells</strong>: somatostatin을 분비하여 insulin과 glucagon 분비를 억제한다.</li><li><strong>PP cells</strong>: pancreatic polypeptide를 분비하여 이자 분비를 조절한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p27-img01.jpg" alt="외분비 이자 조직 사이에서 옅게 염색되는 이자섬."><figcaption>외분비 이자 조직 사이에서 옅게 염색되는 이자섬.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-06-liver-gallbladder-pancreas/p27-img02.jpg" alt="Insulin·glucagon·somatostatin 면역염색으로 구분한 β·α·δ cells."><figcaption>Insulin·glucagon·somatostatin 면역염색으로 구분한 β·α·δ cells.</figcaption></figure></div></div></section><section class="wiki-footnotes"><h4>각주</h4><ol><li id="wiki-fn-6-1" class="wiki-footnote-item" data-wiki-footnote-back="1" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 1의 본문 위치로 이동">Acinar의 구성 성분과 Duct의 순서를 암기해야 한다.<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-6-1-1" data-wiki-footnote-back="1" data-wiki-footnote-reference="1" aria-label="본문의 각주 1 1번째 위치로 돌아가기">↩</a></span></li></ol></section></div></div></article></div></div>
       </section>
 
-      <section id="jbl-view" class="view" aria-label="JBL 전체 문항" hidden>
+      <section id="jbl-view" class="view" aria-label="JBL 전체 문항" hidden="">
         <div id="jbl-standalone" class="jbl-standalone"></div>
       </section>
     </main>
@@ -690,7 +740,7 @@
 
   <div id="jbl-image-modal" class="jbl-image-modal" role="dialog" aria-modal="true" aria-label="문항 이미지 확대">
     <button class="jbl-image-close" type="button" aria-label="이미지 닫기">×</button>
-    <img alt="확대된 문항 이미지" />
+    <img alt="확대된 문항 이미지">
   </div>
 
   <script src="./lecture-notes.js"></script>
@@ -985,6 +1035,31 @@
     const lectureNoteSources = window.LECTURE_NOTE_SOURCES || {};
     let noteEditingCourseId = null;
 
+    function wikiDocumentSections(source) {
+      const lines = String(source || '').replace(/\r\n?/g, '\n').split('\n');
+      const starts = [];
+      lines.forEach((line, index) => {
+        const match = line.match(/^==\s+(.+?)\s+==$/);
+        if (match) starts.push({ index, heading:match[1] });
+      });
+      return starts.map((item, sectionIndex) => ({
+        sectionIndex,
+        heading:item.heading,
+        start:item.index,
+        end:starts[sectionIndex + 1]?.index ?? lines.length,
+        source:lines.slice(item.index, starts[sectionIndex + 1]?.index ?? lines.length).join('\n').replace(/\n+$/, '')
+      }));
+    }
+
+    function replaceWikiDocumentSection(source, sectionIndex, replacement) {
+      const normalized = String(source || '').replace(/\r\n?/g, '\n');
+      const lines = normalized.split('\n');
+      const section = wikiDocumentSections(normalized)[sectionIndex];
+      if (!section) return normalized;
+      const replacementLines = String(replacement || '').replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n');
+      return [...lines.slice(0, section.start), ...replacementLines, ...lines.slice(section.end)].join('\n');
+    }
+
     const normalizeWikiKey = value => String(value || '')
       .replace(/'''|''/g, '')
       .trim()
@@ -1156,9 +1231,10 @@
         const imageMatch = line.match(/^\[\[파일:/);
         if (sectionMatch) {
           flushText();
-          if (sectionOpen) body.push('</section>');
+          if (sectionOpen) body.push('</div></section>');
           const record = headingRecords[sectionCursor++] || { slug:`section-${sectionCursor}`, number:`s-${sectionCursor}` };
-          body.push(`<section id="wiki-${course.id}-${record.slug}" class="wiki-section" data-wiki-section="${record.slug}" data-wiki-heading="${escapeHtml(record.heading)}" data-wiki-number="${record.number}"><h4>${renderWikiInline(sectionMatch[1], course, footnotes)}</h4>`);
+          const contentId = `wiki-${course.id}-${record.slug}-content`;
+          body.push(`<section id="wiki-${course.id}-${record.slug}" class="wiki-section" data-wiki-section="${record.slug}" data-wiki-heading="${escapeHtml(record.heading)}" data-wiki-number="${record.number}"><div class="wiki-section-head"><h4>${renderWikiInline(sectionMatch[1], course, footnotes)}</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle aria-expanded="true" aria-controls="${contentId}">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="${sectionCursor - 1}" aria-label="${escapeHtml(record.heading)} 문단 편집">편집</button></div></div><div id="${contentId}" class="wiki-section-content">`);
           sectionOpen = true;
         } else if (subsectionMatch || minorMatch) {
           flushText();
@@ -1185,7 +1261,7 @@
         }
       }
       flushText();
-      if (sectionOpen) body.push('</section>');
+      if (sectionOpen) body.push('</div></section>');
 
       if (footnotes.items.length) {
         body.push(`<section class="wiki-footnotes"><h4>각주</h4><ol>${footnotes.items.map(item => `<li id="wiki-fn-${course.id}-${item.number}" class="wiki-footnote-item" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 ${item.number}의 본문 위치로 이동">${renderWikiInline(item.content, course, footnotes, false)}<span class="wiki-footnote-backs">${Array.from({ length:item.references }, (_, index) => `<a class="wiki-footnote-back" href="#wiki-fnref-${course.id}-${item.number}-${index + 1}" data-wiki-footnote-back="${item.number}" data-wiki-footnote-reference="${index + 1}" aria-label="본문의 각주 ${item.number} ${index + 1}번째 위치로 돌아가기">↩${item.references > 1 ? index + 1 : ''}</a>`).join('')}</span></li>`).join('')}</ol></section>`);
@@ -1245,11 +1321,58 @@
         normalizeWikiKey(element.dataset.wikiHeading) === normalized ||
         normalizeWikiKey(element.dataset.wikiHeading).endsWith(normalized)
       );
+      const parentSection = target?.classList.contains('wiki-section') ? target : target?.closest('.wiki-section');
+      if (parentSection?.classList.contains('is-collapsed')) setWikiSectionExpanded(parentSection, true);
       target?.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+
+    function setWikiSectionExpanded(section, expanded) {
+      if (!section) return;
+      section.classList.toggle('is-collapsed', !expanded);
+      const button = section.querySelector(':scope > .wiki-section-head [data-wiki-section-toggle]');
+      if (!button) return;
+      button.setAttribute('aria-expanded', String(expanded));
+      button.textContent = expanded ? '접기' : '펼치기';
+    }
+
+    function openWikiSectionEditor(course, sectionIndex) {
+      document.querySelector('.wiki-section-editor-overlay')?.remove();
+      const section = wikiDocumentSections(lectureNoteSources[course.id])[sectionIndex];
+      if (!section) return;
+      const overlay = document.createElement('div');
+      overlay.className = 'wiki-section-editor-overlay';
+      overlay.innerHTML = `<section class="wiki-section-editor-dialog" role="dialog" aria-modal="true" aria-labelledby="wiki-section-editor-title"><div class="wiki-section-editor-head"><div><h3 id="wiki-section-editor-title">문단 편집</h3><p>${escapeHtml(section.heading)} · 제목을 포함한 문단 전체를 편집합니다.</p></div><button class="wiki-section-action" type="button" data-wiki-section-editor-close aria-label="문단 편집 닫기">닫기</button></div><div class="wiki-section-editor-body"><textarea class="wiki-source-editor" data-wiki-section-source spellcheck="false">${escapeHtml(section.source)}</textarea>${wikiSyntaxHelpMarkup()}<div class="wiki-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-wiki-section-editor-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-wiki-section-editor-save>저장하기</button></div></div></section>`;
+      document.body.appendChild(overlay);
+      const close = () => overlay.remove();
+      overlay.addEventListener('click', event => { if (event.target === overlay) close(); });
+      overlay.querySelector('[data-wiki-section-editor-close]').addEventListener('click', close);
+      overlay.querySelector('[data-wiki-section-editor-cancel]').addEventListener('click', close);
+      overlay.querySelector('[data-wiki-section-editor-save]').addEventListener('click', () => {
+        const updated = overlay.querySelector('[data-wiki-section-source]').value;
+        if (!/^==\s+.+?\s+==$/m.test(updated)) {
+          const textarea = overlay.querySelector('[data-wiki-section-source]');
+          textarea.setCustomValidity('문단 첫 줄에 == 문단 제목 == 형식을 유지하세요.');
+          textarea.reportValidity();
+          return;
+        }
+        lectureNoteSources[course.id] = replaceWikiDocumentSection(lectureNoteSources[course.id], sectionIndex, updated);
+        window.LECTURE_NOTE_SOURCES = lectureNoteSources;
+        jblHasUnsavedChanges = true;
+        close();
+        renderContentPanel(course);
+      });
+      overlay.querySelector('[data-wiki-section-source]').focus();
     }
 
     function bindWikiDocument(container, course) {
       container.querySelectorAll('[data-wiki-target]').forEach(button => button.addEventListener('click', () => scrollToWikiSection(container, button.dataset.wikiTarget)));
+      container.querySelectorAll('[data-wiki-section-toggle]').forEach(button => button.addEventListener('click', () => {
+        const section = button.closest('.wiki-section');
+        setWikiSectionExpanded(section, section.classList.contains('is-collapsed'));
+      }));
+      container.querySelectorAll('[data-wiki-section-edit]').forEach(button => button.addEventListener('click', () => {
+        openWikiSectionEditor(course, Number(button.dataset.wikiSectionEdit));
+      }));
       container.querySelectorAll('[data-jbl-question-link]').forEach(link => link.addEventListener('click', event => {
         event.preventDefault();
         openJblQuestionNumber(Number(link.dataset.jblQuestionLink));
@@ -1311,7 +1434,7 @@
       const source = lectureNoteSources[course.id];
       if (!source) return false;
       if (noteEditingCourseId === course.id) {
-        target.innerHTML = `<section class="wiki-editor-shell"><div class="wiki-editor-head"><div><h3>문서 편집</h3><p>위키 문법으로 문단 링크, 다른 강의 링크, 각주와 사진을 편집할 수 있습니다.</p></div></div><textarea class="wiki-source-editor" data-wiki-source spellcheck="false">${escapeHtml(source)}</textarea>${wikiSyntaxHelpMarkup()}<div class="wiki-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-wiki-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-wiki-save>저장하기</button><button class="jbl-btn jbl-save-btn" type="button" data-wiki-save-html>HTML 저장하기</button></div></section>`;
+        target.innerHTML = `<section class="wiki-editor-shell"><div class="wiki-editor-head"><div><h3>문서 편집</h3><p>위키 문법으로 문단 링크, 다른 강의 링크, 각주와 사진을 편집할 수 있습니다.</p></div></div><textarea class="wiki-source-editor" data-wiki-source spellcheck="false">${escapeHtml(source)}</textarea>${wikiSyntaxHelpMarkup()}<div class="wiki-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-wiki-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-wiki-save>저장하기</button><button class="jbl-btn jbl-save-btn" type="button" data-wiki-save-files>현재 파일 저장</button></div></section>`;
         const applySource = () => {
           lectureNoteSources[course.id] = target.querySelector('[data-wiki-source]').value;
           window.LECTURE_NOTE_SOURCES = lectureNoteSources;
@@ -1319,7 +1442,7 @@
         };
         target.querySelector('[data-wiki-cancel]').addEventListener('click', () => { noteEditingCourseId = null; renderContentPanel(course); });
         target.querySelector('[data-wiki-save]').addEventListener('click', () => { applySource(); noteEditingCourseId = null; renderContentPanel(course); });
-        target.querySelector('[data-wiki-save-html]').addEventListener('click', () => { applySource(); noteEditingCourseId = null; renderContentPanel(course); saveModifiedHtml(); });
+        target.querySelector('[data-wiki-save-files]').addEventListener('click', () => { applySource(); noteEditingCourseId = null; renderContentPanel(course); saveCurrentFiles(); });
         return true;
       }
       target.innerHTML = renderWikiDocument(source, course);
@@ -1505,36 +1628,45 @@
       container.querySelector('[data-jbl-next]')?.addEventListener('click', () => { state.index += 1; rerender(); scrollCurrentQuestionToTop(key); });
     }
 
-    function saveModifiedHtml() {
+    function downloadCurrentFile(filename, contents, type, delay = 0) {
+      window.setTimeout(() => {
+        const blob = new Blob([contents], { type });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1200);
+      }, delay);
+    }
+
+    function saveCurrentFiles() {
       const clone = document.documentElement.cloneNode(true);
       clone.querySelector('body')?.classList.remove('jbl-mode');
       clone.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== 'catalog-view'; });
+      clone.querySelectorAll('.wiki-section-editor-overlay').forEach(element => element.remove());
       clone.querySelector('#jbl-image-modal')?.classList.remove('show');
       clone.querySelector('#jbl-image-modal img')?.removeAttribute('src');
       const dataScript = clone.querySelector('#jbl-data-script, script[src="./jbl-data.js"]');
       const payload = JSON.stringify(window.JBL_DATA).replace(/</g, '\\u003c');
-      dataScript.id = 'jbl-data-script';
-      dataScript.removeAttribute('src');
-      dataScript.textContent = `window.JBL_DATA = ${payload};`;
+      dataScript.removeAttribute('id');
+      dataScript.setAttribute('src', './jbl-data.js');
+      dataScript.textContent = '';
       const noteDataScript = clone.querySelector('#lecture-note-data, script[src="./lecture-notes.js"]');
       const notePayload = JSON.stringify(lectureNoteSources).replace(/</g, '\\u003c');
-      noteDataScript.id = 'lecture-note-data';
-      noteDataScript.removeAttribute('src');
-      noteDataScript.textContent = `window.LECTURE_NOTE_SOURCES = ${notePayload};`;
-      const blob = new Blob([`<!DOCTYPE html>\n${clone.outerHTML}`], { type:'text/html;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = '소화기계_강의정리_수정본.html';
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      noteDataScript.removeAttribute('id');
+      noteDataScript.setAttribute('src', './lecture-notes.js');
+      noteDataScript.textContent = '';
+      downloadCurrentFile('index.html', `<!DOCTYPE html>\n${clone.outerHTML}`, 'text/html;charset=utf-8', 0);
+      downloadCurrentFile('jbl-data.js', `window.JBL_DATA = ${payload};\n`, 'text/javascript;charset=utf-8', 180);
+      downloadCurrentFile('lecture-notes.js', `window.LECTURE_NOTE_SOURCES = ${notePayload};\n`, 'text/javascript;charset=utf-8', 360);
       jblHasUnsavedChanges = false;
     }
 
-    function bindHtmlSave(container) {
-      container.querySelectorAll('[data-jbl-save-html]').forEach(button => button.addEventListener('click', saveModifiedHtml));
+    function bindCurrentFileSave(container) {
+      container.querySelectorAll('[data-jbl-save-files]').forEach(button => button.addEventListener('click', saveCurrentFiles));
     }
 
     function renderCourseJ(course) {
@@ -1560,12 +1692,12 @@
       const lectureIds = [...new Set(jblQuestions.flatMap(question => question.lectureIds))].sort((a,b) => a-b);
       const professors = [...new Set(jblQuestions.map(question => question.professor).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ko'));
       const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? `${course.id} ${titleText(course)}` : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p></section>` : '';
-      const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-html>HTML 저장하기</button></div></section>` : '';
+      const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files>현재 파일 저장</button></div></section>` : '';
       target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-open-lecture ${currentQuestion?.lectureIds?.length ? '' : 'disabled'}>강의 보기</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
       const rerender = renderJblStandalone;
       renderQuestionCard(target.querySelector('[data-jbl-root]'), questions, key, rerender);
       bindViewerNav(target.querySelector('.jbl-bottom-inner'), questions, key, rerender);
-      bindHtmlSave(target);
+      bindCurrentFileSave(target);
       target.querySelector('[data-jbl-linked-back]')?.addEventListener('click', () => history.back());
       target.querySelectorAll('[data-jbl-panel]').forEach(button => button.addEventListener('click', () => {
         state.panel = state.panel === button.dataset.jblPanel ? null : button.dataset.jblPanel;
@@ -1920,5 +2052,6 @@
     renderCatalog();
     if (location.hash && location.hash !== '#catalog') routeFromHash();
   </script>
-</body>
-</html>
+
+
+</body></html>
