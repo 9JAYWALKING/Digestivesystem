@@ -887,7 +887,8 @@
       [4,'위에서의 소화'],
       [5,'장에서의 소화'],
       [8,'간, 췌장에서의 소화'],
-      [9,'간, 췌장에서의 소화']
+      [9,'간, 췌장에서의 소화'],
+      [15,'영양소의 흡수']
     ]);
     const canonicalContentCourseId = id => Number(id) === 9 ? 8 : Number(id);
     const contentCourseNumber = course => canonicalContentCourseId(course.id) === 8 ? '8·9' : String(course.id);
@@ -2069,7 +2070,7 @@
     function showDetail(id, from = 'catalog', initialTab = '정리본', scrollToTop = true) {
       const course = byId(canonicalContentCourseId(id));
       if (!course) return;
-      const orderedCourses = courses.filter(item => ![9,15].includes(item.id)).sort((a,b) => a.id - b.id);
+      const orderedCourses = courses.filter(item => item.id !== 9).sort((a,b) => a.id - b.id);
       const courseIndex = orderedCourses.findIndex(item => item.id === course.id);
       const previousCourse = courseIndex > 0 ? orderedCourses[courseIndex - 1] : null;
       const nextCourse = courseIndex >= 0 && courseIndex < orderedCourses.length - 1 ? orderedCourses[courseIndex + 1] : null;
