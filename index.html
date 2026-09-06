@@ -380,6 +380,9 @@
     .wiki-figure { margin: 0; padding: 14px; border: 1px solid #dce8ed; border-radius: 18px; background: #fff; box-shadow: 0 8px 22px rgba(25,64,79,.06); }
     .wiki-figure img { width: 100%; max-height: 560px; display: block; object-fit: contain; border-radius: 12px; background: #fff; cursor: zoom-in; }
     .wiki-figure figcaption { margin-top: 10px; color: #6a818b; font-size: 12px; line-height: 1.55; }
+    .wiki-image-controls { display: flex; justify-content: flex-end; margin-bottom: 10px; }
+    .wiki-image-toggle { border: 1px solid #dce8ed; background: #f4f8fb; color: #244657; padding: 7px 12px; border-radius: 9px; font: inherit; font-size: 12px; cursor: pointer; }
+    .wiki-image-toggle:focus-visible { outline: 2px solid #398bc0; outline-offset: 2px; }
     .wiki-table-wrap { overflow-x: auto; margin: 20px 0; border: 1px solid #dce8ed; border-radius: 16px; }
     .wiki-table { width: 100%; border-collapse: collapse; min-width: 620px; background: #fff; font-size: 14px; }
     .wiki-table th, .wiki-table td { padding: 13px 14px; border-bottom: 1px solid #e7eef2; text-align: left; vertical-align: top; }
@@ -1190,6 +1193,12 @@
 
     function wikiLinkMarkup(rawTarget, rawDisplay, currentCourse) {
       const target = String(rawTarget || '').trim();
+      if (/^https?:\/\//i.test(target)) {
+        try {
+          const url = new URL(target);
+          if (['https:', 'http:'].includes(url.protocol)) return `<a class="wiki-link" href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${wikiEmphasisMarkup(String(rawDisplay || '').trim() || target)}</a>`;
+        } catch (_) { /* Invalid external URLs fall through to the missing-link renderer. */ }
+      }
       const separator = target.indexOf('#');
       const documentName = separator >= 0 ? target.slice(0, separator).trim() : target;
       let sectionName = separator >= 0 ? target.slice(separator + 1).trim() : '';
@@ -1274,9 +1283,13 @@
       const match = line.match(/^\[\[파일:([^|\]]+)(?:\|([^\]]*))?\]\]$/);
       if (!match) return '';
       const source = match[1].trim().replace(/^\.\//, '');
-      const caption = (match[2] || '강의록 이미지').trim();
+      const captionParts = (match[2] || '강의록 이미지').split('|');
+      const originalOption = captionParts.length > 1 && /^원본:/.test(captionParts.at(-1)) ? captionParts.pop().slice(3).trim().replace(/^\.\//, '') : '';
+      const caption = captionParts.join('|').trim();
       if (!source || /^(?:javascript|data):/i.test(source)) return '<div class="wiki-render-warning">허용되지 않는 이미지 경로입니다.</div>';
-      return `<figure class="wiki-figure"><img data-note-image src="./${escapeHtml(source)}" alt="${escapeHtml(caption)}" /><figcaption>${renderWikiInline(caption, course, footnoteState)}</figcaption></figure>`;
+      const safeOriginal = originalOption && !/^(?:javascript|data):/i.test(originalOption) ? originalOption : '';
+      const controls = safeOriginal ? `<div class="wiki-image-controls"><button class="wiki-image-toggle" type="button" data-wiki-image-toggle data-marked-src="./${escapeHtml(source)}" data-original-src="./${escapeHtml(safeOriginal)}" aria-pressed="true" aria-label="원본 필기 표시 숨기기">표시 숨기기</button></div>` : '';
+      return `<figure class="wiki-figure">${controls}<img data-note-image src="./${escapeHtml(source)}" alt="${escapeHtml(caption)}" /><figcaption>${renderWikiInline(caption, course, footnoteState)}</figcaption></figure>`;
     }
 
     function renderWikiDocument(source, course) {
@@ -1435,7 +1448,9 @@
     function findWikiSectionTarget(container, rawSection) {
       const requested = String(rawSection || '').replace(/^#/, '').trim();
       if (!requested) return container.querySelector('.wiki-note');
-      const candidates = [...container.querySelectorAll('[data-wiki-section], [data-wiki-number]')];
+      // Link controls carry the destination slug too; only document headings are destinations.
+      const candidates = [...container.querySelectorAll('[data-wiki-section], [data-wiki-number]')]
+        .filter(element => element.matches('section, h1, h2, h3, h4, h5, h6'));
       const exact = candidates.find(element => element.dataset.wikiSection === requested || element.dataset.wikiNumber === requested);
       if (exact) return exact;
       const ranked = candidates.map((element, index) => {
@@ -1596,6 +1611,17 @@
         element.addEventListener('click', returnToReference);
         if (element.classList.contains('wiki-footnote-item')) element.addEventListener('keydown', returnToReference);
       });
+      container.querySelectorAll('[data-wiki-image-toggle]').forEach(button => {
+        button.addEventListener('click', () => {
+          const image = button.closest('.wiki-figure')?.querySelector('[data-note-image]');
+          if (!image) return;
+          const showMarked = button.getAttribute('aria-pressed') !== 'true';
+          image.src = showMarked ? button.dataset.markedSrc : button.dataset.originalSrc;
+          button.setAttribute('aria-pressed', String(showMarked));
+          button.textContent = showMarked ? '표시 숨기기' : '표시 보기';
+          button.setAttribute('aria-label', showMarked ? '원본 필기 표시 숨기기' : '원본 필기 표시 보기');
+        });
+      });
       container.querySelectorAll('[data-note-image]').forEach(image => {
         image.addEventListener('click', () => openJblImage(image.src));
         image.addEventListener('error', () => { image.closest('.wiki-figure').hidden = true; });
@@ -1611,7 +1637,8 @@
         ['[[다른 문서#문단|출력글자]]', '다른 강의 문서의 특정 문단으로 이동'],
         ['[* 각주 내용]', '자동 번호 각주'], ['[*이름 각주 내용]', '이름 있는 각주 생성'], ['[*이름]', '같은 이름의 기존 각주 재호출'],
         ['{{123}}', '고유 문항번호 123번 J로 이동'],
-        ['[[파일:assets/경로/사진.jpg|사진 설명]]', '사진과 캡션 삽입']
+        ['[[파일:assets/경로/사진.jpg|사진 설명]]', '사진과 캡션 삽입'],
+        ['[[파일:assets/표시.png|사진 설명|원본:assets/원본.jpg]]', '표시 포함 사진과 원본 사진 전환']
       ];
       return `<details class="wiki-syntax-help"><summary>편집 문법 보기</summary><div class="wiki-syntax-grid">${rows.map(([syntax, description]) => `<code>${escapeHtml(syntax)}</code><span>${escapeHtml(description)}</span>`).join('')}</div></details>`;
     }
