@@ -67,6 +67,22 @@
       text-transform: uppercase;
     }
 
+    .site-logo {
+      display: inline-block;
+      padding: 5px 7px;
+      margin: -5px -7px;
+      border: 0;
+      border-radius: 10px;
+      color: inherit;
+      background: transparent;
+      font: inherit;
+      letter-spacing: inherit;
+      text-transform: inherit;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease;
+    }
+    .site-logo:hover, .site-logo:focus-visible { background: rgba(255,255,255,.12); transform: translateY(-1px); outline: 2px solid rgba(255,255,255,.72); outline-offset: 2px; }
+
     .top-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
 
     .nav-button,
@@ -337,8 +353,8 @@
     .empty-state span { display: block; max-width: 440px; margin-top: 7px; color: var(--muted); font-size: 13px; }
 
     /* Wiki-style lecture notes */
-    .content-panel.notes-mode { padding: 0; overflow: hidden; }
-    .wiki-note { color: #1e293b; line-height: 1.75; }
+    .content-panel.notes-mode { padding: 0; overflow: visible; }
+    .wiki-note { overflow: clip; border-radius: inherit; color: #1e293b; line-height: 1.75; }
     .wiki-hero { padding: clamp(28px,5vw,52px); background: linear-gradient(135deg,#eef9ff 0%,#f8fcff 56%,#fff 100%); border-bottom: 1px solid #dcecf4; }
     .wiki-hero-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
     .wiki-hero-title { min-width: 0; }
@@ -350,9 +366,18 @@
     .wiki-hero > p { max-width: 720px; margin: 14px 0 0; color: #52707d; font-size: 16px; }
     .wiki-stat-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
     .wiki-stat { padding: 9px 13px; border: 1px solid #cfe6f0; border-radius: 999px; background: rgba(255,255,255,.82); color: #24566a; font-size: 13px; font-weight: 850; }
-    .wiki-layout { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; padding: clamp(24px,5vw,48px); }
-    .wiki-toc { align-self: start; position: sticky; top: 24px; display: grid; gap: 5px; padding: 16px; border: 1px solid #dbe8ee; border-radius: 18px; background: #f8fbfc; }
-    .wiki-toc strong { margin-bottom: 6px; color: #315665; font-size: 13px; }
+    .wiki-layout { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 34px; padding: clamp(24px,5vw,48px); transition: grid-template-columns .24s ease, gap .24s ease; }
+    .wiki-layout.is-toc-collapsed { grid-template-columns: 44px minmax(0,1fr); gap: 18px; }
+    .wiki-toc { align-self: start; position: sticky; top: 14px; z-index: 80; display: flex; max-height: calc(100vh - 28px); flex-direction: column; padding: 16px; border: 1px solid #dbe8ee; border-radius: 18px; background: rgba(248,251,252,.97); box-shadow: 0 8px 24px rgba(25,64,79,.05); backdrop-filter: blur(8px); transition: width .24s ease, padding .24s ease, border-radius .24s ease; }
+    .wiki-toc-head { display: flex; min-height: 28px; align-items: center; justify-content: space-between; gap: 8px; flex: 0 0 auto; }
+    .wiki-toc strong { color: #315665; font-size: 13px; }
+    .wiki-toc-toggle { display: inline-grid; width: 28px; height: 28px; flex: 0 0 28px; place-items: center; padding: 0; border: 0; border-radius: 8px; background: transparent; color: #315665; font-family: inherit; font-size: 20px; font-weight: 900; line-height: 1; cursor: pointer; }
+    .wiki-toc-toggle:hover, .wiki-toc-toggle:focus-visible { background: #e7f5fb; color: #0b729c; outline: none; }
+    .wiki-toc-links { min-height: 0; margin-top: 7px; overflow-x: hidden; overflow-y: auto; scrollbar-width: thin; }
+    .wiki-layout.is-toc-collapsed .wiki-toc { width: 44px; padding: 7px; border-radius: 14px; }
+    .wiki-layout.is-toc-collapsed .wiki-toc-head { justify-content: center; }
+    .wiki-layout.is-toc-collapsed .wiki-toc-title,
+    .wiki-layout.is-toc-collapsed .wiki-toc-links { display: none; }
     .wiki-toc-link { width: 100%; padding: 8px 9px; border: 0; border-radius: 10px; background: transparent; color: #5f7883; text-align: left; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; }
     .wiki-toc-link:hover { background: #e7f5fb; color: #0b729c; }
     .wiki-article { min-width: 0; }
@@ -389,6 +414,9 @@
     .wiki-table th { background: #edf8fc; color: #28586b; font-weight: 900; }
     .wiki-table tr:last-child td { border-bottom: 0; }
     .wiki-link { color: #087ea4; font-weight: 850; text-decoration: none; border-bottom: 1px dotted #38a9cf; }
+    .wiki-link-strong { font-weight: 950; border-bottom-width: 2px; -webkit-text-stroke: .16px currentColor; }
+    .wiki-strong-group { font-weight: 900; }
+    .wiki-strong-group .wiki-link { font-weight: 950; border-bottom-width: 2px; -webkit-text-stroke: .16px currentColor; }
     .wiki-link:hover, .wiki-link:focus-visible { color: #075985; border-bottom-style: solid; outline: none; }
     .wiki-link-missing { color: #b91c1c; border-bottom: 1px dotted #ef4444; cursor: help; }
     .wiki-footnote-ref { position: relative; display: inline-block; margin-left: 2px; color: #1683ad; font-size: .75em; font-weight: 900; text-decoration: none; vertical-align: super; }
@@ -638,9 +666,11 @@
       .jbl-editor-grid { grid-template-columns: 1fr; }
       .jbl-editor-field.full { grid-column: auto; }
       .jbl-lecture-options { grid-template-columns: 1fr; max-height: 280px; }
-      .wiki-layout { grid-template-columns: 1fr; gap: 24px; }
-      .wiki-toc { position: static; grid-template-columns: repeat(2,minmax(0,1fr)); }
-      .wiki-toc strong { grid-column: 1 / -1; }
+      .wiki-layout, .wiki-layout.is-toc-collapsed { grid-template-columns: minmax(0,1fr); gap: 18px; }
+      .wiki-layout.is-toc-collapsed { gap: 10px; }
+      .wiki-toc { position: sticky; top: 8px; width: 100%; max-height: min(52vh,420px); padding: 12px; border-radius: 15px; }
+      .wiki-toc-links { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 5px; }
+      .wiki-layout.is-toc-collapsed .wiki-toc { width: 44px; justify-self: start; padding: 7px; }
       .wiki-grid { grid-template-columns: 1fr; }
       .wiki-hero-title-row { gap: 10px; }
       .wiki-hero-actions { gap: 5px; }
@@ -683,7 +713,7 @@
   <div class="site-shell">
     <header class="masthead">
       <div class="masthead-inner">
-        <h1>Digestive System</h1>
+        <h1><button class="site-logo" type="button" data-go="schedule" aria-label="소화기계 시간표로 이동">Digestive System</button></h1>
         <nav class="top-actions" aria-label="주요 메뉴">
           <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
           <button class="nav-button primary" type="button" data-go="schedule">시간표 보기</button>
@@ -1191,12 +1221,14 @@
       return Boolean(resolveWikiSourceSection(course, sectionName));
     }
 
-    function wikiLinkMarkup(rawTarget, rawDisplay, currentCourse) {
+    function wikiLinkMarkup(rawTarget, rawDisplay, currentCourse, stronglyEmphasized = false) {
       const target = String(rawTarget || '').trim();
+      const linkClass = stronglyEmphasized ? 'wiki-link wiki-link-strong' : 'wiki-link';
+      const missingClass = stronglyEmphasized ? 'wiki-link-missing wiki-link-strong' : 'wiki-link-missing';
       if (/^https?:\/\//i.test(target)) {
         try {
           const url = new URL(target);
-          if (['https:', 'http:'].includes(url.protocol)) return `<a class="wiki-link" href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${wikiEmphasisMarkup(String(rawDisplay || '').trim() || target)}</a>`;
+          if (['https:', 'http:'].includes(url.protocol)) return `<a class="${linkClass}" href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${wikiEmphasisMarkup(String(rawDisplay || '').trim() || target)}</a>`;
         } catch (_) { /* Invalid external URLs fall through to the missing-link renderer. */ }
       }
       const separator = target.indexOf('#');
@@ -1211,11 +1243,11 @@
           sectionName = '';
         }
       }
-      if (!targetCourse) return `<span class="wiki-link-missing" title="연결할 문서를 찾을 수 없습니다.">${wikiEmphasisMarkup(display)}</span>`;
+      if (!targetCourse) return `<span class="${missingClass}" title="연결할 문서를 찾을 수 없습니다.">${wikiEmphasisMarkup(display)}</span>`;
       const canonicalCourse = byId(canonicalContentCourseId(targetCourse.id)) || targetCourse;
       const targetSection = sectionName ? resolveWikiSourceSection(canonicalCourse, sectionName) : null;
-      if (sectionName && !targetSection) return `<span class="wiki-link-missing" title="연결할 문단을 정확히 찾을 수 없습니다.">${wikiEmphasisMarkup(display)}</span>`;
-      return `<a class="wiki-link" href="#lecture-${canonicalCourse.id}" data-wiki-course="${canonicalCourse.id}" data-wiki-section="${escapeHtml(targetSection?.slug || '')}">${wikiEmphasisMarkup(display)}</a>`;
+      if (sectionName && !targetSection) return `<span class="${missingClass}" title="연결할 문단을 정확히 찾을 수 없습니다.">${wikiEmphasisMarkup(display)}</span>`;
+      return `<a class="${linkClass}" href="#lecture-${canonicalCourse.id}" data-wiki-course="${canonicalCourse.id}" data-wiki-section="${escapeHtml(targetSection?.slug || '')}">${wikiEmphasisMarkup(display)}</a>`;
     }
 
     function wikiFootnotePreviewText(value) {
@@ -1229,15 +1261,17 @@
       return text.length > 260 ? `${text.slice(0, 257)}…` : text;
     }
 
-    function renderWikiInline(value, course, footnoteState, allowFootnotes = true) {
+    function renderWikiInline(value, course, footnoteState, allowFootnotes = true, strongContext = false) {
       const source = String(value || '');
-      const tokenPattern = /\[\*([^\]]+)\]|\[\[([^\]]+)\]\]|\{\{(\d+)\}\}/g;
+      const tokenPattern = /'''([\s\S]*?)'''|\[\*([^\]]+)\]|\[\[([^\]]+)\]\]|\{\{(\d+)\}\}/g;
       let output = '';
       let cursor = 0;
       for (const match of source.matchAll(tokenPattern)) {
         output += wikiEmphasisMarkup(source.slice(cursor, match.index));
-        if (match[1] != null && allowFootnotes) {
-          const rawBody = match[1];
+        if (match[1] != null) {
+          output += `<strong class="wiki-strong-group">${renderWikiInline(match[1], course, footnoteState, allowFootnotes, true)}</strong>`;
+        } else if (match[2] != null && allowFootnotes) {
+          const rawBody = match[2];
           const anonymous = /^\s/.test(rawBody);
           const trimmed = rawBody.trim();
           let name = '';
@@ -1261,13 +1295,13 @@
           footnote.references += 1;
           const referenceId = `wiki-fnref-${course.id}-${footnote.number}-${footnote.references}`;
           output += `<sup><a id="${referenceId}" class="wiki-footnote-ref" href="#wiki-fn-${course.id}-${footnote.number}" data-wiki-footnote="${footnote.number}" data-wiki-footnote-preview="${escapeHtml(wikiFootnotePreviewText(footnote.content))}">[${footnote.number}]</a></sup>`;
-        } else if (match[1] != null) {
-          output += wikiEmphasisMarkup(match[0]);
         } else if (match[2] != null) {
-          const parts = match[2].split('|');
-          output += wikiLinkMarkup(parts.shift(), parts.join('|'), course);
+          output += wikiEmphasisMarkup(match[0]);
+        } else if (match[3] != null) {
+          const parts = match[3].split('|');
+          output += wikiLinkMarkup(parts.shift(), parts.join('|'), course, strongContext);
         } else {
-          const globalNumber = Number(match[3]);
+          const globalNumber = Number(match[4]);
           const linkedQuestion = jblQuestions.find(question => question.globalNumber === globalNumber);
           output += linkedQuestion
             ? `<a class="jbl-question-link" href="#jbl-q-${globalNumber}" data-jbl-question-link="${globalNumber}">${globalNumber}번 문항</a>`
@@ -1556,6 +1590,39 @@
     }
 
     function bindWikiDocument(container, course) {
+      const toc = container.querySelector('.wiki-toc');
+      const tocLayout = toc?.closest('.wiki-layout');
+      if (toc && tocLayout) {
+        const title = [...toc.children].find(child => child.tagName === 'STRONG');
+        const head = document.createElement('div');
+        head.className = 'wiki-toc-head';
+        if (title) {
+          title.classList.add('wiki-toc-title');
+          head.append(title);
+        }
+        const toggle = document.createElement('button');
+        toggle.className = 'wiki-toc-toggle';
+        toggle.type = 'button';
+        const links = document.createElement('div');
+        links.className = 'wiki-toc-links';
+        [...toc.children].forEach(child => links.append(child));
+        toc.prepend(head);
+        head.append(toggle);
+        toc.append(links);
+
+        let savedCollapsed = false;
+        try { savedCollapsed = localStorage.getItem('digestive-wiki-toc-collapsed') === '1'; } catch (_) { /* file:// privacy mode */ }
+        const setTocCollapsed = collapsed => {
+          tocLayout.classList.toggle('is-toc-collapsed', collapsed);
+          toggle.textContent = collapsed ? '＿' : '−';
+          toggle.setAttribute('aria-expanded', String(!collapsed));
+          toggle.setAttribute('aria-label', collapsed ? '목차 펼치기' : '목차 접기');
+          toggle.title = collapsed ? '목차 펼치기' : '목차 접기';
+          try { localStorage.setItem('digestive-wiki-toc-collapsed', collapsed ? '1' : '0'); } catch (_) { /* file:// privacy mode */ }
+        };
+        setTocCollapsed(savedCollapsed);
+        toggle.addEventListener('click', () => setTocCollapsed(!tocLayout.classList.contains('is-toc-collapsed')));
+      }
       container.querySelectorAll('[data-wiki-target]').forEach(button => button.addEventListener('click', () => queueWikiSectionScroll(container, button.dataset.wikiTarget)));
       container.querySelectorAll('[data-wiki-section-toggle]').forEach(button => button.addEventListener('click', () => {
         const section = button.closest('.wiki-section');
