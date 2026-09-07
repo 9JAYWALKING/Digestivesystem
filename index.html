@@ -420,12 +420,11 @@
     .wiki-link:hover, .wiki-link:focus-visible { color: #075985; border-bottom-style: solid; outline: none; }
     .wiki-link-missing { color: #b91c1c; border-bottom: 1px dotted #ef4444; cursor: help; }
     .wiki-footnote-ref { position: relative; display: inline-block; margin-left: 2px; color: #1683ad; font-size: .75em; font-weight: 900; text-decoration: none; vertical-align: super; }
-    .wiki-footnote-ref::before,
-    .wiki-footnote-ref::after { position: absolute; left: 50%; z-index: 1200; pointer-events: none; opacity: 0; transition: opacity .15s ease, transform .15s ease; }
-    .wiki-footnote-ref::before { content: ""; bottom: calc(100% + 4px); border: 6px solid transparent; border-top-color: #18323d; transform: translate(-50%, 3px); }
-    .wiki-footnote-ref::after { content: attr(data-wiki-footnote-preview); bottom: calc(100% + 16px); width: max-content; min-width: 150px; max-width: min(340px, calc(100vw - 32px)); padding: 10px 12px; border-radius: 10px; color: #fff; background: #18323d; box-shadow: 0 10px 28px rgba(15,23,42,.22); font-size: 13px; font-weight: 650; line-height: 1.55; text-align: left; white-space: normal; vertical-align: baseline; transform: translate(-50%, 5px); }
-    .wiki-footnote-ref:hover::before, .wiki-footnote-ref:hover::after,
-    .wiki-footnote-ref:focus-visible::before, .wiki-footnote-ref:focus-visible::after { opacity: 1; transform: translate(-50%, 0); }
+    .wiki-footnote-preview-box { position: fixed; left: 0; top: 0; z-index: 10000; box-sizing: border-box; width: max-content; min-width: min(150px, calc(100vw - 24px)); max-width: min(340px, calc(100vw - 24px)); max-height: calc(100vh - 24px); overflow: auto; padding: 10px 12px; border-radius: 10px; color: #fff; background: #18323d; box-shadow: 0 10px 28px rgba(15,23,42,.22); font-size: 13px; font-weight: 650; line-height: 1.55; text-align: left; white-space: normal; pointer-events: none; opacity: 0; visibility: hidden; transition: opacity .12s ease; }
+    .wiki-footnote-preview-box.is-visible { opacity: 1; visibility: visible; }
+    .wiki-footnote-preview-arrow { position: absolute; left: var(--wiki-footnote-arrow-left, 50%); width: 0; height: 0; border: 6px solid transparent; transform: translateX(-50%); }
+    .wiki-footnote-preview-box[data-placement="above"] .wiki-footnote-preview-arrow { top: 100%; border-top-color: #18323d; }
+    .wiki-footnote-preview-box[data-placement="below"] .wiki-footnote-preview-arrow { bottom: 100%; border-bottom-color: #18323d; }
     .wiki-footnotes { margin-top: 38px; padding-top: 22px; border-top: 2px solid #dce8ed; }
     .wiki-footnotes h4 { margin: 0 0 12px; color: #315665; font-size: 18px; }
     .wiki-footnotes ol { margin: 0; padding-left: 26px; color: #526c77; }
@@ -1589,6 +1588,76 @@
       overlay.querySelector('[data-wiki-section-source]').focus();
     }
 
+    let activeWikiFootnotePreviewReference = null;
+    function ensureWikiFootnotePreviewBox() {
+      let preview = document.querySelector('[data-wiki-footnote-preview-box]');
+      if (preview) return preview;
+      preview = document.createElement('div');
+      preview.className = 'wiki-footnote-preview-box';
+      preview.dataset.wikiFootnotePreviewBox = '';
+      preview.setAttribute('role', 'tooltip');
+      preview.innerHTML = '<span data-wiki-footnote-preview-text></span><span class="wiki-footnote-preview-arrow" aria-hidden="true"></span>';
+      document.body.appendChild(preview);
+      const refresh = () => {
+        if (activeWikiFootnotePreviewReference?.isConnected) positionWikiFootnotePreview(activeWikiFootnotePreviewReference);
+        else hideWikiFootnotePreview();
+      };
+      window.addEventListener('resize', refresh, { passive:true });
+      window.visualViewport?.addEventListener('resize', refresh, { passive:true });
+      window.visualViewport?.addEventListener('scroll', refresh, { passive:true });
+      document.addEventListener('scroll', refresh, { passive:true, capture:true });
+      return preview;
+    }
+
+    function positionWikiFootnotePreview(reference) {
+      const preview = ensureWikiFootnotePreviewBox();
+      const text = reference?.dataset.wikiFootnotePreview?.trim();
+      if (!reference?.isConnected || !text) { hideWikiFootnotePreview(); return; }
+      preview.querySelector('[data-wiki-footnote-preview-text]').textContent = text;
+      preview.classList.add('is-visible');
+      preview.style.left = '0px';
+      preview.style.top = '0px';
+      preview.style.visibility = 'hidden';
+      const referenceRect = reference.getBoundingClientRect();
+      const previewRect = preview.getBoundingClientRect();
+      const viewport = window.visualViewport;
+      const viewportLeft = viewport?.offsetLeft || 0;
+      const viewportTop = viewport?.offsetTop || 0;
+      const viewportRight = viewportLeft + (viewport?.width || window.innerWidth);
+      const viewportBottom = viewportTop + (viewport?.height || window.innerHeight);
+      const margin = 12;
+      const gap = 10;
+      const center = referenceRect.left + referenceRect.width / 2;
+      const aboveTop = referenceRect.top - previewRect.height - gap;
+      const belowTop = referenceRect.bottom + gap;
+      const roomAbove = referenceRect.top - viewportTop;
+      const roomBelow = viewportBottom - referenceRect.bottom;
+      const placeAbove = aboveTop >= viewportTop + margin || roomAbove >= roomBelow;
+      const unclampedTop = placeAbove ? aboveTop : belowTop;
+      const maxTop = Math.max(viewportTop + margin, viewportBottom - previewRect.height - margin);
+      const top = Math.min(Math.max(unclampedTop, viewportTop + margin), maxTop);
+      const maxLeft = Math.max(viewportLeft + margin, viewportRight - previewRect.width - margin);
+      const left = Math.min(Math.max(center - previewRect.width / 2, viewportLeft + margin), maxLeft);
+      const arrowLeft = Math.min(Math.max(center - left, 14), Math.max(14, previewRect.width - 14));
+      preview.dataset.placement = placeAbove ? 'above' : 'below';
+      preview.style.setProperty('--wiki-footnote-arrow-left', `${arrowLeft}px`);
+      preview.style.left = `${left}px`;
+      preview.style.top = `${top}px`;
+      preview.style.visibility = '';
+    }
+
+    function showWikiFootnotePreview(reference) {
+      activeWikiFootnotePreviewReference = reference;
+      positionWikiFootnotePreview(reference);
+    }
+
+    function hideWikiFootnotePreview(reference) {
+      if (reference && activeWikiFootnotePreviewReference !== reference) return;
+      activeWikiFootnotePreviewReference = null;
+      const preview = document.querySelector('[data-wiki-footnote-preview-box]');
+      if (preview) preview.classList.remove('is-visible');
+    }
+
     function bindWikiDocument(container, course) {
       const toc = container.querySelector('.wiki-toc');
       const tocLayout = toc?.closest('.wiki-layout');
@@ -1655,13 +1724,20 @@
       const flashWikiTarget = target => {
         scrollWikiElementIntoView(target, { block:'center', flash:true });
       };
-      container.querySelectorAll('[data-wiki-footnote]').forEach(link => link.addEventListener('click', event => {
-        event.preventDefault();
-        const footnoteId = link.getAttribute('href')?.replace(/^#/, '');
-        const footnote = footnoteId ? document.getElementById(footnoteId) : null;
-        if (footnote) footnote.dataset.wikiReturnId = link.id;
-        flashWikiTarget(footnote);
-      }));
+      container.querySelectorAll('[data-wiki-footnote]').forEach(link => {
+        link.addEventListener('mouseenter', () => showWikiFootnotePreview(link));
+        link.addEventListener('mouseleave', () => hideWikiFootnotePreview(link));
+        link.addEventListener('focus', () => showWikiFootnotePreview(link));
+        link.addEventListener('blur', () => hideWikiFootnotePreview(link));
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          hideWikiFootnotePreview(link);
+          const footnoteId = link.getAttribute('href')?.replace(/^#/, '');
+          const footnote = footnoteId ? document.getElementById(footnoteId) : null;
+          if (footnote) footnote.dataset.wikiReturnId = link.id;
+          flashWikiTarget(footnote);
+        });
+      });
       container.querySelectorAll('[data-wiki-footnote-back]').forEach(element => {
         const returnToReference = event => {
           if (event.type === 'keydown' && !['Enter', ' '].includes(event.key)) return;
