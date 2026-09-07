@@ -1444,6 +1444,10 @@
       for (const rawLine of lines) {
         const line = rawLine.trim();
         if (!line) { flushText(); continue; }
+        if (/^\[\[파일:/.test(line)) {
+          const figure = renderWikiFigure(line, course, footnotes);
+          if (figure) { flushText(); output.push(figure); continue; }
+        }
         const levelTwo = line.match(/^==\s+(.+?)\s+==$/);
         const levelThree = line.match(/^===\s+(.+?)\s+===$/);
         if (levelTwo) { flushText(); output.push(`<h3>${renderWikiInline(levelTwo[1], course, footnotes, false)}</h3>`); continue; }
@@ -1822,7 +1826,7 @@
         let status = '';
         if (revealAnswer) {
           if (answerIndices.includes(number)) status = ' correct';
-          else if (selectedIndices.includes(number)) status = ' wrong';
+          else if (selectedIndices.includes(number)) status = answerIndices.length ? ' wrong' : ' selected';
         } else if (isMultipleAnswer && !selectionComplete) {
           if (selectedIndices.includes(number)) status = ' selected';
         } else if (selectedIndices.length) {
