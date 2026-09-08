@@ -875,12 +875,12 @@ window.JBL_DATA = {
         "Hepatocellular carcinoma",
         "Cholangiocarcinoma"
       ],
-      "answerIndex": 2,
+      "answerIndex": 4,
       "answerIndices": [
-        2
+        4
       ],
-      "answerLabel": "정답: 2번 · Hepatic hemangioma",
-      "explanation": "정답: 2번 · Hepatic hemangioma\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 4번 · Hepatocellular carcinoma",
+      "explanation": "정답: 4번 · Hepatocellular carcinoma\n\n== 배경 지식 ==\n간종괴는 동맥기에 조영된다는 사실만으로 구분할 수 없다. [[19강#Hepatocellular carcinoma · HCC|HCC]]는 arterial phase hyperenhancement 후 portal/delayed washout을 보일 수 있고, [[19강#Hepatic hemangioma|hemangioma]]는 주변부의 불연속적인 결절성 조영이 중심부로 점점 채워지는 centripetal fill-in이 전형적이다. 두 변화의 방향이 반대라는 점이 핵심이다.\n\n== 정답 선지 ==\n'''4번 — Hepatocellular carcinoma''': 동맥기에 밝게 보이는 간 병변이 portal phase를 거쳐 equilibrium phase에서 주변 간실질보다 뚜렷하게 어둡게 보인다. 이 세 장은 이번 강의록의 HCC 예시 위쪽 영상과 동일한 구성이다. 따라서 제시된 영상의 진단은 HCC다. 혈관종처럼 시간이 지나며 중심부가 채워지는 사진이 아니다.\n[* 이전 정답의 2번 hemangioma는 제시 사진과 맞지 않아 4번으로 수정했다. 비슷한 간종괴 문항인 {{151}}의 사진은 실제로 hemangioma이므로 두 문항의 영상을 바꿔 생각하지 않는다.]\n\n== 오답 선지 ==\n* '''1번 FNH—central scar''': 실질의 비교적 균질한 동맥기 조영과 중심 반흔의 지연 조영이 전형적이다. 이 사진의 중심 단서는 scar의 지연 조영이 아니라 병변 전체의 상대적 washout이다.\n* '''2번 Hepatic hemangioma''': 주변부 결절성 조영이 중심부로 채워지는 예시가 아니다. 뒤 시기에서 더 어두워지는 것을 fill-in으로 설명하면 안 된다.\n* '''3번 Hepatic adenoma—hemorrhage, necrosis''': adenoma도 동맥기에 조영될 수 있고 일부는 washout을 보이지만, 이 사진은 강의의 HCC 예시와 일치한다. 출혈·괴사라는 설명만으로 사진을 adenoma로 바꿔 판정할 수 없다.\n* '''5번 Cholangiocarcinoma''': 섬유성 기질에 의한 점진적 지연 조영 등이 중요하다. 제시된 HCC의 arterial enhancement–washout 패턴에 가장 잘 맞는 선지는 아니다.\n\n== 출제 의도 ==\n간의 다중시기 CT를 순서대로 읽어 HCC의 washout과 hemangioma의 centripetal fill-in, FNH의 central scar를 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#Hepatocellular carcinoma · HCC|Hepatocellular carcinoma · HCC]]\n* [[19강#Hepatic hemangioma|Hepatic hemangioma]]\n* [[19강#Focal nodular hyperplasia · FNH|Focal nodular hyperplasia · FNH]]\n\n== 관련 J ==\n{{151}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_023_01.png"
       ],
@@ -899,7 +899,8 @@ window.JBL_DATA = {
       "sourceQuestionNumber": 23,
       "priorMatch": 1,
       "legacyDisplayId": "2025 23번",
-      "globalNumber": 23
+      "globalNumber": 23,
+      "answerVerification": "2026 영상의학 강의록 HCC 예시와 제시 CT의 일치 및 조영 패턴을 대조하여 기존 2번을 4번으로 수정"
     },
     {
       "id": "2025-24",
@@ -921,7 +922,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · Adenocarcinoma of pancreas",
-      "explanation": "정답: 3번 · Adenocarcinoma of pancreas\n\n[핵심 해설]\nMRCP에서 총담관과 주췌관이 함께 확장되는 double-duct sign이 보이고 췌두부에 고형 종괴가 관찰된다. 췌두부 선암이 Vater 팽대부 부근을 막아 두 관을 동시에 확장시킨 소견이므로 2가 정답이다.\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 3번 · Adenocarcinoma of pancreas\n\n== 배경 지식 ==\n[[19강#Pancreatic cancer와 double duct sign|췌두부 ductal adenocarcinoma]]는 distal common bile duct와 main pancreatic duct를 동시에 막을 수 있다. 상류의 두 관이 함께 확장되는 것이 '''double duct sign'''이다. MRCP는 확장된 관을, CT는 관을 막는 종괴와 혈관 관계를 보여 주므로 두 검사의 정보를 연결한다. Double duct sign 하나만으로 모든 경우의 암이 확진되는 것은 아니다.\n\n== 정답 선지 ==\n'''3번''': MRCP에서 담관과 주췌관이 함께 확장되어 있고, CT에서 그 하류의 췌두부 종괴가 확인된다. 종괴 위쪽의 담도 확장과 커진 담낭도 폐쇄의 결과로 이해할 수 있다. '''관의 동시 확장 + 폐쇄 부위의 고형 종괴'''를 함께 설명하는 진단은 pancreatic adenocarcinoma다. 췌장선암은 보통 hypovascular하여 조영 CT에서 정상 췌장보다 낮은 음영의 경계 불명확한 종괴로 보인다.\n\n== 오답 선지 ==\n* '''1번 Serous oligocystic adenoma''': 적은 수의 낭을 가진 SCN도 있을 수 있지만, 제시된 소견은 낭 자체보다 두 관을 막는 췌두부 고형 종괴가 핵심이다.\n* '''2번 Lymphoma''': 췌장을 침범하는 고형 종괴가 될 수는 있으나, 이 예시의 전형적인 관 폐쇄와 췌장선암의 영상 조합에 비해 덜 적합하다. ‘췌장 lymphoma는 절대 황달을 만들지 않는다’는 뜻은 아니다.\n* '''4번 Neuroendocrine tumor''': 전형적으로 arterial enhancement가 강한 종괴가 많다. 제시 예시의 췌장선암과 같은 영상으로 간주하지 않는다.\n* '''5번 Mucinous cystadenocarcinoma''': 주로 body/tail의 낭성 종양에서 악성화를 생각하는 맥락이다. 췌두부의 저혈관성 고형 종괴와 double duct sign이라는 조합과 다르다.\n\n== 출제 의도 ==\n담관과 췌관의 해부학적 합류 관계를 바탕으로 double duct sign의 원인을 찾고, 낭성 종양과 췌두부 고형암을 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#Pancreatic cancer와 double duct sign|Pancreatic cancer와 double duct sign]]\n* [[19강#췌장암의 혈관 침범과 전이|췌장암의 혈관 침범과 전이]]\n* [[19강#Mucinous cystic neoplasm · MCN|Mucinous cystic neoplasm · MCN]]\n\n== 관련 J ==\n{{152}} {{473}} {{762}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_024_01.png",
         "2025_소화기_문항별_사진/2025_024_02.png",
@@ -5570,7 +5571,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 4번 · 심방세동",
       "explanation": "정답: ④ 심방세동\n\n[핵심 해설]\n갑작스럽게 발생한 심한 복통, 항응고제 중단력, 심방세동 병력과 CT 혈관영상의 상장간막동맥 폐색 소견을 종합하면 급성 장간막 허혈, 그중 심장성 색전에 의한 상장간막동맥 폐색이 가장 의심된다. 심방세동은 대표적인 심장성 색전 원인이므로 ④가 정답이다.\n\n[선지별 해설]\n① 췌장염: 비장정맥·문맥·장간막정맥 혈전증과 연관될 수 있지만, 이 증례와 같은 상장간막동맥 색전의 대표 원인은 아니다.\n② 간경변: 문맥계 정맥혈전증 위험을 높일 수 있으나 급성 상장간막동맥 색전의 전형적 원인은 아니다.\n③ 이형 협심증: 관상동맥 연축 질환으로 장간막동맥 색전의 원인이 아니다.\n④ 심방세동: 좌심방 내 혈전이 전신순환으로 색전되어 상장간막동맥을 막을 수 있으므로 정답이다.\n⑤ 심방빈맥: 부정맥이지만 심방세동만큼 전형적인 심장성 색전 고위험 원인은 아니다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "7.png"
+        "2023_소화기_문항별_사진/7.png"
       ],
       "legacyProfessor": "강지희",
       "lectureIds": [
@@ -5609,7 +5610,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 5번 · 진단즉시 시험적 개복술을 시행한다.",
       "explanation": "정답: ⑤ 즉시 시험적 개복술을 시행한다.\n\n[핵심 해설]\n췌장염 뒤 발생한 장간막정맥혈전증으로 해석되는 증례이다. 활력징후가 안정적이고 반발통 등 복막자극징후가 없다면 우선 항응고치료와 보존적 치료를 시행하며 면밀히 관찰한다. 장괴사·천공이나 복막염을 시사하는 소견 없이 즉시 시험적 개복술을 하는 것은 적절하지 않으므로 ⑤가 정답이다.\n\n[선지별 해설]\n① 금식·수액 및 경과 관찰: 안정된 환자에서 시행하는 보존적 치료의 일부로 적절하다.\n② 혈전용해술 고려: 표준적인 일차 치료는 아니지만, 악화하거나 선택된 환자에서 중재적 치료로 고려할 수 있다.\n③ 항응고제 투여: 급성 장간막정맥혈전증의 기본 치료로 적절하다.\n④ 예방적 항생제 투여: 원 교수님 해설에서는 장허혈에 따른 장 점막 장벽 손상과 세균 전이를 고려한 조치로 적절한 선택지로 처리했다. 다만 합병증 없는 장간막정맥혈전증에서의 일률적 사용 여부는 임상 상황과 지침에 따라 달라질 수 있다.\n⑤ 즉시 시험적 개복술: 복막염, 장괴사 또는 천공이 의심될 때 시행한다. 이 증례에는 그런 소견이 제시되지 않았으므로 부적절하다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "8.png"
+        "2023_소화기_문항별_사진/8.png"
       ],
       "legacyProfessor": "강지희",
       "lectureIds": [
@@ -5975,9 +5976,9 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · Hepatic hemangioma-diffuses toward the center",
-      "explanation": "정답: ④ Hepatic hemangioma — centripetal fill-in\n\n[핵심 해설]\n영상에서 주변부의 불연속적인 결절성 조영이 시작된 뒤 지연 영상으로 갈수록 중심부가 채워지는 양상은 간혈관종의 전형적인 centripetal fill-in이다. 따라서 ④가 정답이다.\n\n[선지별 해설]\n① Focal nodular hyperplasia: 중심 반흔과 균질한 동맥기 조영증강이 특징일 수 있으나 제시 영상의 핵심은 혈관종의 중심부 채움이다.\n② Hepatic adenoma: 동맥기 조영증강, 지방·출혈 또는 피막 등이 보일 수 있지만 전형적인 주변부 결절성 조영 후 중심부 채움과는 다르다.\n③ Hepatic adenocarcinoma: 일반적인 표준 진단명도 아니며 제시된 조영 양상과 맞지 않는다.\n④ Hepatic hemangioma: 주변부에서 중심부로 진행하는 조영증강이 전형적이므로 정답이다.\n⑤ Cholangiocarcinoma: 섬유성 기질 때문에 지연 조영을 보일 수 있지만 혈관종의 불연속적 주변부 결절성 조영과는 구분된다.\n\n[검토 상태]\n오답률 30 32page 수록.",
+      "explanation": "정답: 4번 · Hepatic hemangioma — diffuses toward the center\n\n== 배경 지식 ==\n[[19강#Hepatic hemangioma|Hemangioma]]는 혈액이 차는 혈관성 공간으로 이루어져, 조영제가 주변부 혈관 공간부터 들어간 뒤 중심으로 점차 퍼진다. [[19강#Hepatocellular carcinoma · HCC|HCC]]의 washout이나 [[19강#Focal nodular hyperplasia · FNH|FNH]]의 capillary blush와 구분한다.\n\n== 정답 선지 ==\n'''4번''': arterial phase에서 병변 가장자리에 밝은 결절들이 불연속적으로 나타나고, portal·equilibrium으로 가면서 조영되는 부분이 중심부 쪽으로 넓어진다. '''Diffuses toward the center = centripetal fill-in'''이라는 선지의 설명과 일치한다. 강의의 hemangioma CT 예시와 같은 영상이다.\n\n== 오답 선지 ==\n* '''1번 FNH—central fibrous scar''': 중심 반흔을 제외한 실질의 빠르고 균질한 조영과 scar의 지연 조영이 특징이다. 이 사진은 주변부 결절성 조영이 출발점이다.\n* '''2번 Hepatic adenoma''': 지방·출혈·괴사·피막을 동반한 불균질 종괴가 감별 단서다. 전형적인 centripetal fill-in을 가장 잘 설명하지 못한다.\n* '''3번 Hepatic adenocarcinoma''': 원문 표기는 그대로 두었지만 통상적인 HCC 명칭과도 다르다. 어떤 악성 간종양을 뜻하든 제시된 전형적 hemangioma의 조영 변화를 설명하는 선지가 아니다.\n* '''5번 Cholangiocarcinoma''': 중심 섬유성 기질의 지연 조영과 hemangioma의 주변부 결절성 조영을 구별해야 한다. 단지 ‘늦게 조영된다’는 공통점만으로 같은 병변으로 보면 안 된다.\n\n== 출제 의도 ==\n한 장의 밝기보다 주변부에서 중심부로 진행하는 조영의 시간적·공간적 변화를 읽을 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[19강#Hepatic hemangioma|Hepatic hemangioma]]\n* [[19강#Hepatocellular carcinoma · HCC|Hepatocellular carcinoma · HCC]]\n* [[19강#Focal nodular hyperplasia · FNH|Focal nodular hyperplasia · FNH]]\n\n== 관련 J ==\n{{23}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "24.png"
+        "2023_소화기_문항별_사진/24.png"
       ],
       "legacyProfessor": "김미영",
       "lectureIds": [
@@ -6014,10 +6015,10 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · Adenocarcinoma of pancreas",
-      "explanation": "정답: ② Adenocarcinoma of pancreas\n\n[핵심 해설]\nMRCP에서 총담관과 주췌관이 함께 확장되는 double-duct sign이 보이고 췌두부에 고형 종괴가 관찰된다. 췌두부 선암이 Vater 팽대부 부근을 막아 두 관을 동시에 확장시킨 소견이므로 ②가 정답이다.\n\n[선지별 해설]\n① Serous oligocystic adenoma: 낭성 종양으로 double-duct sign을 만드는 췌두부 고형암의 전형과 다르다.\n② Adenocarcinoma: 췌두부 종괴와 double-duct sign을 가장 잘 설명한다.\n③ Neuroendocrine tumor: 흔히 고혈관성 고형 종괴로 보이며 전형적인 저혈관성 췌장선암과 다르다.\n④ Lymphoma: 췌장을 침범할 수 있으나 이 영상 조합의 대표 진단은 아니다.\n⑤ Mucinous cystadenocarcinoma: 주로 체부·미부의 큰 낭성 종괴로 나타나며 제시 소견과 맞지 않는다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 2번 · Adenocarcinoma of pancreas\n\n== 배경 지식 ==\n[[19강#Pancreatic cancer와 double duct sign|췌두부 ductal adenocarcinoma]]는 distal common bile duct와 main pancreatic duct를 동시에 막을 수 있다. 상류의 두 관이 함께 확장되는 것이 '''double duct sign'''이다. MRCP는 확장된 관을, CT는 관을 막는 종괴와 혈관 관계를 보여 주므로 두 검사의 정보를 연결한다. Double duct sign 하나만으로 모든 경우의 암이 확진되는 것은 아니다.\n\n== 정답 선지 ==\n'''2번''': MRCP에서 담관과 주췌관이 함께 확장되어 있고, CT에서 그 하류의 췌두부 종괴가 확인된다. 종괴 위쪽의 담도 확장과 커진 담낭도 폐쇄의 결과로 이해할 수 있다. '''관의 동시 확장 + 폐쇄 부위의 고형 종괴'''를 함께 설명하는 진단은 pancreatic adenocarcinoma다. 췌장선암은 보통 hypovascular하여 조영 CT에서 정상 췌장보다 낮은 음영의 경계 불명확한 종괴로 보인다.\n\n== 오답 선지 ==\n* '''1번 Serous oligocystic adenoma''': 낭의 개수가 적은 SCN은 다른 낭성 병변과 닮을 수 있지만, 이 사진에서는 낭성 구조가 아니라 관을 막는 췌두부 고형 종괴가 진단의 중심이다.\n* '''3번 Neuroendocrine tumors''': 흔히 hypervascular한 고형 종괴다. 이 예시의 hypovascular pancreatic carcinoma와 구별한다.\n* '''4번 Lymphoma''': 가능성이 전혀 없는 진단은 아니지만, 이 강의 예시에서 보이는 종괴와 double duct sign을 가장 전형적으로 설명하는 것은 adenocarcinoma다.\n* '''5번 Mucinous cystadenocarcinoma''': 큰 낭성 종괴, 벽·septation 또는 mural nodule과 같은 낭성 종양의 특징을 살펴야 한다. 제시된 췌두부 고형암의 예시와 다르다.\n\n== 출제 의도 ==\n담관과 췌관의 해부학적 합류 관계를 바탕으로 double duct sign의 원인을 찾고, 낭성 종양과 췌두부 고형암을 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#Pancreatic cancer와 double duct sign|Pancreatic cancer와 double duct sign]]\n* [[19강#Serous cystic neoplasm · SCN|Serous cystic neoplasm · SCN]]\n* [[19강#Mucinous cystic neoplasm · MCN|Mucinous cystic neoplasm · MCN]]\n\n== 관련 J ==\n{{24}} {{473}} {{762}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "25(1).png",
-        "25(2).png"
+        "2023_소화기_문항별_사진/25(1).png",
+        "2023_소화기_문항별_사진/25(2).png"
       ],
       "legacyProfessor": "김미영",
       "lectureIds": [
@@ -6052,9 +6053,9 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답 확정 곤란",
-      "explanation": "정답 확정 곤란\n\n[핵심 해설]\n① 선지 문구가 이미지로만 남고 화살표·원문이 소실되었다. 위암은 림프절 전이, 췌장 직접침윤, 복막파종성 복수, 종양 내 궤양을 모두 보일 수 있어 빠진 ① 선지 없이는 단일정답을 판단할 수 없다.\n\n[선지별 해설]\n①:\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답 확정 곤란 — 선지 복원 누락 및 사진·선지 대응 확인 필요\n\n== 배경 지식 ==\n진행위암에서는 종양 내부의 '''malignant ulcer'''와 종양의 확산 경로를 구분한다. 바륨 조영술은 불규칙한 점막·종괴·궤양을, CT는 벽 비후와 주변 장기 침윤, 간 전이 및 복막파종을 보여 준다. Pseudodiverticulum은 장벽의 낭상 돌출을 가리키는 말이며, 종양 안에 파인 궤양과 같은 개념이 아니다.\n\n== 제시 영상의 판독 ==\n* '''A·B''': 불규칙한 위 종괴와 그 안의 궤양성 함몰을 본다.\n* '''C''': 위 종괴와 인접 췌장 사이의 직접침윤을 보는 예시다.\n* '''D''': 간 내부 병변으로, 다른 연도의 동일 영상에서는 liver metastasis에 대응한다.\n* '''E''': 복수와 복막·대망의 파종성 변화를 보는 예시다.\n\n== 정답 판단의 한계 ==\n현재 '''1번 선지는 비어 있고''', 2번에는 Lymph node metastasis가 적혀 있다. 다른 연도의 같은 A–E 사진과 선지 배열도 동일하지 않다. 따라서 {{296}}·{{474}}에서 1번이 답이었다는 이유로 이 문항도 1번으로 확정할 수 없다. 또한 D의 간 병변을 lymph node metastasis라고 바꿔 설명해서도 안 된다. 빠진 원문과 선지-사진 대응을 확인할 때까지 자동 채점은 보류한다.\n\n== 선지별 검토 ==\n* '''1번''': 문구가 없어 판단할 수 없다.\n* '''2번 Lymph node metastasis''': 위암에서 가능한 확산 경로이지만, 현재 A–E 구성에서 어느 림프절을 지칭하는지 명확하지 않다. 이 선지가 틀린 것인지, 복원 과정에서 문구가 달라진 것인지 원문 확인이 필요하다.\n* '''3번 Direct invasion to the pancreas''': C의 위 종괴와 췌장 사이 연속성을 설명하는 내용이다.\n* '''4번 Ascites with peritoneal seeding''': E의 복수·복막파종성 변화를 설명한다.\n* '''5번 Ulcer in the tumor''': A·B에서 보는 종양 내 궤양과 연결된다.\n\n== 출제 의도 ==\n원발 위암의 궤양과 인접 장기 침윤·전이 소견을 영상에서 구분하도록 한 문항으로 보인다. 다만 지금의 불완전한 선지로는 원래 의도한 유일한 오답을 복구할 수 없다.\n\n== Wiki 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n* [[19강#족보 영상 연결|족보 영상 연결]]\n\n== 관련 J ==\n{{296}} {{474}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "26.png"
+        "2023_소화기_문항별_사진/26.png"
       ],
       "legacyProfessor": "김미영",
       "lectureIds": [
@@ -7012,7 +7013,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 췌장 가성낭종(pancreatic pseudocyst)",
       "explanation": "정답: ③ 췌장 가성낭종(pancreatic pseudocyst)\n\n[핵심 해설]\n최근의 과도한 음주, 복통, amylase·lipase 상승은 알코올성 급성 췌장염을 시사한다. CT에서 췌장 주변에 경계가 분명한 큰 액체 저류가 관찰되므로 급성 췌장염 뒤 형성된 췌장 가성낭종이 가장 합당하다. 가성낭종은 상피성 피막이 없는 염증성 액체 저류라는 점에서 진성 낭성종양과 구분된다.\n\n[선지별 해설]\n① MCN: 주로 중년 여성의 췌장 체부·미부에 발생하는 진성 낭성종양으로, 난소형 간질이 특징이다.\n② SCN: 대개 중심 반흔을 동반한 미세낭성 또는 벌집 모양을 보이는 양성 성향의 낭성종양이다.\n③ 췌장 가성낭종: 급성 췌장염 또는 췌장 손상 병력과 연관된 액체 저류로 이 증례에 가장 합당하다.\n④ IPMN: 주췌관 또는 분지췌관과 연결되고 점액을 생성하는 췌관 내 종양이다.\n⑤ SPN: 주로 젊은 여성에게 발생하는 고형·낭성 혼합 종양으로 이 증례의 임상상과 맞지 않는다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "60.png"
+        "2023_소화기_문항별_사진/60.png"
       ],
       "legacyProfessor": "박진석",
       "lectureIds": [
@@ -7273,7 +7274,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 1번 · salt and pepper lesion을 나타낸다.",
       "explanation": "정답: 1번 · salt and pepper lesion을 나타낸다.\n\n[핵심 해설]\n대체 사진은 궤양성대장염의 미만성 과립상·홍반성 점막에 가깝다. Cobblestone, 깊은 종주궤양, 항문주위 합병증, aphthous ulcer는 Crohn병 단서다. 원사진이 아니라 확정에 제한이 있다.\n\n[선지별 해설]\n② cobblestone appearance를 나타낸다.: Cobblestone, 깊은 종주궤양, 항문주위 합병증, aphthous ulcer는 Crohn병 단서다.\n⑤ aphthous ulcer 내시경 소견이 나타난다.: Cobblestone, 깊은 종주궤양, 항문주위 합병증, aphthous ulcer는 Crohn병 단서다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "67.png"
+        "2023_소화기_문항별_사진/67.png"
       ],
       "legacyProfessor": "신종범",
       "lectureIds": [
@@ -7312,7 +7313,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · terminal ileum에 90% 존재한다.",
       "explanation": "정답: ③ Terminal ileum에 흔히 존재한다.\n\n[핵심 해설]\n내시경 소견은 Crohn병에 해당한다. Crohn병은 입에서 항문까지 어느 부위든 침범할 수 있지만 회맹부, 특히 terminal ileum 침범이 매우 흔하므로 ③이 출제 정답이다.\n\n[선지별 해설]\n① 식도를 제외한다: Crohn병은 식도를 포함한 전 위장관을 침범할 수 있어 틀렸다.\n② Caseating granuloma: Crohn병은 noncaseating granuloma가 특징이므로 틀렸다.\n③ Terminal ileum 침범: 가장 흔한 침범 부위 중 하나이므로 정답이다.\n④ Mucosa와 submucosa에 국한: Crohn병은 transmural inflammation이므로 틀렸다.\n⑤ Toxic megacolon: 주로 궤양성대장염과 연결되는 합병증으로 출제되었다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "68.png"
+        "2023_소화기_문항별_사진/68.png"
       ],
       "legacyProfessor": "신종범",
       "lectureIds": [
@@ -7351,7 +7352,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 1번 · 5개 이하의 round ulcer로 존 재한다.",
       "explanation": "정답: ① 5개 이하의 round ulcer로 존재한다.\n\n[핵심 해설]\n회맹부의 깊고 경계가 뚜렷한 원형 또는 난원형 궤양은 장 Behçet병의 전형적인 내시경 소견이다. 보통 소수의 궤양으로 나타나므로 ①이 정답이다.\n\n[선지별 해설]\n① 소수의 round ulcer: 장 Behçet병의 전형적 형태로 정답이다.\n② Continuous lesion: 궤양성대장염의 연속성 병변과 더 관련된다.\n③ Fecal calprotectin 증가: 비특이적 장염 지표여서 이 영상의 특이 진단 근거가 아니다.\n④ Circular ulcer: 장결핵 등 다른 질환에서 감별할 소견이다.\n⑤ 방사선 장염: 방사선 치료력이 제시되지 않았고 병변 형태도 맞지 않는다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "69.png"
+        "2023_소화기_문항별_사진/69.png"
       ],
       "legacyProfessor": "신종범",
       "lectureIds": [
@@ -8167,7 +8168,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 원발세균복막염",
       "explanation": "정답: ③ 원발세균복막염\n\n[핵심 해설]\n간경변과 복수가 있는 환자에서 복수 다형핵호중구(PMN)가 250/mm³ 이상이면 원발세균복막염(SBP)으로 진단한다. 이 환자의 복수 백혈구는 800/mm³이고 호중구가 50%이므로 PMN은 400/mm³로 진단 기준을 충족한다. SAAG도 1.4 g/dL로 문맥고혈압성 복수에 합당하다.\n\n[선지별 해설]\n① 간농양: 발열을 일으킬 수 있으나 복수 PMN 증가를 가장 직접적으로 설명하지 못한다.\n② 간세포암 파열: 보통 급성 복강내 출혈과 혈역학적 불안정이 두드러진다.\n③ 원발세균복막염: 간경변성 복수에서 PMN 250/mm³ 이상이므로 정답이다.\n④ 소화성궤양 천공: 복막자극징후가 나타날 수 있으나 복수 PMN 기준과 만성 간질환 배경은 SBP를 지지한다.\n⑤ 결핵성 복막염: 대개 아급성 경과와 림프구 우세 복수를 보인다.\n\n[검토 상태]\n오답률 30 45page 수록.",
       "images": [
-        "105.png"
+        "2023_소화기_문항별_사진/105.png"
       ],
       "legacyProfessor": "이진우",
       "lectureIds": [
@@ -8206,7 +8207,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 5번 · Proton pump inhibitors",
       "explanation": "정답: ⑤ Proton pump inhibitor\n\n[핵심 해설]\n활동성 식도정맥류 출혈은 내시경 지혈과 함께 vasoactive drug와 정주 항생제를 즉시 사용한다. 고위험 환자에서는 조기 TIPS도 고려할 수 있다. PPI는 산 관련 비정맥류 출혈 치료제이며 정맥류 출혈 자체를 치료하지 않으므로 원문 정답은 ⑤이다.\n\n[선지별 해설]\n① IV splanchnic vasoconstrictor: terlipressin, somatostatin 또는 octreotide를 조기에 투여하므로 적절하다.\n② IV antibiotics: 간경변 정맥류 출혈에서는 감염과 재출혈·사망을 줄이기 위해 예방적 항생제를 투여하므로 적절하다.\n③ Nonselective beta blocker: 급성 쇼크 상태에서 즉시 시작하는 약은 아니지만 출혈 조절 뒤 이차예방에 사용한다.\n④ TIPS: 표준 약물·내시경 치료 실패 시 구조요법으로, 선택된 고위험군에서는 조기 시행을 고려한다.\n⑤ PPI: 정맥류 출혈의 병태생리를 치료하지 않으므로 문항의 부적절한 치료이다.\n\n[검토 상태]\n오답률 30 22page 수록.",
       "images": [
-        "106.png"
+        "2023_소화기_문항별_사진/106.png"
       ],
       "legacyProfessor": "이진우",
       "lectureIds": [
@@ -8245,7 +8246,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 손으로 환자의 간 하부 가운데 부분을 누르고 숨을 들이마시게 하면 환자는 통증 을 느끼고 완전히 숨을 들이마실 수 없다.",
       "explanation": "정답: 3번 · 손으로 환자의 간 하부 가운데 부분을 누르고 숨을 들이마시게 하면 환자는 통증 을 느끼고 완전히 숨을 들이마실 수 없다.\n\n[핵심 해설]\n우상복부 늑골연 아래를 누른 채 들숨을 시키면 담낭이 손에 닿으면서 통증 때문에 흡기가 중단된다. 복수검사나 반동압통 검사가 아니다.\n\n[선지별 해설]\n③ 손으로 환자의 간 하부 가운데 부분을 누르고 숨을 들이마시게 하면 환자는 통증 을 느끼고 완전히 숨을 들이마실 수 없다.: 우상복부 늑골연 아래를 누른 채 들숨을 시키면 담낭이 손에 닿으면서 통증 때문에 흡기가 중단된다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "107.png"
+        "2023_소화기_문항별_사진/107.png"
       ],
       "legacyProfessor": "임정현",
       "lectureIds": [
@@ -8948,7 +8949,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 4번 · 전직장생검",
       "explanation": "정답: ④ 전직장생검\n\n[핵심 해설]\n태변 배출 지연과 복부팽만, 영상의 이행부는 Hirschsprung병을 시사한다. 확진은 직장 조직에서 신경절세포가 없음을 확인하는 rectal biopsy로 하므로 원문 정답은 ④이다.\n\n[선지별 해설]\n① 점막하생검: 복원 표현만으로는 검사의 종류가 불명확하며 원문 정답으로 제시되지 않았다.\n② 복부 CT: 장 확장과 합병증을 볼 수 있지만 확진 검사는 아니다.\n③ 직장항문압력검사: rectoanal inhibitory reflex 소실을 확인하는 보조검사이다.\n④ 전직장생검: 신경절세포 결손을 확인하는 확진검사로 정답이다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "133.png"
+        "2023_소화기_문항별_사진/133.png"
       ],
       "legacyProfessor": "최윤미",
       "lectureIds": [
@@ -9174,7 +9175,7 @@ window.JBL_DATA = {
       "answerLabel": "정답 추정: 5번 · Inguinal hernia",
       "explanation": "정답 추정: 5번 · Inguinal hernia\n\n[핵심 해설]\n서혜부에서 힘줄 때 커지는 종괴와 육안/CT가 합당하다. Spigelian hernia는 반월선 부위 복벽 외측에 생긴다. CT 표지 누락으로 세부 유형 확정에 제한이 있다.\n\n[선지별 해설]\n① Spigelian hernia: Spigelian hernia는 반월선 부위 복벽 외측에 생긴다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "139.png"
+        "2023_소화기_문항별_사진/139.png"
       ],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -9868,7 +9869,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 1번 · pseudomembranous colitis",
       "explanation": "정답: 1번 · pseudomembranous colitis\n\n[핵심 해설]\n항생제 뒤 발열과 황백색 가막은 C. difficile 감염에 전형적이다. HUS는 STEC 합병증이고 UC/Crohn은 가막이 핵심이 아니다.\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "161.png"
+        "2023_소화기_문항별_사진/161.png"
       ],
       "legacyProfessor": "신종범",
       "lectureIds": [
@@ -11356,7 +11357,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · solid pseudopapillary tumor",
-      "explanation": "정답: 4번 · solid pseudopapillary tumor\n\n[핵심 해설]\n강의록에 있는 CT사진입니다. Solid pseudopapillary tumor CT에서는 크고 cystic한 mass가 관찰됩니다. 사진만 보고 판단하긴 어려울 것 같은데 강의록에 있는 사진들로 내긴 하시네요. 교수님께서 설명하신 사진 위주로 잘 보고 암기해야 할 것 같습니다.. 팟팅..\n\n[선지별 해설]\n④ solid pseudopapillary tumor: Solid pseudopapillary tumor CT에서는 크고 cystic한 mass가 관찰됩니다.\n⑤ intraductal papillary mucinous tumor: Solid pseudopapillary tumor CT에서는 크고 cystic한 mass가 관찰됩니다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 4번 · Solid pseudopapillary tumor\n\n== 배경 지식 ==\n[[19강#Solid pseudopapillary tumor · SPN|SPN]]은 젊은 여성에서 생기는 경계 좋은 큰 종괴이며, 고형 부분과 낭성 변성·출혈이 섞여 있는 것이 대표적이다. 중심의 저음영만 보고 단순 낭종으로 판단하지 않고 주변에 조영되는 살아 있는 고형 성분이 있는지 본다.\n\n== 정답 선지 ==\n'''4번''': 25세 여성이고, CT에서 췌장 부위의 큰 종괴 안에 어두운 낭성/괴사성 중심과 상대적으로 조영되는 주변 고형 성분이 함께 보인다. 강의의 SPN CT 예시와 같은 사진이다. '''나이 + 피막성 혼합 종괴'''가 정답을 지지한다. 간에도 병변이 보이는 강의 예시이므로 ‘SPN은 절대 전이하지 않는다’고 외우면 안 된다.\n\n== 오답 선지 ==\n* '''1번 SCN''': 대개 고령 여성에서 microcystic/honeycomb 구조와 central scar를 찾는다. 제시된 젊은 여성의 큰 고형·낭성 혼합 종괴와 다르다.\n* '''2번 Mucinous cystadenoma''': 여성에게 생기는 큰 낭이지만 보통 body/tail의 매끈한 macrocystic lesion과 두꺼운 벽·septation이 중심이다. 이 사진의 불균질한 고형·낭성 혼합과 젊은 연령은 SPN에 더 적합하다.\n* '''3번 Neuroendocrine tumor''': 큰 경우 괴사·낭성 변성이 가능하므로 모양만으로 절대 배제할 수는 없다. 다만 대표적인 강한 고형 조영 양상과 비교할 때 이 강의 예시는 SPN의 전형이다.\n* '''5번 IPMN''': 췌관의 낭성 확장 또는 낭과 주췌관의 연결이 중요하다. 현재 영상에는 그 연결이 정답 근거로 제시되지 않는다.\n\n== 출제 의도 ==\n췌장 낭성 병변을 나이만으로 찍지 않고 SCN의 작은 낭, MCN의 큰 낭, SPN의 고형·낭성 혼합이라는 영상 구조와 결합해 구분한다.\n\n== Wiki 연결 ==\n* [[19강#Solid pseudopapillary tumor · SPN|Solid pseudopapillary tumor · SPN]]\n* [[19강#Serous cystic neoplasm · SCN|Serous cystic neoplasm · SCN]]\n* [[19강#Mucinous cystic neoplasm · MCN|Mucinous cystic neoplasm · MCN]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2022_소화기_문항별_사진/2022_044_01.png"
       ],
@@ -11397,7 +11398,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번",
-      "explanation": "정답: 1번\n\n[핵심 해설]\nB~E는 수업시간에 설명해주신대로 입니다. A는 B와 같은 소견으로 보입니다. Pseudodiverticulum with ulcer는 오른쪽 강의록 사진을 참고해주시면 되겠습니다.\n\n[선지별 해설]\n① Pseudodiverticulum with ulcer: Pseudodiverticulum with ulcer는 오른쪽 강의록 사진을 참고해주시면 되겠습니다.\n⑤ Peritoneal metastasis with ascites: Pseudodiverticulum with ulcer는 오른쪽 강의록 사진을 참고해주시면 되겠습니다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 1번 · Pseudodiverticulum with ulcer (옳지 않은 설명)\n\n== 배경 지식 ==\n진행위암에서는 종양 내부의 '''malignant ulcer'''와 종양의 확산 경로를 구분한다. 바륨 조영술은 불규칙한 점막·종괴·궤양을, CT는 벽 비후와 주변 장기 침윤, 간 전이 및 복막파종을 보여 준다. Pseudodiverticulum은 장벽의 낭상 돌출을 가리키는 말이며, 종양 안에 파인 궤양과 같은 개념이 아니다.\n\n== 정답 선지 ==\n'''1번이 옳지 않다.''': A는 불규칙한 종괴와 점막 변화가 있는 부위의 궤양성 함몰로, 단순히 장벽이 주머니처럼 돌출된 pseudodiverticulum으로 설명하는 것은 맞지 않는다. B와 함께 '''종양 안의 malignant ulcer'''를 보는 영상이다. ‘위암 환자에게도 어떤 게실이 생길 수 있는가’가 아니라 '''사진 A의 소견을 올바르게 붙였는가'''를 묻는다.\n\n== 오답 선지 ==\n이 문항은 '''옳지 않은 것'''을 묻는다. 다음 선지들은 제시된 위암의 영상 소견에 부합하므로 답이 아니다.\n* '''2번 Malignant ulcer in the tumor''': A·B의 불규칙한 종괴 내부 궤양을 설명한다.\n* '''3번 Gastric cancer invasion to pancreas tail''': C에서 두꺼워진 위벽 종괴와 인접 췌장 사이 경계가 소실되고 연속되는 모습을 본다. 단순 접촉만으로 항상 침윤을 확진하는 것은 아니지만, 이 예시는 직접침윤을 보여 주는 구성이다.\n* '''4번 Hepatic metastasis''': D에서 위 병변과 떨어진 간 내부의 병변을 본다. 위암의 원격전이를 평가하는 영상이다.\n* '''5번 Peritoneal metastasis with ascites''': E의 복막·대망 변화와 복강 내 액체를 함께 본다. 복수만으로 악성이라고 단정하지 않고 동반된 복막파종 소견과 결합한다.\n\n== 출제 의도 ==\nMalignant ulcer를 pseudodiverticulum과 혼동하지 않고, 원발 종양의 모양·직접침윤·원격전이·복막파종을 각각 다른 영상 정보로 연결하는 문제다.\n\n== Wiki 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n* [[19강#족보 영상 연결|족보 영상 연결]]\n\n== 강의록 범위 ==\n이번 19강 발췌 PDF에는 이 위암 복합 영상이 없다. 위 해설은 J에 제시된 A–E 사진의 구조와 위암 병리를 연결한 판독이며, 이번 PDF에 실려 있다고 표시하지 않는다.\n\n== 관련 J ==\n{{474}} {{153}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2022_소화기_문항별_사진/2022_046_01.png"
       ],
@@ -18427,7 +18428,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · Adenocarcinoma",
-      "explanation": "정답: 2번 · Adenocarcinoma\n\n[핵심 해설]\nIf the cause of a distal bile duct obstruction is not revealed by US and there is a high suspicion for a pancreatic or periampullary tumor, the next diagnostic test is CT.ERCP (or MRCP) is only the next step when there is a high suspicion of bile duct stones. Whenever a pancreatic tumor is detected with US and no definite signs of unresectability are found, the next step is CT.CT should be done before ERCP and insertion of an endoprosthesis, because artifacts and post-ERCP pancreatitis may hamper the diagnostic accuracy of CT.As pancreatic carcinoma is a hypovascular tumor, it presents as a hypodens mass on a CECT.The mass is usually ill-defined. In 10 - 15% the tumor is isodens and therefore may be difficult to detect.The use of a multidetector CT protocol specifically designed to study the pancreas is therefore mandatory. New technical approaches have provided better contrast, thereby improving tumor detection. An example is low-energy acquisition at 80 kvP instead of conventional 120-kvP acquisition\n\n[선지별 해설]\n④ Solid pseudopaillary tumor: New technical approaches have provided better contrast, thereby improving tumor detection.\n\n[검토 상태]\n오답률 30 48page 수록.",
+      "explanation": "정답: 2번 · Adenocarcinoma\n\n== 배경 지식 ==\n[[19강#Pancreatic cancer와 double duct sign|췌두부 ductal adenocarcinoma]]는 distal common bile duct와 main pancreatic duct를 동시에 막을 수 있다. 상류의 두 관이 함께 확장되는 것이 '''double duct sign'''이다. MRCP는 확장된 관을, CT는 관을 막는 종괴와 혈관 관계를 보여 주므로 두 검사의 정보를 연결한다. Double duct sign 하나만으로 모든 경우의 암이 확진되는 것은 아니다.\n\n== 정답 선지 ==\n'''2번''': MRCP에서 담관과 주췌관이 함께 확장되어 있고, CT에서 그 하류의 췌두부 종괴가 확인된다. 종괴 위쪽의 담도 확장과 커진 담낭도 폐쇄의 결과로 이해할 수 있다. '''관의 동시 확장 + 폐쇄 부위의 고형 종괴'''를 함께 설명하는 진단은 pancreatic adenocarcinoma다. 췌장선암은 보통 hypovascular하여 조영 CT에서 정상 췌장보다 낮은 음영의 경계 불명확한 종괴로 보인다.\n초음파에서도 췌두부의 종괴가 표시되어 있고, 60세 환자의 황달은 distal bile duct obstruction과 일치한다. 공식 오답률30 48page에서도 정답은 2번이다.\n\n== 오답 선지 ==\n* '''1번 Serous oligocystic adenoma''': 낭성 병변의 감별이다. 본 예시처럼 관을 동시에 막는 침윤성 고형 종괴를 가장 잘 설명하지 못한다.\n* '''3번 Neuroendocrine tumors''': 전형적인 hypervascular 고형 종괴와 비교한다. 이 사진은 강의에서 제시한 ductal adenocarcinoma의 예시다.\n* '''4번 Solid pseudopapillary tumor''': 젊은 여성의 큰 피막성 고형·낭성 혼합 종괴가 대표적이다. 이 환자의 연령과 영상 조합보다 덜 맞는다.\n* '''5번 Mucinous cystadenocarcinoma''': 주로 body/tail의 낭성 종양 맥락으로, 사진의 췌두부 고형 종괴와 double duct sign과 구별한다.\n\n== 출제 의도 ==\n담관과 췌관의 해부학적 합류 관계를 바탕으로 double duct sign의 원인을 찾고, 낭성 종양과 췌두부 고형암을 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#Pancreatic cancer와 double duct sign|Pancreatic cancer와 double duct sign]]\n* [[19강#췌장암의 혈관 침범과 전이|췌장암의 혈관 침범과 전이]]\n* [[19강#Solid pseudopapillary tumor · SPN|Solid pseudopapillary tumor · SPN]]\n\n== 오답30 해설의 핵심 ==\n공식 해설은 '''췌장암이 의심되면 췌장 전용 조영 CT로 종괴와 절제 가능성을 평가한다'''는 점을 강조한다. US에서 원인이 불명확한 distal bile duct obstruction이 보이거나 췌장 종양이 발견되면 CT가 필요하다. 가능하면 ERCP·stent 삽입 전에 CT를 확보하여 시술 후 pancreatitis와 artifact가 판독을 방해하지 않게 한다.\n췌장선암은 대개 hypovascular·hypodense하고 경계가 불분명하지만, 공식 해설에는 약 10–15%에서 isodense하여 찾기 어려울 수 있다고 되어 있다. 따라서 '''종괴가 선명하지 않다고 배제하지 말고 관의 cutoff·상류 확장과 적절한 CT protocol을 함께 확인'''해야 한다.\n[* 공식 해설의 ERCP/MRCP 검사 순서 문장은 당시 문항의 진단 접근을 설명한 것이다. 임상에서 검사 선택은 담도 폐쇄의 원인과 시술 필요성에 따라 달라지며, MRCP가 담석이 의심될 때만 가능한 검사라는 뜻으로 일반화하지 않는다.]\n\n== 관련 J ==\n{{24}} {{152}} {{762}}\n\n== 검토 상태 ==\n오답률 30 48page 수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_048_01.png",
         "2021_소화기_문항별_사진/2021_wrong30_048_02.png",
@@ -18474,7 +18475,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · A-Pseudodiverticulum with ulcer",
-      "explanation": "정답: 1번 · A-Pseudodiverticulum with ulcer\n\n[핵심 해설]\nA 소견은 pseudodiverticulum이 아니라 종양 내부에 형성된 malignant ulcer에 해당한다. 나머지는 위암의 국소 침윤, 원격전이 또는 복막파종과 관련된 영상 소견이다.\n\n[선지별 해설]\n② B- Malignant ulcer in the tumor: A 소견은 pseudodiverticulum이 아니라 종양 내부에 형성된 malignant ulcer에 해당한다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 1번 · A—Pseudodiverticulum with ulcer (옳지 않은 설명)\n\n== 배경 지식 ==\n진행위암에서는 종양 내부의 '''malignant ulcer'''와 종양의 확산 경로를 구분한다. 바륨 조영술은 불규칙한 점막·종괴·궤양을, CT는 벽 비후와 주변 장기 침윤, 간 전이 및 복막파종을 보여 준다. Pseudodiverticulum은 장벽의 낭상 돌출을 가리키는 말이며, 종양 안에 파인 궤양과 같은 개념이 아니다.\n\n== 정답 선지 ==\n'''1번이 옳지 않다.''': A는 불규칙한 종괴와 점막 변화가 있는 부위의 궤양성 함몰로, 단순히 장벽이 주머니처럼 돌출된 pseudodiverticulum으로 설명하는 것은 맞지 않는다. B와 함께 '''종양 안의 malignant ulcer'''를 보는 영상이다. ‘위암 환자에게도 어떤 게실이 생길 수 있는가’가 아니라 '''사진 A의 소견을 올바르게 붙였는가'''를 묻는다.\n\n== 오답 선지 ==\n이 문항은 '''옳지 않은 설명'''을 선택한다.\n* '''2번 B—Malignant ulcer in the tumor''': B는 불규칙한 종괴 속의 궤양성 병변을 설명한다.\n* '''3번 C—Direct invasion to the pancreas''': C에서 위 종괴와 인접 췌장의 지방 경계가 사라지고 병변이 연속되는 부분을 본다.\n* '''4번 D—Liver metastasis''': D는 간 안의 병변으로, 위암의 간 전이를 평가하는 사진이다.\n* '''5번 E—Ascites with peritoneal seeding''': E에서 복막·대망 변화와 복수를 함께 확인한다. Ascites라는 소견 하나와 peritoneal seeding이 동반된 전체 영상 소견을 구별한다.\n\n== 출제 의도 ==\nA–E에 서로 다른 이름을 기계적으로 붙이는 것이 아니라, 궤양·직접침윤·혈행성 전이·복막파종이라는 각각의 확산 양상을 영상과 대응시키는 문제다.\n\n== Wiki 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n* [[19강#족보 영상 연결|족보 영상 연결]]\n\n== 강의록 범위 ==\n이번 발췌 PDF에는 해당 위암 사진이 없어 J의 제시 영상을 직접 판독했다.\n\n== 관련 J ==\n{{296}} {{153}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_066_01.png"
       ],
@@ -30167,7 +30168,7 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답: 5번 · Pancreatic cancer",
-      "explanation": "정답: 5번 · Pancreatic cancer\n\n[핵심 해설]\n황달을 동반한 저혈관성 췌장 종괴와 담관 폐쇄 소견은 췌장암에 합당하다. 췌장 전용 조영증강 CT는 종괴의 범위와 절제 가능성을 평가하는 데 중요하다.\n[검토 상태]\n오답률 30 24page 수록.",
+      "explanation": "정답: 5번 · Pancreatic cancer\n\n== 배경 지식 ==\n[[19강#Pancreatic cancer와 double duct sign|췌두부 ductal adenocarcinoma]]는 distal common bile duct와 main pancreatic duct를 동시에 막을 수 있다. 상류의 두 관이 함께 확장되는 것이 '''double duct sign'''이다. MRCP는 확장된 관을, CT는 관을 막는 종괴와 혈관 관계를 보여 주므로 두 검사의 정보를 연결한다. Double duct sign 하나만으로 모든 경우의 암이 확진되는 것은 아니다.\n\n== 정답 선지 ==\n'''5번''': MRCP에서 담관과 주췌관이 함께 확장되어 있고, CT에서 그 하류의 췌두부 종괴가 확인된다. 종괴 위쪽의 담도 확장과 커진 담낭도 폐쇄의 결과로 이해할 수 있다. '''관의 동시 확장 + 폐쇄 부위의 고형 종괴'''를 함께 설명하는 진단은 pancreatic adenocarcinoma다. 췌장선암은 보통 hypovascular하여 조영 CT에서 정상 췌장보다 낮은 음영의 경계 불명확한 종괴로 보인다.\n60세 환자의 복통·황달과 함께 보면 췌두부 암에 의한 폐쇄성 변화로 일관되게 설명된다. 공식 오답률30 24page의 정답도 5번이다.\n\n== 오답 선지 ==\n* '''1번 Serous oligocystic adenoma''': 낭성 종괴를 설명하는 진단이다. 현재 사진의 관 폐쇄를 동반한 고형암 예시와 다르다.\n* '''2번 Mucinous cystadenoma''': 중년 여성의 body/tail에 생기는 큰 낭과 septation 등이 감별점이다. 이 사진의 distal duct obstruction을 동반한 췌두부 고형 종괴가 아니다.\n* '''3번 Necrotizing pancreatitis''': 췌장 실질의 비조영 괴사와 주위 염증·액체저류를 확인해야 한다. 췌장에 어두운 부분이 있다는 이유만으로 괴사성 췌장염을 선택할 수 없으며, 여기서는 국소 종괴와 double duct sign이 더 직접적인 단서다.\n* '''4번 Solid pseudopapillary tumor''': 젊은 여성, 경계가 좋은 큰 피막성 종괴, 고형·낭성·출혈성 성분의 혼합을 본다. 현재 예시의 전형과 다르다.\n\n== 출제 의도 ==\n담관과 췌관의 해부학적 합류 관계를 바탕으로 double duct sign의 원인을 찾고, 낭성 종양과 췌두부 고형암을 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#Pancreatic cancer와 double duct sign|Pancreatic cancer와 double duct sign]]\n* [[19강#Serous cystic neoplasm · SCN|Serous cystic neoplasm · SCN]]\n* [[19강#Mucinous cystic neoplasm · MCN|Mucinous cystic neoplasm · MCN]]\n* [[19강#Solid pseudopapillary tumor · SPN|Solid pseudopapillary tumor · SPN]]\n\n== 오답30 해설의 핵심 ==\n공식 해설은 '''췌장암이 의심되면 췌장 전용 조영 CT로 종괴와 절제 가능성을 평가한다'''는 점을 강조한다. US에서 원인이 불명확한 distal bile duct obstruction이 보이거나 췌장 종양이 발견되면 CT가 필요하다. 가능하면 ERCP·stent 삽입 전에 CT를 확보하여 시술 후 pancreatitis와 artifact가 판독을 방해하지 않게 한다.\n췌장선암은 대개 hypovascular·hypodense하고 경계가 불분명하지만, 공식 해설에는 약 10–15%에서 isodense하여 찾기 어려울 수 있다고 되어 있다. 따라서 '''종괴가 선명하지 않다고 배제하지 말고 관의 cutoff·상류 확장과 적절한 CT protocol을 함께 확인'''해야 한다.\n[* 공식 해설의 ERCP/MRCP 검사 순서 문장은 당시 문항의 진단 접근을 설명한 것이다. 임상에서 검사 선택은 담도 폐쇄의 원인과 시술 필요성에 따라 달라지며, MRCP가 담석이 의심될 때만 가능한 검사라는 뜻으로 일반화하지 않는다.]\n\n== 관련 J ==\n{{24}} {{152}} {{473}}\n\n== 검토 상태 ==\n오답률 30 24page 수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_wrong30_024_01.png"
       ],
@@ -31117,10 +31118,10 @@ window.JBL_DATA = {
       "answerIndices": [
         3
       ],
-      "answerLabel": "원문 풀이 정답: 3번 · Mechanical bowel obstruction with peritoneal adhesion (독립 검토 보류)",
+      "answerLabel": "정답: 3번 · Mechanical bowel obstruction with peritoneal adhesion",
       "sourceAnswer": "3번",
-      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
-      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "explanation": "정답: 3번 · Mechanical bowel obstruction with peritoneal adhesion\n\n== 배경 지식 ==\n[[19강#장폐색과 허혈의 구분|Mechanical bowel obstruction]]은 막힌 지점 앞의 장이 확장되는 상태다. CT에서는 확장된 장을 따라 '''transition point'''와 하류 장의 허탈을 찾는다. Adhesion은 흔한 원인이지만 유착 띠 자체가 영상에 뚜렷이 보이지 않는 경우가 많아, 다른 폐쇄 원인과 임상 병력을 함께 고려한다.\n\n== 정답 선지 ==\n'''3번''': 초음파에는 액체로 확장된 장관이 보이고, CT에는 여러 확장된 소장 고리와 내용물 저류가 보인다. 화살표 부근에서 장관 굵기가 달라지는 부분을 추적하는 것이 핵심이다. 제시 선지 중 '''mechanical obstruction'''이 가장 잘 맞는다. 다만 두 장의 정지 영상만으로 유착 띠를 직접 확인했다고 말할 수는 없다. ‘장폐색의 영상 근거’와 ‘유착이라는 원인 추정’을 구별한다.\n\n== 오답 선지 ==\n* '''1번 Appendicitis with abscess''': 충수를 중심으로 한 국소 염증과 주변 농양을 찾아야 한다. 현재의 주된 소견은 여러 소장 고리의 확장이다.\n* '''2번 Bowel perforation with diverticulitis''': 게실 중심의 염증, 국소 벽 비후, 장 밖 공기 등이 필요하다. 현재 사진에서 이를 직접적인 진단 근거로 제시하기 어렵다.\n* '''4번 Crohn’s disease with longitudinal ulceration and fistula''': 깊은 궤양과 장 밖으로 연결되는 누공, 분절성 염증성 침범을 확인해야 한다. 단순한 확장 장관만으로 이 선지를 선택할 수 없다.\n* '''5번 Small bowel ischemia with mesenteric arterial embolism''': 동맥의 충만결손과 장벽 관류 이상을 평가해야 한다. 장폐색에 허혈이 합병될 수는 있지만 이 영상만으로 SMA embolism을 입증하지는 못한다.\n\n== 출제 의도 ==\n급성 복통의 초음파·CT에서 장 확장과 폐쇄를 인식하고, 충수염·게실염·Crohn병·색전성 허혈의 직접 소견이 있는지를 구별하는 문제다.\n\n== Wiki 연결 ==\n* [[19강#장폐색과 허혈의 구분|장폐색과 허혈의 구분]]\n* [[19강#Small bowel ischemia|Small bowel ischemia]]\n* [[19강#Crohn’s enteritis|Crohn’s enteritis]]\n\n== 강의록 범위 ==\n이번 발췌본에는 이 장폐색 사진 자체가 포함되어 있지 않다. 강의의 장허혈·Crohn병 영상과 감별하되, J의 제시 사진을 독립적으로 검토했다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "제시 US·CT의 장 확장과 caliber change를 독립 검토. 유착은 영상에서 직접 보이는 구조가 아닌 추정 원인으로 구분.",
       "sourcePdfPages": [
         188,
         190
@@ -31844,9 +31845,53 @@ window.JBL_DATA = {
         556,
         558
       ]
+    },
+    {
+      "id": "2025-restored-original-25",
+      "displayId": "803번",
+      "year": 2025,
+      "sourceType": "족보",
+      "originalNumber": 25,
+      "question": "Rectal cancer MRI 사진. 다음 중 선별검사가 불가능한 것은?",
+      "passage": "[복원 불완전] 원문 발문을 보존했다. 세 번째 선지는 “복벽 ~”까지만 남아 있고, 네 번째와 다섯 번째 줄은 “.”으로만 표시되어 있다. 선지 번호는 복원 문서의 제시 순서 기준이다.",
+      "choices": [
+        "림프노드 전이",
+        "간 전이",
+        "복벽 ~ [이하 복원 누락]",
+        "[선지 복원 누락 · 원문 “.”]",
+        "[선지 복원 누락 · 원문 “.”]"
+      ],
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "추정 답: 간 전이 · 발문과 선지 복원이 불완전하여 정답 확정 및 자동 채점은 보류",
+      "explanation": "추정 답: '''간 전이''' — 원문 복원이 불완전하여 정답 확정 및 자동 채점은 보류\n\n== 배경 지식 ==\n[[19강#무엇을 평가하는 검사인가|직장암의 골반 MRI]]는 국소 병기와 수술 경계를 평가한다. 종양의 위치·길이, 직장벽 밖 침윤, MRF, EMVI, 골반 림프절, 주변 장기·괄약근과의 관계를 보는 검사다. '''골반을 촬영하는 MRI에 간 전체가 포함되지는 않는다.'''\n\n== 제시 영상 ==\n* 첫 사진의 두 sagittal MRI에서는 직장 종괴의 높이와 주변 골반 구조와의 관계를 본다. 간을 촬영한 영상이 아니다.\n* 두 번째 사진의 '''T3d'''는 직장벽 밖 침윤 깊이와 관련된 표기다. 이번 강의 표는 T3d를 '''extramural depth >15 mm'''로 설명한다. 이는 간 전이 또는 M 병기라는 뜻이 아니다.\n\n== 답 후보가 되는 이유 ==\n'''간 전이''': 원문이 ‘이 직장암 골반 MRI에서 평가할 수 없는 것은?’이라는 취지라면 가장 유력하다. 간 전이는 간을 포함하는 복부 CT 또는 간 MRI 등 별도 촬영 범위로 평가해야 한다. '''MRI라는 검사 자체가 간 전이를 못 찾는다'''고 이해하면 안 된다.\n\n== 나머지 선지 검토 ==\n* '''1번 림프노드 전이''': mesorectal·골반 림프절은 MRI의 평가 대상이다. 크기·형태·경계·신호를 보고 전이를 의심하지만 항상 확진할 수 있다는 뜻은 아니다.\n* '''3번 ‘복벽 ~’''': 뒤 문장이 없어 판단할 수 없다. 원문을 골반벽·주변 장기 침윤으로 임의 복원하지 않는다. 만약 그런 국소 침윤을 묻는 내용이었다면 골반 MRI의 평가 범위와 연결되지만, 이는 조건부 설명이다.\n* '''4·5번''': 문구가 복원되지 않아 비교할 수 없다. 그러므로 간 전이가 유력하더라도 유일한 정답인지는 확정할 수 없다.\n[* 발문의 ‘선별검사’는 원문대로 보존했다. 영상과 남은 선지는 선별검사 자체보다는 직장암의 병기 평가 범위를 묻는 맥락으로 보이지만, 원시험 문구가 확인된 것은 아니다.]\n\n== 출제 의도 추정 ==\n'''국소 침윤·구역 림프절'''과 '''촬영 범위 밖 원격전이'''를 구별하는 문제로 보인다. T3d, MRF, EMVI의 국소 영상 정보를 간 전이와 혼동하지 않는 것이 중요하다.\n\n== Wiki 연결 ==\n* [[19강#무엇을 평가하는 검사인가|직장암 MRI의 평가 범위]]\n* [[19강#직장벽 밖 침윤과 림프절|직장벽 밖 침윤과 림프절]]\n* [[19강#MRF와 EMVI|MRF와 EMVI]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "images": [
+        "2025_소화기_문항별_사진/2025_025_restored_01.jpg",
+        "2025_소화기_문항별_사진/2025_025_restored_02.jpg"
+      ],
+      "legacyProfessor": "김미영",
+      "source": "2025 소화기계 25번",
+      "sourceQuestionNumber": 25,
+      "sourceOrdinal": 25,
+      "legacyDisplayId": "2025 25번",
+      "globalNumber": 803,
+      "officialPriorityApplied": false,
+      "reconstructionStatus": "불완전 복원 · 사용자 요청으로 수록",
+      "reconstructionIssue": "발문 취지와 3번 선지 뒷부분, 4·5번 선지 내용이 확인되지 않는다. 간 전이는 추정 답이며 자동 채점은 보류.",
+      "mappingConfidence": "사용자 직접 지정: 김미영 교수 · 19강 영상의학",
+      "answerVerification": "영상의 촬영 범위와 신뢰할 수 있는 영상의학 권고를 대조한 추론. 원시험 정답 확인 불가.",
+      "lectureIds": [
+        19
+      ],
+      "lectureId": 19,
+      "lectureTitle": "영상의학",
+      "professor": "김미영",
+      "domain": "임상의학",
+      "discipline": "진단 치료 지원 분과",
+      "section": "영상의학"
     }
   ],
-  "modifiedAt": "2026-09-08T11:54:30.727Z",
+  "modifiedAt": "2026-09-08T12:58:04.407Z",
   "reconstructionAudit2021": {
     "date": "2026-09-08",
     "sourcePages": 611,

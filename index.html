@@ -656,6 +656,10 @@
     .jbl-page-block > figure:last-child:nth-of-type(odd) { grid-column: 1 / -1; width: calc(50% - 8px); justify-self: center; }
     .jbl-page-img { width: 100%; max-width: 50vw; display: block; margin: 0 auto 14px; border: 1px solid #cbd5e1; border-radius: 14px; background: #fff; cursor: zoom-in; }
     .jbl-page-img:last-child { margin-bottom: 0; }
+    img.content-image-failed { display: none !important; }
+    .content-image-error { margin: 10px 0; padding: 16px; border: 1px solid #d7dee6; border-radius: 12px; background: #f8fafc; color: #475569; font-size: 14px; line-height: 1.6; text-align: left; overflow-wrap: anywhere; }
+    .content-image-error[hidden] { display: none !important; }
+    .content-image-error-path { display: block; margin: 6px 0 10px; font-size: 12px; white-space: normal; overflow-wrap: anywhere; }
     .jbl-explanation { margin-top: 18px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 22px; padding: 18px 20px; }
     .jbl-explanation-title { font-size: 14px; font-weight: 900; color: #334155; margin-bottom: 10px; }
     .jbl-lecture-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
@@ -1782,7 +1786,68 @@
       if (preview) preview.classList.remove('is-visible');
     }
 
+    function bindContentImages(container) {
+      container.querySelectorAll('[data-jbl-image], [data-note-image]').forEach(image => {
+        if (image.dataset.imageEventsBound) return;
+        image.dataset.imageEventsBound = 'true';
+        let warning, pathLabel, retry;
+        const showError = () => {
+          // A failed lazy image is hidden below; future retries/source switches
+          // must still load even while that image has no layout box.
+          image.loading = 'eager';
+          if (!warning) {
+            warning = document.createElement('div');
+            warning.className = 'content-image-error';
+            warning.setAttribute('role', 'status');
+            const message = document.createElement('span');
+            message.textContent = '이미지를 불러오지 못했습니다. 아래 경로의 파일이 함께 저장·업로드되어 있는지 확인해 주세요.';
+            pathLabel = document.createElement('code');
+            pathLabel.className = 'content-image-error-path';
+            retry = document.createElement('button');
+            retry.type = 'button';
+            retry.className = 'jbl-btn jbl-btn-sub';
+            retry.textContent = '다시 불러오기';
+            retry.addEventListener('click', event => {
+              event.stopPropagation();
+              retry.disabled = true;
+              let source = image.getAttribute('src');
+              // Refresh only this image; never guess a different question's file.
+              try {
+                const url = new URL(source, document.baseURI);
+                if (['http:', 'https:'].includes(url.protocol)) {
+                  url.searchParams.set('_imageRetry', String(Date.now()));
+                  source = url.href;
+                }
+              } catch (_) {}
+              image.src = source;
+            });
+            warning.append(message, pathLabel, retry);
+            image.insertAdjacentElement('afterend', warning);
+          }
+          let source = image.getAttribute('src') || '(이미지 경로 없음)';
+          try { source = decodeURI(source); } catch (_) {}
+          pathLabel.textContent = source;
+          retry.disabled = false;
+          warning.hidden = false;
+          image.classList.add('content-image-failed');
+        };
+        const showImage = () => {
+          image.classList.remove('content-image-failed');
+          if (warning) warning.hidden = true;
+          if (retry) retry.disabled = false;
+        };
+        image.addEventListener('error', showError);
+        image.addEventListener('load', showImage);
+        image.addEventListener('click', () => {
+          if (image.naturalWidth > 0) openJblImage(image.src);
+        });
+        // Cached failures may have fired before this card's listeners were bound.
+        if (image.complete && image.naturalWidth === 0 && image.getAttribute('src')) showError();
+      });
+    }
+
     function bindWikiDocument(container, course) {
+      bindContentImages(container);
       bindWikiBookmarks(container, course);
       const toc = container.querySelector('.wiki-toc');
       const tocLayout = toc?.closest('.wiki-layout');
@@ -1889,10 +1954,6 @@
           button.textContent = showMarked ? '표시 숨기기' : '표시 보기';
           button.setAttribute('aria-label', showMarked ? '원본 필기 표시 숨기기' : '원본 필기 표시 보기');
         });
-      });
-      container.querySelectorAll('[data-note-image]').forEach(image => {
-        image.addEventListener('click', () => openJblImage(image.src));
-        image.addEventListener('error', () => { image.closest('.wiki-figure').hidden = true; });
       });
     }
 
@@ -2064,14 +2125,6 @@
         state.answerShown[question.id] = true;
         state.explanationShown[question.id] = true;
         rerender();
-      });
-      container.querySelectorAll('[data-jbl-image]').forEach(image => {
-        image.addEventListener('error', () => {
-          image.closest('figure').hidden = true;
-          const block = image.closest('.jbl-page-block');
-          if (block && !block.querySelector('figure:not([hidden])')) block.hidden = true;
-        });
-        image.addEventListener('click', () => openJblImage(image.src));
       });
     }
 
