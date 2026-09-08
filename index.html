@@ -488,7 +488,7 @@
     .wiki-image-toggle:focus-visible { outline: 2px solid #398bc0; outline-offset: 2px; }
     .wiki-table-wrap { overflow-x: auto; margin: 20px 0; border: 1px solid #dce8ed; border-radius: 16px; }
     .wiki-table { width: 100%; border-collapse: collapse; min-width: 620px; background: #fff; font-size: 14px; }
-    .wiki-table th, .wiki-table td { padding: 13px 14px; border-bottom: 1px solid #e7eef2; text-align: left; vertical-align: top; }
+    .wiki-table th, .wiki-table td { padding: 13px 14px; border-bottom: 1px solid #e7eef2; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
     .wiki-table th { background: #edf8fc; color: #28586b; font-weight: 900; }
     .wiki-table tr:last-child td { border-bottom: 0; }
     .wiki-link { color: #087ea4; font-weight: 850; text-decoration: none; border-bottom: 1px dotted #38a9cf; }
@@ -1181,6 +1181,8 @@
           if (!line.trim()) return line;
           const heading = line.match(/^(\s*)(={1,4})\s*(.+?)\s*\2\s*$/);
           if (heading) return `${heading[1]}${heading[2]} ~~${heading[3]}~~~ ${heading[2]}`;
+          const tableCells = parseWikiTableRow(line);
+          if (tableCells) return '||' + tableCells.map(cell => cell.startsWith('=') ? '= ~~' + cell.slice(1).trim() + '~~~' : '~~' + cell + '~~~').join('||') + '||';
           const picture = line.trim().match(/^\[\[파일:([^|\]]+)(?:\|([^\]]*))?\]\]$/);
           if (picture) {
             const parts = (picture[2] || '강의록 이미지').split('|');
@@ -1488,6 +1490,14 @@
       for (let index = 0; index < contentLines.length; index += 1) {
         const line = contentLines[index].trim();
         if (!line) { flushText(); continue; }
+        if (parseWikiTableRow(line)) {
+          flushText();
+          const rows = [];
+          while (index < contentLines.length && parseWikiTableRow(contentLines[index])) rows.push(contentLines[index++]);
+          index -= 1;
+          body.push(renderWikiTable(rows, course, footnotes));
+          continue;
+        }
         const headingMatch = parseWikiHeading(line);
         const imageMatch = line.match(/^\[\[파일:/);
         if (headingMatch?.level === 2) {
@@ -1538,6 +1548,27 @@
       return `<article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>${renderWikiInline(title, course, footnotes, false)}</h3></div><div class="wiki-hero-actions"><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit>문서 편집</button><button class="jbl-btn jbl-btn-sub wiki-toggle-all" type="button" data-wiki-toggle-all aria-pressed="false">모두 접기</button></div></div>${summary ? `<p>${renderWikiInline(summary, course, footnotes, false)}</p>` : ''}<div class="wiki-stat-row">${tagMarkup}</div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong>${toc}</aside><div class="wiki-article">${body.join('')}</div></div></article>`;
     }
 
+    function parseWikiTableRow(line) {
+      const source = String(line || '').trim();
+      if (!source.startsWith('||') || !source.endsWith('||') || source.length < 4) return null;
+      // Single pipes in [[target|label]] remain inside their cell.
+      return source.slice(2, -2).split('||').map(cell => cell.trim());
+    }
+
+    function renderWikiTable(rows, course, footnotes) {
+      const cells = rows.map(parseWikiTableRow).filter(Boolean);
+      if (!cells.length) return '';
+      const width = Math.max(...cells.map(row => row.length));
+      const hasHeader = cells[0].every(cell => cell.startsWith('='));
+      const rowHtml = (row, header) => '<tr>' + Array.from({ length:width }, (_, i) => {
+        const text = row[i] || '';
+        const tag = header ? 'th' : 'td';
+        return `<${tag}${header ? ' scope="col"' : ''}>${renderWikiInline(header ? text.replace(/^=\s*/, '') : text, course, footnotes)}</${tag}>`;
+      }).join('') + '</tr>';
+      const head = hasHeader ? `<thead>${rowHtml(cells.shift(), true)}</thead>` : '';
+      return `<div class="wiki-table-wrap" role="region" aria-label="문서 표" tabindex="0"><table class="wiki-table">${head}<tbody>${cells.map(row => rowHtml(row, false)).join('')}</tbody></table></div>`;
+    }
+
     function renderJblWikiFragment(value, question, fragmentName = 'content') {
       const course = byId(question.lectureIds?.[0]) || courses[0];
       const footnotes = { items:[], named:new Map() };
@@ -1563,6 +1594,14 @@
         const rawLine = lines[lineIndex];
         const line = rawLine.trim();
         if (!line) { flushText(); continue; }
+        if (parseWikiTableRow(line)) {
+          flushText();
+          const rows = [];
+          while (lineIndex < lines.length && parseWikiTableRow(lines[lineIndex])) rows.push(lines[lineIndex++]);
+          lineIndex -= 1;
+          output.push(renderWikiTable(rows, course, footnotes));
+          continue;
+        }
         if (/^\[\[파일:/.test(line)) {
           const figures = [];
           while (lineIndex < lines.length && /^\[\[파일:/.test(lines[lineIndex].trim())) {
@@ -1966,6 +2005,7 @@
         ['[[다른 문서#문단|출력글자]]', '다른 강의 문서의 특정 문단으로 이동'],
         ['[* 각주 내용]', '자동 번호 각주'], ['[*이름 각주 내용]', '이름 있는 각주 생성'], ['[*이름]', '같은 이름의 기존 각주 재호출'],
         ['{{123}}', '고유 문항번호 123번 J로 이동'],
+        ['||= 열 제목 ||= 열 제목 ||\n|| 내용 || [[#문단|링크]] ||', '표: 한 줄이 한 행. ||=는 첫 행의 제목 칸. 회색·굵게·링크·각주 사용 가능'],
         ['~~문장~~~', '시작은 ~~ / 끝은 ~~~. 회색 글씨. 굵게·링크·각주와 함께 사용 가능'],
         ['~~ ==문단제목== ~~~', '제목을 회색으로 표시. 목차·링크·문단 편집 유지'],
         ['~~\n== 문단제목 ==\n여러 줄 본문\n~~~', '감싼 범위의 제목과 본문을 회색으로 표시'],
