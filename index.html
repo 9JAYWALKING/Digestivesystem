@@ -409,6 +409,76 @@
     .wiki-figure { min-width: 0; max-width: 50vw; }
     .jbl-wiki-text > .wiki-figure { width: 50%; margin: 18px auto; }
     .wiki-muted, .wiki-muted a, .wiki-muted strong, .wiki-muted em { color: #909090 !important; }
+    .wiki-bookmark { display:inline-flex; align-items:center; justify-content:center; width:24px; height:24px; margin-left:8px; padding:0; border:1px solid #e2e8f0; border-radius:999px; background:#fff; color:#94a3b8; font-size:16px; line-height:1; vertical-align:middle; cursor:pointer; }
+    .wiki-bookmark:hover { border-color:#fbbf24; color:#f59e0b; }
+    .wiki-bookmark[aria-pressed="true"] { border-color:#fbbf24; background:#fffbeb; color:#f59e0b; }
+    .anki-shell { width:100%; text-align:left; }
+    .anki-shell [hidden], .anki-dialog [hidden] { display:none !important; }
+    .anki-toolbar, .anki-dialog-head, .anki-actions { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    .anki-toolbar { justify-content:flex-end; margin-bottom:18px; }
+    .anki-toolbar h3 { margin:0 auto 0 0; }
+    .anki-card { padding:clamp(18px,3vw,40px); background:#fff; border:1px solid #dce8ed; border-radius:18px; min-height:280px; }
+    .anki-side-label { color:#64748b; font-size:13px; margin-bottom:14px; }
+    .anki-actions { justify-content:space-between; margin-top:20px; }
+    .anki-actions > button { min-width:90px; }
+    .anki-dialog { box-sizing:border-box; width:min(1100px,94vw); max-height:92dvh; padding:22px; border:1px solid #dce8ed; border-radius:16px; color:#243e50; background:white; overflow:auto; font:inherit; }
+    .anki-dialog::backdrop { background:rgba(15,23,42,.45); }
+    .anki-dialog .content-tab { color:#475569; border-color:#cbd5e1; background:#fff; min-width:60px; }
+    .anki-dialog .content-tab.active { color:#135a78; background:#eaf5fb; border-color:#91bdd0; }
+    .anki-image-dialog img { display:block; max-width:100%; max-height:75dvh; margin:auto; object-fit:contain; }
+    .anki-dialog-head { justify-content:space-between; margin-bottom:18px; }
+    .anki-dialog-head h3 { margin:0; }
+    .anki-close { flex:none; border:1px solid #dce8ed; background:white; border-radius:5px; width:30px; height:30px; font-size:20px; cursor:pointer; }
+    .anki-fields { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .anki-fields label { display:block; font-weight:700; margin-bottom:8px; }
+    .anki-fields textarea { box-sizing:border-box; width:100%; min-height:300px; resize:vertical; padding:14px; font:inherit; line-height:1.65; border:1px solid #cbd5e1; border-radius:8px; }
+    .anki-status { color:#64748b; font-size:13px; min-height:22px; }
+    .anki-fav-layout { display:grid; grid-template-columns:minmax(0,1fr); gap:18px; }
+    .anki-fav-layout.with-preview { grid-template-columns:minmax(220px,1fr) minmax(0,3fr); }
+    .anki-fav-list { max-height:65dvh; overflow:auto; min-width:0; }
+    .anki-fav-row { display:flex; gap:8px; align-items:center; padding:12px 4px; border-bottom:1px solid #e2e8f0; }
+    .anki-fav-row a { min-width:0; flex:1; overflow-wrap:anywhere; color:#0b789f; font-weight:700; }
+    .anki-fav-row button { flex:none; }
+    .anki-preview { min-width:0; max-height:65dvh; overflow:auto; padding:0 16px 16px; border-left:1px solid #e2e8f0; }
+    .anki-preview-head { display:flex; justify-content:space-between; gap:12px; align-items:center; position:sticky; top:0; background:white; padding:10px 0; z-index:1; }
+    .anki-card-list { display:grid; gap:8px; margin:16px 0; }
+    .anki-card-list button { text-align:left; overflow-wrap:anywhere; }
+    .anki-card-row { display:flex; gap:8px; align-items:stretch; }
+    .anki-card-row [data-anki-card-id] { flex:1; min-width:0; }
+    .anki-card-row [data-anki-delete-id] { flex:none; align-self:center; color:#a33a3a; border-color:#e8caca; }
+    .anki-card .wiki-grid.single, .anki-preview .wiki-grid.single { grid-template-columns:minmax(0,1fr); }
+    .anki-card .wiki-grid.single .wiki-figure, .anki-preview .wiki-grid.single .wiki-figure { width:100%; max-width:100%; }
+    html:has(#detail-view:not([hidden]) [data-anki-study-card]),
+    body:has(#detail-view:not([hidden]) [data-anki-study-card]) { overflow:hidden; }
+    .anki-card[data-anki-study-card] { position:fixed; inset:0; z-index:100; box-sizing:border-box; height:100dvh; min-height:0; width:100%; padding:0; border:0; border-radius:0; display:grid; grid-template-rows:auto minmax(0,1fr) auto; background:#fff; }
+    .anki-study-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:calc(10px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left)); border-bottom:1px solid #e2e8f0; }
+    .anki-study-head .anki-side-label { margin:0; }
+    .anki-study-head button { padding:7px 14px; }
+    .anki-study-stage { min-height:0; min-width:0; display:grid; place-items:center; padding:clamp(12px,2.5vw,32px); }
+    .anki-card[data-anki-study-card] [data-anki-face] { box-sizing:border-box; width:min(1060px,100%); height:100%; max-height:780px; min-height:0; min-width:0; overflow:auto; overscroll-behavior:contain; padding:clamp(18px,3vw,40px); scrollbar-gutter:stable; background:#fff; border:1px solid #dbe5ec; border-radius:20px; box-shadow:0 10px 32px rgba(41,75,96,.08); display:flex; flex-direction:column; }
+    .anki-card[data-anki-study-card] [data-anki-face] > .jbl-wiki-text { flex:none; width:100%; margin-block:auto; }
+    .anki-card[data-anki-study-card] .jbl-wiki-text { color:#111; font-size:clamp(22px,1.8vw,27px); line-height:1.75; }
+    .anki-card[data-anki-study-card] .jbl-wiki-text p,
+    .anki-card[data-anki-study-card] .jbl-wiki-text li { color:inherit; }
+    .anki-card[data-anki-study-card] .jbl-wiki-text h3,
+    .anki-card[data-anki-study-card] .jbl-wiki-text h4 { color:#111; font-size:1.12em; }
+    .anki-card[data-anki-study-card] .wiki-grid { margin:12px 0; }
+    .anki-card[data-anki-study-card] .wiki-figure { max-width:100%; padding:8px; }
+    .anki-card[data-anki-study-card] .wiki-figure img { width:auto; max-width:100%; height:auto; max-height:var(--anki-image-height,45dvh); margin:auto; object-fit:contain; }
+    .anki-card[data-anki-study-card] .wiki-figure figcaption { font-size:16px; color:#222; }
+    .anki-study-footer { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; padding:12px max(12px,env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)); border-top:1px solid #dce8ed; background:#fff; }
+    .anki-study-footer .jbl-btn { width:100%; min-width:0; min-height:54px; padding:12px 6px; font-size:18px; }
+    .anki-study-footer [data-anki-action="know"] { color:#fff; background:var(--deep); border-color:var(--deep); }
+    .anki-study-footer [data-anki-action="know"]:hover { background:var(--deep-2); border-color:var(--deep-2); }
+    @media (max-width:700px) {
+      .anki-fields, .anki-fav-layout.with-preview { grid-template-columns:minmax(0,1fr); }
+      .anki-dialog { width:96vw; padding:14px; }
+      .anki-fields textarea { min-height:190px; }
+      .anki-fav-layout.with-preview .anki-fav-list { max-height:24dvh; }
+      .anki-preview { max-height:43dvh; padding:0 0 10px; border-left:0; border-top:1px solid #e2e8f0; }
+      .anki-toolbar { gap:7px; }
+      .anki-toolbar h3 { flex-basis:100%; }
+    }
     .wiki-strong-purple, .wiki-strong-purple a, .wiki-strong-purple strong, .wiki-strong-purple em { color: #5b21b6 !important; }
     .wiki-figure { margin: 0; padding: 14px; border: 1px solid #dce8ed; border-radius: 18px; background: #fff; box-shadow: 0 8px 22px rgba(25,64,79,.06); }
     .wiki-figure img { width: 100%; max-height: 560px; display: block; object-fit: contain; border-radius: 12px; background: #fff; cursor: zoom-in; }
@@ -543,9 +613,9 @@
     .jbl-passage-title { padding: 10px 16px; background: #eff6ff; color: #2563eb; font-size: 13px; font-weight: 900; letter-spacing: .02em; }
     .jbl-passage-text { padding: 17px 18px 18px; color: #1e293b; font-size: clamp(17px, 1.25vw, 19px); font-weight: 650; line-height: 1.8; white-space: pre-line; overflow-wrap: anywhere; }
     .jbl-choices { background: #f8fafc; border-radius: 24px; padding: 18px; }
-    .jbl-choice { display: flex; width: 100%; gap: 14px; align-items: flex-start; background: #fff; border: 1px solid transparent; border-radius: 18px; padding: 14px 16px; margin-bottom: 12px; color: inherit; text-align: left; transition: all .2s ease; font-size: clamp(18px, 1.35vw, 21px); overflow-wrap: anywhere; cursor: pointer; }
+    .jbl-choice { display: flex; width: 100%; gap: 14px; align-items: flex-start; appearance: none; background: #fff; box-shadow: none; border: 1px solid transparent; border-radius: 18px; padding: 14px 16px; margin-bottom: 12px; color: inherit; text-align: left; transition: border-color .2s ease; font-size: clamp(18px, 1.35vw, 21px); overflow-wrap: anywhere; cursor: pointer; }
     .jbl-choice:last-child { margin-bottom: 0; }
-    .jbl-choice:hover { border-color: #cbd5e1; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(15,23,42,.06); }
+    .jbl-choice:hover { border-color: #cbd5e1; }
     .jbl-choice-num { width: 30px; height: 30px; border-radius: 999px; background: #e2e8f0; color: #334155; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 800; flex-shrink: 0; margin-top: 1px; }
     .jbl-choice.selected { background: #f1f5f9; border-color: #cbd5e1; color: #334155; }
     .jbl-choice.selected .jbl-choice-num { background: #cbd5e1; color: #1e293b; }
@@ -1427,7 +1497,7 @@
         } else if (headingMatch && headingMatch.level > 2) {
           flushText();
           const record = headingByLine.get(index) || { heading:headingMatch.heading, slug:normalizeWikiKey(headingMatch.heading), number:'' };
-          body.push(`<h5 id="wiki-${course.id}-${record.slug}" data-wiki-section="${record.slug}" data-wiki-heading="${escapeHtml(record.heading)}" data-wiki-number="${record.number}">${renderWikiInline(record.displayHeading || record.heading, course, footnotes)}</h5>`);
+          body.push(`<h5 id="wiki-${course.id}-${record.slug}" data-wiki-level="${headingMatch.level}" data-wiki-section="${record.slug}" data-wiki-heading="${escapeHtml(record.heading)}" data-wiki-number="${record.number}">${renderWikiInline(record.displayHeading || record.heading, course, footnotes)}</h5>`);
         } else if (line.startsWith('* ')) {
           flushParagraph();
           openList('ul');
@@ -1665,6 +1735,8 @@
       const preview = ensureWikiFootnotePreviewBox();
       const text = reference?.dataset.wikiFootnotePreview?.trim();
       if (!reference?.isConnected || !text) { hideWikiFootnotePreview(); return; }
+      const previewHost = reference.closest('dialog') || document.body;
+      if (preview.parentElement !== previewHost) previewHost.append(preview);
       preview.querySelector('[data-wiki-footnote-preview-text]').textContent = text;
       preview.classList.add('is-visible');
       preview.style.left = '0px';
@@ -1711,6 +1783,7 @@
     }
 
     function bindWikiDocument(container, course) {
+      bindWikiBookmarks(container, course);
       const toc = container.querySelector('.wiki-toc');
       const tocLayout = toc?.closest('.wiki-layout');
       if (toc && tocLayout) {
@@ -2060,6 +2133,8 @@
       clone.querySelector('body')?.classList.remove('jbl-mode');
       clone.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== 'catalog-view'; });
       clone.querySelectorAll('.wiki-section-editor-overlay').forEach(element => element.remove());
+      clone.querySelectorAll('.anki-dialog').forEach(element => element.remove());
+      clone.querySelector('#content-panel')?.replaceChildren();
       clone.querySelector('#jbl-image-modal')?.classList.remove('show');
       clone.querySelector('#jbl-image-modal img')?.removeAttribute('src');
       const dataScript = clone.querySelector('#jbl-data-script, script[src="./jbl-data.js"]');
@@ -2363,8 +2438,370 @@
       history.replaceState({ ...(history.state || {}), detailTab:activeDetailTab }, '', `#lecture-${course.id}`);
     }
 
-    function renderContentPanel(course) {
+    // Personal study data stays in this browser, separate from the shared course/question files.
+    function readStudyStorage(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        return raw ? JSON.parse(raw) : fallback;
+      } catch (_) {
+        alert('학습 저장소를 읽을 수 없습니다. 브라우저의 저장소 설정을 확인해 주세요.');
+        return fallback;
+      }
+    }
+    function writeStudyStorage(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+      catch (_) { alert('저장 공간이 부족하거나 브라우저 저장이 차단되어 저장하지 못했습니다.'); return false; }
+    }
+    const wikiBookmarkKey = 'digestive-wiki-bookmarks-v1';
+    const ankiStorageKey = 'digestive-anki-cards-v1';
+    const ankiSessionKey = 'digestive-anki-sessions-v1';
+    let wikiBookmarks = readStudyStorage(wikiBookmarkKey, []);
+    let ankiCards = readStudyStorage(ankiStorageKey, []);
+    let ankiSessions = readStudyStorage(ankiSessionKey, {});
+    if (!Array.isArray(wikiBookmarks)) wikiBookmarks = [];
+    if (!Array.isArray(ankiCards)) ankiCards = [];
+    if (!ankiSessions || typeof ankiSessions !== 'object' || Array.isArray(ankiSessions)) ankiSessions = {};
+    const ankiEditingCourses = new Set();
+    const ankiMenuCourses = new Set();
+    let ankiStudyObserver;
+    const ankiCourseId = course => Number(canonicalContentCourseId(course.id));
+    const ankiDeck = course => ankiCards.filter(card => card.courseId === ankiCourseId(course));
+    const ankiButton = (label, action) => `<button type="button" class="jbl-btn jbl-btn-sub" data-anki-action="${action}">${label}</button>`;
+
+    function bindWikiBookmarks(container, course) {
+      container.querySelectorAll('h5[data-wiki-level="3"]').forEach(heading => {
+        if (heading.querySelector('.wiki-bookmark')) return;
+        const courseId = ankiCourseId(course);
+        const slug = heading.dataset.wikiSection;
+        const key = `${courseId}#${slug}`;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'wiki-bookmark';
+        const update = () => {
+          const active = wikiBookmarks.some(item => item.key === key);
+          button.textContent = active ? '★' : '☆';
+          button.setAttribute('aria-pressed', String(active));
+          button.setAttribute('aria-label', `${heading.dataset.wikiHeading} 즐겨찾기 ${active ? '해제' : '추가'}`);
+        };
+        update();
+        button.addEventListener('click', () => {
+          const next = wikiBookmarks.filter(item => item.key !== key);
+          if (next.length === wikiBookmarks.length) next.push({ key, courseId, slug, heading:heading.dataset.wikiHeading, link:`[[${courseId}강#${slug}|${heading.dataset.wikiHeading}]]` });
+          if (writeStudyStorage(wikiBookmarkKey, next)) { wikiBookmarks = next; update(); }
+        });
+        heading.append(button);
+      });
+    }
+
+    function wikiBookmarkSource(bookmark) {
+      const course = byId(bookmark.courseId);
+      if (!course) return null;
+      const full = String(lectureNoteSources[bookmark.courseId] || '').replace(/\r\n?/g, '\n');
+      const lines = full.split('\n');
+      const headings = wikiHeadingRecordsFromLines(lines);
+      // Never silently attach a bookmark to an unrelated section after editing.
+      const exact = headings.find(item => item.slug === bookmark.slug && item.heading === bookmark.heading);
+      const sameName = headings.filter(item => item.heading === bookmark.heading && item.level === 3);
+      const start = exact || (sameName.length === 1 ? sameName[0] : null);
+      if (!start) return null;
+      const end = headings.find(item => item.lineIndex > start.lineIndex && item.level <= start.level)?.lineIndex ?? lines.length;
+      let source = lines.slice(start.lineIndex, end).join('\n').trim();
+      // Named notes may be defined in another section; make the imported fragment self-contained.
+      const definitions = new Map([...full.matchAll(/\[\*([^\s\]]+)\s+([^\]]+)\]/g)].map(m => [m[1],m[2]]));
+      const seen = new Set();
+      source = source.replace(/\[\*([^\s\]]+)(?:\s+([^\]]+))?\]/g, (whole, name, body) => {
+        if (seen.has(name)) return `[*${name}]`;
+        seen.add(name);
+        const content = body || definitions.get(name);
+        return content ? `[*${name} ${content}]` : whole;
+      });
+      // Local links must retain their original lecture when imported into a different deck.
+      return source.replace(/\[\[#([^\]]+)\]\]/g, `[[${bookmark.courseId}강#$1]]`);
+    }
+    function ankiQuestionSource(question) {
+      return [question.question, question.passage,
+        ...(question.images || []).map(path => `[[파일:${path.replace(/^\.\//, '')}|문항 이미지]]`),
+        ...(question.choices || []).map((choice,index) => `${index + 1}. ${choice}`)
+      ].filter(Boolean).join('\n\n');
+    }
+    let ankiFragmentCounter = 0;
+    function renderAnkiFragment(source, course) {
+      return renderJblWikiFragment(source, { lectureIds:[ankiCourseId(course)], globalNumber:`anki-${++ankiFragmentCounter}` }, 'card');
+    }
+    function bindAnkiFragment(container, course) {
+      // A card has no complete Wiki document to scroll within; document links open the real Wiki.
+      container.addEventListener('click', event => {
+        const image = event.target.closest('[data-note-image]');
+        if (image && container.contains(image) && container.closest('dialog')) {
+          event.preventDefault(); event.stopImmediatePropagation();
+          const dialog = makeAnkiDialog('사진 확대');
+          dialog.classList.add('anki-image-dialog');
+          dialog.innerHTML = '<div class="anki-dialog-head"><span>사진</span><button type="button" class="anki-close" aria-label="사진 닫기">×</button></div>';
+          const enlarged = document.createElement('img');
+          enlarged.src = image.src; enlarged.alt = image.alt;
+          dialog.append(enlarged);
+          dialog.querySelector('button').onclick = () => dialog.close();
+          return;
+        }
+        const link = event.target.closest('[data-wiki-course], [data-jbl-question-link]');
+        if (!link || !container.contains(link)) return;
+        event.preventDefault(); event.stopImmediatePropagation();
+        const dialogs = [...document.querySelectorAll('.anki-dialog')];
+        if (dialogs.some(dialog => !dialog.dispatchEvent(new Event('anki-flush', {cancelable:true})))) return;
+        dialogs.reverse().forEach(dialog => dialog.close());
+        if (link.hasAttribute('data-jbl-question-link')) { openJblQuestionNumber(Number(link.dataset.jblQuestionLink)); return; }
+        const id = Number(link.dataset.wikiCourse);
+        const section = link.dataset.wikiSection;
+        history.pushState({ detailTab:'정리본', wikiSection:section }, '', `#lecture-${id}`);
+        showDetail(id, 'detail', '정리본', false);
+        queueWikiSectionScroll(() => document.querySelector('#content-panel'), section);
+      }, true);
+      bindWikiDocument(container, course);
+    }
+    function makeAnkiDialog(label) {
+      const dialog = document.createElement('dialog');
+      dialog.className = 'anki-dialog';
+      dialog.setAttribute('aria-label', label);
+      document.body.append(dialog);
+      dialog.addEventListener('close', () => {
+        const tooltip = dialog.querySelector('[data-wiki-footnote-preview-box]');
+        if (tooltip) { hideWikiFootnotePreview(); document.body.append(tooltip); }
+        dialog.remove();
+      }, { once:true });
+      dialog.showModal();
+      return dialog;
+    }
+    function refreshAnki(course, align = false) {
       const target = document.querySelector('#content-panel');
+      if (activeDetailTab !== 'KMLE' || location.hash !== `#lecture-${ankiCourseId(course)}`) return;
+      renderAnki(course, target);
+      if (align) requestAnimationFrame(() => {
+        const card = target.querySelector('.anki-card');
+        if (!card || !card.isConnected) return;
+        if (card.hasAttribute('data-anki-study-card')) { card.querySelector('[data-anki-face]').scrollTop = 0; return; }
+        const top = Math.max(0, card.getBoundingClientRect().top + window.scrollY);
+        // Reserve enough space even for a short last card, so document end cannot clamp the scroll.
+        target.style.paddingBottom = `${Math.max(24, window.innerHeight - card.offsetHeight)}px`;
+        window.scrollTo({ top, behavior:'instant' });
+      });
+    }
+    function ankiReviewState(course) {
+      const id = ankiCourseId(course);
+      const ids = ankiDeck(course).map(card => card.id);
+      let state = ankiSessions[id];
+      if (!state || !Array.isArray(state.queue) || !Array.isArray(state.known)) state = { queue:[], known:[] };
+      state.known = [...new Set(state.known)].filter(key => ids.includes(key));
+      state.queue = [...new Set(state.queue)].filter(key => ids.includes(key) && !state.known.includes(key));
+      ids.forEach(key => { if (!state.queue.includes(key) && !state.known.includes(key)) state.queue.push(key); });
+      ankiSessions[id] = state;
+      return state;
+    }
+    function rateAnkiCard(course, rating) {
+      const state = ankiReviewState(course);
+      const id = state.queue.shift();
+      if (!id) return;
+      if (rating === 'know') state.known.push(id);
+      else state.queue.splice(Math.min(state.queue.length, 2 + Math.floor(Math.random() * 3)), 0, id);
+      writeStudyStorage(ankiSessionKey, ankiSessions);
+      refreshAnki(course, true);
+    }
+    function renderAnki(course, target) {
+      ankiStudyObserver?.disconnect();
+      const deck = ankiDeck(course);
+      const editing = ankiEditingCourses.has(ankiCourseId(course));
+      const state = ankiReviewState(course);
+      const card = deck.find(item => item.id === state.queue[0]);
+      target.innerHTML = `<section class="anki-shell"><div class="anki-toolbar"><h3>Anki</h3>${ankiButton('즐겨찾기 불러오기','favorites')}${ankiButton('CSV 출력','csv')}${ankiButton(editing ? '편집 종료' : '편집하기','edit')}${ankiButton('작성하기','new')}</div><div data-anki-main></div></section>`;
+      const main = target.querySelector('[data-anki-main]');
+      target.querySelector('[data-anki-action="new"]').onclick = () => openAnkiEditor(course);
+      target.querySelector('[data-anki-action="favorites"]').onclick = () => openAnkiEditor(course, null, true);
+      target.querySelector('[data-anki-action="csv"]').onclick = () => {
+        if (!deck.length) { alert('출력할 카드가 없습니다.'); return; }
+        const cell = value => `"${String(value || '').replace(/"/g, '""')}"`;
+        const csv = [['문제','답'], ...deck.map(item => [item.front,item.back])].map(row => row.map(cell).join(',')).join('\r\n');
+        downloadCurrentFile(`Anki-${contentCourseNumber(course)}강.csv`, '\uFEFF' + csv, 'text/csv;charset=utf-8');
+      };
+      target.querySelector('[data-anki-action="edit"]').onclick = () => {
+        editing ? ankiEditingCourses.delete(ankiCourseId(course)) : ankiEditingCourses.add(ankiCourseId(course));
+        refreshAnki(course);
+      };
+      if (editing) {
+        main.innerHTML = `<div class="anki-card"><div class="anki-side-label">${deck.length}개 카드 · 카드를 선택해 편집</div><div class="anki-card-list">${deck.map((item,index) => `<div class="anki-card-row"><button class="jbl-btn jbl-btn-sub" type="button" data-anki-card-id="${escapeHtml(item.id)}">${index+1}. ${escapeHtml(item.front.replace(/\s+/g,' ').slice(0,100) || '빈 문제')}</button><button class="jbl-btn jbl-btn-sub" type="button" data-anki-delete-id="${escapeHtml(item.id)}" aria-label="${index+1}번째 카드 삭제">삭제</button></div>`).join('') || '<p>아직 작성된 카드가 없습니다.</p>'}</div></div>`;
+        main.querySelectorAll('[data-anki-card-id]').forEach(button => button.onclick = () => openAnkiEditor(course, button.dataset.ankiCardId));
+        main.querySelectorAll('[data-anki-delete-id]').forEach(button => button.onclick = () => {
+          if (!confirm('이 카드를 삭제할까요?')) return;
+          const next = ankiCards.filter(item => item.id !== button.dataset.ankiDeleteId);
+          if (!writeStudyStorage(ankiStorageKey,next)) return;
+          ankiCards = next;
+          ankiReviewState(course);
+          writeStudyStorage(ankiSessionKey,ankiSessions);
+          refreshAnki(course);
+        });
+        return;
+      }
+      if (!card) {
+        main.innerHTML = `<div class="anki-card"><h3>${deck.length ? '이 묶음의 복습을 완료했어요.' : '아직 작성된 카드가 없습니다.'}</h3>${deck.length ? ankiButton('다시 학습하기','restart') : '<p>작성하기 또는 즐겨찾기 불러오기로 카드를 만들어 주세요.</p>'}</div>`;
+        main.querySelector('[data-anki-action="restart"]')?.addEventListener('click', () => {
+          ankiSessions[ankiCourseId(course)] = { queue:deck.map(item => item.id), known:[] };
+          ankiMenuCourses.delete(ankiCourseId(course));
+          writeStudyStorage(ankiSessionKey, ankiSessions); refreshAnki(course, true);
+        });
+        return;
+      }
+      if (ankiMenuCourses.has(ankiCourseId(course))) {
+        main.innerHTML = `<div class="anki-card"><h3>${deck.length}개 카드</h3><p>남은 카드 ${state.queue.length}개</p>${ankiButton('학습 계속하기','resume')}</div>`;
+        main.querySelector('[data-anki-action="resume"]').onclick = () => { ankiMenuCourses.delete(ankiCourseId(course)); refreshAnki(course,true); };
+        return;
+      }
+      main.innerHTML = `<article class="anki-card" data-anki-study-card="${escapeHtml(card.id)}"><header class="anki-study-head"><div class="anki-side-label" data-anki-side-label>문제 · 남은 카드 ${state.queue.length} / ${deck.length}</div>${ankiButton('돌아가기','menu')}</header><div class="anki-study-stage"><div data-anki-face>${renderAnkiFragment(card.front,course)}</div></div><footer class="anki-study-footer" data-anki-rating>${ankiButton('Pass','pass')}${ankiButton('정답 보기','flip')}${ankiButton('Know','know')}</footer></article>`;
+      [['pass',','],['flip','Space'],['know','.']].forEach(([action,key]) => {
+        const button = main.querySelector(`[data-anki-action="${action}"]`);
+        button.setAttribute('aria-keyshortcuts',key);
+        button.title = `단축키: ${key === 'Space' ? '스페이스바' : key}`;
+      });
+      main.querySelector('[data-anki-action="menu"]').onclick = () => { ankiMenuCourses.add(ankiCourseId(course)); refreshAnki(course); };
+      let face = main.querySelector('[data-anki-face]');
+      bindAnkiFragment(face,course);
+      fitAnkiStudyImages(face);
+      let back = false;
+      main.querySelector('[data-anki-action="flip"]').onclick = event => {
+        back = !back;
+        face.innerHTML = renderAnkiFragment(back ? card.back : card.front,course);
+        // Replace the face to avoid accumulating click listeners while flipping.
+        const fresh = face.cloneNode(true); face.replaceWith(fresh);
+        bindAnkiFragment(fresh,course);
+        face = fresh;
+        face.scrollTop = 0;
+        fitAnkiStudyImages(face);
+        main.querySelector('[data-anki-side-label]').textContent = `${back ? '답' : '문제'} · 남은 카드 ${state.queue.length} / ${deck.length}`;
+        event.currentTarget.textContent = back ? '문제 보기' : '정답 보기';
+      };
+      main.querySelector('[data-anki-action="pass"]').onclick = () => rateAnkiCard(course,'pass');
+      main.querySelector('[data-anki-action="know"]').onclick = () => rateAnkiCard(course,'know');
+    }
+
+    function fitAnkiStudyImages(face) {
+      ankiStudyObserver?.disconnect();
+      let frame;
+      const resize = () => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => {
+          if (!face.isConnected) return;
+          const content = face.querySelector('.jbl-wiki-text');
+          const groups = [...face.querySelectorAll('.wiki-grid')];
+          if (!content || !groups.length) return;
+          const available = face.clientHeight - parseFloat(getComputedStyle(face).paddingTop) - parseFloat(getComputedStyle(face).paddingBottom);
+          const imageHeight = groups.reduce((sum,group) => sum + Math.max(0,...[...group.querySelectorAll('img')].map(img=>img.getBoundingClientRect().height)),0);
+          const textAndCaptions = content.scrollHeight - imageHeight;
+          const limit = Math.max(96,Math.min(available * .8,(available - textAndCaptions - 12) / groups.length));
+          face.style.setProperty('--anki-image-height',`${Math.floor(limit)}px`);
+        });
+      };
+      ankiStudyObserver = new ResizeObserver(resize);
+      ankiStudyObserver.observe(face);
+      face.addEventListener('load',resize,true);
+      resize();
+    }
+
+    function openAnkiEditor(course, initialId = null, loadFavorites = false) {
+      const dialog = makeAnkiDialog('Anki 카드 작성 및 편집');
+      let currentId = initialId;
+      let timer;
+      function persist() {
+        clearTimeout(timer);
+        if (!currentId) return true;
+        const next = ankiCards.map(card => card.id === currentId ? { ...card, front:dialog.querySelector('[data-anki-front]').value, back:dialog.querySelector('[data-anki-back]').value, updatedAt:Date.now() } : card);
+        const saved = writeStudyStorage(ankiStorageKey,next);
+        if (saved) ankiCards = next;
+        dialog.querySelector('.anki-status').textContent = saved ? '자동 저장됨' : '저장 실패 · 내용을 복사해 보관해 주세요.';
+        return saved;
+      }
+      function closeEditor() { if (persist()) dialog.close(); }
+      function draw() {
+        const card = ankiCards.find(item => item.id === currentId);
+        const editing = Boolean(card);
+        dialog.innerHTML = `<div class="anki-dialog-head"><div>${ankiButton('즐겨찾기 불러오기','favorites')}</div><h3>${editing ? '카드 편집' : '카드 작성'}</h3><button type="button" class="anki-close" data-anki-close aria-label="닫기">×</button></div><div class="anki-fields"><div><label for="anki-front">문제</label><textarea id="anki-front" data-anki-front spellcheck="false">${escapeHtml(card?.front || '')}</textarea></div><div><label for="anki-back">답</label><textarea id="anki-back" data-anki-back spellcheck="false">${escapeHtml(card?.back || '')}</textarea></div></div><p class="anki-status">${editing ? '수정 시 자동 저장됩니다.' : ''}</p>${wikiSyntaxHelpMarkup()}<div class="anki-actions">${editing ? `${ankiButton('←','previous')}${ankiButton('편집 종료','done')}${ankiButton('→','next')}` : `${ankiButton('취소','cancel')}${ankiButton('저장','save')}`}</div>`;
+        const front = dialog.querySelector('[data-anki-front]');
+        const back = dialog.querySelector('[data-anki-back]');
+        [front,back].forEach(input => input.addEventListener('input', () => {
+          if (!currentId) return;
+          clearTimeout(timer);
+          dialog.querySelector('.anki-status').textContent = '저장 중…';
+          timer = setTimeout(persist,250);
+        }));
+        dialog.querySelector('[data-anki-action="favorites"]').onclick = () => openAnkiFavorites(course, source => {
+          // Insert at the cursor; creating a card with no existing text simply fills its question.
+          const start = front.selectionStart;
+          const prefix = start > 0 ? '\n\n' : '';
+          front.setRangeText(prefix + source, start, front.selectionEnd, 'end');
+          front.dispatchEvent(new Event('input',{ bubbles:true }));
+        });
+        dialog.querySelector('[data-anki-close]').onclick = closeEditor;
+        dialog.querySelector('[data-anki-action="cancel"]')?.addEventListener('click', () => dialog.close());
+        dialog.querySelector('[data-anki-action="save"]')?.addEventListener('click', () => {
+          if (!front.value.trim()) { front.focus(); dialog.querySelector('.anki-status').textContent = '문제를 입력해 주세요.'; return; }
+          const next = [...ankiCards, { id:crypto.randomUUID(), courseId:ankiCourseId(course), front:front.value, back:back.value, updatedAt:Date.now() }];
+          if (writeStudyStorage(ankiStorageKey,next)) { ankiCards = next; dialog.close(); }
+        });
+        dialog.querySelector('[data-anki-action="done"]')?.addEventListener('click', () => {
+          if (!persist()) return;
+          ankiEditingCourses.delete(ankiCourseId(course)); dialog.close();
+        });
+        ['previous','next'].forEach(action => {
+          const button = dialog.querySelector(`[data-anki-action="${action}"]`);
+          if (!button) return;
+          const deck = ankiDeck(course);
+          const nextIndex = deck.findIndex(item => item.id === currentId) + (action === 'next' ? 1 : -1);
+          button.disabled = nextIndex < 0 || nextIndex >= deck.length;
+          button.onclick = () => { if (persist()) { currentId = deck[nextIndex].id; draw(); dialog.scrollTo({top:0,behavior:'instant'}); } };
+        });
+      }
+      draw();
+      dialog.addEventListener('anki-flush', event => { if (!persist()) event.preventDefault(); });
+      dialog.addEventListener('cancel', event => { event.preventDefault(); closeEditor(); });
+      const flushOnExit = () => { if (currentId && dialog.isConnected) persist(); };
+      window.addEventListener('pagehide',flushOnExit);
+      dialog.addEventListener('close', () => { clearTimeout(timer); window.removeEventListener('pagehide',flushOnExit); refreshAnki(course); });
+      if (loadFavorites) dialog.querySelector('[data-anki-action="favorites"]').click();
+    }
+
+    function openAnkiFavorites(course, add) {
+      const dialog = makeAnkiDialog('즐겨찾기 불러오기');
+      let tab = 'wiki';
+      function draw() {
+        const entries = tab === 'wiki'
+          ? wikiBookmarks.map(item => ({ label:`${item.courseId}강 · ${item.heading}`, href:`#lecture-${item.courseId}`, source:() => wikiBookmarkSource(item), course:byId(item.courseId) || course }))
+          : jblQuestions.filter(question => jblFavorites.has(question.id)).map(question => ({ label:`${question.globalNumber}번`, href:`#jbl-q-${question.globalNumber}`, source:() => ankiQuestionSource(question), course:byId(question.lectureIds?.[0]) || course, question }));
+        dialog.innerHTML = `<div class="anki-dialog-head"><div role="tablist" aria-label="즐겨찾기 종류"><button type="button" class="content-tab ${tab==='wiki'?'active':''}" role="tab" aria-selected="${tab==='wiki'}" data-fav-tab="wiki">Wiki</button><button type="button" class="content-tab ${tab==='j'?'active':''}" role="tab" aria-selected="${tab==='j'}" data-fav-tab="j">J</button></div><button class="anki-close" type="button" data-close-favs aria-label="즐겨찾기 닫기">×</button></div><div class="anki-fav-layout"><div class="anki-fav-list">${entries.map((entry,index) => `<div class="anki-fav-row"><a href="${entry.href}" data-fav-preview="${index}">${escapeHtml(entry.label)}</a><button class="jbl-btn jbl-btn-sub" type="button" data-fav-add="${index}">추가</button></div>`).join('') || '<p>즐겨찾기한 항목이 없습니다.</p>'}</div><aside class="anki-preview" hidden></aside></div>`;
+        dialog.querySelector('[data-close-favs]').onclick = () => dialog.close();
+        dialog.querySelectorAll('[data-fav-tab]').forEach(button => button.onclick = () => { tab = button.dataset.favTab; draw(); });
+        dialog.querySelectorAll('[data-fav-add]').forEach(button => button.onclick = () => {
+          const source = entries[Number(button.dataset.favAdd)].source();
+          if (source == null) { alert('문단이 이동하거나 제목이 바뀌었습니다. Wiki에서 다시 즐겨찾기해 주세요.'); return; }
+          add(source); dialog.close();
+        });
+        dialog.querySelectorAll('[data-fav-preview]').forEach(link => link.onclick = event => {
+          event.preventDefault();
+          const entry = entries[Number(link.dataset.favPreview)];
+          const source = entry.source();
+          const preview = dialog.querySelector('.anki-preview');
+          dialog.querySelector('.anki-fav-layout').classList.add('with-preview');
+          preview.hidden = false;
+          preview.innerHTML = `<div class="anki-preview-head"><strong>${escapeHtml(entry.label)}</strong><button class="anki-close" type="button" data-close-preview aria-label="미리보기 닫기">×</button></div><div data-preview-body>${source == null ? '<p>문단을 찾을 수 없습니다. 다시 즐겨찾기해 주세요.</p>' : renderAnkiFragment(source,entry.course)}</div>${entry.question ? `<details><summary>정답 및 해설</summary><div data-preview-answer>${renderAnkiFragment(entry.question.answerLabel+'\n\n'+entry.question.explanation,entry.course)}</div></details>` : ''}`;
+          bindAnkiFragment(preview.querySelector('[data-preview-body]'),entry.course);
+          const answer = preview.querySelector('[data-preview-answer]');
+          if (answer) bindAnkiFragment(answer,entry.course);
+          preview.querySelector('[data-close-preview]').onclick = () => { preview.hidden = true; preview.replaceChildren(); dialog.querySelector('.anki-fav-layout').classList.remove('with-preview'); link.focus(); };
+          preview.scrollTop = 0;
+        });
+      }
+      draw();
+    }
+
+    function renderContentPanel(course) {
+      ankiStudyObserver?.disconnect();
+      const target = document.querySelector('#content-panel');
+      target.style.paddingBottom = '';
       const hasNote = Boolean(lectureNoteSources[course.id]);
       target.classList.toggle('j-mode', activeDetailTab === 'J');
       target.classList.toggle('notes-mode', activeDetailTab === '정리본' && hasNote);
@@ -2373,6 +2810,7 @@
         return;
       }
       if (activeDetailTab === '정리본' && renderLectureNote(course, target)) return;
+      if (activeDetailTab === 'KMLE') { renderAnki(course, target); return; }
       target.innerHTML = `<span class="panel-label">${contentCourseNumber(course)}강 · ${detailTabLabel(activeDetailTab)}</span><h3>${detailTabLabel(activeDetailTab)}</h3><div class="empty-state"><div><strong>아직 작성된 내용이 없습니다.</strong></div></div>`;
     }
 
@@ -2421,6 +2859,21 @@
       return null;
     }
 
+    function handleAnkiShortcut(event) {
+      if (event.defaultPrevented || event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const card = document.querySelector('#detail-view:not([hidden]) [data-anki-study-card]');
+      if (!card || activeDetailTab !== 'KMLE' || document.querySelector('dialog[open], .wiki-section-editor-overlay, #jbl-image-modal.show')) return;
+      if (event.target instanceof Element) {
+        if (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+        const control = event.target.closest('button, a');
+        if (control && !control.closest('.anki-study-footer')) return;
+      }
+      const action = event.code === 'Space' || event.key === ' ' ? 'flip' : event.key === ',' ? 'pass' : event.key === '.' ? 'know' : null;
+      if (!action) return;
+      event.preventDefault();
+      if (!event.repeat) card.querySelector(`[data-anki-action="${action}"]`).click();
+    }
+
     function handleQuestionShortcut(event) {
       if (event.repeat || event.altKey || event.ctrlKey || event.metaKey) return;
       if (event.target instanceof Element && event.target.closest('input, textarea, select, button, [contenteditable="true"]')) return;
@@ -2457,6 +2910,7 @@
     document.querySelector('.jbl-image-close').addEventListener('click', closeJblImage);
     document.addEventListener('keydown', event => { if (event.key === 'Escape') closeJblImage(); });
     document.addEventListener('keydown', handleQuestionShortcut);
+    document.addEventListener('keydown', handleAnkiShortcut);
     window.addEventListener('scroll', handleJblTopbarScroll, { passive:true });
     window.addEventListener('resize', () => {
       if (!window.matchMedia('(max-width: 760px)').matches) setJblTopbarHidden(false);
