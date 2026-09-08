@@ -1000,7 +1000,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 유두상증식과 과형성",
-      "explanation": "정답: 3번 · 유두상피증식과 과형성\n\n== 배경 지식 ==\n미끄럼 식도열공탈장(sliding hiatal hernia)은 위식도접합부가 횡격막 위로 이동하는 형태로 위식도역류와 밀접하다. 반복되는 산 역류는 식도 편평상피에 기저층 과형성, 고유판 유두의 연장, 염증세포 침윤을 일으킨다.\n\n== 정답 선지 ==\n* '''3번''': 문제의 유두상피증식은 역류성 식도염에서 보이는 고유판 유두 연장과 기저층 과형성을 가리키므로 옳다.\n\n== 오답 선지 ==\n* '''1번''': 과각화는 역류성 식도염의 대표 진단 소견이 아니다.\n* '''2번''': 장상피화생은 만성 역류 뒤 발생할 수 있는 Barrett 식도의 소견이며 단순 sliding hernia의 기본 조직 소견은 아니다.\n* '''4번''': 점막밑농양은 감염성·화농성 손상을 시사하며 전형적인 역류성 변화가 아니다.\n\n== 출제 의도 ==\n미끄럼 식도열공탈장과 역류성 식도염의 연관성을 조직학적 변화까지 연결하는지를 평가한다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n* [[10강#역류성 식도염|역류성 식도염]]\n\n== 관련 J ==\n{{735}} {{769}} {{770}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 3번 · 유두상피증식과 과형성\n\n== 배경 지식 ==\n미끄럼 식도열공탈장(sliding hiatal hernia)은 위식도접합부가 횡격막 위로 이동하는 형태로 위식도역류와 밀접하다. 반복되는 산 역류는 식도 편평상피에 기저층 과형성, 고유판 유두의 연장, 염증세포 침윤을 일으킨다.\n\n== 정답 선지 ==\n* '''3번''': 문제의 유두상피증식은 역류성 식도염에서 보이는 고유판 유두 연장과 기저층 과형성을 가리키므로 옳다.\n\n== 오답 선지 ==\n* '''1번''': 과각화는 역류성 식도염의 대표 진단 소견이 아니다.\n* '''2번''': 장상피화생은 만성 역류 뒤 발생할 수 있는 Barrett 식도의 소견이며 단순 sliding hernia의 기본 조직 소견은 아니다.\n* '''4번''': 점막밑농양은 감염성·화농성 손상을 시사하며 전형적인 역류성 변화가 아니다.\n\n== 출제 의도 ==\n미끄럼 식도열공탈장과 역류성 식도염의 연관성을 조직학적 변화까지 연결하는지를 평가한다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n* [[10강#역류성 식도염 · Reflux esophagitis|역류성 식도염]]\n\n== 관련 J ==\n{{735}} {{769}} {{770}}\n\n== 문항 표현 주의 ==\n③의 basal hyperplasia·papillary elongation은 역류성 식도염의 대표 소견이다. 다만 ‘나타날 수 있는’이라는 넓은 발문이면 장기간 역류 뒤 ② Barrett intestinal metaplasia도 가능하다. ③이 가장 전형적이라는 판단과 ②가 절대 발생하지 않는다는 주장을 구분한다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -1114,12 +1114,10 @@ window.JBL_DATA = {
         "hypertrophy",
         "heterotopia"
       ],
-      "answerIndex": 3,
-      "answerIndices": [
-        3
-      ],
-      "answerLabel": "정답: 3번 · metaplasia",
-      "explanation": "정답: 3번 · metaplasia\n\n== 배경 지식 ==\n화생(metaplasia)은 한 종류의 성숙한 세포가 다른 종류의 성숙한 세포로 가역적으로 대체되는 적응반응이다. 이형성(dysplasia)은 세포의 크기·모양·배열과 성숙이 비정상적인 전암성 변화이고, 역형성(anaplasia)은 악성종양에서 분화가 소실된 상태이다. 비대(hypertrophy)는 개별 세포의 크기 증가, 이소증(heterotopia)은 정상 조직이 비정상 위치에 존재하는 상태다.\n\n== 정답 선지 ==\n'''3번 metaplasia''': 발문이 의도한 ‘분화된 위샘세포가 다른 성숙 세포형으로 바뀌는 현상’은 화생이다.\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 성숙 세포형의 대체가 아니라 세포학적·구조적 비정형이다.\n* '''2번 anaplasia''': 악성세포의 분화 소실을 뜻한다.\n* '''4번 hypertrophy''': 세포 종류는 그대로이고 크기만 증가한다.\n* '''5번 heterotopia''': 정상 조직이 원래 위치와 다른 곳에 존재한다.\n\n== 출제 의도 ==\n화생과 이형성·역형성·비대·이소증의 정의를 구별하게 한다. 다만 복원 발문의 '''fundus gland와 body gland는 모두 oxyntic mucosa에 속하므로 서로 다른 세포형의 대체라는 표현이 성립하지 않는다.''' 공식 정답의 의도는 metaplasia이지만 원문 일부가 잘못 복원되었을 가능성이 있다.\n\n== WIKI 연결 ==\n* [[11강#만성위염|만성위염]]\n* [[11강#병리 소견|위점막의 화생]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n화생(metaplasia)은 한 종류의 성숙한 세포가 다른 종류의 성숙한 세포로 가역적으로 대체되는 적응반응이다. 이형성(dysplasia)은 세포의 크기·모양·배열과 성숙이 비정상적인 전암성 변화이고, 역형성(anaplasia)은 악성종양에서 분화가 소실된 상태이다. 비대(hypertrophy)는 개별 세포의 크기 증가, 이소증(heterotopia)은 정상 조직이 비정상 위치에 존재하는 상태다.\n\n== 정답 선지 ==\n'''3번 metaplasia''': 발문이 의도한 ‘분화된 위샘세포가 다른 성숙 세포형으로 바뀌는 현상’은 화생이다.\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 성숙 세포형의 대체가 아니라 세포학적·구조적 비정형이다.\n* '''2번 anaplasia''': 악성세포의 분화 소실을 뜻한다.\n* '''4번 hypertrophy''': 세포 종류는 그대로이고 크기만 증가한다.\n* '''5번 heterotopia''': 정상 조직이 원래 위치와 다른 곳에 존재한다.\n\n== 출제 의도 ==\n화생과 이형성·역형성·비대·이소증의 정의를 구별하게 한다. 다만 복원 발문의 '''fundus gland와 body gland는 모두 oxyntic mucosa에 속하므로 서로 다른 세포형의 대체라는 표현이 성립하지 않는다.''' Metaplasia를 의도했을 가능성은 있지만 원문 일부가 잘못 복원되었을 가능성이 있다.\n\n== WIKI 연결 ==\n* [[11강#만성위염|만성위염]]\n* [[11강#병리 소견|위점막의 화생]]\n\n== 문항 오류 가능성 ==\nFundus와 body는 모두 oxyntic gland가 분포하는 부위이므로 현재 발문만으로 성숙 세포형이 바뀌었다는 사실을 입증할 수 없다. 기존 ③은 확인된 공식 정답이 아니다. 실제로 어떤 세포에서 어떤 세포로 바뀌었는지 원래 발문 확인이 필요하다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -1197,7 +1195,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 크론은 longitudinal linear ~",
-      "explanation": "정답: 3번 · 크론은 longitudinal linear ~\n\n== 배경 지식 ==\nCrohn disease는 skip lesion, 종주성·구불구불한 깊은 궤양, cobblestone appearance, transmural inflammation과 비건락성 육아종이 특징이다. 장결핵은 회맹부를 잘 침범하고 장축에 수직인 횡행·환상궤양, 건락괴사를 동반한 육아종, 항산균 또는 TB-PCR 양성이 감별에 유리하다.\n\n== 정답 선지 ==\n'''3번''': Crohn disease에서 longitudinal linear ulcer가 나타난다는 진술은 두 질환을 가르는 대표적인 육안 기준이다.\n\n== 오답 선지 ==\n* '''1번''': 건락성 육아종은 Crohn disease가 아니라 장결핵을 지지한다.\n* '''2·4·5번''': 현재 복원본에는 선지의 핵심 문구가 누락되어 있어 개별 진술의 정오를 판정할 수 없다.\n\n== 출제 의도 ==\nCrohn disease의 종주성 궤양·비건락성 육아종과 장결핵의 횡행궤양·건락성 육아종을 대조한다. '''선지 2·4·5의 문장이 유실된 불완전 복원 문항'''이므로 정답은 남아 있는 공식 표기와 판독 가능한 3번을 기준으로 제시한다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#장결핵 · Tuberculous enterocolitis|장결핵]]\n\n== 관련 J ==\n{{477}} {{740}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 3번 · 크론은 longitudinal linear ~\n\n== 배경 지식 ==\nCrohn disease는 skip lesion, 종주성·구불구불한 깊은 궤양, cobblestone appearance, transmural inflammation과 비건락성 육아종이 특징이다. 장결핵은 회맹부를 잘 침범하고 장축에 수직인 횡행·환상궤양, 건락괴사를 동반한 육아종, 항산균 또는 TB-PCR 양성이 감별에 유리하다.\n\n== 정답 선지 ==\n'''3번''': Crohn disease에서 longitudinal linear ulcer가 나타난다는 진술은 두 질환을 가르는 대표적인 육안 기준이다.\n\n== 오답 선지 ==\n* '''1번''': 건락성 육아종은 Crohn disease가 아니라 장결핵을 지지한다.\n* '''2·4·5번''': 현재 복원본에는 선지의 핵심 문구가 누락되어 있어 개별 진술의 정오를 판정할 수 없다.\n\n== 출제 의도 ==\nCrohn disease의 종주성 궤양·비건락성 육아종과 장결핵의 횡행궤양·건락성 육아종을 대조한다. '''선지 2·4·5의 문장이 유실된 불완전 복원 문항'''이므로 판독 가능한 3번의 개념은 지지되지만 다른 선지까지 배제한 단일정답 검증은 불가능하다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#장결핵 · Tuberculous enterocolitis|장결핵]]\n\n== 관련 J ==\n{{477}} {{740}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -1230,12 +1228,10 @@ window.JBL_DATA = {
         "조직 소견 3",
         "조직 소견 4"
       ],
-      "answerIndex": 3,
-      "answerIndices": [
-        3
-      ],
-      "answerLabel": "정답: 3번 · 조직 소견 3",
-      "explanation": "정답: 3번 · 조직 소견 3\n\n== 배경 지식 ==\n대장암의 대표 선행병변은 이형성을 동반한 conventional adenoma와 일부 serrated lesion이다. Conventional adenoma의 상피는 길고 과염색된 거짓중층핵, 핵의 극성 소실과 유사분열을 보인다. Villous architecture, 큰 크기와 고등급 이형성은 암 위험을 높인다.\n\n== 정답 선지 ==\n'''3번 조직 소견''': 손가락 모양의 긴 융모성 돌기를 이형성 원주상피가 덮는 villous adenoma로, 대장암의 전구병변이다.\n\n== 오답 선지 ==\n* '''1번 조직 소견''': 톱니모양 crypt가 보이지만 세포학적 이형성이 뚜렷하지 않은 과형성용종 계열의 형태다.\n* '''2번 조직 소견''': 불규칙한 악성샘과 desmoplastic stroma가 보이는 침윤성 adenocarcinoma로 이미 암이 발생한 병변이다.\n* '''4번 조직 소견''': 가지처럼 뻗는 smooth muscle core를 보이는 Peutz–Jeghers hamartomatous polyp의 형태다.\n\n== 출제 의도 ==\n네 조직사진에서 과형성용종, 침윤암, conventional adenoma와 hamartomatous polyp을 구분하고 암의 선행병변을 고르게 한다.\n\n== WIKI 연결 ==\n* [[12강#Conventional adenoma|Conventional adenoma]]\n* [[12강#Adenoma–carcinoma sequence|Adenoma–carcinoma sequence]]\n\n== 관련 J ==\n{{273}} {{421}} {{597}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[12강#Conventional adenoma|Conventional adenoma]]뿐 아니라 [[12강#Serrated lesion의 유형과 형태|sessile serrated lesion(SSL)]]도 대장암의 전구병변이다. SSL은 crypt base의 확장·수평 성장·serration을 보이며 초기에는 cytologic dysplasia가 뚜렷하지 않을 수 있다.\n\n== 정답 선지 ==\n③ 사진의 villous adenoma는 대장암 선행병변에 해당한다. 그러나 ①이 SSL이면 역시 선행병변이므로 ‘③만 정답’이라고 확정할 수 없다. 친구의 풀이에 적힌 정답 추측이나 위험도 비교를 채점 근거로 사용하지 않는다.\n\n== 오답 선지 ==\n* ① Crypt base까지 이어지는 serration과 확장·분지를 보이는 SSL은 이형성이 뚜렷하지 않아도 전구병변이다. 기존 해설처럼 단순 hyperplastic polyp으로 배제할 수 없다.\n* ② Invasive adenocarcinoma는 이미 발생한 암이다.\n* ④ Branching smooth muscle core를 갖는 Peutz–Jeghers polyp은 hamartomatous polyp이다. 증후군의 암 위험 증가와 해당 폴립 자체의 전형적인 adenoma–carcinoma 진행을 구분한다.\n\n== 출제 의도 ==\nConventional adenoma와 serrated precursor 양쪽을 암발생 경로와 연결한다.\n\n== 문항 오류 가능성 ==\n현재 발문은 ‘가장 위험한 병변’이 아니라 ‘선행병변’을 묻는다. ①·③이 모두 해당할 수 있어 단일 정답 ③의 채점을 보류한다. 공식 문항 또는 원래의 복수정답 조건 확인이 필요하다.\n\n== Wiki 연결 ==\n* [[12강#Conventional adenoma|Conventional adenoma]]\n* [[12강#Serrated lesion의 유형과 형태|SSL과 TSA]]\n* [[12강#Hamartomatous polyp|Hamartomatous polyp]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_032_01.png",
         "2025_소화기_문항별_사진/2025_032_02.png",
@@ -1279,7 +1275,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · 유사분열 개수와 크기",
-      "explanation": "정답: 4번 · 유사분열 개수와 크기\n\n== 배경 지식 ==\nGastrointestinal stromal tumor(GIST)는 Cajal 사이질세포 계통의 간엽종양으로 KIT 또는 PDGFRA 변화가 흔하다. 위에서 가장 흔하고 방추세포 또는 상피모양세포로 구성되며 c-KIT(DOG1) 면역염색이 진단을 지지한다. 생물학적 위험은 종양 크기, 유사분열 수, 발생부위와 파열 여부를 종합해 평가한다.\n\n== 정답 선지 ==\n'''4번 유사분열 개수와 크기''': 강의표의 위험도 분류에서 가장 직접적으로 조합하는 두 변수다.\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 상피성 전암병변의 개념으로 GIST 위험도 산정의 핵심이 아니다.\n* '''2번 위치''': 발생부위도 예후에 영향을 주지만 이 문항이 요구하는 강의표의 두 핵심 변수는 크기와 유사분열 수다.\n* '''3번 c-KIT mutation''': 발생기전과 표적치료에는 중요하지만 단독으로 위험도를 정하지 않는다.\n* '''5번 Ki-67''': 보조 증식지표가 될 수 있으나 강의에서 제시한 표준 위험도표의 핵심 두 항목은 아니다.\n\n== 출제 의도 ==\nGIST의 진단 표지·분자이상과 예후 위험인자를 구분하게 한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|GIST 생물학적 위험도]]\n\n== 관련 J ==\n{{236}} {{607}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 4번 · 유사분열 개수와 크기\n\n== 배경 지식 ==\nGastrointestinal stromal tumor(GIST)는 Cajal 사이질세포 계통의 간엽종양으로 KIT 또는 PDGFRA 변화가 흔하다. 위에서 가장 흔하고 방추세포 또는 상피모양세포로 구성되며 c-KIT(CD117)와 DOG1 면역염색이 진단을 지지한다. 생물학적 위험은 종양 크기, 유사분열 수, 발생부위와 파열 여부를 종합해 평가한다.\n\n== 정답 선지 ==\n'''4번 유사분열 개수와 크기''': 강의표의 위험도 분류에서 가장 직접적으로 조합하는 두 변수다.\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 상피성 전암병변의 개념으로 GIST 위험도 산정의 핵심이 아니다.\n* '''2번 위치''': 발생부위도 예후에 영향을 주지만 이 문항이 요구하는 강의표의 두 핵심 변수는 크기와 유사분열 수다.\n* '''3번 c-KIT mutation''': 발생기전과 표적치료에는 중요하지만 단독으로 위험도를 정하지 않는다.\n* '''5번 Ki-67''': 보조 증식지표가 될 수 있으나 강의에서 제시한 표준 위험도표의 핵심 두 항목은 아니다.\n\n== 출제 의도 ==\nGIST의 진단 표지·분자이상과 예후 위험인자를 구분하게 한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|GIST 생물학적 위험도]]\n\n== 관련 J ==\n{{236}} {{607}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_033_01.jpg"
       ],
@@ -2074,9 +2070,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 1·5번 · UDCA / MTX",
       "explanation": "정답: 1·5번 · UDCA / MTX\n[검토 상태]\n오답30 미수록.",
-      "images": [
-        "2025_소화기_문항별_사진/2025_050_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "",
       "lectureIds": [
         52
@@ -2116,7 +2110,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 심방세동",
       "explanation": "정답: 3번 · 심방세동\n\n[핵심 해설]\n갑작스럽게 발생한 심한 복통, 항응고제 중단력, 심방세동 병력과 CT 혈관영상의 상장간막동맥 폐색 소견을 종합하면 급성 장간막 허혈, 그중 심장성 색전에 의한 상장간막동맥 폐색이 가장 의심된다. 심방세동은 대표적인 심장성 색전 원인이므로 4가 정답이다.\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2025_소화기_문항별_사진/2025_051_01.jpg"
+        "2025_소화기_문항별_사진/2025_050_01.png"
       ],
       "legacyProfessor": "",
       "lectureIds": [
@@ -2156,7 +2150,9 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · 진단 즉시 시험적 개복술을 시행한다.",
       "explanation": "정답: 3번 · 진단 즉시 시험적 개복술을 시행한다.\n\n[핵심 해설]\n췌장염 뒤 발생한 장간막정맥혈전증으로 해석되는 증례이다. 활력징후가 안정적이고 반발통 등 복막자극징후가 없다면 우선 항응고치료와 보존적 치료를 시행하며 면밀히 관찰한다. 장괴사·천공이나 복막염을 시사하는 소견 없이 즉시 시험적 개복술을 하는 것은 적절하지 않으므로 5가 정답이다.\n[검토 상태]\n오답30 미수록.",
-      "images": [],
+      "images": [
+        "2025_소화기_문항별_사진/2025_051_01.jpg"
+      ],
       "legacyProfessor": "",
       "lectureIds": [
         23
@@ -3283,8 +3279,8 @@ window.JBL_DATA = {
       "answerIndices": [
         2
       ],
-      "answerLabel": "정답: 2번 · 나: lamina proporia - central lacteal",
-      "explanation": "정답: 2번 · 나: lamina proporia - central lacteal\n\n== 배경 지식 ==\n사진은 작은창자 융모와 창자샘을 보여 준다. 융모는 점막고유판을 중심으로 하는 점막 돌기이며, 중심암죽관은 융모의 고유판 안에 위치한다.\n\n== 정답 선지 ==\n'''2번''' (나)의 중심암죽관은 융모 속 고유판에 위치한다.\n\n== 오답 선지 ==\n* '''1번''': 융모는 점막밑층이 아니라 점막의 돌기이다.\n* '''3번''': 표시된 창자샘 바닥의 호산성과립 세포는 술잔세포나 장내분비세포가 아니라 Paneth 세포이다.\n\n== 출제 의도 ==\n작은창자 융모의 층 구성과 창자샘 세포를 조직 사진에서 판독한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|융모와 미세융모]]\n* [[1강#고유판과 GALT|융모 고유판과 중심암죽관]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{329}} {{524}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerLabel": "정답 추정: 2번 · 나: lamina propria - central lacteal",
+      "explanation": "정답 추정: 2번 · 나: lamina propria - central lacteal\n\n== 배경 지식 ==\n사진은 작은창자 융모와 창자샘을 보여 준다. 융모는 점막고유판을 중심으로 하는 점막 돌기이며, 중심암죽관은 융모의 고유판 안에 위치한다.\n\n== 정답 선지 ==\n'''2번''' (나)의 중심암죽관은 융모 속 고유판에 위치한다.\n\n== 오답 선지 ==\n* '''1번''': 융모는 점막밑층이 아니라 점막의 돌기이다.\n* '''3번''': 표시된 창자샘 바닥의 호산성과립 세포는 술잔세포나 장내분비세포가 아니라 Paneth 세포이다.\n\n== 출제 의도 ==\n작은창자 융모의 층 구성과 창자샘 세포를 조직 사진에서 판독한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|융모와 미세융모]]\n* [[1강#고유판과 GALT|융모 고유판과 중심암죽관]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{329}} {{524}}\n\n== 문항 오류 가능성 ==\nLamina propria의 central lacteal이라는 지식은 맞지만, 참고 그림의 (나) 표시는 lamina propria와 muscularis mucosae를 함께 포함할 수 있다. 현재 세 선지만 복원되어 있고 나머지 표지·선지와 원래 사진의 일치가 확인되지 않아 기존 ②를 확정된 판독 정답으로 취급하지 않는다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_081_01.png"
       ],
@@ -3325,7 +3321,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · myenteric plexus-inner circular m & outer longitudinal m 사이",
-      "explanation": "정답: 4번 · myenteric plexus-inner circular m & outer longitudinal m 사이\n\n== 배경 지식 ==\n사진은 큰창자 벽이다. 큰창자는 융모가 없고 길고 곧은 창자샘과 림프소절을 보일 수 있다. Auerbach 근육층신경얼기는 속돌림근층과 바깥세로근층 사이에 위치한다.\n\n== 정답 선지 ==\n'''4번''' 표시된 신경얼기는 속돌림근층과 바깥세로근층 사이의 Auerbach 신경얼기이다.\n\n== 오답 선지 ==\n* '''1번''': tunica mucosa는 상피·고유판·점막근육층 전체를 포함하므로 표시 위치와 맞지 않는다.\n* '''2번''': 큰창자에는 융모가 없다.\n* '''3번''': 사진의 림프소절을 돌창자의 Peyer 판으로 볼 수 없다.\n* '''5번''': 결장팽대는 육안적 주머니 모양 구조이며 표시된 현미경 구조가 아니다.\n\n== 출제 의도 ==\n큰창자 표본에서 벽의 층과 Auerbach 신경얼기의 위치를 확인한다.\n\n== WIKI 연결 ==\n* [[1강#큰창자벽|큰창자벽]]\n* [[2강#잘록창자|잘록창자 실습]]\n\n== 관련 J ==\n{{330}} {{380}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 4번 · myenteric plexus-inner circular m & outer longitudinal m 사이\n\n== 배경 지식 ==\n사진은 큰창자 벽이다. 큰창자는 융모가 없고 길고 곧은 창자샘과 림프소절을 보일 수 있다. Auerbach 근육층신경얼기는 속돌림근층과 바깥세로근층 사이에 위치한다.\n\n== 정답 선지 ==\n'''4번''' 표시된 신경얼기는 속돌림근층과 바깥세로근층 사이의 Auerbach 신경얼기이다.\n\n== 오답 선지 ==\n* '''1번''': tunica mucosa는 상피·고유판·점막근육층 전체를 포함하므로 표시 위치와 맞지 않는다.\n* '''2번''': 큰창자에는 융모가 없다.\n* '''3번''': 사진의 림프소절을 돌창자의 Peyer 판으로 볼 수 없다.\n* '''5번''': 결장팽대는 육안적 주머니 모양 구조이며 표시된 현미경 구조가 아니다.\n\n== 출제 의도 ==\n큰창자 표본에서 벽의 층과 Auerbach 신경얼기의 위치를 확인한다.\n\n== WIKI 연결 ==\n* [[1강#큰창자벽|큰창자벽]]\n* [[2강#실습 7. 잘록창자|잘록창자 실습]]\n\n== 관련 J ==\n{{330}} {{380}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_082_01.png"
       ],
@@ -3400,12 +3396,10 @@ window.JBL_DATA = {
         "(마)는 cholangiocyte로 lining 되어 있다",
         "간세동이(portal triad)는 (가),(나),(라)이다"
       ],
-      "answerIndex": 5,
-      "answerIndices": [
-        5
-      ],
-      "answerLabel": "정답: 5번 · 간세동이(portal triad)는 (가),(나),(라)이다",
-      "explanation": "정답: 5번 · 간세동이(portal triad)는 (가), (나), (라)이다\n\n== 배경 지식 ==\n[[7강#간 저배율 판독|간 저배율]]에서 중심정맥은 단독으로 보이고 간세포판이 주위에서 방사상으로 모인다. 반면 문맥구역은 결합조직 안에 문맥가지, 간동맥가지와 소엽사이쓸개관이 함께 보인다. [[7강#문맥관세동이 · Portal triad|문맥관세동이(portal triad)]]의 문맥가지는 내강이 가장 크고 벽이 얇으며, 간동맥가지는 내강이 작고 벽이 두껍고, 쓸개관은 단층입방상피로 둘러싸인다. 혈액은 문맥구역에서 간동굴모세혈관을 거쳐 중심정맥으로 흐르고 쓸개즙은 반대 방향으로 흐른다.\n\n== 정답 선지 ==\n복원 정답은 ⑤이다. 다만 현재 수록된 참고 사진은 원문의 (가)–(마) 표지 배치와 다를 수 있다는 복원 메모가 있으므로 문자 조합 자체보다 문맥가지·간동맥가지·쓸개관의 조직학적 특징을 기준으로 판독해야 한다.\n\n== 오답 선지 ==\n* ① Space of Disse는 인접한 두 hepatocyte 사이가 아니라 hepatocyte와 sinusoidal endothelial cell 사이이다.\n* ② Hepatocyte microvilli는 sinusoidal domain에서 Space of Disse로, canalicular domain에서 bile canaliculus 내강으로 돌출한다.\n* ③ 혈액은 portal venule·hepatic arteriole에서 sinusoid를 거쳐 central vein으로 흐른다.\n* ④ 독립된 bile duct는 cholangiocyte가 lining하지만 bile canaliculus에는 별도의 lining cell이 없다.\n\n== 출제 의도 ==\n간 조직 사진에서 중심정맥과 문맥구역을 구분하고, portal triad 구성요소와 혈액·쓸개즙의 반대 흐름을 연결하게 한다.\n\n== Wiki 연결 ==\n* [[7강#간 저배율 판독|간 저배율 판독]]\n* [[7강#문맥관세동이 · Portal triad|문맥관세동이]]\n* [[6강#Disse 공간 · Space of Disse|Disse 공간]]\n\n== 관련 J ==\n{{204}} {{205}} {{527}} {{763}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[7강#문맥관세동이 · Portal triad|Portal triad]]는 portal vein branch, hepatic artery branch, bile duct로 구성된다. 혈액은 portal area에서 sinusoid를 거쳐 central vein으로, bile은 hepatocyte 사이 canaliculi에서 portal area의 duct 쪽으로 흐른다.\n\n== 정답 선지 ==\n이 문항은 '''틀린 것'''을 묻는다. 그런데 저장되어 있던 ⑤ portal triad 진술은 표지가 해당 구조를 가리킨다면 옳은 설명이다. 따라서 ‘⑤가 맞는 진술이어서 정답’이라는 이전 풀이는 발문의 요구와 반대였다.\n\n== 오답 선지 ==\n* ① (다)가 hepatocyte라면 두 hepatocyte 사이가 아니라 hepatocyte와 sinusoidal endothelium 사이가 Space of Disse이다.\n* ② Hepatocyte microvilli는 sinusoidal domain뿐 아니라 bile canaliculus를 향한 canalicular domain에도 있으므로 ‘두 간세포 사이’라는 이유만으로 틀렸다고 할 수 없다.\n* ③ 혈류는 portal area → sinusoid → central vein이다. (마)가 무엇인지 원래 표지가 일치해야 방향을 판정할 수 있다.\n* ④ Central vein·sinusoid는 endothelium, bile duct는 cholangiocyte로 lining된다. Bile canaliculus에는 독립된 cholangiocyte lining이 없다.\n* ⑤ (가)·(나)·(라)가 문맥가지·간동맥가지·담관이면 옳은 설명이다.\n\n== 출제 의도 ==\n간 조직의 표지, 혈액·담즙 흐름, 내피와 담관상피를 구별한다. ‘옳은 것’과 ‘틀린 것’의 지시를 바꾸어 해설하지 않는다.\n\n== 문항 오류 가능성 ==\n발문의 정오 방향과 기존 정답이 맞지 않고 참고 사진의 표지가 원문과 다를 가능성도 있다. 첨부된 2025 오답률30에는 해당 문항이 없어 정답을 확정할 수 없다.\n\n== Wiki 연결 ==\n* [[7강#문맥관세동이 · Portal triad|Portal triad]]\n* [[6강#Disse 공간 · Space of Disse|Space of Disse]]\n* [[6강#세포 표면 영역|Hepatocyte의 표면 영역]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_084_01.jpg"
       ],
@@ -3486,8 +3480,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 5번 · (다) - lumen 쪽에 aquaporin water channel 존재",
       "explanation": "정답: 5번 · (다) - lumen 쪽에 aquaporin water channel 존재\n\n== 배경 지식 ==\n[[7강#담낭벽 판독|담낭벽]]은 단층원주상피와 고유판으로 된 mucosa, 불규칙한 smooth muscle의 muscularis externa, serosa 또는 adventitia로 구성된다. Muscularis mucosae와 submucosa는 없다. 상피의 apical microvilli와 basolateral Na+/K+-ATPase를 통한 전해질 흡수에 물 이동이 동반되어 쓸개즙이 농축된다.\n\n== 정답 선지 ==\n⑤ (다)는 담낭의 흡수성 단층원주상피세포이며, lumen 쪽 막을 통한 water 이동이 쓸개즙 농축에 기여하므로 복원 정답과 일치한다.\n\n== 오답 선지 ==\n* ① (가)는 표시 범위상 mucosa만으로 한정되지 않는다.\n* ② 담낭에는 muscularis mucosae가 없다.\n* ③ CCK는 gallbladder smooth muscle을 이완시키는 것이 아니라 수축시킨다.\n* ④ 담낭 상피는 non-keratinized stratified squamous epithelium이 아니라 simple columnar epithelium이다.\n\n== 출제 의도 ==\n담낭 전층 표본에서 mucosa와 muscularis externa를 구분하고, 담낭에 없는 층과 쓸개즙 농축을 담당하는 상피 특징을 확인하게 한다.\n\n== Wiki 연결 ==\n* [[7강#실습 3. 담낭 · Gallbladder|담낭]]\n* [[7강#담낭벽 판독|담낭벽 판독]]\n\n== 관련 J ==\n{{206}} {{332}} {{529}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "2025_소화기_문항별_사진/2025_086_01.png",
-        "2025_소화기_문항별_사진/2025_086_02.png"
+        "2025_소화기_문항별_사진/2025_086_01.png"
       ],
       "legacyProfessor": "",
       "lectureIds": [
@@ -3527,7 +3520,9 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · 공명음이 들리는 중앙에서 방사선으로 타진해서 공명음과 탁음의 경계를 그린다",
       "explanation": "정답: 3번 · 공명음이 들리는 중앙에서 방사선으로 타진해서 공명음과 탁음의 경계를 그린다\n[검토 상태]\n오답30 미수록.",
-      "images": [],
+      "images": [
+        "2025_소화기_문항별_사진/2025_086_02.png"
+      ],
       "legacyProfessor": "",
       "lectureIds": [
         18
@@ -3838,20 +3833,20 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · Oblique m.",
-      "explanation": "정답: 3번 · Oblique m.\n\n== 배경 지식 ==\n일반적인 소화관 근육층은 속돌림근층과 바깥세로근층의 두 층이다. 위는 내용물을 강하게 섞기 위해 이 두 층에 속빗근층이 추가되어 세 겹의 근육층을 이룬다.\n\n== 정답 선지 ==\n'''3번 Oblique muscle'''은 위에서 특징적으로 관찰되는 속빗근층이다.\n\n== 오답 선지 ==\n* '''1번''': 세로근층은 위뿐 아니라 일반적인 소화관에도 존재한다.\n* '''2번''': 돌림근층도 일반적인 소화관의 기본 근육층이다.\n* '''4번''': transverse muscle은 위의 고유한 세 번째 근육층 명칭이 아니다.\n* '''5번''': 복원된 선지의 근육명이 불완전하며 정답으로 판단할 근거가 없다.\n\n== 출제 의도 ==\n위 근육층이 속빗근, 중간돌림근, 바깥세로근의 세 층이라는 점을 확인한다.\n\n== WIKI 연결 ==\n* [[1강#위|위벽의 층별 구조]]\n* [[2강#위바닥|위바닥 실습]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 3번 · Oblique m.\n\n== 배경 지식 ==\n위의 muscularis externa는 바깥 longitudinal, 가운데 circular, 안쪽 oblique muscle의 세 층이다. 일반적인 소화관의 두 근육층에 oblique layer가 더해져 위 내용물의 혼합·분쇄를 돕는다.\n\n== 정답 선지 ==\n③ Oblique muscle은 위에서 특징적인 안쪽 빗근층이다. 4강 [[4강#위벽의 구조|위벽의 구조]]에 세 층이 함께 제시된다.\n\n== 오답 선지 ==\n* ① Longitudinal muscle과 ② Circular muscle은 다른 소화관에서도 관찰된다.\n* ④ Transverse muscle은 위의 특징적인 세 번째 근육층 명칭이 아니다.\n* ⑤ ‘~m.’는 근육명이 복원되지 않아 개별 판정할 수 없다.\n\n== 출제 의도 ==\n위에만 추가되는 근육층과 위의 강한 혼합 기능을 연결한다.\n\n== Wiki 연결 ==\n* [[4강#위벽의 구조|위벽의 세 근육층]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
-        1
+        4
       ],
-      "lectureId": 1,
-      "lectureTitle": "구강 및 소화관의 조직학",
-      "professor": "이자경",
+      "lectureId": 4,
+      "lectureTitle": "위에서의 소화",
+      "professor": "한인옥",
       "domain": "기초의학",
-      "discipline": "조직학",
-      "section": "조직학",
+      "discipline": "생리학",
+      "section": "생리학",
       "source": "2025 소화기계 107번",
-      "mappingConfidence": "문항 내용 직접 분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 위벽의 구조 — 위의 세 겹 근육층을 직접 설명하는 위 생리 범위",
       "sourceQuestionNumber": 107,
       "priorMatch": 1,
       "legacyDisplayId": "2025 95번",
@@ -3877,20 +3872,20 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · parotid gland",
-      "explanation": "정답: 1번 · parotid gland\n\n== 배경 지식 ==\n큰침샘은 분비끝부분의 장액·점액 구성 비율로 구분한다. Parotid gland는 거의 순수 장액샘이어서 amylase가 풍부한 묽은 serous secretion을 분비한다. Submandibular gland는 장액 성분이 우세한 혼합샘이고, [[7강#실습 1. 혀밑샘 · Sublingual gland|sublingual gland]]는 점액 성분이 우세한 혼합샘이다.\n\n== 정답 선지 ==\n① Parotid gland는 세 큰침샘 중 순수 장액성 분비부가 가장 뚜렷하며 amylase-rich serous secretion과 연결된다.\n\n== 오답 선지 ==\n* ② Submandibular gland는 장액 성분이 우세하지만 점액 성분도 포함하는 mixed gland이다.\n* ③ Sublingual gland는 mixed gland이지만 mucous component가 우세하다.\n* ④ Submandibular gland와 sublingual gland를 모두 순수 장액성 침샘으로 묶을 수 없다.\n* ⑤ 세 큰침샘의 분비부 구성은 서로 다르므로 모두 같은 serous gland로 볼 수 없다.\n\n== 출제 의도 ==\nParotid·submandibular·sublingual gland의 장액·점액 구성 비율과 대표 분비물을 비교하게 한다.\n\n== Wiki 연결 ==\n* [[7강#실습 1. 혀밑샘 · Sublingual gland|혀밑샘]]\n* [[7강#큰침샘의 공통 구조|큰침샘의 공통 구조]]\n* [[7강#고배율 판독|혀밑샘 고배율 판독]]\n\n== 관련 J ==\n{{327}} {{526}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 1번 · parotid gland\n\n== 배경 지식 ==\n3강 [[3강#큰침샘|큰침샘]]은 parotid의 장액성 분비, submandibular의 장액 우세 혼합분비, sublingual의 점액 우세 혼합분비를 구분한다. [[3강#침의 성분과 기능|침의 α-amylase]]는 녹말 소화를 시작한다.\n\n== 정답 선지 ==\n① Parotid gland가 amylase-rich serous secretion에 가장 전형적으로 대응한다.\n\n== 오답 선지 ==\n* ② Submandibular gland도 amylase를 분비하지만 점액을 함께 분비하는 혼합샘이다. ‘amylase가 존재한다’는 조건만이면 이를 배제할 수 없고, 발문의 장액성·amylase-rich라는 대표 특징을 함께 읽어야 한다.\n* ③ Sublingual gland는 점액 성분이 우세하다.\n* ④·⑤ 점액 우세 침샘까지 장액성 분비의 대표 침샘으로 묶은 조합이다.\n\n== 출제 의도 ==\n침샘별 분비물의 성격을 비교한다. 조직사진의 표지 판독 문제가 아니므로 구강 소화생리에 배정한다.\n\n== Wiki 연결 ==\n* [[3강#큰침샘|큰침샘 비교]]\n* [[3강#침의 성분과 기능|침의 성분과 기능]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
-        7
+        3
       ],
-      "lectureId": 7,
-      "lectureTitle": "간, 이자의 조직학",
-      "professor": "이자경",
+      "lectureId": 3,
+      "lectureTitle": "소화생리 총론 및 구강에서의 소화",
+      "professor": "한인옥",
       "domain": "기초의학",
-      "discipline": "조직학",
-      "section": "조직학",
+      "discipline": "생리학",
+      "section": "생리학",
       "source": "2025 소화기계 108번",
-      "mappingConfidence": "혀밑샘 실습에 포함된 큰침샘 비교 범위로 재분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 큰침샘 — 사진 판독이 아닌 침샘 분비물·amylase 비교",
       "sourceQuestionNumber": 108,
       "priorMatch": 1,
       "legacyDisplayId": "2025 96번",
@@ -3916,20 +3911,20 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · oropharynx",
-      "explanation": "정답: 2번 · oropharynx\n\n== 배경 지식 ==\n인두는 코인두, 입인두, 후두인두로 나뉜다. 입인두는 입안 뒤쪽에 위치하여 삼킨 음식이 아래로 이동하는 통로이면서 호흡 공기도 통과하는 공통 통로이다.\n\n== 정답 선지 ==\n'''2번 oropharynx'''가 음식과 공기가 함께 통과하는 부위이다.\n\n== 오답 선지 ==\n* '''1번''': 코인두는 주로 공기 통로이며 음식이 정상적으로 지나지 않는다.\n* '''3·5번''': oronasopharynx와 orolaryngopharynx는 표준 해부학적 구역 명칭이 아니다.\n* '''4번''': 후두인두도 공기와 음식의 공통 통로이지만 발문의 입에서 바로 이어지는 설명은 입인두를 지칭한다.\n\n== 출제 의도 ==\n인두 각 구역의 위치와 음식·공기 통로 기능을 구분한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · oropharynx\n\n== 배경 지식 ==\n인두는 nasopharynx, oropharynx, laryngopharynx로 구분한다. [[3강#인두와 식도 구역의 해부학|Oropharynx]]는 입에서 들어온 음식과 비강에서 드나드는 공기가 함께 통과하는 구역이다.\n\n== 정답 선지 ==\n② Oropharynx가 강의의 해당 passageway 설명에 대응한다.\n\n== 오답 선지 ==\n* ① Nasopharynx는 정상적으로 공기 통로이며 삼킬 때 연구개가 음식물의 역류를 막는다.\n* ③·⑤ Oronasopharynx·orolaryngopharynx는 인두의 표준 세 구역 명칭이 아니다.\n* ④ Laryngopharynx도 음식과 공기가 공유하는 통로이지만, 그 아래에서 후두와 식도로 이어지는 구역이다. 따라서 ‘공유 통로는 오직 oropharynx뿐’이라고 외우면 안 된다.\n\n== 출제 의도 ==\n인두 세 구역의 위치와 음식·공기 통로 기능을 연결한다.\n\n== Wiki 연결 ==\n* [[3강#인두와 식도 구역의 해부학|인두의 구역]]\n* [[3강#삼킴의 과정|삼킴의 과정]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
-        1
+        3
       ],
-      "lectureId": 1,
-      "lectureTitle": "구강 및 소화관의 조직학",
-      "professor": "이자경",
+      "lectureId": 3,
+      "lectureTitle": "소화생리 총론 및 구강에서의 소화",
+      "professor": "한인옥",
       "domain": "기초의학",
-      "discipline": "조직학",
-      "section": "조직학",
+      "discipline": "생리학",
+      "section": "생리학",
       "source": "2025 소화기계 109번",
-      "mappingConfidence": "문항 내용 직접 분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 인두와 식도 구역의 해부학 — 구강 소화생리의 인두 통로 기능; 2025 문항109에 소화생리 출처 명시",
       "sourceQuestionNumber": 109,
       "priorMatch": 1,
       "legacyDisplayId": "2025 97번",
@@ -3953,20 +3948,20 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 뮤신은 high molecular weigt가진다",
-      "explanation": "정답: 3번 · 뮤신은 high molecular weigt가진다\n\n== 배경 지식 ==\n뮤신은 분자량이 큰 당단백질로 물과 결합해 점액의 점성과 보호 기능을 만든다. 위 표면점액세포는 중탄산염이 풍부한 두꺼운 알칼리성 점액을 분비하고, 목점액세포는 더 묽고 용해성이 높은 점액을 분비한다.\n\n== 정답 선지 ==\n'''3번''' 뮤신은 고분자량 당단백질이다.\n\n== 오답 선지 ==\n* '''1번''': 위산에 대한 두꺼운 알칼리성 점액-중탄산염 장벽의 중심은 표면점액세포이다. 목점액세포의 점액은 더 묽다.\n* '''2번''': Mucus는 대부분 물로 이루어지고 mucin은 일반적으로 약 1–5%를 차지한다. 따라서 5–10%라는 수치는 강의에서 제시한 범위보다 높다.\n\n== 출제 의도 ==\n뮤신의 분자적 성격과 위 점액세포별 분비물 차이를 구분한다.\n\n== WIKI 연결 ==\n* [[1강#위샘세포의 기능|위샘세포의 기능]]\n* [[2강#위바닥|위바닥 실습]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 3번 · 뮤신은 high molecular weigt가진다\n\n== 배경 지식 ==\nMucin은 당사슬이 풍부한 고분자량 glycoprotein이며 물을 붙잡아 mucus의 점성과 보호 기능에 기여한다. 위점막 방어는 점액뿐 아니라 HCO3-와 상피 장벽·혈류가 함께 담당한다.\n\n== 정답 선지 ==\n③ Mucin이 high molecular weight를 갖는다는 진술은 옳다. 기존 요청에 따라 저장 정답 ③은 유지한다.\n\n== 오답 선지 ==\n* ① 산에 대한 두꺼운 alkaline mucus–HCO3- 장벽의 중심은 surface mucous cell이다. Mucous neck cell의 점액 분비와 표면 보호 장벽을 같은 것으로 단순화하지 않는다. 다만 현재 4강 Wiki는 점액목세포에도 mucus와 HCO3- 분비를 함께 기술하고 있어 이 한 문장만으로 완전한 배제 근거가 되지는 않는다.\n* ② 현재 [[4강#점액-HCO3- 장벽|4강 Wiki]]에는 mucin 5–10%가 적혀 있다. 따라서 현재 Wiki를 근거로 5–10%가 틀렸다고 설명할 수 없다.[* 앞서 추가한 ‘mucus의 mucin은 약 1–5%’라는 보충 설명과 현재 강의 기반 Wiki의 5–10%는 서로 다른 수치다. 점액의 채취 부위·상태와 농도 정의에 따라 차이가 있을 수 있으므로 일반 수치를 이용해 강의 수치를 자동으로 오답 처리하지 않는다. 이 문항에서는 고분자량이라는 ③의 성질은 분명하지만 ②를 배제할 출제 당시 근거는 추가 확인이 필요하다.]\n\n== 출제 의도 ==\nMucin의 물성과 점액세포의 보호 기능을 구분한다. 숫자를 정답에 맞춰 바꾸지 않는다.\n\n== 문항 오류 가능성 ==\n현재 Wiki로는 ②를 오답으로 단정할 수 없다. 정답 ③ 유지와 단일정답 검증 완료는 다른 의미이다.\n\n== Wiki 연결 ==\n* [[4강#점액-HCO3- 장벽|점액-HCO3- 장벽]]\n* [[4강#위샘과 분비세포|위샘과 분비세포]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
-        1
+        4
       ],
-      "lectureId": 1,
-      "lectureTitle": "구강 및 소화관의 조직학",
-      "professor": "이자경",
+      "lectureId": 4,
+      "lectureTitle": "위에서의 소화",
+      "professor": "한인옥",
       "domain": "기초의학",
-      "discipline": "조직학",
-      "section": "조직학",
+      "discipline": "생리학",
+      "section": "생리학",
       "source": "2025 소화기계 110번",
-      "mappingConfidence": "문항 내용 직접 분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 점액-HCO3- 장벽 — mucin의 물성과 위점액세포의 분비 기능",
       "sourceQuestionNumber": 110,
       "priorMatch": 1,
       "legacyDisplayId": "2025 98번",
@@ -3992,20 +3987,20 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · parietal cell",
-      "explanation": "정답: 2번 · parietal cell\n\n== 배경 지식 ==\n위바닥샘의 벽세포는 H+/K+-ATPase 양성자펌프로 수소이온을 위내강에 분비하고 염화이온과 함께 염산을 형성한다. 벽세포는 위내인자도 분비한다.\n\n== 정답 선지 ==\n'''2번 parietal cell'''이 염산을 분비한다.\n\n== 오답 선지 ==\n* '''1번''': peptic cell은 주세포를 가리키며 펩시노겐과 위지방분해효소를 분비한다.\n* '''3번''': gastric cell은 특정 분비세포를 지칭하는 정확한 명칭이 아니다.\n* '''4·5번''': 염산 분비를 다른 세포와 공동 기능으로 묶을 수 없다.\n\n== 출제 의도 ==\n위샘세포의 형태와 대표 분비물을 연결한다.\n\n== WIKI 연결 ==\n* [[1강#벽세포|벽세포]]\n* [[2강#위바닥|주세포와 벽세포의 조직 소견]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · parietal cell\n\n== 배경 지식 ==\n[[4강#위샘과 분비세포|Parietal cell]]은 HCl과 intrinsic factor를, chief/peptic cell은 pepsinogen과 gastric lipase를 분비한다. 산 분비의 직접 기전은 parietal cell의 apical H+/K+-ATPase이다.\n\n== 정답 선지 ==\n② Parietal cell이 H+를 위 내강으로 운반하고 Cl- 분비가 동반되어 HCl이 형성된다.\n\n== 오답 선지 ==\n* ① Peptic cell은 chief cell이며 HCl 대신 pepsinogen을 분비한다.\n* ③ Gastric cell은 위의 세포라는 포괄적 표현이지 별도의 HCl 분비세포명이 아니다.\n* ④·⑤ HCl 분비를 chief cell 또는 불명확한 다른 위세포와의 공동 분비로 묶을 근거가 없다.\n\n== 출제 의도 ==\n세포 이름과 분비물을 연결하고 위산 분비의 주체를 확인한다.\n\n== Wiki 연결 ==\n* [[4강#위샘과 분비세포|분비세포 비교]]\n* [[4강#벽세포의 산 분비|벽세포의 산 분비]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
-        1
+        4
       ],
-      "lectureId": 1,
-      "lectureTitle": "구강 및 소화관의 조직학",
-      "professor": "이자경",
+      "lectureId": 4,
+      "lectureTitle": "위에서의 소화",
+      "professor": "한인옥",
       "domain": "기초의학",
-      "discipline": "조직학",
-      "section": "조직학",
+      "discipline": "생리학",
+      "section": "생리학",
       "source": "2025 소화기계 111번",
-      "mappingConfidence": "문항 내용 직접 분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 벽세포의 산 분비 — 세포 사진 판독이 아닌 HCl 분비 기능",
       "sourceQuestionNumber": 111,
       "priorMatch": 1,
       "legacyDisplayId": "2025 99번",
@@ -4341,7 +4336,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · synthesis of vit D",
-      "explanation": "정답: 1번 · synthesis of vit D\n\n== 배경 지식 ==\n간은 albumin과 응고인자를 합성하고, ammonia를 urea로 바꾸며, glycogenolysis·gluconeogenesis로 glucose 항상성을 유지한다. Bilirubin은 heme 분해 과정에서 만들어져 간에서 포합·배설된다. 간은 vitamin D의 25-hydroxylation에는 참여하지만 vitamin D 자체를 새로 합성하는 기관은 아니다. [[8강#간의 기능|간의 기능]]을 참고한다.\n\n== 정답 선지 ==\n1번 synthesis of vitamin D는 성인 간의 직접적인 합성 기능으로 보기 어렵기 때문에 옳지 않은 진술이다.\n\n== 오답 선지 ==\n* 2번: 간은 albumin을 합성한다.\n* 3번: 강의에서는 bilirubin 생성·처리·배설을 간의 기능 범위로 다룬다.\n* 4번: 간의 urea cycle은 ammonia를 urea로 전환한다.\n* 5번: 간은 glycogenolysis와 gluconeogenesis로 glucose를 공급한다.\n\n== 출제 의도 ==\n간의 대사·합성 기능과 vitamin D 활성화 과정을 구분하게 한다.\n\n== 문항 오류 가능성 ==\n현재 문장 그대로라면 3번 “synthesis of bilirubin”도 엄밀하지 않다. Bilirubin은 주로 reticuloendothelial macrophage의 heme catabolism에서 생성되고 간은 이를 포합·배설한다. 원문이 “excretion of bilirubin”이었거나 강의에서 간의 heme breakdown 전체를 넓게 표현했을 가능성이 있다. 따라서 공식 정답 1번은 유지하되 3번 표현도 복원 확인이 필요하다.\n\n== Wiki 연결 ==\n* [[8강#Bilirubin 대사|Bilirubin 대사]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 1번 · synthesis of vit D\n\n== 배경 지식 ==\n간은 albumin과 응고인자를 합성하고, ammonia를 urea로 바꾸며, glycogenolysis·gluconeogenesis로 glucose 항상성을 유지한다. Bilirubin은 heme 분해 과정에서 만들어져 간에서 포합·배설된다. 간은 vitamin D의 25-hydroxylation에는 참여하지만 vitamin D 자체를 새로 합성하는 기관은 아니다. [[8강#간의 기능|간의 기능]]을 참고한다.\n\n== 정답 선지 ==\n1번 synthesis of vitamin D는 성인 간의 직접적인 합성 기능으로 보기 어렵기 때문에 옳지 않은 진술이다.\n\n== 오답 선지 ==\n* 2번: 간은 albumin을 합성한다.\n* 3번: 강의에서는 bilirubin 생성·처리·배설을 간의 기능 범위로 다룬다.\n* 4번: 간의 urea cycle은 ammonia를 urea로 전환한다.\n* 5번: 간은 glycogenolysis와 gluconeogenesis로 glucose를 공급한다.\n\n== 출제 의도 ==\n간의 대사·합성 기능과 vitamin D 활성화 과정을 구분하게 한다.\n\n== 문항 오류 가능성 ==\n현재 문장 그대로라면 3번 “synthesis of bilirubin”도 엄밀하지 않다. Bilirubin은 주로 reticuloendothelial macrophage의 heme catabolism에서 생성되고 간은 이를 포합·배설한다. 원문이 “excretion of bilirubin”이었거나 강의에서 간의 heme breakdown 전체를 넓게 표현했을 가능성이 있다. 따라서 사용자가 유지하도록 지정한 기존 정답 1번은 유지하되 3번 표현도 복원 확인이 필요하다.\n\n== Wiki 연결 ==\n* [[8강#Bilirubin 대사|Bilirubin 대사]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
@@ -6164,8 +6159,8 @@ window.JBL_DATA = {
       "answerLabel": "정답: 식도 칸디다증",
       "explanation": "정답: 식도 칸디다증(Candida esophagitis)\n\n== 배경 지식 ==\nCandida esophagitis는 면역저하, 광범위 항생제 사용, 당뇨병 등에서 흔하며 내시경에서 잘 떨어지지 않는 흰색 판(plaque)을 만든다. 조직에서는 편평상피 표면과 염증성 삼출물 안에 효모와 거짓균사(pseudohyphae)가 관찰된다.\n\n== 정답 해설 ==\n제시된 흰색 부착성 판과 조직의 진균 형태는 식도 칸디다증에 합당하다. 음식물 찌꺼기와 달리 병변이 점막에 부착되어 있고, PAS 또는 GMS 염색으로 진균을 확인할 수 있다.\n\n== 출제 의도 ==\n식도 감염의 내시경·조직 소견을 보고 Candida를 식별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#칸디다 식도염|칸디다 식도염]]\n* [[10강#감염성 식도염|감염성 식도염]]\n\n== 관련 J ==\n{{736}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "29(1).png",
-        "29(2).png"
+        "2023_소화기_문항별_사진/29(1).png",
+        "2023_소화기_문항별_사진/29(2).png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6201,9 +6196,9 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · 음주흡연과 연관",
-      "explanation": "정답: 2번 · 음주·흡연과 관련된다.\n\n== 배경 지식 ==\n식도 편평세포암종은 주로 중부 식도에서 발생하며 흡연과 음주가 중요한 위험인자다. 전암병변은 편평상피 이형성이고, 분자 변화로 TP53·CDKN2A 이상 등이 알려져 있다.\n\n== 정답 선지 ==\n* '''2번''': 음주와 흡연은 식도 편평세포암종의 대표적인 위험인자다.\n\n== 오답 선지 ==\n* '''1번''': 위식도접합부와 하부 식도는 Barrett 식도와 연관된 식도샘암종이 더 전형적이다.\n* '''3번''': KRAS 변이는 이 암종을 규정하는 대표 변화가 아니다.\n* '''4번''': 침습성 악성종양이므로 90% 이상 자연 호전된다는 설명은 틀리다.\n\n== 출제 의도 ==\n식도 편평세포암종의 위치·위험인자·분자병리와 샘암종의 특징을 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#식도 편평세포암종 · Squamous cell carcinoma|식도 편평세포암종]]\n\n== 검토 상태 ==\n오답률 30 33page 수록.",
+      "explanation": "정답: 2번 · 음주·흡연과 관련된다.\n\n== 배경 지식 ==\n식도 편평세포암종은 주로 중부 식도에서 발생하며 흡연과 음주가 중요한 위험인자다. 전암병변은 편평상피 이형성이고, 분자 변화로 TP53·CDKN2A 이상 등이 알려져 있다.\n\n== 정답 선지 ==\n* '''2번''': 음주와 흡연은 식도 편평세포암종의 대표적인 위험인자다.\n\n== 오답 선지 ==\n* '''1번''': 위식도접합부와 하부 식도는 Barrett 식도와 연관된 식도샘암종이 더 전형적이다.\n* '''3번''': KRAS 변이는 이 암종을 규정하는 대표 변화가 아니다.\n* '''4번''': 침습성 악성종양이므로 90% 이상 자연 호전된다는 설명은 틀리다.\n\n== 출제 의도 ==\n식도 편평세포암종의 위치·위험인자·분자병리와 샘암종의 특징을 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#Squamous cell carcinoma (식도 편평세포암종)|식도 편평세포암종]]\n\n== 검토 상태 ==\n오답률 30 33page 수록.",
       "images": [
-        "30.png"
+        "2023_소화기_문항별_사진/30.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6234,7 +6229,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 위 선암(adenocarcinoma)",
       "explanation": "정답: 위샘암종(gastric adenocarcinoma)\n\n== 배경 지식 ==\n위샘암종은 위의 가장 흔한 악성종양으로 비정상 샘 구조를 형성하는 장형과 결합력이 약한 세포가 산재 침윤하는 미만형을 포함한다. 침윤성 샘, 세포 이형성, desmoplasia 또는 반지세포가 진단의 핵심이다.\n\n== 정답 해설 ==\n제시된 병변은 정상 위샘 배열을 파괴하며 침윤하는 악성 상피성 종양으로 위샘암종에 합당하다. 정확한 아형은 샘 형성 여부와 반지세포·산재 침윤 양상을 함께 평가한다.\n\n== 출제 의도 ==\n육안·조직 영상을 보고 위샘암종을 GIST, 림프종, NET 같은 비상피성 종양과 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{159}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 7page 수록.",
       "images": [
-        "31.png"
+        "2023_소화기_문항별_사진/31.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6265,7 +6260,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 조기위암 Type III(0-III, 함몰/궤양형)",
       "explanation": "정답: 조기위암 육안형 0-III(함몰·궤양형)\n\n== 배경 지식 ==\n조기위암은 림프절 전이 여부와 관계없이 암의 침윤이 점막 또는 점막밑층에 국한된 위암이다. 육안형은 0-I 융기형, 0-II 표면형(IIa·IIb·IIc), 0-III 함몰형으로 나눈다.\n\n== 정답 해설 ==\n병변이 점막에 국한되어 있으면서 뚜렷한 깊은 함몰 또는 궤양 모양을 보이므로 0-III로 분류한다. 조기위암의 정의는 병변의 넓이나 림프절 전이가 아니라 침윤 깊이에 따른다.\n\n== 출제 의도 ==\n침윤 깊이로 조기위암을 정의하고 표면 형태에 따라 0형의 세부 유형을 판정하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#조기위암 · Early gastric cancer|조기위암]]\n\n== 관련 J ==\n{{158}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 1page 수록.",
       "images": [
-        "32.png"
+        "2023_소화기_문항별_사진/32.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6303,7 +6298,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 2번 · Zollinger Ellison syndrome",
       "explanation": "정답: 2번 · Zollinger–Ellison syndrome\n\n== 배경 지식 ==\nZollinger–Ellison 증후군은 대개 췌장이나 십이지장의 gastrinoma에서 gastrin이 과다 분비되어 발생한다. 위벽세포 과형성과 심한 위산 과다 때문에 다발성·재발성 소화성 궤양이 생기며 일반적 위치보다 원위부에도 궤양이 발생할 수 있다.\n\n== 정답 선지 ==\n* '''2번''': 고가스트린혈증, 췌장 종괴, 다발성 궤양의 조합은 gastrinoma에 의한 Zollinger–Ellison 증후군이다.\n\n== 오답 선지 ==\n* '''1번''': Ménétrier disease는 거대 주름과 단백소실을 보이지만 위산 분비는 감소한다.\n* '''3번''': gastrinoma 자체는 신경내분비종양이지만 임상 증후군을 묻는 답은 Zollinger–Ellison 증후군이다.\n* '''4번''': 과형성용종은 만성 점막손상과 연관된 용종으로 이 조합을 설명하지 못한다.\n\n== 출제 의도 ==\n고가스트린혈증과 산과다성 궤양의 원인을 gastrinoma–Zollinger–Ellison 증후군으로 연결하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Zollinger–Ellison 증후군|Zollinger–Ellison 증후군]]\n\n== 관련 J ==\n{{418}} {{774}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "33.png"
+        "2023_소화기_문항별_사진/33.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6334,7 +6329,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 유사분열 수(mitotic count), Ki-67 증식지수(Ki-67 proliferation index)",
       "explanation": "정답: 유사분열 수(mitotic count), Ki-67 증식지수(Ki-67 proliferation index)\n\n== 배경 지식 ==\n잘 분화된 위장관 신경내분비종양(NET)의 grade는 종양세포의 증식활성을 나타내는 '''유사분열 수'''와 '''Ki-67 증식지수'''로 정한다. 두 지표가 서로 다른 등급을 가리키면 더 높은 등급을 적용한다. 분화도와 증식등급은 별개의 축이며, 종양 크기와 침윤깊이는 병기·전이위험 평가에 사용한다.\n\n== 정답 해설 ==\n직장 점막하 종양의 조직이 NET에 합당하다면 요구되는 두 지표는 '''mitotic count'''와 '''Ki-67 proliferation index'''이다.\n\n== 출제 의도 ==\n신경내분비 분화를 진단하는 형태·면역표지와, 진단 뒤 증식등급을 결정하는 두 수치를 구분하게 한다.\n\n== WIKI 연결 ==\n* [[11강#WHO 분류와 등급|위장관 NET의 WHO 분류와 등급]]\n\n== 관련 J ==\n{{426}}\n\n== 검토 상태 ==\n오답률 30 46page 수록.",
       "images": [
-        "37.png"
+        "2023_소화기_문항별_사진/37.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -7796,7 +7791,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · (1) microvilli는 taste receptor를 갖는다.",
       "explanation": "정답: 3번 · (1) microvilli는 taste receptor를 갖는다.\n\n== 배경 지식 ==\n맛봉오리의 미각상피세포는 꼭대기 미세융모에 맛 수용체를 가지며 감각신경과 연접한다. 버팀세포도 미세융모와 치밀이음부를 가지지만 감각세포가 아니고, 바닥세포가 줄기세포 역할을 한다.\n\n== 정답 선지 ==\n'''3번''' (1)의 미세융모에는 맛 수용체가 존재한다.\n\n== 오답 선지 ==\n* '''1번''': 맛봉오리가 있는 혀유두는 주로 혀 등면에 있다.\n* '''2번''': 한 맛봉오리에는 여러 유형의 미각세포가 있어 여러 맛을 감지한다.\n* '''4번''': dark cell은 버팀세포에 해당하며 줄기세포는 바닥세포이다.\n* '''5번''': 공식 해설의 표지 연결에서는 (3)이 미각상피세포이며, 버팀세포로 연결한 선지는 틀리다.\n\n== 출제 의도 ==\n맛봉오리 세포의 미세구조와 기능을 그림의 표지와 연결한다.\n\n== WIKI 연결 ==\n* [[1강#맛봉오리 · Taste bud|맛봉오리]]\n* [[2강#성곽유두|성곽유두 실습]]\n\n== 관련 J ==\n{{79}} {{519}}\n\n== 검토 상태 ==\n오답률 30 39page 수록.",
       "images": [
-        "88.png"
+        "2023_소화기_문항별_사진/88.png"
       ],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -7870,9 +7865,9 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답 추정: 5번 · (라) 근육의 종류로 보아 식도의 lower 1/3 부위",
-      "explanation": "정답 추정: 5번 · (라) 근육의 종류로 보아 식도의 lower 1/3 부위\n\n== 배경 지식 ==\n정상 식도는 비각질중층편평상피로 덮인다. 근육층은 위쪽 3분의 1의 골격근에서 아래쪽으로 갈수록 평활근으로 바뀌어 아래쪽 3분의 1은 평활근으로 구성된다.\n\n== 정답 선지 ==\n'''5번''' (라)의 근육이 평활근으로 보이는 점을 근거로 식도 아래쪽 3분의 1에 해당한다고 판단한다.\n\n== 오답 선지 ==\n* '''1번''': (가)의 표지가 점막 전체를 정확히 가리키지 않는다.\n* '''2번''': 정상 식도상피는 이상각질상피가 아니라 비각질중층편평상피이다.\n* '''3번''': 식도샘은 점막 돌기가 아니라 점막밑층에 위치한다.\n* '''4번''': (다)의 표지가 점막밑층과 일치하지 않는다.\n\n== 출제 의도 ==\n식도 상피와 근육 종류를 이용해 조직 사진의 층과 식도 높이를 판정한다.\n\n== WIKI 연결 ==\n* [[1강#식도|식도]]\n* [[2강#식도|식도 실습]]\n\n== 관련 J ==\n{{682}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답 추정: 5번 · (라) 근육의 종류로 보아 식도의 lower 1/3 부위\n\n== 배경 지식 ==\n정상 식도는 비각질중층편평상피로 덮인다. 근육층은 위쪽 3분의 1의 골격근에서 아래쪽으로 갈수록 평활근으로 바뀌어 아래쪽 3분의 1은 평활근으로 구성된다.\n\n== 정답 선지 ==\n'''5번''' (라)의 근육이 평활근으로 보이는 점을 근거로 식도 아래쪽 3분의 1에 해당한다고 판단한다.\n\n== 오답 선지 ==\n* '''1번''': (가)의 표지가 점막 전체를 정확히 가리키지 않는다.\n* '''2번''': 정상 식도상피는 이상각질상피가 아니라 비각질중층편평상피이다.\n* '''3번''': 식도샘은 점막 돌기가 아니라 점막밑층에 위치한다.\n* '''4번''': (다)의 표지가 점막밑층과 일치하지 않는다.\n\n== 출제 의도 ==\n식도 상피와 근육 종류를 이용해 조직 사진의 층과 식도 높이를 판정한다.\n\n== WIKI 연결 ==\n* [[1강#식도|식도]]\n* [[2강#실습 3. 식도|식도 실습]]\n\n== 관련 J ==\n{{682}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "90.png"
+        "2023_소화기_문항별_사진/90.png"
       ],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -7909,7 +7904,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · Central lacteal: jejunum > duodenum",
-      "explanation": "정답: 2번 · Central lacteal: jejunum > duodenum\n\n== 배경 지식 ==\n작은창자는 부위에 따라 흡수 구조와 면역조직의 발달 정도가 다르다. 빈창자는 긴 융모와 발달한 중심암죽관이 특징이고, 돌창자로 갈수록 술잔세포가 증가하며 Peyer 판과 M세포가 뚜렷해진다.\n\n== 정답 선지 ==\n'''2번''' 중심암죽관은 흡수가 활발하고 융모가 발달한 빈창자에서 샘창자보다 더 발달한다.\n\n== 오답 선지 ==\n* '''1번''': 돌림주름은 샘창자보다 빈창자에서 더 뚜렷하다.\n* '''3번''': Peyer 판은 빈창자보다 돌창자에서 발달한다.\n* '''4번''': 술잔세포는 돌창자로 갈수록 증가한다.\n* '''5번''': M세포는 Peyer 판을 덮는 소포연관상피에 있으므로 돌창자에서 더 많다.\n\n== 출제 의도 ==\n샘창자·빈창자·돌창자의 구조적 차이를 상대적 빈도로 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[1강#Peyer 판과 M세포|Peyer 판과 M세포]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{525}} {{684}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · Central lacteal: jejunum > duodenum\n\n== 배경 지식 ==\n작은창자는 부위에 따라 흡수 구조와 면역조직의 발달 정도가 다르다. 빈창자는 긴 융모와 발달한 중심암죽관이 특징이고, 돌창자로 갈수록 술잔세포가 증가하며 Peyer 판과 M세포가 뚜렷해진다.\n\n== 정답 선지 ==\n'''2번''' 중심암죽관은 흡수가 활발하고 융모가 발달한 빈창자에서 샘창자보다 더 발달한다.\n\n== 오답 선지 ==\n* '''1번''': 돌림주름은 샘창자보다 빈창자에서 더 뚜렷하다.\n* '''3번''': Peyer 판은 빈창자보다 돌창자에서 발달한다.\n* '''4번''': 술잔세포는 돌창자로 갈수록 증가한다.\n* '''5번''': M세포는 Peyer 판을 덮는 소포연관상피에 있으므로 돌창자에서 더 많다.\n\n== 출제 의도 ==\n샘창자·빈창자·돌창자의 구조적 차이를 상대적 빈도로 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[1강#Peyer 판과 M세포|Peyer 판과 M세포]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{525}} {{684}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -7948,7 +7943,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · (다): bile duct – poral triad 방향으로 bile이동",
       "explanation": "정답: 3번 · (다): bile duct - portal triad 방향으로 bile 이동\n\n== 배경 지식 ==\n[[7강#간소엽의 세 가지 개념|고전적 간소엽(classic lobule)]]에서 혈액은 portal area의 portal venule과 hepatic arteriole에서 sinusoid로 들어가 central vein 방향으로 흐른다. Bile은 인접한 hepatocyte 사이의 bile canaliculi를 따라 혈액과 반대 방향, 즉 portal area의 interlobular bile duct 쪽으로 이동한다.\n\n== 정답 선지 ==\n③ Bile이 portal triad의 bile duct를 향해 흐른다는 설명이 옳다. 공식 오답률 30의 정답과 해설도 혈액과 bile의 반대 방향 흐름을 기준으로 한다.\n\n== 오답 선지 ==\n* ① Classic lobule의 중심은 central vein이지만, 정답 판정에는 그림의 (가) 표지가 central vein과 실제로 연결되는지도 함께 확인해야 한다.\n* ② Hepatic artery branch의 혈액은 portal area에서 central vein 방향으로 이동한다.\n* ④ Portal vein branch의 혈류 방향은 central vein 쪽이지만 그림의 표지 연결이 맞지 않는다.\n* ⑤ Hepatic stellate cell은 portal area가 아니라 Space of Disse에 위치한다.\n\n== 출제 의도 ==\n간소엽 도식에서 central vein과 portal area를 찾고 혈액과 bile의 흐름 방향을 반대로 판독하게 한다.\n\n== Wiki 연결 ==\n* [[7강#간 저배율 판독|간 저배율 판독]]\n* [[7강#문맥관세동이 · Portal triad|문맥관세동이]]\n* [[7강#간소엽의 세 가지 개념|간소엽의 세 가지 개념]]\n\n== 관련 J ==\n{{84}} {{527}} {{763}}\n\n== 검토 상태 ==\n오답률 30 27page 수록.",
       "images": [
-        "95.png"
+        "2023_소화기_문항별_사진/95.png"
       ],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -7987,7 +7982,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 2번 · (나)와 (가) 사이에 space of Disse가 존재한다.",
       "explanation": "정답: 2번 · (나)와 (가) 사이에 space of Disse가 존재한다.\n\n== 배경 지식 ==\n[[7강#간 고배율 판독|간 고배율]]에서 간세포판 사이의 불규칙한 통로가 hepatic sinusoid이다. Space of Disse는 hepatocyte의 sinusoidal domain과 fenestrated sinusoidal endothelial cell 사이에 있고 hepatocyte microvilli가 이 공간으로 돌출한다. Bile canaliculus는 인접한 두 hepatocyte의 canalicular domain 사이에 형성되며 tight junction이 bile leakage를 막는다.\n\n== 정답 선지 ==\n② 그림에서 (가) hepatocyte와 (나) sinusoidal endothelial cell 사이 공간이 Space of Disse이다.\n\n== 오답 선지 ==\n* ① Bile canaliculus는 hepatocyte와 다른 세포 사이가 아니라 인접한 두 hepatocyte 사이에 형성된다.\n* ③ Fibrosis에서 collagen과 ECM을 만드는 세포는 활성화된 hepatic stellate cell이며 sinusoidal endothelial cell이 아니다.\n* ④ Stellate cell은 인접한 hepatocyte 사이가 아니라 Space of Disse에 있다.\n* ⑤ Microvilli는 단순히 인접한 hepatocyte 사이 전반이 아니라 sinusoidal surface와 bile canaliculus 내강으로 돌출한다.\n\n== 출제 의도 ==\n간 고배율 구조에서 hepatocyte, sinusoidal endothelium, Space of Disse, stellate cell과 bile canaliculus의 위치 관계를 확인하게 한다.\n\n== Wiki 연결 ==\n* [[7강#간 고배율 판독|간 고배율 판독]]\n* [[6강#간세포 · Hepatocyte|간세포]]\n* [[6강#Disse 공간 · Space of Disse|Disse 공간]]\n\n== 관련 J ==\n{{84}} {{528}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "96.png"
+        "2023_소화기_문항별_사진/96.png"
       ],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -8019,12 +8014,10 @@ window.JBL_DATA = {
         "CCK는 gallbladder를 이완시킨다.",
         "Gallbladder 상피세포의 base 부분에 Na+/K+-ATPase가 존재한다."
       ],
-      "answerIndex": 2,
-      "answerIndices": [
-        2
-      ],
-      "answerLabel": "정답: 2번 · Cholangiocyte에는 microvilli가 존재한다.",
-      "explanation": "정답: 2번 · Cholangiocyte에는 microvilli가 존재한다.\n\n== 배경 지식 ==\n[[6강#쓸개관세포 · Cholangiocytes|Cholangiocyte]]는 canal of Hering부터 biliary tree를 lining하며 tight junctions, microvilli와 primary cilia를 갖는다. 반면 bile canaliculus는 인접 hepatocyte 사이에 형성되어 독립된 lining cell이 없다. CCK는 gallbladder를 수축시키고 sphincter of Oddi를 이완시킨다.\n\n== 정답 선지 ==\n② Cholangiocyte에는 bile과 접촉하는 microvilli가 있으므로 옳다.\n\n== 오답 선지 ==\n* ① Bile canaliculus에는 cholangiocyte lining이 없다.\n* ③ CCK는 sphincter of Oddi를 수축시키지 않고 이완시킨다.\n* ④ CCK는 gallbladder를 이완시키지 않고 수축시킨다.\n* ⑤ Gallbladder epithelial cell의 Na+/K+-ATPase는 electrolyte와 water absorption을 위한 basolateral membrane pump로 이해해야 하며 단순히 base라고 한정한 표현은 부정확하다.\n\n== 출제 의도 ==\nBile canaliculus와 cholangiocyte-lined duct를 구분하고 CCK에 의한 bile release를 연결하게 한다.\n\n== Wiki 연결 ==\n* [[6강#쓸개관세포 · Cholangiocytes|쓸개관세포]]\n* [[6강#쓸개즙 농축과 방출|쓸개즙 농축과 방출]]\n\n== 관련 J ==\n{{110}} {{332}} {{529}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[6강#쓸개관세포 · Cholangiocytes|Cholangiocyte]]는 canal of Hering부터 biliary tree를 lining하며 tight junctions, microvilli와 primary cilia를 갖는다. 반면 bile canaliculus는 인접 hepatocyte 사이에 형성되어 독립된 lining cell이 없다. CCK는 gallbladder를 수축시키고 sphincter of Oddi를 이완시킨다.\n\n== 정답 선지 ==\n② Cholangiocyte에는 bile과 접촉하는 microvilli가 있으므로 옳다.\n\n== 오답 선지 ==\n* ① Bile canaliculus에는 cholangiocyte lining이 없다.\n* ③ CCK는 sphincter of Oddi를 수축시키지 않고 이완시킨다.\n* ④ CCK는 gallbladder를 이완시키지 않고 수축시킨다.\n* ⑤ Gallbladder epithelial cell의 Na+/K+-ATPase는 basolateral membrane에 존재한다. Basolateral은 basal과 lateral 영역을 포함하므로 ‘base’라고 썼다는 이유만으로 이 진술을 오답으로 배제할 수 없다.\n\n== 출제 의도 ==\nBile canaliculus와 cholangiocyte-lined duct를 구분하고 CCK에 의한 bile release를 연결하게 한다.\n\n== Wiki 연결 ==\n* [[6강#쓸개관세포 · Cholangiocytes|쓸개관세포]]\n* [[6강#쓸개즙 농축과 방출|쓸개즙 농축과 방출]]\n\n== 관련 J ==\n{{110}} {{332}} {{529}}\n\n== 문항 오류 가능성 ==\n②는 옳지만 ⑤ 역시 일반적인 basolateral Na+/K+-ATPase의 설명과 양립한다. 원래 강의 그림에서 어떤 막 영역을 구별하도록 출제했는지 확인하기 전에는 ②만을 단일 정답으로 확정하지 않는다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -9105,7 +9098,7 @@ window.JBL_DATA = {
       "answerLabel": "정답 추정: 1번 · Body, greater curvature",
       "explanation": "정답 추정: 1번 · Body, greater curvature\n\n== 배경 지식 ==\n위는 cardia, fundus, body, pyloric antrum과 pylorus로 구분한다. Greater curvature는 위의 왼쪽 아래쪽으로 길게 이어지는 볼록한 경계이고, lesser curvature의 꺾이는 지점은 angle에 해당한다. [[4강#위벽의 구조|위벽의 구조]]를 참고한다.\n\n== 정답 선지 ==\n① 표시된 부위는 위 체부의 greater curvature 쪽으로 보이므로 Body, greater curvature가 정답으로 추정된다.\n\n== 오답 선지 ==\n* ② Pyloric antrum: 위의 원위부에서 pylorus로 이어지는 구간이다.\n* ③ Angle: lesser curvature에서 body와 antrum의 경계를 이루는 incisure 부위이다.\n* ④ Fundus: cardia 위쪽의 둥근 지붕 모양 부위이다.\n* ⑤ Cardia: 식도위접합부 주변의 위 입구이다.\n\n== 출제 의도 ==\n위 도식에서 주요 구획과 greater curvature·lesser curvature의 방향을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위벽의 구조|위벽의 구조]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "137.png"
+        "2023_소화기_문항별_사진/137.png"
       ],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -9142,7 +9135,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · C-kit 11 mutation",
-      "explanation": "정답: 1번 · c-KIT exon 11 mutation\n\n== 배경 지식 ==\nGIST의 임상 위험도는 종양 크기, 유사분열 수, 발생 위치, 파열 여부를 종합해 평가한다. 일반적으로 큰 종양, 높은 유사분열 수, 비위장 위치 및 종양 파열이 불량 인자다. KIT exon 11 변이는 흔하지만 결손 위치와 형태에 따라 예후와 imatinib 반응이 달라진다.\n\n== 정답 선지 ==\n* '''1번''': 출제 자료의 공식 정답이다. 특히 KIT exon 11의 특정 결손 변이는 공격적 임상 경과와 연관될 수 있다.\n\n== 오답 선지 ==\n* '''2번''': 완전 절제(R0)는 잔존 종양이 없음을 뜻해 일반적으로 유리한 소견이다.\n* '''3번''': 같은 크기와 유사분열 수라면 소장 GIST가 위 GIST보다 위험도가 높은 경향이 있다.\n* '''4번''': 2 cm 이하의 작은 크기는 대체로 저위험 인자다.\n* '''5번''': 낮은 유사분열 수는 대체로 저위험 인자다.\n\n== 문항 오류 가능성 ==\n단일정답형으로는 모호하다. 3번의 소장 발생도 위 발생보다 불량한 예후 인자로 인정되며, 1번 역시 모든 KIT exon 11 변이가 일률적으로 나쁜 것은 아니다. 공식 정답 1번을 따르되 변이 세부형과 발생 위치를 함께 판단해야 한다.\n\n== 출제 의도 ==\nGIST의 위험도를 단일 소견이 아니라 크기·유사분열·위치·분자 이상으로 판단할 수 있는지 평가한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|생물학적 위험도]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 1번 · c-KIT exon 11 mutation\n\n== 배경 지식 ==\nGIST의 임상 위험도는 종양 크기, 유사분열 수, 발생 위치, 파열 여부를 종합해 평가한다. 일반적으로 큰 종양, 높은 유사분열 수, 비위장 위치 및 종양 파열이 불량 인자다. KIT exon 11 변이는 흔하지만 결손 위치와 형태에 따라 예후와 imatinib 반응이 달라진다.\n\n== 정답 선지 ==\n* '''1번''': 사용자가 유지하도록 지정한 기존 정답이다. 특히 KIT exon 11의 특정 결손 변이는 공격적 임상 경과와 연관될 수 있다.\n\n== 오답 선지 ==\n* '''2번''': 완전 절제(R0)는 잔존 종양이 없음을 뜻해 일반적으로 유리한 소견이다.\n* '''3번''': 같은 크기와 유사분열 수라면 소장 GIST가 위 GIST보다 위험도가 높은 경향이 있다.\n* '''4번''': 2 cm 이하의 작은 크기는 대체로 저위험 인자다.\n* '''5번''': 낮은 유사분열 수는 대체로 저위험 인자다.\n\n== 문항 오류 가능성 ==\n단일정답형으로는 모호하다. 3번의 소장 발생도 위 발생보다 불량한 예후 인자로 인정되며, 1번 역시 모든 KIT exon 11 변이가 일률적으로 나쁜 것은 아니다. 기존 정답 1번을 유지하되 변이 세부형과 발생 위치를 함께 판단해야 한다.\n\n== 출제 의도 ==\nGIST의 위험도를 단일 소견이 아니라 크기·유사분열·위치·분자 이상으로 판단할 수 있는지 평가한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|생물학적 위험도]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -9577,7 +9570,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · I, II",
-      "explanation": "정답: 2번 · I, II\n\n== 배경 지식 ==\nPeyer’s patches는 주로 ileum에 분포하고 육안으로도 보이는 large lymph nodules이며 intestinal immune surveillance center로 기능한다. Germinal center에서 B cell이 증식하고 IgA 생성에 기여한다. 강의록에서 phagocytosis 능력은 Paneth cell 그림에 제시된다.\n\n== 정답 선지 ==\nI은 Peyer’s patch가 large lymph nodule이므로 옳고, II는 대부분 ileum에서 발견되므로 옳다. 따라서 ② I, II가 정답이다.\n\n== 오답 선지 ==\n* III: Peyer’s patch 전체의 대표 기능을 phagocytosis라고 정의하지 않는다. 강의록의 세포 그림에서 phagocytosis가 가능한 것으로 표시된 세포는 Paneth cell이다.\n\n== 출제 의도 ==\nPeyer’s patch의 형태, 주된 위치와 Paneth cell의 방어 기능을 혼동하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[5강#Peyer’s patch|Peyer’s patch]]\n* [[5강#작은창자 상피세포|작은창자 상피세포]]\n\n== 관련 J ==\n{{413}} {{578}}\n\n== 검토 상태 ==\n오답률 30 15page 수록.",
+      "explanation": "정답: 2번 · I, II\n\n== 배경 지식 ==\nPeyer’s patches는 주로 ileum에 분포하고 육안으로도 보이는 large lymph nodules이며 intestinal immune surveillance center로 기능한다. Germinal center에서 B cell이 증식하고 IgA 생성에 기여한다. 강의록에서 phagocytosis 능력은 Paneth cell 그림에 제시된다.\n\n== 정답 선지 ==\nI은 Peyer’s patch가 large lymph nodule이므로 옳고, II는 대부분 ileum에서 발견되므로 옳다. 따라서 ② I, II가 정답이다.\n\n== 오답 선지 ==\n* III: Peyer’s patch 전체의 대표 기능을 phagocytosis라고 정의하지 않는다. 강의록의 세포 그림에서 phagocytosis가 가능한 것으로 표시된 세포는 Paneth cell이다.\n\n== 출제 의도 ==\nPeyer’s patch의 형태, 주된 위치와 Paneth cell의 방어 기능을 혼동하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[5강#Peyer’s patch|Peyer’s patch]]\n* [[5강#작은창자 상피세포|작은창자 상피세포]]\n\n== 관련 J ==\n{{413}} {{578}}\n\n== 강의와 일반 개념의 구분 ==\n공식 2023 오답률30 15쪽은 ② I·II를 정답으로 제시한다.[* Peyer’s patch는 림프조직이며 내부에 phagocytosis를 수행하는 macrophage·dendritic cell 등이 존재한다. 그러므로 III의 ‘It’을 조직 전체의 항원 처리 능력으로 넓게 읽으면 모호해진다. 강의가 Peyer’s patch와 개별 세포의 대표 기능을 구별하는 취지로 채점했다는 점과, Peyer’s patch 안에 식세포가 없다는 주장은 구분해야 한다.]\n\n== 검토 상태 ==\n오답률 30 15page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -10969,22 +10962,22 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · 수축 - 이완 - 이완 - 수축",
-      "explanation": "정답: 2번 · 수축 - 이완 - 이완 - 수축\n\n== 배경 지식 ==\n연동 운동(peristalsis)에서는 음식덩이의 근위부 circular muscle이 수축해 내용물을 앞으로 밀고 longitudinal muscle은 이완한다. 원위부에서는 circular muscle이 이완해 길을 열고 longitudinal muscle이 수축해 해당 구간을 짧게 만든다. [[3강#인두와 식도|인두와 식도]]를 참고한다.\n\n== 정답 선지 ==\n그림의 a–d가 근위부 circular–longitudinal, 원위부 circular–longitudinal 순서라면 '''수축–이완–이완–수축'''이므로 ②가 정답이다.\n\n== 오답 선지 ==\n* ①은 원위부 circular muscle까지 수축시켜 진행 방향의 내강을 막는다.\n* ③·④는 음식덩이 뒤쪽의 circular muscle이 이완하는 조합이라 추진 기전과 맞지 않는다.\n\n== 출제 의도 ==\n연동파 앞뒤에서 circular muscle과 longitudinal muscle이 상반되게 작용하는 원리를 그림에 적용하게 한다.\n\n== Wiki 연결 ==\n* [[3강#삼킴의 과정|삼킴의 과정]]\n* [[4강#연동 운동(peristalsis)|연동 운동]]\n\n== 관련 J ==\n{{672}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · 수축 - 이완 - 이완 - 수축\n\n== 배경 지식 ==\n[[4강#연동 운동(peristalsis)|연동 운동]]에서는 음식덩이의 근위부 circular muscle 수축이 내용물을 밀고 원위부 circular muscle 이완이 진행 공간을 만든다. 강의 도식은 이에 대응하는 longitudinal muscle의 반대 작용을 함께 표시한다.\n\n== 정답 선지 ==\n그림의 a–d가 근위부 circular–longitudinal, 원위부 circular–longitudinal 순서라면 수축–이완–이완–수축으로 ②이다. 문자 순서는 실제 그림의 위치를 먼저 확인해야 하며, a가 언제나 circular muscle이라고 일반화하지 않는다.\n\n== 오답 선지 ==\n* ① 원위부 circular muscle을 수축으로 연결하여 진행 방향의 이완과 맞지 않는다.\n* ③·④ 근위부 circular muscle을 이완으로 연결하여 음식덩이 뒤에서 발생하는 추진 수축과 맞지 않는다.\n\n== 출제 의도 ==\n연동파의 진행 방향과 두 근육층의 수축·이완을 그림에 적용한다. 동일 원리의 {{672}}와 함께 복습한다.\n\n== Wiki 연결 ==\n* [[4강#연동 운동(peristalsis)|연동 운동의 근육 배치]]\n* [[3강#삼킴의 과정|식도기와의 연결]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2022_소화기_문항별_사진/2022_031_01.png"
       ],
       "legacyProfessor": "한인옥",
       "lectureIds": [
-        3
+        4
       ],
-      "lectureId": 3,
-      "lectureTitle": "소화생리 총론 및 구강에서의 소화",
+      "lectureId": 4,
+      "lectureTitle": "위에서의 소화",
       "professor": "한인옥",
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
       "source": "2022 소화기계 풀이 51-53page",
-      "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: 연동 운동(peristalsis) — 식도라는 위치보다 원위부·근위부 근육 수축의 기전이 풀이 핵심",
       "officialPriorityApplied": false,
       "sourceOrdinal": 31,
       "legacyDisplayId": "2022 31번",
@@ -12553,12 +12546,10 @@ window.JBL_DATA = {
         "red margin은 상피가 얇아서 붉게 보인다.",
         "von Ebner's gl. 는 혀유두 밑에 있는 mixed gl. 이다."
       ],
-      "answerIndex": 2,
-      "answerIndices": [
-        2
-      ],
-      "answerLabel": "정답: 2번 · attached gingiva의 epithelium은 para keratinized 되어 있다.",
-      "explanation": "정답: 2번 · attached gingiva의 epithelium은 para keratinized 되어 있다.\n\n== 배경 지식 ==\n저작점막인 잇몸은 이상각질 또는 각질중층편평상피로 덮인다. 맛봉오리의 미각상피세포는 감각신경과 연결되고, von Ebner 샘은 성곽유두와 연관된 순수 장액샘이다.\n\n== 정답 선지 ==\n'''2번''' 부착잇몸의 상피는 이상각질화될 수 있다.\n\n== 오답 선지 ==\n* '''1번''': 저작점막 아래에 소화관의 근육층 같은 muscularis externa가 발달하는 것은 아니다.\n* '''3번''': 화학자극을 받아 감각신경과 연접하는 세포는 미각상피세포이며 버팀세포가 아니다.\n* '''4번''': 홍순은 높은 진피유두와 풍부한 혈관 때문에 붉게 보이는 것이 핵심이다.\n* '''5번''': von Ebner 샘은 혼합샘이 아니라 순수 장액샘이다.\n\n== 출제 의도 ==\n구강점막의 종류, 맛봉오리 세포와 혀의 장액샘을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#구강|구강점막]]\n* [[1강#치주 · Periodontium|잇몸과 치주]]\n* [[1강#혀유두|혀유두]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n저작점막인 잇몸은 이상각질 또는 각질중층편평상피로 덮인다. 맛봉오리의 미각상피세포는 감각신경과 연결되고, von Ebner 샘은 성곽유두와 연관된 순수 장액샘이다.\n\n== 정답 선지 ==\n'''2번''' 부착잇몸의 상피는 이상각질화될 수 있다.\n\n== 오답 선지 ==\n* '''1번''': 저작점막 아래에 소화관의 근육층 같은 muscularis externa가 발달하는 것은 아니다.\n* '''3번''': 화학자극을 받아 감각신경과 연접하는 세포는 미각상피세포이며 버팀세포가 아니다.\n* '''4번''': 홍순은 얇고 투명한 상피·각질층과 표면 가까이 올라온 혈관성 유두가 함께 붉은 외관에 기여한다. 높은 진피유두가 중요하다는 사실만으로 ‘상피가 얇아서 붉다’는 설명을 거짓으로 만들 수 없다.\n* '''5번''': von Ebner 샘은 혼합샘이 아니라 순수 장액샘이다.\n\n== 출제 의도 ==\n구강점막의 종류, 맛봉오리 세포와 혀의 장액샘을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#구강|구강점막]]\n* [[1강#치주 · Periodontium|잇몸과 치주]]\n* [[1강#혀유두|혀유두]]\n\n== 문항 오류 가능성 ==\n② attached gingiva의 parakeratinization은 옳다. ④ 역시 얇은 상피를 통해 혈관색이 비치는 의미라면 옳을 수 있어 단일 정답 조건을 추가 확인해야 한다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -12677,7 +12668,7 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답: 5번 · (마) - myenteric plexus",
-      "explanation": "정답: 5번 · (마) - myenteric plexus\n\n== 배경 지식 ==\n사진은 작은창자 벽의 여러 표지를 보여 준다. 융모는 점막 돌기이고 Paneth 세포는 창자샘 바닥에 있으며, Auerbach 신경얼기는 속돌림근층과 바깥세로근층 사이에 있다.\n\n== 정답 선지 ==\n'''5번''' (마)는 두 근육층 사이의 Auerbach 근육층신경얼기이다.\n\n== 오답 선지 ==\n* '''1번''': 사진의 부위 표지와 빈창자 연결이 맞지 않는다.\n* '''2번''': (나)는 점막과 점막밑층을 포함하는 돌림주름이 아니라 개별 융모이다.\n* '''3번''': (다)는 술잔세포가 아니라 창자샘 바닥의 Paneth 세포이다.\n* '''4번''': (라)는 근육층 전체가 아니라 점막근육층에 해당한다.\n\n== 출제 의도 ==\n작은창자 사진에서 융모, 창자샘 세포와 벽의 근육·신경 구조를 동시에 판독한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|작은창자의 표면 특수구조]]\n* [[1강#작은창자 상피의 세포|작은창자 상피세포]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{81}} {{524}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 5번 · (마) - myenteric plexus\n\n== 배경 지식 ==\n사진은 작은창자 벽의 여러 표지를 보여 준다. 융모는 점막 돌기이고 Paneth 세포는 창자샘 바닥에 있으며, Auerbach 신경얼기는 속돌림근층과 바깥세로근층 사이에 있다.\n\n== 정답 선지 ==\n'''5번''' (마)는 두 근육층 사이의 Auerbach 근육층신경얼기이다.\n\n== 오답 선지 ==\n* '''1번''': 사진의 부위 표지와 빈창자 연결이 맞지 않는다.\n* '''2번''': (나)는 점막과 점막밑층을 포함하는 돌림주름이 아니라 개별 융모이다.\n* '''3번''': (다)는 술잔세포가 아니라 창자샘 바닥의 Paneth 세포이다.\n* '''4번''': (라)는 근육층 전체가 아니라 점막근육층에 해당한다.\n\n== 출제 의도 ==\n작은창자 사진에서 융모, 창자샘 세포와 벽의 근육·신경 구조를 동시에 판독한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|작은창자의 표면 특수구조]]\n* [[1강#작은창자 상피의 세포|작은창자 상피세포]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{81}} {{524}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2022_소화기_문항별_사진/2022_100_01.png"
       ],
@@ -12718,7 +12709,7 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답: 5번 · muscularis externa",
-      "explanation": "정답: 5번 · muscularis externa\n\n== 배경 지식 ==\n사진은 큰창자 전층이다. 점막에는 융모가 없고 길고 곧은 샘이 있으며, 근육층은 속돌림근과 바깥세로근으로 구성된다. 바깥세로근은 결장에서 결장띠를 형성한다.\n\n== 정답 선지 ==\n'''5번''' 표시된 바깥 근육 영역은 muscularis externa에 속한다. 사진의 (5)는 바깥세로근층이 응축된 결장띠 부위로 해석할 수 있다.\n\n== 오답 선지 ==\n* '''1번''': 점막은 상피·고유판·점막근육층을 포함하며 표시 범위와 다르다.\n* '''2번''': 큰창자에는 융모가 없다.\n* '''3번''': 큰창자의 림프소절은 GALT일 수 있지만 돌창자의 집합림프소절인 Peyer 판으로 부르지 않는다.\n* '''4번''': Auerbach 신경얼기는 두 근육층 사이의 작은 신경절이며 표시된 넓은 근육층이 아니다.\n\n== 출제 의도 ==\n큰창자 조직에서 점막과 근육층, 결장띠 및 림프조직을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#큰창자벽|큰창자벽]]\n* [[1강#큰창자의 육안적 특수구조|결장띠]]\n* [[2강#잘록창자|잘록창자 실습]]\n\n== 관련 J ==\n{{82}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 5번 · muscularis externa\n\n== 배경 지식 ==\n사진은 큰창자 전층이다. 점막에는 융모가 없고 길고 곧은 샘이 있으며, 근육층은 속돌림근과 바깥세로근으로 구성된다. 바깥세로근은 결장에서 결장띠를 형성한다.\n\n== 정답 선지 ==\n'''5번''' 표시된 바깥 근육 영역은 muscularis externa에 속한다. 사진의 (5)는 바깥세로근층이 응축된 결장띠 부위로 해석할 수 있다.\n\n== 오답 선지 ==\n* '''1번''': 점막은 상피·고유판·점막근육층을 포함하며 표시 범위와 다르다.\n* '''2번''': 큰창자에는 융모가 없다.\n* '''3번''': 큰창자의 림프소절은 GALT일 수 있지만 돌창자의 집합림프소절인 Peyer 판으로 부르지 않는다.\n* '''4번''': Auerbach 신경얼기는 두 근육층 사이의 작은 신경절이며 표시된 넓은 근육층이 아니다.\n\n== 출제 의도 ==\n큰창자 조직에서 점막과 근육층, 결장띠 및 림프조직을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#큰창자벽|큰창자벽]]\n* [[1강#큰창자의 육안적 특수구조|결장띠]]\n* [[2강#실습 7. 잘록창자|잘록창자 실습]]\n\n== 관련 J ==\n{{82}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2022_소화기_문항별_사진/2022_101_01.png"
       ],
@@ -12791,12 +12782,10 @@ window.JBL_DATA = {
         "Na+/K+-ATPase가 base에 존재한다.",
         "Cholangiocyte에 primary cilia가 존재한다."
       ],
-      "answerIndex": 3,
-      "answerIndices": [
-        3
-      ],
-      "answerLabel": "정답: 3번 · Cholangiocyte에 primary cilia가 존재한다.",
-      "explanation": "정답: 3번 · Cholangiocyte에 primary cilia가 존재한다.\n\n== 배경 지식 ==\nCholangiocyte는 canal of Hering에서 시작하는 biliary tree의 lining cell이며 tight junctions, microvilli와 primary cilia를 갖는다. Small duct에서는 cuboidal, large duct에서는 columnar하다. Bicarbonate-rich fluid를 분비하여 bile을 변형한다.\n\n== 정답 선지 ==\n③ Cholangiocyte에는 biliary lumen을 감지하는 primary cilia가 존재한다.\n\n== 오답 선지 ==\n* ① 모든 bile passage가 epithelial cell로 둘러싸이는 것은 아니다. Bile canaliculus는 adjacent hepatocyte 사이에 형성되어 별도의 lining cell이 없다.\n* ② Gallbladder epithelial cell의 Na+/K+-ATPase는 basolateral membrane에서 electrolyte absorption을 구동하므로 단순히 base라고 표현하는 것은 부정확하다.\n\n== 출제 의도 ==\nBile canaliculus와 cholangiocyte-lined biliary duct를 구분하고 cholangiocyte의 표면구조를 확인한다.\n\n== Wiki 연결 ==\n* [[6강#간속쓸개관 · Intrahepatic ducts|간속쓸개관]]\n* [[6강#쓸개관세포 · Cholangiocytes|쓸개관세포]]\n\n== 관련 J ==\n{{110}} {{206}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\nCholangiocyte는 canal of Hering에서 시작하는 biliary tree의 lining cell이며 tight junctions, microvilli와 primary cilia를 갖는다. Small duct에서는 cuboidal, large duct에서는 columnar하다. Bicarbonate-rich fluid를 분비하여 bile을 변형한다.\n\n== 정답 선지 ==\n③ Cholangiocyte에는 biliary lumen을 감지하는 primary cilia가 존재한다.\n\n== 오답 선지 ==\n* ① 무엇이 epithelial cell로 둘러싸인다는 것인지 주어가 누락되었다. Bile duct라면 옳고, bile canaliculus의 독립된 cholangiocyte lining을 뜻한다면 틀리다. 주어를 임의로 bile canaliculus로 가정하지 않는다.\n* ② Gallbladder epithelial cell의 Na+/K+-ATPase는 basolateral membrane에서 흡수를 구동한다. Basal을 basolateral과 서로 배타적인 표현으로 취급하여 오답으로 배제할 수 없다.\n\n== 출제 의도 ==\nBile canaliculus와 cholangiocyte-lined biliary duct를 구분하고 cholangiocyte의 표면구조를 확인한다.\n\n== Wiki 연결 ==\n* [[6강#간속쓸개관 · Intrahepatic ducts|간속쓸개관]]\n* [[6강#쓸개관세포 · Cholangiocytes|쓸개관세포]]\n\n== 관련 J ==\n{{110}} {{206}}\n\n== 문항 오류 가능성 ==\n③의 primary cilia는 옳은 지식이지만 ①의 주어 누락과 ②의 막 위치 표현 때문에 현재 복원본에서 유일한 정답이라고 할 수 없다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -14206,7 +14195,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · GI tract is derived from endoderm.",
-      "explanation": "정답: 2번 · GI tract is derived from endoderm.\n\n== 배경 지식 ==\n소화 방식은 소화가 세포 안에서 일어나는 intracellular digestion과 세포 밖 공간에서 일어나는 extracellular digestion으로 구분할 수 있다. 사람의 gastrointestinal tract epithelium과 여러 부속샘의 실질은 배아 endoderm에서 유래한다.\n\n== 정답 선지 ==\n② GI tract is derived from endoderm가 옳다.\n\n== 오답 선지 ==\n* ① Bacteria는 extracellular enzyme을 분비하여 외부에서 영양분을 분해하므로 internal digestive system이라고 하지 않는다.\n* ③ Jellyfish는 gastrovascular cavity 안에서 extracellular digestion을 시작하고 세포 내 소화를 이어 가므로 단순히 external digestive system이라고 할 수 없다.\n\n== 출제 의도 ==\n소화 위치에 따른 분류와 인간 GI tract의 배엽 기원을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[3강#소화와 흡수|소화와 흡수]]\n\n== 관련 J ==\n{{708}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · GI tract is derived from endoderm.\n\n== 배경 지식 ==\n소화 방식은 소화가 세포 안에서 일어나는 intracellular digestion과 세포 밖 공간에서 일어나는 extracellular digestion으로 구분할 수 있다. 사람의 gastrointestinal tract epithelium과 여러 부속샘의 실질은 배아 endoderm에서 유래한다.\n\n== 정답 선지 ==\n② GI tract is derived from endoderm가 옳다.\n\n== 오답 선지 ==\n* ① Bacteria는 extracellular enzyme을 분비하여 외부에서 영양분을 분해하므로 internal digestive system이라고 하지 않는다.\n* ③ Jellyfish는 gastrovascular cavity 안에서 extracellular digestion을 시작하고 세포 내 소화를 이어 가므로 단순히 external digestive system이라고 할 수 없다.\n\n== 출제 의도 ==\n소화 위치에 따른 분류와 인간 GI tract의 배엽 기원을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[3강#소화와 흡수의 개념|소화와 흡수]]\n\n== 관련 J ==\n{{708}}\n\n== Wiki 근거 범위 ==\n현재 3강 Wiki의 총론에 해당하는 주제이지만, 발생배엽과 생물별 소화 방식에 대한 직접 설명은 본문에 충분히 수록되지 않았다. 위의 발생학 보충 설명을 해당 Wiki에 이미 적혀 있는 내용으로 오인하지 않는다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -14245,7 +14234,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · pancreatic secretion: 0.5 liter",
-      "explanation": "정답: 3번 · pancreatic secretion: 0.5 liter\n\n== 배경 지식 ==\n하루 대표 분비량은 침 약 1.5 L, 위액 약 2 L, 이자액 약 1.5 L, 쓸개즙 약 0.5 L, 창자액 약 1.5 L이다. 이 분비액과 섭취액을 합쳐 약 9 L가 소화관 내강으로 들어온다. [[3강#하루 체액의 이동|하루 체액의 이동]]을 참고한다.\n\n== 정답 선지 ==\n③ 이자액을 0.5 L라고 한 것이 가장 거리가 멀다. 이자액은 하루 약 1.5 L이고, 0.5 L는 쓸개즙의 대표값이다.\n\n== 오답 선지 ==\n* ① 쓸개즙 약 0.5 L: 타당하다.\n* ② 위액 약 2.0 L: 타당하다.\n* ④ 침 약 1.5 L: 타당하다.\n* ⑤ 창자액 약 1.5 L: 타당하다.\n\n== 출제 의도 ==\n각 소화액의 하루 분비량을 서로 바꾸지 않고 기억하는지 평가한다.\n\n== Wiki 연결 ==\n* [[3강#침과 침샘|침과 침샘]]\n\n== 검토 상태 ==\n오답률 30 43page 수록.",
+      "explanation": "정답: 3번 · pancreatic secretion: 0.5 liter\n\n== 배경 지식 ==\n하루 대표 분비량은 침 약 1.5 L, 위액 약 2 L, 이자액 약 1.5 L, 쓸개즙 약 0.5 L, 창자액 약 1.5 L이다. 이 분비액과 섭취액을 합쳐 약 9 L가 소화관 내강으로 들어온다. [[3강#하루 체액의 이동|하루 체액의 이동]]을 참고한다.\n\n== 정답 선지 ==\n③ 이자액을 0.5 L라고 한 것이 가장 거리가 멀다. 이자액은 하루 약 1.5 L이고, 0.5 L는 쓸개즙의 대표값이다.\n\n== 오답 선지 ==\n* ① 쓸개즙 약 0.5 L: 타당하다.\n* ② 위액 약 2.0 L: 타당하다.\n* ④ 침 약 1.5 L: 타당하다.\n* ⑤ 창자액 약 1.5 L: 타당하다.\n\n== 출제 의도 ==\n각 소화액의 하루 분비량을 서로 바꾸지 않고 기억하는지 평가한다.\n\n== Wiki 연결 ==\n* [[3강#하루 체액의 이동|하루 체액의 이동]]\n\n== 검토 상태 ==\n오답률 30 43page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -14590,8 +14579,8 @@ window.JBL_DATA = {
       "choices": [],
       "answerIndex": null,
       "answerIndices": [],
-      "answerLabel": "정답: False",
-      "explanation": "정답: False\n\n== 배경 지식 ==\nPortal triad는 portal area에 있는 portal venule, hepatic arteriole과 interlobular bile duct로 구성된다. Right·left hepatic ducts와 common hepatic duct 같은 hepatic duct는 더 큰 downstream duct이므로 조직학적 portal triad의 작은 bile duct와 구분한다.\n\n== 정답 선지 ==\n문장의 hepatic duct를 큰 hepatic duct로 해석하면 portal triad의 정확한 담관 성분인 interlobular bile duct와 다르므로 False이다.\n\n== 오답 선지 ==\nTrue로 판단하면 portal area의 interlobular bile duct와 right·left 또는 common hepatic duct를 같은 수준의 구조로 혼동하게 된다.\n\n== 출제 의도 ==\nPortal triad의 세 구성요소를 정확한 조직학적 명칭으로 구분하게 한다.\n\n== Wiki 연결 ==\n* [[6강#간소엽과 문맥관세동이|간소엽과 문맥관세동이]]\n* [[6강#간속쓸개관 · Intrahepatic ducts|간속쓸개관]]\n\n== 관련 J ==\n{{84}} {{110}} {{204}} {{763}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[6강#간소엽과 문맥관세동이|Portal triad]]의 조직학적 구성은 portal venule, hepatic arteriole, interlobular bile duct이다. 큰 간문맥·간동맥·담관의 가지를 가리키는 문맥과 개별 관의 정확한 해부학적 명칭을 구분해야 한다.\n\n== 정답 해설 ==\n현재 저장답은 False였지만, hepatic duct를 ‘portal tract의 bile duct branch’라는 넓은 의미로 썼다면 전체 진술은 참으로 읽힐 수 있다. Right/left/common hepatic duct 자체가 현미경적 triad 안에 있다는 뜻이라면 부정확하다.\n\n== 출제 의도 ==\nPortal triad의 세 구조를 이해하되 같은 관 계통의 이름 차이만으로 거짓을 만들어 내지 않는다.\n\n== 문항 오류 가능성 ==\n주어진 문장에는 큰 hepatic duct 자체를 말하는지 작은 가지를 통칭하는지 구별할 정보가 없다. 비공식 False를 확정 답으로 유지할 근거가 부족하다.\n\n== Wiki 연결 ==\n* [[6강#간소엽과 문맥관세동이|Portal triad]]\n* [[6강#간속쓸개관 · Intrahepatic ducts|간내 담관]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -14622,7 +14611,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: X",
-      "explanation": "정답: X\n\n== 배경 지식 ==\nMeissner 점막밑신경얼기는 점막밑층에 있고, Auerbach 근육층신경얼기는 근육층의 속돌림근층과 바깥세로근층 사이에 있다.\n\n== 정답 선지 ==\nMyenteric plexus가 점막밑층과 근육층 사이에 있다는 문장은 위치가 틀렸으므로 거짓이다.\n\n== 오답 선지 ==\n점막밑층과 관련된 신경얼기는 submucosal, 즉 Meissner plexus이다.\n\n== 출제 의도 ==\n창자신경계의 두 신경얼기를 벽의 정확한 층과 연결한다.\n\n== WIKI 연결 ==\n* [[1강#소화관의 일반 구조|소화관의 일반 구조]]\n* [[2강#식도|식도의 Auerbach 신경얼기]]\n\n== 관련 J ==\n{{82}} {{329}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: X\n\n== 배경 지식 ==\nMeissner 점막밑신경얼기는 점막밑층에 있고, Auerbach 근육층신경얼기는 근육층의 속돌림근층과 바깥세로근층 사이에 있다.\n\n== 정답 선지 ==\nMyenteric plexus가 점막밑층과 근육층 사이에 있다는 문장은 위치가 틀렸으므로 거짓이다.\n\n== 오답 선지 ==\n점막밑층과 관련된 신경얼기는 submucosal, 즉 Meissner plexus이다.\n\n== 출제 의도 ==\n창자신경계의 두 신경얼기를 벽의 정확한 층과 연결한다.\n\n== WIKI 연결 ==\n* [[1강#소화관의 일반 구조|소화관의 일반 구조]]\n* [[2강#실습 3. 식도|식도의 Auerbach 신경얼기]]\n\n== 관련 J ==\n{{82}} {{329}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -15750,7 +15739,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · I, III",
-      "explanation": "정답: 3번 · I, III\n\n== 배경 지식 ==\n머리기는 미주신경을 통해 전체 이자 분비의 약 10–15%를 담당한다. 샘창자 I cell의 CCK는 주로 샘꽈리세포의 효소 분비를, S cell의 secretin은 주로 도관세포의 HCO3− 분비를 촉진한다. [[8강#머리기·위기·장기|이자 분비 단계]]를 참고한다.\n\n== 정답 선지 ==\nI은 머리기의 기여율이 약 10–15%이므로 옳다. III은 secretin이 이자의 bicarbonate 분비를 촉진하므로 옳다. 따라서 3번 I, III가 정답이다.\n\n== 오답 선지 ==\n* II: CCK는 I cell에서 분비되지만 주된 표적은 duct cell이 아니라 acinar cell이다.\n\n== 출제 의도 ==\n이자 분비의 단계별 비율과 CCK·secretin의 표적세포를 연결하게 한다.\n\n== Wiki 연결 ==\n* [[8강#이자액의 성분과 소화효소|이자액의 성분과 소화효소]]\n\n== 검토 상태 ==\n오답률 30 49page 수록.",
+      "explanation": "정답: 3번 · I, III\n\n== 배경 지식 ==\n머리기는 미주신경을 통해 전체 이자 분비의 약 10–15%를 담당한다. 샘창자 I cell의 CCK는 주로 샘꽈리세포의 효소 분비를, S cell의 secretin은 주로 도관세포의 HCO3− 분비를 촉진한다. [[8강#머리기·위기·장기|이자 분비 단계]]를 참고한다.\n\n== 정답 선지 ==\nI은 머리기의 기여율이 약 10–15%이므로 옳다. III은 secretin이 이자의 bicarbonate 분비를 촉진하므로 옳다. 따라서 3번 I, III가 정답이다.\n\n== 오답 선지 ==\n* II: CCK는 I cell에서 분비되지만 주된 표적은 duct cell이 아니라 acinar cell이다.\n\n== 출제 의도 ==\n이자 분비의 단계별 비율과 CCK·secretin의 표적세포를 연결하게 한다.\n\n== Wiki 연결 ==\n* [[8강#머리기·위기·장기|머리기·위기·장기]]\n\n== 검토 상태 ==\n오답률 30 49page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -16068,7 +16057,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 1,
       "legacyDisplayId": "2021 1번",
-      "globalNumber": 417
+      "globalNumber": 417,
+      "sourcePdfPages": [
+        1,
+        3
+      ]
     },
     {
       "id": "2021-2",
@@ -16099,7 +16092,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 2,
       "legacyDisplayId": "2021 2번",
-      "globalNumber": 418
+      "globalNumber": 418,
+      "sourcePdfPages": [
+        4,
+        6
+      ]
     },
     {
       "id": "2021-3",
@@ -16125,12 +16122,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "상부위장관 병리",
-      "source": "2021 소화기계 풀이 7-12page",
+      "source": "2021 소화기계 풀이 7-9page",
       "mappingConfidence": "선배 해설 강의 출처 0.75",
       "officialPriorityApplied": false,
       "sourceOrdinal": 3,
       "legacyDisplayId": "2021 3번",
-      "globalNumber": 419
+      "globalNumber": 419,
+      "sourcePdfPages": [
+        7,
+        9
+      ]
     },
     {
       "id": "2021-4",
@@ -16138,38 +16139,34 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 4,
-      "question": "뇌의 MRI나 CT에서 신호음영이나 신호강도를 결정하는 기준이 되는 조직은?",
+      "question": "Autoimmune gastritis와 environmental gastritis를 비교하시오.",
       "passage": "",
-      "choices": [
-        "지방",
-        "백색질",
-        "회백질",
-        "근육",
-        "뇌척수액"
-      ],
+      "choices": [],
       "answerIndex": null,
       "answerIndices": [],
-      "answerLabel": "정답 확정 곤란",
-      "explanation": "정답 확정 곤란\n\n[핵심 해설]\n풀이본에는 이 문항 다음에 ‘Peutz-Jeghers 증후군’이라는 서로 무관한 정답이 기재되어 있어 원문 문항과 정답의 대응이 깨져 있다. 따라서 근거 없는 번호를 지정하지 않고 원문 불일치 문항으로 표시한다.\n[검토 상태]\n오답30 미수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_004_01.png"
-      ],
-      "legacyProfessor": "",
+      "answerLabel": "정답: Autoimmune gastritis와 environmental gastritis의 원인·분포·항체·vitamin B12·gastrin을 비교한다.",
+      "explanation": "정답: Autoimmune gastritis는 몸통·바닥의 면역매개성 위축, environmental gastritis는 H. pylori 및 환경 요인에 의한 날문방 우세·다초점성 위축이 핵심이다.\n\n== 배경 지식 ==\n[[11강#만성위염|만성위염]]에서 위샘이 소실되면 위축과 intestinal metaplasia가 발생할 수 있다. 두 유형을 비교할 때는 '''원인 → 위 내 분포 → 벽세포·내인자 기능 → 항체·vitamin B12·gastrin 변화'''의 순서로 설명한다.\n\n== 서술형 모범답안 ==\nAutoimmune gastritis는 parietal cell과 intrinsic factor에 대한 면역반응과 관련된 type A gastritis이다. 벽세포가 많은 위몸통과 바닥에 위축이 집중되고 날문방은 상대적으로 보존된다. 위산과 intrinsic factor가 감소하여 저위산증, vitamin B12 흡수장애와 pernicious anemia가 발생하며, 산에 의한 음성되먹임이 감소하여 gastrin이 크게 증가한다. Parietal cell antibody와 intrinsic factor antibody가 양성일 수 있다.\nEnvironmental gastritis는 H. pylori 감염 및 환경 요인과 관련된 type B 또는 multifocal atrophic gastritis이다. 날문방 우세로 시작하여 몸통으로 확장하거나 다초점성 위축을 보인다. 벽세포·내인자항체는 음성이며, 강의의 비교표에서는 vitamin B12가 정상이고 gastrin은 정상 또는 낮은 것으로 제시된다.\n\n== 핵심 해설 ==\n* [[11강#자가면역위염 · Autoimmune gastritis|Autoimmune gastritis]]: 북유럽·스칸디나비아 계통에서 비교적 흔하고 여성에서 약간 더 흔하다. H. pylori 정착은 강의 표에서 20% 미만으로 제시된다. 몸통·바닥의 oxyntic gland 손상이므로 '''산 감소와 내인자 감소가 함께''' 나타난다. 다른 자가면역질환과의 연관도 중요하다.\n* [[11강#Helicobacter pylori 만성위염|Environmental gastritis]]: 전 세계적으로 발생하고 뚜렷한 성별 차이가 없으며, 강의 표의 H. pylori 정착은 90–100%이다. 날문방 우세 또는 multifocal 분포를 항체 음성과 연결한다.\n* Gastrin이 높은 이유는 자가면역으로 G cell이 직접 자극되기 때문이 아니라 '''벽세포 손상으로 위산이 줄어든 데 대한 보상'''이다. Intrinsic factor 결핍은 vitamin B12 감소를 설명한다.[* 환경성 위염의 산·gastrin 상태는 실제 병변 분포와 위축 정도에 따라 달라질 수 있다. 이 비교 문항은 11강에 제시된 유형별 비교표를 기준으로 답한다.]\n\n== 출제 의도 ==\n두 만성위염을 이름만 구분하지 않고 병변 위치와 분비 기능, 혈청 지표까지 인과관계로 비교하는지 평가한다.\n\n== Wiki 연결 ==\n* [[11강#자가면역위염 · Autoimmune gastritis|자가면역성과 환경성 위축위염 비교]]\n* [[11강#Helicobacter pylori 만성위염|H. pylori 만성위염]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "images": [],
+      "legacyProfessor": "김준미",
       "lectureIds": [
-        19
+        11
       ],
-      "lectureId": 19,
-      "lectureTitle": "영상의학",
-      "professor": "김미영",
-      "domain": "임상의학",
-      "discipline": "진단 치료 지원 분과",
-      "section": "영상의학",
-      "source": "2021 소화기계 풀이 15-20page",
-      "mappingConfidence": "문항 내용상 영상의학/과거 출제교수 표기 오류 제거",
+      "lectureId": 11,
+      "lectureTitle": "위질환",
+      "professor": "김준미",
+      "domain": "기초의학",
+      "discipline": "병리학",
+      "section": "상부위장관 병리",
+      "source": "2021 소화기계 풀이 10-12page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 4,
       "legacyDisplayId": "2021 4번",
-      "globalNumber": 420
+      "globalNumber": 420,
+      "sourcePdfPages": [
+        10,
+        12
+      ]
     },
     {
       "id": "2021-5",
@@ -16195,12 +16192,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "하부위장관 병리",
-      "source": "2021 소화기계 오답률30 · 24page",
+      "source": "2021 소화기계 오답률30 · 24page / 2021 소화기계 풀이 13-14page",
       "mappingConfidence": "강의록·출제교수·문항 주제 재검토/높음",
       "officialPriorityApplied": true,
       "sourceOrdinal": 5,
       "legacyDisplayId": "2021 5번",
-      "globalNumber": 421
+      "globalNumber": 421,
+      "sourcePdfPages": [
+        13,
+        14
+      ]
     },
     {
       "id": "2021-8",
@@ -16246,7 +16247,11 @@ window.JBL_DATA = {
           "구리 축적과 혈액검사의 해석",
           "Rhodanine stain과 구리 정량"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        21,
+        23
+      ]
     },
     {
       "id": "2021-9",
@@ -16292,7 +16297,11 @@ window.JBL_DATA = {
           "Fibrosis와 stellate cell",
           "HBV 혈청학"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        24,
+        26
+      ]
     },
     {
       "id": "2021-10",
@@ -16318,12 +16327,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 12page",
+      "source": "2021 소화기계 오답률30 · 12page / 2021 소화기계 풀이 27-29page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 10,
       "legacyDisplayId": "2021 10번",
-      "globalNumber": 424
+      "globalNumber": 424,
+      "sourcePdfPages": [
+        27,
+        29
+      ]
     },
     {
       "id": "2021-11",
@@ -16337,7 +16350,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: cytomegalovirus gastritis",
-      "explanation": "정답: cytomegalovirus gastritis\n\n== 배경 지식 ==\nCytomegalovirus(CMV)는 장기이식 환자처럼 면역이 억제된 사람의 위장관에 궤양을 만들 수 있다. 조직에서는 기질세포·내피세포 등에 큰 핵과 주변부 halo를 동반한 핵내봉입체가 보여 ‘owl-eye’ 형태를 이룬다. 면역조직화학염색 또는 핵산검사가 진단을 보조한다.\n\n== 정답 해설 ==\n간이식 후 면역억제 상태, 위궤양과 특징적인 거대세포성 핵내봉입체를 함께 보면 '''cytomegalovirus gastritis'''가 가장 합당하다.\n\n== 출제 의도 ==\n면역저하라는 임상 맥락과 바이러스 봉입체를 연결하여 CMV 위염을 진단하게 한다.\n\n== WIKI 연결 ==\n* [[11강#급성위염 · Acute gastritis|급성위염]]\n* [[10강#거대세포바이러스 식도염|CMV의 위장관 병리]]\n\n== 검토 상태 ==\n오답률 30 61page 수록.",
+      "explanation": "정답: cytomegalovirus gastritis\n\n== 배경 지식 ==\n장기이식 후 면역억제는 CMV의 위장관 감염 위험을 높인다. [[13강#CMV gastritis|CMV gastritis]]에서는 위점막의 염증·위샘 감소를 저배율로 본 다음, 고배율에서 cytomegaly와 큰 핵내봉입체 및 주변 halo를 찾는다. 염증이나 위축만으로 CMV라고 진단하지 않는다.\n\n== 정답 해설 ==\n이식 환자의 위 병변과 특징적인 감염세포 소견을 종합하면 '''cytomegalovirus gastritis'''이다. 핵내봉입체와 주변 halo가 이루는 owl-eye 형태가 중요한 단서다. 13강의 [[13강#CMV 감염 의심 세포|감염 의심 세포]] 설명처럼 큰 핵 하나만으로 확정하지 않고 필요하면 CMV 면역염색을 함께 평가한다.\n\n== 출제 의도 ==\n면역저하라는 임상 배경 → 위 병변의 염증 → 바이러스 감염세포의 핵 변화 순서로 판독한다. HSV의 다핵화·nuclear molding 및 Candida의 yeast·pseudohyphae와 구별한다.\n\n== Wiki 연결 ==\n* [[13강#CMV gastritis|CMV gastritis]]\n* [[13강#CMV 감염 의심 세포|CMV 감염세포 판독]]\n* [[10강#거대세포바이러스 식도염|다른 위장관 부위의 CMV]]\n\n== 검토 상태 ==\n오답률 30 61page 수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_061_01.png",
         "2021_소화기_문항별_사진/2021_wrong30_061_02.png",
@@ -16345,20 +16358,24 @@ window.JBL_DATA = {
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
-        11
+        13
       ],
-      "lectureId": 11,
-      "lectureTitle": "위질환",
+      "lectureId": 13,
+      "lectureTitle": "상부위장관 병리실습",
       "professor": "김준미",
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "상부위장관 병리",
-      "source": "2021 소화기계 오답률30 · 61page",
-      "mappingConfidence": "강의록·출제교수·문항 주제 재검토/높음",
+      "source": "2021 소화기계 오답률30 · 61page / 2021 소화기계 풀이 30-32page",
+      "mappingConfidence": "Wiki 풀이 근거 재검토: CMV gastritis — 13강 Wiki에 해당 위 생검 표본과 바이러스 봉입체의 직접적인 판독 설명",
       "officialPriorityApplied": true,
       "sourceOrdinal": 11,
       "legacyDisplayId": "2021 11번",
-      "globalNumber": 425
+      "globalNumber": 425,
+      "sourcePdfPages": [
+        30,
+        32
+      ]
     },
     {
       "id": "2021-12",
@@ -16372,7 +16389,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 유사분열 수와 Ki-67 증식지수",
-      "explanation": "정답: 위장관 신경내분비종양의 WHO grade는 유사분열 수와 Ki-67 지수로 정한다.\n\n== 배경 지식 ==\n잘 분화된 NET의 등급은 G1: 유사분열 <2/2 mm² 및 Ki-67 <3%, G2: 유사분열 2–20/2 mm² 또는 Ki-67 3–20%, G3: 유사분열 >20/2 mm² 또는 Ki-67 >20%로 구분한다. 두 지표가 다르면 더 높은 등급을 적용한다.\n\n== 정답 해설 ==\n종양세포의 organoid nesting·trabeculae와 salt-and-pepper chromatin은 신경내분비 분화를 시사하고, synaptophysin과 chromogranin이 진단을 지지한다. 등급은 분화도와 별개의 증식 지표다.\n\n== 출제 의도 ==\nNET의 형태학적 진단 뒤 유사분열과 Ki-67을 이용해 증식 등급을 산정하는지를 평가한다.\n\n== WIKI 연결 ==\n* [[11강#WHO 분류와 등급|WHO 분류와 등급]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 유사분열 수와 Ki-67 증식지수\n\n== 배경 지식 ==\n[[11강#WHO 분류와 등급|NET의 grade]]는 종양세포의 증식활동을 수치화한다. 형태상 신경내분비 분화의 확인과 G1·G2·G3의 등급 판정은 서로 다른 단계다.\n\n== 정답 해설 ==\n'''유사분열 수(mitotic count)와 Ki-67 proliferation index'''이다. 전자는 분열 중인 세포를 세고, 후자는 증식기에 있는 종양세포의 비율을 평가한다. 강의 표는 G1을 <2/10 HPF 및 Ki-67 ≤2%, G2를 2–20/10 HPF 또는 3–20%, G3를 >20/10 HPF 또는 >20%로 제시한다.[* 현재 분류 자료에서는 유사분열 수를 2 mm²당 표기하고 Ki-67의 G1/G2 경계를 <3%/≥3%로 표시하기도 한다. 현미경 시야 면적을 모른 채 10 HPF와 2 mm²를 자동 환산하지 않는다. 본 문항은 절단값 암기보다 두 증식지표를 쓰는 것이 핵심이다.]\n\n== 출제 의도 ==\nNET의 진단표지(chromogranin·synaptophysin)와 등급지표(mitotic count·Ki-67)를 구별하여 서술한다.\n\n== Wiki 연결 ==\n* [[11강#WHO 분류와 등급|강의의 NET 등급 표]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -16389,7 +16406,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 12,
       "legacyDisplayId": "2021 12번",
-      "globalNumber": 426
+      "globalNumber": 426,
+      "sourcePdfPages": [
+        33,
+        35
+      ]
     },
     {
       "id": "2021-13",
@@ -16418,7 +16439,7 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "간 담 췌 병리",
-      "source": "2021 소화기계 오답률30 · 5page",
+      "source": "2021 소화기계 오답률30 · 5page / 2021 소화기계 풀이 36-38page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 13,
@@ -16435,7 +16456,11 @@ window.JBL_DATA = {
           "Focal nodular hyperplasia · FNH",
           "Hepatocellular adenoma · HCA"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        36,
+        38
+      ]
     },
     {
       "id": "2021-14",
@@ -16481,7 +16506,11 @@ window.JBL_DATA = {
           "Ballooning degeneration",
           "Fibrosis와 stellate cell"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        39,
+        42
+      ]
     },
     {
       "id": "2021-15",
@@ -16538,7 +16567,11 @@ window.JBL_DATA = {
           "자가면역간염",
           "Simplified AIH criteria"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        43,
+        44
+      ]
     },
     {
       "id": "2021-16",
@@ -16566,7 +16599,7 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "간 담 췌 병리",
-      "source": "2021 소화기계 풀이 45-47page / 2021 소화기계 오답률30 · 25 page",
+      "source": "2021 소화기계 풀이 45-47page / 2021 소화기계 풀이 45-47page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 16,
@@ -16583,7 +16616,11 @@ window.JBL_DATA = {
           "Intraductal papillary mucinous neoplasm · IPMN",
           "MCN과 IPMN의 감별"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        45,
+        47
+      ]
     },
     {
       "id": "2021-17",
@@ -16591,15 +16628,16 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 17,
-      "question": "제시된 병리학적 소견에서 가장 가능성 있는 질환은?",
+      "question": "다음과 같은 육안 및 병리조직학적 소견을 나타내었다면 가장 가능성 있는 질환은?",
       "passage": "",
       "choices": [],
       "answerIndex": null,
       "answerIndices": [],
-      "answerLabel": "정답: Chronic passive congestion of the liver(만성 수동성 간울혈), nutmeg liver.",
-      "explanation": "정답: Chronic passive congestion of the liver(만성 수동성 간울혈), nutmeg liver.\n\n== 배경 지식 ==\n\n[[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]에서는 우심계 압력 상승이 간정맥으로 전달되어 '''centrilobular zone 3'''에 sinusoidal congestion과 간세포 위축·손상이 발생한다. 지속되면 중심정맥 주위 섬유화가 이어지고 central-to-central bridging으로 진행해 '''reverse lobulation'''을 만든다. Portal-to-portal fibrosis 중심의 만성간염과 시작 위치가 다르다.\n\n== 서술형 모범답안 ==\n\nChronic passive congestion of the liver(만성 수동성 간울혈), nutmeg liver.\n\n== 핵심 해설 ==\n\n육안 절단면에 짙은 적갈색 영역과 상대적으로 옅은 실질이 그물처럼 반복되는 nutmeg appearance가 보인다. 짙은 부위는 주로 중심정맥 주변의 울혈·출혈, 옅은 부위는 상대적으로 보존되거나 지방변화가 있는 간실질과 연결한다. 이 소견은 만성 수동성 울혈을 가장 먼저 시사하지만, 사진만으로 심부전의 정확한 원인이나 간경화 단계까지 확정하지 않는다. Cardiac cirrhosis라고 하려면 만성 울혈에 더해 충분한 fibrosis와 구조 재편이 확인되어야 한다.\n\n== 출제 의도 ==\n\n육안의 색 분포를 zone 3의 정맥성 울혈에 연결하고 congestion과 완성된 cirrhosis를 구별한다.\n\n== WIKI 연결 ==\n\n* [[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]\n\n== 관련 J ==\n\n{{479}} {{40}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/irregular-pattern-fibrosis|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답30 미수록.",
+      "answerLabel": "정답: Chronic passive congestion(만성 수동성 간울혈).",
+      "explanation": "정답: Chronic passive congestion(만성 수동성 간울혈).\n\n== 배경 지식 ==\n\n[[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]에서는 우심계 압력 상승이 간정맥으로 전달되어 '''centrilobular zone 3'''에 sinusoidal congestion과 간세포 위축·손상이 발생한다. 지속되면 중심정맥 주위 섬유화가 이어지고 central-to-central bridging으로 진행해 '''reverse lobulation'''을 만든다. Portal-to-portal fibrosis 중심의 만성간염과 시작 위치가 다르다.\n\n== 서술형 모범답안 ==\n\nChronic passive congestion(만성 수동성 간울혈).\n\n== 핵심 해설 ==\n\n육안 사진의 nutmeg appearance와 조직의 중심정맥 주변 울혈·간세포 위축을 함께 확인한다. 적갈색 울혈 부위와 상대적으로 옅은 실질의 대비가 소엽 단위로 반복된다. 공식 해설도 zone 3의 심한 울혈 및 위축을 명시한다. 단지 염증세포가 있다는 이유로 바이러스 간염이라고 하지 않으며, outflow 측 압력 상승이라는 손상 분포를 먼저 파악한다. 진행하면 reverse-pattern fibrosis가 가능하지만 현재 진단명은 chronic passive congestion이다.\n\n== 출제 의도 ==\n\n육안과 현미경의 같은 zone 3 병변을 대응시켜 심장성 울혈을 이해한다.\n\n== WIKI 연결 ==\n\n* [[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]\n* [[17강#간의 순환장애|간의 순환장애]]\n\n== 관련 J ==\n\n{{40}} {{169}}\n\n== 검토 상태 ==\n\n오답률 30 13page 수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_017_01.png"
+        "2021_소화기_문항별_사진/2021_wrong30_013_01.png",
+        "2021_소화기_문항별_사진/2021_wrong30_013_02.png"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -16611,9 +16649,9 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "간 담 췌 병리",
-      "source": "2021 소화기계 풀이 48-50page",
+      "source": "2021 소화기계 오답률30 · 13page / 2021 소화기계 풀이 48-50page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
-      "officialPriorityApplied": false,
+      "officialPriorityApplied": true,
       "sourceOrdinal": 17,
       "legacyDisplayId": "2021 17번",
       "globalNumber": 431,
@@ -16621,13 +16659,18 @@ window.JBL_DATA = {
         "date": "2026-09-07",
         "lectureId": 17,
         "method": "Wiki 기반 풀이 + 외부 의학 근거 독립 검증; 기존 해설은 오답30 수록 문항만 참고",
-        "officialPages": null,
+        "officialPages": "13",
         "issue": null,
         "grading": "reviewed",
         "basis": [
-          "Passive congestion · 심장성 울혈"
+          "Passive congestion · 심장성 울혈",
+          "간의 순환장애"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        48,
+        50
+      ]
     },
     {
       "id": "2021-18",
@@ -16653,12 +16696,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 14page",
+      "source": "2021 소화기계 오답률30 · 14page / 2021 소화기계 풀이 51-53page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 18,
       "legacyDisplayId": "2021 18번",
-      "globalNumber": 432
+      "globalNumber": 432,
+      "sourcePdfPages": [
+        51,
+        53
+      ]
     },
     {
       "id": "2021-19",
@@ -16689,7 +16736,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 19,
       "legacyDisplayId": "2021 19번",
-      "globalNumber": 433
+      "globalNumber": 433,
+      "sourcePdfPages": [
+        54,
+        56
+      ]
     },
     {
       "id": "2021-20",
@@ -16722,7 +16773,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 20,
       "legacyDisplayId": "2021 20번",
-      "globalNumber": 434
+      "globalNumber": 434,
+      "sourcePdfPages": [
+        57,
+        59
+      ]
     },
     {
       "id": "2021-21",
@@ -16758,12 +16813,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소아청소년과",
       "section": "소아 소화기",
-      "source": "2021 소화기계 풀이 60-68page",
+      "source": "2021 소화기계 풀이 60-62page",
       "mappingConfidence": "2023 유사문항 1.00",
       "officialPriorityApplied": false,
       "sourceOrdinal": 21,
       "legacyDisplayId": "2021 21번",
-      "globalNumber": 435
+      "globalNumber": 435,
+      "sourcePdfPages": [
+        60,
+        62
+      ]
     },
     {
       "id": "2021-24",
@@ -16799,12 +16858,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소아청소년과",
       "section": "소아 소화기",
-      "source": "2021 소화기계 오답률30 · 47page",
+      "source": "2021 소화기계 오답률30 · 47page / 2021 소화기계 풀이 69-71page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 24,
       "legacyDisplayId": "2021 24번",
-      "globalNumber": 436
+      "globalNumber": 436,
+      "sourcePdfPages": [
+        69,
+        71
+      ]
     },
     {
       "id": "2021-25",
@@ -16843,7 +16906,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 25,
       "legacyDisplayId": "2021 25번",
-      "globalNumber": 437
+      "globalNumber": 437,
+      "sourcePdfPages": [
+        72,
+        74
+      ]
     },
     {
       "id": "2021-26",
@@ -16869,20 +16936,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "강주희",
       "lectureIds": [
-        31
+        25
       ],
-      "lectureId": 31,
-      "lectureTitle": "위염 및 소화성 궤양",
-      "professor": "차보람",
-      "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "상부위장관",
+      "lectureId": 25,
+      "lectureTitle": "소화성궤양치료제",
+      "professor": "강주희",
+      "domain": "기초의학",
+      "discipline": "약리학",
+      "section": "약리학",
       "source": "2021 소화기계 풀이 75-77page",
-      "mappingConfidence": "질환 키워드",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 26,
       "legacyDisplayId": "2021 26번",
-      "globalNumber": 438
+      "globalNumber": 438,
+      "sourcePdfPages": [
+        75,
+        77
+      ]
     },
     {
       "id": "2021-28",
@@ -16921,7 +16992,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 28,
       "legacyDisplayId": "2021 28번",
-      "globalNumber": 439
+      "globalNumber": 439,
+      "sourcePdfPages": [
+        78,
+        81
+      ]
     },
     {
       "id": "2021-29",
@@ -16947,20 +17022,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "강주희",
       "lectureIds": [
-        25
+        41
       ],
-      "lectureId": 25,
-      "lectureTitle": "소화성궤양치료제",
+      "lectureId": 41,
+      "lectureTitle": "위장관 및 간 질환에서의 약동학",
       "professor": "강주희",
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
       "source": "2021 소화기계 풀이 82-83page",
-      "mappingConfidence": "출제자·약리 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 29,
       "legacyDisplayId": "2021 29번",
-      "globalNumber": 440
+      "globalNumber": 440,
+      "sourcePdfPages": [
+        82,
+        83
+      ]
     },
     {
       "id": "2021-30",
@@ -16994,12 +17073,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 50page",
+      "source": "2021 소화기계 오답률30 · 50page / 2021 소화기계 풀이 84-86page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 30,
       "legacyDisplayId": "2021 30번",
-      "globalNumber": 441
+      "globalNumber": 441,
+      "sourcePdfPages": [
+        84,
+        86
+      ]
     },
     {
       "id": "2021-31",
@@ -17009,10 +17092,18 @@ window.JBL_DATA = {
       "originalNumber": 31,
       "question": "다음은 위장관 또는 간질환 환자에게서 약물 용법과 용량 조절 원칙에 대한 설명이다, 가장 옳은 것은?",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 2번",
+      "choices": [
+        "간질환에서 청소율 변화를 가장 잘 반영하는 지표는 혈중 알부민 농도이다.",
+        "간청소율이 전체 약물청소율의 10% 정도를 차지하는 약물은 급성간염 환자에서 용량을 줄일 필요가 없다.",
+        "혈중단백결합률이 낮은 약물을 간경화 환자에게 투여할 경우 분포용적이 크게 증가한다.",
+        "약물 x를 위장관 운동을 촉진하는 약물 y와 같이 투여할 경우 약물 x의 흡수속도는 느려진다.",
+        "위염 또는 위궤양과 같은 위장질환이 있을 경우 약물의 흡수량은 크게 증가한다."
+      ],
+      "answerIndex": 2,
+      "answerIndices": [
+        2
+      ],
+      "answerLabel": "정답: 2번 · 간청소율이 전체 약물청소율의 10% 정도를 차지하는 약물은 급성간염 환자에서 용량을 줄일 필요가 없다.",
       "explanation": "정답: 2번\n\n[핵심 해설]\n간청소율과 용량 조절은 약물의 간 추출률, 단백결합률, 간혈류량 및 대사능을 함께 고려해야 한다. 풀이본은 2번을 정답으로 제시한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "강주희",
@@ -17030,7 +17121,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 31,
       "legacyDisplayId": "2021 31번",
-      "globalNumber": 442
+      "globalNumber": 442,
+      "sourcePdfPages": [
+        87,
+        90
+      ]
     },
     {
       "id": "2021-32",
@@ -17056,20 +17151,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "강주희",
       "lectureIds": [
-        25
+        41
       ],
-      "lectureId": 25,
-      "lectureTitle": "소화성궤양치료제",
+      "lectureId": 41,
+      "lectureTitle": "위장관 및 간 질환에서의 약동학",
       "professor": "강주희",
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
       "source": "2021 소화기계 풀이 91-93page",
-      "mappingConfidence": "출제자·약리 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 32,
       "legacyDisplayId": "2021 32번",
-      "globalNumber": 443
+      "globalNumber": 443,
+      "sourcePdfPages": [
+        91,
+        93
+      ]
     },
     {
       "id": "2021-33",
@@ -17105,12 +17204,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
-      "source": "2021 소화기계 오답률30 · 56page",
+      "source": "2021 소화기계 오답률30 · 56page / 2021 소화기계 풀이 94-96page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 33,
       "legacyDisplayId": "2021 33번",
-      "globalNumber": 444
+      "globalNumber": 444,
+      "sourcePdfPages": [
+        94,
+        96
+      ]
     },
     {
       "id": "2021-34",
@@ -17151,7 +17254,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 34,
       "legacyDisplayId": "2021 34번",
-      "globalNumber": 445
+      "globalNumber": 445,
+      "sourcePdfPages": [
+        97,
+        99
+      ]
     },
     {
       "id": "2021-35",
@@ -17177,20 +17284,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "차보람",
       "lectureIds": [
-        31
+        35
       ],
-      "lectureId": 31,
-      "lectureTitle": "위염 및 소화성 궤양",
+      "lectureId": 35,
+      "lectureTitle": "식도질환 (식도암 포함)",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
       "source": "2021 소화기계 풀이 100-102page",
-      "mappingConfidence": "출제자·상부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 35,
       "legacyDisplayId": "2021 35번",
-      "globalNumber": 446
+      "globalNumber": 446,
+      "sourcePdfPages": [
+        100,
+        102
+      ]
     },
     {
       "id": "2021-36",
@@ -17200,30 +17311,41 @@ window.JBL_DATA = {
       "originalNumber": 36,
       "question": "45세 남자가 가슴통증으로 내원하였다. 심장혈관 조영술 및 운동부하검사에서 이상은 없었다. 상기 환자에서 가슴통증과 산 역류와 상관관계를 확인하기 위한 가장 정확한 검사는?",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 2번 · 24시간 보행성 식도 pH 검사",
-      "explanation": "정답: 2번 · 24시간 보행성 식도 pH 검사\n\n[핵심 해설]\n비심인성 흉통에서 증상 발생 시점과 위산 역류의 시간적 연관성을 확인하려면 보행성 식도 pH 검사가 가장 직접적이다. 비산성 역류까지 평가해야 하면 pH-임피던스 검사를 사용한다.\n\n[검토 상태]\n오답30 미수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_036_01.png"
+      "choices": [
+        "식도조영술",
+        "보행성 식도 산도 검사",
+        "상부위장관내시경",
+        "흉부 전산화 단층촬영",
+        "식도 내압 검사"
       ],
+      "answerIndex": 2,
+      "answerIndices": [
+        2
+      ],
+      "answerLabel": "정답: 2번 · 보행성 식도 산도 검사",
+      "explanation": "정답: 2번 · 24시간 보행성 식도 pH 검사\n\n[핵심 해설]\n비심인성 흉통에서 증상 발생 시점과 위산 역류의 시간적 연관성을 확인하려면 보행성 식도 pH 검사가 가장 직접적이다. 비산성 역류까지 평가해야 하면 pH-임피던스 검사를 사용한다.\n\n[검토 상태]\n오답30 미수록.",
+      "images": [],
       "legacyProfessor": "차보람",
       "lectureIds": [
-        31
+        35
       ],
-      "lectureId": 31,
-      "lectureTitle": "위염 및 소화성 궤양",
+      "lectureId": 35,
+      "lectureTitle": "식도질환 (식도암 포함)",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
       "source": "2021 소화기계 풀이 103-105page",
-      "mappingConfidence": "출제자·상부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 36,
       "legacyDisplayId": "2021 36번",
-      "globalNumber": 447
+      "globalNumber": 447,
+      "reconstructionIssue": "머리말에는 고원진, 풀이에는 올해 차보람·작년 고원진이라는 설명이 있어 출제교수 확정 보류. 기존 차보람 표기는 유지.",
+      "sourcePdfPages": [
+        103,
+        105
+      ]
     },
     {
       "id": "2021-37",
@@ -17262,7 +17384,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 37,
       "legacyDisplayId": "2021 37번",
-      "globalNumber": 448
+      "globalNumber": 448,
+      "sourcePdfPages": [
+        106,
+        108
+      ]
     },
     {
       "id": "2021-38",
@@ -17286,7 +17412,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 보행성 식도 산도 검사",
       "explanation": "정답: 3번 · 보행성 식도 산도 검사\n\n[핵심 해설]\n역류, 체중 감소, 삼킴 곤란으로 식도운동질환, 특히 식도무이완증이 의심되는 상황이다. 1. 식도조영술은 실시간 식도 움직임을 보여줘서 식도운동질환 감별에 도움을 준다.2. 식도무이완증의 경우 하부 식도괄약근 이완이 안되어 음식물이 식도에 정체된다.3. 식도 산도 검사는 역류성식도염 진단을 위해 필요한 검사로 이미 위산억제제 투여에도 효과가 없었고, 동반된 삼킴곤란 등의 증상을 감안하면 우선시되는 검사가 아니다.4. 식도내압검사는 식도운동질환의 진단 및 감별 진단을 위해 필요하다.5. 흉부 단순화 촬영은 위식도 접합부 외부에 발생한 종양으로 생긴 2차성 식도무이완증 감별에 도움을 준다.\n\n[선지별 해설]\n① 식도조영술: 식도조영술은 실시간 식도 움직임을 보여줘서 식도운동질환 감별에 도움을 준다.2.\n③ 보행성 식도 산도 검사: 식도 산도 검사는 역류성식도염 진단을 위해 필요한 검사로 이미 위산억제제 투여에도 효과가 없었고, 동반된 삼킴곤란 등의 증상을 감안하면 우선시되는 검사가 아니다.4.\n④ 식도내압검사: 식도내압검사는 식도운동질환의 진단 및 감별 진단을 위해 필요하다.5.\n⑤ 흉부 전산화 단층촬영 (Chest CT): 흉부 단순화 촬영은 위식도 접합부 외부에 발생한 종양으로 생긴 2차성 식도무이완증 감별에 도움을 준다.\n\n[검토 상태]\n오답률 30 10page 수록.",
       "images": [],
-      "legacyProfessor": "고원진",
+      "legacyProfessor": "차보람",
       "lectureIds": [
         35
       ],
@@ -17296,12 +17422,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
-      "source": "2021 소화기계 오답률30 · 10page",
+      "source": "2021 소화기계 오답률30 · 10page / 2021 소화기계 풀이 109-111page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 38,
       "legacyDisplayId": "2021 38번",
-      "globalNumber": 449
+      "globalNumber": 449,
+      "sourcePdfPages": [
+        109,
+        111
+      ]
     },
     {
       "id": "2021-39",
@@ -17309,7 +17439,7 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 39,
-      "question": "위암의 위벽 침윤 깊이를 평가하는 데 가장 유용한 검사는?",
+      "question": "[원문 발문 누락] 다음 검사 중 알맞은 것을 고르는 문항입니다.",
       "passage": "",
       "choices": [
         "복부전산화단층촬영",
@@ -17318,29 +17448,32 @@ window.JBL_DATA = {
         "내시경 초음파",
         "자기공명영상"
       ],
-      "answerIndex": 4,
-      "answerIndices": [
-        4
-      ],
-      "answerLabel": "정답: 4번 · 내시경 초음파",
-      "explanation": "정답: 4번 · 내시경 초음파\n\n[핵심 해설]\n내시경초음파는 위벽의 층 구조를 구분하여 위암의 침윤 깊이와 주변 림프절을 평가하는 데 유용하다. 복부 CT는 원격전이와 주변 장기 침범 평가에 강점이 있지만 조기 병변의 세부 벽층 판정은 내시경초음파가 더 적합하다.\n\n[선지별 해설]\n④ 내시경 초음파: 내시경초음파는 위벽의 층 구조를 구분하여 위암의 침윤 깊이와 주변 림프절을 평가하는 데 유용하다.\n\n[검토 상태]\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 보류 · 풀이본에는 4번으로 표기되어 있으나 발문이 누락되어 있다.",
+      "explanation": "== 복원 상태 ==\n2021 소화기계 풀이 112page에는 문제번호와 다섯 검사 선지만 남아 있다. 기존 사이트의 위벽 침윤 깊이 발문은 원문에서 확인되지 않아 삭제했다. 113page의 풀이 표기는 내시경 초음파(4번)이지만 발문 자체를 확인할 수 없어 자동 채점 정답으로 확정하지 않는다.\n\n== 관련 문항 ==\n공식 오답률 30 57page의 {{608}}은 같은 검사 선택지를 가진 조기위암 평가 문항이다. 원래 39번과 동일한 문항인지 확증되지 않아 이 발문을 임의로 이식하지 않았다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
-        57
+        22
       ],
-      "lectureId": 57,
-      "lectureTitle": "복막 및 복벽 질환 (탈장포함)",
-      "professor": "서지현",
+      "lectureId": 22,
+      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
+      "professor": "차보람",
       "domain": "임상의학",
-      "discipline": "외과",
-      "section": "외과",
+      "discipline": "소화기 내과",
+      "section": "총론 및 진단",
       "source": "2021 소화기계 풀이 112-114page",
-      "mappingConfidence": "구 출제자·복벽 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 39,
       "legacyDisplayId": "2021 39번",
-      "globalNumber": 450
+      "globalNumber": 450,
+      "reconstructionIssue": "원문 발문 누락. 공식 57page(608번)와 동일 문항인지 확인되지 않음.",
+      "sourcePdfPages": [
+        112,
+        114
+      ]
     },
     {
       "id": "2021-40",
@@ -17379,7 +17512,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 40,
       "legacyDisplayId": "2021 40번",
-      "globalNumber": 451
+      "globalNumber": 451,
+      "sourcePdfPages": [
+        115,
+        117
+      ]
     },
     {
       "id": "2021-41",
@@ -17405,20 +17542,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "고원진",
       "lectureIds": [
-        36
+        22
       ],
-      "lectureId": 36,
-      "lectureTitle": "위 종양 (I) 원인, 빈도, 진단, 항암 화학요법",
+      "lectureId": 22,
+      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "상부위장관",
+      "section": "총론 및 진단",
       "source": "2021 소화기계 풀이 118-120page",
-      "mappingConfidence": "질환 키워드",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 41,
       "legacyDisplayId": "2021 41번",
-      "globalNumber": 452
+      "globalNumber": 452,
+      "sourcePdfPages": [
+        118,
+        120
+      ]
     },
     {
       "id": "2021-42",
@@ -17444,20 +17585,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "신종범",
       "lectureIds": [
-        29
+        22
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
-      "professor": "백일현",
+      "lectureId": 22,
+      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
+      "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "하부위장관",
+      "section": "총론 및 진단",
       "source": "2021 소화기계 풀이 121-123page",
-      "mappingConfidence": "구 출제자·하부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 42,
       "legacyDisplayId": "2021 42번",
-      "globalNumber": 453
+      "globalNumber": 453,
+      "sourcePdfPages": [
+        121,
+        123
+      ]
     },
     {
       "id": "2021-43",
@@ -17481,22 +17626,26 @@ window.JBL_DATA = {
       "answerLabel": "정답: 5번 · 환자를 안심시키고 체중 감소 및 생활 습관을 교정하도록 교육한다.",
       "explanation": "정답: 5번 · 환자를 안심시키고 체중 감소 및 생활 습관을 교정하도록 교육한다.\n\n[핵심 해설]\n경고 증상 없이 만성적인 식후 불편감이 있고 내시경에서 기질적 원인이 확인되지 않아 기능성 소화불량증, 특히 식후불편증후군에 합당하다. 환자를 안심시키고 체중 조절, 소량씩 자주 먹기, 기름진 음식과 탄산음료 줄이기 등 생활습관 교정부터 시행한다.\n\n[선지별 해설]\n④ 식도, 위 기능 검사를 시행한다.: 환자를 안심시키고 체중 조절, 소량씩 자주 먹기, 기름진 음식과 탄산음료 줄이기 등 생활습관 교정부터 시행한다.\n⑤ 환자를 안심시키고 체중 감소 및 생활 습관을 교정하도록 교육한다.: 환자를 안심시키고 체중 조절, 소량씩 자주 먹기, 기름진 음식과 탄산음료 줄이기 등 생활습관 교정부터 시행한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "차보람",
+      "legacyProfessor": "신종범",
       "lectureIds": [
-        31
+        32
       ],
-      "lectureId": 31,
-      "lectureTitle": "위염 및 소화성 궤양",
+      "lectureId": 32,
+      "lectureTitle": "기능성 소화불량증",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
-      "source": "2021 소화기계 풀이 124-129page",
-      "mappingConfidence": "질환 키워드",
+      "source": "2021 소화기계 풀이 124-126page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 43,
       "legacyDisplayId": "2021 43번",
-      "globalNumber": 454
+      "globalNumber": 454,
+      "sourcePdfPages": [
+        124,
+        126
+      ]
     },
     {
       "id": "2021-45",
@@ -17522,20 +17671,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "차보람",
       "lectureIds": [
-        22
+        31
       ],
-      "lectureId": 22,
-      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
+      "lectureId": 31,
+      "lectureTitle": "위염 및 소화성 궤양",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "총론 및 진단",
-      "source": "2021 소화기계 풀이 130-135page",
-      "mappingConfidence": "출제자·상부위장관 주제",
+      "section": "상부위장관",
+      "source": "2021 소화기계 풀이 130-132page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 45,
       "legacyDisplayId": "2021 45번",
-      "globalNumber": 455
+      "globalNumber": 455,
+      "sourcePdfPages": [
+        130,
+        132
+      ]
     },
     {
       "id": "2021-47",
@@ -17569,12 +17722,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
-      "source": "2021 소화기계 오답률30 · 6page",
+      "source": "2021 소화기계 오답률30 · 6page / 2021 소화기계 풀이 136-138page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 47,
       "legacyDisplayId": "2021 47번",
-      "globalNumber": 456
+      "globalNumber": 456,
+      "reconstructionIssue": "원문 머리말에 차보람(고원진)이 함께 표기되어 출제교수 확정 보류. 기존 표기는 임의로 확정 변경하지 않음.",
+      "sourcePdfPages": [
+        136,
+        138
+      ]
     },
     {
       "id": "2021-48",
@@ -17612,7 +17770,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 48,
       "legacyDisplayId": "2021 48번",
-      "globalNumber": 457
+      "globalNumber": 457,
+      "sourcePdfPages": [
+        139,
+        141
+      ]
     },
     {
       "id": "2021-49",
@@ -17636,24 +17798,28 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 주름의중심이궤양의 한개점으로모이는모양",
       "explanation": "정답: 3번 · 주름의중심이궤양의 한개점으로모이는모양\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_049_01.png"
+        "2021_소화기_문항별_사진/2021_049_01.jpg"
       ],
       "legacyProfessor": "차보람",
       "lectureIds": [
-        22
+        36
       ],
-      "lectureId": 22,
-      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
+      "lectureId": 36,
+      "lectureTitle": "위 종양 (I) 원인, 빈도, 진단, 항암 화학요법",
       "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "총론 및 진단",
+      "section": "상부위장관",
       "source": "2021 소화기계 풀이 142-144page",
-      "mappingConfidence": "출제자·상부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 49,
       "legacyDisplayId": "2021 49번",
-      "globalNumber": 458
+      "globalNumber": 458,
+      "sourcePdfPages": [
+        142,
+        144
+      ]
     },
     {
       "id": "2021-50",
@@ -17687,12 +17853,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
-      "source": "2021 소화기계 오답률30 · 46page",
+      "source": "2021 소화기계 오답률30 · 46page / 2021 소화기계 풀이 145-147page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 50,
       "legacyDisplayId": "2021 50번",
-      "globalNumber": 459
+      "globalNumber": 459,
+      "sourcePdfPages": [
+        145,
+        147
+      ]
     },
     {
       "id": "2021-51",
@@ -17716,7 +17886,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 2번 · a이완, b 수축, c 수축, d이완",
       "explanation": "정답: 2번 · a이완, b 수축, c 수축, d이완\n\n[핵심 해설]\n2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n\n[선지별 해설]\n① a 수축, b이완, c이완, d 수축: 2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n② a이완, b 수축, c 수축, d이완: 2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n③ a 수축, b 수축, c이완, d이완: 2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n④ a이완, b이완, c 수축, d 수축: 2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n⑤ a 수축, b이완, c 수축, d이완: 2번 음식물을 보내는 proximal 쪽은 환상근 수축, 종주근 이완 음식물을 받는 distal 쪽은 환상근 이완, 종주근 수축\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_051_01.png"
+        "2021_소화기_문항별_사진/2021_051_01.jpg"
       ],
       "legacyProfessor": "권계숙",
       "lectureIds": [
@@ -17733,7 +17903,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 51,
       "legacyDisplayId": "2021 51번",
-      "globalNumber": 460
+      "globalNumber": 460,
+      "sourcePdfPages": [
+        148,
+        150
+      ]
     },
     {
       "id": "2021-52",
@@ -17771,7 +17945,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 52,
       "legacyDisplayId": "2021 52번",
-      "globalNumber": 461
+      "globalNumber": 461,
+      "sourcePdfPages": [
+        151,
+        153
+      ]
     },
     {
       "id": "2021-53",
@@ -17785,7 +17963,7 @@ window.JBL_DATA = {
         "식도이완불능증(Achalasia)은 낮은 하부 식도괄약근압으로 인한 연하곤란이 주증상이다.",
         "호두까기식도(Nutcracker esophagus)는 식도 연동 운동이 없다.",
         "식도 경피증(scleroderma)은 중, 하부 식도 이완불능을 특징으로 한다.",
-        "미만성 식도연축(Diffuse esophageal spasm)은 상부 식도의 강한 수축을 보인다 5"
+        "미만성 식도연축(Diffuse esophageal spasm)은 상부 식도의 강한 수축을 보인다"
       ],
       "answerIndex": 3,
       "answerIndices": [
@@ -17804,12 +17982,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
-      "source": "2021 소화기계 오답률30 · 62page",
+      "source": "2021 소화기계 오답률30 · 62page / 2021 소화기계 풀이 154-156page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 53,
       "legacyDisplayId": "2021 53번",
-      "globalNumber": 462
+      "globalNumber": 462,
+      "reconstructionIssue": "원문에는 4개 선지 모두 식도운동질환 설명의 오류가 있어 정답/누락 선지 확인 필요. 끝의 5는 문항 밖 번호성 잡음으로 제거.",
+      "sourcePdfPages": [
+        154,
+        156
+      ]
     },
     {
       "id": "2021-54",
@@ -17845,7 +18028,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 54,
       "legacyDisplayId": "2021 54번",
-      "globalNumber": 463
+      "globalNumber": 463,
+      "sourcePdfPages": [
+        157,
+        159
+      ]
     },
     {
       "id": "2021-55",
@@ -17868,20 +18055,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "신종범",
       "lectureIds": [
-        29
+        32
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
-      "professor": "백일현",
+      "lectureId": 32,
+      "lectureTitle": "기능성 소화불량증",
+      "professor": "차보람",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "하부위장관",
+      "section": "상부위장관",
       "source": "2021 소화기계 풀이 160-162page",
-      "mappingConfidence": "구 출제자·하부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 55,
       "legacyDisplayId": "2021 55번",
-      "globalNumber": 464
+      "globalNumber": 464,
+      "sourcePdfPages": [
+        160,
+        162
+      ]
     },
     {
       "id": "2021-56",
@@ -17917,7 +18108,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 56,
       "legacyDisplayId": "2021 56번",
-      "globalNumber": 465
+      "globalNumber": 465,
+      "sourcePdfPages": [
+        163,
+        165
+      ]
     },
     {
       "id": "2021-57",
@@ -17953,7 +18148,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 57,
       "legacyDisplayId": "2021 57번",
-      "globalNumber": 466
+      "globalNumber": 466,
+      "sourcePdfPages": [
+        166,
+        167
+      ]
     },
     {
       "id": "2021-58",
@@ -17963,10 +18162,15 @@ window.JBL_DATA = {
       "originalNumber": 58,
       "question": "다음 질환들을 소화관 운동질환과 기능성 소화기 질환으로 분류하며 운동 질환은 M 기능성 질환은 F로 표기하시오. 과민성 대장 증후군",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: F",
+      "choices": [
+        "M",
+        "F"
+      ],
+      "answerIndex": 2,
+      "answerIndices": [
+        2
+      ],
+      "answerLabel": "정답: F · 기능성 질환",
       "explanation": "정답: F\n\n[핵심 해설]\n과민성대장증후군은 구조적 원인 없이 복통과 배변 변화가 반복되는 장-뇌 상호작용 장애로, 기능성 소화기질환(F)에 해당한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "권계숙",
@@ -17984,7 +18188,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 58,
       "legacyDisplayId": "2021 58번",
-      "globalNumber": 467
+      "globalNumber": 467,
+      "sourcePdfPages": [
+        168,
+        170
+      ]
     },
     {
       "id": "2021-59",
@@ -18018,12 +18226,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
-      "source": "2021 소화기계 오답률30 · 7page",
+      "source": "2021 소화기계 오답률30 · 7page / 2021 소화기계 풀이 171-173page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 59,
       "legacyDisplayId": "2021 59번",
-      "globalNumber": 468
+      "globalNumber": 468,
+      "sourcePdfPages": [
+        171,
+        173
+      ]
     },
     {
       "id": "2021-60",
@@ -18031,7 +18243,7 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 60,
-      "question": "85세 여자 환자가 3일 전부터 발생한 복통, 발열 및 하루 6~7일차례의 수양성 설사를 호소하며 내원하였다. 다음 중 이 환자의 치료 및 검사 필요성에 대한 설명으로 틀린 것은?",
+      "question": "85세 여자 환자가 3일 전부터 발생한 복통, 발열 및 하루 6~7차례의 수양성 설사를 호소하며 내원하였다. 다음 중 이 환자의 치료 및 검사 필요성에 대한 설명으로 틀린 것은?",
       "passage": "",
       "choices": [
         "38.5도의 발열이 있으므로 원인균을 찾기 위한 대변검사가 필요하다.",
@@ -18061,7 +18273,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 60,
       "legacyDisplayId": "2021 60번",
-      "globalNumber": 469
+      "globalNumber": 469,
+      "sourcePdfPages": [
+        174,
+        176
+      ]
     },
     {
       "id": "2021-61",
@@ -18095,12 +18311,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
-      "source": "2021 소화기계 오답률30 · 35page",
+      "source": "2021 소화기계 오답률30 · 35page / 2021 소화기계 풀이 177-179page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 61,
       "legacyDisplayId": "2021 61번",
-      "globalNumber": 470
+      "globalNumber": 470,
+      "sourcePdfPages": [
+        177,
+        179
+      ]
     },
     {
       "id": "2021-62",
@@ -18123,29 +18343,33 @@ window.JBL_DATA = {
       "answerLabel": "정답: 1번 · cobalamin(vit b12)은 intirinsic factor와 결합하여 위에서 흡수되므로 위절제술은 받은 환자는 vit b12 결핍으로 인한 pernicious anemia가 발생할 수 있다",
       "explanation": "정답: 1번 · cobalamin(vit b12)은 intirinsic factor와 결합하여 위에서 흡수되므로 위절제술은 받은 환자는 vit b12 결핍으로 인한 pernicious anemia가 발생할 수 있다\n[검토 상태]\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "김미영",
+      "legacyProfessor": "권계숙",
       "lectureIds": [
-        19
+        40
       ],
-      "lectureId": 19,
-      "lectureTitle": "영상의학",
-      "professor": "김미영",
+      "lectureId": 40,
+      "lectureTitle": "위장관 흡수장애",
+      "professor": "권계숙",
       "domain": "임상의학",
-      "discipline": "진단 치료 지원 분과",
-      "section": "영상의학",
-      "source": "2021 소화기계 풀이 180-187page",
-      "mappingConfidence": "출제자",
+      "discipline": "소화기 내과",
+      "section": "하부위장관",
+      "source": "2021 소화기계 풀이 180-181page",
+      "mappingConfidence": "2026-09-08 영상문항 검수: 2021 풀이 62번 발문에 권계숙 교수, 해설 출처에 위장관 흡수장애 명시. 후속 문항의 김미영 표기가 잘못 합쳐진 분류를 교정.",
       "officialPriorityApplied": false,
       "sourceOrdinal": 62,
       "legacyDisplayId": "2021 62번",
-      "globalNumber": 471
+      "globalNumber": 471,
+      "sourcePdfPages": [
+        180,
+        181
+      ]
     },
     {
       "id": "2021-64",
       "displayId": "472번",
       "year": 2021,
       "sourceType": "족보",
-      "originalNumber": 64,
+      "originalNumber": 122,
       "question": "간담도 스캔(Tc-99m DISIDA Scan)에 대한 설명으로 옳은 것을 모두 고르시오.",
       "passage": "가. 정상 공복 상태에서는 1시간 이내에 담낭과 소장의 방사능이 나타난다.\n나. 만성 담낭염에서 특징적인 영상 소견을 보여 선별검사로 유용하게 쓰인다.\n다. 스캔상 담낭이 보이면 급성담낭염의 가능성을 거의 배제할 수 있다.\n라. 간혈관종(Hemangioma)와 간암(HCC)의 감별 진단에 활용할 수 있다.",
       "choices": [
@@ -18161,9 +18385,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 1번 · 가, 다",
       "explanation": "정답: 1번 · 가, 다\n\n[핵심 해설]\n나. 만성 담낭염에서 특징적인 영상 소견이 없고 다양한 소견을 보이므로 선별검사로 부적합 라. 간혈관종(Hemangioma)와 간암(HCC)의 감별 진단에 활용할 수 없다.(급성담낭염의 진단, 담즙누출의 진단, 담도폐쇄와 신생아 감염의 감별 진단 등에 활용)\n[검토 상태]\n오답률 30 3page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_064_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이민경",
       "lectureIds": [
         33
@@ -18174,19 +18396,23 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "진단 치료 지원 분과",
       "section": "핵의학과",
-      "source": "2021 소화기계 오답률30 · 3page",
+      "source": "2021 소화기계 오답률30 · 3page / 2021 소화기계 풀이 348-350page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
-      "sourceOrdinal": 64,
-      "legacyDisplayId": "2021 64번",
-      "globalNumber": 472
+      "sourceOrdinal": 122,
+      "legacyDisplayId": "2021 122번",
+      "globalNumber": 472,
+      "sourcePdfPages": [
+        348,
+        350
+      ]
     },
     {
       "id": "2021-65",
       "displayId": "473번",
       "year": 2021,
       "sourceType": "족보",
-      "originalNumber": 65,
+      "originalNumber": 64,
       "question": "복부 통증과 황달을 주소로 내원한 60세 환자의 췌장초음파, CT와 MR Cholangiopancreatography 소견이다. 진단은?",
       "passage": "",
       "choices": [
@@ -18217,12 +18443,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "진단 치료 지원 분과",
       "section": "영상의학",
-      "source": "2021 소화기계 오답률30 · 48page",
+      "source": "2021 소화기계 오답률30 · 48page / 2021 소화기계 풀이 185-187page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
-      "sourceOrdinal": 65,
-      "legacyDisplayId": "2021 65번",
-      "globalNumber": 473
+      "sourceOrdinal": 64,
+      "legacyDisplayId": "2021 64번",
+      "globalNumber": 473,
+      "sourcePdfPages": [
+        185,
+        187
+      ]
     },
     {
       "id": "2021-66",
@@ -18263,7 +18493,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 66,
       "legacyDisplayId": "2021 66번",
-      "globalNumber": 474
+      "globalNumber": 474,
+      "sourcePdfPages": [
+        191,
+        193
+      ]
     },
     {
       "id": "2021-67",
@@ -18302,7 +18536,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 67,
       "legacyDisplayId": "2021 67번",
-      "globalNumber": 475
+      "globalNumber": 475,
+      "sourcePdfPages": [
+        194,
+        196
+      ]
     },
     {
       "id": "2021-68",
@@ -18336,12 +18574,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "진단 치료 지원 분과",
       "section": "방사선종양학과",
-      "source": "2021 소화기계 오답률30 · 42page",
+      "source": "2021 소화기계 오답률30 · 42page / 2021 소화기계 풀이 197-198page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 68,
       "legacyDisplayId": "2021 68번",
-      "globalNumber": 476
+      "globalNumber": 476,
+      "sourcePdfPages": [
+        197,
+        198
+      ]
     },
     {
       "id": "2021-69",
@@ -18350,19 +18592,20 @@ window.JBL_DATA = {
       "sourceType": "족보",
       "originalNumber": 69,
       "question": "20세 남자 환자가 복통과 설사를 주소로 내원하였다. 다음과 같은 내시경 소견을 나타내었을때 예측되는 병리 조직 검사 소견을 고르시오.",
-      "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 1번 · Crohn disease에 합당한 육아종과 fissure",
-      "explanation": "정답: 1번 · Crohn disease에 합당한 육아종과 fissure\n\n== 배경 지식 ==\nCrohn disease는 terminal ileum과 ileocecal area를 잘 침범하고 병변 사이에 정상점막이 남는 skip lesion을 보인다. 초기 아프타성 궤양이 깊은 종주성 fissuring ulcer로 진행하며, 사이의 부종성 점막이 cobblestone appearance를 만든다. 조직에서는 transmural inflammation, lymphoid aggregate와 비건락성 육아종이 나타날 수 있다.\n\n== 정답 해설 ==\n제시된 내시경의 깊은 선상궤양과 cobblestone appearance는 Crohn disease에 합당하다. 따라서 조직에서는 '''비건락성 육아종과 깊은 fissure'''를 고른다.\n\n== 출제 의도 ==\nCrohn disease의 내시경 육안상을 전층성 조직소견과 연결하고, 횡행궤양·건락성 육아종이 특징인 장결핵과 구별하게 한다. 현재 복원본에는 선지 문장이 남아 있지 않아 이미지와 공식 정답을 기준으로 해설하였다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#Crohn disease와 ulcerative colitis 비교|염증성 장질환 비교]]\n\n== 관련 J ==\n{{31}} {{740}}\n\n== 검토 상태 ==\n오답30 미수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_069_01.png",
-        "2021_소화기_문항별_사진/2021_069_02.png",
-        "2021_소화기_문항별_사진/2021_069_03.png",
-        "2021_소화기_문항별_사진/2021_069_04.png",
-        "2021_소화기_문항별_사진/2021_069_05.png"
+      "passage": "내시경 소견\n[[파일:2021_소화기_문항별_사진/2021_069_01.png|제시된 내시경 사진]]\n\n사진 1\n[[파일:2021_소화기_문항별_사진/2021_069_02.png|1번 조직 사진]]\n\n사진 2\n[[파일:2021_소화기_문항별_사진/2021_069_03.png|2번 조직 사진]]\n\n사진 3\n[[파일:2021_소화기_문항별_사진/2021_069_04.png|3번 조직 사진]]\n\n사진 4\n[[파일:2021_소화기_문항별_사진/2021_069_05.png|4번 조직 사진]]",
+      "choices": [
+        "사진 1",
+        "사진 2",
+        "사진 3",
+        "사진 4"
       ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "정답: 1번 · Crohn disease에 합당한 병리 소견",
+      "explanation": "정답: 1번 · Crohn disease에 합당한 육아종과 fissure\n\n== 배경 지식 ==\nCrohn disease는 terminal ileum과 ileocecal area를 잘 침범하고 병변 사이에 정상점막이 남는 skip lesion을 보인다. 초기 아프타성 궤양이 깊은 종주성 fissuring ulcer로 진행하며, 사이의 부종성 점막이 cobblestone appearance를 만든다. 조직에서는 transmural inflammation, lymphoid aggregate와 비건락성 육아종이 나타날 수 있다.\n\n== 정답 해설 ==\n제시된 내시경의 깊은 선상궤양과 cobblestone appearance는 Crohn disease에 합당하다. 따라서 조직에서는 '''비건락성 육아종과 깊은 fissure'''를 고른다.\n\n== 출제 의도 ==\nCrohn disease의 내시경 육안상을 전층성 조직소견과 연결하고, 횡행궤양·건락성 육아종이 특징인 장결핵과 구별하게 한다. 선지는 문장이 아니라 네 장의 조직사진이다. 사진 1의 옅은 세포 집합은 육아종에 합당한 소견으로 읽으며 내시경의 Crohn disease 소견과 연결한다. 다만 이 작은 점막 사진만으로 장벽 전층 염증이나 깊은 fissure까지 관찰된다고 단정하면 안 된다. 사진의 순서는 원문 199page 기준으로 복원했다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#Crohn disease와 ulcerative colitis 비교|염증성 장질환 비교]]\n\n== 관련 J ==\n{{31}} {{740}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
         12
@@ -18378,7 +18621,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 69,
       "legacyDisplayId": "2021 69번",
-      "globalNumber": 477
+      "globalNumber": 477,
+      "sourcePdfPages": [
+        199,
+        201
+      ]
     },
     {
       "id": "2021-70",
@@ -18435,7 +18682,11 @@ window.JBL_DATA = {
           "Alcoholic hepatitis",
           "Mallory-Denk body"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        202,
+        204
+      ]
     },
     {
       "id": "2021-71",
@@ -18443,16 +18694,27 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 71,
-      "question": "다음과 같은 육안 및 병리조직학적 소견을 나타내었다면 가장 가능성 있는 질환은?",
+      "question": "간 생검에서 다음과 같은 병리학적 소견을 나타내었을 때 가장 가능성 있는 질환을 고르시오.",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: Chronic passive congestion(만성 수동성 간울혈).",
-      "explanation": "정답: Chronic passive congestion(만성 수동성 간울혈).\n\n== 배경 지식 ==\n\n[[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]에서는 우심계 압력 상승이 간정맥으로 전달되어 '''centrilobular zone 3'''에 sinusoidal congestion과 간세포 위축·손상이 발생한다. 지속되면 중심정맥 주위 섬유화가 이어지고 central-to-central bridging으로 진행해 '''reverse lobulation'''을 만든다. Portal-to-portal fibrosis 중심의 만성간염과 시작 위치가 다르다.\n\n== 서술형 모범답안 ==\n\nChronic passive congestion(만성 수동성 간울혈).\n\n== 핵심 해설 ==\n\n육안 사진의 nutmeg appearance와 조직의 중심정맥 주변 울혈·간세포 위축을 함께 확인한다. 적갈색 울혈 부위와 상대적으로 옅은 실질의 대비가 소엽 단위로 반복된다. 공식 해설도 zone 3의 심한 울혈 및 위축을 명시한다. 단지 염증세포가 있다는 이유로 바이러스 간염이라고 하지 않으며, outflow 측 압력 상승이라는 손상 분포를 먼저 파악한다. 진행하면 reverse-pattern fibrosis가 가능하지만 현재 진단명은 chronic passive congestion이다.\n\n== 출제 의도 ==\n\n육안과 현미경의 같은 zone 3 병변을 대응시켜 심장성 울혈을 이해한다.\n\n== WIKI 연결 ==\n\n* [[17강#Passive congestion · 심장성 울혈|Passive congestion · 심장성 울혈]]\n* [[17강#간의 순환장애|간의 순환장애]]\n\n== 관련 J ==\n\n{{431}} {{169}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/irregular-pattern-fibrosis|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 13page 수록.",
+      "choices": [
+        "Hepatitis A",
+        "Hepatitis B",
+        "Hepatitis C",
+        "Autoimmune hepatitis",
+        "Drug-induced hepatitis",
+        "Hemochromatosis",
+        "Alcoholic hepatitis",
+        "Primary biliary cirrhosis",
+        "Primary sclerosing cholangitis"
+      ],
+      "answerIndex": 9,
+      "answerIndices": [
+        9
+      ],
+      "answerLabel": "정답: 9번 · Primary sclerosing cholangitis",
+      "explanation": "정답: 9번 · Primary sclerosing cholangitis (PSC)\n\n== 배경 지식 ==\n[[17강#Primary sclerosing cholangitis · PSC|PSC]]는 담관의 만성 섬유염증성 손상으로 분절성 협착과 확장을 일으킨다. 조직에서는 담관 주위를 동심원으로 감싸는 '''concentric periductal onion-skin fibrosis'''를 찾는다. 간세포 자체의 염증보다 '''담관 중심의 섬유화 분포'''가 이 문항의 핵심이다.\n\n== 정답 선지 ==\n⑨ 그림 중앙의 작은 담관 내강 주위에 두꺼운 collagen이 여러 겹의 동심원 형태로 배열되어 있다. [[17강#PSC의 병리|Onion-skin fibrosis]]에 합당하므로 PSC를 고른다. 진행하면 담관이 fibro-obliterative scar로 대체될 수 있다.[* Onion-skin fibrosis가 모든 PSC 생검에서 관찰되는 것은 아니며 다른 폐쇄성 담관병에서도 유사한 변화가 가능하다. 이 문항에서는 제시된 형태와 선택지 사이에서 가장 합당한 진단을 고른다.]\n\n== 오답 선지 ==\n* ① Hepatitis A: 급성 간세포 손상과 lobular inflammation이 중심이다. 담관을 감싸는 동심원성 섬유화가 대표 소견은 아니다.\n* ② Hepatitis B: 만성간염의 portal/interface inflammation이나 ground-glass hepatocyte와 구별한다.\n* ③ Hepatitis C: portal lymphoid aggregate 및 interface activity 등이 단서가 되지만, 현재 그림의 핵심은 periductal fibrosis이다.\n* ④ Autoimmune hepatitis: interface hepatitis와 plasma cell-rich inflammation을 종합한다. 담관 주위 onion-skin pattern을 대신 설명하지 못한다.\n* ⑤ Drug-induced hepatitis: 다양한 양상을 보일 수 있으나 약물력 없이 이 전형적 담관 섬유화만 주어졌을 때 우선 선택할 진단은 PSC이다.\n* ⑥ Hemochromatosis: iron deposition과 Prussian blue stain 양성이 핵심이다.\n* ⑦ Alcoholic hepatitis: ballooning, Mallory–Denk body, neutrophils 및 pericellular fibrosis와 구별한다.\n* ⑧ Primary biliary cirrhosis: 현재 명칭은 [[17강#Primary biliary cholangitis · PBC|PBC]]이다. 작은 담관의 비화농성 파괴성 염증과 florid duct lesion이 핵심이며, PSC의 concentric periductal fibrosis와 비교한다.\n\n== 출제 의도 ==\n담관 중심 병변을 간세포 중심 간염과 구별하고, PBC의 florid duct lesion과 PSC의 onion-skin fibrosis를 비교하여 판독한다.\n\n== Wiki 연결 ==\n* [[17강#PSC의 병리|PSC의 병리]]\n* [[17강#PBC와 PSC 비교|PBC와 PSC 비교]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_wrong30_013_01.png",
-        "2021_소화기_문항별_사진/2021_wrong30_013_02.png"
+        "2021_소화기_문항별_사진/2021_071_01.jpg"
       ],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -18464,24 +18726,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "간 담 췌 병리",
-      "source": "2021 소화기계 오답률30 · 13page",
+      "source": "2021 소화기계 풀이 205-206page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
-      "officialPriorityApplied": true,
+      "officialPriorityApplied": false,
       "sourceOrdinal": 71,
       "legacyDisplayId": "2021 71번",
       "globalNumber": 479,
-      "wikiReview": {
-        "date": "2026-09-07",
-        "lectureId": 17,
-        "method": "Wiki 기반 풀이 + 외부 의학 근거 독립 검증; 기존 해설은 오답30 수록 문항만 참고",
-        "officialPages": "13",
-        "issue": null,
-        "grading": "reviewed",
-        "basis": [
-          "Passive congestion · 심장성 울혈",
-          "간의 순환장애"
-        ]
-      }
+      "sourcePdfPages": [
+        205,
+        206
+      ]
     },
     {
       "id": "2021-72",
@@ -18538,7 +18792,11 @@ window.JBL_DATA = {
           "경과와 조직 단서",
           "Portal inflammation과 interface hepatitis"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        207,
+        208
+      ]
     },
     {
       "id": "2021-73",
@@ -18595,7 +18853,11 @@ window.JBL_DATA = {
           "Ground-glass cell",
           "HBV 혈청학"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        209,
+        211
+      ]
     },
     {
       "id": "2021-74",
@@ -18652,21 +18914,25 @@ window.JBL_DATA = {
           "철, 구리, lipofuscin과 담즙",
           "철 침착의 조직 소견과 Prussian blue"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        212,
+        214
+      ]
     },
     {
       "id": "2021-75",
       "displayId": "483번",
       "year": 2021,
-      "sourceType": "족보",
-      "originalNumber": 75,
+      "sourceType": "오답30",
+      "originalNumber": null,
       "question": "55세 남자 환자가 췌장의 낭성 종괴를 주소로 내원하였다. 다음과 같은 내시경 소견이 관찰되었다면 가장 가능성 있는 질환은?",
       "passage": "",
       "choices": [],
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Intraductal papillary mucinous neoplasm(IPMN).",
-      "explanation": "정답: Intraductal papillary mucinous neoplasm(IPMN).\n\n== 배경 지식 ==\n\n[[17강#Intraductal papillary mucinous neoplasm · IPMN|IPMN]]은 췌관과 연결된 점액성 종양이다. 확장된 췌관 안으로 점액성 상피가 유두상으로 증식하고, 점액이 [[17강#췌관과 연결된 점액성 종양|ampulla of Vater]]를 통해 배출될 수 있다. '''Ovarian-type stroma가 없고 췌관과 연결'''된다는 점이 MCN과의 핵심 차이다. Low-grade·high-grade dysplasia와 침윤암 동반을 구별한다.\n\n== 서술형 모범답안 ==\n\nIntraductal papillary mucinous neoplasm(IPMN).\n\n== 핵심 해설 ==\n\n내시경 사진은 췌장 단면이 아니라 십이지장의 ampulla를 본 것이다. 열린 유두부에서 끈끈한 점액이 나오는 소견을 췌장의 낭성 종괴와 연결하면 IPMN에 합당하다. 사진의 돌출 부위를 곧바로 췌장 종양 자체라고 설명하면 안 된다. MCN은 대개 췌관과 직접 연결되지 않고 ovarian-type stroma를 가지며, serous cystadenoma의 내용물은 맑은 장액성이다. 이 문항의 공식 해설도 ampulla의 점액을 진단 근거로 든다.\n\n== 출제 의도 ==\n\n내시경으로 본 유두부의 점액 배출과 췌관 내 점액성 종양을 연결한다.\n\n== WIKI 연결 ==\n\n* [[17강#Intraductal papillary mucinous neoplasm · IPMN|Intraductal papillary mucinous neoplasm · IPMN]]\n* [[17강#MCN과 IPMN의 감별|MCN과 IPMN의 감별]]\n\n== 관련 J ==\n\n{{604}} {{173}}\n\n== 외부 검증 근거 ==\n\n* [[https://pathology.jhu.edu/pancreas/ipmn|pathology.jhu.edu · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 25page 수록.",
+      "explanation": "정답: Intraductal papillary mucinous neoplasm(IPMN).\n\n== 배경 지식 ==\n\n[[17강#Intraductal papillary mucinous neoplasm · IPMN|IPMN]]은 췌관과 연결된 점액성 종양이다. 확장된 췌관 안으로 점액성 상피가 유두상으로 증식하고, 점액이 [[17강#췌관과 연결된 점액성 종양|ampulla of Vater]]를 통해 배출될 수 있다. '''Ovarian-type stroma가 없고 췌관과 연결'''된다는 점이 MCN과의 핵심 차이다. Low-grade·high-grade dysplasia와 침윤암 동반을 구별한다.\n\n== 서술형 모범답안 ==\n\nIntraductal papillary mucinous neoplasm(IPMN).\n\n== 핵심 해설 ==\n\n내시경 사진은 췌장 단면이 아니라 십이지장의 ampulla를 본 것이다. 열린 유두부에서 끈끈한 점액이 나오는 소견을 췌장의 낭성 종괴와 연결하면 IPMN에 합당하다. 사진의 돌출 부위를 곧바로 췌장 종양 자체라고 설명하면 안 된다. MCN은 대개 췌관과 직접 연결되지 않고 ovarian-type stroma를 가지며, serous cystadenoma의 내용물은 맑은 장액성이다. 이 문항의 공식 해설도 ampulla의 점액을 진단 근거로 든다.\n\n== 출제 의도 ==\n\n내시경으로 본 유두부의 점액 배출과 췌관 내 점액성 종양을 연결한다.\n\n== WIKI 연결 ==\n\n* [[17강#Intraductal papillary mucinous neoplasm · IPMN|Intraductal papillary mucinous neoplasm · IPMN]]\n* [[17강#MCN과 IPMN의 감별|MCN과 IPMN의 감별]]\n\n== 관련 J ==\n\n{{604}} {{173}}\n\n== 검토 상태 ==\n\n오답률 30 25page 수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_025_01.png"
       ],
@@ -18683,8 +18949,8 @@ window.JBL_DATA = {
       "source": "2021 소화기계 오답률30 · 25page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
       "officialPriorityApplied": true,
-      "sourceOrdinal": 75,
-      "legacyDisplayId": "2021 75번",
+      "sourceOrdinal": 25,
+      "legacyDisplayId": "2021 오답30 · 25page",
       "globalNumber": 483,
       "wikiReview": {
         "date": "2026-09-07",
@@ -18747,7 +19013,11 @@ window.JBL_DATA = {
           "Primary biliary cholangitis · PBC",
           "PBC의 조직학적 진행"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        218,
+        220
+      ]
     },
     {
       "id": "2021-77",
@@ -18796,7 +19066,11 @@ window.JBL_DATA = {
           "Large cell change와 Small cell change",
           "Hepatocellular dysplasia와 Dysplastic nodule"
         ]
-      }
+      },
+      "sourcePdfPages": [
+        221,
+        223
+      ]
     },
     {
       "id": "2021-78",
@@ -18830,12 +19104,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 43page",
+      "source": "2021 소화기계 오답률30 · 43page / 2021 소화기계 풀이 224-226page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 78,
       "legacyDisplayId": "2021 78번",
-      "globalNumber": 486
+      "globalNumber": 486,
+      "sourcePdfPages": [
+        224,
+        226
+      ]
     },
     {
       "id": "2021-81",
@@ -18869,12 +19147,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 22page",
+      "source": "2021 소화기계 오답률30 · 22page / 2021 소화기계 풀이 233-235page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 81,
       "legacyDisplayId": "2021 81번",
-      "globalNumber": 487
+      "globalNumber": 487,
+      "sourcePdfPages": [
+        233,
+        235
+      ]
     },
     {
       "id": "2021-83",
@@ -18908,12 +19190,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 51page",
+      "source": "2021 소화기계 오답률30 · 51page / 2021 소화기계 풀이 239-241page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 83,
       "legacyDisplayId": "2021 83번",
-      "globalNumber": 488
+      "globalNumber": 488,
+      "sourcePdfPages": [
+        239,
+        241
+      ]
     },
     {
       "id": "2021-85",
@@ -18944,7 +19230,12 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 85,
       "legacyDisplayId": "2021 85번",
-      "globalNumber": 489
+      "globalNumber": 489,
+      "reconstructionIssue": "원문에도 ㄱ·ㄴ·ㄷ·ㄹ 제시문만 있고 선택 조합은 없어 임의로 선지를 만들지 않음.",
+      "sourcePdfPages": [
+        242,
+        244
+      ]
     },
     {
       "id": "2021-86",
@@ -18983,7 +19274,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 86,
       "legacyDisplayId": "2021 86번",
-      "globalNumber": 490
+      "globalNumber": 490,
+      "sourcePdfPages": [
+        245,
+        247
+      ]
     },
     {
       "id": "2021-87",
@@ -19022,7 +19317,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 87,
       "legacyDisplayId": "2021 87번",
-      "globalNumber": 491
+      "globalNumber": 491,
+      "sourcePdfPages": [
+        248,
+        250
+      ]
     },
     {
       "id": "2021-88",
@@ -19053,7 +19352,12 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 88,
       "legacyDisplayId": "2021 88번",
-      "globalNumber": 492
+      "globalNumber": 492,
+      "reconstructionIssue": "원문에도 ㄱ·ㄴ·ㄷ·ㄹ 제시문만 있고 선택 조합은 없어 임의로 선지를 만들지 않음.",
+      "sourcePdfPages": [
+        251,
+        253
+      ]
     },
     {
       "id": "2021-89",
@@ -19063,28 +19367,39 @@ window.JBL_DATA = {
       "originalNumber": 89,
       "question": "대장암 발생의 고위험군은?",
       "passage": "ㄱ. 가족성 대장 폴림증(familial adenmatous polyposis)\nㄴ. 유전성 비폴립 대장암 증후군 (hereditary nonpolyposis colon cancer)\nㄷ. 궤양성 대장염\nㄹ. 포이츠-제거 증후군",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 4번",
+      "choices": [
+        "ㄱ, ㄷ",
+        "ㄴ, ㄹ",
+        "ㄱ, ㄴ, ㄷ",
+        "ㄱ, ㄴ, ㄷ, ㄹ"
+      ],
+      "answerIndex": 4,
+      "answerIndices": [
+        4
+      ],
+      "answerLabel": "정답: 4번 · ㄱ, ㄴ, ㄷ, ㄹ",
       "explanation": "정답: 4번\n\n[핵심 해설]\n풀이본에서 제시된 네 질환은 모두 대장암 위험을 높이는 고위험군으로 분류되어 정기적인 결장내시경 감시가 필요하므로 4번이다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김형길",
       "lectureIds": [
-        29
+        30
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
+      "lectureId": 30,
+      "lectureTitle": "소장 및 대장 종양 (I) 원인, 빈도, 진단, 항암화학요법",
       "professor": "백일현",
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
       "source": "2021 소화기계 풀이 254-256page",
-      "mappingConfidence": "질환 키워드",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 89,
       "legacyDisplayId": "2021 89번",
-      "globalNumber": 493
+      "globalNumber": 493,
+      "sourcePdfPages": [
+        254,
+        256
+      ]
     },
     {
       "id": "2021-90",
@@ -19122,7 +19437,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 90,
       "legacyDisplayId": "2021 90번",
-      "globalNumber": 494
+      "globalNumber": 494,
+      "sourcePdfPages": [
+        257,
+        259
+      ]
     },
     {
       "id": "2021-91",
@@ -19132,28 +19451,39 @@ window.JBL_DATA = {
       "originalNumber": 91,
       "question": "30세 남자 환자가 6개월 동안 지속적인 설사 및 체중 감소로 내원하여 시행한 대장 내시경 상 크론병으로 진단되었다. 면역억제제 치료를 시작하였으나 계속적인 복통을 호소하여 대 장 내시경을 재시행하였으나 대장내시경 상에서는 이전에 비해 크게 호전된 상태였다. 소장 협착이 의심될 경우 시행할 수 있는 검사는?",
       "passage": "ㄱ. Double balloon Enteroscopy\nㄴ. 소장 조영술\nㄷ. 복부 전산화 단층 촬영\nㄹ. 캡슐 내시경",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 3번",
+      "choices": [
+        "ㄱ, ㄷ",
+        "ㄴ, ㄹ",
+        "ㄱ, ㄴ, ㄷ",
+        "ㄱ, ㄴ, ㄷ, ㄹ"
+      ],
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "정답: 3번 · ㄱ, ㄴ, ㄷ",
       "explanation": "정답: 3번\n\n[핵심 해설]\n대장내시경에서 호전되었더라도 Crohn disease의 소장 협착은 남아 있을 수 있다. 협착이 의심되면 캡슐내시경의 저류 위험을 먼저 고려하고, 소장조영검사나 CT/MR enterography로 협착의 위치와 정도를 평가한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김형길",
       "lectureIds": [
-        29
+        30
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
+      "lectureId": 30,
+      "lectureTitle": "소장 및 대장 종양 (I) 원인, 빈도, 진단, 항암화학요법",
       "professor": "백일현",
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "하부위장관",
       "source": "2021 소화기계 풀이 260-262page",
-      "mappingConfidence": "2023 유사문항 0.62",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 91,
       "legacyDisplayId": "2021 91번",
-      "globalNumber": 495
+      "globalNumber": 495,
+      "sourcePdfPages": [
+        260,
+        262
+      ]
     },
     {
       "id": "2021-92",
@@ -19194,7 +19524,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 92,
       "legacyDisplayId": "2021 92번",
-      "globalNumber": 496
+      "globalNumber": 496,
+      "sourcePdfPages": [
+        263,
+        265
+      ]
     },
     {
       "id": "2021-93",
@@ -19218,25 +19552,28 @@ window.JBL_DATA = {
       "answerLabel": "정답: 2번 · 급성 췌장염",
       "explanation": "정답: 2번 · 급성 췌장염\n\n[핵심 해설]\n등으로 방사되는 급성 상복부 통증과 현저한 amylase·lipase 상승, 복부 CT의 췌장 주위 염증성 변화는 급성 췌장염에 합당하다.\n\n[선지별 해설]\n② 급성 췌장염: 등으로 방사되는 급성 상복부 통증과 현저한 amylase·lipase 상승, 복부 CT의 췌장 주위 염증성 변화는 급성 췌장염에 합당하다.\n③ 급성 담도염: 등으로 방사되는 급성 상복부 통증과 현저한 amylase·lipase 상승, 복부 CT의 췌장 주위 염증성 변화는 급성 췌장염에 합당하다.\n④ 급성 담낭염: 등으로 방사되는 급성 상복부 통증과 현저한 amylase·lipase 상승, 복부 CT의 췌장 주위 염증성 변화는 급성 췌장염에 합당하다.\n⑤ 급성 신우신염: 등으로 방사되는 급성 상복부 통증과 현저한 amylase·lipase 상승, 복부 CT의 췌장 주위 염증성 변화는 급성 췌장염에 합당하다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_093_01.png",
-        "2021_소화기_문항별_사진/2021_093_02.png"
+        "2021_소화기_문항별_사진/2021_093_01.png"
       ],
       "legacyProfessor": "박진석",
       "lectureIds": [
-        29
+        62
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
-      "professor": "백일현",
+      "lectureId": 62,
+      "lectureTitle": "췌장염, 췌장종양",
+      "professor": "이동행",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "하부위장관",
+      "section": "담도 및 췌장",
       "source": "2021 소화기계 풀이 266-268page",
-      "mappingConfidence": "2023 유사문항 0.70",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 93,
       "legacyDisplayId": "2021 93번",
-      "globalNumber": 497
+      "globalNumber": 497,
+      "sourcePdfPages": [
+        266,
+        268
+      ]
     },
     {
       "id": "2021-94",
@@ -19246,30 +19583,42 @@ window.JBL_DATA = {
       "originalNumber": 94,
       "question": "40세 남성이 복통으로 내원했고 술을 많이 마셨다. 다음은 환자의 영상 소견이다. 진단은?",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
+      "choices": [
+        "점액성 낭종",
+        "장액성 낭종",
+        "췌장가성낭종",
+        "췌장 내 유두상 점액성 낭종",
+        "췌장가성유두종"
+      ],
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
       "answerLabel": "정답: 3번 · 췌장가성낭종",
       "explanation": "정답: 3번 · 췌장가성낭종\n\n[핵심 해설]\n과음과 췌장염 병력이 있는 환자에서 췌장 주위의 피막화된 액체 저류가 보이면 췌장가성낭종을 우선 고려한다. 가성낭종은 상피성 내벽이 없다는 점에서 낭성 종양과 다르다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_094_01.png"
+        "2021_소화기_문항별_사진/2021_094_01.jpg"
       ],
       "legacyProfessor": "박진석",
       "lectureIds": [
-        29
+        62
       ],
-      "lectureId": 29,
-      "lectureTitle": "염증성 장질환",
-      "professor": "백일현",
+      "lectureId": 62,
+      "lectureTitle": "췌장염, 췌장종양",
+      "professor": "이동행",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "하부위장관",
+      "section": "담도 및 췌장",
       "source": "2021 소화기계 풀이 269-271page",
-      "mappingConfidence": "구 출제자·하부위장관 주제",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 94,
       "legacyDisplayId": "2021 94번",
-      "globalNumber": 498
+      "globalNumber": 498,
+      "sourcePdfPages": [
+        269,
+        271
+      ]
     },
     {
       "id": "2021-95",
@@ -19308,7 +19657,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 95,
       "legacyDisplayId": "2021 95번",
-      "globalNumber": 499
+      "globalNumber": 499,
+      "sourcePdfPages": [
+        272,
+        274
+      ]
     },
     {
       "id": "2021-96",
@@ -19347,7 +19700,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 96,
       "legacyDisplayId": "2021 96번",
-      "globalNumber": 500
+      "globalNumber": 500,
+      "sourcePdfPages": [
+        275,
+        277
+      ]
     },
     {
       "id": "2021-97",
@@ -19386,7 +19743,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 97,
       "legacyDisplayId": "2021 97번",
-      "globalNumber": 501
+      "globalNumber": 501,
+      "sourcePdfPages": [
+        278,
+        280
+      ]
     },
     {
       "id": "2021-98",
@@ -19425,7 +19786,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 98,
       "legacyDisplayId": "2021 98번",
-      "globalNumber": 502
+      "globalNumber": 502,
+      "sourcePdfPages": [
+        281,
+        283
+      ]
     },
     {
       "id": "2021-99",
@@ -19464,7 +19829,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 99,
       "legacyDisplayId": "2021 99번",
-      "globalNumber": 503
+      "globalNumber": 503,
+      "sourcePdfPages": [
+        284,
+        286
+      ]
     },
     {
       "id": "2021-100",
@@ -19488,7 +19857,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 1번 · Shifting dullness를 표현한 그림이다.",
       "explanation": "정답: 1번 · Shifting dullness를 표현한 그림이다.\n\n[핵심 해설]\n1번 위의 그림은 Shifting dullness이며, 타진(Percussion) 방법 중 하나이다. 통증이 없는 부위에서 있는 부위로 시행하는 것은 촉진(Palpation)이다.\n\n[선지별 해설]\n① Shifting dullness를 표현한 그림이다.: 1번 위의 그림은 Shifting dullness이며, 타진(Percussion) 방법 중 하나이다.\n④ 촉진으로 (palpation) 복수를 확인하는 방법이다.: 통증이 없는 부위에서 있는 부위로 시행하는 것은 촉진(Palpation)이다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_100_01.png"
+        "2021_소화기_문항별_사진/2021_100_01.jpg"
       ],
       "legacyProfessor": "신종범",
       "lectureIds": [
@@ -19500,12 +19869,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "총론 및 진단",
-      "source": "2021 소화기계 풀이 287-292page",
+      "source": "2021 소화기계 풀이 287-289page",
       "mappingConfidence": "복부 진찰·통증 문항: 소화기 증상학 및 진단적 접근법으로 재분류",
       "officialPriorityApplied": false,
       "sourceOrdinal": 100,
       "legacyDisplayId": "2021 100번",
-      "globalNumber": 504
+      "globalNumber": 504,
+      "sourcePdfPages": [
+        287,
+        289
+      ]
     },
     {
       "id": "2021-102",
@@ -19528,9 +19901,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · Hypersensitivity to gastric distension -> epigastric pain, belching, weight loss",
       "explanation": "정답: 3번 · Hypersensitivity to gastric distension -> epigastric pain, belching, weight loss\n\n[핵심 해설]\n위 팽창에 대한 과민성은 식후 명치통증, 트림과 음식 섭취 감소에 따른 체중 감소를 유발할 수 있다. 기능성 소화불량증에서는 위 적응 장애, 위 배출 지연, 십이지장 과민성 등 병태생리가 증상과 서로 다르게 연결된다.\n[검토 상태]\n오답률 30 58page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_wrong30_058_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "신종범",
       "lectureIds": [
         32
@@ -19541,12 +19912,22 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "상부위장관",
-      "source": "2021 소화기계 오답률30 · 58page",
+      "source": "2021 소화기계 오답률30 · 58page / 2021 소화기계 풀이 293-295page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 102,
       "legacyDisplayId": "2021 102번",
-      "globalNumber": 505
+      "globalNumber": 505,
+      "explanationImages": [
+        {
+          "src": "2021_소화기_문항별_사진/2021_wrong30_058_01.png",
+          "caption": "원문 해설 그림"
+        }
+      ],
+      "sourcePdfPages": [
+        293,
+        295
+      ]
     },
     {
       "id": "2021-104",
@@ -19567,24 +19948,29 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · Rupture을 잘 유발하므로 수술적 절제를 해야 한다.",
-      "explanation": "정답: 4번 · Rupture을 잘 유발하므로 수술적 절제를 해야 한다.\n\n[핵심 해설]\n4번 2020에도 있는걸로 보아 출제자는\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 4번 · Rupture을 잘 유발하므로 수술적 절제를 해야 한다.\n\n== 배경 지식 ==\n[[17강#Hemangioma|Hepatic hemangioma]]는 간에서 가장 흔한 양성 종양이다. 얇은 벽의 확장된 혈관 공간에 혈액이 차 있는 병변이며, 간세포성 종양인 [[17강#Hepatocellular adenoma · HCA|HCA]]와 구별한다.\n\n== 정답 선지 ==\n④ 모든 hemangioma가 쉽게 파열되므로 절제해야 한다는 주장이 틀리다. 전형적인 무증상 병변은 보존적으로 관리할 수 있으며, 증상·합병증·진단 불확실성 등을 따져 개입 여부를 판단한다. HCA의 출혈·파열 위험을 hemangioma에 그대로 옮겨 적용하면 안 된다.\n\n== 오답 선지 ==\n* ① 간의 가장 흔한 양성 종양이라는 설명은 맞다.\n* ② 혈관성 병변의 조영 양상을 평가하는 CT·MRI는 진단에 도움을 준다.\n* ③ 특히 큰 병변에서 응고장애와 출혈 경향 같은 합병증이 가능하다. 이는 모든 병변이 흔히 파열된다는 ④의 주장과 다르다.[* 큰 혈관종에서 혈소판 포획·소모성 응고장애가 발생할 수 있지만 흔한 작은 무증상 혈관종의 일반적인 경과로 확대 해석하지 않는다.]\n\n== 출제 의도 ==\nHemangioma의 양성 경과와 예외적인 합병증을 구별하고 HCA와 혼동하여 일률적인 수술 적응증을 적용하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[17강#Hemangioma|Hemangioma]]\n* [[17강#Hepatocellular adenoma · HCA|HCA와의 비교]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "안승익",
+      "legacyProfessor": "미확인",
       "lectureIds": [
-        54
+        17
       ],
-      "lectureId": 54,
-      "lectureTitle": "간의 종양",
-      "professor": "김경덕",
-      "domain": "임상의학",
-      "discipline": "외과",
-      "section": "외과",
-      "source": "2021 소화기계 풀이 299-304page",
-      "mappingConfidence": "간종양 키워드",
+      "lectureId": 17,
+      "lectureTitle": "간질환, 담도, 췌장, 횡경막 질환",
+      "professor": "김준미",
+      "domain": "기초의학",
+      "discipline": "병리학",
+      "section": "간 담 췌 병리",
+      "source": "2021 소화기계 풀이 299-301page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 104,
       "legacyDisplayId": "2021 104번",
-      "globalNumber": 506
+      "globalNumber": 506,
+      "reconstructionIssue": "머리말 김준미와 원문 풀이의 안승익 추정이 충돌한다. 출제교수는 미확인으로 두고 내용 기준 17강 Hemangioma에 배정.",
+      "sourcePdfPages": [
+        299,
+        301
+      ]
     },
     {
       "id": "2021-106",
@@ -19608,22 +19994,26 @@ window.JBL_DATA = {
       "answerLabel": "정답: 5번 · Recurrence of original disease",
       "explanation": "정답: 5번 · Recurrence of original disease\n\n[핵심 해설]\n5\n[검토 상태]\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "유정환",
+      "legacyProfessor": "김경덕",
       "lectureIds": [
-        48
+        54
       ],
-      "lectureId": 48,
-      "lectureTitle": "대사이상 지방간질환 / 대사성 및 유전성 간질환",
-      "professor": "유정환",
+      "lectureId": 54,
+      "lectureTitle": "간의 종양",
+      "professor": "김경덕",
       "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "간장학",
-      "source": "2021 소화기계 풀이 305-310page",
-      "mappingConfidence": "출제자·간 주제",
+      "discipline": "외과",
+      "section": "외과",
+      "source": "2021 소화기계 풀이 305-307page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 106,
       "legacyDisplayId": "2021 106번",
-      "globalNumber": 507
+      "globalNumber": 507,
+      "sourcePdfPages": [
+        305,
+        307
+      ]
     },
     {
       "id": "2021-108",
@@ -19662,7 +20052,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 108,
       "legacyDisplayId": "2021 108번",
-      "globalNumber": 508
+      "globalNumber": 508,
+      "sourcePdfPages": [
+        311,
+        313
+      ]
     },
     {
       "id": "2021-109",
@@ -19701,7 +20095,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 109,
       "legacyDisplayId": "2021 109번",
-      "globalNumber": 509
+      "globalNumber": 509,
+      "sourcePdfPages": [
+        314,
+        316
+      ]
     },
     {
       "id": "2021-110",
@@ -19740,7 +20138,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 110,
       "legacyDisplayId": "2021 110번",
-      "globalNumber": 510
+      "globalNumber": 510,
+      "sourcePdfPages": [
+        317,
+        319
+      ]
     },
     {
       "id": "2021-111",
@@ -19766,20 +20168,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "윤용한",
       "lectureIds": [
-        35
+        37
       ],
-      "lectureId": 35,
-      "lectureTitle": "식도질환 (식도암 포함)",
-      "professor": "차보람",
+      "lectureId": 37,
+      "lectureTitle": "식도질환의 외과적 치료",
+      "professor": "윤용한",
       "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "상부위장관",
+      "discipline": "외과",
+      "section": "외과",
       "source": "2021 소화기계 풀이 320-322page",
-      "mappingConfidence": "질환 키워드",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 111,
       "legacyDisplayId": "2021 111번",
-      "globalNumber": 511
+      "globalNumber": 511,
+      "sourcePdfPages": [
+        320,
+        322
+      ]
     },
     {
       "id": "2021-112",
@@ -19813,12 +20219,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 37page",
+      "source": "2021 소화기계 오답률30 · 37page / 2021 소화기계 풀이 323-325page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 112,
       "legacyDisplayId": "2021 112번",
-      "globalNumber": 512
+      "globalNumber": 512,
+      "sourcePdfPages": [
+        323,
+        325
+      ]
     },
     {
       "id": "2021-113",
@@ -19852,12 +20262,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 26page",
+      "source": "2021 소화기계 오답률30 · 26page / 2021 소화기계 풀이 326-328page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 113,
       "legacyDisplayId": "2021 113번",
-      "globalNumber": 513
+      "globalNumber": 513,
+      "sourcePdfPages": [
+        326,
+        328
+      ]
     },
     {
       "id": "2021-114",
@@ -19892,12 +20306,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 329-333page",
+      "source": "2021 소화기계 풀이 329-330page",
       "mappingConfidence": "질환 키워드",
       "officialPriorityApplied": false,
       "sourceOrdinal": 114,
       "legacyDisplayId": "2021 114번",
-      "globalNumber": 514
+      "globalNumber": 514,
+      "sourcePdfPages": [
+        329,
+        330
+      ]
     },
     {
       "id": "2021-116",
@@ -19931,12 +20349,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "담도 및 췌장",
-      "source": "2021 소화기계 오답률30 · 59page",
+      "source": "2021 소화기계 오답률30 · 59page / 2021 소화기계 풀이 334-336page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 116,
       "legacyDisplayId": "2021 116번",
-      "globalNumber": 515
+      "globalNumber": 515,
+      "sourcePdfPages": [
+        334,
+        336
+      ]
     },
     {
       "id": "2021-117",
@@ -19970,12 +20392,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 풀이 337-342page",
+      "source": "2021 소화기계 풀이 337-339page",
       "mappingConfidence": "선배 해설 강의 출처 0.92",
       "officialPriorityApplied": false,
       "sourceOrdinal": 117,
       "legacyDisplayId": "2021 117번",
-      "globalNumber": 516
+      "globalNumber": 516,
+      "sourcePdfPages": [
+        337,
+        339
+      ]
     },
     {
       "id": "2021-119",
@@ -20014,7 +20440,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 119,
       "legacyDisplayId": "2021 119번",
-      "globalNumber": 517
+      "globalNumber": 517,
+      "sourcePdfPages": [
+        343,
+        344
+      ]
     },
     {
       "id": "2021-121",
@@ -20037,9 +20467,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 2번 · 나, 라",
       "explanation": "정답: 2번 · 나, 라\n\n[핵심 해설]\n가. 출혈 속도가 분당 적어도 1 ml 이상일 때 출혈의 발견이 가능하다. -> 0.1~0.35ml의 낮은 출혈 속도도 발견가능다. 검사에서 양성으로 판독하려면 국소부위에 집적 및 이어서 장관 내에서 아래로 이동함이 확인되어야 한다.\n[검토 상태]\n오답률 30 15page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_121_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이민경",
       "lectureIds": [
         33
@@ -20050,12 +20478,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "진단 치료 지원 분과",
       "section": "핵의학과",
-      "source": "2021 소화기계 오답률30 · 15page",
+      "source": "2021 소화기계 오답률30 · 15page / 2021 소화기계 풀이 345-347page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 121,
       "legacyDisplayId": "2021 121번",
-      "globalNumber": 518
+      "globalNumber": 518,
+      "sourcePdfPages": [
+        345,
+        347
+      ]
     },
     {
       "id": "2021-123",
@@ -20094,7 +20526,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 123,
       "legacyDisplayId": "2021 123번",
-      "globalNumber": 519
+      "globalNumber": 519,
+      "sourcePdfPages": [
+        351,
+        352
+      ]
     },
     {
       "id": "2021-124",
@@ -20133,7 +20569,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 124,
       "legacyDisplayId": "2021 124번",
-      "globalNumber": 520
+      "globalNumber": 520,
+      "sourcePdfPages": [
+        353,
+        355
+      ]
     },
     {
       "id": "2021-125",
@@ -20155,26 +20595,30 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · (다) tunica mucosa",
-      "explanation": "정답: 3번 · (다) tunica mucosa\n\n[핵심 해설]\n3번 1. (가) nonkeratinized stratified squamous epithelium mucosal 2. (나) mucosal gland dermal papilla입니다. 3. (다) tunica mucosa 4. (라) muscle의 종류로 보아 식도의 lower ⅓ 부위 smooth m., skeletal m. 섞여 있으므로 식도 ⅔ 지점입니다. lower ⅓ 부위는 smooth m. 만 존재합니다. 5. (라) 아래쪽 끝에 pharyngoesophageal sphincter 형성 upper 부위에 대한 설명입니다.\n\n[선지별 해설]\n① (가) keratinized stratified squamous epithelium mucosal: (가) nonkeratinized stratified squamous epithelium mucosal 2.\n② (나) mucosal gland: (나) mucosal gland dermal papilla입니다.\n③ (다) tunica mucosa: (다) tunica mucosa 4.\n④ (라) muscle의 종류로 보아 식도의 lower ⅓ 부위: (라) muscle의 종류로 보아 식도의 lower ⅓ 부위 smooth m., skeletal m.\n⑤ (라) 아래쪽 끝에 pharyngoesophageal sphincter 형성: (라) 아래쪽 끝에 pharyngoesophageal sphincter 형성 upper 부위에 대한 설명입니다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 3번 · (다) tunica mucosa\n\n== 배경 지식 ==\n[[2강#실습 3. 식도|식도]]의 점막은 nonkeratinized stratified squamous epithelium, lamina propria, muscularis mucosae로 구성된다. 점막밑층에는 식도샘이 있고, 바깥의 muscularis externa는 위쪽에서 아래쪽으로 skeletal muscle에서 smooth muscle로 바뀐다.\n\n== 정답 선지 ==\n③ (다)는 tunica mucosa에 해당하는 범위이다. 상피만을 뜻하는 것이 아니라 상피·고유판·점막근육판을 포함하는 점막 층을 가리킨다. [[2강#저배율에서 확인할 층|저배율의 층 구분]]으로 판독한다.\n\n== 오답 선지 ==\n* ① 식도 표면은 '''비각질중층편평상피'''이다. Keratinized라는 연결이 틀리다.\n* ② (나)는 상피 아래로 돌출하는 고유판의 결합조직 유두에 해당하며, 점액을 분비하는 mucosal gland로 연결하지 않는다.\n* ④ (라)의 근육층은 서로 다른 근육 형태가 함께 보이는 중간 구간으로 읽는다. 식도 lower ⅓은 smooth muscle이 중심이다.\n* ⑤ Pharyngoesophageal sphincter는 식도의 '''상단'''과 연관된다. 하단 괄약근과 혼동하면 안 된다.\n\n== 문항 표지 주의 ==\n원문 그림에는 (다) 글자가 두 위치에 반복되어 있다. 원문의 표지는 그대로 보존했으며, 보기에서 묻는 층의 범위를 보고 판단해야 한다. 표지의 정확한 끝점 때문에 이견이 생기면 원본을 함께 확인한다.\n\n== 출제 의도 ==\n식도의 상피·고유판·점막과 근육층을 구별하고, 식도 위치에 따른 muscle type과 상·하부 괄약근의 위치를 연결한다.\n\n== Wiki 연결 ==\n* [[2강#실습 3. 식도|식도 실습]]\n* [[2강#근육층과 근육층신경얼기|식도 근육층]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_125_01.png"
       ],
       "legacyProfessor": "이자경",
       "lectureIds": [
-        48
+        2
       ],
-      "lectureId": 48,
-      "lectureTitle": "대사이상 지방간질환 / 대사성 및 유전성 간질환",
-      "professor": "유정환",
-      "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "간장학",
+      "lectureId": 2,
+      "lectureTitle": "구강 및 소화관의 조직학",
+      "professor": "이자경",
+      "domain": "기초의학",
+      "discipline": "조직학",
+      "section": "조직학",
       "source": "2021 소화기계 풀이 356-358page",
-      "mappingConfidence": "2023 유사문항 0.73",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 125,
       "legacyDisplayId": "2021 125번",
-      "globalNumber": 521
+      "globalNumber": 521,
+      "sourcePdfPages": [
+        356,
+        358
+      ]
     },
     {
       "id": "2021-126",
@@ -20196,24 +20640,28 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · gastric pit 한 개 당 5~7개의 branch로 gland 연결",
-      "explanation": "정답: 3번 · gastric pit 한 개 당 5~7개의 branch로 gland 연결\n\n[핵심 해설]\n하나의 gastric pit에는 여러 개의 gastric gland가 분지되어 연결된다. 위 표면상피는 단층원주상피이고, rugae는 점막과 점막하층으로 이루어지며, Meissner plexus는 점막이 아니라 점막하층에 위치한다.\n\n[선지별 해설]\n① 표면상피는 cardiac 부위에서 중층편평 -> 중층원주로 급격히 전이: 위 표면상피는 단층원주상피이고, rugae는 점막과 점막하층으로 이루어지며, Meissner plexus는 점막이 아니라 점막하층에 위치한다.\n③ gastric pit 한 개 당 5~7개의 branch로 gland 연결: 하나의 gastric pit에는 여러 개의 gastric gland가 분지되어 연결된다.\n⑤ mucosa에 Meissner’s plexus 존재: 위 표면상피는 단층원주상피이고, rugae는 점막과 점막하층으로 이루어지며, Meissner plexus는 점막이 아니라 점막하층에 위치한다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 3번 · Gastric pit 한 개에 여러 gastric gland가 연결된다.\n\n== 배경 지식 ==\n[[1강#위오목과 위샘|Gastric pit]]은 위의 표면상피가 함입된 부위이며, 그 아래로 여러 gastric gland가 열린다. 위벽의 큰 주름인 rugae, 표면의 pit, 고유판 속 gland는 서로 다른 크기와 깊이의 구조이다.\n\n== 정답 선지 ==\n③ 하나의 pit에 여러 개의 gland가 연결된다는 구조가 옳다. 문항은 5–7개로 제시하며 현재 1강 Wiki는 3–7개로 정리되어 있다. 숫자의 하한을 새로운 고정값으로 바꾸기보다 '''한 pit에 여러 gland가 열린다'''는 공통 구조를 파악한다.\n\n== 오답 선지 ==\n* ① 식도위접합부에서 비각질중층편평상피가 위의 '''단층원주상피'''로 전이한다. 중층원주상피가 아니다.\n* ② Rugae는 점막과 점막밑층이 함께 만드는 큰 주름이다. 이를 점막밑층만의 fold라고 제한하거나 세포 수준의 주름으로 설명하면 부정확하다.\n* ④ Enteroendocrine cell을 isthmus보다 위에 있는 세포로 한정하지 않는다. 위샘의 깊은 부분에도 분포하며, ECL cell과 G cell 등 부위별 세포 기능을 함께 구분한다.\n* ⑤ Meissner’s plexus는 '''submucosa'''에 있다. Muscularis externa의 두 근육층 사이에는 myenteric (Auerbach’s) plexus가 위치한다.\n\n== 출제 의도 ==\n위벽의 층, rugae–pit–gland의 구조적 단계, 위샘세포와 신경얼기의 위치를 서로 혼동하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[1강#위오목과 위샘|위오목과 위샘]]\n* [[1강#위샘세포의 기능|위샘세포의 기능]]\n* [[1강#위벽의 층별 구조|위벽의 층별 구조]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
-        48
+        1
       ],
-      "lectureId": 48,
-      "lectureTitle": "대사이상 지방간질환 / 대사성 및 유전성 간질환",
-      "professor": "유정환",
-      "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "간장학",
+      "lectureId": 1,
+      "lectureTitle": "구강 및 소화관의 조직학",
+      "professor": "이자경",
+      "domain": "기초의학",
+      "discipline": "조직학",
+      "section": "조직학",
       "source": "2021 소화기계 풀이 359-361page",
-      "mappingConfidence": "2023 유사문항 0.79",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 126,
       "legacyDisplayId": "2021 126번",
-      "globalNumber": 522
+      "globalNumber": 522,
+      "sourcePdfPages": [
+        359,
+        361
+      ]
     },
     {
       "id": "2021-127",
@@ -20235,7 +20683,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · 가 - gastric pit",
-      "explanation": "정답: 1번 · 가 - gastric pit\n\n[핵심 해설]\n1번 우선 위의 조직 사진이기 때문에 (가)는 gastric pit이 맞습니다. 나) goblet cell은 장상피세포의 특징입니다 다) 빨간색은 parietal cell로 HCL을 분비합니다 라) 푸른색은 chief cell입니다 (intracanalicular system은 parietal cell의 특징입니다) 마) (다)랑 같은 것을 가르키는 것 같네요\n\n[선지별 해설]\n① 가 - gastric pit: 1번 우선 위의 조직 사진이기 때문에 (가)는 gastric pit이 맞습니다.\n② 나 - goblet cell: 나) goblet cell은 장상피세포의 특징입니다 다) 빨간색은 parietal cell로 HCL을 분비합니다 라) 푸른색은 chief cell입니다 (intracanalicular system은 parietal cell의 특징입니다) 마) (다)랑 같은 것을 가르키는 것 같네요\n④ 라 - intensive intracanalicular system 발달: 나) goblet cell은 장상피세포의 특징입니다 다) 빨간색은 parietal cell로 HCL을 분비합니다 라) 푸른색은 chief cell입니다 (intracanalicular system은 parietal cell의 특징입니다) 마) (다)랑 같은 것을 가르키는 것 같네요\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 1번 · 가 - gastric pit\n\n== 배경 지식 ==\n[[2강#실습 4. 위바닥|위바닥 표본]]에서는 gastric pit에서 위샘으로 이어지는 구조를 먼저 확인한다. Parietal cell은 큰 호산성 세포이며 HCl·intrinsic factor를 분비한다. Chief cell은 기저부 rER 때문에 호염기성이며 pepsinogen을 분비한다.\n\n== 정답 선지 ==\n① (가)는 위 내강에서 표면상피가 함입되는 gastric pit을 가리킨다. 장의 villus처럼 밖으로 돌출된 구조가 아니다.\n\n== 오답 선지 ==\n* ② (나)는 정상 위의 점액성 표면·오목 상피이다. Goblet cell은 정상 위샘의 대표 세포가 아니며, 위에서 확인되면 intestinal metaplasia를 고려한다.\n* ③ (다)의 큰 호산성 세포는 parietal cell에 해당하며 주된 분비물은 HCl과 intrinsic factor이다. Alkaline mucus를 대표 분비물로 연결하지 않는다.\n* ④ (라)의 호염기성 chief cell은 rER가 발달한다. 발달한 intracellular canalicular system은 parietal cell의 산 분비 장치이다.\n* ⑤ (마)의 화살표 끝은 호산성 parietal cell에 가까워 보인다. Enteroendocrine cell은 이 H&E 저배율 사진에서 세포 색만으로 확정할 수 없으며, 필요하면 면역염색으로 평가한다.\n\n== 출제 의도 ==\nGastric pit의 구조와 chief·parietal cell의 염색성, 분비물 및 세포내 장치를 서로 연결한다.\n\n== Wiki 연결 ==\n* [[2강#위오목과 위샘|위오목과 위샘]]\n* [[2강#주세포와 벽세포의 조직 소견|주세포와 벽세포 비교]]\n* [[1강#벽세포|벽세포의 세포내 구조]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_127_01.png"
       ],
@@ -20254,7 +20702,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 127,
       "legacyDisplayId": "2021 127번",
-      "globalNumber": 523
+      "globalNumber": 523,
+      "sourcePdfPages": [
+        362,
+        364
+      ]
     },
     {
       "id": "2021-128",
@@ -20276,7 +20728,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · 라 – intestinal gland의 base",
-      "explanation": "정답: 4번 · 라 – intestinal gland의 base\n\n== 배경 지식 ==\n작은창자의 융모 사이에는 Lieberkühn 창자샘이 열리고, 샘 바닥에는 호산성과립을 가진 Paneth 세포가 위치한다. 돌림주름은 점막과 점막밑층이 함께 형성한다.\n\n== 정답 선지 ==\n'''4번''' (라)는 Paneth 세포가 위치하는 intestinal gland의 바닥이다.\n\n== 오답 선지 ==\n* '''1번''': (가)는 점막과 점막밑층을 포함하는 큰 돌림주름의 표지가 아니다.\n* '''2번''': (나)의 범위는 점막과 점막밑층 전체를 함께 지칭하지 않는다.\n* '''3번''': (다)는 장액샘이 아니라 융모 상피의 술잔세포와 관련된 표지이다.\n* '''5번''': (마)는 근육층 속돌림근층이 아니라 더 안쪽의 점막근육층 부위이다.\n\n== 출제 의도 ==\n소장 저배율·고배율 사진에서 융모, 창자샘 바닥과 벽의 층을 연결한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|작은창자의 융모와 창자샘]]\n* [[1강#작은창자 상피의 세포|Paneth 세포]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{81}} {{329}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 4번 · 라 – intestinal gland의 base\n\n== 배경 지식 ==\n작은창자의 융모 사이에는 Lieberkühn 창자샘이 열리고, 샘 바닥에는 호산성과립을 가진 Paneth 세포가 위치한다. 돌림주름은 점막과 점막밑층이 함께 형성한다.\n\n== 정답 선지 ==\n'''4번''' (라)는 Paneth 세포가 위치하는 intestinal gland의 바닥이다.\n\n== 오답 선지 ==\n* '''1번''': (가)는 점막과 점막밑층을 포함하는 큰 돌림주름의 표지가 아니다.\n* '''2번''': (나)의 범위는 점막과 점막밑층 전체를 함께 지칭하지 않는다.\n* '''3번''': (다)는 장액샘이 아니라 융모 상피의 술잔세포와 관련된 표지이다.\n* '''5번''': (마)는 근육층 속돌림근층이 아니라 더 안쪽의 점막근육층 부위이다.\n\n== 출제 의도 ==\n소장 저배율·고배율 사진에서 융모, 창자샘 바닥과 벽의 층을 연결한다.\n\n== WIKI 연결 ==\n* [[1강#흡수면적을 넓히는 구조|작은창자의 융모와 창자샘]]\n* [[1강#작은창자 상피의 세포|Paneth 세포]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{81}} {{329}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_128_01.png"
       ],
@@ -20295,7 +20747,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 128,
       "legacyDisplayId": "2021 128번",
-      "globalNumber": 524
+      "globalNumber": 524,
+      "sourcePdfPages": [
+        365,
+        367
+      ]
     },
     {
       "id": "2021-129",
@@ -20317,7 +20773,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · lacteals 발달:jejunum>>duodenum",
-      "explanation": "정답: 4번 · lacteals 발달:jejunum>>duodenum\n\n== 배경 지식 ==\n빈창자는 긴 융모와 발달한 중심암죽관을 가져 흡수에 특화된다. 술잔세포와 M세포는 돌창자로 갈수록 증가하고, Brunner 샘은 샘창자에만 특징적이다.\n\n== 정답 선지 ==\n'''4번''' 중심암죽관은 샘창자보다 빈창자에서 더 발달한다.\n\n== 오답 선지 ==\n* '''1번''': 술잔세포는 샘창자보다 돌창자에서 더 많다.\n* '''2번''': 점막밑샘은 빈창자가 아니라 샘창자의 Brunner 샘이다.\n* '''3번''': 미세융모 수를 샘창자에서 빈창자보다 현저히 많다고 단정할 수 없다.\n* '''5번''': M세포는 Peyer 판이 발달한 돌창자에서 가장 특징적이다.\n\n== 출제 의도 ==\n작은창자 세 부위의 흡수 구조, 샘과 면역세포 분포를 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[2강#샘창자|샘창자 실습]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{203}} {{684}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 4번 · lacteals 발달:jejunum>>duodenum\n\n== 배경 지식 ==\n빈창자는 긴 융모와 발달한 중심암죽관을 가져 흡수에 특화된다. 술잔세포와 M세포는 돌창자로 갈수록 증가하고, Brunner 샘은 샘창자에만 특징적이다.\n\n== 정답 선지 ==\n'''4번''' 중심암죽관은 샘창자보다 빈창자에서 더 발달한다.\n\n== 오답 선지 ==\n* '''1번''': 술잔세포는 샘창자보다 돌창자에서 더 많다.\n* '''2번''': 점막밑샘은 빈창자가 아니라 샘창자의 Brunner 샘이다.\n* '''3번''': 미세융모 수를 샘창자에서 빈창자보다 현저히 많다고 단정할 수 없다.\n* '''5번''': M세포는 Peyer 판이 발달한 돌창자에서 가장 특징적이다.\n\n== 출제 의도 ==\n작은창자 세 부위의 흡수 구조, 샘과 면역세포 분포를 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[2강#실습 5. 샘창자|샘창자 실습]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{203}} {{684}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -20334,7 +20790,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 129,
       "legacyDisplayId": "2021 129번",
-      "globalNumber": 525
+      "globalNumber": 525,
+      "sourcePdfPages": [
+        368,
+        369
+      ]
     },
     {
       "id": "2021-130",
@@ -20370,12 +20830,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "조직학",
       "section": "조직학",
-      "source": "2021 소화기계 오답률30 · 52page",
+      "source": "2021 소화기계 오답률30 · 52page / 2021 소화기계 풀이 370-371page",
       "mappingConfidence": "조직 사진·도식 판독 문항: 7강 실습 원본 강의록 직접 대조",
       "officialPriorityApplied": true,
       "sourceOrdinal": 130,
       "legacyDisplayId": "2021 130번",
-      "globalNumber": 526
+      "globalNumber": 526,
+      "sourcePdfPages": [
+        370,
+        371
+      ]
     },
     {
       "id": "2021-131",
@@ -20455,7 +20919,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 132,
       "legacyDisplayId": "2021 132번",
-      "globalNumber": 528
+      "globalNumber": 528,
+      "sourcePdfPages": [
+        375,
+        377
+      ]
     },
     {
       "id": "2021-133",
@@ -20472,12 +20940,10 @@ window.JBL_DATA = {
         "(다) basal surface에 Na/K ATPase발달",
         "(다) cholecystokinin에 의해 tight junction 투과도 조절"
       ],
-      "answerIndex": 3,
-      "answerIndices": [
-        3
-      ],
-      "answerLabel": "정답: 3번 · (다) apical surface에 microvilli",
-      "explanation": "정답: 3번 · (다) apical surface에 microvilli\n\n== 배경 지식 ==\n[[7강#담낭벽 판독|Gallbladder wall]]에는 simple columnar epithelium과 lamina propria로 된 mucosa, irregular smooth muscle의 muscularis externa, serosa 또는 adventitia가 있다. Muscularis mucosae와 submucosa는 없다. Epithelial cell의 apical microvilli와 basolateral Na+/K+-ATPase가 electrolyte와 water absorption에 관여한다.\n\n== 정답 선지 ==\n③ (다) simple columnar epithelial cell의 apical surface에는 microvilli가 있으므로 옳다.\n\n== 오답 선지 ==\n* ① (가)는 표시 범위상 tunica mucosa만으로 한정되지 않는다.\n* ② Gallbladder에는 muscularis mucosae가 없고 (나)는 muscularis externa이다.\n* ④ Na+/K+-ATPase는 basolateral membrane에 분포하므로 basal surface로만 한정한 표현은 정확하지 않다.\n* ⑤ CCK는 epithelial tight junction permeability를 조절하는 것이 아니라 gallbladder smooth muscle을 수축시키고 sphincter of Oddi를 이완시킨다.\n\n== 출제 의도 ==\n담낭 표본에서 벽의 층과 쓸개즙 농축을 담당하는 상피의 apical·basolateral specialization을 연결하게 한다.\n\n== Wiki 연결 ==\n* [[7강#실습 3. 담낭 · Gallbladder|담낭]]\n* [[7강#담낭벽 판독|담낭벽 판독]]\n\n== 관련 J ==\n{{86}} {{206}} {{332}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[7강#담낭벽 판독|Gallbladder wall]]에는 simple columnar epithelium과 lamina propria로 된 mucosa, irregular smooth muscle의 muscularis externa, serosa 또는 adventitia가 있다. Muscularis mucosae와 submucosa는 없다. Epithelial cell의 apical microvilli와 basolateral Na+/K+-ATPase가 electrolyte와 water absorption에 관여한다.\n\n== 정답 선지 ==\n③ (다) simple columnar epithelial cell의 apical surface에는 microvilli가 있으므로 옳다.\n\n== 오답 선지 ==\n* ① (가)는 표시 범위상 tunica mucosa만으로 한정되지 않는다.\n* ② Gallbladder에는 muscularis mucosae가 없고 (나)는 muscularis externa이다.\n* ④ Na+/K+-ATPase는 basolateral membrane에 분포한다. Basal surface라는 말만으로 틀렸다고 할 수 없고, 강의 그림에서 pump가 표시된 막 영역과 실제 화살표를 함께 확인해야 한다.\n* ⑤ CCK는 epithelial tight junction permeability를 조절하는 것이 아니라 gallbladder smooth muscle을 수축시키고 sphincter of Oddi를 이완시킨다.\n\n== 출제 의도 ==\n담낭 표본에서 벽의 층과 쓸개즙 농축을 담당하는 상피의 apical·basolateral specialization을 연결하게 한다.\n\n== Wiki 연결 ==\n* [[7강#실습 3. 담낭 · Gallbladder|담낭]]\n* [[7강#담낭벽 판독|담낭벽 판독]]\n\n== 관련 J ==\n{{86}} {{206}} {{332}}\n\n== 문항 오류 가능성 ==\n③ apical microvilli는 옳다. 그러나 ④의 basal Na+/K+-ATPase도 생리학적으로 배제하기 어려워 기존의 단일정답 ③을 확정하지 않는다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2021_소화기_문항별_사진/2021_133_01.png"
       ],
@@ -20496,7 +20962,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 133,
       "legacyDisplayId": "2021 133번",
-      "globalNumber": 529
+      "globalNumber": 529,
+      "sourcePdfPages": [
+        378,
+        380
+      ]
     },
     {
       "id": "2021-134",
@@ -20560,9 +21030,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · 급성 C형 간염",
       "explanation": "정답: 3번 · 급성 C형 간염\n\n[핵심 해설]\n최근 혈액 노출 가능성이 있고 과거 간기능이 정상이었으며 HCV RNA 양성, anti-HCV 음성인 점은 항체가 형성되기 전의 급성 C형간염에 합당하다. HBsAg와 IgG anti-HBc가 음성이고 anti-HBs만 양성이므로 B형간염 백신 면역 상태이다.\n\n[선지별 해설]\n① 급성 A형 간염: 최근 혈액 노출 가능성이 있고 과거 간기능이 정상이었으며 HCV RNA 양성, anti-HCV 음성인 점은 항체가 형성되기 전의 급성 C형간염에 합당하다.\n② 급성 B형 간염: 최근 혈액 노출 가능성이 있고 과거 간기능이 정상이었으며 HCV RNA 양성, anti-HCV 음성인 점은 항체가 형성되기 전의 급성 C형간염에 합당하다.\n③ 급성 C형 간염: 최근 혈액 노출 가능성이 있고 과거 간기능이 정상이었으며 HCV RNA 양성, anti-HCV 음성인 점은 항체가 형성되기 전의 급성 C형간염에 합당하다.\n\n[검토 상태]\n오답30 미수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_135_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이정일",
       "lectureIds": [
         49
@@ -20573,12 +21041,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 풀이 385-393page",
+      "source": "2021 소화기계 풀이 385-387page",
       "mappingConfidence": "문항 내용 직접 분류",
       "officialPriorityApplied": false,
       "sourceOrdinal": 135,
       "legacyDisplayId": "2021 135번",
-      "globalNumber": 531
+      "globalNumber": 531,
+      "sourcePdfPages": [
+        385,
+        387
+      ]
     },
     {
       "id": "2021-138",
@@ -20586,14 +21058,14 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 138,
-      "question": "32세 여자가 의식이 저하되어 병원에 왔다. 2개월 전에 폐결핵을 진단받고 항결핵제 복용 중이며 2주 전부터 온몸이 노래지면서 기운이 없었으나 병원에 오지 않았고 항결핵제는 계속 복용했다. 혈압은 90/50'mmHg, 맥박 120회/분, 호흡 23회/분, 체온 37.4°C였다. 공막에 황달이 있었고, 손목을 뒤 로 젖혔을 때 퍼덕떨림 (Flapping'tremor)이 관찰되었다. 혈액검사 결과는 다음과 같았다. 진단은?",
-      "passage": "",
+      "question": "32세 여자가 의식이 저하되어 병원에 왔다. 2개월 전에 폐결핵을 진단받고 항결핵제 복용 중이며 2주 전부터 온몸이 노래지면서 기운이 없었으나 병원에 오지 않았고 항결핵제는 계속 복용했다. 혈압은 90/50 mmHg, 맥박 120회/분, 호흡 23회/분, 체온 37.4°C였다. 공막에 황달이 있었고, 손목을 뒤로 젖혔을 때 퍼덕떨림 (Flapping tremor)이 관찰되었다. 혈액검사 결과는 다음과 같았다. 진단은?",
+      "passage": "WBC 8,000/mm³, Hb 12.0 g/dL, PLT 150,000/mm³\nAST 3,000 U/L, ALT 3,174 U/L, ALP 200 U/L\nTotal bilirubin 23.3 mg/dL, INR 3.5 (참고치 0.92–1.13)\nHBsAg (-), anti-HBs (+), anti-HCV (-), anti-HAV IgG (+)\nANA (-), AMA (-)",
       "choices": [
         "윌슨병",
         "지방간염",
         "전격성간염",
         "자가면역간염",
-        "원발성답증성담도염"
+        "원발성 담즙성 담도염"
       ],
       "answerIndex": 3,
       "answerIndices": [
@@ -20601,9 +21073,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · 전격성간염",
       "explanation": "정답: 3번 · 전격성간염\n\n[핵심 해설]\n3번 항결핵제인 isonaizid는 drug induced toxic한 전격성 간염을 일으킬 수 있습니다 의식이 저하되어 있으며 퍼덕떨림이 관찰되면 전격성 간염을 의심할 수 있고 간기능 검사에서 바이러스 관련으로 보이지는 않고 자가면역 항체도 음성이며 AST ALT가 굉장히 높게 올라갔고, 빌리루빈 증가, 프로트롬빈이 정상수치의 3배가까이 늘어난 것으로 보아 전격성 간염임을 알 수 있습니다.\n\n[선지별 해설]\n③ 전격성간염: 3번 항결핵제인 isonaizid는 drug induced toxic한 전격성 간염을 일으킬 수 있습니다 의식이 저하되어 있으며 퍼덕떨림이 관찰되면 전격성 간염을 의심할 수 있고 간기능 검사에서 바이러스 관련으로 보이지는 않고 자가면역 항체도 음성이며 AST ALT가 굉장히 높게 올라갔고, 빌리루빈 증가, 프로트롬빈이 정상수치의 3배가까이 늘어난 것으로 보아 전격성 간염임을 알 수 있습니다.\n\n[검토 상태]\n오답30 미수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_138_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이정일",
       "lectureIds": [
         49
@@ -20619,7 +21089,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 138,
       "legacyDisplayId": "2021 138번",
-      "globalNumber": 532
+      "globalNumber": 532,
+      "sourcePdfPages": [
+        394,
+        396
+      ]
     },
     {
       "id": "2021-139",
@@ -20627,12 +21101,12 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 139,
-      "question": "46세 여성이 2주 전부터 심한 피로감으로 내원하였다. 음주 및 약물 복용력은 없고 3년 전 갑상샘염을 앓았으며 간비장종대가 관찰되었다. AST 698 IU/mL, ALT 565 IU/mL, ALP 125 IU/mL, 총빌리루빈 1.9 mg/dL, INR 1.5였고 바이러스 간염 표지자는 음성이었다. ANA 1:160, IgG 2,680 mg/dL, anti-LKM1 음성, pANCA 양성이었다. 가장 의심되는 질환에 대한 설명으로 적합하지 않은 것은?",
-      "passage": "",
+      "question": "46세 여자가 2주 전부터 피로감이 심해서 병원에 왔다. 술이나 약물복용은 하지 않는다고 한다. 3년 전에 갑상샘염을 앓은 적이 있다. 키 160 cm, 몸무게 55 kg이고, 신체검사에서 간장과 비장종대 소견이 관찰되었다. 혈액검사 결과는 다음과 같다. 가장 의심되는 질환에 대한 설명으로 적합하지 않은 것은?",
+      "passage": "AST 698 IU/mL, ALT 565 IU/mL\nALP 125 IU/mL (참고치 35–130), 총빌리루빈 1.9 mg/dL, PT INR 1.5\nIgM anti-HAV (-), HBsAg (-), anti-HBs (-), IgM anti-HBc (-), HCV RNA PCR (-)\nAnti-nuclear Ab 1:160, IgG 2,680 mg/dL (참고치 870–1,700)\nAnti-LKM1 (-), pANCA (+)",
       "choices": [
-        "특징적인 간조직검사 소견은 interfece hepatitis와 형질세포 침윤이다",
-        "간조직검사에서 bridging necrosis 소견을 보아면 즉각적인 치료가 요구된다",
-        "승인된 표준치료는 steroid 단독 또는 steroid와 azathioprine 병항요법이다",
+        "특징적인 간조직검사 소견은 interface hepatitis와 형질세포 침윤이다",
+        "간조직검사에서 bridging necrosis 소견을 보이면 즉각적인 치료가 요구된다",
+        "승인된 표준치료는 steroid 단독 또는 steroid와 azathioprine 병합요법이다",
         "AST, ALT 및 혈청 IgG 수치의 정상화 소견이 치료 관해의 중요한 혈청 지표이다",
         "12개월 내 치료 관해율은 80%이며, 관해 후 치료 중단 시 재발률은 20% 미만이다"
       ],
@@ -20642,9 +21116,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 5번 · 12개월 내 치료 관해율은 80%이며, 관해 후 치료 중단 시 재발률은 20% 미만이다",
       "explanation": "정답: 5번 · 12개월 내 치료 관해율은 80%이며, 관해 후 치료 중단 시 재발률은 20% 미만이다\n\n[핵심 해설]\n중년여성, ANA양성, IgG 상승은 제1형 자가면역 간염의 가능성을 높게 시사한다AST 또는 ALT 수치 개선만으로는 Tx remission을 반영하지 못한다. 18개월 치료 시 65%환자에서 Tx remission이 관찰되며, biochemical remission 후 histologic remission 까지는 6개월 이상의 lag time이 필요하기 때문에 2년 이상 장기간 치료가 필요함. 첫 치료 중단 후 약 50%에서 재발을 경험한다. 간기능 호전, serum IgG normalization, 필요시 간생검으로 조직학적 호전의 확인 필요함.\n\n[선지별 해설]\n② 간조직검사에서 bridging necrosis 소견을 보아면 즉각적인 치료가 요구된다: 18개월 치료 시 65%환자에서 Tx remission이 관찰되며, biochemical remission 후 histologic remission 까지는 6개월 이상의 lag time이 필요하기 때문에 2년 이상 장기간 치료가 필요함.\n④ AST, ALT 및 혈청 IgG 수치의 정상화 소견이 치료 관해의 중요한 혈청 지표이다: 중년여성, ANA양성, IgG 상승은 제1형 자가면역 간염의 가능성을 높게 시사한다AST 또는 ALT 수치 개선만으로는 Tx remission을 반영하지 못한다.\n\n[검토 상태]\n오답률 30 18page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_139_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이진우",
       "lectureIds": [
         52
@@ -20655,12 +21127,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 18page",
+      "source": "2021 소화기계 오답률30 · 18page / 2021 소화기계 풀이 397-399page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 139,
       "legacyDisplayId": "2021 139번",
-      "globalNumber": 533
+      "globalNumber": 533,
+      "sourcePdfPages": [
+        397,
+        399
+      ]
     },
     {
       "id": "2021-140",
@@ -20668,8 +21144,8 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 140,
-      "question": "40세 여성이 건강검진에서 바이러스 간염 양성 판정을 받고 내원하였다. 류마티스관절염 병력이 있고 언니가 만성 B형간염으로 항바이러스 치료 중이다. AST 84 IU/mL, ALT 98 IU/mL, 알부민 4.0 g/dL였으며 IgG anti-HAV 양성, HBsAg 양성, anti-HBs 음성, IgM anti-HBc 음성, IgG anti-HBc 양성, HBeAg 음성, anti-HBe 양성, HBV DNA 37,000 IU/mL였다. Anti-HCV는 양성이지만 HCV RNA는 음성이었다. 가장 적절한 진단은?",
-      "passage": "",
+      "question": "40세 여자가 건강검진에서 바이러스 간염 양성 판정을 받고 내원하였다. 과거력으로 류마티스 관절염이 있고 수년 전부터 언니가 만성 B형간염 항바이러스 치료를 받고 있다고 하였다. 혈액검사 결과는 다음과 같았다. 진단은?",
+      "passage": "AST 84 IU/mL, ALT 98 IU/mL, 알부민 4.0 g/dL[* 원문 단위는 mg/dL로 인쇄되어 있으나 일반적인 알부민 단위에 맞게 g/dL로 교정했다.]\nIgG anti-HAV (+), HBsAg (+), anti-HBs (-), HCV Ab (-), HDV Ab (-)\nIgM anti-HBc (-), IgG anti-HBc (+), HBeAg (-), anti-HBe (+)\nHBV DNA 37,000 IU/mL\nAnti-HCV Ab (+), HCV RNA (-)[* 공식 원문 44page에는 HCV Ab (-)와 anti-HCV Ab (+)가 함께 적혀 있어 상충한다. 두 줄을 보존했으며, 공식 해설은 항체 위양성과 HCV RNA 음성으로 설명한다.]",
       "choices": [
         "급성 B형간염 잠복기",
         "만성B형간염 면역관용기",
@@ -20683,9 +21159,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 3번 · 만성B형간염 면역활동기",
       "explanation": "정답: 3번 · 만성B형간염 면역활동기\n\n[핵심 해설]\nSbling만성간염 가족력으로 보아 HBV 수직감염이 추정되는 환자로 현재 간기능 상승하고 HBV DNA 2000 IU/mL 이상인 HBeAg(-)만성B형간염 면역활동기로 항바이러스 치료대상이다. 자가면역질환에서는 C형간염 항체 위양성 소견을 보일 수 있고 HCV RNA 음성은 이를 뒷받침한다. 따라서 중복감염에 해당하지 않음.\n\n[선지별 해설]\n② 만성B형간염 면역관용기: Sbling만성간염 가족력으로 보아 HBV 수직감염이 추정되는 환자로 현재 간기능 상승하고 HBV DNA 2000 IU/mL 이상인 HBeAg(-)만성B형간염 면역활동기로 항바이러스 치료대상이다.\n③ 만성B형간염 면역활동기: Sbling만성간염 가족력으로 보아 HBV 수직감염이 추정되는 환자로 현재 간기능 상승하고 HBV DNA 2000 IU/mL 이상인 HBeAg(-)만성B형간염 면역활동기로 항바이러스 치료대상이다.\n④ 만성B형간염 면역비활동기: Sbling만성간염 가족력으로 보아 HBV 수직감염이 추정되는 환자로 현재 간기능 상승하고 HBV DNA 2000 IU/mL 이상인 HBeAg(-)만성B형간염 면역활동기로 항바이러스 치료대상이다.\n\n[검토 상태]\n오답률 30 44page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_140_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "이진우",
       "lectureIds": [
         51
@@ -20696,12 +21170,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 44page",
+      "source": "2021 소화기계 오답률30 · 44page / 2021 소화기계 풀이 400-402page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 140,
       "legacyDisplayId": "2021 140번",
-      "globalNumber": 534
+      "globalNumber": 534,
+      "reconstructionIssue": "공식 44page 자체에 HCV Ab 음성/양성이 동시 기재됨. 본문 제시문과 각주에 보존.",
+      "sourcePdfPages": [
+        400,
+        402
+      ]
     },
     {
       "id": "2021-142",
@@ -20712,18 +21191,18 @@ window.JBL_DATA = {
       "question": "다음은 C형 간염 항체검사(anti-HCV Ab)에 대한 설명이다. 올바른 내용은?",
       "passage": "",
       "choices": [
-        "'급성'C형간염은'감염4주'시점에'환자의'80%에서'양성'소견을'보인다",
-        "'간수치'상승을'동반한'혈액투석환자에서는'HCV항체검사'음성인'경우'HCV'RNA 검사를' 권유한다",
-        "'C형간염'치료'후'HCV항체'양성반응이'지속된'경우는'재감염이'예방된다",
-        "'HCV'항체검사'역가수치로'현재'감염과'과거'감염의'감별 진단이'가능하다",
-        "None 'of above"
+        "급성 C형간염은 감염 4주 시점에 환자의 80%에서 양성 소견을 보인다.",
+        "간수치 상승을 동반한 혈액투석환자에서는 HCV 항체검사 음성인 경우 HCV RNA 검사를 권유한다.",
+        "C형간염 치료 후 HCV 항체 양성반응이 지속된 경우는 재감염이 예방된다.",
+        "HCV 항체검사 역가 수치로 현재 감염과 과거 감염의 감별 진단이 가능하다.",
+        "None of above"
       ],
       "answerIndex": 2,
       "answerIndices": [
         2
       ],
-      "answerLabel": "정답: 2번 · '간수치'상승을'동반한'혈액투석환자에서는'HCV항체검사'음성인'경우'HCV'RNA 검사를' 권유한다",
-      "explanation": "정답: 2번 · '간수치'상승을'동반한'혈액투석환자에서는'HCV항체검사'음성인'경우'HCV'RNA 검사를' 권유한다\n\n[핵심 해설]\n2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n\n[선지별 해설]\n① '급성'C형간염은'감염4주'시점에'환자의'80%에서'양성'소견을'보인다: 2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n③ 'C형간염'치료'후'HCV항체'양성반응이'지속된'경우는'재감염이'예방된다: 2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 2번 · 간수치 상승을 동반한 혈액투석환자에서는 HCV 항체검사 음성인 경우 HCV RNA 검사를 권유한다.",
+      "explanation": "정답: 2번 · 간수치 상승을 동반한 혈액투석환자에서는 HCV항체검사 음성인 경우 HCV RNA 검사를 권유한다\n\n[핵심 해설]\n2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n\n[선지별 해설]\n① 급성 C형간염은 감염4주 시점에 환자의 80%에서 양성 소견을 보인다: 2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n③ C형간염 치료 후 HCV항체 양성반응이 지속된 경우는 재감염이 예방된다: 2번 1) 8-9주에서 97%에서 양성 2) 3) HCV항체는 중화항체가 아니므로 회복되어도 지속적으로 검출된다.4) HCV항체 양성 여부로 현재/과거 감염 구분하지 못한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이진우",
       "lectureIds": [
@@ -20740,7 +21219,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 142,
       "legacyDisplayId": "2021 142번",
-      "globalNumber": 535
+      "globalNumber": 535,
+      "sourcePdfPages": [
+        403,
+        405
+      ]
     },
     {
       "id": "2021-143",
@@ -20774,12 +21257,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 29page",
+      "source": "2021 소화기계 오답률30 · 29page / 2021 소화기계 풀이 406-408page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 143,
       "legacyDisplayId": "2021 143번",
-      "globalNumber": 536
+      "globalNumber": 536,
+      "sourcePdfPages": [
+        406,
+        408
+      ]
     },
     {
       "id": "2021-144",
@@ -20815,12 +21302,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 34page",
+      "source": "2021 소화기계 오답률30 · 34page / 2021 소화기계 풀이 409-411page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 144,
       "legacyDisplayId": "2021 144번",
-      "globalNumber": 537
+      "globalNumber": 537,
+      "sourcePdfPages": [
+        409,
+        411
+      ]
     },
     {
       "id": "2021-145",
@@ -20856,12 +21347,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 38page",
+      "source": "2021 소화기계 오답률30 · 38page / 2021 소화기계 풀이 412-414page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 145,
       "legacyDisplayId": "2021 145번",
-      "globalNumber": 538
+      "globalNumber": 538,
+      "sourcePdfPages": [
+        412,
+        414
+      ]
     },
     {
       "id": "2021-146",
@@ -20895,12 +21390,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "간장학",
-      "source": "2021 소화기계 오답률30 · 2page",
+      "source": "2021 소화기계 오답률30 · 2page / 2021 소화기계 풀이 415-417page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 146,
       "legacyDisplayId": "2021 146번",
-      "globalNumber": 539
+      "globalNumber": 539,
+      "sourcePdfPages": [
+        415,
+        417
+      ]
     },
     {
       "id": "2021-147",
@@ -20939,7 +21438,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 147,
       "legacyDisplayId": "2021 147번",
-      "globalNumber": 540
+      "globalNumber": 540,
+      "sourcePdfPages": [
+        418,
+        420
+      ]
     },
     {
       "id": "2021-148",
@@ -20980,7 +21483,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 148,
       "legacyDisplayId": "2021 148번",
-      "globalNumber": 541
+      "globalNumber": 541,
+      "sourcePdfPages": [
+        421,
+        423
+      ]
     },
     {
       "id": "2021-149",
@@ -21019,7 +21526,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 149,
       "legacyDisplayId": "2021 149번",
-      "globalNumber": 542
+      "globalNumber": 542,
+      "sourcePdfPages": [
+        424,
+        426
+      ]
     },
     {
       "id": "2021-150",
@@ -21030,7 +21541,7 @@ window.JBL_DATA = {
       "question": "치루의 분류 기준과 다음 사진의 타입은?",
       "passage": "",
       "choices": [
-        "내괄약근(한국어로 나왔습니다),Trans-sphincteric",
+        "내괄약근,Trans-sphincteric",
         "외괄약근, Trans-sphincteric",
         "내괄약근, Intersphicteric",
         "외괄약근, Intersphicteric",
@@ -21060,7 +21571,12 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 150,
       "legacyDisplayId": "2021 150번",
-      "globalNumber": 543
+      "globalNumber": 543,
+      "reconstructionIssue": "머리말 정성택과 풀이의 최문석 강의 출처가 일치하지 않아 출제교수 확정 보류. 기존 최문석 표기는 유지.",
+      "sourcePdfPages": [
+        427,
+        430
+      ]
     },
     {
       "id": "2021-151",
@@ -21099,7 +21615,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 151,
       "legacyDisplayId": "2021 151번",
-      "globalNumber": 544
+      "globalNumber": 544,
+      "sourcePdfPages": [
+        431,
+        433
+      ]
     },
     {
       "id": "2021-152",
@@ -21125,20 +21645,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "조순구",
       "lectureIds": [
-        54
+        34
       ],
-      "lectureId": 54,
-      "lectureTitle": "간의 종양",
-      "professor": "김경덕",
+      "lectureId": 34,
+      "lectureTitle": "소화기질환의 방사선 중재적 치료",
+      "professor": "조순구",
       "domain": "임상의학",
-      "discipline": "외과",
-      "section": "외과",
+      "discipline": "진단 치료 지원 분과",
+      "section": "중재적 영상의학",
       "source": "2021 소화기계 풀이 434-436page",
-      "mappingConfidence": "2023 유사문항 0.95",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 152,
       "legacyDisplayId": "2021 152번",
-      "globalNumber": 545
+      "globalNumber": 545,
+      "sourcePdfPages": [
+        434,
+        436
+      ]
     },
     {
       "id": "2021-153",
@@ -21177,7 +21701,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 153,
       "legacyDisplayId": "2021 153번",
-      "globalNumber": 546
+      "globalNumber": 546,
+      "sourcePdfPages": [
+        437,
+        439
+      ]
     },
     {
       "id": "2021-154",
@@ -21216,7 +21744,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 154,
       "legacyDisplayId": "2021 154번",
-      "globalNumber": 547
+      "globalNumber": 547,
+      "sourcePdfPages": [
+        440,
+        442
+      ]
     },
     {
       "id": "2021-155",
@@ -21255,7 +21787,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 155,
       "legacyDisplayId": "2021 155번",
-      "globalNumber": 548
+      "globalNumber": 548,
+      "sourcePdfPages": [
+        443,
+        445
+      ]
     },
     {
       "id": "2021-156",
@@ -21289,12 +21825,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 63page",
+      "source": "2021 소화기계 오답률30 · 63page / 2021 소화기계 풀이 446-448page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 156,
       "legacyDisplayId": "2021 156번",
-      "globalNumber": 549
+      "globalNumber": 549,
+      "sourcePdfPages": [
+        446,
+        448
+      ]
     },
     {
       "id": "2021-157",
@@ -21320,20 +21860,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "최선근",
       "lectureIds": [
-        43
+        55
       ],
-      "lectureId": 43,
-      "lectureTitle": "소장 및 대장 종양 (II) 치료, 예후, 합병증",
-      "professor": "최선근",
+      "lectureId": 55,
+      "lectureTitle": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 449-454page",
-      "mappingConfidence": "출제자",
+      "source": "2021 소화기계 풀이 449-451page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 157,
       "legacyDisplayId": "2021 157번",
-      "globalNumber": 550
+      "globalNumber": 550,
+      "sourcePdfPages": [
+        449,
+        451
+      ]
     },
     {
       "id": "2021-159",
@@ -21359,20 +21903,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "최선근",
       "lectureIds": [
-        43
+        55
       ],
-      "lectureId": 43,
-      "lectureTitle": "소장 및 대장 종양 (II) 치료, 예후, 합병증",
-      "professor": "최선근",
+      "lectureId": 55,
+      "lectureTitle": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 455-460page",
-      "mappingConfidence": "출제자",
+      "source": "2021 소화기계 풀이 455-457page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 159,
       "legacyDisplayId": "2021 159번",
-      "globalNumber": 551
+      "globalNumber": 551,
+      "sourcePdfPages": [
+        455,
+        457
+      ]
     },
     {
       "id": "2021-161",
@@ -21400,20 +21948,24 @@ window.JBL_DATA = {
       ],
       "legacyProfessor": "최선근",
       "lectureIds": [
-        43
+        55
       ],
-      "lectureId": 43,
-      "lectureTitle": "소장 및 대장 종양 (II) 치료, 예후, 합병증",
-      "professor": "최선근",
+      "lectureId": 55,
+      "lectureTitle": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 461-466page",
-      "mappingConfidence": "출제자",
+      "source": "2021 소화기계 풀이 461-463page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 161,
       "legacyDisplayId": "2021 161번",
-      "globalNumber": 552
+      "globalNumber": 552,
+      "sourcePdfPages": [
+        461,
+        463
+      ]
     },
     {
       "id": "2021-163",
@@ -21450,12 +22002,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 467-472page",
+      "source": "2021 소화기계 풀이 467-469page",
       "mappingConfidence": "2023 유사문항 0.96",
       "officialPriorityApplied": false,
       "sourceOrdinal": 163,
       "legacyDisplayId": "2021 163번",
-      "globalNumber": 553
+      "globalNumber": 553,
+      "sourcePdfPages": [
+        467,
+        469
+      ]
     },
     {
       "id": "2021-165",
@@ -21478,9 +22034,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 2번 · 디버팅 결장조루술(diverting colostomy) 시행",
       "explanation": "정답: 2번 · 디버팅 결장조루술(diverting colostomy) 시행\n\n[핵심 해설]\n2번 diverting colostomy 직장폐색이 발생한 상황으로, 환자가 치료를 시작할 수 있도록 하려면 diverting colostomy를 통해 먹고 쌀 수 있게 해주어야 합니다. 하트만 수술은 응급수술 시 진행하는 방법입니다.\n\n[선지별 해설]\n② 디버팅 결장조루술(diverting colostomy) 시행: 2번 diverting colostomy 직장폐색이 발생한 상황으로, 환자가 치료를 시작할 수 있도록 하려면 diverting colostomy를 통해 먹고 쌀 수 있게 해주어야 합니다.\n\n[검토 상태]\n오답률 30 23page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_wrong30_023_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "최선근",
       "lectureIds": [
         43
@@ -21491,12 +22045,22 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 23page",
+      "source": "2021 소화기계 오답률30 · 23page / 2021 소화기계 풀이 473-475page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 165,
       "legacyDisplayId": "2021 165번",
-      "globalNumber": 554
+      "globalNumber": 554,
+      "explanationImages": [
+        {
+          "src": "2021_소화기_문항별_사진/2021_wrong30_023_01.png",
+          "caption": "원문 해설 그림"
+        }
+      ],
+      "sourcePdfPages": [
+        473,
+        475
+      ]
     },
     {
       "id": "2021-166",
@@ -21535,7 +22099,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 166,
       "legacyDisplayId": "2021 166번",
-      "globalNumber": 555
+      "globalNumber": 555,
+      "sourcePdfPages": [
+        476,
+        478
+      ]
     },
     {
       "id": "2021-167",
@@ -21545,13 +22113,21 @@ window.JBL_DATA = {
       "originalNumber": 167,
       "question": "대장암의 수술로 인해 발기가 되지 않는 부작용이 생겼다. 다음 중 어느 신경이 손상되었는가?",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
+      "choices": [
+        "그림의 1번",
+        "그림의 2번",
+        "그림의 3번",
+        "그림의 4번",
+        "그림의 5번"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
       "answerLabel": "정답: 1번 · 골반내장신경(nervi erigentes)",
       "explanation": "정답: 1번 · 골반내장신경(nervi erigentes)\n\n[핵심 해설]\n직장암 수술 후 발기장애는 부교감신경인 골반내장신경(nervi erigentes) 손상과 관련된다. 반면 사정장애는 교감신경계인 superior hypogastric plexus 손상과 관련된다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_167_01.png"
+        "2021_소화기_문항별_사진/2021_167_01.jpg"
       ],
       "legacyProfessor": "최선근",
       "lectureIds": [
@@ -21568,7 +22144,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 167,
       "legacyDisplayId": "2021 167번",
-      "globalNumber": 556
+      "globalNumber": 556,
+      "sourcePdfPages": [
+        479,
+        481
+      ]
     },
     {
       "id": "2021-168",
@@ -21576,23 +22156,23 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 168,
-      "question": "다음은 35세 여성의 CT 사진이다. 확인해 본 결과 inguinal ligament의 아래로 장이 빠져나온 것을 확인했다. 다음 중 어느 종류의 탈장인가?",
+      "question": "82세 여자가 복부팽만과 좌측서혜부 종괴로 왔다. 종괴는 서혜인대 (inguinal ligament) 아래쪽으로 만져졌고 단단한 2 cm 크기였고 도수 정복에 실패했다. 환자의 CT 소견이다. 가장 가능성 높은 탈장은?",
       "passage": "",
       "choices": [
-        "direct hernia",
-        "indirect hernia",
-        "femoral hernia",
-        "incisional hernia",
-        "obturator hernia"
+        "서혜부 간접탈장 (indirect inguinal hernia)",
+        "서혜부 직접탈장 (direct inguinal hernia)",
+        "대퇴 탈장 (femoral hernia)",
+        "반흔 탈장 (incisional hernia)",
+        "폐쇄공 탈장 (obturator hernia)"
       ],
       "answerIndex": 3,
       "answerIndices": [
         3
       ],
-      "answerLabel": "정답: 3번 · femoral hernia",
-      "explanation": "정답: 3번 · femoral hernia\n\n[핵심 해설]\n3번 inguinal ligament의 아랫쪽으로 장이 삐져나왔다고 했으므로…\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 3번 · 대퇴 탈장 (femoral hernia)",
+      "explanation": "정답: 3번 · 대퇴 탈장 (femoral hernia)\n\n[핵심 해설]\n서혜인대 아래쪽으로 나오는 femoral hernia\n\n[선지별 해설]\n① 서혜부 간접탈장 (indirect inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n② 서혜부 직접탈장 (direct inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n③ 대퇴 탈장 (femoral hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n④ 반흔 탈장 (incisional hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n⑤ 폐쇄공 탈장 (obturator hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n\n[검토 상태]\n오답률 30 31page 수록.",
       "images": [
-        "2021_소화기_문항별_사진/2021_168_01.png"
+        "2021_소화기_문항별_사진/2021_wrong30_031_01.png"
       ],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -21604,12 +22184,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 482-484page",
+      "source": "2021 소화기계 오답률30 · 31page / 2021 소화기계 풀이 482-484page",
       "mappingConfidence": "구 출제자·복벽 주제",
-      "officialPriorityApplied": false,
+      "officialPriorityApplied": true,
       "sourceOrdinal": 168,
       "legacyDisplayId": "2021 168번",
-      "globalNumber": 557
+      "globalNumber": 557,
+      "duplicateOf": 602,
+      "sourcePdfPages": [
+        482,
+        484
+      ]
     },
     {
       "id": "2021-169",
@@ -21617,21 +22202,21 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 169,
-      "question": "생후 5일 된 남아가 자지러지게 울고 보채서 응급실에 왔다. 고환이 부풀고 단단한 덩이가 만져졌다. 치료는 어떻게 하는가?",
+      "question": "생후 2개월 남아가 우측 서혜부 종괴로 왔다. 환아는 2시간 전에 심하게 울면서 우측 서혜부와 음낭부위가 붓고 단단하였다. 치료는?",
       "passage": "",
       "choices": [
-        "응급수술",
-        "경과관찰",
-        "항생제 사용",
-        "이뇨제 사용",
-        "동반기형 관찰"
+        "항생제 치료",
+        "입원해서 경과 관찰",
+        "도수 정복 (manual reduction) 시행",
+        "공기 관장술 (air reduction) 시행",
+        "응급 수술"
       ],
-      "answerIndex": 1,
+      "answerIndex": 3,
       "answerIndices": [
-        1
+        3
       ],
-      "answerLabel": "정답: 1번 · 응급수술",
-      "explanation": "정답: 1번 · 응급수술\n\n[핵심 해설]\n1번 소아 남아의 고환이 부풀어오르면 서혜부 탈장(Inguinal hernia)을 의심해야 하며 수술이 필요함\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 3번 · 도수 정복 (manual reduction) 시행",
+      "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n[핵심 해설]\n우선 manual reduction을 시행하는 것이 처음 치료임\n\n[선지별 해설]\n③ 도수 정복 (manual reduction) 시행: 우선 manual reduction을 시행하는 것이 처음 치료임\n\n[검토 상태]\n오답률 30 39page 수록.",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -21643,12 +22228,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 485-487page",
+      "source": "2021 소화기계 오답률30 · 39page / 2021 소화기계 풀이 485-487page",
       "mappingConfidence": "구 출제자·복벽 주제",
-      "officialPriorityApplied": false,
+      "officialPriorityApplied": true,
       "sourceOrdinal": 169,
       "legacyDisplayId": "2021 169번",
-      "globalNumber": 558
+      "globalNumber": 558,
+      "duplicateOf": 605,
+      "sourcePdfPages": [
+        485,
+        487
+      ]
     },
     {
       "id": "2021-170",
@@ -21656,7 +22246,7 @@ window.JBL_DATA = {
       "year": 2021,
       "sourceType": "족보",
       "originalNumber": 170,
-      "question": "1 kg 출생한 남아가 출생 직후부터 침을 많이 흘리고, 수유 시 choking과 청색증이 있었다. 산모의 임신력 상 양수과다증이 있었다. 이 병의 진단을 위해 가장 중요한 검사는?",
+      "question": "3.1 kg 출생한 남아가 출생 직후부터 침을 많이 흘리고, 수유 시 choking과 청색증이 있었다. 산모의 임신력 상 양수과다증이 있었다. 이 병의 진단을 위해 가장 중요한 검사는?",
       "passage": "",
       "choices": [
         "식도조영술",
@@ -21687,7 +22277,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 170,
       "legacyDisplayId": "2021 170번",
-      "globalNumber": 559
+      "globalNumber": 559,
+      "sourcePdfPages": [
+        488,
+        490
+      ]
     },
     {
       "id": "2021-171",
@@ -21723,12 +22317,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소아청소년과",
       "section": "소아 소화기",
-      "source": "2021 소화기계 풀이 491-495page",
+      "source": "2021 소화기계 풀이 491-492page",
       "mappingConfidence": "출제자",
       "officialPriorityApplied": false,
       "sourceOrdinal": 171,
       "legacyDisplayId": "2021 171번",
-      "globalNumber": 560
+      "globalNumber": 560,
+      "sourcePdfPages": [
+        491,
+        492
+      ]
     },
     {
       "id": "2021-173",
@@ -21764,12 +22362,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소아청소년과",
       "section": "소아 소화기",
-      "source": "2021 소화기계 오답률30 · 19page",
+      "source": "2021 소화기계 오답률30 · 19page / 2021 소화기계 풀이 496-498page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 173,
       "legacyDisplayId": "2021 173번",
-      "globalNumber": 561
+      "globalNumber": 561,
+      "sourcePdfPages": [
+        496,
+        498
+      ]
     },
     {
       "id": "2021-174",
@@ -21803,12 +22405,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 499-504page",
+      "source": "2021 소화기계 풀이 499-501page",
       "mappingConfidence": "선배 해설 강의 출처 0.83",
       "officialPriorityApplied": false,
       "sourceOrdinal": 174,
       "legacyDisplayId": "2021 174번",
-      "globalNumber": 562
+      "globalNumber": 562,
+      "sourcePdfPages": [
+        499,
+        501
+      ]
     },
     {
       "id": "2021-176",
@@ -21834,20 +22440,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
-        57
+        56
       ],
-      "lectureId": 57,
-      "lectureTitle": "복막 및 복벽 질환 (탈장포함)",
-      "professor": "서지현",
+      "lectureId": 56,
+      "lectureTitle": "위 종양 (II) 치료, 예후, 합병증",
+      "professor": "오승종",
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 풀이 505-512page",
-      "mappingConfidence": "구 출제자·복벽 주제",
+      "source": "2021 소화기계 풀이 505-506page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 176,
       "legacyDisplayId": "2021 176번",
-      "globalNumber": 563
+      "globalNumber": 563,
+      "sourcePdfPages": [
+        505,
+        506
+      ]
     },
     {
       "id": "2021-179",
@@ -21886,7 +22496,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 179,
       "legacyDisplayId": "2021 179번",
-      "globalNumber": 564
+      "globalNumber": 564,
+      "sourcePdfPages": [
+        513,
+        515
+      ]
     },
     {
       "id": "2021-180",
@@ -21925,7 +22539,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 180,
       "legacyDisplayId": "2021 180번",
-      "globalNumber": 565
+      "globalNumber": 565,
+      "sourcePdfPages": [
+        516,
+        517
+      ]
     },
     {
       "id": "2021-181",
@@ -21964,7 +22582,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 181,
       "legacyDisplayId": "2021 181번",
-      "globalNumber": 566
+      "globalNumber": 566,
+      "sourcePdfPages": [
+        518,
+        520
+      ]
     },
     {
       "id": "2021-182",
@@ -21981,12 +22603,10 @@ window.JBL_DATA = {
         "II,III",
         "I,II,III"
       ],
-      "answerIndex": 5,
-      "answerIndices": [
-        5
-      ],
-      "answerLabel": "정답: 5번 · I,II,III",
-      "explanation": "정답: 5번 · I,II,III\n\n== 배경 지식 ==\n소화계통은 물과 영양소를 흡수하고, 장내분비세포를 통해 호르몬을 생산하며, 상피 장벽·점액·면역조직으로 방어 기능을 수행한다. [[3강#소화계통의 역할|소화계통의 역할]]을 참고한다.\n\n== 정답 선지 ==\nI의 물 공급, II의 호르몬 생산, III의 방어 제공은 모두 소화계통의 기능에 포함된다. 따라서 ⑤가 정답이다.\n\n== 오답 선지 ==\n* ①–④: 옳은 기능 셋 중 하나 이상을 빠뜨린 조합이다.\n\n== 출제 의도 ==\n소화계통을 영양소 소화에만 한정하지 않고 수분·내분비·면역 기능까지 이해하는지 묻는다.\n\n== Wiki 연결 ==\n* [[3강#하루 체액의 이동|하루 체액의 이동]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[3강#소화계통의 역할|소화계통의 역할]]은 영양소·물의 공급, 호르몬 분비, 상피·면역 장벽에 의한 방어를 포함한다. 실제 물의 대량 흡수는 [[3강#하루 체액의 이동|하루 체액의 이동]]에서 보듯 주로 소장과 대장에서 일어난다.\n\n== 정답 선지 ==\n제시문의 주어가 GI system이라면 I·II·III가 모두 맞다. 그러나 현재 발문은 ‘위’라고 되어 있어 이 결론을 그대로 적용할 수 없다. 위의 호르몬 분비와 점막 방어는 맞지만, 물을 전신에 공급하는 대표 흡수기관이라는 설명은 소화계통 전체의 기능이다.\n\n== 오답 선지 ==\n* GI system을 주어로 가정할 때에만 ①–④가 옳은 기능을 일부 누락한 조합이다.\n* 현재의 ‘위’라는 발문을 유지한 채 ⑤를 확정하는 풀이는 주어를 바꾸어 읽은 것이다.\n\n== 출제 의도 ==\n소화계통 전체의 물·내분비·방어 기능을 정리한다. 전체 계통의 기능과 개별 장기의 기능을 혼동하지 않는다.\n\n== 문항 오류 가능성 ==\n2021 풀이 521쪽에도 발문이 ‘위’로 적혀 있다. 단순 사이트 입력 오류로 확정할 수 없어 발문을 임의 변경하지 않고 보고한다.\n\n== Wiki 연결 ==\n* [[3강#소화계통의 역할|소화계통의 역할]]\n* [[3강#하루 체액의 이동|물 흡수의 부위]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22003,7 +22623,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 182,
       "legacyDisplayId": "2021 182번",
-      "globalNumber": 567
+      "globalNumber": 567,
+      "sourcePdfPages": [
+        521,
+        523
+      ]
     },
     {
       "id": "2021-183",
@@ -22042,7 +22666,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 183,
       "legacyDisplayId": "2021 183번",
-      "globalNumber": 568
+      "globalNumber": 568,
+      "sourcePdfPages": [
+        524,
+        525
+      ]
     },
     {
       "id": "2021-184",
@@ -22059,12 +22687,10 @@ window.JBL_DATA = {
         "II, III",
         "I, II, III"
       ],
-      "answerIndex": 3,
-      "answerIndices": [
-        3
-      ],
-      "answerLabel": "정답: 3번 · I, III",
-      "explanation": "정답: 3번 · I, III\n\n== 배경 지식 ==\n유문은 안정 시 긴장성 수축으로 위 배출을 제한한다. 음식이 위에 들어오면 날문방의 강한 수축이 혼합과 추진을 만든다. 반대로 산·지방·고삼투성 내용물이 십이지장에 들어오면 enterogastric reflex와 장호르몬이 유문 수축을 강화하고 위 배출을 억제한다.\n\n== 정답 선지 ==\nI은 유문이 유미즙 배출을 제한하므로 옳다. III은 위의 음식물이 날문방 수축을 촉진하므로 옳다. 따라서 ③ I, III가 정답이다.\n\n== 오답 선지 ==\n* II: 십이지장으로 음식이 통과하면 위 배출을 더 촉진하는 것이 아니라, 십이지장의 피드백이 유문 저항을 높여 추가 배출을 억제한다.\n\n== 출제 의도 ==\n위 자체의 추진 자극과 십이지장 피드백에 의한 배출 억제를 구별하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 확정 곤란",
+      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n[[4강#위 배출의 조절|위 배출]]은 antral pump의 추진력과 pyloric resistance의 균형으로 결정된다. 십이지장의 산·지방 등은 위 배출을 억제하며, 이때 유문 저항과 수축이 증가할 수 있다.\n\n== 정답 선지 ==\nI의 유문 수축→배출 제한, III의 위 음식물→antral contraction은 옳다. 그러나 II도 십이지장 피드백에 의한 pyloric contraction 증가를 말한다면 옳게 읽힌다. II는 ‘위 배출 증가’라고 쓰여 있지 않다.\n\n== 오답 선지 ==\n* 기존 설명은 II의 ‘pylorus contraction 증가’를 ‘위 배출 촉진’으로 바꾸어 읽었다. 유문 수축은 오히려 배출을 제한하므로 이 논리로 II를 배제할 수 없다.\n* 십이지장에 어떤 내용물이 어느 정도 들어왔는지 조건이 생략되어 있으므로 모든 상황에서 수축이 증가한다고 일반화하는 것도 피한다.\n\n== 출제 의도 ==\n유문 수축과 위 배출량의 관계를 구분하고, 위에서 오는 추진 자극과 십이지장 음성피드백을 비교한다.\n\n== 문항 오류 가능성 ==\n비공식 저장답 ③ I·III만으로 II를 오답 처리할 근거가 부족하다. {{710}}의 유사 문항에는 공식 정답이 있으나, 다른 연도의 조합형 문항에 자동 적용하지 않는다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n* [[4강#샘창자 신경반사|샘창자 신경반사]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22081,7 +22707,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 184,
       "legacyDisplayId": "2021 184번",
-      "globalNumber": 569
+      "globalNumber": 569,
+      "sourcePdfPages": [
+        526,
+        528
+      ]
     },
     {
       "id": "2021-185",
@@ -22115,12 +22745,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 53page",
+      "source": "2021 소화기계 오답률30 · 53page / 2021 소화기계 풀이 529-532page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 185,
       "legacyDisplayId": "2021 185번",
-      "globalNumber": 570
+      "globalNumber": 570,
+      "sourcePdfPages": [
+        529,
+        532
+      ]
     },
     {
       "id": "2021-186",
@@ -22154,12 +22788,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 54page",
+      "source": "2021 소화기계 오답률30 · 54page / 2021 소화기계 풀이 533-534page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 186,
       "legacyDisplayId": "2021 186번",
-      "globalNumber": 571
+      "globalNumber": 571,
+      "sourcePdfPages": [
+        533,
+        534
+      ]
     },
     {
       "id": "2021-187",
@@ -22198,7 +22836,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 187,
       "legacyDisplayId": "2021 187번",
-      "globalNumber": 572
+      "globalNumber": 572,
+      "sourcePdfPages": [
+        535,
+        537
+      ]
     },
     {
       "id": "2021-188",
@@ -22220,7 +22862,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · I, II",
-      "explanation": "정답: 2번 · I, II\n\n== 배경 지식 ==\n근육층신경얼기는 돌림근층과 세로근층 사이에 위치하며 소화관 운동의 강도, 긴장도, 리듬과 전도 속도를 조절한다. 이를 차단하면 연동 운동(peristalsis)이 약해진다. 점막밑층에 위치하는 것은 점막밑신경얼기이다. [[4강#근육층신경얼기|근육층신경얼기]]을 참고한다.\n\n== 정답 선지 ==\nI은 근육층신경얼기가 긴장성 수축을 증가시킬 수 있으므로 옳고, II는 차단 시 peristalsis가 감소하므로 옳다. 따라서 ② I, II가 정답이다.\n\n== 오답 선지 ==\n* III: 근육층신경얼기는 점막밑층이 아니라 돌림근층과 세로근층 사이에 있다.\n\n== 출제 의도 ==\n두 창자신경얼기의 위치와 근육층신경얼기의 운동 기능을 함께 확인한다.\n\n== Wiki 연결 ==\n* [[4강#연동 운동(peristalsis)|연동 운동]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · I, II\n\n== 배경 지식 ==\n근육층신경얼기는 돌림근층과 세로근층 사이에 위치하며 소화관 운동의 강도, 긴장도, 리듬과 전도 속도를 조절한다. 이를 차단하면 연동 운동(peristalsis)이 약해진다. 점막밑층에 위치하는 것은 점막밑신경얼기이다. [[4강#근육층신경얼기|근육층신경얼기]]을 참고한다.\n\n== 정답 선지 ==\nI은 근육층신경얼기가 긴장성 수축을 증가시킬 수 있으므로 옳고, II는 차단 시 peristalsis가 감소하므로 옳다. 따라서 ② I, II가 정답이다.\n\n== 오답 선지 ==\n* III: 근육층신경얼기는 점막밑층이 아니라 돌림근층과 세로근층 사이에 있다.\n\n== 출제 의도 ==\n두 창자신경얼기의 위치와 근육층신경얼기의 운동 기능을 함께 확인한다.\n\n== Wiki 연결 ==\n* [[4강#근육층신경얼기|근육층신경얼기]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22237,7 +22879,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 188,
       "legacyDisplayId": "2021 188번",
-      "globalNumber": 573
+      "globalNumber": 573,
+      "sourcePdfPages": [
+        538,
+        540
+      ]
     },
     {
       "id": "2021-189",
@@ -22276,7 +22922,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 189,
       "legacyDisplayId": "2021 189번",
-      "globalNumber": 574
+      "globalNumber": 574,
+      "sourcePdfPages": [
+        541,
+        543
+      ]
     },
     {
       "id": "2021-190",
@@ -22298,7 +22948,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · The fundus shows strong contraction and is easily stretched.",
-      "explanation": "정답: 1번 · The fundus shows strong contraction and is easily stretched.\n\n== 배경 지식 ==\n위바닥부와 몸통 근위부는 수용성 이완으로 음식물을 저장하며 비교적 약한 긴장성 수축을 보인다. 날문방은 강한 연동 수축으로 음식물을 분쇄하고 위액과 섞으며, 유문은 긴장성 수축으로 배출을 조절한다.\n\n== 정답 선지 ==\n① 위바닥부가 잘 늘어나는 것은 맞지만 “강하게 수축한다”는 부분이 틀려 가장 부적절하다. 위바닥부는 미주-미주반사에 의해 이완하여 저장 기능을 한다.\n\n== 오답 선지 ==\n* ② 유문은 긴장성 수축 상태를 보인다.\n* ③ 날문방은 위의 아래쪽 부분이다.\n* ④ 위바닥부의 수용성 이완은 미주-미주반사로 조절된다.\n* ⑤ 위의 음식물은 날문방 수축을 촉진한다.\n\n== 출제 의도 ==\n위 각 부위의 저장·혼합·배출 기능과 수축 양상을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 1번 · The fundus shows strong contraction and is easily stretched.\n\n== 배경 지식 ==\n위바닥부와 몸통 근위부는 수용성 이완으로 음식물을 저장하며 비교적 약한 긴장성 수축을 보인다. 날문방은 강한 연동 수축으로 음식물을 분쇄하고 위액과 섞으며, 유문은 긴장성 수축으로 배출을 조절한다.\n\n== 정답 선지 ==\n① 위바닥부가 잘 늘어나는 것은 맞지만 “강하게 수축한다”는 부분이 틀려 가장 부적절하다. 위바닥부는 미주-미주반사에 의해 이완하여 저장 기능을 한다.\n\n== 오답 선지 ==\n* ② 유문은 긴장성 수축 상태를 보인다.\n* ③ 날문방은 위의 아래쪽 부분이다.\n* ④ 위바닥부의 수용성 이완은 미주-미주반사로 조절된다.\n* ⑤ 위의 음식물은 날문방 수축을 촉진한다.\n\n== 출제 의도 ==\n위 각 부위의 저장·혼합·배출 기능과 수축 양상을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#저장과 수용성 이완|저장과 수용성 이완]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22315,7 +22965,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 190,
       "legacyDisplayId": "2021 190번",
-      "globalNumber": 575
+      "globalNumber": 575,
+      "sourcePdfPages": [
+        544,
+        546
+      ]
     },
     {
       "id": "2021-191",
@@ -22337,7 +22991,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · amino acid in the stomach",
-      "explanation": "정답: 3번 · amino acid in the stomach\n\n== 배경 지식 ==\n위 팽창과 위 안의 단백질 소화산물은 gastrin과 신경반사를 통해 위 운동과 배출을 촉진한다. 반면 십이지장의 산, 지방, 아미노산과 고삼투성 내용물은 enterogastric reflex, CCK와 secretin 등을 통해 위 배출을 억제한다.\n\n== 정답 선지 ==\n③ 위 안의 amino acid는 gastrin 분비와 위 운동을 촉진하여 보기 중 위 배출을 가장 잘 자극한다.\n\n== 오답 선지 ==\n* ① 위 안의 산은 위내 pH가 충분히 낮아지면 gastrin 분비를 억제한다.\n* ② 십이지장의 amino acid는 장 피드백을 통해 배출을 늦춘다.\n* ④ 십이지장의 lipid는 CCK 등을 통해 강하게 배출을 억제한다.\n* ⑤ 위 안의 lipid는 탄수화물보다 천천히 처리되며 배출 촉진 조건으로 보기 어렵다.\n\n== 출제 의도 ==\n위 내 자극과 십이지장 내 자극이 위 배출에 미치는 반대 효과를 묻는다.\n\n== Wiki 연결 ==\n* [[4강#위산 분비 조절|위산 분비 조절]]\n\n== 검토 상태 ==\n오답률 30 41page 수록.",
+      "explanation": "정답: 3번 · amino acid in the stomach\n\n== 배경 지식 ==\n위 팽창과 위 안의 단백질 소화산물은 gastrin과 신경반사를 통해 위 운동과 배출을 촉진한다. 반면 십이지장의 산, 지방, 아미노산과 고삼투성 내용물은 enterogastric reflex, CCK와 secretin 등을 통해 위 배출을 억제한다.\n\n== 정답 선지 ==\n③ 위 안의 amino acid는 gastrin 분비와 위 운동을 촉진하여 보기 중 위 배출을 가장 잘 자극한다.\n\n== 오답 선지 ==\n* ① 위 안의 산은 위내 pH가 충분히 낮아지면 gastrin 분비를 억제한다.\n* ② 십이지장의 amino acid는 장 피드백을 통해 배출을 늦춘다.\n* ④ 십이지장의 lipid는 CCK 등을 통해 강하게 배출을 억제한다.\n* ⑤ 위 안의 lipid는 탄수화물보다 천천히 처리되며 배출 촉진 조건으로 보기 어렵다.\n\n== 출제 의도 ==\n위 내 자극과 십이지장 내 자극이 위 배출에 미치는 반대 효과를 묻는다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답률 30 41page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22349,12 +23003,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 41page",
+      "source": "2021 소화기계 오답률30 · 41page / 2021 소화기계 풀이 547-549page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 191,
       "legacyDisplayId": "2021 191번",
-      "globalNumber": 576
+      "globalNumber": 576,
+      "sourcePdfPages": [
+        547,
+        549
+      ]
     },
     {
       "id": "2021-192",
@@ -22376,7 +23034,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · Mucus is produced from epithelial cells.",
-      "explanation": "정답: 2번 · Mucus is produced from epithelial cells.\n\n== 배경 지식 ==\n표면점액세포와 점액목세포는 위점막을 덮는 점액과 bicarbonate 장벽을 만든다. 벽세포는 HCl과 intrinsic factor, 주세포는 pepsinogen, G세포는 gastrin을 분비한다.\n\n== 정답 선지 ==\n② 점액은 위의 상피세포인 표면점액세포와 점액목세포에서 만들어지므로 옳다.\n\n== 오답 선지 ==\n* ① Oxyntic gland의 주된 세포는 벽세포·주세포 등이며 gastrin은 주로 날문부 G세포가 분비한다.\n* ③ Intrinsic factor는 주세포가 아니라 벽세포가 분비한다.\n* ④ Ethanol은 점막 장벽을 손상시키며 점액 분비를 억제한다는 일반 명제로 보기 어렵다.\n* ⑤ 위점액의 대부분을 mucin이 차지한다는 수치 표현은 부정확하다. 위점액은 대부분 물이고 mucin은 겔 성질을 주는 당단백질 성분이다.\n\n== 출제 의도 ==\n위샘 세포별 분비물과 점액-bicarbonate 장벽을 연결하게 한다.\n\n== Wiki 연결 ==\n* [[4강#Intrinsic factor|Intrinsic factor]]\n\n== 검토 상태 ==\n오답률 30 60page 수록.",
+      "explanation": "정답: 2번 · Mucus is produced from epithelial cells.\n\n== 배경 지식 ==\n표면점액세포와 점액목세포는 위점막을 덮는 점액과 bicarbonate 장벽을 만든다. 벽세포는 HCl과 intrinsic factor, 주세포는 pepsinogen, G세포는 gastrin을 분비한다.\n\n== 정답 선지 ==\n② 점액은 위의 상피세포인 표면점액세포와 점액목세포에서 만들어지므로 옳다.\n\n== 오답 선지 ==\n* ① Oxyntic gland의 주된 세포는 벽세포·주세포 등이며 gastrin은 주로 날문부 G세포가 분비한다.\n* ③ Intrinsic factor는 주세포가 아니라 벽세포가 분비한다.\n* ④ Ethanol은 점막 장벽을 손상시키며 점액 분비를 억제한다는 일반 명제로 보기 어렵다.\n* ⑤ 위점액의 대부분을 mucin이 차지한다는 수치 표현은 부정확하다. 위점액은 대부분 물이고 mucin은 겔 성질을 주는 당단백질 성분이다.\n\n== 출제 의도 ==\n위샘 세포별 분비물과 점액-bicarbonate 장벽을 연결하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위샘과 분비세포|위샘과 분비세포]]\n\n== 검토 상태 ==\n오답률 30 60page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22388,12 +23046,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 60page",
+      "source": "2021 소화기계 오답률30 · 60page / 2021 소화기계 풀이 550-552page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 192,
       "legacyDisplayId": "2021 192번",
-      "globalNumber": 577
+      "globalNumber": 577,
+      "sourcePdfPages": [
+        550,
+        552
+      ]
     },
     {
       "id": "2021-195",
@@ -22427,12 +23089,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 32page",
+      "source": "2021 소화기계 오답률30 · 32page / 2021 소화기계 풀이 559-561page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 195,
       "legacyDisplayId": "2021 195번",
-      "globalNumber": 578
+      "globalNumber": 578,
+      "sourcePdfPages": [
+        559,
+        561
+      ]
     },
     {
       "id": "2021-196",
@@ -22466,12 +23132,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 45page",
+      "source": "2021 소화기계 오답률30 · 45page / 2021 소화기계 풀이 562-564page",
       "mappingConfidence": "15강 「영양소의 흡수」 강의록 48쪽 기준 재분류·Wiki식 해설 갱신",
       "officialPriorityApplied": true,
       "sourceOrdinal": 196,
       "legacyDisplayId": "2021 196번",
-      "globalNumber": 579
+      "globalNumber": 579,
+      "sourcePdfPages": [
+        562,
+        564
+      ]
     },
     {
       "id": "2021-197",
@@ -22481,11 +23151,19 @@ window.JBL_DATA = {
       "originalNumber": 197,
       "question": "Which is not secreted in the small intestine?",
       "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 1번 GRP는 위에서 분비됩니다.",
-      "explanation": "정답: 1번 GRP는 위에서 분비됩니다.\n\n== 배경 지식 ==\nSmall intestine endocrine cell이 분비하는 대표 hormone에는 secretin, CCK, GIP, motilin과 GLP-1이 있다. GRP(gastrin-releasing peptide)는 vagal nerve ending에서 분비되어 stomach G cell의 gastrin release를 촉진하는 neurotransmitter이다. [[5강#Intestinal hormones|Intestinal hormones]]를 참고한다.\n\n== 정답 선지 ==\n복원 정답에 따르면 small intestine에서 분비되지 않는 항목은 1번 GRP이다.\n\n== 문항 오류 가능성 ==\n현재 데이터에는 1번 GRP를 제외한 나머지 객관식 선지가 전부 누락되어 있다. 정답 개념은 설명할 수 있지만 다른 선지와의 비교는 원문을 복원하기 전에는 불가능하다.\n\n== 출제 의도 ==\nSmall intestine hormone과 gastric vagal neurotransmitter를 구분하게 한다.\n\n== Wiki 연결 ==\n* [[5강#Intestinal hormones|Intestinal hormones]]\n* [[5강#Gastrin|Gastrin]]\n\n== 관련 J ==\n{{103}} {{249}} {{410}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "choices": [
+        "GRP",
+        "GIP",
+        "CCK",
+        "Secretin",
+        "Lactase"
+      ],
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "강의 기준 정답: 1번 · GRP (발문 표현의 한계는 해설 참고)",
+      "explanation": "강의 기준 정답: 1번 · GRP\n\n== 배경 지식 ==\n[[5강#Intestinal hormones|작은창자 hormone]]에는 GIP, CCK, secretin 등이 포함된다. Lactase는 hormone이 아니라 [[5강#Brush border enzymes|brush border enzyme]]이다. GRP는 [[4강#Gastrin|G cell의 gastrin 분비를 촉진하는 신경성 peptide]]로 구분한다.\n\n== 정답 선지 ==\n① 강의의 기관별 대표 분비물 구분에 따르면 GRP를 고른다. 위의 gastrin 분비를 조절하는 신경성 GRP와 작은창자의 내분비세포·상피 효소를 대조하는 문항이다.\n\n== 오답 선지 ==\n* ② GIP: 작은창자 K cell의 분비물이며 영양소에 반응하여 insulin 분비를 촉진한다.\n* ③ CCK: 작은창자 I cell에서 분비되며 pancreatic enzyme secretion, gallbladder contraction 등과 연결된다.\n* ④ Secretin: 산성 내용물에 반응하는 작은창자 S cell의 hormone으로 bicarbonate-rich secretion을 촉진한다.\n* ⑤ Lactase: 작은창자 brush border에서 작용하는 이당류 분해효소이다. 작은창자 상피의 소화 기능에 해당한다.\n\n== 문항 표현의 한계 ==\n'''Produced/expressed와 secreted를 엄밀하게 구별하지 않은 발문'''이다.[* GRP는 위에만 존재하는 물질이 아니라 enteric neuron에도 분포한다. 또한 lactase는 내강으로 유리되는 전형적인 분비 hormone이 아니라 brush border 막효소이다. 따라서 '소장에서는 절대로 분비되지 않는 물질'이라는 보편 명제로 읽으면 모호하다. 강의의 대표 분비물 분류를 기준으로 ①을 고르되 이 용어상의 한계를 함께 기억한다.]\n\n== 출제 의도 ==\n작은창자의 대표 hormone과 brush border enzyme을 위의 GRP–gastrin 조절경로와 구분한다.\n\n== Wiki 연결 ==\n* [[5강#Intestinal hormones|작은창자 hormone]]\n* [[5강#Brush border enzymes|Brush border enzymes]]\n* [[4강#Gastrin|Gastrin]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22502,7 +23180,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 197,
       "legacyDisplayId": "2021 197번",
-      "globalNumber": 580
+      "globalNumber": 580,
+      "sourcePdfPages": [
+        565,
+        567
+      ]
     },
     {
       "id": "2021-199",
@@ -22536,12 +23218,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 4page",
+      "source": "2021 소화기계 오답률30 · 4page / 2021 소화기계 풀이 568-570page",
       "mappingConfidence": "15강 「영양소의 흡수」 강의록 48쪽 기준 재분류·Wiki식 해설 갱신",
       "officialPriorityApplied": true,
       "sourceOrdinal": 199,
       "legacyDisplayId": "2021 199번",
-      "globalNumber": 581
+      "globalNumber": 581,
+      "sourcePdfPages": [
+        568,
+        570
+      ]
     },
     {
       "id": "2021-200",
@@ -22563,7 +23249,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · I",
-      "explanation": "정답: 1번 · I\n\n== 배경 지식 ==\n이자 조직의 약 99%는 외분비 샘꽈리이고 이자섬은 소수이다. 이자섬 안에서는 β cell이 약 75%로 가장 많다. δ cell의 somatostatin은 insulin과 glucagon 분비를 모두 억제한다. [[8강#내분비 이자 · Pancreatic islets|내분비 이자]]를 참고한다.\n\n== 정답 선지 ==\nI은 이자섬에서 β cell이 가장 큰 비율을 차지하므로 옳다. 따라서 1번 I가 정답이다.\n\n== 오답 선지 ==\n* II: Somatostatin은 glucagon만 억제하고 insulin을 촉진하는 것이 아니라 둘 다 억제한다.\n* III: Acini가 차지하는 비율은 약 50%가 아니라 이자 조직의 대부분인 약 99%이다.\n\n== 출제 의도 ==\n이자섬 세포의 비율과 somatostatin 기능, 외분비 이자의 조직 비율을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[8강#이자액의 성분과 소화효소|이자액의 성분과 소화효소]]\n\n== 검토 상태 ==\n오답률 30 11page 수록.",
+      "explanation": "정답: 1번 · I\n\n== 배경 지식 ==\n이자 조직의 약 99%는 외분비 샘꽈리이고 이자섬은 소수이다. 이자섬 안에서는 β cell이 약 75%로 가장 많다. δ cell의 somatostatin은 insulin과 glucagon 분비를 모두 억제한다. [[8강#내분비 이자 · Pancreatic islets|내분비 이자]]를 참고한다.\n\n== 정답 선지 ==\nI은 이자섬에서 β cell이 가장 큰 비율을 차지하므로 옳다. 따라서 1번 I가 정답이다.\n\n== 오답 선지 ==\n* II: Somatostatin은 glucagon만 억제하고 insulin을 촉진하는 것이 아니라 둘 다 억제한다.\n* III: Acini가 차지하는 비율은 약 50%가 아니라 이자 조직의 대부분인 약 99%이다.\n\n== 출제 의도 ==\n이자섬 세포의 비율과 somatostatin 기능, 외분비 이자의 조직 비율을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[8강#내분비 이자 · Pancreatic islets|내분비 이자 · Pancreatic islets]]\n\n== 검토 상태 ==\n오답률 30 11page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22575,12 +23261,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 11page",
+      "source": "2021 소화기계 오답률30 · 11page / 2021 소화기계 풀이 571-573page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 200,
       "legacyDisplayId": "2021 200번",
-      "globalNumber": 582
+      "globalNumber": 582,
+      "sourcePdfPages": [
+        571,
+        573
+      ]
     },
     {
       "id": "2021-201",
@@ -22619,7 +23309,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 201,
       "legacyDisplayId": "2021 201번",
-      "globalNumber": 583
+      "globalNumber": 583,
+      "sourcePdfPages": [
+        574,
+        576
+      ]
     },
     {
       "id": "2021-202",
@@ -22633,7 +23327,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: True",
-      "explanation": "정답: True\n\n== 배경 지식 ==\n긴장성 수축은 일정 시간 지속되어 조임근 기능을 만드는 수축이다. 유문은 평소 긴장성 수축으로 위와 십이지장 사이의 저항을 만들고 유미즙 배출량을 제한한다.\n\n== 정답 선지 ==\n유문은 소화관의 대표적인 긴장성 수축 부위이므로 문장은 참이다.\n\n== 출제 의도 ==\n연동 운동(peristalsis) 같은 위상성 수축과 조임근의 긴장성 수축을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: True\n\n== 배경 지식 ==\n긴장성 수축은 일정 시간 지속되어 조임근 기능을 만드는 수축이다. 유문은 평소 긴장성 수축으로 위와 십이지장 사이의 저항을 만들고 유미즙 배출량을 제한한다.\n\n== 정답 선지 ==\n유문은 소화관의 대표적인 긴장성 수축 부위이므로 문장은 참이다.\n\n== 출제 의도 ==\n연동 운동(peristalsis) 같은 위상성 수축과 조임근의 긴장성 수축을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#긴장성 수축|긴장성 수축]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22650,7 +23344,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 202,
       "legacyDisplayId": "2021 202번",
-      "globalNumber": 584
+      "globalNumber": 584,
+      "sourcePdfPages": [
+        577,
+        578
+      ]
     },
     {
       "id": "2021-203",
@@ -22681,7 +23379,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 203,
       "legacyDisplayId": "2021 203번",
-      "globalNumber": 585
+      "globalNumber": 585,
+      "sourcePdfPages": [
+        579,
+        581
+      ]
     },
     {
       "id": "2021-204",
@@ -22695,7 +23397,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: True",
-      "explanation": "정답: True\n\n== 배경 지식 ==\n태아기에는 간이 중요한 조혈기관이다. 출생이 가까워지면서 골수가 주된 조혈기관이 되지만, 특정 병적 상태에서는 성인에서도 간의 골수외조혈이 나타날 수 있다. [[8강#간의 혈액 공급과 Kupffer cell|태아기 간의 조혈 기능]]을 참고한다.\n\n== 정답 선지 ==\n태아의 간이 주요 조혈 장소라는 문장은 참이다.\n\n== 출제 의도 ==\n성인기의 대사 기능과 구별되는 태아기 간의 조혈 기능을 확인한다.\n\n== Wiki 연결 ==\n* [[8강#간의 기능|간의 기능]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: True\n\n== 배경 지식 ==\n태아기에는 간이 중요한 조혈기관이다. 출생이 가까워지면서 골수가 주된 조혈기관이 되지만, 특정 병적 상태에서는 성인에서도 간의 골수외조혈이 나타날 수 있다. [[8강#간의 혈액 공급과 Kupffer cell|태아기 간의 조혈 기능]]을 참고한다.\n\n== 정답 선지 ==\n태아의 간이 주요 조혈 장소라는 문장은 참이다.\n\n== 출제 의도 ==\n성인기의 대사 기능과 구별되는 태아기 간의 조혈 기능을 확인한다.\n\n== Wiki 연결 ==\n* [[8강#간의 혈액 공급과 Kupffer cell|간의 혈액 공급과 Kupffer cell]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -22712,7 +23414,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 204,
       "legacyDisplayId": "2021 204번",
-      "globalNumber": 586
+      "globalNumber": 586,
+      "sourcePdfPages": [
+        582,
+        584
+      ]
     },
     {
       "id": "2021-205",
@@ -22738,12 +23444,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 21page",
+      "source": "2021 소화기계 오답률30 · 21page / 2021 소화기계 풀이 585-587page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 205,
       "legacyDisplayId": "2021 205번",
-      "globalNumber": 587
+      "globalNumber": 587,
+      "sourcePdfPages": [
+        585,
+        587
+      ]
     },
     {
       "id": "2021-206",
@@ -22769,12 +23479,16 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "생리학",
       "section": "생리학",
-      "source": "2021 소화기계 오답률30 · 16page",
+      "source": "2021 소화기계 오답률30 · 16page / 2021 소화기계 풀이 588-590page",
       "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 206,
       "legacyDisplayId": "2021 206번",
-      "globalNumber": 588
+      "globalNumber": 588,
+      "sourcePdfPages": [
+        588,
+        590
+      ]
     },
     {
       "id": "2021-207",
@@ -22805,7 +23519,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 207,
       "legacyDisplayId": "2021 207번",
-      "globalNumber": 589
+      "globalNumber": 589,
+      "sourcePdfPages": [
+        591,
+        593
+      ]
     },
     {
       "id": "2021-208",
@@ -22840,12 +23558,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "담도 및 췌장",
-      "source": "2021 소화기계 오답률30 · 8page",
+      "source": "2021 소화기계 오답률30 · 8page / 2021 소화기계 풀이 594-596page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 208,
       "legacyDisplayId": "2021 208번",
-      "globalNumber": 590
+      "globalNumber": 590,
+      "sourcePdfPages": [
+        594,
+        596
+      ]
     },
     {
       "id": "2021-209",
@@ -22885,7 +23607,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 209,
       "legacyDisplayId": "2021 209번",
-      "globalNumber": 591
+      "globalNumber": 591,
+      "sourcePdfPages": [
+        597,
+        599
+      ]
     },
     {
       "id": "2021-210",
@@ -22925,7 +23651,11 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 210,
       "legacyDisplayId": "2021 210번",
-      "globalNumber": 592
+      "globalNumber": 592,
+      "sourcePdfPages": [
+        600,
+        602
+      ]
     },
     {
       "id": "2021-211",
@@ -22960,12 +23690,16 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "소화기 내과",
       "section": "담도 및 췌장",
-      "source": "2021 소화기계 오답률30 · 40page",
+      "source": "2021 소화기계 오답률30 · 40page / 2021 소화기계 풀이 603-605page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 211,
       "legacyDisplayId": "2021 211번",
-      "globalNumber": 593
+      "globalNumber": 593,
+      "sourcePdfPages": [
+        603,
+        605
+      ]
     },
     {
       "id": "2021-212",
@@ -22991,20 +23725,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "백지현",
       "lectureIds": [
-        49
+        28
       ],
-      "lectureId": 49,
-      "lectureTitle": "급성간염 (바이러스성 / 약물중독성)",
-      "professor": "고윤미",
+      "lectureId": 28,
+      "lectureTitle": "소화관 감염성 질환",
+      "professor": "이세주",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "간장학",
+      "section": "하부위장관",
       "source": "2021 소화기계 풀이 606-608page",
-      "mappingConfidence": "구 출제자·급성간염",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 212,
       "legacyDisplayId": "2021 212번",
-      "globalNumber": 594
+      "globalNumber": 594,
+      "sourcePdfPages": [
+        606,
+        608
+      ]
     },
     {
       "id": "2021-213",
@@ -23030,20 +23768,24 @@ window.JBL_DATA = {
       "images": [],
       "legacyProfessor": "백지현",
       "lectureIds": [
-        49
+        28
       ],
-      "lectureId": 49,
-      "lectureTitle": "급성간염 (바이러스성 / 약물중독성)",
-      "professor": "고윤미",
+      "lectureId": 28,
+      "lectureTitle": "소화관 감염성 질환",
+      "professor": "이세주",
       "domain": "임상의학",
       "discipline": "소화기 내과",
-      "section": "간장학",
+      "section": "하부위장관",
       "source": "2021 소화기계 풀이 609-611page",
-      "mappingConfidence": "구 출제자·급성간염",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
       "officialPriorityApplied": false,
       "sourceOrdinal": 213,
       "legacyDisplayId": "2021 213번",
-      "globalNumber": 595
+      "globalNumber": 595,
+      "sourcePdfPages": [
+        609,
+        611
+      ]
     },
     {
       "id": "2021-wrong30-1",
@@ -23089,7 +23831,7 @@ window.JBL_DATA = {
       "displayId": "597번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 6,
       "question": "45세 남자 환자가 대장에서 다수의 용종이 관찰되었고 용종의 조직학적 소견이 다음과 같다면 가장 가능성 있는 진단과 이때 관찰되는 다른 신체적 특징은? (2점)",
       "passage": "",
       "choices": [],
@@ -23110,19 +23852,24 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "하부위장관 병리",
-      "source": "2021 소화기계 오답률30 · 9page",
+      "source": "2021 소화기계 오답률30 · 9page / 2021 소화기계 풀이 15-17page",
       "mappingConfidence": "강의록·출제교수·문항 주제 재검토/높음",
       "officialPriorityApplied": true,
       "sourceOrdinal": 2,
       "legacyDisplayId": "2021 오답30 2번",
-      "globalNumber": 597
+      "globalNumber": 597,
+      "matchedOriginalNumber": 6,
+      "sourcePdfPages": [
+        15,
+        17
+      ]
     },
     {
       "id": "2021-wrong30-3",
       "displayId": "598번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 80,
       "question": "다음 중 적응증이 다른 약물은?",
       "passage": "",
       "choices": [
@@ -23149,19 +23896,24 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 17page",
+      "source": "2021 소화기계 오답률30 · 17page / 2021 소화기계 풀이 230-232page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 3,
       "legacyDisplayId": "2021 오답30 3번",
-      "globalNumber": 598
+      "globalNumber": 598,
+      "matchedOriginalNumber": 80,
+      "sourcePdfPages": [
+        230,
+        232
+      ]
     },
     {
       "id": "2021-wrong30-4",
       "displayId": "599번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 177,
       "question": "다음은 사진에서 clip으로 결찰한 혈관의 이름은 무엇인가?",
       "passage": "",
       "choices": [
@@ -23190,12 +23942,17 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 20page",
+      "source": "2021 소화기계 오답률30 · 20page / 2021 소화기계 풀이 507-509page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 4,
       "legacyDisplayId": "2021 오답30 4번",
-      "globalNumber": 599
+      "globalNumber": 599,
+      "matchedOriginalNumber": 177,
+      "sourcePdfPages": [
+        507,
+        509
+      ]
     },
     {
       "id": "2021-wrong30-5",
@@ -23241,7 +23998,7 @@ window.JBL_DATA = {
       "displayId": "601번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 164,
       "question": "68세 남자가 대장내시경 상 항문연으로부터 5 cm 상방의 직장에서 종양이 발견되었다. 종양은 이동성이 좋아서 움직임에 제한이 없었고 크기는 직경 4 cm 정도였다. 조직검사 결과 점막하층에 국한된 중분화 선암으로 확진되었으며 혈관이나 림프관 침윤은 없었다. 동시에 시행된 경직장초음파에서도 종양은 점막하층에 국한되어 있고 림프절이 발견되지 않았다. 환자는 경항문국소절제술을 원하였으나 의료진은 저위전방절제술을 권유하였다. 이 환자에서 경항문절제술이 불가능한 이유는?",
       "passage": "",
       "choices": [
@@ -23257,9 +24014,7 @@ window.JBL_DATA = {
       ],
       "answerLabel": "정답: 5번 · 종양크기(4 cm)+중분화선암",
       "explanation": "정답: 5번 · 종양크기(4 cm)+중분화선암\n\n[핵심 해설]\n원문 정답은 ‘종양크기(4 cm)+중분화선암’이다. 문항의 핵심 조건과 각 선지의 정의를 대조해 판단한다.\n\n[선지별 해설]\n② 종양크기(4 cm): 원문 정답은 ‘종양크기(4 cm)+중분화선암’이다.\n③ 중분화선암: 원문 정답은 ‘종양크기(4 cm)+중분화선암’이다.\n④ 종양위치(5 cm)+종양크기(4 cm): 원문 정답은 ‘종양크기(4 cm)+중분화선암’이다.\n⑤ 종양크기(4 cm)+중분화선암: 원문 정답은 ‘종양크기(4 cm)+중분화선암’이다.\n\n[검토 상태]\n오답률 30 30page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_wrong30_030_01.png"
-      ],
+      "images": [],
       "legacyProfessor": "최선근",
       "lectureIds": [
         43
@@ -23270,19 +24025,30 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 30page",
+      "source": "2021 소화기계 오답률30 · 30page / 2021 소화기계 풀이 470-472page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 6,
       "legacyDisplayId": "2021 오답30 6번",
-      "globalNumber": 601
+      "globalNumber": 601,
+      "matchedOriginalNumber": 164,
+      "explanationImages": [
+        {
+          "src": "2021_소화기_문항별_사진/2021_wrong30_030_01.png",
+          "caption": "원문 해설 그림"
+        }
+      ],
+      "sourcePdfPages": [
+        470,
+        472
+      ]
     },
     {
       "id": "2021-wrong30-7",
       "displayId": "602번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 168,
       "question": "82세 여자가 복부팽만과 좌측서혜부 종괴로 왔다. 종괴는 서혜인대 (inguinal ligament) 아래쪽으로 만져졌고 단단한 2 cm 크기였고 도수 정복에 실패했다. 환자의 CT 소견이다. 가장 가능성 높은 탈장은?",
       "passage": "",
       "choices": [
@@ -23301,7 +24067,7 @@ window.JBL_DATA = {
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_031_01.png"
       ],
-      "legacyProfessor": "최윤미",
+      "legacyProfessor": "최윤석",
       "lectureIds": [
         57
       ],
@@ -23311,19 +24077,24 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 31page",
+      "source": "2021 소화기계 오답률30 · 31page / 2021 소화기계 풀이 482-484page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 7,
       "legacyDisplayId": "2021 오답30 7번",
-      "globalNumber": 602
+      "globalNumber": 602,
+      "duplicateOf": 557,
+      "sourcePdfPages": [
+        482,
+        484
+      ]
     },
     {
       "id": "2021-wrong30-8",
       "displayId": "603번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 118,
       "question": "전이성 췌장암의 1차 표준 항암치료요법으로 사용하는 방법이 아닌 것은?",
       "passage": "가. FOLFIRINOX (irinotecan + oxaliplatin + 5-FU + leucovorin)\n나. Nab-paclitaxel + gemcitabine\n다. Gemcitabine 단독요법\n라. Nanoliposomal irinotecan",
       "choices": [
@@ -23350,19 +24121,24 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "약리학",
       "section": "약리학",
-      "source": "2021 소화기계 오답률30 · 33page",
+      "source": "2021 소화기계 오답률30 · 33page / 2021 소화기계 풀이 340-342page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 8,
       "legacyDisplayId": "2021 오답30 8번",
-      "globalNumber": 603
+      "globalNumber": 603,
+      "matchedOriginalNumber": 118,
+      "sourcePdfPages": [
+        340,
+        342
+      ]
     },
     {
       "id": "2021-wrong30-9",
       "displayId": "604번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 75,
       "question": "55세 남자 환자가 췌장의 낭성 종괴를 주소로 내원하였다. 다음과 같은 내시경 소견이 관찰되었다면 가장 합당한 병리 소견을 고르시오",
       "passage": "내시경 소견\n[[파일:2021_소화기_문항별_사진/2021_wrong30_036_05.png|제시된 내시경 사진]]\n\n사진 1\n[[파일:2021_소화기_문항별_사진/2021_wrong30_036_01.png|1번 조직 사진]]\n\n사진 2\n[[파일:2021_소화기_문항별_사진/2021_wrong30_036_02.png|2번 조직 사진]]\n\n사진 3\n[[파일:2021_소화기_문항별_사진/2021_wrong30_036_03.png|3번 조직 사진]]\n\n사진 4\n[[파일:2021_소화기_문항별_사진/2021_wrong30_036_04.png|4번 조직 사진]]",
       "choices": [
@@ -23388,7 +24164,7 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "간 담 췌 병리",
-      "source": "2021 소화기계 오답률30 · 36page",
+      "source": "2021 소화기계 오답률30 · 36page / 2021 소화기계 풀이 215-217page",
       "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
       "officialPriorityApplied": true,
       "sourceOrdinal": 9,
@@ -23407,14 +24183,19 @@ window.JBL_DATA = {
           "Solid-pseudopapillary tumor",
           "Pancreatic pseudocyst"
         ]
-      }
+      },
+      "matchedOriginalNumber": 75,
+      "sourcePdfPages": [
+        215,
+        217
+      ]
     },
     {
       "id": "2021-wrong30-10",
       "displayId": "605번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 169,
       "question": "생후 2개월 남아가 우측 서혜부 종괴로 왔다. 환아는 2시간 전에 심하게 울면서 우측 서혜부와 음낭부위가 붓고 단단하였다. 치료는?",
       "passage": "",
       "choices": [
@@ -23431,7 +24212,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 3번 · 도수 정복 (manual reduction) 시행",
       "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n[핵심 해설]\n우선 manual reduction을 시행하는 것이 처음 치료임\n\n[선지별 해설]\n③ 도수 정복 (manual reduction) 시행: 우선 manual reduction을 시행하는 것이 처음 치료임\n\n[검토 상태]\n오답률 30 39page 수록.",
       "images": [],
-      "legacyProfessor": "최윤미",
+      "legacyProfessor": "최윤석",
       "lectureIds": [
         57
       ],
@@ -23441,19 +24222,24 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 39page",
+      "source": "2021 소화기계 오답률30 · 39page / 2021 소화기계 풀이 485-487page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 10,
       "legacyDisplayId": "2021 오답30 10번",
-      "globalNumber": 605
+      "globalNumber": 605,
+      "duplicateOf": 558,
+      "sourcePdfPages": [
+        485,
+        487
+      ]
     },
     {
       "id": "2021-wrong30-11",
       "displayId": "606번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 162,
       "question": "68세의 남자가 직장 신체검진 복부컴퓨터단층촬영 상 근위부 공장에서 약 5 cm 크기의 종양이 발견되었다. 영상의학과 정식 판독에서 공장의 악성 위장관기질종양(GIST)이 의심되어 수술을 시행하였다. 가장 적절한 수술 방법은?",
       "passage": "",
       "choices": [
@@ -23480,19 +24266,24 @@ window.JBL_DATA = {
       "domain": "임상의학",
       "discipline": "외과",
       "section": "외과",
-      "source": "2021 소화기계 오답률30 · 49page",
+      "source": "2021 소화기계 오답률30 · 49page / 2021 소화기계 풀이 464-466page",
       "mappingConfidence": "2021 풀이 강의 출처 직접 매칭",
       "officialPriorityApplied": true,
       "sourceOrdinal": 11,
       "legacyDisplayId": "2021 오답30 11번",
-      "globalNumber": 606
+      "globalNumber": 606,
+      "matchedOriginalNumber": 162,
+      "sourcePdfPages": [
+        464,
+        466
+      ]
     },
     {
       "id": "2021-wrong30-12",
       "displayId": "607번",
       "year": 2021,
       "sourceType": "오답30",
-      "originalNumber": null,
+      "originalNumber": 7,
       "question": "위에서 점막하 종양이 관찰되어 종양절제술이 시행되었다. 병리조직학적 검사에서 다음과 같은 소견을 나타내었다면 이 종양이 나타내는 분자유전학적 특징(1점)과 예후를 결정하는 가장 중요한 요소 두 가지(1점)는 무엇이겠는가?",
       "passage": "",
       "choices": [],
@@ -23513,12 +24304,17 @@ window.JBL_DATA = {
       "domain": "기초의학",
       "discipline": "병리학",
       "section": "상부위장관 병리",
-      "source": "2021 소화기계 오답률30 · 55page",
+      "source": "2021 소화기계 오답률30 · 55page / 2021 소화기계 풀이 18-20page",
       "mappingConfidence": "강의록·출제교수·문항 주제 재검토/높음",
       "officialPriorityApplied": true,
       "sourceOrdinal": 12,
       "legacyDisplayId": "2021 오답30 12번",
-      "globalNumber": 607
+      "globalNumber": 607,
+      "matchedOriginalNumber": 7,
+      "sourcePdfPages": [
+        18,
+        20
+      ]
     },
     {
       "id": "2021-wrong30-13",
@@ -26013,7 +26809,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 근위부: 윤상근 수축·종주근 이완 / 원위부: 윤상근 이완·종주근 수축",
-      "explanation": "정답: 근위부: 윤상근 수축·종주근 이완 / 원위부: 윤상근 이완·종주근 수축\n\n== 배경 지식 ==\n연동 운동(peristalsis)에서는 음식물 덩어리의 구강쪽에서 돌림근이 수축해 내강을 좁히고 세로근이 이완한다. 항문쪽에서는 돌림근이 이완하고 세로근이 수축해 수용 구간을 짧고 넓게 만든다. 이 협응이 음식물을 앞으로 민다.\n\n== 정답 선지 ==\n근위부는 윤상근 수축·종주근 이완, 원위부는 윤상근 이완·종주근 수축이다.\n\n== 출제 의도 ==\n연동 운동(peristalsis)을 단순한 한 방향 수축이 아니라 음식물 앞뒤 근육층의 협응으로 설명할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 근위부: 윤상근 수축·종주근 이완 / 원위부: 윤상근 이완·종주근 수축\n\n== 배경 지식 ==\n연동 운동(peristalsis)에서는 음식물 덩어리의 구강쪽에서 돌림근이 수축해 내강을 좁히고 세로근이 이완한다. 항문쪽에서는 돌림근이 이완하고 세로근이 수축해 수용 구간을 짧고 넓게 만든다. 이 협응이 음식물을 앞으로 민다.\n\n== 정답 선지 ==\n근위부는 윤상근 수축·종주근 이완, 원위부는 윤상근 이완·종주근 수축이다.\n\n== 출제 의도 ==\n연동 운동(peristalsis)을 단순한 한 방향 수축이 아니라 음식물 앞뒤 근육층의 협응으로 설명할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[4강#연동 운동(peristalsis)|연동 운동(peristalsis)]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_064_01.png"
       ],
@@ -26324,7 +27120,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · Lining mucosa는 비각질중층편평상피로 이루어진다.",
-      "explanation": "정답: 1번 · Lining mucosa는 비각질중층편평상피로 이루어진다.\n\n== 배경 지식 ==\n구강의 피개점막은 비각질중층편평상피이고, 저작점막은 이상각질 또는 각질중층편평상피이다. 홍순은 높은 진피유두와 풍부한 혈관이 특징이며 입술샘은 혼합샘이다.\n\n== 정답 선지 ==\n'''1번''' 피개점막은 비각질중층편평상피로 이루어진다.\n\n== 오답 선지 ==\n* '''2번''': 투명층은 두꺼운 피부의 표피층으로 일반 구강점막의 특징이 아니다.\n* '''3번''': 홍순에서는 진피유두가 퇴화한 것이 아니라 높게 발달한다.\n* '''4번''': 입술샘은 장액샘이 아니라 혼합샘이다.\n* '''5번''': 사기질은 구강외배엽 유래 사기질모세포가 형성하고, 신경능선 유래 세포는 상아질 형성에 관여한다.\n\n== 출제 의도 ==\n구강점막의 유형과 입술·치아 조직의 기원을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#구강|구강]]\n* [[1강#입술|입술]]\n* [[1강#치아|치아]]\n* [[2강#아랫입술|아랫입술 실습]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 1번 · Lining mucosa는 비각질중층편평상피로 이루어진다.\n\n== 배경 지식 ==\n구강의 피개점막은 비각질중층편평상피이고, 저작점막은 이상각질 또는 각질중층편평상피이다. 홍순은 높은 진피유두와 풍부한 혈관이 특징이며 입술샘은 혼합샘이다.\n\n== 정답 선지 ==\n'''1번''' 피개점막은 비각질중층편평상피로 이루어진다.\n\n== 오답 선지 ==\n* '''2번''': 투명층은 두꺼운 피부의 표피층으로 일반 구강점막의 특징이 아니다.\n* '''3번''': 홍순에서는 진피유두가 퇴화한 것이 아니라 높게 발달한다.\n* '''4번''': 입술샘은 장액샘이 아니라 혼합샘이다.\n* '''5번''': 사기질은 구강외배엽 유래 사기질모세포가 형성하고, 신경능선 유래 세포는 상아질 형성에 관여한다.\n\n== 출제 의도 ==\n구강점막의 유형과 입술·치아 조직의 기원을 구분한다.\n\n== WIKI 연결 ==\n* [[1강#구강|구강]]\n* [[1강#입술|입술]]\n* [[1강#치아|치아]]\n* [[2강#실습 1. 아랫입술|아랫입술 실습]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -26402,7 +27198,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · Mucus gland",
-      "explanation": "정답: 4번 · Mucus gland\n\n== 배경 지식 ==\n식도 점막은 비각질중층편평상피로 덮이고, 점막밑층에는 점액을 분비하는 고유식도샘이 있다. 샘의 분비물은 식도 표면을 윤활하고 보호한다.\n\n== 정답 선지 ==\n'''4번''' 사진의 4번 표지는 식도 점막밑층의 점액샘이다.\n\n== 오답 선지 ==\n* '''1번''': 표지는 샘이 존재하는 점막밑층 전체가 아니라 점액샘 자체를 가리킨다.\n* '''2번''': 정상 식도상피는 각질상피가 아니라 비각질중층편평상피이다.\n* '''3번''': Auerbach 신경얼기는 속돌림근층과 바깥세로근층 사이에 있다.\n* '''5번''': 표시된 구조는 근육다발이 아니라 샘꽈리이다.\n\n== 출제 의도 ==\n식도 전층 사진에서 상피, 점막밑샘, 근육층과 신경얼기를 구분한다.\n\n== WIKI 연결 ==\n* [[1강#식도|식도]]\n* [[2강#식도|식도 실습]]\n\n== 관련 J ==\n{{202}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 4번 · Mucus gland\n\n== 배경 지식 ==\n식도 점막은 비각질중층편평상피로 덮이고, 점막밑층에는 점액을 분비하는 고유식도샘이 있다. 샘의 분비물은 식도 표면을 윤활하고 보호한다.\n\n== 정답 선지 ==\n'''4번''' 사진의 4번 표지는 식도 점막밑층의 점액샘이다.\n\n== 오답 선지 ==\n* '''1번''': 표지는 샘이 존재하는 점막밑층 전체가 아니라 점액샘 자체를 가리킨다.\n* '''2번''': 정상 식도상피는 각질상피가 아니라 비각질중층편평상피이다.\n* '''3번''': Auerbach 신경얼기는 속돌림근층과 바깥세로근층 사이에 있다.\n* '''5번''': 표시된 구조는 근육다발이 아니라 샘꽈리이다.\n\n== 출제 의도 ==\n식도 전층 사진에서 상피, 점막밑샘, 근육층과 신경얼기를 구분한다.\n\n== WIKI 연결 ==\n* [[1강#식도|식도]]\n* [[2강#실습 3. 식도|식도 실습]]\n\n== 관련 J ==\n{{202}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_074_01.png"
       ],
@@ -26482,7 +27278,7 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답: 5번 · Goblet cell: ileum >> duodenum",
-      "explanation": "정답: 5번 · Goblet cell: ileum >> duodenum\n\n== 배경 지식 ==\n작은창자에서 술잔세포는 돌창자로 갈수록 증가한다. 돌림주름은 빈창자에서 가장 뚜렷하고 말단 돌창자에서 감소하며, Peyer 판은 돌창자, Brunner 샘은 샘창자에 특징적이다.\n\n== 정답 선지 ==\n'''5번''' 술잔세포는 샘창자보다 돌창자에서 더 많이 관찰된다.\n\n== 오답 선지 ==\n* '''1번''': 돌림주름은 돌창자보다 빈창자에서 더 발달한다.\n* '''2번''': Peyer 판은 샘창자보다 돌창자에서 발달한다.\n* '''3번''': Brunner 샘은 빈창자가 아니라 샘창자에 있다.\n* '''4번''': 중심암죽관은 샘창자보다 빈창자에서 더 발달한다.\n\n== 출제 의도 ==\n작은창자 각 부위의 상대적 구조 발달 정도를 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[2강#샘창자|샘창자 실습]]\n* [[2강#빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{203}} {{525}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 5번 · Goblet cell: ileum >> duodenum\n\n== 배경 지식 ==\n작은창자에서 술잔세포는 돌창자로 갈수록 증가한다. 돌림주름은 빈창자에서 가장 뚜렷하고 말단 돌창자에서 감소하며, Peyer 판은 돌창자, Brunner 샘은 샘창자에 특징적이다.\n\n== 정답 선지 ==\n'''5번''' 술잔세포는 샘창자보다 돌창자에서 더 많이 관찰된다.\n\n== 오답 선지 ==\n* '''1번''': 돌림주름은 돌창자보다 빈창자에서 더 발달한다.\n* '''2번''': Peyer 판은 샘창자보다 돌창자에서 발달한다.\n* '''3번''': Brunner 샘은 빈창자가 아니라 샘창자에 있다.\n* '''4번''': 중심암죽관은 샘창자보다 빈창자에서 더 발달한다.\n\n== 출제 의도 ==\n작은창자 각 부위의 상대적 구조 발달 정도를 비교한다.\n\n== WIKI 연결 ==\n* [[1강#샘창자·빈창자·돌창자 비교|작은창자 부위별 비교]]\n* [[2강#실습 5. 샘창자|샘창자 실습]]\n* [[2강#실습 6. 빈창자|빈창자 실습]]\n\n== 관련 J ==\n{{203}} {{525}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "이자경",
       "lectureIds": [
@@ -27388,7 +28184,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · endoderm",
-      "explanation": "정답: 3번 · endoderm\n\n== 배경 지식 ==\n원시창자의 내배엽은 소화관 상피와 간·이자 같은 부속샘의 실질을 만든다. 소화관의 결합조직, 민무늬근과 장막은 주로 내장쪽 중배엽에서 유래한다. 문항의 “digestive system”은 대표 발생배엽인 내배엽을 묻는다.\n\n== 정답 선지 ==\n③ Endoderm가 소화관 상피와 부속소화샘 실질의 주된 기원이다.\n\n== 오답 선지 ==\n* ① Ectoderm: 구강·항문 말단 일부 상피 등 제한된 부위에 기여한다.\n* ② Mesoderm: 근육, 결합조직, 혈관과 장막을 만든다.\n* ④ Coelom: 체강을 뜻하며 배엽이 아니다.\n* ⑤ Endoderm와 ectoderm 모두: 전체 소화계통의 대표 기원을 묻는 답으로는 부적절하다.\n\n== 출제 의도 ==\n소화관의 상피·샘 실질과 지지조직의 발생학적 기원을 구별하게 한다.\n\n== Wiki 연결 ==\n* [[3강#소화와 흡수의 개념|소화와 흡수의 개념]]\n\n== 검토 상태 ==\n오답률 30 57page 수록.",
+      "explanation": "정답: 3번 · endoderm\n\n== 배경 지식 ==\n원시창자의 내배엽은 소화관 상피와 간·이자 같은 부속샘의 실질을 만든다. 소화관의 결합조직, 민무늬근과 장막은 주로 내장쪽 중배엽에서 유래한다. 문항의 “digestive system”은 대표 발생배엽인 내배엽을 묻는다.\n\n== 정답 선지 ==\n③ Endoderm가 소화관 상피와 부속소화샘 실질의 주된 기원이다.\n\n== 오답 선지 ==\n* ① Ectoderm: 구강·항문 말단 일부 상피 등 제한된 부위에 기여한다.\n* ② Mesoderm: 근육, 결합조직, 혈관과 장막을 만든다.\n* ④ Coelom: 체강을 뜻하며 배엽이 아니다.\n* ⑤ Endoderm와 ectoderm 모두: 전체 소화계통의 대표 기원을 묻는 답으로는 부적절하다.\n\n== 출제 의도 ==\n소화관의 상피·샘 실질과 지지조직의 발생학적 기원을 구별하게 한다.\n\n== Wiki 연결 ==\n* [[3강#소화와 흡수의 개념|소화와 흡수의 개념]]\n\n== Wiki 근거 범위 ==\n현재 3강 Wiki의 총론에 해당하는 주제이지만, 발생배엽과 생물별 소화 방식에 대한 직접 설명은 본문에 충분히 수록되지 않았다. 위의 발생학 보충 설명을 해당 Wiki에 이미 적혀 있는 내용으로 오인하지 않는다.\n\n== 검토 상태 ==\n오답률 30 57page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -27466,7 +28262,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · Contraction in the pylorus is stimulated when food pass through into the duodenum.",
-      "explanation": "정답: 3번 · Contraction in the pylorus is stimulated when food pass through into the duodenum.\n\n== 배경 지식 ==\n위 근위부는 저장과 수용성 이완, 날문방은 강한 혼합·추진 수축, 유문은 긴장성 저항을 담당한다. 십이지장에 유미즙이 도달하면 산·지방·삼투압 등에 대한 피드백이 위 배출을 억제한다.\n\n== 정답 선지 ==\n③ 음식이 십이지장으로 들어가는 것이 유문을 단순히 자극해 더 배출시킨다는 설명은 가장 부적절하다. 십이지장 피드백은 유문 저항을 높이고 위 배출을 늦춘다.\n\n== 오답 선지 ==\n* ① 위바닥부는 날문방보다 근육 수축이 약하고 저장에 유리하다.\n* ② 유문은 수축하여 유미즙 배출을 제한한다.\n* ④ 날문방에서 음식과 위액이 섞인다.\n* ⑤ 위 안의 음식은 날문방의 강한 수축을 촉진한다.\n\n== 출제 의도 ==\n위 부위별 기능과 십이지장에 의한 음성 되먹임을 평가한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답률 30 58page 수록.",
+      "explanation": "정답: 3번 · Contraction in the pylorus is stimulated when food pass through into the duodenum.\n\n== 배경 지식 ==\n[[4강#저장과 수용성 이완|위 근위부]]는 저장, antrum은 혼합·추진, pylorus는 배출 저항을 담당한다. 십이지장의 산·지방·고삼투성 내용물은 위 배출을 늦춘다.\n\n== 정답 선지 ==\n'''공식 오답률30 58쪽의 정답은 ③'''이므로 출제 기준은 유지한다. 다만 선지는 ‘십이지장으로 음식이 들어오면 유문 수축이 자극된다’는 뜻이며 ‘배출을 촉진한다’는 뜻이 아니다.[* 십이지장 산·지방 자극은 유문 긴장도 또는 국소 압력파를 높이면서 위 배출을 지연시킬 수 있다. 따라서 현재 강의의 십이지장 피드백과 실제 생리만으로 ③을 명확히 거짓이라고 입증하기 어렵다. 출제 당시 생략된 조건 또는 문구 오류 가능성을 남기며, 공식 채점답과 생리학적 설명을 구분한다.]\n\n== 오답 선지 ==\n* ① Fundus는 antrum보다 근육이 상대적으로 적고 저장·확장에 적합하다.\n* ② Pylorus contraction은 chyme의 배출을 제한한다.\n* ④ Antrum에서 음식과 위액이 섞인다.\n* ⑤ 위내 음식물·팽창은 antral pump를 자극한다.\n\n== 출제 의도 ==\n위 부위별 역할과 십이지장 음성피드백을 구분한다. Pyloric contraction과 gastric emptying을 같은 방향의 현상으로 해석하지 않는다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n* [[4강#샘창자 신경반사|십이지장 피드백]]\n\n== 검토 상태 ==\n오답률 30 58page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -27543,7 +28339,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · It is a continuous layer which covers external surface of digestive organ.",
-      "explanation": "정답: 1번 · It is a continuous layer which covers external surface of digestive organ.\n\n== 배경 지식 ==\n창자간막은 두 겹의 복막으로 장기를 뒤배벽에 매달며 혈관·림프관·신경과 지방의 통로가 된다. 장기 외부 표면을 직접 연속해서 덮는 층은 내장쪽복막, 즉 장막이다. [[3강#복막과 창자간막|복막과 창자간막]]을 참고한다.\n\n== 정답 선지 ==\n① 장기의 외부 표면을 덮는 연속층이라는 설명은 창자간막이 아니라 내장쪽복막에 해당하므로 가장 부적절하다.\n\n== 오답 선지 ==\n* ② 창자간막은 장기를 제 위치에 지지한다.\n* ③ 지방 저장 장소가 될 수 있다.\n* ④ 대부분의 창자간막은 등쪽 창자간막에서 유래한다.\n* ⑤ 일부 복막 주름은 ligament라는 이름을 사용한다.\n\n== 출제 의도 ==\n장막과 창자간막을 형태와 기능으로 구별하게 한다.\n\n== Wiki 연결 ==\n* [[3강#지질 소화|지질 소화]]\n\n== 검토 상태 ==\n오답률 30 59page 수록.",
+      "explanation": "정답: 1번 · It is a continuous layer which covers external surface of digestive organ.\n\n== 배경 지식 ==\n창자간막은 두 겹의 복막으로 장기를 뒤배벽에 매달며 혈관·림프관·신경과 지방의 통로가 된다. 장기 외부 표면을 직접 연속해서 덮는 층은 내장쪽복막, 즉 장막이다. [[3강#복막과 창자간막|복막과 창자간막]]을 참고한다.\n\n== 정답 선지 ==\n① 장기의 외부 표면을 덮는 연속층이라는 설명은 창자간막이 아니라 내장쪽복막에 해당하므로 가장 부적절하다.\n\n== 오답 선지 ==\n* ② 창자간막은 장기를 제 위치에 지지한다.\n* ③ 지방 저장 장소가 될 수 있다.\n* ④ 대부분의 창자간막은 등쪽 창자간막에서 유래한다.\n* ⑤ 일부 복막 주름은 ligament라는 이름을 사용한다.\n\n== 출제 의도 ==\n장막과 창자간막을 형태와 기능으로 구별하게 한다.\n\n== Wiki 연결 ==\n* [[3강#복막과 창자간막|복막과 창자간막]]\n\n== 검토 상태 ==\n오답률 30 59page 수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -27605,7 +28401,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 윤상근층과 종주근층 사이",
-      "explanation": "정답: 윤상근층과 종주근층 사이\n\n== 배경 지식 ==\n소화관 근육층은 일반적으로 안쪽 윤상근층과 바깥쪽 종주근층으로 구성된다. Auerbach 근육층신경얼기는 두 근육층 사이에 위치하고, Meissner 점막밑신경얼기는 점막밑층에 있다. [[4강#근육층신경얼기|근육층신경얼기]]을 참고한다.\n\n== 정답 선지 ==\nMyenteric plexus는 윤상근층과 종주근층 사이에 위치한다.\n\n== 출제 의도 ==\n근육층신경얼기와 점막밑신경얼기의 해부학적 위치를 구별하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위 배출의 조절|위 배출의 조절]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 윤상근층과 종주근층 사이\n\n== 배경 지식 ==\n소화관 근육층은 일반적으로 안쪽 윤상근층과 바깥쪽 종주근층으로 구성된다. Auerbach 근육층신경얼기는 두 근육층 사이에 위치하고, Meissner 점막밑신경얼기는 점막밑층에 있다. [[4강#근육층신경얼기|근육층신경얼기]]을 참고한다.\n\n== 정답 선지 ==\nMyenteric plexus는 윤상근층과 종주근층 사이에 위치한다.\n\n== 출제 의도 ==\n근육층신경얼기와 점막밑신경얼기의 해부학적 위치를 구별하게 한다.\n\n== Wiki 연결 ==\n* [[4강#근육층신경얼기|근육층신경얼기]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -27784,7 +28580,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · gall bladder",
-      "explanation": "정답: 3번 · gall bladder\n\n== 배경 지식 ==\n위, 소장, 침샘과 췌장은 각각 단백질·탄수화물·지방 등의 소화에 관여하는 효소를 분비한다. 담낭은 간에서 만들어진 담즙을 저장·농축하고 십이지장으로 배출하지만 소화효소를 만들지는 않는다. [[3강#소화계통의 구성과 기능|소화계통의 구성과 기능]]을 참고한다.\n\n== 정답 선지 ==\n③ Gall bladder는 담즙을 저장하고 배출할 뿐 소화효소를 분비하지 않으므로 정답이다.\n\n== 오답 선지 ==\n* ① 위: Pepsinogen과 gastric lipase를 분비한다.\n* ② 소장: Brush-border peptidase와 disaccharidase 등의 효소가 존재한다.\n* ④ 침샘: Salivary amylase와 lingual lipase의 분비에 관여한다.\n* ⑤ 췌장: Amylase, lipase와 여러 protease 효소원을 분비한다.\n\n== 출제 의도 ==\n소화효소를 직접 분비하는 기관과 담즙을 저장하는 담낭의 역할을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[3강#침과 침샘|침과 침샘]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 3번 · gall bladder\n\n== 배경 지식 ==\n위, 소장, 침샘과 췌장은 각각 단백질·탄수화물·지방 등의 소화에 관여하는 효소를 분비한다. 담낭은 간에서 만들어진 담즙을 저장·농축하고 십이지장으로 배출하지만 소화효소를 만들지는 않는다. [[3강#소화계통의 구성과 기능|소화계통의 구성과 기능]]을 참고한다.\n\n== 정답 선지 ==\n③ Gall bladder는 담즙을 저장하고 배출할 뿐 소화효소를 분비하지 않으므로 정답이다.\n\n== 오답 선지 ==\n* ① 위: Pepsinogen과 gastric lipase를 분비한다.\n* ② 소장: Brush-border peptidase와 disaccharidase 등의 효소가 존재한다.\n* ④ 침샘: Salivary amylase와 lingual lipase의 분비에 관여한다.\n* ⑤ 췌장: Amylase, lipase와 여러 protease 효소원을 분비한다.\n\n== 출제 의도 ==\n소화효소를 직접 분비하는 기관과 담즙을 저장하는 담낭의 역할을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[3강#화학적 소화|화학적 소화]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "한인옥",
       "lectureIds": [
@@ -29635,7 +30431,7 @@ window.JBL_DATA = {
       "sourceType": "오답30",
       "originalNumber": null,
       "question": "Hiatal hernia 비교표의 3번 빈칸에 들어갈 흔한 합병증을 모두 고르시오.",
-      "passage": "",
+      "passage": "원문 비교표\n명칭: Sliding hernia / Paraesophageal hernia\n흔한 부작용: Sliding hernia 열의 3번 빈칸",
       "choices": [
         "Reflux esophagitis",
         "Strangulation",
@@ -29649,7 +30445,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 2·3·4번 · Strangulation / Obstruction / Bleeding",
-      "explanation": "정답: 2, 3, 4번 · 교액, 폐색, 출혈\n\n== 배경 지식 ==\n식도곁형(rolling, paraesophageal) 열공탈장은 위식도접합부가 제 위치에 남은 채 위저부가 흉강으로 탈출한다. 역류보다는 탈출한 위의 압박·염전·혈류장애가 문제다.\n\n== 정답 선지 ==\n* '''2번 교액''': 감돈된 위의 혈류가 차단될 수 있다.\n* '''3번 폐색''': 탈출·염전으로 위 내용물 통과가 막힐 수 있다.\n* '''4번 출혈''': 점막 허혈이나 마찰성 손상으로 출혈할 수 있다.\n\n== 오답 선지 ==\n* '''1번 역류성 식도염''': 위식도접합부가 함께 이동하는 미끄럼형에서 더 전형적인 합병증이다.\n\n== 출제 의도 ==\n식도곁형 열공탈장의 기계적·허혈성 합병증을 미끄럼형의 역류 합병증과 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n\n== 관련 J ==\n{{735}} {{770}} {{26}}\n\n== 검토 상태 ==\n오답률 30 38page 수록.",
+      "explanation": "정답: 2·3·4번 · Strangulation / Obstruction / Bleeding\n\n== 배경 지식 ==\n[[10강#식도열공탈장 · Hiatal hernia|Sliding hernia]]는 gastroesophageal junction이 위로 이동하여 reflux esophagitis가 전형적이다. Paraesophageal hernia는 junction이 비교적 제 위치에 남고 위 일부가 옆으로 탈출하여 incarceration·strangulation·obstruction이 문제가 된다. 출혈은 두 형태 모두에서 생길 수 있다.\n\n== 정답 선지 ==\n공식 오답률30 38쪽의 정답 표기는 '''②·③·④'''이다. 그러나 같은 페이지의 빈칸 3은 '''Sliding hernia 열'''에 있다. 공식 정답은 유지하지만 이를 paraesophageal 열이었다고 바꾸어 해설하지 않는다.\n\n== 오답 선지 ==\n* ① Reflux esophagitis: sliding type에 더 전형적이다.\n* ② Strangulation·③ Obstruction: paraesophageal type에서 더 중요한 기계적·혈류장애 합병증이다.\n* ④ Bleeding: 역류성 점막 손상, 열공 부위의 마찰 또는 허혈 등으로 두 유형 모두에서 가능하다.\n\n== 출제 의도 ==\n탈장의 해부학적 형태와 합병증을 연결한다. 공식 자료 자체의 표 위치와 정답을 별도로 대조해야 한다.\n\n== 문항 오류 가능성 ==\n공식 원문의 두 페이지에서 빈칸이 위치한 열과 제시된 정답 조합이 일반적인 강의 설명과 반대로 대응한다.[* 표의 두 열 또는 공식 정답이 서로 뒤바뀌었을 가능성이 있다. 공식 정답을 우선 보존하되 일반 개념은 sliding–reflux, paraesophageal–strangulation/obstruction으로 공부한다. {{769}}와 {{770}}은 함께 확인한다.]\n\n== Wiki 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|열공탈장 비교]]\n\n== 검토 상태 ==\n오답률 30 38page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -29675,7 +30471,7 @@ window.JBL_DATA = {
       "sourceType": "오답30",
       "originalNumber": null,
       "question": "Hiatal hernia 비교표의 4번 빈칸에 들어갈 흔한 합병증을 모두 고르시오.",
-      "passage": "",
+      "passage": "원문 비교표\n명칭: Sliding hernia / Paraesophageal hernia\n흔한 부작용: Paraesophageal hernia 열의 4번 빈칸",
       "choices": [
         "Reflux esophagitis",
         "Strangulation",
@@ -29688,7 +30484,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 1·4번 · Reflux esophagitis / Bleeding",
-      "explanation": "정답: 1, 4번 · 역류성 식도염, 출혈\n\n== 배경 지식 ==\n미끄럼형 식도열공탈장에서는 위식도접합부가 흉강으로 이동해 역류 방지 장벽이 약해진다. 따라서 위식도역류와 그에 따른 식도염, 미란·궤양성 출혈이 주요 합병증이다.\n\n== 정답 선지 ==\n* '''1번 역류성 식도염''': 가장 대표적인 합병증이다.\n* '''4번 출혈''': 역류에 의한 미란·궤양 또는 열공 부위 점막 손상으로 발생할 수 있다.\n\n== 오답 선지 ==\n* '''2번 교액''': 식도곁형에서 더 중요한 합병증이다.\n* '''3번 폐색''': 위 일부가 감돈되는 식도곁형에서 더 전형적이다.\n\n== 출제 의도 ==\n미끄럼형은 역류, 식도곁형은 감돈·폐색이라는 합병증 차이를 묻는다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n\n== 관련 J ==\n{{735}} {{769}} {{26}}\n\n== 검토 상태 ==\n오답률 30 39page 수록.",
+      "explanation": "정답: 1·4번 · Reflux esophagitis / Bleeding\n\n== 배경 지식 ==\n[[10강#식도열공탈장 · Hiatal hernia|Sliding hernia]]는 gastroesophageal junction이 위로 이동하여 reflux esophagitis가 전형적이다. Paraesophageal hernia는 junction이 비교적 제 위치에 남고 위 일부가 옆으로 탈출하여 incarceration·strangulation·obstruction이 문제가 된다. 출혈은 두 형태 모두에서 생길 수 있다.\n\n== 정답 선지 ==\n공식 오답률30 39쪽의 정답 표기는 '''①·④'''이다. 그러나 같은 페이지의 빈칸 4는 '''Paraesophageal hernia 열'''에 있다. 공식 정답은 유지하지만 이를 sliding 열이었다고 바꾸어 해설하지 않는다.\n\n== 오답 선지 ==\n* ① Reflux esophagitis: sliding type에 더 전형적이다.\n* ② Strangulation·③ Obstruction: paraesophageal type에서 더 중요한 기계적·혈류장애 합병증이다.\n* ④ Bleeding: 역류성 점막 손상, 열공 부위의 마찰 또는 허혈 등으로 두 유형 모두에서 가능하다.\n\n== 출제 의도 ==\n탈장의 해부학적 형태와 합병증을 연결한다. 공식 자료 자체의 표 위치와 정답을 별도로 대조해야 한다.\n\n== 문항 오류 가능성 ==\n공식 원문의 두 페이지에서 빈칸이 위치한 열과 제시된 정답 조합이 일반적인 강의 설명과 반대로 대응한다.[* 표의 두 열 또는 공식 정답이 서로 뒤바뀌었을 가능성이 있다. 공식 정답을 우선 보존하되 일반 개념은 sliding–reflux, paraesophageal–strangulation/obstruction으로 공부한다. {{769}}와 {{770}}은 함께 확인한다.]\n\n== Wiki 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|열공탈장 비교]]\n\n== 검토 상태 ==\n오답률 30 39page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -30057,7 +30853,1010 @@ window.JBL_DATA = {
       "sourceOrdinal": 24,
       "legacyDisplayId": "2020 오답30 24번",
       "globalNumber": 779
+    },
+    {
+      "id": "2021-restored-22",
+      "displayId": "781번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 22,
+      "sourceOrdinal": 22,
+      "legacyDisplayId": "2021 22번",
+      "globalNumber": 781,
+      "question": "4세 남아가 내원 당일 새벽부터 시작된 혈변을 주소로 내원하였다. 복통, 설사, 구토 등의 증상은 없었다. 특별한 과거력은 없고 최근 아픈 적도 없었다. 대변은 딱딱하지 않았으며 평소 변비도 없었다. 혈압 90/50 mmHg, 맥박 150회/분, 호흡 25회/분, 체온 36.8°C였다. 복부 압통과 반발압통은 없었고 덩이는 만져지지 않았다. 검사는?",
+      "passage": "혈색소 7.3 g/dL, 백혈구 6,320/mm³ (호중구 62%, 림프구 29%, 단핵구 6%, 호산구 3%), 혈소판 251,000/mm³\nCRP 0.05 mg/dL, ESR 7 mm/h",
+      "choices": [
+        "메켈 스캔",
+        "위내시경",
+        "직장내시경",
+        "복부 초음파",
+        "회음부 초음파"
+      ],
+      "images": [],
+      "legacyProfessor": "강빈",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 63-65page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        20
+      ],
+      "lectureId": 20,
+      "lectureTitle": "소아 소화기 질환 (I)",
+      "professor": "백남선",
+      "domain": "임상의학",
+      "discipline": "소아청소년과",
+      "section": "소아 소화기",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "원문 풀이 정답: 1번 · 메켈 스캔 (독립 검토 보류)",
+      "sourceAnswer": "1번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        63,
+        65
+      ]
+    },
+    {
+      "id": "2021-restored-23",
+      "displayId": "782번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 23,
+      "sourceOrdinal": 23,
+      "legacyDisplayId": "2021 23번",
+      "globalNumber": 782,
+      "question": "4세 남아가 변에 피가 소량씩 묻어나오는 것을 주소로 내원하였다. 복통, 설사, 구토 등의 증상은 없었다. 특별한 과거력은 없고 최근 아픈 적도 없었다. 대변은 딱딱하지 않았으며 평소 변비도 없었다. 혈압 90/50 mmHg, 맥박 105회/분, 호흡 25회/분, 체온 36.7°C였다. 복부 압통과 반발압통은 없었고 덩이는 만져지지 않았다. 검사는?",
+      "passage": "혈색소 11.7 g/dL, 백혈구 6,530/mm³ (호중구 65%, 림프구 25%, 단핵구 6%, 호산구 3%), 혈소판 212,000/mm³\nCRP 0.04 mg/dL, ESR 3 mm/h",
+      "choices": [
+        "메켈 스캔",
+        "위내시경",
+        "직장내시경",
+        "복부 초음파",
+        "회음부 초음파"
+      ],
+      "images": [],
+      "legacyProfessor": "강빈",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 66-68page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        20
+      ],
+      "lectureId": 20,
+      "lectureTitle": "소아 소화기 질환 (I)",
+      "professor": "백남선",
+      "domain": "임상의학",
+      "discipline": "소아청소년과",
+      "section": "소아 소화기",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "원문 풀이 정답: 3번 · 직장내시경 (독립 검토 보류)",
+      "sourceAnswer": "3번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        66,
+        68
+      ]
+    },
+    {
+      "id": "2021-restored-44",
+      "displayId": "783번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 44,
+      "sourceOrdinal": 44,
+      "legacyDisplayId": "2021 44번",
+      "globalNumber": 783,
+      "question": "다음은 소화성 궤양에 대한 설명이다. 이 중 틀린 말을 한 가지만 고르시오.",
+      "passage": "",
+      "choices": [
+        "속쓰림, 소화불량 등 증상이 있지만 대부분 무증상이다.",
+        "점막근층이 파괴되는 경우를 궤양이라고 하고, 이 층이 보존되면 미란이다.",
+        "COX2 inhibitor는 prostaglandin 방해를 최소화하여 소화성 궤양 예방에 도움을 준다.",
+        "흡연을 하면 소화성 궤양 발생 위험도가 증가한다.",
+        "헬리코박터균 발병률이 낮은 나라에서는 소화성 궤양 발병률이 높다."
+      ],
+      "images": [],
+      "legacyProfessor": "차보람",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 127-129page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        31
+      ],
+      "lectureId": 31,
+      "lectureTitle": "위염 및 소화성 궤양",
+      "professor": "차보람",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "상부위장관",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · 헬리코박터균 발병률이 낮은 나라에서는 소화성 궤양 발병률이 높다. (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        127,
+        129
+      ]
+    },
+    {
+      "id": "2021-restored-46",
+      "displayId": "784번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 46,
+      "sourceOrdinal": 46,
+      "legacyDisplayId": "2021 46번",
+      "globalNumber": 784,
+      "question": "58세 남자가 2개월 이상 지속된 소화불량으로 내원하였다. 약물 치료를 받으면 호전되었다가 반복되었다. 내시경 검사에서 헬리코박터균에 의한 만성 위축성 위염이 확인되어 제균 치료를 우선 시행하기로 하였다. 제균 치료용 항생제 중 일반적으로 사용하지 않는 것은?",
+      "passage": "",
+      "choices": [
+        "Tetracycline",
+        "Metronidazole",
+        "Amoxicillin",
+        "Nitroimidazole",
+        "Vancomycin"
+      ],
+      "images": [],
+      "legacyProfessor": "차보람",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 133-135page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        31
+      ],
+      "lectureId": 31,
+      "lectureTitle": "위염 및 소화성 궤양",
+      "professor": "차보람",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "상부위장관",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · Vancomycin (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        133,
+        135
+      ]
+    },
+    {
+      "id": "2021-restored-63",
+      "displayId": "785번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 63,
+      "sourceOrdinal": 63,
+      "legacyDisplayId": "2021 63번",
+      "globalNumber": 785,
+      "question": "위암에 대해 옳지 않은 것은?",
+      "passage": "",
+      "choices": [
+        "위암은 상부위장관조영술을 통해 진단할 수 있다.",
+        "종양표지자는 장기에 대한 특이도는 낮으나 특정 암에 대한 특이도는 높다.",
+        "조기위암은 림프절 전이 없이 암세포가 점막 또는 점막하층에 국한되어 있다.",
+        "진행위암은 암이 근육층 이상을 침범한 것이다."
+      ],
+      "images": [],
+      "legacyProfessor": "차보람",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 182-184page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        36
+      ],
+      "lectureId": 36,
+      "lectureTitle": "위 종양 (I) 원인, 빈도, 진단, 항암 화학요법",
+      "professor": "차보람",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "상부위장관",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "원문 풀이 정답: 3번 · 조기위암은 림프절 전이 없이 암세포가 점막 또는 점막하층에 국한되어 있다. (독립 검토 보류)",
+      "sourceAnswer": "3번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        182,
+        184
+      ]
+    },
+    {
+      "id": "2021-restored-65",
+      "displayId": "786번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 65,
+      "sourceOrdinal": 65,
+      "legacyDisplayId": "2021 65번",
+      "globalNumber": 786,
+      "question": "급성 복부 통증으로 내원한 환자의 초음파검사와 CT 소견이다. 다음 중 옳은 진단은?",
+      "passage": "",
+      "choices": [
+        "Acute appendicitis with periappendiceal abscess",
+        "Bowel perforation with diverticulitis",
+        "Mechanical bowel obstruction with peritoneal adhesion",
+        "Crohn’s disease with longitudinal ulceration and fistula",
+        "Small bowel ischemia with mesenteric arterial embolism"
+      ],
+      "images": [
+        "2021_소화기_문항별_사진/2021_065_01.jpg",
+        "2021_소화기_문항별_사진/2021_065_02.jpg"
+      ],
+      "legacyProfessor": "김미영",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 188-190page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        19
+      ],
+      "lectureId": 19,
+      "lectureTitle": "영상의학",
+      "professor": "김미영",
+      "domain": "임상의학",
+      "discipline": "진단 치료 지원 분과",
+      "section": "영상의학",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "원문 풀이 정답: 3번 · Mechanical bowel obstruction with peritoneal adhesion (독립 검토 보류)",
+      "sourceAnswer": "3번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        188,
+        190
+      ]
+    },
+    {
+      "id": "2021-restored-79",
+      "displayId": "787번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 79,
+      "sourceOrdinal": 79,
+      "legacyDisplayId": "2021 79번",
+      "globalNumber": 787,
+      "question": "Phenylpiperidine 계열의 중추신경계 활성 opioid 약물로 장수축을 늦춤으로써 설사 치료를 위해 아트로핀과 병용되는 약물은?",
+      "passage": "",
+      "choices": [
+        "Methylcellulose",
+        "Pectin",
+        "Senna",
+        "Diphenoxylate",
+        "Somatostatin"
+      ],
+      "images": [],
+      "legacyProfessor": "김채균",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 227-229page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        42
+      ],
+      "lectureId": 42,
+      "lectureTitle": "설사, 변비, 연동장애의 약물치료",
+      "professor": "김채균",
+      "domain": "기초의학",
+      "discipline": "약리학",
+      "section": "약리학",
+      "answerIndex": 4,
+      "answerIndices": [
+        4
+      ],
+      "answerLabel": "원문 풀이 정답: 4번 · Diphenoxylate (독립 검토 보류)",
+      "sourceAnswer": "4번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        227,
+        229
+      ]
+    },
+    {
+      "id": "2021-restored-82",
+      "displayId": "788번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 82,
+      "sourceOrdinal": 82,
+      "legacyDisplayId": "2021 82번",
+      "globalNumber": 788,
+      "question": "정맥성 출혈의 일차적 예방에 사용되는 약물은?",
+      "passage": "",
+      "choices": [
+        "Isosorbide dinitrate",
+        "Nadolol",
+        "Spironolactone",
+        "Lactulose",
+        "Amiloride"
+      ],
+      "images": [],
+      "legacyProfessor": "김채균",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 236-238page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        58
+      ],
+      "lectureId": 58,
+      "lectureTitle": "간 담관계의 치료약물",
+      "professor": "김채균",
+      "domain": "기초의학",
+      "discipline": "약리학",
+      "section": "약리학",
+      "answerIndex": 2,
+      "answerIndices": [
+        2
+      ],
+      "answerLabel": "원문 풀이 정답: 2번 · Nadolol (독립 검토 보류)",
+      "sourceAnswer": "2번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        236,
+        238
+      ]
+    },
+    {
+      "id": "2021-restored-101",
+      "displayId": "789번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 101,
+      "sourceOrdinal": 101,
+      "legacyDisplayId": "2021 101번",
+      "globalNumber": 789,
+      "question": "64세 여자 환자가 명치 부위 통증과 식후 더부룩함을 주소로 내원하였다. 증상은 4년 전부터 발생하였으며 한 달에 수일간 고통을 받고 있고 지속적이다. 체중 감소는 없었지만 증상이 호전되지 않고 약물 치료에도 호전과 악화가 반복된다고 한다. 신체검진에서 특이점이 확인되지 않았고 마지막 위내시경은 50세에 위 대장내시경을 모두 시행한 후로 지금까지 시행하지 않았다고 한다. 다음 중 이런 환자에 대한 접근으로 옳은 것을 고르시오.",
+      "passage": "",
+      "choices": [
+        "위내시경 검사는 약물 치료 후 반응하지 않는 경우 고려한다.",
+        "위염이 확인되지 않으면 치료가 필요하지 않다.",
+        "H. pylori 감염이 확인되더라도 60세가 넘었으므로 치료할 필요 없다.",
+        "내시경을 시행하여 결과가 정상이라도 증상에 맞추어 치료할 필요가 있다.",
+        "4년이나 지속되었지만 64세이므로 환자의 연령은 alarm sign에 해당한다."
+      ],
+      "images": [],
+      "legacyProfessor": "신종범",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 290-292page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        32
+      ],
+      "lectureId": 32,
+      "lectureTitle": "기능성 소화불량증",
+      "professor": "차보람",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "상부위장관",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 검토 보류",
+      "sourceAnswer": "4번 표기. 5번도 맞을 수 있다는 원문 복원자의 이견이 있음.",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "reconstructionIssue": "4번과 5번이 동시에 성립할 수 있는 문항. 5번의 연령·alarm sign 표현을 원문 그대로 보존하고 정답 확정은 보류.",
+      "sourcePdfPages": [
+        290,
+        292
+      ]
+    },
+    {
+      "id": "2021-restored-103",
+      "displayId": "790번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 103,
+      "sourceOrdinal": 103,
+      "legacyDisplayId": "2021 103번",
+      "globalNumber": 790,
+      "question": "다음 liver cell adenoma에 관한 설명 중 맞는 것은?",
+      "passage": "",
+      "choices": [
+        "노년기 여성에 호발한다.",
+        "남녀에서 발생 비율이 거의 비슷하다.",
+        "Hemorrhage나 necrosis를 잘 유발한다.",
+        "Malignant change는 잘 하지 않는다.",
+        "양성질환이므로 수술하지 않고 observation한다."
+      ],
+      "images": [],
+      "legacyProfessor": "미확인",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 296-298page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        17
+      ],
+      "lectureId": 17,
+      "lectureTitle": "간질환, 담도, 췌장, 횡경막 질환",
+      "professor": "김준미",
+      "domain": "기초의학",
+      "discipline": "병리학",
+      "section": "간 담 췌 병리",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 후보: 3번 · 4번 표현에 이견 가능 (해설 참고)",
+      "sourceAnswer": "3번",
+      "explanation": "정답 후보: 3번 · Hemorrhage나 necrosis를 잘 유발한다. (4번 표현의 모호성에 주의)\n\n== 배경 지식 ==\n[[17강#Hepatocellular adenoma · HCA|HCA]]는 성숙한 간세포를 닮은 세포의 양성 종양으로, 20–40세 여성과 OCP 사용이 대표적인 배경이다. 양성이라는 조직학적 분류가 '''출혈·파열 및 아형별 malignant transformation 위험이 없다'''는 뜻은 아니다.\n\n== 정답 선지 ==\n③ HCA는 출혈과 파열이 중요한 합병증이며 종양 안에 hemorrhage 및 necrosis가 동반될 수 있다. 강의에서 양성 간세포성 병변을 구분할 때 강조하는 특성과 가장 직접적으로 연결되는 선택지이다.\n\n== 오답 선지 ==\n* ① 전형적인 환자군은 노년기보다 젊은 성인 여성이다.\n* ② 전형적인 HCA 전체는 여성 우세이다. 성별 분포와 위험도는 아형에 따라 달라질 수 있다.\n* ④ '잘 하지 않는다'를 '전체적으로 빈도가 낮다'는 뜻으로 읽으면 맞는 진술이 될 수 있다. 다만 [[17강#β-catenin-activated HCA|β-catenin-activated HCA]] 등에서는 malignant transformation 위험이 중요하므로, 모든 HCA에 악성화 위험이 없다는 의미로는 틀리다.\n* ⑤ 양성이라는 이유만으로 모든 환자를 observation하는 것은 아니다. 성별, 크기, 성장, 출혈 및 분자아형 등을 바탕으로 절제를 고려한다.\n\n== 문항 오류 가능성 ==\n④의 표현이 절대적인 '악성화하지 않는다'가 아니라 '''잘 하지 않는다'''이므로 ③만 유일한 정답이라고 단정하기 어렵다. 원문 선지를 바꾸지 않고 ③을 강의상 가장 직접적인 후보로 제시하며, 단일 정답의 엄밀성은 검토가 필요하다. 출제교수도 원문에 김준미와 안승익이 함께 표기되어 확정하지 않았다.\n\n== 출제 의도 ==\nHCA의 호발 배경, 출혈·파열 위험, 아형별 악성화 위험을 이해하고 '양성=항상 관찰'로 단순화하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[17강#Hepatocellular adenoma · HCA|HCA]]\n* [[17강#β-catenin-activated HCA|β-catenin-activated HCA]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "reconstructionIssue": "머리말은 김준미(안승익), 풀이에는 안승익 출제 추정이라고 적혀 있어 출제교수 확정 불가. 4번의 '잘 하지 않는다'는 저위험도를 의미할 수 있어 단일 정답의 엄밀성에 주의.",
+      "sourcePdfPages": [
+        296,
+        298
+      ]
+    },
+    {
+      "id": "2021-restored-105",
+      "displayId": "791번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 105,
+      "sourceOrdinal": 105,
+      "legacyDisplayId": "2021 105번",
+      "globalNumber": 791,
+      "question": "Hepatocellular carcinoma에서 예후가 나쁜 factor가 아닌 것은?",
+      "passage": "",
+      "choices": [
+        "Multiple tumor",
+        "Increased AFP (α-fetoprotein)",
+        "Portal vein invasion",
+        "Poorly differentiated cell",
+        "Advanced cirrhosis"
+      ],
+      "images": [],
+      "legacyProfessor": "안승익",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 302-304page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        54
+      ],
+      "lectureId": 54,
+      "lectureTitle": "간의 종양",
+      "professor": "김경덕",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": null,
+      "answerIndices": [],
+      "answerLabel": "정답 검토 보류",
+      "sourceAnswer": "4번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "reconstructionIssue": "원문 풀이가 poor differentiation을 나쁜 예후인자에서 배제하지만 다른 선지들과 함께 불량 예후와 관련될 수 있어 문항·정답 검토 필요. 원문 정답을 자동 채점에 적용하지 않음.",
+      "sourcePdfPages": [
+        302,
+        304
+      ]
+    },
+    {
+      "id": "2021-restored-107",
+      "displayId": "792번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 107,
+      "sourceOrdinal": 107,
+      "legacyDisplayId": "2021 107번",
+      "globalNumber": 792,
+      "question": "매일 소주 1병을 마시는 41세 여자 환자가 황달과 복부 불편감을 주소로 내원하였다. 내원하여 시행한 혈액검사가 다음과 같을 때 다음 환자의 치료로 적절한 것은?",
+      "passage": "Hgb 10.1 g/dL, WBC 8,400/μL, PLT 150,000/μL\nTotal bilirubin 12 mg/dL, direct bilirubin 9 mg/dL, AST/ALT 280/150 IU/L\nPT 20초 (정상 12초), CTP score 9, MDF score 37.5",
+      "choices": [
+        "경과 관찰",
+        "항바이러스제",
+        "UDCA",
+        "N-acetylcysteine",
+        "Steroid"
+      ],
+      "images": [],
+      "legacyProfessor": "유정환",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 308-310page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        47
+      ],
+      "lectureId": 47,
+      "lectureTitle": "알코올성 간염",
+      "professor": "유정환",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "간장학",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · Steroid (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        308,
+        310
+      ]
+    },
+    {
+      "id": "2021-restored-115",
+      "displayId": "793번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 115,
+      "sourceOrdinal": 115,
+      "legacyDisplayId": "2021 115번",
+      "globalNumber": 793,
+      "question": "원위담도암(Distal common bile duct cancer)의 근치적 수술은?",
+      "passage": "",
+      "choices": [
+        "근치적 위아전절제술",
+        "간우엽절제술",
+        "간관-공장문합술",
+        "경십이지장 팽대부절제술",
+        "유문보존 췌십이지장절제술"
+      ],
+      "images": [],
+      "legacyProfessor": "이건영",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 331-333page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        60
+      ],
+      "lectureId": 60,
+      "lectureTitle": "담도 종양",
+      "professor": "신우영",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · 유문보존 췌십이지장절제술 (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        331,
+        333
+      ]
+    },
+    {
+      "id": "2021-restored-136",
+      "displayId": "794번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 136,
+      "sourceOrdinal": 136,
+      "legacyDisplayId": "2021 136번",
+      "globalNumber": 794,
+      "question": "41세 여자가 5일 전부터 식욕이 떨어지고 소화가 안 되어 병원에 왔다. 10일 전에 감기 증상이 있고 난 뒤부터 열감이 있고 구역감이 있으면서 식사를 하지 못했다. 혈압 110/70 mmHg, 맥박 95회/분, 호흡 20회/분, 체온 37.5°C이다. 키 160 cm, 몸무게는 51 kg이었다. 공막에 황달이 있다. 혈액검사 결과는 다음과 같다. 조치는?",
+      "passage": "백혈구 10,100/mm³, 혈색소 12.6 g/dL, 혈소판 177,000/mm³\n총단백 6.9 g/dL, 알부민 4.1 g/dL\n총빌리루빈 4.5 mg/dL, ALP 217 IU/L\nAST 1,305 U/L, ALT 1,374 U/L\n프로트롬빈시간 14초 (참고치 12.7–15.4)\nIgM anti-HAV (+), HBsAg (-), IgM anti-HBc (-), IgG anti-HBc (+)\nHBV DNA (-), anti-HCV (-)",
+      "choices": [
+        "안정과 영양치료",
+        "B형 간염 예방접종",
+        "테노포비어",
+        "렘데시비르",
+        "A형 간염 면역글로불린 주사"
+      ],
+      "images": [],
+      "legacyProfessor": "이정일",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 388-390page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        49
+      ],
+      "lectureId": 49,
+      "lectureTitle": "급성간염 (바이러스성 / 약물중독성)",
+      "professor": "고윤미",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "간장학",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "원문 풀이 정답: 1번 · 안정과 영양치료 (독립 검토 보류)",
+      "sourceAnswer": "1번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        388,
+        390
+      ]
+    },
+    {
+      "id": "2021-restored-137",
+      "displayId": "795번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 137,
+      "sourceOrdinal": 137,
+      "legacyDisplayId": "2021 137번",
+      "globalNumber": 795,
+      "question": "60세 남자가 1주 전부터 피부가 노래지고 온몸이 가렵다고 병원에 왔다. 허리가 아파서 최근 1개월 동안 한약을 복용했다. 술과 담배는 하지 않는다고 한다. 키 171 cm, 몸무게 65 kg이다. 혈압 110/60 mmHg, 맥박 85회/분, 호흡 20회/분, 체온 37.1°C이다. 검붉은 병색을 보이고 공막에 황달이 있다. 오른쪽 윗배에 가벼운 압통이 있으나 반동압통은 없다. 혈액검사 결과는 다음과 같다. 치료는?",
+      "passage": "백혈구 4,490/mm³, 혈색소 13.6 g/dL, 혈소판 181,000/mm³\n총빌리루빈 6.5 mg/dL, ALP 131 IU/L\nAST 898 U/L, ALT 1,055 U/L\n프로트롬빈시간 14초 (참고치 12.7–15.4)\nIgG anti-HAV (+), HBsAg (-), IgM anti-HBc (-), IgG anti-HBc (+)\nanti-HCV (-), 항핵항체 (-), 항미토콘드리아항체 (-), 항평활근항체 (-)",
+      "choices": [
+        "한약 중단",
+        "리바비린",
+        "인터페론",
+        "아세틸시스테인",
+        "우르소데옥시콜산"
+      ],
+      "images": [],
+      "legacyProfessor": "미확인",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 391-393page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        49
+      ],
+      "lectureId": 49,
+      "lectureTitle": "급성간염 (바이러스성 / 약물중독성)",
+      "professor": "고윤미",
+      "domain": "임상의학",
+      "discipline": "소화기 내과",
+      "section": "간장학",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "원문 풀이 정답: 1번 · 한약 중단 (독립 검토 보류)",
+      "sourceAnswer": "1번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "reconstructionIssue": "원문 머리말 이정일(진영주), 하단 출처도 두 교수를 함께 기재하여 출제교수 확정 보류.",
+      "sourcePdfPages": [
+        391,
+        393
+      ]
+    },
+    {
+      "id": "2021-restored-158",
+      "displayId": "796번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 158,
+      "sourceOrdinal": 158,
+      "legacyDisplayId": "2021 158번",
+      "globalNumber": 796,
+      "question": "72세 남성이 복통으로 응급실에 왔다. 환자는 5년 전 위암으로 개복 위절제술을 받은 병력이 있다. 내원 이틀 전부터 가스 배출이 안 되고 이후 복부 전반에 통증이 발생하였다. 환자는 유착성 장폐색 진단 하에 보존적 치료를 위해 입원하였다. 이 환자에서 교액성 장폐색증을 의심할 만한 소견으로 가장 적당한 것은?",
+      "passage": "",
+      "choices": [
+        "빈맥이 관찰될 때",
+        "저혈압이 지속될 때",
+        "저체온증이 지속될 때",
+        "과호흡증이 발생될 때",
+        "복통이 호전과 악화를 반복할 때"
+      ],
+      "images": [],
+      "legacyProfessor": "최선근",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 452-454page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        55
+      ],
+      "lectureId": 55,
+      "lectureTitle": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "원문 풀이 정답: 1번 · 빈맥이 관찰될 때 (독립 검토 보류)",
+      "sourceAnswer": "1번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        452,
+        454
+      ]
+    },
+    {
+      "id": "2021-restored-160",
+      "displayId": "797번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 160,
+      "sourceOrdinal": 160,
+      "legacyDisplayId": "2021 160번",
+      "globalNumber": 797,
+      "question": "29세 임신 39주 여자가 복통으로 내원하였다. 진찰 및 초음파검사로 급성 충수염이 확진되었다. 가장 적절한 치료는?",
+      "passage": "",
+      "choices": [
+        "항생제 치료 후 간격수술(interval operation)",
+        "1주간 항생제 치료하면서 정상분만 후 수술",
+        "복강경을 이용한 재검진",
+        "분만 유도 후 응급수술",
+        "즉시 응급수술"
+      ],
+      "images": [],
+      "legacyProfessor": "최선근",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 458-460page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        55
+      ],
+      "lectureId": 55,
+      "lectureTitle": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · 즉시 응급수술 (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        458,
+        460
+      ]
+    },
+    {
+      "id": "2021-restored-172",
+      "displayId": "798번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 172,
+      "sourceOrdinal": 172,
+      "legacyDisplayId": "2021 172번",
+      "globalNumber": 798,
+      "question": "생후 4일 된 남아가 복부팽만과 태변 배출을 잘 못해서 왔다. 환자의 횡행 단순복부 촬영이다. 다음 시행할 절차는?",
+      "passage": "",
+      "choices": [
+        "직장 수지검사",
+        "대장 조영술",
+        "복부 초음파",
+        "심장 초음파",
+        "직장점막하생검"
+      ],
+      "images": [
+        "2021_소화기_문항별_사진/2021_172_01.jpg"
+      ],
+      "legacyProfessor": "최윤미",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 493-495page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        21
+      ],
+      "lectureId": 21,
+      "lectureTitle": "소아 소화기 질환 (II)",
+      "professor": "최윤미",
+      "domain": "임상의학",
+      "discipline": "소아청소년과",
+      "section": "소아 소화기",
+      "answerIndex": 2,
+      "answerIndices": [
+        2
+      ],
+      "answerLabel": "원문 풀이 정답: 2번 · 대장 조영술 (독립 검토 보류)",
+      "sourceAnswer": "2번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        493,
+        495
+      ]
+    },
+    {
+      "id": "2021-restored-175",
+      "displayId": "799번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 175,
+      "sourceOrdinal": 175,
+      "legacyDisplayId": "2021 175번",
+      "globalNumber": 799,
+      "question": "검은색으로 표기한 곳의 혈관 이름은 무엇인가?",
+      "passage": "",
+      "choices": [
+        "Lt gastric artery",
+        "Lt gastric vein",
+        "Splenic vein",
+        "Short gastric artery",
+        "Portal vein"
+      ],
+      "images": [
+        "2021_소화기_문항별_사진/2021_175_01.jpg"
+      ],
+      "legacyProfessor": "최윤석",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 502-504page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        56
+      ],
+      "lectureId": 56,
+      "lectureTitle": "위 종양 (II) 치료, 예후, 합병증",
+      "professor": "오승종",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "원문 풀이 정답: 1번 · Lt gastric artery (독립 검토 보류)",
+      "sourceAnswer": "1번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        502,
+        504
+      ]
+    },
+    {
+      "id": "2021-restored-178",
+      "displayId": "800번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 178,
+      "sourceOrdinal": 178,
+      "legacyDisplayId": "2021 178번",
+      "globalNumber": 800,
+      "question": "복강경 수술 중 CO2로 기복을 만든다. 그 이유가 아닌 것은?",
+      "passage": "",
+      "choices": [
+        "Cheap",
+        "Stability to flame",
+        "Biologically stable",
+        "Postoperatively absorbable",
+        "Heavier than air"
+      ],
+      "images": [],
+      "legacyProfessor": "최윤석",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 510-512page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        57
+      ],
+      "lectureId": 57,
+      "lectureTitle": "복막 및 복벽 질환 (탈장포함)",
+      "professor": "서지현",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 5,
+      "answerIndices": [
+        5
+      ],
+      "answerLabel": "원문 풀이 정답: 5번 · Heavier than air (독립 검토 보류)",
+      "sourceAnswer": "5번",
+      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "sourcePdfPages": [
+        510,
+        512
+      ]
+    },
+    {
+      "id": "2021-restored-193",
+      "displayId": "801번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 193,
+      "sourceOrdinal": 193,
+      "legacyDisplayId": "2021 193번",
+      "globalNumber": 801,
+      "question": "Gastric histamine is produced from ______ cells?",
+      "passage": "",
+      "choices": [
+        "Chief",
+        "Parietal",
+        "Epithelial",
+        "Enterochromaffin-like",
+        "Endothelial"
+      ],
+      "images": [],
+      "legacyProfessor": "한인옥",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 553-555page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        4
+      ],
+      "lectureId": 4,
+      "lectureTitle": "위에서의 소화",
+      "professor": "한인옥",
+      "domain": "기초의학",
+      "discipline": "생리학",
+      "section": "생리학",
+      "answerIndex": 4,
+      "answerIndices": [
+        4
+      ],
+      "answerLabel": "정답: 4번 · Enterochromaffin-like",
+      "sourceAnswer": "4번",
+      "explanation": "정답: 4번 · Enterochromaffin-like cell (ECL cell)\n\n== 배경 지식 ==\n위산 분비를 조절하는 대표 자극은 acetylcholine, gastrin, histamine이다. [[4강#Histamine|ECL cell의 histamine]]은 이웃 parietal cell의 H2 receptor에 작용하는 paracrine signal이며 산 분비를 촉진한다.\n\n== 정답 선지 ==\n④ ECL cell이 gastric histamine을 분비한다. Gastrin·acetylcholine에 의해 ECL cell이 자극되면 histamine이 방출되어 벽세포의 산 분비 신호를 강화한다.\n\n== 오답 선지 ==\n* ① Chief cell: pepsinogen과 gastric lipase를 분비한다.\n* ② Parietal cell: HCl과 intrinsic factor를 분비한다. Histamine의 대표적인 표적세포이지 이 문항에서 묻는 생산세포가 아니다.\n* ③ Epithelial cell: 너무 넓은 표현이다. 표면점액세포를 뜻한다면 mucus·bicarbonate 방어와 연결되며, histamine의 구체적인 생산세포는 ECL cell이다.\n* ⑤ Endothelial cell: 혈관 내피세포로, 위샘 ECL cell과 다르다.\n\n== 출제 의도 ==\n위샘세포별 분비물과 분비물의 표적을 구분하여 ECL cell → histamine → parietal cell의 관계를 이해하는지 평가한다.\n\n== Wiki 연결 ==\n* [[4강#Histamine|Histamine]]\n* [[1강#위샘세포의 기능|위샘세포의 기능]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "sourcePdfPages": [
+        553,
+        555
+      ]
+    },
+    {
+      "id": "2021-restored-194",
+      "displayId": "802번",
+      "year": 2021,
+      "sourceType": "족보",
+      "originalNumber": 194,
+      "sourceOrdinal": 194,
+      "legacyDisplayId": "2021 194번",
+      "globalNumber": 802,
+      "question": "Which is correct about intestinal secretion?",
+      "passage": "I. Mucus is secreted by Brunner’s gland in duodenum.\nII. Mucus secretion is inhibited by parasympathetic nerve.\nIII. Brunner’s gland secretes alkaline mucus.",
+      "choices": [
+        "I",
+        "I, II",
+        "I, III",
+        "II, III",
+        "I, II, III"
+      ],
+      "images": [],
+      "legacyProfessor": "한인옥",
+      "officialPriorityApplied": false,
+      "source": "2021 소화기계 풀이 556-558page",
+      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "lectureIds": [
+        5
+      ],
+      "lectureId": 5,
+      "lectureTitle": "장에서의 소화",
+      "professor": "한인옥",
+      "domain": "기초의학",
+      "discipline": "생리학",
+      "section": "생리학",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "정답: 3번 · I, III",
+      "sourceAnswer": "3번",
+      "explanation": "정답: 3번 · I, III\n\n== 배경 지식 ==\n[[5강#Brunner’s glands와 mucus|Brunner’s glands]]는 샘창자의 점막밑층에 있는 mucus gland이다. 위에서 내려오는 산성 chyme에 대해 alkaline mucus를 분비하여 점막을 보호한다. 자율신경의 방향은 '''parasympathetic stimulation은 촉진, sympathetic stimulation은 억제'''로 구분한다.\n\n== 정답 제시문 ==\n* I: 맞다. Brunner’s gland는 duodenum에서 mucus를 분비한다.\n* III: 맞다. Alkaline mucus는 산성 내용물에 대한 샘창자의 방어기전이다.\n\n== 오답 제시문 ==\n* II: 틀리다. Parasympathetic nerve가 mucus secretion을 억제한다는 방향이 반대이다. 강의는 parasympathetic stimulation에 의한 분비 촉진과 sympathetic stimulation에 의한 억제를 설명한다.\n\n== 선지별 판단 ==\n① I만 골라 III을 빠뜨린다. ② I, II는 틀린 II를 포함한다. ③ I, III가 정확한 조합이다. ④ II, III와 ⑤ I, II, III는 모두 II를 포함하므로 틀리다.\n\n== 출제 의도 ==\nBrunner’s gland의 위치·분비물·보호 기능을 자율신경 조절 방향과 연결한다. '부교감=분비 촉진'이라는 흐름을 산에 대한 샘창자 점막 방어에 적용하는 문항이다.\n\n== Wiki 연결 ==\n* [[5강#Brunner’s glands와 mucus|Brunner’s glands와 mucus]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "sourcePdfPages": [
+        556,
+        558
+      ]
     }
   ],
-  "modifiedAt": "2026-09-07T10:34:07.266Z"
+  "modifiedAt": "2026-09-08T11:54:30.727Z",
+  "reconstructionAudit2021": {
+    "date": "2026-09-08",
+    "sourcePages": 611,
+    "officialPages": 63,
+    "numberedSourceSegments": 208,
+    "added": 22,
+    "globalNumbersPreserved": true,
+    "protectedGlobalNumbers": [
+      527,
+      530
+    ]
+  }
 };
