@@ -85,6 +85,30 @@
 
     .top-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
 
+    .information-button { display:inline-flex; align-items:center; justify-content:center; flex:0 0 38px; width:38px; height:38px; padding:0; align-self:center; border:1px solid #c9dfe8; border-radius:50%; background:#fff; color:#315f75; cursor:pointer; font:inherit; font-size:20px; font-weight:800; line-height:1; }
+    .information-button:hover { background:#edf6fa; border-color:#8cb5c8; }
+    .information-button:focus-visible, .information-dialog button:focus-visible { outline:3px solid #7fb9d2; outline-offset:3px; }
+    body.information-open { overflow:hidden; }
+    .information-dialog { width:min(680px,calc(100vw - 32px)); max-width:calc(100vw - 32px); max-height:calc(100vh - 40px); max-height:calc(100dvh - 40px); padding:0; border:1px solid #dce7ed; border-radius:20px; background:#fff; color:#17212b; box-shadow:0 24px 80px rgba(23,47,63,.24); font:inherit; overflow:hidden; }
+    .information-dialog[open] { display:flex; flex-direction:column; }
+    .information-dialog::backdrop { background:rgba(20,39,52,.42); }
+    .information-dialog [hidden] { display:none !important; }
+    .information-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 24px; background:#edf6fa; border-bottom:1px solid #dce7ed; flex-shrink:0; }
+    .information-head h2 { margin:0; font-size:19px; line-height:1.4; color:#315f75; font-weight:800; }
+    .information-close { width:36px; height:36px; flex:0 0 36px; padding:0; border:0; border-radius:50%; color:#315f75; background:transparent; font:inherit; font-size:26px; line-height:1; cursor:pointer; }
+    .information-close:hover { background:#deedf4; }
+    .information-body { min-height:130px; overflow:auto; overscroll-behavior:contain; padding:24px; min-width:0; }
+    .information-status { margin:0; color:#6c7680; font-size:14px; line-height:1.7; white-space:pre-wrap; }
+    .information-text { margin:0; font:inherit; font-size:16px; line-height:1.85; color:#243441; white-space:pre-wrap; overflow-wrap:anywhere; word-break:normal; tab-size:4; }
+    .information-fallback { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .information-file-button { border:1px solid #c9dfe8; border-radius:10px; background:#f4f9fc; color:#315f75; padding:9px 13px; font:inherit; font-size:14px; font-weight:700; cursor:pointer; }
+    @media (max-width:600px) {
+      .information-dialog { width:calc(100vw - 24px); max-width:calc(100vw - 24px); border-radius:16px; }
+      .information-head { padding:16px 18px; }
+      .information-body { padding:18px; }
+      .information-text { font-size:15px; }
+    }
+
     .nav-button,
     .back-button {
       border: 1px solid #abd7ea;
@@ -804,6 +828,7 @@
           <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
           <button class="nav-button primary" type="button" data-go="schedule">시간표 보기</button>
           <button class="nav-button jbl-launch" type="button" data-go="jbl">JBL</button>
+          <button class="information-button" type="button" data-information-open aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button>
         </nav>
       </div>
     </header>
@@ -2223,7 +2248,8 @@
 
     function saveCurrentFiles() {
       const clone = document.documentElement.cloneNode(true);
-      clone.querySelector('body')?.classList.remove('jbl-mode');
+      clone.querySelector('body')?.classList.remove('jbl-mode', 'information-open');
+      clone.querySelectorAll('.information-dialog').forEach(element => element.remove());
       clone.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== 'catalog-view'; });
       clone.querySelectorAll('.wiki-section-editor-overlay').forEach(element => element.remove());
       clone.querySelectorAll('.anki-dialog').forEach(element => element.remove());
@@ -2275,6 +2301,15 @@
       const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p></section>` : '';
       const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files>현재 파일 저장</button></div></section>` : '';
       target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-open-lecture ${currentQuestion?.lectureIds?.length ? '' : 'disabled'}>강의 보기</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
+      const infoButton = document.createElement('button');
+      infoButton.className = 'information-button';
+      infoButton.type = 'button';
+      infoButton.dataset.informationOpen = '';
+      infoButton.setAttribute('aria-label', '업데이트 현황 보기');
+      infoButton.setAttribute('aria-haspopup', 'dialog');
+      infoButton.title = '업데이트 현황';
+      infoButton.textContent = 'i';
+      target.querySelector('.jbl-top-actions').append(infoButton);
       const rerender = renderJblStandalone;
       renderQuestionCard(target.querySelector('[data-jbl-root]'), questions, key, rerender);
       bindViewerNav(target.querySelector('.jbl-bottom-inner'), questions, key, rerender);
@@ -2998,6 +3033,96 @@
         scrollCurrentQuestionToTop(viewer.key);
       }
     }
+
+    // Update information is plain text, never evaluated as HTML or Wiki markup.
+    let informationDialog = null;
+    function openInformationDialog(opener) {
+      if (informationDialog?.open) return;
+      const dialog = document.createElement('dialog');
+      dialog.className = 'information-dialog';
+      dialog.setAttribute('aria-labelledby', 'information-title');
+      dialog.innerHTML = `<header class="information-head"><h2 id="information-title">업데이트 현황</h2><button type="button" class="information-close" aria-label="업데이트 현황 닫기" autofocus>×</button></header><div class="information-body"><p class="information-status" role="status" aria-live="polite"></p><div class="information-text" hidden></div><div class="information-fallback" hidden><button type="button" class="information-file-button" data-information-file>information.txt 선택</button><button type="button" class="information-file-button" data-information-retry>다시 읽기</button><input type="file" accept=".txt,text/plain" data-information-input hidden></div></div>`;
+      const status = dialog.querySelector('.information-status');
+      const content = dialog.querySelector('.information-text');
+      const fallback = dialog.querySelector('.information-fallback');
+      const input = dialog.querySelector('[data-information-input]');
+      let controller = null, timer = null, generation = 0;
+      function cancelLoad() {
+        generation += 1;
+        controller?.abort(); controller = null;
+        clearTimeout(timer); timer = null;
+      }
+      function setStatus(message, selectable = false) {
+        status.textContent = message; status.hidden = false;
+        content.textContent = ''; content.hidden = true;
+        fallback.hidden = !selectable;
+        dialog.removeAttribute('aria-busy');
+      }
+      function showText(text) {
+        content.textContent = text.replace(/^\uFEFF/, '');
+        content.hidden = !content.textContent.trim();
+        status.textContent = content.hidden ? '아직 등록된 업데이트 내용이 없습니다.' : '';
+        status.hidden = !content.hidden; fallback.hidden = true;
+        dialog.removeAttribute('aria-busy');
+      }
+      async function loadInformation() {
+        cancelLoad(); const request = generation;
+        setStatus('업데이트 내용을 불러오는 중…');
+        if (location.protocol === 'file:') {
+          setStatus('로컬 HTML에서는 브라우저 보안상 옆의 TXT 파일을 자동으로 읽을 수 없습니다.\ninformation.txt를 선택하면 이 창에서 볼 수 있어요. 배포 사이트에서는 자동으로 불러옵니다.', true);
+          dialog.querySelector('[data-information-retry]').hidden = true;
+          return;
+        }
+        dialog.setAttribute('aria-busy', 'true');
+        controller = new AbortController();
+        timer = setTimeout(() => controller?.abort(), 10000);
+        try {
+          const url = new URL('./information.txt', location.href);
+          url.searchParams.set('_', Date.now().toString());
+          const response = await fetch(url, { cache:'no-store', signal:controller.signal });
+          if (!response.ok) throw new Error(response.status === 404 ? 'missing' : 'http');
+          if ((response.headers.get('content-type') || '').includes('text/html')) throw new Error('missing');
+          const text = await response.text();
+          if (request !== generation || !dialog.open) return;
+          showText(text);
+        } catch (error) {
+          if (request !== generation || !dialog.open) return;
+          setStatus(error.message === 'missing' ? 'information.txt를 찾지 못했어요. index.html과 같은 폴더에 파일을 올려 주세요.' : '업데이트 내용을 불러오지 못했어요. 연결을 확인하고 다시 읽거나 TXT 파일을 선택해 주세요.', true);
+        } finally {
+          if (request === generation) { clearTimeout(timer); timer = null; controller = null; }
+        }
+      }
+      dialog.querySelector('.information-close').addEventListener('click', () => dialog.close());
+      dialog.querySelector('[data-information-file]').addEventListener('click', () => input.click());
+      dialog.querySelector('[data-information-retry]').addEventListener('click', loadInformation);
+      input.addEventListener('change', async () => {
+        const file = input.files?.[0]; if (!file) return;
+        cancelLoad(); const request = generation;
+        if (file.name.toLowerCase() !== 'information.txt') { setStatus('information.txt 파일을 선택해 주세요.', true); input.value = ''; return; }
+        setStatus('업데이트 내용을 읽는 중…');
+        try { const text = await file.text(); if (request === generation && dialog.open) showText(text); }
+        catch { if (request === generation && dialog.open) setStatus('파일을 읽지 못했어요. UTF-8로 저장된 TXT 파일인지 확인해 주세요.', true); }
+        input.value = '';
+      });
+      // Native dialog handles Escape and focus trapping; keep quiz shortcuts inactive.
+      dialog.addEventListener('keydown', event => event.stopPropagation());
+      let backdropDown = false;
+      const outside = event => { const r = dialog.getBoundingClientRect(); return event.target === dialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom); };
+      dialog.addEventListener('pointerdown', event => { backdropDown = outside(event); });
+      dialog.addEventListener('click', event => { if (backdropDown && outside(event)) dialog.close(); backdropDown = false; });
+      dialog.addEventListener('close', () => {
+        cancelLoad(); dialog.remove();
+        if (informationDialog === dialog) { informationDialog = null; document.body.classList.remove('information-open'); }
+        if (opener?.isConnected) opener.focus({preventScroll:true});
+      }, {once:true});
+      document.body.append(dialog); informationDialog = dialog;
+      dialog.showModal(); document.body.classList.add('information-open');
+      loadInformation();
+    }
+    document.addEventListener('click', event => {
+      const opener = event.target.closest?.('[data-information-open]');
+      if (opener) openInformationDialog(opener);
+    });
 
     document.querySelector('#jbl-image-modal').addEventListener('click', event => { if (event.target.id === 'jbl-image-modal') closeJblImage(); });
     document.querySelector('.jbl-image-close').addEventListener('click', closeJblImage);
