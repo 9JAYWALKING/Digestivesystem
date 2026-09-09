@@ -17321,7 +17321,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 2번 · 보행성 식도 산도 검사",
       "explanation": "정답: 2번 · 24시간 보행성 식도 pH 검사\n\n[핵심 해설]\n비심인성 흉통에서 증상 발생 시점과 위산 역류의 시간적 연관성을 확인하려면 보행성 식도 pH 검사가 가장 직접적이다. 비산성 역류까지 평가해야 하면 pH-임피던스 검사를 사용한다.\n\n[검토 상태]\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "차보람",
+      "legacyProfessor": "고원진",
       "lectureIds": [
         35
       ],
@@ -17337,7 +17337,7 @@ window.JBL_DATA = {
       "sourceOrdinal": 36,
       "legacyDisplayId": "2021 36번",
       "globalNumber": 447,
-      "reconstructionIssue": "머리말에는 고원진, 풀이에는 올해 차보람·작년 고원진이라는 설명이 있어 출제교수 확정 보류. 기존 차보람 표기는 유지.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         103,
         105
@@ -17427,48 +17427,6 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         109,
         111
-      ]
-    },
-    {
-      "id": "2021-39",
-      "displayId": "450번",
-      "year": 2021,
-      "sourceType": "족보",
-      "originalNumber": 39,
-      "question": "[원문 발문 누락] 다음 검사 중 알맞은 것을 고르는 문항입니다.",
-      "passage": "",
-      "choices": [
-        "복부전산화단층촬영",
-        "내시경 역행성담췌관조영술",
-        "양전자방출 단층촬영",
-        "내시경 초음파",
-        "자기공명영상"
-      ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답 확정 보류 · 풀이본에는 4번으로 표기되어 있으나 발문이 누락되어 있다.",
-      "explanation": "== 복원 상태 ==\n2021 소화기계 풀이 112page에는 문제번호와 다섯 검사 선지만 남아 있다. 기존 사이트의 위벽 침윤 깊이 발문은 원문에서 확인되지 않아 삭제했다. 113page의 풀이 표기는 내시경 초음파(4번)이지만 발문 자체를 확인할 수 없어 자동 채점 정답으로 확정하지 않는다.\n\n== 관련 문항 ==\n공식 오답률 30 57page의 {{608}}은 같은 검사 선택지를 가진 조기위암 평가 문항이다. 원래 39번과 동일한 문항인지 확증되지 않아 이 발문을 임의로 이식하지 않았다.\n\n== 검토 상태 ==\n오답30 미수록.",
-      "images": [],
-      "legacyProfessor": "최윤석",
-      "lectureIds": [
-        22
-      ],
-      "lectureId": 22,
-      "lectureTitle": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
-      "professor": "차보람",
-      "domain": "임상의학",
-      "discipline": "소화기 내과",
-      "section": "총론 및 진단",
-      "source": "2021 소화기계 풀이 112-114page",
-      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
-      "officialPriorityApplied": false,
-      "sourceOrdinal": 39,
-      "legacyDisplayId": "2021 39번",
-      "globalNumber": 450,
-      "reconstructionIssue": "원문 발문 누락. 공식 57page(608번)와 동일 문항인지 확인되지 않음.",
-      "sourcePdfPages": [
-        112,
-        114
       ]
     },
     {
@@ -17724,7 +17682,7 @@ window.JBL_DATA = {
       "sourceOrdinal": 47,
       "legacyDisplayId": "2021 47번",
       "globalNumber": 456,
-      "reconstructionIssue": "원문 머리말에 차보람(고원진)이 함께 표기되어 출제교수 확정 보류. 기존 표기는 임의로 확정 변경하지 않음.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         136,
         138
@@ -19946,7 +19904,7 @@ window.JBL_DATA = {
       "answerLabel": "정답: 4번 · Rupture을 잘 유발하므로 수술적 절제를 해야 한다.",
       "explanation": "정답: 4번 · Rupture을 잘 유발하므로 수술적 절제를 해야 한다.\n\n== 배경 지식 ==\n[[17강#Hemangioma|Hepatic hemangioma]]는 간에서 가장 흔한 양성 종양이다. 얇은 벽의 확장된 혈관 공간에 혈액이 차 있는 병변이며, 간세포성 종양인 [[17강#Hepatocellular adenoma · HCA|HCA]]와 구별한다.\n\n== 정답 선지 ==\n④ 모든 hemangioma가 쉽게 파열되므로 절제해야 한다는 주장이 틀리다. 전형적인 무증상 병변은 보존적으로 관리할 수 있으며, 증상·합병증·진단 불확실성 등을 따져 개입 여부를 판단한다. HCA의 출혈·파열 위험을 hemangioma에 그대로 옮겨 적용하면 안 된다.\n\n== 오답 선지 ==\n* ① 간의 가장 흔한 양성 종양이라는 설명은 맞다.\n* ② 혈관성 병변의 조영 양상을 평가하는 CT·MRI는 진단에 도움을 준다.\n* ③ 특히 큰 병변에서 응고장애와 출혈 경향 같은 합병증이 가능하다. 이는 모든 병변이 흔히 파열된다는 ④의 주장과 다르다.[* 큰 혈관종에서 혈소판 포획·소모성 응고장애가 발생할 수 있지만 흔한 작은 무증상 혈관종의 일반적인 경과로 확대 해석하지 않는다.]\n\n== 출제 의도 ==\nHemangioma의 양성 경과와 예외적인 합병증을 구별하고 HCA와 혼동하여 일률적인 수술 적응증을 적용하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[17강#Hemangioma|Hemangioma]]\n* [[17강#Hepatocellular adenoma · HCA|HCA와의 비교]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
-      "legacyProfessor": "미확인",
+      "legacyProfessor": "안승익",
       "lectureIds": [
         17
       ],
@@ -19962,7 +19920,7 @@ window.JBL_DATA = {
       "sourceOrdinal": 104,
       "legacyDisplayId": "2021 104번",
       "globalNumber": 506,
-      "reconstructionIssue": "머리말 김준미와 원문 풀이의 안승익 추정이 충돌한다. 출제교수는 미확인으로 두고 내용 기준 17강 Hemangioma에 배정.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         299,
         301
@@ -21571,7 +21529,7 @@ window.JBL_DATA = {
       "sourceOrdinal": 150,
       "legacyDisplayId": "2021 150번",
       "globalNumber": 543,
-      "reconstructionIssue": "머리말 정성택과 풀이의 최문석 강의 출처가 일치하지 않아 출제교수 확정 보류. 기존 최문석 표기는 유지.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         427,
         430
@@ -31292,25 +31250,27 @@ window.JBL_DATA = {
         "양성질환이므로 수술하지 않고 observation한다."
       ],
       "images": [],
-      "legacyProfessor": "미확인",
+      "legacyProfessor": "안승익",
       "officialPriorityApplied": false,
       "source": "2021 소화기계 풀이 296-298page",
-      "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
+      "mappingConfidence": "사용자 확인: 간의 종양 범위로 54강 배정. 출제교수 안승익.",
       "lectureIds": [
-        17
+        54
       ],
-      "lectureId": 17,
-      "lectureTitle": "간질환, 담도, 췌장, 횡경막 질환",
-      "professor": "김준미",
-      "domain": "기초의학",
-      "discipline": "병리학",
-      "section": "간 담 췌 병리",
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답 후보: 3번 · 4번 표현에 이견 가능 (해설 참고)",
+      "lectureId": 54,
+      "lectureTitle": "간의 종양",
+      "professor": "김경덕",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "정답: 3번 · Hemorrhage나 necrosis를 잘 유발한다.",
       "sourceAnswer": "3번",
-      "explanation": "정답 후보: 3번 · Hemorrhage나 necrosis를 잘 유발한다. (4번 표현의 모호성에 주의)\n\n== 배경 지식 ==\n[[17강#Hepatocellular adenoma · HCA|HCA]]는 성숙한 간세포를 닮은 세포의 양성 종양으로, 20–40세 여성과 OCP 사용이 대표적인 배경이다. 양성이라는 조직학적 분류가 '''출혈·파열 및 아형별 malignant transformation 위험이 없다'''는 뜻은 아니다.\n\n== 정답 선지 ==\n③ HCA는 출혈과 파열이 중요한 합병증이며 종양 안에 hemorrhage 및 necrosis가 동반될 수 있다. 강의에서 양성 간세포성 병변을 구분할 때 강조하는 특성과 가장 직접적으로 연결되는 선택지이다.\n\n== 오답 선지 ==\n* ① 전형적인 환자군은 노년기보다 젊은 성인 여성이다.\n* ② 전형적인 HCA 전체는 여성 우세이다. 성별 분포와 위험도는 아형에 따라 달라질 수 있다.\n* ④ '잘 하지 않는다'를 '전체적으로 빈도가 낮다'는 뜻으로 읽으면 맞는 진술이 될 수 있다. 다만 [[17강#β-catenin-activated HCA|β-catenin-activated HCA]] 등에서는 malignant transformation 위험이 중요하므로, 모든 HCA에 악성화 위험이 없다는 의미로는 틀리다.\n* ⑤ 양성이라는 이유만으로 모든 환자를 observation하는 것은 아니다. 성별, 크기, 성장, 출혈 및 분자아형 등을 바탕으로 절제를 고려한다.\n\n== 문항 오류 가능성 ==\n④의 표현이 절대적인 '악성화하지 않는다'가 아니라 '''잘 하지 않는다'''이므로 ③만 유일한 정답이라고 단정하기 어렵다. 원문 선지를 바꾸지 않고 ③을 강의상 가장 직접적인 후보로 제시하며, 단일 정답의 엄밀성은 검토가 필요하다. 출제교수도 원문에 김준미와 안승익이 함께 표기되어 확정하지 않았다.\n\n== 출제 의도 ==\nHCA의 호발 배경, 출혈·파열 위험, 아형별 악성화 위험을 이해하고 '양성=항상 관찰'로 단순화하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[17강#Hepatocellular adenoma · HCA|HCA]]\n* [[17강#β-catenin-activated HCA|β-catenin-activated HCA]]\n\n== 검토 상태 ==\n오답30 미수록.",
-      "reconstructionIssue": "머리말은 김준미(안승익), 풀이에는 안승익 출제 추정이라고 적혀 있어 출제교수 확정 불가. 4번의 '잘 하지 않는다'는 저위험도를 의미할 수 있어 단일 정답의 엄밀성에 주의.",
+      "explanation": "정답: 3번 · Hemorrhage나 necrosis를 잘 유발한다.\n\n== 배경 지식 ==\n[[17강#Hepatocellular adenoma · HCA|HCA]]는 성숙한 간세포를 닮은 세포의 양성 종양으로, 20–40세 여성과 OCP 사용이 대표적인 배경이다. 양성이라는 조직학적 분류가 '''출혈·파열 및 아형별 malignant transformation 위험이 없다'''는 뜻은 아니다.\n\n== 정답 선지 ==\n③ HCA는 출혈과 파열이 중요한 합병증이며 종양 안에 hemorrhage 및 necrosis가 동반될 수 있다. 강의에서 양성 간세포성 병변을 구분할 때 강조하는 특성과 가장 직접적으로 연결되는 선택지이다.\n\n== 오답 선지 ==\n* ① 전형적인 환자군은 노년기보다 젊은 성인 여성이다.\n* ② 전형적인 HCA 전체는 여성 우세이다. 성별 분포와 위험도는 아형에 따라 달라질 수 있다.\n* ④ [[17강#β-catenin-activated HCA|β-catenin-activated HCA]] 등에서는 malignant transformation 위험이 중요하므로, 양성 종양이라는 이유로 악성화 위험을 배제하지 않는다.\n* ⑤ 양성이라는 이유만으로 모든 환자를 observation하는 것은 아니다. 성별, 크기, 성장, 출혈 및 분자아형 등을 바탕으로 절제를 고려한다.\n\n== 출제 의도 ==\nHCA의 호발 배경, 출혈·파열 위험, 아형별 악성화 위험을 이해하고 '양성=항상 관찰'로 단순화하지 않는지 평가한다.\n\n== Wiki 연결 ==\n* [[17강#Hepatocellular adenoma · HCA|HCA]]\n* [[17강#β-catenin-activated HCA|β-catenin-activated HCA]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         296,
         298
@@ -31514,7 +31474,7 @@ window.JBL_DATA = {
         "우르소데옥시콜산"
       ],
       "images": [],
-      "legacyProfessor": "미확인",
+      "legacyProfessor": "진영주",
       "officialPriorityApplied": false,
       "source": "2021 소화기계 풀이 391-393page",
       "mappingConfidence": "2021 원문 화면과 현재 강의 범위 대조",
@@ -31535,7 +31495,7 @@ window.JBL_DATA = {
       "sourceAnswer": "1번",
       "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
       "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
-      "reconstructionIssue": "원문 머리말 이정일(진영주), 하단 출처도 두 교수를 함께 기재하여 출제교수 확정 보류.",
+      "reconstructionIssue": "",
       "sourcePdfPages": [
         391,
         393
@@ -31903,7 +31863,7 @@ window.JBL_DATA = {
       "section": "영상의학"
     }
   ],
-  "modifiedAt": "2026-09-08T17:53:23.503Z",
+  "modifiedAt": "2026-09-09T00:11:32.314Z",
   "reconstructionAudit2021": {
     "date": "2026-09-08",
     "sourcePages": 611,
