@@ -505,6 +505,101 @@
       .anki-toolbar { gap:7px; }
       .anki-toolbar h3 { flex-basis:100%; }
     }
+
+    /* 나만의 정리: 브라우저 안에 저장되는 개인 Wiki 문서 */
+    .personal-notes-shell { width:min(1420px,100%); margin:0 auto; text-align:left; }
+    .personal-notes-toolbar { position:sticky; top:10px; z-index:30; display:flex; align-items:center; gap:9px; flex-wrap:wrap; margin-bottom:18px; padding:13px 15px; border:1px solid #dce8ed; border-radius:17px; background:rgba(255,255,255,.96); box-shadow:0 10px 28px rgba(38,78,99,.08); backdrop-filter:blur(12px); }
+    .personal-notes-toolbar h2 { margin:0 auto 0 0; color:#244f63; font-size:clamp(20px,2.5vw,27px); }
+    .personal-notes-toolbar .jbl-btn[disabled] { opacity:.42; cursor:not-allowed; transform:none; }
+    .personal-notes-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr)); gap:14px; }
+    .personal-note-card { position:relative; min-height:150px; padding:0; overflow:hidden; border:1px solid #dce8ed; border-radius:18px; background:#fff; box-shadow:0 8px 24px rgba(38,78,99,.055); }
+    .personal-note-open { width:100%; height:100%; min-height:150px; padding:22px 20px 54px; border:0; background:transparent; color:#263f4c; text-align:left; cursor:pointer; font:inherit; }
+    .personal-note-open:hover, .personal-note-open:focus-visible { background:#f4f9fc; outline:none; }
+    .personal-note-open strong { display:block; margin-bottom:9px; color:#183f53; font-size:19px; line-height:1.45; overflow-wrap:anywhere; }
+    .personal-note-open span { color:#73838c; font-size:13px; }
+    .personal-note-delete { position:absolute; right:13px; bottom:13px; padding:7px 11px; border:1px solid #efd2d2; border-radius:999px; background:#fff; color:#a54343; cursor:pointer; font:inherit; font-size:12px; font-weight:750; }
+    .personal-note-empty { grid-column:1/-1; padding:64px 24px; border:1px dashed #bfd2dc; border-radius:20px; background:#fff; color:#687b85; text-align:center; }
+    .personal-note-empty strong { display:block; margin-bottom:7px; color:#315f75; font-size:19px; }
+    .personal-document-stage { min-width:0; }
+    .personal-document-render > .wiki-note { margin:0; }
+    .personal-document-render .wiki-layout.personal-without-toc { grid-template-columns:minmax(0,1fr); }
+    .personal-document-render .wiki-hero-actions [data-wiki-edit],
+    .personal-document-render [data-wiki-section-edit],
+    .personal-document-render [data-wiki-heading-edit],
+    .personal-document-render .wiki-bookmark { display:none !important; }
+    .personal-document-editor { padding:clamp(17px,3vw,28px); border:1px solid #dce8ed; border-radius:20px; background:#fff; }
+    .personal-document-editor-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:17px; }
+    .personal-document-editor-head h3 { margin:0; color:#244f63; }
+    .personal-document-title-field { margin-bottom:15px; }
+    .personal-document-title-field label { display:block; margin-bottom:7px; color:#315f75; font-weight:850; }
+    .personal-document-title-field input { box-sizing:border-box; width:100%; padding:13px 14px; border:1px solid #cbd9e0; border-radius:10px; color:#17212b; background:#fff; font:inherit; font-size:18px; font-weight:800; }
+    .personal-document-editor .wiki-source-editor { min-height:58vh; }
+    .personal-document-editor-actions { display:flex; justify-content:flex-end; gap:9px; flex-wrap:wrap; margin-top:17px; }
+    .personal-document-meta { margin:0 0 14px; color:#6d808a; font-size:13px; }
+    .personal-export-tools { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; padding:11px 13px; border-radius:12px; background:#f2f8fb; color:#315f75; }
+    .personal-export-tools label { display:flex; align-items:center; gap:8px; font-weight:800; cursor:pointer; }
+    .personal-export-list { display:grid; gap:8px; max-height:min(52vh,520px); overflow:auto; padding:2px; }
+    .personal-export-row { display:flex; align-items:flex-start; gap:11px; padding:14px; border:1px solid #dce8ed; border-radius:13px; background:#fff; cursor:pointer; }
+    .personal-export-row:hover { background:#f7fbfd; border-color:#bfd7e2; }
+    .personal-export-row input { flex:none; width:18px; height:18px; margin-top:2px; accent-color:#315f75; }
+    .personal-export-row span { min-width:0; }
+    .personal-export-row strong { display:block; color:#244f63; overflow-wrap:anywhere; }
+    .personal-export-row small { display:block; margin-top:4px; color:#71818a; }
+    .personal-export-actions { display:flex; justify-content:flex-end; gap:9px; margin-top:18px; }
+
+    @media (max-width:760px) {
+      .top-actions { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .top-actions .information-button { grid-column:1/-1; justify-self:center; }
+      .personal-notes-toolbar { top:6px; padding:11px; }
+      .personal-notes-toolbar h2 { flex-basis:100%; }
+      .personal-notes-toolbar .jbl-btn { flex:1 1 calc(50% - 6px); min-width:0; padding-inline:7px; }
+      .personal-document-editor-head { align-items:flex-start; flex-direction:column; }
+      .personal-document-editor-head .jbl-btn { width:100%; }
+      .personal-document-editor-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .personal-document-editor-actions .jbl-btn { min-width:0; }
+    }
+
+    @media print {
+      @page { size:A4 portrait; margin:14mm; }
+      html, body { width:auto !important; min-width:0 !important; background:#fff !important; }
+      body.personal-printing { overflow:visible !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+      body.personal-printing .masthead,
+      body.personal-printing .view:not(#personal-notes-view),
+      body.personal-printing .personal-notes-toolbar,
+      body.personal-printing .personal-notes-list,
+      body.personal-printing .personal-document-editor,
+      body.personal-printing .information-dialog,
+      body.personal-printing .context-link-target,
+      body.personal-printing #jbl-image-modal { display:none !important; }
+      body.personal-printing .context-link-split,
+      body.personal-printing .context-link-source { position:static !important; display:block !important; width:auto !important; height:auto !important; overflow:visible !important; }
+      body.personal-printing main { padding:0 !important; }
+      body.personal-printing #personal-notes-view,
+      body.personal-printing .personal-notes-shell,
+      body.personal-printing .personal-document-stage,
+      body.personal-printing .personal-document-render { display:block !important; width:auto !important; max-width:none !important; margin:0 !important; padding:0 !important; }
+      body.personal-printing .personal-document-render .wiki-note { border:0 !important; border-radius:0 !important; box-shadow:none !important; }
+      body.personal-printing .personal-document-render .wiki-layout { display:block !important; }
+      body.personal-printing .personal-document-render .wiki-toc,
+      body.personal-printing .personal-document-render .wiki-hero-actions,
+      body.personal-printing .personal-document-render .wiki-section-actions,
+      body.personal-printing .personal-document-render .wiki-subsection-edit,
+      body.personal-printing .personal-document-render .wiki-bookmark { display:none !important; }
+      body.personal-printing .personal-document-render .wiki-section,
+      body.personal-printing .personal-document-render .wiki-section-content { display:block !important; }
+      body.personal-printing .personal-document-render .wiki-section { break-inside:auto; }
+      body.personal-printing .personal-document-render h3,
+      body.personal-printing .personal-document-render h4,
+      body.personal-printing .personal-document-render h5 { break-after:avoid-page; }
+      body.personal-printing .personal-document-render .wiki-figure,
+      body.personal-printing .personal-document-render .wiki-table-wrap,
+      body.personal-printing .personal-document-render blockquote { break-inside:avoid-page; }
+      body.personal-printing .personal-document-render .wiki-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; }
+      body.personal-printing .personal-document-render .wiki-grid.single { grid-template-columns:minmax(0,1fr) !important; }
+      body.personal-printing .personal-document-render .wiki-figure { max-width:100% !important; }
+      body.personal-printing .personal-document-render .wiki-grid.single > .wiki-figure { width:50% !important; }
+      body.personal-printing .personal-document-render a { color:inherit; text-decoration:none; }
+    }
     .wiki-strong-purple, .wiki-strong-purple a, .wiki-strong-purple strong, .wiki-strong-purple em { color: #5b21b6 !important; }
     .wiki-figure { margin: 0; padding: 14px; border: 1px solid #dce8ed; border-radius: 18px; background: #fff; box-shadow: 0 8px 22px rgba(25,64,79,.06); }
     .wiki-figure img { width: 100%; max-height: 560px; display: block; object-fit: contain; border-radius: 12px; background: #fff; cursor: zoom-in; }
@@ -723,7 +818,8 @@
       .masthead { padding: 14px 12px; }
       .masthead-inner { flex-direction: column; align-items: stretch; gap: 12px; }
       .masthead h1 { text-align: center; font-size: clamp(19px, 6vw, 24px); }
-      .top-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; }
+      .top-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+      .top-actions .information-button { grid-column: 1 / -1; justify-self: center; }
       .nav-button { min-width: 0; padding: 10px 7px; font-size: 13px; white-space: nowrap; }
       main { padding: 18px 12px 64px; }
       .schedule-toolbar { align-items: flex-start; flex-direction: column; }
@@ -924,6 +1020,7 @@
           <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
           <button class="nav-button primary" type="button" data-go="schedule">시간표 보기</button>
           <button class="nav-button jbl-launch" type="button" data-go="jbl">JBL</button>
+          <button class="nav-button" type="button" data-go="personal-notes">나만의 정리</button>
           <button class="information-button" type="button" data-information-open aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button>
         </nav>
       </div>
@@ -973,6 +1070,10 @@
 
       <section id="detail-view" class="view" aria-live="polite" hidden="">
         <div id="detail" class="detail-wrap"><div class="detail-bar"><div class="detail-topline"><div><p class="detail-breadcrumb">기초의학 · 생리학 · 한인옥 교수</p><h2>물질의 소화과정</h2><p class="detail-info">1주차 · 8월 31일(월) 14:00 · 2시간</p></div><div class="detail-course-controls" aria-label="강의 번호 이동"><button class="content-tab detail-course-nav" type="button" data-detail-previous="">← 이전 강의</button><button class="content-tab detail-course-nav" type="button" data-detail-next="">다음 강의 →</button><form class="detail-number-form" data-detail-number-form=""><button class="detail-number" type="button" data-detail-number-button="" title="강의 번호를 입력하여 이동">3</button><input class="detail-number-input" data-detail-number-input="" type="text" inputmode="numeric" pattern="[0-9]*" value="3" aria-label="이동할 강의 번호" autocomplete="off" hidden=""></form></div></div><div class="content-tabs" role="tablist" aria-label="강의 자료 종류"><button class="content-tab active" type="button" role="tab" aria-selected="true" data-detail-tab="정리본">Wiki</button><button class="content-tab " type="button" role="tab" aria-selected="false" data-detail-tab="J">J</button><button class="content-tab " type="button" role="tab" aria-selected="false" data-detail-tab="KMLE">Anki</button></div></div><div id="content-panel" class="content-panel notes-mode"><article class="wiki-note"><header class="wiki-hero"><div class="wiki-hero-title-row"><div class="wiki-hero-title"><h3>물질의 소화과정</h3></div><button class="jbl-btn jbl-btn-sub wiki-hero-edit" type="button" data-wiki-edit="">문서 편집</button></div><div class="wiki-stat-row"></div></header><div class="wiki-layout"><aside class="wiki-toc" aria-label="정리본 목차"><strong>목차</strong><button class="wiki-toc-link" type="button" data-wiki-target="학습목표">1. 학습목표</button><button class="wiki-toc-link" type="button" data-wiki-target="영양소와-소화의-목표">2. 영양소와 소화의 목표</button><button class="wiki-toc-link" type="button" data-wiki-target="소화와-흡수의-개념">3. 소화와 흡수의 개념</button><button class="wiki-toc-link" type="button" data-wiki-target="소화계통의-구성과-기능">4. 소화계통의 구성과 기능</button><button class="wiki-toc-link" type="button" data-wiki-target="기계적-소화와-화학적-소화-개념">5. 기계적 소화와 화학적 소화 개념</button><button class="wiki-toc-link" type="button" data-wiki-target="단백질-소화">6. 단백질 소화</button><button class="wiki-toc-link" type="button" data-wiki-target="탄수화물-소화">7. 탄수화물 소화</button><button class="wiki-toc-link" type="button" data-wiki-target="지질-소화">8. 지질 소화</button><button class="wiki-toc-link" type="button" data-wiki-target="소화관-벽의-네-층">9. 소화관 벽의 네 층</button><button class="wiki-toc-link" type="button" data-wiki-target="복막과-창자간막">10. 복막과 창자간막</button><button class="wiki-toc-link" type="button" data-wiki-target="구강에서의-소화">11. 구강에서의 소화</button><button class="wiki-toc-link" type="button" data-wiki-target="침과-침샘">12. 침과 침샘</button><button class="wiki-toc-link" type="button" data-wiki-target="인두와-식도">13. 인두와 식도</button><button class="wiki-toc-link" type="button" data-wiki-target="소화관-통과시간">14. 소화관 통과시간</button><button class="wiki-toc-link" type="button" data-wiki-target="핵심-비교">15. 핵심 비교</button></aside><div class="wiki-article"><section id="wiki-3-학습목표" class="wiki-section" data-wiki-section="학습목표" data-wiki-heading="학습목표" data-wiki-number="s-1"><div class="wiki-section-head"><h4>학습목표</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-학습목표-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="0" aria-label="학습목표 문단 편집">편집</button></div></div><div id="wiki-3-학습목표-content" class="wiki-section-content"><ul><li><a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="영양소와 소화의 목표">영양소</a>가 생명 유지에 쓰이는 방식을 설명할 수 있다.</li><li><a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="소화와 흡수">소화와 흡수</a>의 차이를 설명할 수 있다.</li><li>소화계통의 여섯 가지 기본 기능을 열거할 수 있다.</li><li><a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="기계적 소화와 화학적 소화">기계적 소화와 화학적 소화</a>를 구분할 수 있다.</li><li>단백질, 탄수화물과 지질이 흡수 가능한 단위로 분해되는 과정을 설명할 수 있다.</li><li><a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="소화관 벽의 네 층">소화관 벽의 네 층</a>과 신경얼기의 위치를 설명할 수 있다.</li><li>구강, 인두와 식도에서 일어나는 소화 작용을 설명할 수 있다.</li></ul></div></section><section id="wiki-3-영양소와-소화의-목표" class="wiki-section" data-wiki-section="영양소와-소화의-목표" data-wiki-heading="영양소와 소화의 목표" data-wiki-number="s-2"><div class="wiki-section-head"><h4>영양소와 소화의 목표</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-영양소와-소화의-목표-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="1" aria-label="영양소와 소화의 목표 문단 편집">편집</button></div></div><div id="wiki-3-영양소와-소화의-목표-content" class="wiki-section-content"><p>생물이 섭취하는 음식에는 <strong>탄수화물, 지질, 단백질, 무기질, 비타민과 물</strong>이 들어 있다. 영양소는 에너지원으로 산화되거나 성장·유지·수선에 필요한 물질을 합성하는 재료로 쓰인다.</p><ul><li><strong>탄수화물, 지질, 단백질</strong>: 에너지를 제공하는 유기 영양소이며 생체 구성 물질의 원료가 된다.</li><li><strong>무기질과 비타민</strong>: 대사 반응과 생리 기능을 조절하는 데 필요하다.</li><li><strong>물</strong>: 반응 매질, 운반, 체온 조절과 체액 항상성에 필요하다.</li></ul><p>음식의 거대분자는 그대로 세포막을 통과하기 어렵다. <a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="소화와 흡수">소화</a>의 목표는 복잡하고 물에 잘 녹지 않는 음식물을 <strong>작고 수용성인 단일 영양소</strong>로 바꾸는 것이다. 이렇게 만들어진 영양소는 장상피를 통과해 혈액이나 림프로 들어갈 수 있다.</p></div></section><section id="wiki-3-소화와-흡수의-개념" class="wiki-section" data-wiki-section="소화와-흡수의-개념" data-wiki-heading="소화와 흡수의 개념" data-wiki-number="s-3"><div class="wiki-section-head"><h4>소화와 흡수의 개념</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-소화와-흡수의-개념-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="2" aria-label="소화와 흡수의 개념 문단 편집">편집</button></div></div><div id="wiki-3-소화와-흡수의-개념-content" class="wiki-section-content"><p><strong>소화(digestion)</strong>는 음식물을 흡수 가능한 작은 분자로 기계적·화학적으로 분해하는 과정이고, <strong>흡수(absorption)</strong>는 소화산물이 소화관 내강에서 상피를 지나 혈액 또는 림프로 이동하는 과정이다.</p><p>소화관의 내강은 몸속을 지나가지만 위상적으로는 <strong>외부 환경</strong>과 이어져 있다. 따라서 내강의 물질이 상피 장벽을 통과해야 비로소 내부 환경으로 들어온다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p08-image01.jpg" alt="소화는 진화의 결과이다. 순서대로 세포 내 소화 -&gt; 세포 내 + 외 소화 -&gt; 세포 외 소화. 더 효율적인 소화 방식으로 진화하였다. 원본 강의록 8쪽."><figcaption>소화는 진화의 결과이다. 순서대로 세포 내 소화 -&gt; 세포 내 + 외 소화 -&gt; 세포 외 소화. 더 효율적인 소화 방식으로 진화하였다. 원본 강의록 8쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p09-img01.jpg" alt="배아의 원시창자에서 형성되는 소화관. 사람은 발생 과정에서 처음 생긴 구멍이 항문이 되는 후구 동물에 속한다. 원본 강의록 9쪽."><figcaption>배아의 원시창자에서 형성되는 소화관. 사람은 발생 과정에서 처음 생긴 구멍이 항문이 되는 후구 동물에 속한다. 원본 강의록 9쪽.</figcaption></figure></div><h5 data-wiki-section="소화계통의-역할">소화계통의 역할</h5><p>소화계통은 단순히 영양소만 받아들이는 기관이 아니다. <sup><a id="wiki-fnref-3-1-1" class="wiki-footnote-ref" href="#wiki-fn-3-1" data-wiki-footnote="1" data-wiki-footnote-preview="영어로 영양소를 받아들인다(=공급한다)는 Provision이라 한다. 원문 예시: Provision of metabolic substrates, other nutrients &amp; water">[1]</a></sup></p><ul><li>음식물을 받아들이고 이동시킨다.</li><li>음식물을 기계적·화학적으로 분해한다.</li><li>영양소, 전해질과 물을 흡수한다.</li><li>소화액과 호르몬을 분비한다.</li><li>병원체와 유해물질에 대한 장벽 및 면역 방어를 제공한다.</li><li>소화되지 않은 잔여물을 배출한다.</li></ul><h5 data-wiki-section="하루-체액의-이동">하루 체액의 이동</h5><p>정상 성인에서는 음식과 음료로 약 2 L, 침·위액·쓸개즙·이자액·창자액 등 내인성 분비액으로 약 7 L가 소화관 내강에 더해져 하루 약 <strong>9 L</strong>가 처리된다. 이 가운데 약 <strong>7.5 L</strong>가 작은창자에서 흡수되고, 약 1.4 L가 큰창자에서 흡수되며, 대변으로 나가는 물은 약 0.1 L이다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p12-img01.jpg" alt="하루 소화관으로 들어오고 흡수·배출되는 물의 양. 이를 Mass balance라 한다. 원본 강의록 12쪽."><figcaption>하루 소화관으로 들어오고 흡수·배출되는 물의 양. 이를 Mass balance라 한다. 원본 강의록 12쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p13-img01.jpg" alt="섭취·대사로 얻는 물과 소변·피부·호흡·대변으로 잃는 물의 균형. 원본 강의록 13쪽."><figcaption>섭취·대사로 얻는 물과 소변·피부·호흡·대변으로 잃는 물의 균형. 원본 강의록 13쪽.</figcaption></figure></div><div class="wiki-callout">체액 흡수가 조금만 감소하거나 분비가 증가해도 대장으로 넘어가는 양이 크게 늘어 설사가 생길 수 있다.</div></div></section><section id="wiki-3-소화계통의-구성과-기능" class="wiki-section" data-wiki-section="소화계통의-구성과-기능" data-wiki-heading="소화계통의 구성과 기능" data-wiki-number="s-4"><div class="wiki-section-head"><h4>소화계통의 구성과 기능</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-소화계통의-구성과-기능-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="3" aria-label="소화계통의 구성과 기능 문단 편집">편집</button></div></div><div id="wiki-3-소화계통의-구성과-기능-content" class="wiki-section-content"><p>소화계통은 입에서 항문까지 이어지는 <strong>소화관</strong>과 침샘, 간, 쓸개, 이자 같은 <strong>부속소화기관</strong>으로 구성된다.</p><ul><li><strong>소화관(Alimentary canal)</strong>: 입안, 인두, 식도, 위, 작은창자, 큰창자, 항문</li><li><strong>부속소화기관</strong>: 치아, 혀, 침샘, 간, 쓸개, 이자</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p17-img01.jpg" alt="인간의 소화관은 중력에 적응하기 위한 방향으로 진화하였다. 원본 강의록 17쪽."><figcaption>인간의 소화관은 중력에 적응하기 위한 방향으로 진화하였다. 원본 강의록 17쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p18-img01.jpg" alt="섭취한 음식물이 입에서 항문까지 이동하는 경로. 원본 강의록 18쪽."><figcaption>섭취한 음식물이 입에서 항문까지 이동하는 경로. 원본 강의록 18쪽.</figcaption></figure></div><h5 data-wiki-section="소화기계의-여섯-가지-기본-기능">소화기계의 여섯 가지 기본 기능</h5><ul><li><strong>섭취(ingestion)</strong>: 음식물을 입으로 받아들인다.</li><li><strong>분비(secretion)</strong>: 물, 산, 완충액, 효소와 호르몬을 내강 또는 혈액으로 내보낸다.</li><li><strong>혼합과 추진(mixing and propulsion)</strong>: 수축으로 음식물과 분비액을 섞고 다음 구간으로 이동시킨다.</li><li><strong>소화(digestion)</strong>: 기계적·화학적으로 음식물을 작은 단위로 분해한다.</li><li><strong>흡수(absorption)</strong>: 소화산물, 전해질, 비타민과 물을 혈액 또는 림프로 옮긴다.</li><li><strong>배변(defecation)</strong>: 소화되지 않은 물질과 세균 등을 대변으로 제거한다.</li></ul><p>소화관의 형태와 길이, 치아와 위의 구조는 먹이의 종류에 따라 달라진다. 초식동물은 섬유소 발효를 위한 긴 소화관이나 발효 공간이 발달하고, 육식동물은 상대적으로 단순하고 짧은 소화관을 가진다.</p></div></section><section id="wiki-3-기계적-소화와-화학적-소화-개념" class="wiki-section" data-wiki-section="기계적-소화와-화학적-소화-개념" data-wiki-heading="기계적 소화와 화학적 소화 개념" data-wiki-number="s-5"><div class="wiki-section-head"><h4>기계적 소화와 화학적 소화 개념</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-기계적-소화와-화학적-소화-개념-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="4" aria-label="기계적 소화와 화학적 소화 개념 문단 편집">편집</button></div></div><div id="wiki-3-기계적-소화와-화학적-소화-개념-content" class="wiki-section-content"><h5 data-wiki-section="기계적-소화">기계적 소화</h5><p><strong>기계적 소화</strong>는 씹기, 휘젓기와 분절운동으로 음식물을 잘게 나누고 소화액과 섞는 과정이다. 공유결합을 끊지는 않지만 표면적을 넓혀 효소 작용을 돕는다.</p><h5 data-wiki-section="화학적-소화">화학적 소화</h5><p><strong>화학적 소화</strong>는 효소가 물을 사용해 고분자의 결합을 끊는 가수분해(hydrolysis) 과정이다. 단백질은 아미노산, 탄수화물은 단당류, 지질은 지방산·모노글리세리드 등 흡수 가능한 단위로 바뀐다. 이 때 가수분해에 필요한 효소는 침샘, 위, 이자, 소장에서 제공한다. 단, 모든 영양분의 흡수에 있어 효소를 필요로 하는 것은 아니다. <sup><a id="wiki-fnref-3-2-1" class="wiki-footnote-ref" href="#wiki-fn-3-2" data-wiki-footnote="2" data-wiki-footnote-preview="비타민, 아미노산, 미네랄, 콜레스테롤, 물 등은 흡수에 있어 효소가 필요없다.">[2]</a></sup></p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p22-img01.png" alt="단백질, 탄수화물과 지질이 흡수 가능한 연료 분자로 분해되는 과정. 원본 강의록 22쪽."><figcaption>단백질, 탄수화물과 지질이 흡수 가능한 연료 분자로 분해되는 과정. 원본 강의록 22쪽.</figcaption></figure></div></div></section><section id="wiki-3-단백질-소화" class="wiki-section" data-wiki-section="단백질-소화" data-wiki-heading="단백질 소화" data-wiki-number="s-6"><div class="wiki-section-head"><h4>단백질 소화</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-단백질-소화-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="5" aria-label="단백질 소화 문단 편집">편집</button></div></div><div id="wiki-3-단백질-소화-content" class="wiki-section-content"><p>단백질 소화는 위에서 시작되어 작은창자에서 완성된다. 단백질분해효소는 펩타이드 결합을 가수분해한다.</p><ul><li><strong>내부펩티드분해효소(endopeptidase)</strong>: 단백질 사슬 내부의 결합을 절단한다. 펩신, 트립신과 키모트립신이 대표적이다.</li><li><strong>외부펩티드분해효소(exopeptidase)</strong>: 사슬 끝에서 아미노산을 하나씩 떼어 낸다. 카복시펩티데이스와 아미노펩티데이스가 대표적이다.</li><li>위의 산은 단백질을 변성시켜 효소가 접근하기 쉽게 하고 펩신을 활성화한다.</li><li>이자에서 분비된 비활성 효소원은 작은창자 내강에서 활성화된다. 특히 솔가장자리(Brush border)의 엔테로펩티데이스가 트립시노젠을 트립신으로 바꾸고, 트립신이 다른 효소원을 연쇄적으로 활성화한다. <sup><a id="wiki-fnref-3-3-1" class="wiki-footnote-ref" href="#wiki-fn-3-3" data-wiki-footnote="3" data-wiki-footnote-preview="이런 복잡한 과정을 거치는 이유는, 이자가 활성 형태의 protease를 분비하면 이자 자체도 단백질로 구성되어 있기에 녹아내리기 때문이다. (참고: 전구체가 이자 내에서 급격하게 활성형태로 바뀌면 급성 췌장염을 유발한다.)">[3]</a></sup></li><li>최종 산물인 아미노산과 작은 펩타이드는 장상피세포로 흡수된다.</li></ul></div></section><section id="wiki-3-탄수화물-소화" class="wiki-section" data-wiki-section="탄수화물-소화" data-wiki-heading="탄수화물 소화" data-wiki-number="s-7"><div class="wiki-section-head"><h4>탄수화물 소화</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-탄수화물-소화-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="6" aria-label="탄수화물 소화 문단 편집">편집</button></div></div><div id="wiki-3-탄수화물-소화-content" class="wiki-section-content"><p>식이 탄수화물에는 녹말, 글리코젠, 이당류와 단당류가 있다. 흡수 가능한 형태는 <strong>포도당, 갈락토스와 과당</strong> 같은 <strong>단당류(Monosaccharide)</strong>이다.</p><h5 data-wiki-section="다당류의-구조">다당류의 구조</h5><ul><li><strong>아밀로스</strong>: 포도당이 α-1,4 결합으로 이어진 직선형 녹말이다.</li><li><strong>아밀로펙틴</strong>: α-1,4 주사슬에 α-1,6 가지가 있는 녹말이다.</li><li><strong>글리코젠</strong>: 포도당 중합체로 아밀로펙틴보다 가지가 더 많다.</li><li><strong>셀룰로스</strong>: 포도당이 β-1,4 결합으로 이어진다. 사람은 이 결합을 자르는 셀룰레이스가 없어 소화하지 못한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p25-img01.png" alt="아밀로스의 직선형 α-1,4 포도당 사슬. 원본 강의록 25쪽."><figcaption>아밀로스의 직선형 α-1,4 포도당 사슬. 원본 강의록 25쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p25-img02.jpg" alt="아밀로펙틴과 글리코젠의 가지 친 구조. 원본 강의록 25쪽."><figcaption>아밀로펙틴과 글리코젠의 가지 친 구조. 원본 강의록 25쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p25-img03.png" alt="녹말과 글리코젠의 결합 및 가지 구조 비교. 원본 강의록 25쪽."><figcaption>녹말과 글리코젠의 결합 및 가지 구조 비교. 원본 강의록 25쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p28-img01.png" alt="α 결합 녹말과 β-1,4 결합 셀룰로스의 차이. 원본 강의록 28쪽."><figcaption>α 결합 녹말과 β-1,4 결합 셀룰로스의 차이. 원본 강의록 28쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p29-img01.jpg" alt="녹말, 글리코젠과 셀룰로스의 형태 비교. 원본 강의록 29쪽."><figcaption>녹말, 글리코젠과 셀룰로스의 형태 비교. 원본 강의록 29쪽.</figcaption></figure></div><h5 data-wiki-section="소화-과정">소화 과정</h5><p># 침의 α-amylase가 입에서 녹말의 α-1,4 결합을 일부 절단한다. # 위의 산성 환경에서는 침 amylase의 작용이 멈춘다. # 이자 amylase가 작은창자 내강에서 녹말 소화를 이어 간다. # 솔가장자리 효소인 maltase, sucrase-isomaltase와 lactase가 이당류와 올리고당을 단당류로 만든다.</p><p><strong>Sucrose</strong>는 포도당과 과당, <strong>lactose</strong>는 포도당과 갈락토스, <strong>maltose</strong>는 포도당 두 분자로 분해된다. 따라서 sucrose만 가수분해 산물에 과당이 포함된다는 점이 자주 비교된다. <a class="jbl-question-link" href="#jbl-q-239" data-jbl-question-link="239">239번 문항</a>,<a class="jbl-question-link" href="#jbl-q-411" data-jbl-question-link="411">411번 문항</a></p></div></section><section id="wiki-3-지질-소화" class="wiki-section" data-wiki-section="지질-소화" data-wiki-heading="지질 소화" data-wiki-number="s-8"><div class="wiki-section-head"><h4>지질 소화</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-지질-소화-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="7" aria-label="지질 소화 문단 편집">편집</button></div></div><div id="wiki-3-지질-소화-content" class="wiki-section-content"><p>섭취되는 지질의 대부분은 <strong>중성지방(Triglyceride)</strong>이다. 이는 위의 gastric lipase와 구강의 lingual lipase에 의해 소화되기도 하지만 가장 주된 경로는 <strong>pancreatic lipase</strong>에 의한 소장에서의 흡수이다.</p><p>지질은 물에 잘 녹지 않으므로 수용성 소화액 속 효소가 접근하려면 먼저 작은 방울로 분산되어야 한다. # Lingual lipase가 침으로 분비되어 위의 낮은 pH에서 활성화 된다. # 위와 작은창자의 운동이 지방을 작은 방울(Micelles)로 나눈다. # 쓸개즙의 <strong>쓸개즙산염</strong>이 지방을 유화하여 표면적을 넓힌다. # Pancreatic lipase가 중성지방을 모노글리세리드와 유리지방산으로 가수분해한다. # 쓸개즙산염이 소화산물과 <strong>혼합미셀</strong>을 만들어 장상피의 솔가장자리(Brush border)까지 운반한다. # 지질 성분은 장상피세포 안에서 다시 중성지방으로 합성되고 apolipoprotein과 결합해 <strong>Chylomicron</strong>이 된다. # Chylomicron은 중심림프관으로 들어가 림프를 거쳐 혈액으로 이동한다.</p><div class="wiki-callout">짧은사슬 지방산은 문맥혈로 직접 이동할 수 있지만, 대부분의 긴사슬 지질은 Chylomicron 형태로 림프를 거친다.</div></div></section><section id="wiki-3-소화관-벽의-네-층" class="wiki-section" data-wiki-section="소화관-벽의-네-층" data-wiki-heading="소화관 벽의 네 층" data-wiki-number="s-9"><div class="wiki-section-head"><h4>소화관 벽의 네 층</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-소화관-벽의-네-층-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="8" aria-label="소화관 벽의 네 층 문단 편집">편집</button></div></div><div id="wiki-3-소화관-벽의-네-층-content" class="wiki-section-content"><p>식도에서 항문까지 소화관 벽은 안쪽부터 <strong>점막, 점막밑층, 근육층, 장막 또는 바깥막</strong>의 기본 배열을 공유한다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p37-img01.png" alt="점막, 점막밑층, 근육층과 장막으로 이루어진 소화관 벽. 원본 강의록 37쪽."><figcaption>점막, 점막밑층, 근육층과 장막으로 이루어진 소화관 벽. 원본 강의록 37쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p40-img01.jpg" alt="소화관 벽 각 층과 혈관·신경얼기의 관계. 원본 강의록 40쪽."><figcaption>소화관 벽 각 층과 혈관·신경얼기의 관계. 원본 강의록 40쪽.</figcaption></figure></div><h5 data-wiki-section="점막">점막</h5><p>점막은 상피, 고유판과 점막근육층으로 구성된다. 상피는 분비·흡수·방어를 담당하며, 고유판에는 혈관·림프관·샘·면역세포가 존재한다. 점막근육층은 점막의 국소 운동을 만든다.</p><h5 data-wiki-section="점막밑층">점막밑층</h5><p>점막밑층은 결합조직, 큰 혈관과 림프관을 포함한다. <strong>점막밑신경얼기(submucosal plexus, Meissner plexus)</strong>는 주로 분비와 국소 혈류를 조절한다.</p><h5 data-wiki-section="근육층">근육층</h5><p>대부분 안쪽 돌림근과 바깥쪽 세로근으로 구성된다. 두 근육층 사이의 <strong>근육층신경얼기(myenteric plexus, Auerbach plexus)</strong>는 소화관 운동의 강도, 리듬과 전도 속도를 조절한다. 소화관 민무늬근 세포는 틈새이음으로 전기적으로 연결되어 기능적 합포체처럼 행동한다.</p><h5 data-wiki-section="장막과-바깥막">장막과 바깥막</h5><p>복강 안에서 자유롭게 움직이는 구간의 바깥면은 중피가 덮인 장막이며, 주변 조직에 고정된 구간은 결합조직성 바깥막을 가진다.</p><p>*자세한 내용은 <a class="wiki-link" href="#lecture-3" data-wiki-course="3" data-wiki-section="구강 및 소화관의 조직학">조직학</a>을 참고하자.</p></div></section><section id="wiki-3-복막과-창자간막" class="wiki-section" data-wiki-section="복막과-창자간막" data-wiki-heading="복막과 창자간막" data-wiki-number="s-10"><div class="wiki-section-head"><h4>복막과 창자간막</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-복막과-창자간막-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="9" aria-label="복막과 창자간막 문단 편집">편집</button></div></div><div id="wiki-3-복막과-창자간막-content" class="wiki-section-content"><p><strong>복막(peritoneum)</strong>은 복강 벽을 덮는 벽쪽복막과 장기를 덮는 내장쪽복막으로 구분된다. 두 층 사이 복막안에는 소량의 윤활액이 있어 장기 마찰을 줄인다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p43-img01.jpg" alt="벽쪽복막, 내장쪽복막과 복막안의 관계. 원본 강의록 43쪽."><figcaption>벽쪽복막, 내장쪽복막과 복막안의 관계. 원본 강의록 43쪽.</figcaption></figure></div><p><strong>창자간막(mesentery)</strong>은 복막이 두 겹으로 접힌 구조로, 장기를 뒤배벽에 매달고 혈관·림프관·신경과 지방의 통로를 제공한다. 장기의 바깥 표면을 직접 덮는 연속층은 창자간막 자체가 아니라 내장쪽복막이다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p44-img01.jpg" alt="창자를 뒤배벽에 연결하는 두 겹의 창자간막. 원본 강의록 44쪽."><figcaption>창자를 뒤배벽에 연결하는 두 겹의 창자간막. 원본 강의록 44쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p44-img02.jpg" alt="창자간막 안으로 주행하는 혈관과 신경. 원본 강의록 44쪽."><figcaption>창자간막 안으로 주행하는 혈관과 신경. 원본 강의록 44쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p45-img01.jpg" alt="복강 내 창자간막의 실제 모습. 원본 강의록 45쪽."><figcaption>복강 내 창자간막의 실제 모습. 원본 강의록 45쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p45-img02.jpg" alt="창자와 창자간막의 연결 관계. 원본 강의록 45쪽."><figcaption>창자와 창자간막의 연결 관계. 원본 강의록 45쪽.</figcaption></figure></div></div></section><section id="wiki-3-구강에서의-소화" class="wiki-section" data-wiki-section="구강에서의-소화" data-wiki-heading="구강에서의 소화" data-wiki-number="s-11"><div class="wiki-section-head"><h4>구강에서의 소화</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-구강에서의-소화-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="10" aria-label="구강에서의 소화 문단 편집">편집</button></div></div><div id="wiki-3-구강에서의-소화-content" class="wiki-section-content"><p>입안에서는 섭취, 맛 감지, 씹기, 침과의 혼합, 삼킬 수 있는 음식덩이 형성, 녹말 소화의 시작이 일어난다. 혀는 음식물을 치아 사이로 이동시키고 침과 섞으며 음식덩이를 인두 쪽으로 민다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p49-img01.jpg" alt="입술, 치아, 혀, 입천장과 침샘관이 있는 구강. 원본 강의록 49쪽."><figcaption>입술, 치아, 혀, 입천장과 침샘관이 있는 구강. 원본 강의록 49쪽.</figcaption></figure></div><h5 data-wiki-section="맛봉오리">맛봉오리</h5><p>맛봉오리는 혀유두를 포함한 구강 상피에 위치한다. 맛물질이 침에 녹아 맛구멍을 통해 맛수용세포를 자극하면 감각신경으로 신호가 전달된다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p51-img01.jpg" alt="혀유두와 맛봉오리의 분포. 원본 강의록 51쪽."><figcaption>혀유두와 맛봉오리의 분포. 원본 강의록 51쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p51-img02.jpg" alt="맛구멍, 맛수용세포와 감각신경으로 이루어진 맛봉오리. 원본 강의록 51쪽."><figcaption>맛구멍, 맛수용세포와 감각신경으로 이루어진 맛봉오리. 원본 강의록 51쪽.</figcaption></figure></div><h5 data-wiki-section="씹기와-치아">씹기와 치아</h5><p>씹기는 음식물을 작은 조각으로 나누어 표면적을 늘리고 침과 섞는다. 앞니는 자르고, 송곳니는 찢으며, 작은어금니와 큰어금니는 부수고 간다. 턱운동은 수의적으로 시작할 수 있지만 음식물이 구강 수용기를 자극하면 반사 회로가 반복적인 씹기 운동을 돕는다.</p><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p54-img01.png" alt="먹이 종류에 따라 달라지는 포유류 치아의 형태. 원본 강의록 54쪽."><figcaption>먹이 종류에 따라 달라지는 포유류 치아의 형태. 원본 강의록 54쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p54-img02.jpg" alt="육식동물(Carnivore)의 치아는 송곳니가 특히 발달한다. 원본 강의록 54쪽."><figcaption>육식동물(Carnivore)의 치아는 송곳니가 특히 발달한다. 원본 강의록 54쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p55-img01.jpg" alt="치관, 치근, 법랑질, 상아질과 치수를 포함한 치아 구조. 자세한 내용은 1강을 참고하자.원본 강의록 55쪽."><figcaption>치관, 치근, 법랑질, 상아질과 치수를 포함한 치아 구조. 자세한 내용은 1강을 참고하자.원본 강의록 55쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p55-img02.png" alt="Enamel의 99%는 칼슘 결정이며 이는 칼슘과 인 등의 미네랄 성분 96%, 물 3%로 결합 비율에 따라 96-99%로 구성된다.(Gemini) 원본 강의록 55쪽."><figcaption>Enamel의 99%는 칼슘 결정이며 이는 칼슘과 인 등의 미네랄 성분 96%, 물 3%로 결합 비율에 따라 96-99%로 구성된다.(Gemini) 원본 강의록 55쪽.</figcaption></figure></div></div></section><section id="wiki-3-침과-침샘" class="wiki-section" data-wiki-section="침과-침샘" data-wiki-heading="침과 침샘" data-wiki-number="s-12"><div class="wiki-section-head"><h4>침과 침샘</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-침과-침샘-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="11" aria-label="침과 침샘 문단 편집">편집</button></div></div><div id="wiki-3-침과-침샘-content" class="wiki-section-content"><p>하루 침 분비량은 약 <strong>1.0–1.5 L</strong>이다. 침은 음식물을 적시고 윤활하며, 맛물질을 녹이고, 삼킴과 발음을 돕고, 구강을 세척하며, 소화와 방어에 관여한다.</p><h5 data-wiki-section="침의-성분과-기능">침의 성분과 기능</h5><ul><li>물과 점액: 음식물을 적시고 음식덩이를 형성한다.</li><li>bicarbonate와 phosphate: 구강의 산을 완충한다.</li><li>α-amylase: 녹말 소화를 시작한다.</li><li>lingual lipase: 지질 소화에 관여하며 특히 영아에서 중요하다.</li><li>lysozyme, lactoferrin과 <strong>분비형 IgA</strong>: 미생물 방어에 관여한다. <sup><a id="wiki-fnref-3-4-1" class="wiki-footnote-ref" href="#wiki-fn-3-4" data-wiki-footnote="4" data-wiki-footnote-preview="IgG는 침의 대표 면역글로불린이 아니다.">[4]</a></sup></li></ul><p>침샘은 두가지 종류가 존재한다.</p><ul><li>Intrinsic glands: 혀, 입술 내부, 턱 내부를 포함한 구강 조직에 수없이 분포하는 작은 샘들로 <strong>Lingual lipase</strong>와 <strong>Lysozyme</strong>을 포함하여 음식물 섭취와 무관하게 constant한 구강 <strong>점막</strong>의 수분 유지 및 항균 작용에 기여한다.</li><li>Extrinsic glands: 세개의 큰 침샘으로 duct를 통해 구강 내로 분비된다.</li></ul><h5 data-wiki-section="큰침샘">큰침샘</h5><ul><li><strong>귀밑샘(parotid gland)</strong>: <strong>장액성(Serous) 분비</strong>가 주를 이룬다.</li><li><strong>턱밑샘(submandibular gland)</strong>: 혼합샘이며 <strong>장액성(Serous) 분비</strong>가 우세하다.</li><li><strong>혀밑샘(sublingual gland)</strong>: 혼합샘이며 <strong>점액성(Mucus) 분비</strong>가 우세하여 가장 점성이 높다.</li></ul><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p62-img01.jpg" alt="귀밑샘, 턱밑샘과 혀밑샘의 위치와 관. 원본 강의록 62쪽."><figcaption>귀밑샘, 턱밑샘과 혀밑샘의 위치와 관. 원본 강의록 62쪽.</figcaption></figure></div><div class="wiki-callout">귀밑샘의 Paramyxovirus(Mumps)의 감염은 유행성이하선염을 일으킬 수 있으며 30%의 남성은 유아기에 감염된 mumps가 고환으로 전이하여 재감염을 일으키기도 한다. <sup><a id="wiki-fnref-3-5-1" class="wiki-footnote-ref" href="#wiki-fn-3-5" data-wiki-footnote="5" data-wiki-footnote-preview="1967년에 백신이 개발되어 현재는 안전하다.">[5]</a></sup></div><h5 data-wiki-section="침-분비-조절">침 분비 조절</h5><p>침 분비는 주로 자율신경 반사로 조절된다. 맛과 구강 촉각 자극은 연수의 침분비핵으로 입력되고, 음식의 냄새·모습·생각과 조건반사는 대뇌를 통해 분비를 촉진할 수 있다.</p><ul><li><strong>부교감신경</strong>: 풍부하고 묽은 침, 혈관확장과 샘 대사를 촉진한다.</li><li><strong>교감신경</strong>: 상대적으로 적고 점성이 높은 단백질성 분비를 유도할 수 있으며 스트레스<sup><a id="wiki-fnref-3-6-1" class="wiki-footnote-ref" href="#wiki-fn-3-6" data-wiki-footnote="6" data-wiki-footnote-preview="탈수, 수면, 피로와 두려움 등">[6]</a></sup>는 교감신경을 자극하여 구강 건조를 유발한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/pavlov.jpg" alt="파블로프 박사는 파블로프의 개 실험으로부터 Salivary nuclei는 Brain stem에 존재하며 '''Cortex, Taste buds, Olactory apparatus'''로부터 정보를 받는다는 사실을 밝혀 노벨상을 수상했다. 원본 강의록 65쪽."><figcaption>파블로프 박사는 파블로프의 개 실험으로부터 Salivary nuclei는 Brain stem에 존재하며 <strong>Cortex, Taste buds, Olactory apparatus</strong>로부터 정보를 받는다는 사실을 밝혀 노벨상을 수상했다. 원본 강의록 65쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p66-img01.jpg" alt="자율신경에 의한 침샘 분비 조절. 각 신경들에 지배에 의해 3가지 큰 침샘의 분비량이 조절되어 구강 내 침의 점도 등을 결정한다. 원본 강의록 66쪽."><figcaption>자율신경에 의한 침샘 분비 조절. 각 신경들에 지배에 의해 3가지 큰 침샘의 분비량이 조절되어 구강 내 침의 점도 등을 결정한다. 원본 강의록 66쪽.</figcaption></figure></div></div></section><section id="wiki-3-인두와-식도" class="wiki-section" data-wiki-section="인두와-식도" data-wiki-heading="인두와 식도" data-wiki-number="s-13"><div class="wiki-section-head"><h4>인두와 식도</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-인두와-식도-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="12" aria-label="인두와 식도 문단 편집">편집</button></div></div><div id="wiki-3-인두와-식도-content" class="wiki-section-content"><h5 data-wiki-section="인두와-식도-구역의-해부학">인두와 식도 구역의 해부학</h5><ul><li>Nasopharynx-: 비강과 이어져 숨을 쉬게 한다.</li><li>Oropharynx- : 연구개 뒤에서 코인두로 연결되는 공간으로 음식과 공기의 이동을 공유하는 통로이다.</li><li>Laryngopharynx-: Oropharynx 아래에 위치하여 Larynx와 식도로 열리는 통로이다.</li></ul><h5 data-wiki-section="삼킴의-과정">삼킴의 과정</h5><p>인두는 음식과 공기가 공유하는 통로이며, 삼킴이 시작되면 음식덩이를 식도로 보낸다. 삼킴은 구강기, 인두기와 식도기로 나뉜다.</p><ul><li><strong>구강기</strong>: 혀가 음식덩이를 인두로 미는 수의적 단계이다.</li><li><strong>인두기</strong>: 연구개가 코인두를 닫고 후두가 올라가며 후두덮개와 성대가 기도를 보호하는 반사 단계이다. 위식도조임근이 이완한다.</li><li><strong>식도기</strong>: 일차 연동 운동(primary peristalsis)이 음식덩이를 위로 보내고, 남은 팽창은 이차 연동 운동(secondary peristalsis)을 유발한다.</li></ul><div class="wiki-grid "><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p68-img01.jpg" alt="연구개와 후두의 움직임을 포함한 삼킴 과정. 원본 강의록 68쪽."><figcaption>연구개와 후두의 움직임을 포함한 삼킴 과정. 원본 강의록 68쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p70-img01.jpg" alt="인두에서 위까지 이어지는 식도와 음식덩이(Bolus)의 이동. 음식덩이가 기도로 유입되지 않기 위한 혀와 목젖, 후두개(Epiglotitis)의 움직임을 주목하자. 원본 강의록 70쪽."><figcaption>인두에서 위까지 이어지는 식도와 음식덩이(Bolus)의 이동. 음식덩이가 기도로 유입되지 않기 위한 혀와 목젖, 후두개(Epiglotitis)의 움직임을 주목하자. 원본 강의록 70쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p71-img01.jpg" alt="식도 연동 운동(peristalsis)이 음식덩이를 아래로 이동시키는 과정. 원본 강의록 71쪽."><figcaption>식도 연동 운동(peristalsis)이 음식덩이를 아래로 이동시키는 과정. 원본 강의록 71쪽.</figcaption></figure><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p71-img02.jpg" alt="아래식도조임근의 이완과 위 진입. 원본 강의록 71쪽."><figcaption>아래식도조임근의 이완과 위 진입. 원본 강의록 71쪽.</figcaption></figure></div><p>아래식도조임근은 안정 시 수축하여 위 내용물의 역류를 막고, 삼킴 때 이완한다. 조임근 기능이 약해지면 위식도역류와 식도염(Esophagitis)이 생길 수 있다. 삼킴 장애는 신경성 구강·인두 전달 장애(co-ordinated contraction), 식도 운동 장애 또는 기계적 폐색으로 발생한다. 자세한 내용은 4강을 참고한다.</p></div></section><section id="wiki-3-소화관-통과시간" class="wiki-section" data-wiki-section="소화관-통과시간" data-wiki-heading="소화관 통과시간" data-wiki-number="s-14"><div class="wiki-section-head"><h4>소화관 통과시간</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-소화관-통과시간-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="13" aria-label="소화관 통과시간 문단 편집">편집</button></div></div><div id="wiki-3-소화관-통과시간-content" class="wiki-section-content"><p>음식물 이동 속도는 구간마다 다르다. 식도 통과는 수초로 빠르지만 위 배출과 작은창자·큰창자 통과에는 수시간에서 하루 이상이 걸린다. 음식의 성상, 양, 지방 함량과 소화관 운동 상태가 통과시간을 바꾼다.</p><div class="wiki-grid single"><figure class="wiki-figure"><img data-note-image="" src="./assets/lecture-03-digestion/p73-digestion-transit-time.png" alt="강의록에 제시된 소화관 구간별 음식물 이동과 대략적인 통과시간. 식도는 약 3초, 식사의 후반부가 위를 떠나는 데 약 3–5시간이 걸리며, 이후 작은창자와 큰창자를 거쳐 진행한다. 원본 강의록 73쪽."><figcaption>강의록에 제시된 소화관 구간별 음식물 이동과 대략적인 통과시간. 식도는 약 3초, 식사의 후반부가 위를 떠나는 데 약 3–5시간이 걸리며, 이후 작은창자와 큰창자를 거쳐 진행한다. 원본 강의록 73쪽.</figcaption></figure></div></div></section><section id="wiki-3-핵심-비교" class="wiki-section" data-wiki-section="핵심-비교" data-wiki-heading="핵심 비교" data-wiki-number="s-15"><div class="wiki-section-head"><h4>핵심 비교</h4><div class="wiki-section-actions"><button class="wiki-section-action" type="button" data-wiki-section-toggle="" aria-expanded="true" aria-controls="wiki-3-핵심-비교-content">접기</button><button class="wiki-section-action" type="button" data-wiki-section-edit="14" aria-label="핵심 비교 문단 편집">편집</button></div></div><div id="wiki-3-핵심-비교-content" class="wiki-section-content"><ul><li><strong>소화 / 흡수</strong>: 소화는 분자 분해, 흡수는 내강에서 혈액·림프로의 이동이다.</li><li><strong>기계적 / 화학적 소화</strong>: 기계적 소화는 크기를 줄이고 섞으며, 화학적 소화는 효소가 결합을 가수분해한다.</li><li><strong>α 결합 / β-1,4 결합</strong>: 사람의 amylase는 녹말·글리코젠의 α 결합을 처리하지만 셀룰로스의 β-1,4 결합은 처리하지 못한다.</li><li><strong>근육층신경얼기 / 점막밑신경얼기</strong>: 근육층신경얼기는 운동, 점막밑신경얼기는 분비와 국소 혈류 조절이 중심이다.</li><li><strong>장막 / 창자간막</strong>: 장막은 장기 표면을 덮고, 창자간막은 두 겹의 복막으로 장기를 매달며 혈관·신경의 통로가 된다.</li><li><strong>부교감 / 교감 침 분비</strong>: 부교감은 풍부하고 묽은 침, 교감은 상대적으로 적고 점성 높은 분비를 유도한다.</li></ul><div class="wiki-callout"><strong>시험 포인트</strong> 하루 소화관 유입액 약 9 L, 작은창자 흡수 약 7.5 L, 침 약 1.0–1.5 L를 함께 기억한다.</div></div></section><section class="wiki-footnotes"><h4>각주</h4><ol><li id="wiki-fn-3-1" class="wiki-footnote-item" data-wiki-footnote-back="1" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 1의 본문 위치로 이동">영어로 영양소를 받아들인다(=공급한다)는 Provision이라 한다. 원문 예시: Provision of metabolic substrates, other nutrients &amp; water<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-1-1" data-wiki-footnote-back="1" data-wiki-footnote-reference="1" aria-label="본문의 각주 1 1번째 위치로 돌아가기">↩</a></span></li><li id="wiki-fn-3-2" class="wiki-footnote-item" data-wiki-footnote-back="2" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 2의 본문 위치로 이동">비타민, 아미노산, 미네랄, 콜레스테롤, 물 등은 흡수에 있어 효소가 필요없다.<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-2-1" data-wiki-footnote-back="2" data-wiki-footnote-reference="1" aria-label="본문의 각주 2 1번째 위치로 돌아가기">↩</a></span></li><li id="wiki-fn-3-3" class="wiki-footnote-item" data-wiki-footnote-back="3" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 3의 본문 위치로 이동">이런 복잡한 과정을 거치는 이유는, 이자가 활성 형태의 protease를 분비하면 이자 자체도 단백질로 구성되어 있기에 녹아내리기 때문이다. (참고: 전구체가 이자 내에서 급격하게 활성형태로 바뀌면 급성 췌장염을 유발한다.)<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-3-1" data-wiki-footnote-back="3" data-wiki-footnote-reference="1" aria-label="본문의 각주 3 1번째 위치로 돌아가기">↩</a></span></li><li id="wiki-fn-3-4" class="wiki-footnote-item" data-wiki-footnote-back="4" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 4의 본문 위치로 이동">IgG는 침의 대표 면역글로불린이 아니다.<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-4-1" data-wiki-footnote-back="4" data-wiki-footnote-reference="1" aria-label="본문의 각주 4 1번째 위치로 돌아가기">↩</a></span></li><li id="wiki-fn-3-5" class="wiki-footnote-item" data-wiki-footnote-back="5" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 5의 본문 위치로 이동">1967년에 백신이 개발되어 현재는 안전하다.<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-5-1" data-wiki-footnote-back="5" data-wiki-footnote-reference="1" aria-label="본문의 각주 5 1번째 위치로 돌아가기">↩</a></span></li><li id="wiki-fn-3-6" class="wiki-footnote-item" data-wiki-footnote-back="6" data-wiki-footnote-reference="1" tabindex="0" role="link" aria-label="각주 6의 본문 위치로 이동">탈수, 수면, 피로와 두려움 등<span class="wiki-footnote-backs"><a class="wiki-footnote-back" href="#wiki-fnref-3-6-1" data-wiki-footnote-back="6" data-wiki-footnote-reference="1" aria-label="본문의 각주 6 1번째 위치로 돌아가기">↩</a></span></li></ol></section></div></div></article></div></div>
+      </section>
+
+      <section id="personal-notes-view" class="view" aria-labelledby="personal-notes-title" hidden>
+        <div id="personal-notes-root" class="personal-notes-shell"></div>
       </section>
 
       <section id="jbl-view" class="view" aria-label="JBL 전체 문항" hidden="">
@@ -2763,12 +2864,15 @@
     const wikiBookmarkKey = 'digestive-wiki-bookmarks-v1';
     const ankiStorageKey = 'digestive-anki-cards-v1';
     const ankiSessionKey = 'digestive-anki-sessions-v1';
+    const personalNotesStorageKey = 'digestive-personal-notes-v1';
     let wikiBookmarks = readStudyStorage(wikiBookmarkKey, []);
     let ankiCards = readStudyStorage(ankiStorageKey, []);
     let ankiSessions = readStudyStorage(ankiSessionKey, {});
+    let personalNotes = readStudyStorage(personalNotesStorageKey, []);
     if (!Array.isArray(wikiBookmarks)) wikiBookmarks = [];
     if (!Array.isArray(ankiCards)) ankiCards = [];
     if (!ankiSessions || typeof ankiSessions !== 'object' || Array.isArray(ankiSessions)) ankiSessions = {};
+    if (!Array.isArray(personalNotes)) personalNotes = [];
     const ankiEditingCourses = new Set();
     const ankiMenuCourses = new Set();
     let ankiStudyObserver;
@@ -3086,7 +3190,7 @@
         dialog.querySelectorAll('[data-fav-add]').forEach(button => button.onclick = () => {
           const source = entries[Number(button.dataset.favAdd)].source();
           if (source == null) { alert('문단이 이동하거나 제목이 바뀌었습니다. Wiki에서 다시 즐겨찾기해 주세요.'); return; }
-          add(source); dialog.close();
+          add(source, entries[Number(button.dataset.favAdd)]); dialog.close();
         });
         dialog.querySelectorAll('[data-fav-preview]').forEach(link => link.onclick = event => {
           event.preventDefault();
@@ -3104,6 +3208,204 @@
         });
       }
       draw();
+    }
+
+    const personalNoteState = { mode:'list', selectedId:null, draftId:null };
+    const personalRenderCourseId = 990001;
+
+    function personalNoteById(id) {
+      return personalNotes.find(note => note.id === id) || null;
+    }
+
+    function personalNoteDate(value) {
+      if (!value) return '';
+      try { return new Intl.DateTimeFormat('ko-KR', { year:'numeric', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }).format(new Date(value)); }
+      catch (_) { return ''; }
+    }
+
+    function cleanPersonalDocumentBody(source) {
+      // The title has its own field, so a pasted top-level Wiki title cannot replace it.
+      return String(source || '').replace(/^=\s+.+?\s+=$/gm, '').trim();
+    }
+
+    function personalDocumentWikiSource(note) {
+      const safeTitle = String(note?.title || '제목 없는 문서').replace(/[\r\n=]+/g, ' ').trim() || '제목 없는 문서';
+      const body = cleanPersonalDocumentBody(note?.source || '');
+      return `= ${safeTitle} =${body ? `\n\n${body}` : ''}`;
+    }
+
+    function personalFavoriteSource(source, entry) {
+      if (!entry?.question) return String(source || '').trim();
+      const question = entry.question;
+      return [
+        `=== ${question.globalNumber}번 문항 ===`,
+        question.question,
+        question.passage,
+        ...(question.images || []).map(path => `[[파일:${path.replace(/^\.\//, '')}|문항 이미지]]`),
+        ...(question.choices || []).map(choice => `# ${choice}`)
+      ].filter(Boolean).join('\n\n');
+    }
+
+    function personalToolbarMarkup(note = null, editing = false) {
+      const unavailable = note || editing ? '' : 'disabled';
+      return `<div class="personal-notes-toolbar"><h2 id="personal-notes-title">나만의 정리</h2><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="list" ${personalNoteState.mode === 'list' ? 'disabled' : ''}>목록</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="favorites" ${unavailable}>즐겨찾기 불러오기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="print" ${note && !editing ? '' : 'disabled'}>PDF 출력하기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="export" ${personalNotes.length ? '' : 'disabled'}>저장하기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="edit" ${note && !editing ? '' : 'disabled'}>편집하기</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-action="new">새 문서</button></div>`;
+    }
+
+    function bindPersonalToolbar(root, note = null, editing = false) {
+      root.querySelector('[data-personal-action="list"]')?.addEventListener('click', () => renderPersonalNotes('list'));
+      root.querySelector('[data-personal-action="new"]')?.addEventListener('click', () => renderPersonalEditor(null));
+      root.querySelector('[data-personal-action="edit"]')?.addEventListener('click', () => note && renderPersonalEditor(note.id));
+      root.querySelector('[data-personal-action="print"]')?.addEventListener('click', () => note && printPersonalDocument());
+      root.querySelector('[data-personal-action="export"]')?.addEventListener('click', openPersonalExportDialog);
+      root.querySelector('[data-personal-action="favorites"]')?.addEventListener('click', () => {
+        if (editing) openPersonalFavoritesIntoEditor(root);
+        else if (note) renderPersonalEditor(note.id, true);
+      });
+    }
+
+    function renderPersonalNotes(mode = 'list', selectedId = null) {
+      const root = document.querySelector('#personal-notes-root');
+      if (!root) return;
+      personalNoteState.mode = mode;
+      personalNoteState.selectedId = selectedId;
+      personalNoteState.draftId = null;
+      if (mode === 'document') {
+        const note = personalNoteById(selectedId);
+        if (!note) return renderPersonalNotes('list');
+        root.innerHTML = `${personalToolbarMarkup(note)}<p class="personal-document-meta">마지막 수정 ${escapeHtml(personalNoteDate(note.updatedAt))}</p><div class="personal-document-stage"><div class="personal-document-render" data-personal-document-render data-personal-course="${personalRenderCourseId}"></div></div>`;
+        const fullSource = personalDocumentWikiSource(note);
+        const renderCourse = { ...courses[0], id:personalRenderCourseId, title:note.title, name:note.title };
+        lectureNoteSources[personalRenderCourseId] = fullSource;
+        const renderTarget = root.querySelector('[data-personal-document-render]');
+        renderTarget.innerHTML = renderWikiDocument(fullSource, renderCourse);
+        delete lectureNoteSources[personalRenderCourseId];
+        bindWikiDocument(renderTarget, renderCourse);
+        renderTarget.querySelectorAll('[data-wiki-edit], [data-wiki-section-edit], [data-wiki-heading-edit], .wiki-bookmark').forEach(element => element.remove());
+        const personalToc = renderTarget.querySelector('.wiki-toc');
+        if (personalToc && !personalToc.querySelector('.wiki-toc-link')) {
+          personalToc.closest('.wiki-layout')?.classList.add('personal-without-toc');
+          personalToc.remove();
+        }
+        bindPersonalToolbar(root, note, false);
+        return;
+      }
+
+      const ordered = [...personalNotes].sort((a,b) => Number(b.updatedAt || 0) - Number(a.updatedAt || 0));
+      root.innerHTML = `${personalToolbarMarkup()}<div class="personal-notes-list">${ordered.length ? ordered.map(note => `<article class="personal-note-card"><button class="personal-note-open" type="button" data-personal-open="${escapeHtml(note.id)}"><strong>${escapeHtml(note.title || '제목 없는 문서')}</strong><span>${escapeHtml(personalNoteDate(note.updatedAt))}</span></button><button class="personal-note-delete" type="button" data-personal-delete="${escapeHtml(note.id)}">삭제</button></article>`).join('') : '<div class="personal-note-empty"><strong>아직 만든 문서가 없습니다.</strong><span>새 문서를 만들고 Wiki 또는 J 즐겨찾기를 불러와 정리해 보세요.</span></div>'}</div>`;
+      bindPersonalToolbar(root);
+      root.querySelectorAll('[data-personal-open]').forEach(button => button.addEventListener('click', () => renderPersonalNotes('document', button.dataset.personalOpen)));
+      root.querySelectorAll('[data-personal-delete]').forEach(button => button.addEventListener('click', () => {
+        const note = personalNoteById(button.dataset.personalDelete);
+        if (!note || !confirm(`“${note.title || '제목 없는 문서'}” 문서를 삭제할까요? 이 작업은 되돌릴 수 없습니다.`)) return;
+        const next = personalNotes.filter(item => item.id !== note.id);
+        if (writeStudyStorage(personalNotesStorageKey, next)) { personalNotes = next; renderPersonalNotes('list'); }
+      }));
+    }
+
+    function insertPersonalEditorSource(root, source) {
+      const editor = root.querySelector('[data-personal-source]');
+      if (!editor) return;
+      const start = editor.selectionStart;
+      const addition = String(source || '').trim();
+      const prefix = start > 0 && editor.value.slice(0,start).trim() ? '\n\n' : '';
+      editor.setRangeText(prefix + addition, start, editor.selectionEnd, 'end');
+      editor.focus();
+      editor.dispatchEvent(new Event('input', { bubbles:true }));
+    }
+
+    function openPersonalFavoritesIntoEditor(root) {
+      const fallbackCourse = courses[0];
+      openAnkiFavorites(fallbackCourse, (source, entry) => insertPersonalEditorSource(root, personalFavoriteSource(source, entry)));
+    }
+
+    function renderPersonalEditor(id = null, loadFavorites = false) {
+      const root = document.querySelector('#personal-notes-root');
+      if (!root) return;
+      const note = id ? personalNoteById(id) : null;
+      personalNoteState.mode = 'editor';
+      personalNoteState.selectedId = note?.id || null;
+      personalNoteState.draftId = note?.id || null;
+      root.innerHTML = `${personalToolbarMarkup(note, true)}<section class="personal-document-editor"><div class="personal-document-editor-head"><div><h3>${note ? '문서 편집' : '새 문서'}</h3><p>Wiki 문법으로 작성되며 즐겨찾기 원문을 원하는 위치에 불러올 수 있습니다.</p></div><button class="jbl-btn jbl-btn-sub" type="button" data-personal-editor-favorites>즐겨찾기 불러오기</button></div><div class="personal-document-title-field"><label for="personal-document-title">문서 제목</label><input id="personal-document-title" type="text" data-personal-title value="${escapeHtml(note?.title || '')}" maxlength="120" autocomplete="off" placeholder="문서 제목을 입력하세요"></div><textarea class="wiki-source-editor" data-personal-source spellcheck="false" placeholder="Wiki 문법으로 내용을 작성하세요.">${escapeHtml(note?.source || '')}</textarea>${wikiSyntaxHelpMarkup()}<p class="anki-status" data-personal-status></p><div class="personal-document-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-personal-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-save>저장하기</button></div></section>`;
+      bindPersonalToolbar(root, note, true);
+      const openFavorites = () => openPersonalFavoritesIntoEditor(root);
+      root.querySelector('[data-personal-editor-favorites]').addEventListener('click', openFavorites);
+      root.querySelector('[data-personal-cancel]').addEventListener('click', () => note ? renderPersonalNotes('document', note.id) : renderPersonalNotes('list'));
+      root.querySelector('[data-personal-save]').addEventListener('click', () => {
+        const titleInput = root.querySelector('[data-personal-title]');
+        const sourceInput = root.querySelector('[data-personal-source]');
+        const title = titleInput.value.trim();
+        if (!title) { root.querySelector('[data-personal-status]').textContent = '문서 제목을 입력해 주세요.'; titleInput.focus(); return; }
+        const saved = { id:note?.id || (crypto.randomUUID ? crypto.randomUUID() : `personal-${Date.now()}`), title, source:sourceInput.value, updatedAt:Date.now() };
+        const next = note ? personalNotes.map(item => item.id === note.id ? saved : item) : [...personalNotes, saved];
+        if (!writeStudyStorage(personalNotesStorageKey, next)) return;
+        personalNotes = next;
+        renderPersonalNotes('document', saved.id);
+      });
+      if (loadFavorites) openFavorites();
+      else root.querySelector('[data-personal-title]').focus();
+    }
+
+    function openPersonalExportDialog() {
+      if (!personalNotes.length) { alert('저장할 문서가 없습니다.'); return; }
+      const dialog = makeAnkiDialog('나만의 정리 저장');
+      const ordered = [...personalNotes].sort((a,b) => Number(b.updatedAt || 0) - Number(a.updatedAt || 0));
+      dialog.innerHTML = `<div class="anki-dialog-head"><h3>저장할 문서 선택</h3><button type="button" class="anki-close" data-personal-export-close aria-label="저장 창 닫기">×</button></div><div class="personal-export-tools"><label><input type="checkbox" data-personal-export-all checked> 전체 선택</label><span data-personal-export-count>${ordered.length}개 선택</span></div><div class="personal-export-list">${ordered.map(note => `<label class="personal-export-row"><input type="checkbox" value="${escapeHtml(note.id)}" data-personal-export-item checked><span><strong>${escapeHtml(note.title || '제목 없는 문서')}</strong><small>${escapeHtml(personalNoteDate(note.updatedAt))}</small></span></label>`).join('')}</div><div class="personal-export-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-personal-export-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-export-save>선택 문서 저장</button></div>`;
+      const all = dialog.querySelector('[data-personal-export-all]');
+      const items = [...dialog.querySelectorAll('[data-personal-export-item]')];
+      const count = dialog.querySelector('[data-personal-export-count]');
+      const save = dialog.querySelector('[data-personal-export-save]');
+      const update = () => {
+        const selected = items.filter(item => item.checked).length;
+        all.checked = selected === items.length;
+        all.indeterminate = selected > 0 && selected < items.length;
+        count.textContent = `${selected}개 선택`;
+        save.disabled = selected === 0;
+      };
+      all.addEventListener('change', () => { items.forEach(item => { item.checked = all.checked; }); update(); });
+      items.forEach(item => item.addEventListener('change', update));
+      dialog.querySelector('[data-personal-export-close]').onclick = () => dialog.close();
+      dialog.querySelector('[data-personal-export-cancel]').onclick = () => dialog.close();
+      save.onclick = () => {
+        const selectedIds = new Set(items.filter(item => item.checked).map(item => item.value));
+        const documents = ordered.filter(note => selectedIds.has(note.id)).map(note => ({
+          id:note.id,
+          title:note.title,
+          source:note.source,
+          updatedAt:note.updatedAt
+        }));
+        if (!documents.length) return;
+        const payload = {
+          format:'digestive-personal-notes',
+          version:1,
+          exportedAt:new Date().toISOString(),
+          documents
+        };
+        const date = new Date().toISOString().slice(0,10);
+        downloadCurrentFile(`나만의-정리-${date}.json`, JSON.stringify(payload,null,2), 'application/json;charset=utf-8');
+        dialog.close();
+      };
+      update();
+    }
+
+    async function printPersonalDocument() {
+      const renderTarget = document.querySelector('#personal-notes-view:not([hidden]) [data-personal-document-render]');
+      if (!renderTarget) { alert('먼저 출력할 문서를 열어 주세요.'); return; }
+      document.body.classList.add('personal-printing');
+      const cleanup = () => document.body.classList.remove('personal-printing');
+      window.addEventListener('afterprint', cleanup, { once:true });
+      try {
+        if (document.fonts?.ready) await document.fonts.ready;
+        await Promise.all([...renderTarget.querySelectorAll('img')].map(image => image.complete ? Promise.resolve() : new Promise(resolve => {
+          image.addEventListener('load', resolve, { once:true });
+          image.addEventListener('error', resolve, { once:true });
+        })));
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+        window.print();
+      } catch (_) {
+        cleanup();
+        alert('인쇄 화면을 열지 못했습니다. 다시 시도해 주세요.');
+      }
+      window.setTimeout(cleanup, 60000);
     }
 
     function renderContentPanel(course) {
@@ -3292,6 +3594,8 @@
       if (event.defaultPrevented || event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
       const link = event.target.closest?.('[data-wiki-course], [data-jbl-question-link]');
       if (!link || !link.closest('.wiki-note, .jbl-card') || link.closest('.anki-dialog, [data-anki-study-card]')) return;
+      const personalDocument = link.closest('[data-personal-document-render]');
+      if (personalDocument && link.hasAttribute('data-wiki-course') && Number(link.dataset.wikiCourse) === Number(personalDocument.dataset.personalCourse)) return;
       const target = contextLinkTargetFromElement(link);
       if (!target) return;
       event.preventDefault();
@@ -3312,6 +3616,7 @@
       if (destination === 'catalog') { renderDomainTabs(); renderCatalog(); }
       if (destination === 'schedule') renderSchedule();
       if (destination === 'jbl') { standaloneState().linkedQuestionNumber = null; renderJblStandalone(); }
+      if (destination === 'personal-notes') renderPersonalNotes('list');
       showView(destination);
     }));
 
@@ -3332,6 +3637,7 @@
       }
       if (hash === '#schedule') { renderSchedule(); return showView('schedule', false); }
       if (hash === '#jbl') { standaloneState().linkedQuestionNumber = null; renderJblStandalone(); return showView('jbl', false); }
+      if (hash === '#personal-notes') { renderPersonalNotes('list'); return showView('personal-notes', false); }
       renderDomainTabs(); renderCatalog(); showView('catalog', false);
     }
 
