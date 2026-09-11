@@ -48,6 +48,7 @@
     }
 
     .masthead-inner,
+    .masthead-menu,
     main { width: min(1480px, 100%); margin: 0 auto; }
 
     .masthead-inner {
@@ -83,7 +84,19 @@
     }
     .site-logo:hover, .site-logo:focus-visible { background: rgba(255,255,255,.12); transform: translateY(-1px); outline: 2px solid rgba(255,255,255,.72); outline-offset: 2px; }
 
-    .top-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .top-actions { display:flex; align-items:center; gap:9px; justify-content:flex-end; }
+
+    .main-menu-button { display:inline-grid; width:40px; height:40px; flex:0 0 40px; place-items:center; padding:9px; border:1px solid #c9dfe8; border-radius:10px; background:#fff; color:#315f75; cursor:pointer; }
+    .main-menu-button:hover, .main-menu-button[aria-expanded="true"] { background:#edf6fa; border-color:#8cb5c8; }
+    .main-menu-button:focus-visible { outline:3px solid #7fb9d2; outline-offset:3px; }
+    .main-menu-icon { display:grid; width:20px; gap:4px; }
+    .main-menu-icon i { display:block; width:100%; height:2px; border-radius:999px; background:currentColor; }
+    .masthead-menu { box-sizing:border-box; margin-top:14px; padding:10px; border:1px solid rgba(210,230,239,.95); border-radius:15px; background:#f8fcfe; box-shadow:0 12px 30px rgba(13,42,57,.16); }
+    .masthead-menu[hidden] { display:none !important; }
+    .masthead-menu-inner { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+    .masthead-menu .nav-button { width:100%; border-color:#d4e5ec; border-radius:10px; background:#fff; color:#315f75; font-weight:800; }
+    .masthead-menu .nav-button:hover, .masthead-menu .nav-button:focus-visible { background:#eaf5fa; }
+    .masthead-menu .nav-button[aria-current="page"] { border-color:#8fc7dc; background:#dff1f8; color:#174f68; }
 
     .information-button { display:inline-flex; align-items:center; justify-content:center; flex:0 0 38px; width:38px; height:38px; padding:0; align-self:center; border:1px solid #c9dfe8; border-radius:50%; background:#fff; color:#315f75; cursor:pointer; font:inherit; font-size:20px; font-weight:800; line-height:1; }
     .information-button:hover { background:#edf6fa; border-color:#8cb5c8; }
@@ -528,8 +541,6 @@
     .personal-document-render [data-wiki-heading-edit],
     .personal-document-render .wiki-bookmark { display:none !important; }
     .personal-document-editor { padding:clamp(17px,3vw,28px); border:1px solid #dce8ed; border-radius:20px; background:#fff; }
-    .personal-document-editor-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:17px; }
-    .personal-document-editor-head h3 { margin:0; color:#244f63; }
     .personal-document-title-field { margin-bottom:15px; }
     .personal-document-title-field label { display:block; margin-bottom:7px; color:#315f75; font-weight:850; }
     .personal-document-title-field input { box-sizing:border-box; width:100%; padding:13px 14px; border:1px solid #cbd9e0; border-radius:10px; color:#17212b; background:#fff; font:inherit; font-size:18px; font-weight:800; }
@@ -553,8 +564,6 @@
       .personal-notes-toolbar { top:6px; padding:11px; }
       .personal-notes-toolbar h2 { flex-basis:100%; }
       .personal-notes-toolbar .jbl-btn { flex:1 1 calc(50% - 6px); min-width:0; padding-inline:7px; }
-      .personal-document-editor-head { align-items:flex-start; flex-direction:column; }
-      .personal-document-editor-head .jbl-btn { width:100%; }
       .personal-document-editor-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
       .personal-document-editor-actions .jbl-btn { min-width:0; }
     }
@@ -791,8 +800,9 @@
     .jbl-wiki-text > :first-child { margin-top: 0; }
     .jbl-wiki-text > :last-child { margin-bottom: 0; }
     .jbl-wiki-text p { margin: 10px 0; }
-    .jbl-wiki-text h3 { margin: 24px 0 9px; padding-bottom: 7px; border-bottom: 1px solid #dce8ed; color: #315665; font-size: 18px; }
-    .jbl-wiki-text h4 { margin: 19px 0 7px; color: #315665; font-size: 16px; }
+    /* 동일한 Wiki 제목 문법은 문서·J·Anki·미리보기 어디서나 같은 위계로 보인다. */
+    .jbl-wiki-text h3 { margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 1px solid #dce8ed; color: #173f50; font-size: 25px; line-height: 1.35; }
+    .jbl-wiki-text h4 { margin: 21px 0 8px; color: #28586b; font-size: 18px; line-height: 1.4; }
     .jbl-wiki-text ul { margin: 8px 0 13px; padding-left: 23px; }
     .jbl-wiki-text li { margin: 5px 0; }
     .jbl-wiki-text blockquote { margin: 13px 0; padding: 12px 15px; border-left: 4px solid #76b8ce; border-radius: 0 10px 10px 0; background: #f2f9fb; }
@@ -816,10 +826,12 @@
 
     @media (max-width: 760px) {
       .masthead { padding: 14px 12px; }
-      .masthead-inner { flex-direction: column; align-items: stretch; gap: 12px; }
-      .masthead h1 { text-align: center; font-size: clamp(19px, 6vw, 24px); }
-      .top-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
-      .top-actions .information-button { grid-column: 1 / -1; justify-self: center; }
+      .masthead-inner { flex-direction:row; align-items:center; gap:12px; }
+      .masthead h1 { min-width:0; text-align:left; font-size:clamp(18px,5.7vw,24px); }
+      .top-actions { display:flex; flex:0 0 auto; gap:7px; }
+      .masthead-menu { margin-top:11px; padding:8px; border-radius:13px; }
+      .masthead-menu-inner { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
+      .masthead-menu .nav-button { padding:10px 6px; font-size:13px; }
       .nav-button { min-width: 0; padding: 10px 7px; font-size: 13px; white-space: nowrap; }
       main { padding: 18px 12px 64px; }
       .schedule-toolbar { align-items: flex-start; flex-direction: column; }
@@ -886,6 +898,7 @@
       .wiki-toggle-all { padding: 8px 11px; font-size: 11px; }
       .wiki-section-head { gap: 8px; }
       .wiki-section-head h4 { font-size: 21px; }
+      .jbl-wiki-text h3 { font-size: 21px; }
       .wiki-section-actions { gap: 4px; }
       .wiki-section-action { min-height: 28px; padding: 4px 7px; font-size: 10px; }
       .wiki-editor-shell { padding: 16px 12px; }
@@ -1017,13 +1030,20 @@
       <div class="masthead-inner">
         <h1><button class="site-logo" type="button" data-go="schedule" aria-label="소화기계 시간표로 이동">Digestive System</button></h1>
         <nav class="top-actions" aria-label="주요 메뉴">
-          <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
-          <button class="nav-button primary" type="button" data-go="schedule">시간표 보기</button>
-          <button class="nav-button jbl-launch" type="button" data-go="jbl">JBL</button>
-          <button class="nav-button" type="button" data-go="personal-notes">나만의 정리</button>
+          <button class="main-menu-button" type="button" data-main-menu-toggle aria-expanded="false" aria-controls="site-main-menu" aria-label="주요 메뉴 열기" title="메뉴">
+            <span class="main-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
           <button class="information-button" type="button" data-information-open aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button>
         </nav>
       </div>
+      <nav id="site-main-menu" class="masthead-menu" aria-label="주요 화면" hidden>
+        <div class="masthead-menu-inner">
+          <button class="nav-button" type="button" data-go="catalog">범주별 보기</button>
+          <button class="nav-button" type="button" data-go="schedule">시간표 보기</button>
+          <button class="nav-button" type="button" data-go="jbl">족보만 보기</button>
+          <button class="nav-button" type="button" data-go="personal-notes">나만의 정리</button>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -2772,6 +2792,10 @@
     function showView(name, updateHistory = true, scrollToTop = true) {
       document.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== `${name}-view`; });
       document.body.classList.toggle('jbl-mode', name === 'jbl');
+      document.querySelectorAll('#site-main-menu [data-go]').forEach(button => {
+        if (button.dataset.go === name) button.setAttribute('aria-current', 'page');
+        else button.removeAttribute('aria-current');
+      });
       setJblTopbarHidden(false);
       jblLastScrollY = 0;
       if (scrollToTop) window.scrollTo({top:0, behavior:'auto'});
@@ -3247,8 +3271,15 @@
     }
 
     function personalToolbarMarkup(note = null, editing = false) {
-      const unavailable = note || editing ? '' : 'disabled';
-      return `<div class="personal-notes-toolbar"><h2 id="personal-notes-title">나만의 정리</h2><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="list" ${personalNoteState.mode === 'list' ? 'disabled' : ''}>목록</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="favorites" ${unavailable}>즐겨찾기 불러오기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="print" ${note && !editing ? '' : 'disabled'}>PDF 출력하기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="export" ${personalNotes.length ? '' : 'disabled'}>저장하기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="edit" ${note && !editing ? '' : 'disabled'}>편집하기</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-action="new">새 문서</button></div>`;
+      let actions = '';
+      if (editing) {
+        actions = '<button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="favorites">즐겨찾기 불러오기</button>';
+      } else if (note) {
+        actions = '<button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="list">목록</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="print">PDF 출력하기</button><button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="export">저장하기</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-action="edit">편집하기</button>';
+      } else {
+        actions = `${personalNotes.length ? '<button class="jbl-btn jbl-btn-sub" type="button" data-personal-action="export">저장하기</button>' : ''}<button class="jbl-btn jbl-btn-primary" type="button" data-personal-action="new">새 문서</button>`;
+      }
+      return `<div class="personal-notes-toolbar"><h2 id="personal-notes-title">나만의 정리</h2>${actions}</div>`;
     }
 
     function bindPersonalToolbar(root, note = null, editing = false) {
@@ -3325,10 +3356,9 @@
       personalNoteState.mode = 'editor';
       personalNoteState.selectedId = note?.id || null;
       personalNoteState.draftId = note?.id || null;
-      root.innerHTML = `${personalToolbarMarkup(note, true)}<section class="personal-document-editor"><div class="personal-document-editor-head"><div><h3>${note ? '문서 편집' : '새 문서'}</h3><p>Wiki 문법으로 작성되며 즐겨찾기 원문을 원하는 위치에 불러올 수 있습니다.</p></div><button class="jbl-btn jbl-btn-sub" type="button" data-personal-editor-favorites>즐겨찾기 불러오기</button></div><div class="personal-document-title-field"><label for="personal-document-title">문서 제목</label><input id="personal-document-title" type="text" data-personal-title value="${escapeHtml(note?.title || '')}" maxlength="120" autocomplete="off" placeholder="문서 제목을 입력하세요"></div><textarea class="wiki-source-editor" data-personal-source spellcheck="false" placeholder="Wiki 문법으로 내용을 작성하세요.">${escapeHtml(note?.source || '')}</textarea>${wikiSyntaxHelpMarkup()}<p class="anki-status" data-personal-status></p><div class="personal-document-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-personal-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-save>저장하기</button></div></section>`;
+      root.innerHTML = `${personalToolbarMarkup(note, true)}<section class="personal-document-editor"><div class="personal-document-title-field"><label for="personal-document-title">문서 제목</label><input id="personal-document-title" type="text" data-personal-title value="${escapeHtml(note?.title || '')}" maxlength="120" autocomplete="off" placeholder="문서 제목을 입력하세요"></div><textarea class="wiki-source-editor" data-personal-source spellcheck="false" placeholder="Wiki 문법으로 내용을 작성하세요.">${escapeHtml(note?.source || '')}</textarea>${wikiSyntaxHelpMarkup()}<p class="anki-status" data-personal-status></p><div class="personal-document-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-personal-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-save>저장하기</button></div></section>`;
       bindPersonalToolbar(root, note, true);
       const openFavorites = () => openPersonalFavoritesIntoEditor(root);
-      root.querySelector('[data-personal-editor-favorites]').addEventListener('click', openFavorites);
       root.querySelector('[data-personal-cancel]').addEventListener('click', () => note ? renderPersonalNotes('document', note.id) : renderPersonalNotes('list'));
       root.querySelector('[data-personal-save]').addEventListener('click', () => {
         const titleInput = root.querySelector('[data-personal-title]');
@@ -3611,8 +3641,33 @@
       }
     });
 
+    const mainMenuToggle = document.querySelector('[data-main-menu-toggle]');
+    const mainMenu = document.querySelector('#site-main-menu');
+
+    function setMainMenuOpen(open) {
+      if (!mainMenu || !mainMenuToggle) return;
+      mainMenu.hidden = !open;
+      mainMenuToggle.setAttribute('aria-expanded', String(open));
+      mainMenuToggle.setAttribute('aria-label', open ? '주요 메뉴 닫기' : '주요 메뉴 열기');
+    }
+
+    mainMenuToggle?.addEventListener('click', event => {
+      event.stopPropagation();
+      setMainMenuOpen(mainMenu.hidden);
+    });
+    document.addEventListener('click', event => {
+      if (mainMenu && !mainMenu.hidden && !event.target.closest('.masthead')) setMainMenuOpen(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && mainMenu && !mainMenu.hidden) {
+        setMainMenuOpen(false);
+        mainMenuToggle?.focus();
+      }
+    });
+
     document.querySelectorAll('[data-go]').forEach(button => button.addEventListener('click', () => {
       const destination = button.dataset.go;
+      setMainMenuOpen(false);
       if (destination === 'catalog') { renderDomainTabs(); renderCatalog(); }
       if (destination === 'schedule') renderSchedule();
       if (destination === 'jbl') { standaloneState().linkedQuestionNumber = null; renderJblStandalone(); }
@@ -3622,6 +3677,7 @@
 
     window.addEventListener('hashchange', routeFromHash);
     function routeFromHash() {
+      setMainMenuOpen(false);
       const hash = location.hash;
       const linkedQuestion = hash.match(/^#jbl-q-(\d+)$/);
       if (linkedQuestion) {
@@ -3792,7 +3848,10 @@
     }
     document.addEventListener('click', event => {
       const opener = event.target.closest?.('[data-information-open]');
-      if (opener) openInformationDialog(opener);
+      if (opener) {
+        setMainMenuOpen(false);
+        openInformationDialog(opener);
+      }
     });
 
     document.querySelector('#jbl-image-modal').addEventListener('click', event => { if (event.target.id === 'jbl-image-modal') closeJblImage(); });
