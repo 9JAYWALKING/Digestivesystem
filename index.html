@@ -814,6 +814,100 @@
       .jbl-favorite { width: 34px; height: 34px; font-size: 20px; }
     }
 
+    /* Wiki/J 문서 링크를 현재 화면과 나란히 여는 1:1 탐색 패널 */
+    body.context-link-open { overflow: hidden; }
+    .context-link-split {
+      position: fixed;
+      inset: 0;
+      z-index: 4000;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: minmax(0, 1fr);
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      background: #eaf2f6;
+    }
+    .context-link-source,
+    .context-link-target {
+      min-width: 0;
+      min-height: 0;
+      height: 100%;
+      background: #fff;
+    }
+    .context-link-source {
+      overflow: auto;
+      overscroll-behavior: contain;
+      scrollbar-gutter: stable;
+      border-right: 1px solid #cfdde4;
+      transform: translateZ(0);
+    }
+    .context-link-target {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      overflow: hidden;
+      background: #f7fafc;
+      box-shadow: -12px 0 30px rgba(31, 68, 87, .09);
+    }
+    .context-link-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 62px;
+      padding: 10px clamp(14px, 2vw, 24px);
+      color: #234f63;
+      background: #e7f7ff;
+      border-bottom: 1px solid #c9dfe8;
+    }
+    .context-link-heading { min-width: 0; }
+    .context-link-eyebrow { display: block; margin-bottom: 1px; color: #5e7d8c; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+    .context-link-title { display: block; overflow: hidden; color: #234f63; font-size: clamp(14px, 1.8vw, 18px); font-weight: 900; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+    .context-link-controls { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
+    .context-link-control {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 38px;
+      padding: 0 11px;
+      border: 1px solid #b8d7e4;
+      border-radius: 999px;
+      color: #315f75;
+      background: #fff;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 850;
+      cursor: pointer;
+    }
+    .context-link-control:hover, .context-link-control:focus-visible { background: #f5fbfe; border-color: #7fb9d2; outline: 3px solid rgba(127,185,210,.24); outline-offset: 1px; }
+    .context-link-control:disabled { opacity: .35; cursor: default; outline: none; }
+    .context-link-close { width: 38px; padding: 0; font-size: 24px; line-height: 1; }
+    .context-link-body {
+      min-width: 0;
+      min-height: 0;
+      overflow: auto;
+      overscroll-behavior: contain;
+      scrollbar-gutter: stable;
+      padding: clamp(12px, 2vw, 24px);
+    }
+    .context-link-body > .wiki-note,
+    .context-link-body > [data-context-question-root] { width: 100%; max-width: none; margin: 0; }
+    .context-link-body .wiki-layout { grid-template-columns: minmax(0, 1fr); }
+    .context-link-body .wiki-toc { position: relative; top: auto; width: 100%; max-height: none; }
+    .context-link-body .wiki-article { min-width: 0; }
+    .context-link-empty { display: grid; min-height: 220px; place-items: center; padding: 28px; border: 1px solid #dce7ed; border-radius: 18px; color: #6c7680; background: #fff; text-align: center; }
+
+    @media (orientation: portrait), (max-width: 700px) {
+      .context-link-split { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); }
+      .context-link-source { border-right: 0; border-bottom: 1px solid #cfdde4; }
+      .context-link-target { box-shadow: 0 -12px 30px rgba(31, 68, 87, .09); }
+      .context-link-head { min-height: 52px; padding: 7px 12px; }
+      .context-link-control { min-width: 34px; height: 34px; padding: 0 9px; }
+      .context-link-close { width: 34px; padding: 0; }
+      .context-link-body { padding: 10px; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
@@ -2248,7 +2342,11 @@
 
     function saveCurrentFiles() {
       const clone = document.documentElement.cloneNode(true);
-      clone.querySelector('body')?.classList.remove('jbl-mode', 'information-open');
+      clone.querySelector('body')?.classList.remove('jbl-mode', 'information-open', 'context-link-open');
+      const clonedContextSplit = clone.querySelector('.context-link-split');
+      const clonedContextShell = clonedContextSplit?.querySelector('.site-shell');
+      if (clonedContextShell) clone.querySelector('body')?.prepend(clonedContextShell);
+      clonedContextSplit?.remove();
       clone.querySelectorAll('.information-dialog').forEach(element => element.remove());
       clone.querySelectorAll('.view').forEach(view => { view.hidden = view.id !== 'catalog-view'; });
       clone.querySelectorAll('.wiki-section-editor-overlay').forEach(element => element.remove());
@@ -2941,6 +3039,191 @@
       if (activeDetailTab === 'KMLE') { renderAnki(course, target); return; }
       target.innerHTML = `<span class="panel-label">${contentCourseNumber(course)}강 · ${detailTabLabel(activeDetailTab)}</span><h3>${detailTabLabel(activeDetailTab)}</h3><div class="empty-state"><div><strong>아직 작성된 내용이 없습니다.</strong></div></div>`;
     }
+
+    // Internal Wiki and J links open beside the current view instead of replacing it.
+    const contextLinkState = {
+      active:false, split:null, source:null, target:null, body:null, title:null, back:null,
+      shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null,
+      stack:[], renderToken:0
+    };
+
+    function contextLinkTargetFromElement(link) {
+      if (link.hasAttribute('data-jbl-question-link')) {
+        const questionNumber = Number(link.dataset.jblQuestionLink);
+        return Number.isFinite(questionNumber) ? { type:'j', questionNumber } : null;
+      }
+      if (link.hasAttribute('data-wiki-course')) {
+        const courseId = Number(link.dataset.wikiCourse);
+        if (!Number.isFinite(courseId)) return null;
+        return { type:'wiki', courseId:Number(canonicalContentCourseId(courseId)), section:link.dataset.wikiSection || '' };
+      }
+      return null;
+    }
+
+    function contextLinkTargetKey(target) {
+      return target.type === 'j' ? `j:${target.questionNumber}` : `wiki:${target.courseId}:${target.section || ''}`;
+    }
+
+    function namespaceContextPreviewIds(container, token) {
+      const map = new Map();
+      container.querySelectorAll('[id]').forEach(element => {
+        const original = element.id;
+        const namespaced = `context-link-${token}-${original}`;
+        map.set(original, namespaced);
+        element.id = namespaced;
+      });
+      container.querySelectorAll('[href^="#"]').forEach(element => {
+        const original = element.getAttribute('href').slice(1);
+        if (map.has(original)) element.setAttribute('href', `#${map.get(original)}`);
+      });
+      ['aria-controls','aria-labelledby','for'].forEach(attribute => {
+        container.querySelectorAll(`[${attribute}]`).forEach(element => {
+          const updated = element.getAttribute(attribute).split(/\s+/).map(value => map.get(value) || value).join(' ');
+          element.setAttribute(attribute, updated);
+        });
+      });
+    }
+
+    function contextLinkLabel(target) {
+      if (target.type === 'j') return `${target.questionNumber}번 J`;
+      const course = byId(target.courseId);
+      if (!course) return `${target.courseId}강 Wiki`;
+      const suffix = target.section ? ` · ${target.section}` : '';
+      return `${contentCourseNumber(course)}강 · ${contentTitleText(course)}${suffix}`;
+    }
+
+    function updateContextLinkHeader(target) {
+      if (!contextLinkState.active) return;
+      contextLinkState.title.textContent = contextLinkLabel(target);
+      contextLinkState.back.disabled = contextLinkState.stack.length < 2;
+      contextLinkState.back.setAttribute('aria-label', contextLinkState.stack.length < 2 ? '연결 기록 없음' : '이전 연결 내용으로 돌아가기');
+    }
+
+    function renderContextLinkTarget(target) {
+      if (!contextLinkState.active) return;
+      const body = contextLinkState.body;
+      const token = ++contextLinkState.renderToken;
+      updateContextLinkHeader(target);
+      body.scrollTop = 0;
+      if (target.type === 'j') {
+        const question = jblQuestions.find(item => item.globalNumber === Number(target.questionNumber));
+        if (!question) {
+          body.innerHTML = `<div class="context-link-empty"><strong>${escapeHtml(target.questionNumber)}번 문항을 찾을 수 없습니다.</strong></div>`;
+          return;
+        }
+        body.innerHTML = '<div data-context-question-root></div>';
+        const root = body.querySelector('[data-context-question-root]');
+        const key = `context-link-question-${question.id}`;
+        let questionRender = 0;
+        const rerender = () => {
+          if (!contextLinkState.active || contextLinkTargetKey(contextLinkState.stack.at(-1)) !== contextLinkTargetKey(target)) return;
+          renderQuestionCard(root, [question], key, rerender);
+          namespaceContextPreviewIds(root, `${token}-question-${++questionRender}`);
+        };
+        rerender();
+        return;
+      }
+      const course = byId(target.courseId);
+      const source = course ? lectureNoteSources[course.id] : '';
+      if (!course || !source) {
+        body.innerHTML = `<div class="context-link-empty"><strong>${escapeHtml(target.courseId)}강 Wiki를 찾을 수 없습니다.</strong></div>`;
+        return;
+      }
+      body.innerHTML = renderWikiDocument(source, course);
+      body.querySelector('[data-wiki-edit]')?.remove();
+      body.querySelectorAll('[data-wiki-section-edit]').forEach(button => button.remove());
+      namespaceContextPreviewIds(body, token);
+      bindWikiDocument(body, course);
+      if (target.section) queueWikiSectionScroll(body, target.section);
+    }
+
+    function showContextLinkTarget(target, push = true) {
+      if (!target) return;
+      if (push) {
+        const current = contextLinkState.stack.at(-1);
+        if (!current || contextLinkTargetKey(current) !== contextLinkTargetKey(target)) contextLinkState.stack.push(target);
+      }
+      renderContextLinkTarget(target);
+    }
+
+    function openContextLinkSplit(target, opener) {
+      if (contextLinkState.active) {
+        showContextLinkTarget(target, true);
+        return;
+      }
+      const shell = document.querySelector('.site-shell');
+      if (!shell) return;
+      const split = document.createElement('div');
+      split.className = 'context-link-split';
+      split.setAttribute('role', 'group');
+      split.setAttribute('aria-label', '현재 화면과 연결된 내용을 함께 보기');
+      split.innerHTML = `<section class="context-link-source" data-context-link-source aria-label="현재 화면"></section><aside class="context-link-target" data-context-link-target aria-label="연결된 내용"><header class="context-link-head"><div class="context-link-heading"><span class="context-link-eyebrow">연결된 내용</span><strong class="context-link-title" data-context-link-title></strong></div><div class="context-link-controls"><button class="context-link-control" type="button" data-context-link-back aria-label="이전 연결 내용으로 돌아가기">←</button><button class="context-link-control context-link-close" type="button" data-context-link-close aria-label="분할 화면 닫기">×</button></div></header><div class="context-link-body" data-context-link-body aria-live="polite"></div></aside>`;
+      const source = split.querySelector('[data-context-link-source]');
+      contextLinkState.active = true;
+      contextLinkState.split = split;
+      contextLinkState.source = source;
+      contextLinkState.target = split.querySelector('[data-context-link-target]');
+      contextLinkState.body = split.querySelector('[data-context-link-body]');
+      contextLinkState.title = split.querySelector('[data-context-link-title]');
+      contextLinkState.back = split.querySelector('[data-context-link-back]');
+      contextLinkState.shell = shell;
+      contextLinkState.originalParent = shell.parentNode;
+      contextLinkState.originalNextSibling = shell.nextSibling;
+      contextLinkState.sourceScroll = window.scrollY;
+      contextLinkState.opener = opener;
+      contextLinkState.stack = [];
+      document.body.append(split);
+      source.append(shell);
+      document.body.classList.add('context-link-open');
+      contextLinkState.back.addEventListener('click', () => {
+        if (contextLinkState.stack.length < 2) return;
+        contextLinkState.stack.pop();
+        renderContextLinkTarget(contextLinkState.stack.at(-1));
+      });
+      split.querySelector('[data-context-link-close]').addEventListener('click', closeContextLinkSplit);
+      requestAnimationFrame(() => { source.scrollTop = contextLinkState.sourceScroll; });
+      showContextLinkTarget(target, true);
+    }
+
+    function closeContextLinkSplit() {
+      if (!contextLinkState.active) return;
+      hideWikiFootnotePreview();
+      const scroll = contextLinkState.source?.scrollTop || 0;
+      const shell = contextLinkState.shell;
+      const parent = contextLinkState.originalParent;
+      const next = contextLinkState.originalNextSibling;
+      const opener = contextLinkState.opener;
+      if (shell && parent) {
+        if (next && next.parentNode === parent) parent.insertBefore(shell, next);
+        else parent.append(shell);
+      }
+      contextLinkState.split?.remove();
+      document.body.classList.remove('context-link-open');
+      Object.assign(contextLinkState, { active:false, split:null, source:null, target:null, body:null, title:null, back:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null, stack:[] });
+      requestAnimationFrame(() => {
+        window.scrollTo({ top:scroll, behavior:'auto' });
+        if (opener?.isConnected) opener.focus({ preventScroll:true });
+      });
+    }
+
+    function handleContextLinkClick(event) {
+      if (event.defaultPrevented || event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      const link = event.target.closest?.('[data-wiki-course], [data-jbl-question-link]');
+      if (!link || !link.closest('.wiki-note, .jbl-card') || link.closest('.anki-dialog, [data-anki-study-card]')) return;
+      const target = contextLinkTargetFromElement(link);
+      if (!target) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      openContextLinkSplit(target, contextLinkState.active ? contextLinkState.opener : link);
+    }
+
+    document.addEventListener('click', handleContextLinkClick, true);
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && contextLinkState.active && !document.querySelector('dialog[open], .wiki-section-editor-overlay, #jbl-image-modal.show')) {
+        event.preventDefault();
+        closeContextLinkSplit();
+      }
+    });
 
     document.querySelectorAll('[data-go]').forEach(button => button.addEventListener('click', () => {
       const destination = button.dataset.go;
