@@ -417,6 +417,8 @@
     .wiki-section.is-collapsed { padding-bottom: 18px; margin-bottom: 18px; }
     .wiki-section.is-collapsed .wiki-section-head { margin-bottom: 0; }
     .wiki-section.is-collapsed .wiki-section-content { display: none; }
+    .wiki-subsection-edit { float: right; margin: 0 0 4px 12px; padding: 3px 7px; min-height: 27px; font-size: 11px; white-space: nowrap; }
+    .wiki-section h5[data-wiki-level] { display: flow-root; }
     .wiki-section h5 { margin: 24px 0 9px; color: #28586b; font-size: 18px; }
     .wiki-section p { margin: 0 0 14px; color: #4d6874; }
     .wiki-section ul { margin: 10px 0 18px; padding-left: 22px; color: #415d69; }
@@ -552,7 +554,7 @@
     .wiki-syntax-grid code { color: #075985; background: #f4fafc; overflow-wrap: anywhere; }
     .wiki-syntax-grid span { color: #526c77; }
     .wiki-render-warning { margin: 18px 0; padding: 14px 16px; border-left: 4px solid #e87972; border-radius: 0 14px 14px 0; background: #fff4f3; color: #7b3c38; }
-    .wiki-section-editor-overlay { position: fixed; inset: 0; z-index: 2200; display: grid; place-items: center; padding: 18px; background: rgba(15,23,42,.48); backdrop-filter: blur(3px); }
+    .wiki-section-editor-overlay { position: fixed; inset: 0; z-index: 6000; display: grid; place-items: center; padding: 18px; background: rgba(15,23,42,.48); backdrop-filter: blur(3px); }
     .wiki-section-editor-dialog { width: min(880px,100%); max-height: min(86vh,900px); display: flex; flex-direction: column; overflow: hidden; border: 1px solid #c9dfe8; border-radius: 20px; background: #f8fbfc; box-shadow: 0 24px 70px rgba(15,23,42,.28); }
     .wiki-section-editor-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 18px 20px 12px; }
     .wiki-section-editor-head h3 { margin: 0; color: #153746; font-size: 21px; }
@@ -1843,34 +1845,102 @@
       button.setAttribute('aria-pressed', String(allCollapsed));
     }
 
-    function openWikiSectionEditor(course, sectionIndex) {
-      document.querySelector('.wiki-section-editor-overlay')?.remove();
-      const section = wikiDocumentSections(lectureNoteSources[course.id])[sectionIndex];
+    // Edit a heading and its descendants up to the next peer/ancestor heading.
+    // Offsets refer to the unmodified source, so Wiki markup and blank lines survive.
+    function wikiEditableSections(source) {
+      const raw = String(source || '');
+      const lines = raw.split('\n');
+      let offset = 0;
+      const offsets = lines.map(line => { const start = offset; offset += line.length + 1; return start; });
+      const records = wikiHeadingRecordsFromLines(lines);
+      return records.map((record, index) => {
+        const next = records.slice(index + 1).find(item => item.level <= record.level);
+        const start = offsets[record.lineIndex];
+        const end = next ? offsets[next.lineIndex] : raw.length;
+        const chunk = raw.slice(start, end);
+        const trailing = chunk.match(/(?:\r?\n\s*)*$/)?.[0] || '';
+        const editEnd = end - trailing.length;
+        return { ...record, start, end:editEnd, source:raw.slice(start, editEnd) };
+      });
+    }
+
+    function refreshEditedWiki(course, heading) {
+      // Refresh only the actual Wiki views of this course, never the unrelated left pane.
+      const main = document.querySelector('#content-panel');
+      if (main?.querySelector('.wiki-note')?.dataset.wikiDocumentCourse === String(course.id)) {
+        const collapsed = [...main.querySelectorAll('.wiki-section.is-collapsed')].map(item => item.dataset.wikiSection);
+        renderLectureNote(course, main);
+        main.querySelectorAll('.wiki-section').forEach(item => {
+          if (collapsed.includes(item.dataset.wikiSection)) setWikiSectionExpanded(item, false);
+        });
+        updateWikiToggleAll(main);
+      }
+      if (contextLinkState.active) {
+        const target = contextLinkState.stack.at(-1);
+        if (target?.type === 'wiki' && target.courseId === course.id) {
+          renderContextLinkTarget({ ...target, section:heading });
+        }
+      }
+    }
+
+    function openWikiSectionEditor(course, selector, container) {
+      const baseline = String(lectureNoteSources[course.id] || '');
+      const sections = wikiEditableSections(baseline);
+      const section = typeof selector === 'number'
+        ? sections.filter(item => item.level === 2)[selector]
+        : sections.find(item => item.slug === selector);
       if (!section) return;
+      document.querySelector('.wiki-section-editor-overlay')?.remove();
       const overlay = document.createElement('div');
       overlay.className = 'wiki-section-editor-overlay';
-      overlay.innerHTML = `<section class="wiki-section-editor-dialog" role="dialog" aria-modal="true" aria-labelledby="wiki-section-editor-title"><div class="wiki-section-editor-head"><div><h3 id="wiki-section-editor-title">문단 편집</h3><p>${escapeHtml(section.heading)} · 제목을 포함한 문단 전체를 편집합니다.</p></div><button class="wiki-section-action" type="button" data-wiki-section-editor-close aria-label="문단 편집 닫기">닫기</button></div><div class="wiki-section-editor-body"><textarea class="wiki-source-editor" data-wiki-section-source spellcheck="false">${escapeHtml(section.source)}</textarea>${wikiSyntaxHelpMarkup()}<div class="wiki-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-wiki-section-editor-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-wiki-section-editor-save>저장하기</button></div></div></section>`;
-      document.body.appendChild(overlay);
-      const close = () => overlay.remove();
+      const marks = '='.repeat(section.level);
+      overlay.innerHTML = `<section class="wiki-section-editor-dialog" role="dialog" aria-modal="true" aria-labelledby="wiki-section-editor-title"><div class="wiki-section-editor-head"><div><h3 id="wiki-section-editor-title">문단 편집</h3><p>${escapeHtml(section.heading)} · 제목과 아래 내용을 편집합니다.</p></div><button class="wiki-section-action" type="button" data-wiki-section-editor-close aria-label="문단 편집 닫기">닫기</button></div><div class="wiki-section-editor-body"><textarea class="wiki-source-editor" data-wiki-section-source spellcheck="false">${escapeHtml(section.source)}</textarea>${wikiSyntaxHelpMarkup()}<div class="wiki-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-wiki-section-editor-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-wiki-section-editor-save>저장하기</button></div></div></section>`;
+      const opener = document.activeElement;
+      document.body.append(overlay);
+      const textarea = overlay.querySelector('[data-wiki-section-source]');
+      const close = () => {
+        document.removeEventListener('keydown', keys, true);
+        overlay.remove();
+        if (opener?.isConnected) opener.focus({ preventScroll:true });
+      };
+      const keys = event => {
+        if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); close(); }
+        if (event.key === 'Tab') {
+          const controls = [...overlay.querySelectorAll('button, textarea, summary, a[href]')].filter(el => el.getClientRects().length);
+          const first = controls[0], last = controls.at(-1);
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+          else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
+      };
+      document.addEventListener('keydown', keys, true);
       overlay.addEventListener('click', event => { if (event.target === overlay) close(); });
       overlay.querySelector('[data-wiki-section-editor-close]').addEventListener('click', close);
       overlay.querySelector('[data-wiki-section-editor-cancel]').addEventListener('click', close);
+      textarea.addEventListener('input', () => textarea.setCustomValidity(''));
       overlay.querySelector('[data-wiki-section-editor-save]').addEventListener('click', () => {
-        const updated = overlay.querySelector('[data-wiki-section-source]').value;
-        if (!/^==\s+.+?\s+==$/m.test(updated)) {
-          const textarea = overlay.querySelector('[data-wiki-section-source]');
-          textarea.setCustomValidity('문단 첫 줄에 == 문단 제목 == 형식을 유지하세요.');
-          textarea.reportValidity();
-          return;
+        const updated = textarea.value;
+        const first = parseWikiHeading(expandWikiGrayBlocks(updated).split(/\r?\n/).find(line => line.trim()) || '');
+        if (!first || first.level !== section.level) {
+          textarea.setCustomValidity(`첫 줄에 ${marks} 문단 제목 ${marks} 형식을 유지하세요.`);
+          textarea.reportValidity(); return;
         }
-        lectureNoteSources[course.id] = replaceWikiDocumentSection(lectureNoteSources[course.id], sectionIndex, updated);
+        if (String(lectureNoteSources[course.id]) !== baseline) {
+          textarea.setCustomValidity('편집 중 문서가 변경되었습니다. 작성 내용을 복사한 뒤 문단을 다시 열어 주세요.');
+          textarea.reportValidity(); return;
+        }
+        const replacement = baseline.includes('\r\n') ? updated.replace(/\r?\n/g, '\r\n') : updated;
+        const source = baseline.slice(0, section.start) + replacement + baseline.slice(section.end);
+        // A no-op save should not change the file, including line endings.
+        lectureNoteSources[course.id] = source;
         window.LECTURE_NOTE_SOURCES = lectureNoteSources;
-        jblHasUnsavedChanges = true;
+        if (source !== baseline) jblHasUnsavedChanges = true;
         close();
-        renderContentPanel(course);
+        refreshEditedWiki(course, first.heading);
+        if (container?.isConnected) queueWikiSectionScroll(container, first.heading);
       });
-      overlay.querySelector('[data-wiki-section-source]').focus();
+      textarea.focus();
     }
+
 
     let activeWikiFootnotePreviewReference = null;
     function ensureWikiFootnotePreviewBox() {
@@ -2005,6 +2075,18 @@
     }
 
     function bindWikiDocument(container, course) {
+      container.querySelector('.wiki-note')?.setAttribute('data-wiki-document-course', String(course.id));
+      container.querySelectorAll('.wiki-note h5[data-wiki-level]').forEach(heading => {
+        if (heading.querySelector('[data-wiki-heading-edit]')) return;
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'wiki-section-action wiki-subsection-edit';
+        button.dataset.wikiHeadingEdit = heading.dataset.wikiSection;
+        button.textContent = '편집';
+        button.setAttribute('aria-label', heading.dataset.wikiHeading + ' 소문단 편집');
+        heading.prepend(button);
+        button.addEventListener('click', () => openWikiSectionEditor(course, button.dataset.wikiHeadingEdit, container));
+      });
       bindContentImages(container);
       bindWikiBookmarks(container, course);
       const toc = container.querySelector('.wiki-toc');
@@ -2053,7 +2135,7 @@
         updateWikiToggleAll(container);
       });
       container.querySelectorAll('[data-wiki-section-edit]').forEach(button => button.addEventListener('click', () => {
-        openWikiSectionEditor(course, Number(button.dataset.wikiSectionEdit));
+        openWikiSectionEditor(course, Number(button.dataset.wikiSectionEdit), container);
       }));
       container.querySelectorAll('[data-jbl-question-link]').forEach(link => link.addEventListener('click', event => {
         event.preventDefault();
@@ -3131,7 +3213,7 @@
       }
       body.innerHTML = renderWikiDocument(source, course);
       body.querySelector('[data-wiki-edit]')?.remove();
-      body.querySelectorAll('[data-wiki-section-edit]').forEach(button => button.remove());
+      // Section editing is available in both split panes.
       namespaceContextPreviewIds(body, token);
       bindWikiDocument(body, course);
       if (target.section) queueWikiSectionScroll(body, target.section);
