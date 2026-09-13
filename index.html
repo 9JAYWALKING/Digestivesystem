@@ -270,7 +270,7 @@
     .schedule-op-toggle { align-self: center; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--topbar-ink); font-size: 11px; font-weight: 800; cursor: pointer; }
     .schedule-op-toggle[aria-pressed="true"] { background: #fff4c9; border-color: #dec568; color: #75551c; }
     .schedule-op-toggle:focus-visible { outline: 3px solid #7fb9d2; outline-offset: 2px; }
-    #schedule-view .course-op-image { display: none; position: absolute; top: 4px; right: 4px; width: 25%; height: auto; max-height: calc(100% - 8px); object-fit: contain; object-position: top right; z-index: 2; pointer-events: none; user-select: none; }
+    #schedule-view .course-op-image { display: none; position: absolute; top: 4px; right: 4px; width: 22%; height: auto; max-height: calc(100% - 8px); object-fit: contain; object-position: top right; z-index: 2; pointer-events: none; user-select: none; }
     #schedule-view.op-visible .course-op-image { display: block; }
 
     .week-stack { display: grid; gap: 22px; }
@@ -2802,7 +2802,7 @@
       target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'catalog')));
     }
 
-    const scheduleOpProfessors = new Set(['조순구', '진영주', '정석', '최문석', '이정심', '윤용한', '유정환', '오승종']);
+    const scheduleOpProfessors = new Set(['조순구', '진영주', '정석', '최문석', '이정심', '윤용한', '유정환', '오승종', '이정남']);
     let scheduleOpVisible = false;
 
     function syncScheduleOp() {
