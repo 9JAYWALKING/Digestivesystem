@@ -267,6 +267,11 @@
     .legend { display: flex; gap: 8px; flex-wrap: wrap; }
     .legend span { display: inline-flex; align-items: center; gap: 6px; padding: 6px 9px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 11px; }
     .legend i { width: 9px; height: 9px; border-radius: 3px; }
+    .schedule-op-toggle { align-self: center; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--topbar-ink); font-size: 11px; font-weight: 800; cursor: pointer; }
+    .schedule-op-toggle[aria-pressed="true"] { background: #fff4c9; border-color: #dec568; color: #75551c; }
+    .schedule-op-toggle:focus-visible { outline: 3px solid #7fb9d2; outline-offset: 2px; }
+    #schedule-view .course-op-image { display: none; position: absolute; top: 4px; right: 4px; width: 25%; height: auto; max-height: calc(100% - 8px); object-fit: contain; object-position: top right; z-index: 2; pointer-events: none; user-select: none; }
+    #schedule-view.op-visible .course-op-image { display: block; }
 
     .week-stack { display: grid; gap: 22px; }
     .week-card { border: 1px solid var(--line); border-radius: 18px; background: #fff; box-shadow: var(--shadow); overflow: hidden; }
@@ -1082,6 +1087,7 @@
             <span><i style="background:var(--basic)"></i>기초의학</span>
             <span><i style="background:var(--clinical)"></i>임상의학</span>
             <span><i style="background:var(--violet)"></i>실습</span>
+            <button class="schedule-op-toggle" type="button" data-schedule-op aria-pressed="false" aria-label="OP 표시" aria-controls="week-stack">OP</button>
           </div>
         </div>
         <div id="week-stack" class="week-stack"><article class="week-card"><div class="week-title"><strong>1주차</strong><span>8월 31일 – 9월 4일</span></div><div class="timetable-scroll"><div class="timetable">
@@ -2796,6 +2802,21 @@
       target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'catalog')));
     }
 
+    const scheduleOpProfessors = new Set(['조순구', '진영주', '정석', '최문석', '이정심', '윤용한', '유정환', '오승종']);
+    let scheduleOpVisible = false;
+
+    function syncScheduleOp() {
+      document.querySelector('#schedule-view').classList.toggle('op-visible', scheduleOpVisible);
+      const button = document.querySelector('[data-schedule-op]');
+      button.setAttribute('aria-pressed', String(scheduleOpVisible));
+      button.setAttribute('aria-label', scheduleOpVisible ? 'OP 숨기기' : 'OP 표시');
+    }
+
+    document.querySelector('[data-schedule-op]').addEventListener('click', () => {
+      scheduleOpVisible = !scheduleOpVisible;
+      syncScheduleOp();
+    });
+
     function renderSchedule() {
       const target = document.querySelector('#week-stack');
       target.innerHTML = [1,2,3,4,5].map(week => {
@@ -2812,11 +2833,13 @@
             const color = course.isLab ? 'var(--violet)' : (course.domain === '기초의학' ? 'var(--basic)' : 'var(--clinical)');
             const soft = course.isLab ? '#eeeafb' : (course.domain === '기초의학' ? 'var(--basic-soft)' : 'var(--clinical-soft)');
             const span = slot.duration || 1;
-            return `<div class="course-slot" style="grid-column:${col};grid-row:${row} / span ${span};--course-color:${color};--course-soft:${soft}"><button class="course-card" type="button" data-course="${course.id}" aria-label="${course.id} ${course.title}, ${pathText(course)}"><span class="number">${course.id}${course.isLab ? ' · 실습' : ''}</span><span class="name">${course.title}</span><span class="teacher">${course.professor} 교수</span><span class="course-tooltip" role="tooltip">${pathText(course)}</span></button></div>`;
+            const opImage = scheduleOpProfessors.has(course.professor.trim()) ? '<img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async">' : '';
+            return `<div class="course-slot" style="grid-column:${col};grid-row:${row} / span ${span};--course-color:${color};--course-soft:${soft}"><button class="course-card" type="button" data-course="${course.id}" aria-label="${course.id} ${course.title}, ${pathText(course)}"><span class="number">${course.id}${course.isLab ? ' · 실습' : ''}</span><span class="name">${course.title}</span><span class="teacher">${course.professor} 교수</span><span class="course-tooltip" role="tooltip">${pathText(course)}</span></button>${opImage}</div>`;
           }).join('')}
         </div></div></article>`;
       }).join('');
       target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'schedule')));
+      syncScheduleOp();
     }
 
     function showView(name, updateHistory = true, scrollToTop = true) {
