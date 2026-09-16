@@ -86,6 +86,51 @@
 
     .top-actions { display:flex; align-items:center; gap:9px; justify-content:flex-end; }
 
+    .global-search-form { position:relative; display:flex; align-items:center; width:clamp(210px,25vw,360px); height:40px; margin:0; }
+    .global-search-input { width:100%; height:40px; box-sizing:border-box; padding:0 43px 0 14px; border:1px solid #c9dfe8; border-radius:12px; outline:0; background:#fff; color:#18394a; font:inherit; font-size:14px; font-weight:650; box-shadow:0 2px 8px rgba(12,47,66,.08); transition:border-color .18s ease, box-shadow .18s ease; }
+    .global-search-input::placeholder { color:#7c98a6; font-weight:600; }
+    .global-search-input:hover { border-color:#9fc3d2; }
+    .global-search-input:focus { border-color:#72abc2; box-shadow:0 0 0 3px rgba(127,185,210,.3); }
+    .global-search-submit { position:absolute; right:3px; top:3px; display:grid; width:34px; height:34px; place-items:center; padding:0; border:0; border-radius:9px; background:transparent; color:#315f75; cursor:pointer; }
+    .global-search-submit:hover { background:#e9f4f8; }
+    .global-search-submit:focus-visible { outline:2px solid #7fb9d2; outline-offset:0; }
+    .global-search-submit svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; }
+
+    .global-search-dialog { width:min(920px,calc(100vw - 32px)); max-width:calc(100vw - 32px); height:min(780px,calc(100vh - 40px)); height:min(780px,calc(100dvh - 40px)); max-height:calc(100vh - 40px); max-height:calc(100dvh - 40px); padding:0; border:1px solid #d5e4eb; border-radius:22px; background:#f7fafc; color:#17212b; box-shadow:0 28px 90px rgba(15,42,57,.3); font:inherit; overflow:hidden; }
+    .global-search-dialog[open] { display:flex; flex-direction:column; }
+    .global-search-dialog::backdrop { background:rgba(17,38,51,.48); backdrop-filter:blur(2px); }
+    .global-search-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 22px; background:#edf6fa; border-bottom:1px solid #d7e6ed; flex:none; }
+    .global-search-head h2 { margin:0; color:#315f75; font-size:20px; font-weight:900; letter-spacing:-.02em; }
+    .global-search-close { display:grid; width:36px; height:36px; flex:0 0 36px; place-items:center; padding:0; border:0; border-radius:50%; color:#315f75; background:transparent; font:inherit; font-size:27px; line-height:1; cursor:pointer; }
+    .global-search-close:hover { background:#dcecf3; }
+    .global-search-close:focus-visible { outline:3px solid #7fb9d2; outline-offset:2px; }
+    .global-search-dialog-form { display:flex; gap:9px; padding:16px 22px 12px; background:#fff; flex:none; }
+    .global-search-dialog-input { min-width:0; flex:1; height:44px; box-sizing:border-box; padding:0 14px; border:1px solid #bfd4de; border-radius:11px; outline:0; background:#fff; color:#17212b; font:inherit; font-size:16px; }
+    .global-search-dialog-input:focus { border-color:#72abc2; box-shadow:0 0 0 3px rgba(127,185,210,.25); }
+    .global-search-dialog-run { min-width:76px; padding:0 18px; border:1px solid #315f75; border-radius:11px; background:#315f75; color:#fff; font:inherit; font-weight:850; cursor:pointer; }
+    .global-search-dialog-run:hover { background:#244f63; }
+    .global-search-tabs { display:flex; gap:7px; padding:0 22px 13px; background:#fff; border-bottom:1px solid #e0e9ee; flex:none; }
+    .global-search-tab { padding:8px 13px; border:1px solid #d5e3e9; border-radius:999px; background:#fff; color:#526a76; font:inherit; font-size:13px; font-weight:800; cursor:pointer; }
+    .global-search-tab:hover { background:#f1f7fa; }
+    .global-search-tab[aria-selected="true"] { border-color:#8db9cb; background:#dff1f8; color:#174f68; }
+    .global-search-summary { margin:0; padding:13px 23px 9px; color:#647681; font-size:13px; line-height:1.6; background:#f7fafc; flex:none; }
+    .global-search-results { min-height:0; overflow:auto; overscroll-behavior:contain; padding:0 16px 22px; }
+    .global-search-group + .global-search-group { margin-top:20px; }
+    .global-search-group-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:0; padding:10px 7px 8px; color:#315f75; font-size:15px; font-weight:900; }
+    .global-search-group-head small { color:#83939c; font-size:12px; font-weight:700; }
+    .global-search-list { display:grid; gap:8px; }
+    .global-search-result { display:grid; grid-template-columns:auto minmax(0,1fr); gap:11px; width:100%; padding:14px 15px; border:1px solid #dbe7ec; border-radius:14px; background:#fff; color:inherit; text-align:left; font:inherit; cursor:pointer; box-shadow:0 2px 8px rgba(29,67,87,.04); }
+    .global-search-result:hover { border-color:#a7c8d6; background:#fbfdfe; transform:translateY(-1px); box-shadow:0 7px 18px rgba(29,67,87,.09); }
+    .global-search-result:focus-visible { outline:3px solid #7fb9d2; outline-offset:2px; }
+    .global-search-kind { align-self:start; min-width:39px; padding:4px 7px; border-radius:7px; background:#e7f3f8; color:#245f79; font-size:11px; font-weight:900; text-align:center; }
+    .global-search-kind.j { background:#f1eafa; color:#70449a; }
+    .global-search-result-copy { min-width:0; }
+    .global-search-result-title { display:block; color:#18394a; font-size:15px; font-weight:850; line-height:1.5; overflow-wrap:anywhere; }
+    .global-search-result-meta { display:block; margin-top:3px; color:#788991; font-size:12px; line-height:1.5; }
+    .global-search-result-snippet { display:block; margin-top:7px; color:#3f4e56; font-size:13px; line-height:1.65; overflow-wrap:anywhere; }
+    .global-search-result mark { padding:0 .08em; border-radius:3px; background:#fff0a8; color:#26333a; font-weight:850; }
+    .global-search-empty { display:grid; min-height:240px; place-items:center; margin:0; padding:28px; color:#7b8c95; text-align:center; line-height:1.75; }
+
     .main-menu-button { display:inline-grid; width:40px; height:40px; flex:0 0 40px; place-items:center; padding:9px; border:1px solid #c9dfe8; border-radius:10px; background:#fff; color:#315f75; cursor:pointer; }
     .main-menu-button:hover, .main-menu-button[aria-expanded="true"] { background:#edf6fa; border-color:#8cb5c8; }
     .main-menu-button:focus-visible { outline:3px solid #7fb9d2; outline-offset:3px; }
@@ -836,7 +881,19 @@
       .masthead { padding: 14px 12px; }
       .masthead-inner { flex-direction:row; align-items:center; gap:12px; }
       .masthead h1 { min-width:0; text-align:left; font-size:clamp(18px,5.7vw,24px); }
-      .top-actions { display:flex; flex:0 0 auto; gap:7px; }
+      .top-actions { display:grid; grid-template-columns:minmax(0,1fr) 38px 38px; flex:1 0 100%; gap:7px; }
+      .global-search-form { width:auto; min-width:0; }
+      .global-search-input { padding-left:12px; font-size:13px; }
+      .main-menu-button { width:38px; height:38px; flex-basis:38px; padding:8px; }
+      .global-search-dialog { width:calc(100vw - 16px); max-width:calc(100vw - 16px); height:calc(100dvh - 16px); max-height:calc(100dvh - 16px); border-radius:17px; }
+      .global-search-head { padding:15px 16px; }
+      .global-search-dialog-form { padding:13px 14px 10px; }
+      .global-search-tabs { padding:0 14px 11px; overflow-x:auto; }
+      .global-search-summary { padding:11px 16px 7px; }
+      .global-search-results { padding:0 8px 16px; }
+      .global-search-result { padding:13px 11px; gap:8px; }
+      .masthead-inner { flex-wrap:wrap; }
+      .top-actions .information-button { grid-column:auto; justify-self:auto; }
       .masthead-menu { margin-top:11px; padding:8px; border-radius:13px; }
       .masthead-menu-inner { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; }
       .masthead-menu .nav-button { padding:10px 6px; font-size:13px; }
@@ -1037,6 +1094,10 @@
       <div class="masthead-inner">
         <h1><button class="site-logo" type="button" data-go="schedule" aria-label="소화기계 시간표로 이동">Digestive System</button></h1>
         <nav class="top-actions" aria-label="주요 메뉴">
+          <form class="global-search-form" role="search" data-global-search-form>
+            <input class="global-search-input" type="search" data-global-search-input aria-label="Wiki와 J 통합검색" aria-haspopup="dialog" placeholder="Wiki · J 검색" autocomplete="off" spellcheck="false">
+            <button class="global-search-submit" type="submit" aria-label="통합검색 결과 보기" title="통합검색"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 5 5"></path></svg></button>
+          </form>
           <button class="main-menu-button" type="button" data-main-menu-toggle="" aria-expanded="false" aria-controls="site-main-menu" aria-label="주요 메뉴 열기" title="메뉴">
             <span class="main-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
           </button>
@@ -3703,6 +3764,269 @@
         event.preventDefault();
         closeContextLinkSplit();
       }
+    });
+
+    // Integrated Wiki and J search. The index is built lazily so the first page stays light.
+    let globalSearchDialog = null;
+    let globalSearchIndex = null;
+    let globalSearchOpener = null;
+    let globalSearchRestoreFocus = true;
+    const globalSearchState = { query:'', terms:[], filter:'all', wiki:[], j:[] };
+
+    function globalSearchPlainText(value) {
+      return String(value ?? '')
+        .replace(/\[\[파일:([^|\]]+)(?:\|([^\]]*))?\]\]/g, (_, file, options) => {
+          const caption = String(options || '').split('|').filter(part => !/^(?:원본:|alt=|width=|height=)/i.test(part)).at(-1);
+          return caption || file.replace(/[-_]/g, ' ');
+        })
+        .replace(/\[\[[^|\]]+\|([^\]]+)\]\]/g, '$1')
+        .replace(/\[\[([^\]]+)\]\]/g, '$1')
+        .replace(/\{\{(\d+)\}\}/g, '$1번')
+        .replace(/^\s*@[a-z]+\s+/gim, '')
+        .replace(/'''|''|""|~~~|~~/g, '')
+        .replace(/^\s*=+\s*|\s*=+\s*$/gm, '')
+        .replace(/\|\|/g, ' ')
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/&(?:nbsp|amp|lt|gt|quot|#39);/g, token => ({ '&nbsp;':' ', '&amp;':'&', '&lt;':'<', '&gt;':'>', '&quot;':'"', '&#39;':"'" }[token] || ' '))
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    const globalSearchNormalize = value => globalSearchPlainText(value).normalize('NFKC').toLocaleLowerCase('ko');
+    const globalSearchTerms = query => globalSearchNormalize(query).split(/\s+/).filter(Boolean);
+    const globalSearchMatches = (text, terms) => terms.length > 0 && terms.every(term => text.includes(term));
+    const globalSearchEscapeRegExp = value => String(value).replace(/[.*+?^$\{\}()|[\]\\]/g, '\\$&');
+
+    function globalSearchHighlight(value, terms) {
+      const text = String(value || '');
+      if (!terms.length) return escapeHtml(text);
+      const pattern = new RegExp('(' + [...terms].sort((a,b) => b.length - a.length).map(globalSearchEscapeRegExp).join('|') + ')', 'giu');
+      return text.split(pattern).map(part => terms.some(term => globalSearchNormalize(part) === term) ? '<mark>' + escapeHtml(part) + '</mark>' : escapeHtml(part)).join('');
+    }
+
+    function globalSearchSnippet(value, terms, maxLength = 190) {
+      const text = globalSearchPlainText(value);
+      if (!text) return '';
+      const normalized = text.normalize('NFKC').toLocaleLowerCase('ko');
+      const positions = terms.map(term => normalized.indexOf(term)).filter(position => position >= 0);
+      const hit = positions.length ? Math.min(...positions) : 0;
+      const start = Math.max(0, hit - Math.floor(maxLength * .28));
+      const end = Math.min(text.length, start + maxLength);
+      const excerpt = (start > 0 ? '…' : '') + text.slice(start, end).trim() + (end < text.length ? '…' : '');
+      return globalSearchHighlight(excerpt, terms);
+    }
+
+    function buildGlobalWikiSearchIndex() {
+      const items = [];
+      const seenCourseIds = new Set();
+      courses.forEach(rawCourse => {
+        const course = byId(canonicalContentCourseId(rawCourse.id));
+        if (!course || seenCourseIds.has(course.id)) return;
+        seenCourseIds.add(course.id);
+        const source = String(lectureNoteSources[course.id] || '').replace(/\r\n?/g, '\n');
+        const courseLabel = contentCourseText(course);
+        const metadata = [courseLabel, course.professor, pathText(course)].join(' ');
+        if (source.trim()) {
+          const lines = source.split('\n');
+          const records = wikiSourceHeadingRecords(course);
+          const firstLine = records[0]?.lineIndex ?? lines.length;
+          const intro = globalSearchPlainText(lines.slice(0, firstLine).join('\n'));
+          if (intro) items.push({ type:'wiki', courseId:course.id, slug:'', heading:'문서 개요', body:intro, metadata, courseLabel });
+          records.forEach((record, index) => {
+            const end = records[index + 1]?.lineIndex ?? lines.length;
+            items.push({
+              type:'wiki', courseId:course.id, slug:record.slug, heading:globalSearchPlainText(record.heading),
+              body:globalSearchPlainText(lines.slice(record.lineIndex + 1, end).join('\n')), metadata, courseLabel, level:record.level
+            });
+          });
+          return;
+        }
+        const fallback = wikiNotes[course.id];
+        if (!fallback) return;
+        const holder = document.createElement('div');
+        holder.innerHTML = fallback;
+        const sections = [...holder.querySelectorAll('.wiki-section')];
+        if (!sections.length) {
+          const body = globalSearchPlainText(holder.textContent);
+          if (body) items.push({ type:'wiki', courseId:course.id, slug:'', heading:'문서', body, metadata, courseLabel });
+          return;
+        }
+        sections.forEach((section, index) => {
+          const heading = globalSearchPlainText(section.querySelector('h1,h2,h3,h4,h5,h6')?.textContent || '문단');
+          items.push({ type:'wiki', courseId:course.id, slug:section.dataset.wikiSection || section.id?.replace(/^wiki-\d+-|^note-\d+-/, '') || 'section-' + (index + 1), heading, body:globalSearchPlainText(section.textContent), metadata, courseLabel });
+        });
+      });
+      return items.map(item => ({ ...item, headingSearch:globalSearchNormalize(item.heading), bodySearch:globalSearchNormalize(item.body), metadataSearch:globalSearchNormalize(item.metadata) }));
+    }
+
+    function buildGlobalJSearchIndex() {
+      return jblQuestions.map(question => {
+        const course = byId(question.lectureId || question.lectureIds?.[0]);
+        const questionText = globalSearchPlainText(question.question);
+        const passage = globalSearchPlainText(question.passage);
+        const choices = globalSearchPlainText((question.choices || []).map((choice, index) => (index + 1) + '번 ' + choice).join(' '));
+        const explanation = globalSearchPlainText([question.answerLabel, question.explanation].filter(Boolean).join(' '));
+        const metadata = globalSearchPlainText([question.globalNumber + '번', question.year, question.source, question.lectureTitle, question.professor, question.legacyProfessor, course ? contentCourseText(course) : ''].filter(Boolean).join(' '));
+        return {
+          type:'j', globalNumber:question.globalNumber, question:questionText, passage, choices, explanation, metadata,
+          questionSearch:globalSearchNormalize(questionText), passageSearch:globalSearchNormalize(passage), choicesSearch:globalSearchNormalize(choices), explanationSearch:globalSearchNormalize(explanation), metadataSearch:globalSearchNormalize(metadata)
+        };
+      });
+    }
+
+    function ensureGlobalSearchIndex() {
+      if (!globalSearchIndex) globalSearchIndex = { wiki:buildGlobalWikiSearchIndex(), j:buildGlobalJSearchIndex() };
+      return globalSearchIndex;
+    }
+
+    function runGlobalSearch(query) {
+      const terms = globalSearchTerms(query);
+      globalSearchState.query = String(query || '').trim();
+      globalSearchState.terms = terms;
+      if (!terms.length) { globalSearchState.wiki = []; globalSearchState.j = []; return; }
+      globalSearchIndex = null; // Include Wiki/J edits made in the current browser session.
+      const index = ensureGlobalSearchIndex();
+      const fullQuery = terms.join(' ');
+      globalSearchState.wiki = index.wiki.map(item => {
+        const all = [item.headingSearch, item.bodySearch, item.metadataSearch].join(' ');
+        if (!globalSearchMatches(all, terms)) return null;
+        let score = item.level ? Math.max(0, item.level - 2) * 3 : 0;
+        if (item.headingSearch.includes(fullQuery)) score += 80;
+        if (item.metadataSearch.includes(fullQuery)) score += 32;
+        terms.forEach(term => { if (item.headingSearch.includes(term)) score += 24; if (item.metadataSearch.includes(term)) score += 10; if (item.bodySearch.includes(term)) score += 5; });
+        return { ...item, score };
+      }).filter(Boolean).sort((a,b) => b.score - a.score || a.courseId - b.courseId || a.heading.localeCompare(b.heading, 'ko'));
+
+      globalSearchState.j = index.j.map(item => {
+        const all = [item.questionSearch, item.passageSearch, item.choicesSearch, item.explanationSearch, item.metadataSearch].join(' ');
+        if (!globalSearchMatches(all, terms)) return null;
+        let score = String(item.globalNumber) === fullQuery.replace(/번$/, '') ? 1000 : 0;
+        if (item.questionSearch.includes(fullQuery)) score += 95;
+        if (item.passageSearch.includes(fullQuery)) score += 52;
+        if (item.choicesSearch.includes(fullQuery)) score += 42;
+        if (item.metadataSearch.includes(fullQuery)) score += 34;
+        if (item.explanationSearch.includes(fullQuery)) score += 16;
+        terms.forEach(term => { if (item.questionSearch.includes(term)) score += 26; if (item.passageSearch.includes(term)) score += 16; if (item.choicesSearch.includes(term)) score += 13; if (item.metadataSearch.includes(term)) score += 10; if (item.explanationSearch.includes(term)) score += 4; });
+        return { ...item, score };
+      }).filter(Boolean).sort((a,b) => b.score - a.score || a.globalNumber - b.globalNumber);
+    }
+
+    function globalSearchJSnippet(item) {
+      const fields = [
+        ['발문', item.question, item.questionSearch], ['제시문', item.passage, item.passageSearch], ['선지', item.choices, item.choicesSearch], ['해설', item.explanation, item.explanationSearch]
+      ];
+      const picked = fields.find(([, , normalized]) => globalSearchMatches(normalized, globalSearchState.terms)) || fields.find(([, text]) => text) || ['', '', ''];
+      return (picked[0] ? '<strong>' + picked[0] + '</strong> · ' : '') + globalSearchSnippet(picked[1], globalSearchState.terms);
+    }
+
+    function renderGlobalSearchGroup(type, items, total) {
+      const label = type === 'wiki' ? 'Wiki' : 'J';
+      const visible = items.slice(0, 80);
+      if (!visible.length) return '';
+      const rows = visible.map(item => {
+        if (type === 'wiki') {
+          return '<button class="global-search-result" type="button" role="listitem" data-search-type="wiki" data-search-course="' + item.courseId + '" data-search-section="' + escapeHtml(item.slug) + '"><span class="global-search-kind">Wiki</span><span class="global-search-result-copy"><span class="global-search-result-title">' + globalSearchHighlight(item.courseLabel + ' · ' + item.heading, globalSearchState.terms) + '</span><span class="global-search-result-meta">' + escapeHtml(item.metadata) + '</span><span class="global-search-result-snippet">' + globalSearchSnippet(item.body || item.heading, globalSearchState.terms) + '</span></span></button>';
+        }
+        return '<button class="global-search-result" type="button" role="listitem" data-search-type="j" data-search-question="' + item.globalNumber + '"><span class="global-search-kind j">J</span><span class="global-search-result-copy"><span class="global-search-result-title">' + globalSearchHighlight(item.globalNumber + '번 · ' + item.question, globalSearchState.terms) + '</span><span class="global-search-result-meta">' + escapeHtml(item.metadata) + '</span><span class="global-search-result-snippet">' + globalSearchJSnippet(item) + '</span></span></button>';
+      }).join('');
+      return '<section class="global-search-group" aria-label="' + label + ' 검색 결과"><h3 class="global-search-group-head"><span>' + label + '</span><small>' + total.toLocaleString('ko-KR') + '개' + (total > visible.length ? ' · 상위 ' + visible.length + '개 표시' : '') + '</small></h3><div class="global-search-list" role="list">' + rows + '</div></section>';
+    }
+
+    function renderGlobalSearchResults() {
+      if (!globalSearchDialog) return;
+      const summary = globalSearchDialog.querySelector('[data-search-summary]');
+      const results = globalSearchDialog.querySelector('[data-search-results]');
+      const tabs = globalSearchDialog.querySelector('[data-search-tabs]');
+      const counts = { all:globalSearchState.wiki.length + globalSearchState.j.length, wiki:globalSearchState.wiki.length, j:globalSearchState.j.length };
+      tabs.innerHTML = [['all','전체'],['wiki','Wiki'],['j','J']].map(([key,label]) => '<button class="global-search-tab" type="button" role="tab" aria-selected="' + (globalSearchState.filter === key) + '" data-search-filter="' + key + '">' + label + ' ' + counts[key].toLocaleString('ko-KR') + '</button>').join('');
+      if (!globalSearchState.terms.length) {
+        summary.textContent = 'Wiki와 J의 발문·선지·해설을 함께 검색합니다.';
+        results.innerHTML = '<p class="global-search-empty">찾고 싶은 의학 용어나 표현을 입력해 주세요.</p>';
+        return;
+      }
+      summary.textContent = '“' + globalSearchState.query + '” 검색 결과 ' + counts.all.toLocaleString('ko-KR') + '개';
+      const chunks = [];
+      if (globalSearchState.filter !== 'j') chunks.push(renderGlobalSearchGroup('wiki', globalSearchState.wiki, counts.wiki));
+      if (globalSearchState.filter !== 'wiki') chunks.push(renderGlobalSearchGroup('j', globalSearchState.j, counts.j));
+      results.innerHTML = chunks.filter(Boolean).join('') || '<p class="global-search-empty">일치하는 결과가 없습니다.<br>띄어쓰기나 검색어를 바꾸어 보세요.</p>';
+      results.scrollTop = 0;
+    }
+
+    function currentGlobalSearchView() {
+      const view = [...document.querySelectorAll('.view')].find(element => !element.hidden);
+      const name = view?.id?.replace(/-view$/, '') || 'catalog';
+      return name === 'detail' ? previousView : name;
+    }
+
+    function openGlobalSearchWiki(courseId, section) {
+      const course = byId(canonicalContentCourseId(courseId));
+      if (!course) return;
+      globalSearchRestoreFocus = false;
+      globalSearchDialog?.close();
+      showDetail(course.id, currentGlobalSearchView(), '정리본', !section);
+      history.replaceState({ ...(history.state || {}), detailTab:'정리본', wikiSection:section || '' }, '', '#lecture-' + course.id);
+      if (section) queueWikiSectionScroll(() => document.querySelector('#content-panel'), section);
+    }
+
+    function createGlobalSearchDialog() {
+      if (globalSearchDialog) return globalSearchDialog;
+      const dialog = document.createElement('dialog');
+      dialog.className = 'global-search-dialog';
+      dialog.setAttribute('aria-labelledby', 'global-search-title');
+      dialog.innerHTML = '<header class="global-search-head"><h2 id="global-search-title">Wiki · J 통합검색</h2><button class="global-search-close" type="button" aria-label="검색창 닫기">×</button></header><form class="global-search-dialog-form" role="search" data-search-dialog-form><input class="global-search-dialog-input" type="search" data-search-dialog-input aria-label="통합검색어" autocomplete="off" spellcheck="false"><button class="global-search-dialog-run" type="submit">검색</button></form><div class="global-search-tabs" role="tablist" aria-label="검색 범위" data-search-tabs></div><p class="global-search-summary" role="status" aria-live="polite" data-search-summary></p><div class="global-search-results" data-search-results></div>';
+      document.body.append(dialog);
+      globalSearchDialog = dialog;
+      dialog.querySelector('.global-search-close').addEventListener('click', () => dialog.close());
+      dialog.querySelector('[data-search-dialog-form]').addEventListener('submit', event => {
+        event.preventDefault();
+        const input = dialog.querySelector('[data-search-dialog-input]');
+        runGlobalSearch(input.value);
+        const headerInput = document.querySelector('[data-global-search-input]');
+        if (headerInput) headerInput.value = input.value;
+        renderGlobalSearchResults();
+      });
+      dialog.querySelector('[data-search-tabs]').addEventListener('click', event => {
+        const button = event.target.closest('[data-search-filter]');
+        if (!button) return;
+        globalSearchState.filter = button.dataset.searchFilter;
+        renderGlobalSearchResults();
+      });
+      dialog.querySelector('[data-search-results]').addEventListener('click', event => {
+        const result = event.target.closest('[data-search-type]');
+        if (!result) return;
+        if (result.dataset.searchType === 'wiki') return openGlobalSearchWiki(result.dataset.searchCourse, result.dataset.searchSection);
+        globalSearchRestoreFocus = false;
+        dialog.close();
+        openJblQuestionNumber(result.dataset.searchQuestion);
+      });
+      dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const rect = dialog.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+      });
+      dialog.addEventListener('close', () => {
+        if (globalSearchRestoreFocus) globalSearchOpener?.focus?.();
+        globalSearchRestoreFocus = true;
+      });
+      return dialog;
+    }
+
+    function openGlobalSearch(query, opener) {
+      const dialog = createGlobalSearchDialog();
+      globalSearchOpener = opener || document.querySelector('[data-global-search-input]');
+      globalSearchState.filter = 'all';
+      runGlobalSearch(query);
+      const input = dialog.querySelector('[data-search-dialog-input]');
+      input.value = String(query || '');
+      renderGlobalSearchResults();
+      if (!dialog.open) dialog.showModal();
+      requestAnimationFrame(() => { input.focus(); input.setSelectionRange(input.value.length, input.value.length); });
+    }
+
+    document.querySelector('[data-global-search-form]')?.addEventListener('submit', event => {
+      event.preventDefault();
+      const input = event.currentTarget.querySelector('[data-global-search-input]');
+      openGlobalSearch(input.value, input);
     });
 
     const mainMenuToggle = document.querySelector('[data-main-menu-toggle]');
