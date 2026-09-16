@@ -4015,19 +4015,39 @@
       const dialog = createGlobalSearchDialog();
       globalSearchOpener = opener || document.querySelector('[data-global-search-input]');
       globalSearchState.filter = 'all';
-      runGlobalSearch(query);
       const input = dialog.querySelector('[data-search-dialog-input]');
       input.value = String(query || '');
-      renderGlobalSearchResults();
-      if (!dialog.open) dialog.showModal();
+
+      // Open first so a local-file runtime error can never look like a dead button.
+      if (!dialog.open) {
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
+      }
+
+      try {
+        runGlobalSearch(query);
+        renderGlobalSearchResults();
+      } catch (error) {
+        console.error('통합검색 실행 오류', error);
+        const summary = dialog.querySelector('[data-search-summary]');
+        const results = dialog.querySelector('[data-search-results]');
+        if (summary) summary.textContent = '검색을 완료하지 못했습니다.';
+        if (results) results.innerHTML = '<div class="global-search-empty"><strong>검색 데이터 로딩 오류</strong><span>페이지를 새로고침한 뒤 다시 시도해 주세요.</span></div>';
+      }
+
       requestAnimationFrame(() => { input.focus(); input.setSelectionRange(input.value.length, input.value.length); });
     }
 
-    document.querySelector('[data-global-search-form]')?.addEventListener('submit', event => {
-      event.preventDefault();
-      const input = event.currentTarget.querySelector('[data-global-search-input]');
-      openGlobalSearch(input.value, input);
-    });
+    const globalSearchForm = document.querySelector('[data-global-search-form]');
+    const globalSearchInput = globalSearchForm?.querySelector('[data-global-search-input]');
+    const globalSearchSubmit = globalSearchForm?.querySelector('.global-search-submit');
+    const submitGlobalSearch = event => {
+      event?.preventDefault?.();
+      openGlobalSearch(globalSearchInput?.value || '', globalSearchInput);
+    };
+    globalSearchForm?.addEventListener('submit', submitGlobalSearch);
+    // Bind the magnifier itself as well as form submit for reliable file:// use.
+    globalSearchSubmit?.addEventListener('click', submitGlobalSearch);
 
     const mainMenuToggle = document.querySelector('[data-main-menu-toggle]');
     const mainMenu = document.querySelector('#site-main-menu');
