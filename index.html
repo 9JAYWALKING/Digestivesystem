@@ -3841,7 +3841,7 @@
           });
           return;
         }
-        const fallback = wikiNotes[course.id];
+        const fallback = legacyLectureNotes[course.id];
         if (!fallback) return;
         const holder = document.createElement('div');
         holder.innerHTML = fallback;
