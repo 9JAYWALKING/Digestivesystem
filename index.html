@@ -1092,12 +1092,61 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
+    .quick-heading { display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin:6px 0 26px; }
+    .quick-heading h2 { margin:0; color:var(--ink,#18323d); font-size:30px; }
+    .quick-heading>span { font-size:12px; color:#7c8d96; }
+    .quick-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; max-width:1440px; margin:auto; }
+    .quick-card { min-width:0; display:flex; flex-direction:column; padding:0; border:1px solid #dce6eb; border-radius:20px; background:white; color:#18323d; text-align:left; font-family:inherit; overflow:hidden; box-shadow:0 5px 20px #18323d07; transition:border-color .16s,box-shadow .16s; }
+    button.quick-card,.quick-schedule-main { cursor:pointer; }
+    .quick-card:hover { border-color:#9fbdcc; box-shadow:0 7px 24px #18323d10; }
+    .quick-card:focus-visible,.quick-schedule-main:focus-visible { outline:3px solid #2590b9; outline-offset:3px; }
+    .quick-card:disabled { opacity:.65; cursor:default; }
+    .quick-preview { display:block; width:100%; height:clamp(150px,17vw,250px); overflow:hidden; background:#f2f6f8; border-bottom:1px solid #e6edf1; }
+    .quick-preview img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
+    .quick-card-copy { position:relative; display:flex; flex-direction:column; gap:9px; padding:23px 56px 23px 25px; width:100%; box-sizing:border-box; }
+    .quick-card-copy strong { font-size:clamp(18px,1.65vw,24px); line-height:1.45; overflow-wrap:anywhere; }
+    .quick-card-copy>span { font-size:13px; color:#6b818d; line-height:1.6; }
+    .quick-card-copy b { position:absolute; right:25px; top:24px; font-size:24px; font-weight:400; color:#527b8e; }
+    .quick-schedule-main { border:0; background:none; padding:0; color:inherit; font:inherit; text-align:inherit; }
+    .quick-week-buttons { display:flex; gap:7px; padding:0 25px 22px; margin-top:auto; }
+    .quick-week-buttons button { flex:1; padding:9px 3px; background:#edf5f9; color:#244f63; border:1px solid #dbe9f0; border-radius:8px; font:inherit; font-size:14px; font-weight:700; cursor:pointer; }
+    .quick-week-buttons button:hover { background:#dcecf4; }
+    .bookmark-category-buttons { display:flex; flex-wrap:wrap; gap:9px; margin:0 0 24px; }
+    .bookmark-category { border:1px solid transparent; border-radius:10px; padding:11px 15px; font:inherit; font-weight:750; cursor:pointer; display:flex; gap:10px; align-items:center; }
+    .bookmark-category.basic { background:var(--basic-soft); color:var(--basic); }
+    .bookmark-category.clinical { background:var(--clinical-soft); color:var(--clinical); }
+    .bookmark-category[aria-pressed=true] { border-color:currentColor; box-shadow:inset 0 0 0 1px currentColor; }
+    .bookmark-category span { font-size:12px; opacity:.8; }
+    .bookmark-collection { border:1px solid #dce6eb; border-radius:16px; overflow:hidden; }
+    .bookmark-collection-body { padding:clamp(18px,3vw,40px); }
+    .bookmark-collected-section { border-bottom:1px solid #e3ebef; padding-bottom:26px; margin-bottom:28px; min-width:0; }
+    .bookmark-collected-section:last-child { border:0; margin-bottom:0; padding-bottom:0; }
+    .bookmark-origin { font-size:13px; margin-bottom:14px; }
+    .bookmark-missing { color:#91735f; }
+    .bookmark-collection .jbl-wiki-text { font-size:17px; line-height:1.85; }
+    .bookmark-collection h4 { font-size:22px; color:#244f63; }
+    .jbl-wrong-session { display:flex; gap:12px; flex-wrap:wrap; align-items:center; color:#697e89; font-size:13px; margin:12px 0 0; }
+    .jbl-wrong-session button { border:1px solid #dce5ea; background:white; color:#244f63; border-radius:7px; padding:5px 9px; font:inherit; cursor:pointer; }
+    .week-card[data-schedule-week] { scroll-margin-top:12px; }
+    @media(max-width:700px) {
+      .quick-heading { align-items:flex-start; flex-direction:column; gap:6px; margin-bottom:18px; }
+      .quick-heading h2 { font-size:26px; }
+      .quick-grid { grid-template-columns:1fr; gap:18px; }
+      .quick-preview { height:175px; }
+      .quick-card-copy { padding:18px 45px 18px 18px; }
+      .quick-card-copy strong { font-size:21px; }
+      .quick-card-copy b { right:18px; top:18px; }
+      .quick-week-buttons { padding:0 18px 18px; }
+      .bookmark-category { padding:9px 11px; font-size:14px; }
+      .bookmark-category-buttons { gap:7px; }
+    }
+
   </style>
 </head>
 <body class=""><div class="site-shell">
     <header class="masthead">
       <div class="masthead-inner">
-        <h1><button class="site-logo" type="button" data-go="schedule" aria-label="소화기계 시간표로 이동">Digestive System</button></h1>
+        <h1><button class="site-logo" type="button" data-go="home" aria-label="빠른 시작으로 이동">Digestive System</button></h1>
         <nav class="top-actions" aria-label="주요 메뉴">
           <form class="global-search-form" role="search" data-global-search-form>
             <input class="global-search-input" type="search" data-global-search-input aria-label="Wiki와 J 통합검색" aria-haspopup="dialog" placeholder="Wiki · J 검색" autocomplete="off" spellcheck="false">
@@ -1120,6 +1169,8 @@
     </header>
 
     <main>
+      <section id="home-view" class="view" hidden><div id="quick-start-root"></div></section>
+      <section id="bookmarks-view" class="view" hidden><div id="bookmark-collection-root"></div></section>
       <section id="catalog-view" class="view" aria-labelledby="catalog-title">
         <div id="domain-tabs" class="domain-tabs" aria-label="최상위 범주"><button class="domain-tab active" style="--tab-color:var(--basic);--tab-soft:var(--basic-soft)" data-domain="기초의학" type="button"><strong>기초의학</strong></button><button class="domain-tab " style="--tab-color:var(--clinical);--tab-soft:var(--clinical-soft)" data-domain="임상의학" type="button"><strong>임상의학</strong></button></div>
         <div id="catalog"><div class="discipline-grid"><article class="discipline-card" style="--accent:var(--basic);--soft:var(--basic-soft)">
@@ -1201,7 +1252,7 @@
       </section>
 
       <section id="jbl-view" class="view" aria-label="JBL 전체 문항" hidden="">
-        <div id="jbl-standalone" class="jbl-standalone"><div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions"><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn " type="button" data-jbl-panel="filter" aria-expanded="false">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn active" type="button" data-jbl-panel="settings" aria-expanded="true">설정</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-open-lecture="">강의 보기</button><button class="information-button" type="button" data-information-open="" aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472"><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump="">이동</button></div></section><section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random="">문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset="">초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit="">강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files="">현재 파일 저장</button></div></section><div data-jbl-root=""><article class="jbl-card" data-jbl-question="2025-1">
+        <div id="jbl-standalone" class="jbl-standalone"><div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions"><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn " type="button" data-jbl-panel="filter" aria-expanded="false">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn active" type="button" data-jbl-panel="settings" aria-expanded="true">설정</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-home="">홈으로</button><button class="information-button" type="button" data-information-open="" aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472"><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump="">이동</button></div></section><section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random="">문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset="">초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit="">강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files="">현재 파일 저장</button></div></section><div data-jbl-root=""><article class="jbl-card" data-jbl-question="2025-1">
         <header class="jbl-card-head"><div class="jbl-meta"><span class="jbl-prof">윤용한 교수</span><div class="jbl-meta-right"><span class="jbl-qid">1번</span><button class="jbl-favorite " type="button" data-jbl-favorite="" aria-label="즐겨찾기 추가" aria-pressed="false">☆</button></div></div><h2 class="jbl-title">식도암의 수술적인 치료에서 식도절제술 시행 후 식도와 conduit의 봉합을 경부에서 진행하는 수술 방법에 대한 장점에 대해서 기술하세요.</h2><div class="jbl-source">2025 소화기계 1번</div></header>
         <div class="jbl-card-body"><div class="jbl-btns"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-answer="">정답 보기</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-explanation="">해설 보기</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit="">문제 수정</button></div></div>
       </article></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner"><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-prev="" disabled="">← 이전 문제</button><div class="jbl-counter">1 / 796</div><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-next="">다음 문제 →</button></div></div></div>
@@ -1219,6 +1270,170 @@
   <script src="./lecture-notes.js"></script>
   <script src="./jbl-data.js"></script>
   <script>
+    // Personal study progress is browser-local, keyed by immutable question IDs.
+    const wrongQuestionIds = () => jblQuestions.filter(q => wrongAnswers[q.id]?.pending === true).map(q => q.id);
+    function freshQuestionAttempt(state) {
+      state.selected = {}; state.answerShown = {}; state.explanationShown = {};
+      state.attempts = {}; state.editing = null;
+    }
+    function markQuestionPeeked(state, question) {
+      state.attempts ||= {};
+      (state.attempts[question.id] ||= {}).peeked = true;
+    }
+    function recordQuestionAttempt(state, question, answerIndices) {
+      state.attempts ||= {};
+      const attempt = state.attempts[question.id] ||= {};
+      if (attempt.done || attempt.peeked) return;
+      const expected = [...new Set(answerIndices.map(Number))];
+      if (!expected.length || expected.some(n => !Number.isInteger(n) || n < 1 || n > question.choices.length)) return;
+      const selected = [state.selected[question.id]].flat().map(Number).filter(Number.isFinite);
+      if (selected.length !== expected.length) return;
+      attempt.done = true;
+      const correct = expected.every(n => selected.includes(n));
+      const old = wrongAnswers[question.id];
+      if (!old && correct) return;
+      const next = { ...wrongAnswers, [question.id]: {
+        pending:!correct, wrongCount:(Number(old?.wrongCount) || 0) + (correct ? 0 : 1),
+        lastAttemptAt:Date.now(), lastWrongAt:correct ? old?.lastWrongAt : Date.now()
+      }};
+      wrongAnswers = next;
+      writeStudyStorage(wrongAnswerStorageKey, next);
+    }
+    function prepareJblStart(wrongOnly = false) {
+      const state = standaloneState();
+      state.linkedQuestionNumber = null;
+      state.filters = {year:'', lectureId:'', professor:'', favoritesOnly:false, wrongOnly};
+      // Freeze this review batch so a correct answer cannot shift the next question.
+      state.wrongBatch = wrongOnly ? wrongQuestionIds() : null;
+      state.index = 0; state.panel = wrongOnly ? 'filter' : null;
+      clearJblRandomOrder(state); freshQuestionAttempt(state);
+    }
+    function quickNavigate(hash) {
+      if (contextLinkState.active) closeContextLinkSplit(false);
+      if (location.hash !== hash) history.pushState(null, '', hash);
+      routeFromHash();
+    }
+    const quickCategories = [
+      ['histology','조직학','기초의학',c=>c.discipline==='조직학'],
+      ['physiology','생리학','기초의학',c=>c.discipline==='생리학'],
+      ['pathology','병리학','기초의학',c=>c.discipline==='병리학'],
+      ['pharmacology','약리학','기초의학',c=>c.discipline==='약리학'],
+      ['general','임상 총론','임상의학',c=>c.discipline==='소화기 내과' && c.section==='총론 및 진단'],
+      ['upper','상부위장관','임상의학',c=>c.discipline==='소화기 내과' && c.section==='상부위장관'],
+      ['lower','하부위장관','임상의학',c=>c.discipline==='소화기 내과' && c.section==='하부위장관'],
+      ['hpb','간담췌','임상의학',c=>c.discipline==='소화기 내과' && ['간장학','담도 및 췌장'].includes(c.section)],
+      ['pediatrics','소아청소년','임상의학',c=>c.discipline==='소아청소년과'],
+      ['surgery','외과','임상의학',c=>c.discipline==='외과'],
+      ['support','진단치료분과','임상의학',c=>c.discipline==='진단 치료 지원 분과']
+    ];
+    let quickClock = {time:Date.now(), tick:performance.now(), source:'기기 시간'};
+    let quickClockPromise = null;
+    function koreanDateKey(time) {
+      const parts = new Intl.DateTimeFormat('en-US', {timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(time));
+      const part = type => parts.find(p => p.type === type)?.value;
+      return `${part('year')}-${part('month')}-${part('day')}`;
+    }
+    async function refreshQuickClock() {
+      if (quickClockPromise) return quickClockPromise;
+      quickClockPromise = (async () => {
+        if (!/^https?:$/.test(location.protocol)) return;
+        const abort = new AbortController();
+        const timeout = setTimeout(() => abort.abort(), 4000);
+        try {
+          const url = new URL(location.href); url.hash = ''; url.searchParams.set('_study_clock', Date.now());
+          const response = await fetch(url, {method:'HEAD',cache:'no-store',signal:abort.signal});
+          const time = Date.parse(response.headers.get('Date') || '');
+          if (response.ok && Number.isFinite(time)) quickClock = {time,tick:performance.now(),source:'서버 시간'};
+        } catch (_) { /* Local/offline use keeps a device-clock fallback. */ }
+        finally { clearTimeout(timeout); }
+      })();
+      try { await quickClockPromise; } finally { quickClockPromise = null; }
+    }
+    function latestStudyCourse(dateKey) {
+      return courses.flatMap(course => course.slots.map(slot=>({course,slot})))
+        .filter(({slot})=>slot.date <= dateKey && !holidays.has(slot.date))
+        .sort((a,b)=>b.slot.date.localeCompare(a.slot.date) || a.slot.time.localeCompare(b.slot.time) || a.course.id-b.course.id)[0] || null;
+    }
+    function quickClockDate() { return koreanDateKey(quickClock.time + performance.now() - quickClock.tick); }
+    function updateQuickReviewLabel() {
+      const recent = latestStudyCourse(quickClockDate());
+      const label = document.querySelector('[data-quick-review-label]');
+      if (label) label.textContent = recent ? `${formatDate(recent.slot.date)}(${recent.slot.day}) · ${contentCourseText(recent.course)}` : '아직 수업 일정이 시작되지 않았습니다.';
+      const button = document.querySelector('[data-quick-review]');
+      if (button) button.disabled = !recent;
+      const clock = document.querySelector('[data-quick-clock]');
+      if (clock) clock.textContent = `${quickClockDate().replaceAll('-', '.')} · ${quickClock.source} · 한국 시간`;
+    }
+    function quickPreview(name) {
+      return `<span class="quick-preview" aria-hidden="true"><img src="./assets/quick-start/${name}.png" alt="" loading="lazy" /></span>`;
+    }
+    function renderQuickStart() {
+      const root = document.querySelector('#quick-start-root');
+      root.innerHTML = `<header class="quick-heading"><h2>빠른 시작</h2><span data-quick-clock></span></header>
+        <div class="quick-grid">
+          <button class="quick-card" type="button" data-quick-review>${quickPreview('review')}<span class="quick-card-copy"><strong>오늘 수업한 내용 복습하기</strong><span data-quick-review-label></span><b aria-hidden="true">↗</b></span></button>
+          <article class="quick-card quick-schedule-card"><button class="quick-schedule-main" type="button" data-quick-schedule>${quickPreview('schedule')}<span class="quick-card-copy"><strong>시간표 보기</strong><span>원하는 주차로 바로 이동</span><b aria-hidden="true">↗</b></span></button><div class="quick-week-buttons" aria-label="시간표 주차">${Object.keys(weekCalendar).map(week=>`<button type="button" data-quick-week="${week}">${week}주차</button>`).join('')}</div></article>
+          <button class="quick-card" type="button" data-quick-wrong>${quickPreview('wrong')}<span class="quick-card-copy"><strong>내가 틀린 문항만 보기</strong><span>다시 풀 문항 ${wrongQuestionIds().length}개</span><b aria-hidden="true">↗</b></span></button>
+          <button class="quick-card" type="button" data-quick-bookmarks>${quickPreview('bookmarks')}<span class="quick-card-copy"><strong>즐겨찾기 문단만 모아 보기</strong><span>과목별로 이어 읽는 나만의 핵심 문단</span><b aria-hidden="true">↗</b></span></button>
+        </div>`;
+      updateQuickReviewLabel();
+      refreshQuickClock().then(updateQuickReviewLabel);
+      root.querySelector('[data-quick-review]').onclick = async event => {
+        const button = event.currentTarget; button.disabled = true;
+        await refreshQuickClock();
+        const recent = latestStudyCourse(quickClockDate());
+        updateQuickReviewLabel();
+        if (!document.querySelector('#home-view').hidden && recent) quickNavigate(`#lecture-${canonicalContentCourseId(recent.course.id)}`);
+      };
+      root.querySelector('[data-quick-schedule]').onclick = ()=>quickNavigate('#schedule');
+      root.querySelectorAll('[data-quick-week]').forEach(button=>button.onclick=()=>quickNavigate(`#schedule-week-${button.dataset.quickWeek}`));
+      root.querySelector('[data-quick-wrong]').onclick=()=>quickNavigate('#jbl-wrong');
+      root.querySelector('[data-quick-bookmarks]').onclick=()=>quickNavigate('#bookmarks');
+    }
+    function showScheduleWeek(week) {
+      renderSchedule(); showView('schedule', false, false);
+      requestAnimationFrame(()=>document.querySelector(`[data-schedule-week="${week}"]`)?.scrollIntoView({block:'start',behavior:'auto'}));
+    }
+    function categoryBookmarks(category) {
+      const seen = new Set();
+      const positions = new Map();
+      const position = bookmark => {
+        if (!positions.has(bookmark.courseId)) positions.set(bookmark.courseId,
+          new Map(wikiHeadingRecordsFromLines(String(lectureNoteSources[bookmark.courseId] || '').split('\n')).map(h=>[h.slug,h.lineIndex])));
+        return positions.get(bookmark.courseId).get(bookmark.slug) ?? Number.MAX_SAFE_INTEGER;
+      };
+      return wikiBookmarks.filter(bookmark=> {
+        const course = byId(canonicalContentCourseId(bookmark.courseId));
+        const key = `${course?.id}#${bookmark.slug}`;
+        if (!course || !category[3](course) || seen.has(key)) return false;
+        seen.add(key); return true;
+      }).sort((a,b)=>a.courseId-b.courseId || position(a)-position(b));
+    }
+    function renderBookmarkCollection(categoryId = '') {
+      const root = document.querySelector('#bookmark-collection-root');
+      const category = quickCategories.find(c=>c[0]===categoryId);
+      const bookmarks = category ? categoryBookmarks(category) : [];
+      const title = category ? `${category[1]} 즐겨찾기 모아보기` : '즐겨찾기 문단만 모아 보기';
+      root.innerHTML = `<div class="personal-notes-toolbar"><h2>${escapeHtml(title)}</h2><button type="button" class="jbl-btn jbl-btn-sub" data-collection-home>홈으로</button></div>
+        <div class="bookmark-category-buttons" aria-label="즐겨찾기 분류">${quickCategories.map(c=>`<button type="button" class="bookmark-category ${c[2]==='기초의학'?'basic':'clinical'}" aria-pressed="${c===category}" data-bookmark-category="${c[0]}">${c[1]}<span>${categoryBookmarks(c).length}</span></button>`).join('')}</div>
+        ${category ? `<article class="bookmark-collection wiki-note"><header class="wiki-hero"><h3>${escapeHtml(title)}</h3></header><div class="bookmark-collection-body" data-collection-body></div></article>` : '<div class="personal-note-empty">모아 읽을 과목을 선택해 주세요.</div>'}`;
+      root.querySelector('[data-collection-home]').onclick=()=>quickNavigate('#home');
+      root.querySelectorAll('[data-bookmark-category]').forEach(button=>button.onclick=()=>quickNavigate(`#bookmarks-${button.dataset.bookmarkCategory}`));
+      if (!category) return;
+      const body = root.querySelector('[data-collection-body]');
+      if (!bookmarks.length) { body.innerHTML='<div class="personal-note-empty">이 과목에 즐겨찾기한 문단이 없습니다. Wiki 소제목 옆의 ☆를 눌러 추가해 주세요.</div>'; return; }
+      // Render each fragment in its own original lecture context and namespace.
+      // Equal footnote names across lectures never collide; relative links keep their targets.
+      bookmarks.forEach((bookmark,index)=> {
+        const source = wikiBookmarkSource(bookmark);
+        const course = byId(bookmark.courseId);
+        const section = document.createElement('section'); section.className='bookmark-collected-section';
+        section.dataset.collectionCourse = course.id;
+        section.innerHTML = `<div class="bookmark-origin">${renderWikiInline(`[[${course.id}강#${bookmark.slug}|${contentCourseText(course)}]]`,course,{items:[],named:new Map()})}</div>${source == null ? `<p class="bookmark-missing">“${escapeHtml(bookmark.heading)}” 문단의 위치가 바뀌었습니다. 원문에서 다시 즐겨찾기해 주세요.</p>` : renderJblWikiFragment(source,{lectureIds:[course.id],globalNumber:`collection-${categoryId}-${index}`},'bookmark')}`;
+        body.append(section); bindWikiDocument(section,course);
+      });
+    }
+
     const courseSeed = [
       [1,'구강 및 소화관의 조직학','이은주','기초의학','조직학','조직학'],
       [2,'구강 및 소화관의 조직학','이은주','기초의학','조직학','조직학'],
@@ -1383,7 +1598,7 @@
     const viewerState = key => (jblViewerStates[key] ||= { index:0, selected:{}, answerShown:{}, explanationShown:{}, editing:null });
     const standaloneState = () => {
       const state = viewerState('jbl-all');
-      state.filters ||= { year:'', lectureId:'', professor:'', favoritesOnly:false };
+      state.filters ||= { year:'', lectureId:'', professor:'', favoritesOnly:false, wrongOnly:false };
       state.panel ??= null;
       state.randomOrder ||= [];
       state.randomSignature ||= '';
@@ -1423,7 +1638,7 @@
         jblLastScrollY = currentScrollY;
       });
     }
-    const jblFilterSignature = filters => JSON.stringify([filters.year, filters.lectureId, filters.professor, filters.favoritesOnly]);
+    const jblFilterSignature = filters => JSON.stringify([filters.year, filters.lectureId, filters.professor, filters.favoritesOnly, filters.wrongOnly]);
     const filteredJblQuestions = () => {
       const { filters } = standaloneState();
       return jblQuestions.filter(question => {
@@ -1431,6 +1646,7 @@
         if (filters.lectureId && !question.lectureIds.includes(Number(filters.lectureId))) return false;
         if (filters.professor && question.professor !== filters.professor) return false;
         if (filters.favoritesOnly && !jblFavorites.has(question.id)) return false;
+        if (filters.wrongOnly && !(standaloneState().wrongBatch || wrongQuestionIds()).includes(question.id)) return false;
         return true;
       });
     };
@@ -2511,6 +2727,7 @@
         if (event.target.closest('a')) return;
         const choiceNumber = Number(button.dataset.jblChoice);
         const answerIndices = Array.isArray(question.answerIndices) && question.answerIndices.length ? question.answerIndices : (question.answerIndex ? [question.answerIndex] : []);
+        if (state.answerShown[question.id] || state.explanationShown[question.id]) markQuestionPeeked(state, question);
         state.answerShown[question.id] = false;
         if (answerIndices.length > 1) {
           const current = Array.isArray(state.selected[question.id]) ? state.selected[question.id].slice() : [];
@@ -2521,15 +2738,18 @@
         } else {
           state.selected[question.id] = choiceNumber;
         }
+        recordQuestionAttempt(state, question, answerIndices);
         rerender();
       }));
       container.querySelector('[data-jbl-answer]')?.addEventListener('click', () => {
         const willShow = !state.answerShown[question.id];
+        if (willShow) markQuestionPeeked(state, question);
         state.answerShown[question.id] = willShow;
         if (!willShow) delete state.selected[question.id];
         rerender();
       });
       container.querySelector('[data-jbl-explanation]')?.addEventListener('click', () => {
+        if (!state.explanationShown[question.id]) markQuestionPeeked(state, question);
         state.explanationShown[question.id] = !state.explanationShown[question.id];
         rerender();
       });
@@ -2660,6 +2880,9 @@
       clone.querySelectorAll('.wiki-section-editor-overlay').forEach(element => element.remove());
       clone.querySelectorAll('.anki-dialog').forEach(element => element.remove());
       clone.querySelector('#content-panel')?.replaceChildren();
+      clone.querySelector('#quick-start-root')?.replaceChildren();
+      clone.querySelector('#bookmark-collection-root')?.replaceChildren();
+      clone.querySelector('#jbl-standalone')?.replaceChildren();
       clone.querySelector('#jbl-image-modal')?.classList.remove('show');
       clone.querySelector('#jbl-image-modal img')?.removeAttribute('src');
       const dataScript = clone.querySelector('#jbl-data-script, script[src="./jbl-data.js"]');
@@ -2704,9 +2927,9 @@
       const years = [...new Set(jblQuestions.map(question => Number(question.year)).filter(Boolean))].sort((a,b) => b-a);
       const lectureIds = [...new Set(jblQuestions.flatMap(question => question.lectureIds))].sort((a,b) => a-b);
       const professors = [...new Set(jblQuestions.map(question => question.professor).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ko'));
-      const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p></section>` : '';
+      const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-wrong ${state.filters.wrongOnly ? 'checked' : ''} /> 틀린 문항만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p>${state.filters.wrongOnly ? '<div class="jbl-wrong-session"><span>다시 맞힌 문항은 다음 복습부터 제외됩니다.</span><button type="button" data-wrong-restart>남은 오답으로 다시 시작</button></div>' : ''}</section>` : '';
       const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files>현재 파일 저장</button></div></section>` : '';
-      target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-open-lecture ${currentQuestion?.lectureIds?.length ? '' : 'disabled'}>강의 보기</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
+      target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-home>홈으로</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
       const infoButton = document.createElement('button');
       infoButton.className = 'information-button';
       infoButton.type = 'button';
@@ -2727,6 +2950,10 @@
       }));
       const updateFilter = (name, value) => {
         state.filters[name] = value;
+        if (name === 'wrongOnly') {
+          state.wrongBatch = value ? wrongQuestionIds() : null;
+          freshQuestionAttempt(state);
+        }
         state.index = 0;
         clearJblRandomOrder(state);
         renderJblStandalone();
@@ -2735,6 +2962,8 @@
       target.querySelector('[data-jbl-filter-lecture]')?.addEventListener('change', event => updateFilter('lectureId', event.target.value));
       target.querySelector('[data-jbl-filter-professor]')?.addEventListener('change', event => updateFilter('professor', event.target.value));
       target.querySelector('[data-jbl-filter-favorites]')?.addEventListener('change', event => updateFilter('favoritesOnly', event.target.checked));
+      target.querySelector('[data-jbl-filter-wrong]')?.addEventListener('change', event => updateFilter('wrongOnly', event.target.checked));
+      target.querySelector('[data-wrong-restart]')?.addEventListener('click', () => updateFilter('wrongOnly', true));
       target.querySelector('[data-jbl-random]')?.addEventListener('click', () => {
         const filtered = filteredJblQuestions();
         state.randomOrder = shuffleQuestions(filtered).map(question => question.id);
@@ -2745,7 +2974,8 @@
       target.querySelector('[data-jbl-exit]')?.addEventListener('click', () => { renderDomainTabs(); renderCatalog(); showView('catalog'); });
       target.querySelector('[data-jbl-reset]')?.addEventListener('click', () => {
         state.linkedQuestionNumber = null;
-        state.filters = { year:'', lectureId:'', professor:'', favoritesOnly:false };
+        state.filters = { year:'', lectureId:'', professor:'', favoritesOnly:false, wrongOnly:false };
+        state.wrongBatch = null; state.attempts = {};
         state.index = 0;
         state.selected = {};
         state.answerShown = {};
@@ -2754,13 +2984,7 @@
         clearJblRandomOrder(state);
         renderJblStandalone();
       });
-      target.querySelector('[data-jbl-open-lecture]')?.addEventListener('click', () => {
-        const question = currentStandaloneQuestions()[state.index];
-        const courseId = question?.lectureIds?.[0];
-        if (!courseId) return;
-        history.pushState(null, '', `#lecture-${courseId}`);
-        showDetail(courseId, 'jbl');
-      });
+      target.querySelector('[data-jbl-home]')?.addEventListener('click', () => quickNavigate('#home'));
       const jump = () => {
         const value = target.querySelector('#jbl-jump').value.trim();
         const globalMatch = value.match(/^\s*(\d+)\s*번?\s*$/);
@@ -2899,7 +3123,7 @@
       target.innerHTML = [1,2,3,4,5].map(week => {
         const weekSlots = courses.flatMap(course => course.slots.filter(slot => slot.week === week).map(slot => ({course,slot})));
         const weekDates = weekCalendar[week];
-        return `<article class="week-card"><div class="week-title"><strong>${week}주차</strong><span>${formatDate(weekDates.월)} – ${formatDate(weekDates.금)}</span></div><div class="timetable-scroll"><div class="timetable">
+        return `<article class="week-card" data-schedule-week="${week}"><div class="week-title"><strong>${week}주차</strong><span>${formatDate(weekDates.월)} – ${formatDate(weekDates.금)}</span></div><div class="timetable-scroll"><div class="timetable">
           <div class="grid-cell day-head" style="grid-column:1;grid-row:1">시간</div>
           ${days.map((day,index) => `<div class="grid-cell day-head" style="grid-column:${index+2};grid-row:1">${day}<small>${formatDate(weekDates[day])}</small></div>`).join('')}
           ${hours.map((hour,row) => `<div class="grid-cell time-cell ${hour === '13:00' ? 'lunch-cell' : ''}" style="grid-column:1;grid-row:${row+2}">${hour}</div>${days.map((day,col) => `<div class="grid-cell ${hour === '13:00' ? 'lunch-cell' : ''}" style="grid-column:${col+2};grid-row:${row+2}"></div>`).join('')}`).join('')}
@@ -3818,7 +4042,7 @@
       showContextLinkTarget(target, true);
     }
 
-    function closeContextLinkSplit() {
+    function closeContextLinkSplit(restorePosition = true) {
       if (!contextLinkState.active) return;
       hideWikiFootnotePreview();
       const scroll = contextLinkState.source?.scrollTop || 0;
@@ -3833,7 +4057,7 @@
       contextLinkState.split?.remove();
       document.body.classList.remove('context-link-open');
       Object.assign(contextLinkState, { active:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null, stack:[] });
-      requestAnimationFrame(() => {
+      if (restorePosition) requestAnimationFrame(() => {
         window.scrollTo({ top:scroll, behavior:'auto' });
         if (opener?.isConnected) opener.focus({ preventScroll:true });
       });
@@ -4172,13 +4396,15 @@
       setMainMenuOpen(false);
       if (destination === 'catalog') { renderDomainTabs(); renderCatalog(); }
       if (destination === 'schedule') renderSchedule();
-      if (destination === 'jbl') { standaloneState().linkedQuestionNumber = null; renderJblStandalone(); }
+      if (destination === 'jbl') { prepareJblStart(false); renderJblStandalone(); }
+      if (destination === 'home') return quickNavigate('#home');
       if (destination === 'personal-notes') renderPersonalNotes('list');
       showView(destination);
     }));
 
     window.addEventListener('hashchange', routeFromHash);
     function routeFromHash() {
+      if (contextLinkState.active) closeContextLinkSplit(false);
       setMainMenuOpen(false);
       const hash = location.hash;
       const linkedQuestion = hash.match(/^#jbl-q-(\d+)$/);
@@ -4193,6 +4419,12 @@
         if (wikiSection) queueWikiSectionScroll(() => document.querySelector('#content-panel'), wikiSection);
         return;
       }
+      if (!hash || hash === '#home') { renderQuickStart(); return showView('home', false); }
+      const week = hash.match(/^#schedule-week-([1-5])$/);
+      if (week) return showScheduleWeek(Number(week[1]));
+      if (hash === '#jbl-wrong') { prepareJblStart(true); renderJblStandalone(); return showView('jbl', false); }
+      const collection = hash.match(/^#bookmarks(?:-([a-z]+))?$/);
+      if (collection) { renderBookmarkCollection(collection[1] || ''); return showView('bookmarks', false); }
       if (hash === '#schedule') { renderSchedule(); return showView('schedule', false); }
       if (hash === '#jbl') { standaloneState().linkedQuestionNumber = null; renderJblStandalone(); return showView('jbl', false); }
       if (hash === '#personal-notes') { renderPersonalNotes('list'); return showView('personal-notes', false); }
@@ -4244,6 +4476,7 @@
 
       if (event.code === 'Space') {
         event.preventDefault();
+        if (!state.explanationShown[question.id]) markQuestionPeeked(state, question);
         state.explanationShown[question.id] = !state.explanationShown[question.id];
         viewer.rerender();
         return;
@@ -4373,9 +4606,12 @@
       event.returnValue = '';
     });
 
+    const wrongAnswerStorageKey = 'digestive-wrong-answers-v1';
+    let wrongAnswers = readStudyStorage(wrongAnswerStorageKey, {});
+    if (!wrongAnswers || typeof wrongAnswers !== 'object' || Array.isArray(wrongAnswers)) wrongAnswers = {};
     renderDomainTabs();
     renderCatalog();
-    if (location.hash && location.hash !== '#catalog') routeFromHash();
+    routeFromHash();
   </script>
 
 
