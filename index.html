@@ -1020,7 +1020,7 @@
     }
     .context-link-target {
       display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
+      grid-template-rows: auto minmax(0, 1fr) auto;
       overflow: hidden;
       background: #f7fafc;
       box-shadow: -12px 0 30px rgba(31, 68, 87, .09);
@@ -1073,6 +1073,11 @@
     .context-link-body .wiki-toc { position: relative; top: auto; width: 100%; max-height: none; }
     .context-link-body .wiki-article { min-width: 0; }
     .context-link-empty { display: grid; min-height: 220px; place-items: center; padding: 28px; border: 1px solid #dce7ed; border-radius: 18px; color: #6c7680; background: #fff; text-align: center; }
+    .context-question-nav { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; padding: 10px clamp(10px, 2vw, 24px); padding-bottom: max(10px, env(safe-area-inset-bottom)); border-top: 1px solid #c9dfe8; background: #fff; }
+    .context-question-nav[hidden] { display: none; }
+    .context-question-nav .jbl-btn { min-width: 0; padding: 9px 8px; font-size: clamp(12px, 1.2vw, 14px); white-space: nowrap; }
+    .context-question-counter { color: #47677a; font-size: 13px; font-weight: 800; text-align: center; white-space: nowrap; }
+    .context-question-counter small { display: block; font-size: 10px; font-weight: 600; }
 
     @media (orientation: portrait), (max-width: 700px) {
       .context-link-split { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); }
@@ -2866,7 +2871,7 @@
       target.querySelectorAll('[data-course]').forEach(button => button.addEventListener('click', () => showDetail(button.dataset.course, 'catalog')));
     }
 
-    const scheduleOpProfessors = new Set(['조순구', '진영주', '정석', '최문석', '이정심', '윤용한', '유정환', '오승종', '이정남']);
+    const scheduleOpProfessors = new Set(['조순구', '진영주', '정석', '최문석', '이정심', '윤용한', '유정환', '오승종', '이정남', '최선근']);
     let scheduleOpVisible = false;
 
     function renderScheduleOp(course) {
@@ -3581,15 +3586,99 @@
 
     // Internal Wiki and J links open beside the current view instead of replacing it.
     const contextLinkState = {
-      active:false, split:null, source:null, target:null, body:null, title:null, back:null,
+      active:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null,
       shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null,
       stack:[], renderToken:0
     };
 
+    function validContextQuestionNumbers(numbers) {
+      const available = new Set(jblQuestions.map(question => Number(question.globalNumber)));
+      return [...new Set((Array.isArray(numbers) ? numbers : []).map(Number))]
+        .filter(number => Number.isInteger(number) && number > 0 && available.has(number));
+    }
+
+    function contextWikiQuestionSequence(link, questionNumber) {
+      // Capture this document's rendered order, including collapsed sections and footnotes.
+      // Do not collect from the whole page: the other split pane may contain a different Wiki.
+      const wiki = link.closest('.wiki-note');
+      if (wiki && !link.closest('.jbl-card')) {
+        const numbers = validContextQuestionNumbers([...wiki.querySelectorAll('[data-jbl-question-link]')]
+          .filter(item => item.closest('.wiki-note') === wiki)
+          .map(item => item.dataset.jblQuestionLink));
+        if (!numbers.includes(questionNumber)) return null;
+        return { courseId:wiki.dataset.wikiDocumentCourse || '', title:wiki.querySelector('h3')?.textContent.trim() || 'Wiki', numbers };
+      }
+      // A cross-reference within a linked J keeps the originating Wiki only if it belongs
+      // to that Wiki's sequence. Preview history still restores the original context.
+      const current = contextLinkState.active ? contextLinkState.stack.at(-1) : null;
+      if (link.closest('[data-context-link-body]') === contextLinkState.body && current?.type === 'j'
+          && current.wikiSequence?.numbers.includes(questionNumber)) return current.wikiSequence;
+      return null;
+    }
+
+    function contextQuestionPosition(target) {
+      const numbers = target?.type === 'j' ? validContextQuestionNumbers(target.wikiSequence?.numbers) : [];
+      return { numbers, index:numbers.indexOf(Number(target?.questionNumber)) };
+    }
+
+    function contextQuestionIsEditing(target) {
+      const question = target?.type === 'j' && jblQuestions.find(item => item.globalNumber === Number(target.questionNumber));
+      return Boolean(question && viewerState(`context-link-question-${question.id}`).editing === question.id);
+    }
+
+    function updateContextQuestionNav(target) {
+      const nav = contextLinkState.nav;
+      if (!nav) return;
+      const { numbers, index } = contextQuestionPosition(target);
+      nav.hidden = index < 0;
+      if (nav.hidden) { nav.innerHTML = ''; return; }
+      const editing = contextQuestionIsEditing(target);
+      nav.innerHTML = `<button class="jbl-btn jbl-btn-primary" type="button" data-context-question-prev ${index === 0 || editing ? 'disabled' : ''}>← 이전 문제</button><div class="context-question-counter" title="${escapeHtml(target.wikiSequence.title)}"><small>Wiki 연결 문항</small>${index + 1} / ${numbers.length}</div><button class="jbl-btn jbl-btn-primary" type="button" data-context-question-next ${index === numbers.length - 1 || editing ? 'disabled' : ''}>다음 문제 →</button>`;
+      nav.querySelector('[data-context-question-prev]').addEventListener('click', () => moveContextWikiQuestion(-1));
+      nav.querySelector('[data-context-question-next]').addEventListener('click', () => moveContextWikiQuestion(1));
+    }
+
+    function moveContextWikiQuestion(direction) {
+      if (!contextLinkState.active || ![-1, 1].includes(direction)) return false;
+      const target = contextLinkState.stack.at(-1);
+      const { numbers, index } = contextQuestionPosition(target);
+      const next = index + direction;
+      if (index < 0 || next < 0 || next >= numbers.length || contextQuestionIsEditing(target)) return false;
+      const focusInNav = contextLinkState.nav?.contains(document.activeElement);
+      showContextLinkTarget({ ...target, questionNumber:numbers[next] }, true);
+      // Only the right/bottom pane resets to the new question; the source Wiki stays put.
+      if (focusInNav) {
+        const action = direction > 0 ? 'next' : 'prev';
+        const button = contextLinkState.nav.querySelector(`[data-context-question-${action}]:not(:disabled)`)
+          || contextLinkState.nav.querySelector('button:not(:disabled)');
+        button?.focus({ preventScroll:true });
+      }
+      return true;
+    }
+
+    function handleContextQuestionShortcut(event) {
+      if (event.defaultPrevented || event.repeat || event.isComposing || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      if (document.querySelector('dialog[open], .wiki-section-editor-overlay, #jbl-image-modal.show')) return;
+      if (event.target instanceof Element) {
+        if (event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+        const control = event.target.closest('button, a');
+        if (control && !control.closest('[data-context-link-nav]')) return;
+      }
+      const target = contextLinkState.stack.at(-1);
+      if (target?.type !== 'j' || contextQuestionIsEditing(target)) return;
+      if (event.code === 'Space') {
+        event.preventDefault();
+        contextLinkState.body.querySelector('[data-jbl-explanation]')?.click();
+      } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        moveContextWikiQuestion(event.key === 'ArrowRight' ? 1 : -1);
+      }
+    }
+
     function contextLinkTargetFromElement(link) {
       if (link.hasAttribute('data-jbl-question-link')) {
         const questionNumber = Number(link.dataset.jblQuestionLink);
-        return Number.isFinite(questionNumber) ? { type:'j', questionNumber } : null;
+        return Number.isFinite(questionNumber) ? { type:'j', questionNumber, wikiSequence:contextWikiQuestionSequence(link, questionNumber) } : null;
       }
       if (link.hasAttribute('data-wiki-course')) {
         const courseId = Number(link.dataset.wikiCourse);
@@ -3600,7 +3689,9 @@
     }
 
     function contextLinkTargetKey(target) {
-      return target.type === 'j' ? `j:${target.questionNumber}` : `wiki:${target.courseId}:${target.section || ''}`;
+      return target.type === 'j'
+        ? `j:${target.questionNumber}:${JSON.stringify(target.wikiSequence || null)}`
+        : `wiki:${target.courseId}:${target.section || ''}`;
     }
 
     function namespaceContextPreviewIds(container, token) {
@@ -3636,6 +3727,7 @@
       contextLinkState.title.textContent = contextLinkLabel(target);
       contextLinkState.back.disabled = contextLinkState.stack.length < 2;
       contextLinkState.back.setAttribute('aria-label', contextLinkState.stack.length < 2 ? '연결 기록 없음' : '이전 연결 내용으로 돌아가기');
+      updateContextQuestionNav(target);
     }
 
     function renderContextLinkTarget(target) {
@@ -3655,9 +3747,10 @@
         const key = `context-link-question-${question.id}`;
         let questionRender = 0;
         const rerender = () => {
-          if (!contextLinkState.active || contextLinkTargetKey(contextLinkState.stack.at(-1)) !== contextLinkTargetKey(target)) return;
+          if (!contextLinkState.active || token !== contextLinkState.renderToken || contextLinkTargetKey(contextLinkState.stack.at(-1)) !== contextLinkTargetKey(target)) return;
           renderQuestionCard(root, [question], key, rerender);
           namespaceContextPreviewIds(root, `${token}-question-${++questionRender}`);
+          updateContextQuestionNav(target);
         };
         rerender();
         return;
@@ -3696,7 +3789,7 @@
       split.className = 'context-link-split';
       split.setAttribute('role', 'group');
       split.setAttribute('aria-label', '현재 화면과 연결된 내용을 함께 보기');
-      split.innerHTML = `<section class="context-link-source" data-context-link-source aria-label="현재 화면"></section><aside class="context-link-target" data-context-link-target aria-label="연결된 내용"><header class="context-link-head"><div class="context-link-heading"><span class="context-link-eyebrow">연결된 내용</span><strong class="context-link-title" data-context-link-title></strong></div><div class="context-link-controls"><button class="context-link-control" type="button" data-context-link-back aria-label="이전 연결 내용으로 돌아가기">←</button><button class="context-link-control context-link-close" type="button" data-context-link-close aria-label="분할 화면 닫기">×</button></div></header><div class="context-link-body" data-context-link-body aria-live="polite"></div></aside>`;
+      split.innerHTML = `<section class="context-link-source" data-context-link-source aria-label="현재 화면"></section><aside class="context-link-target" data-context-link-target aria-label="연결된 내용"><header class="context-link-head"><div class="context-link-heading"><span class="context-link-eyebrow">연결된 내용</span><strong class="context-link-title" data-context-link-title></strong></div><div class="context-link-controls"><button class="context-link-control" type="button" data-context-link-back aria-label="이전 연결 내용으로 돌아가기">←</button><button class="context-link-control context-link-close" type="button" data-context-link-close aria-label="분할 화면 닫기">×</button></div></header><div class="context-link-body" data-context-link-body aria-live="polite"></div><nav class="context-question-nav" data-context-link-nav aria-label="이 Wiki의 연결 문항 탐색" hidden></nav></aside>`;
       const source = split.querySelector('[data-context-link-source]');
       contextLinkState.active = true;
       contextLinkState.split = split;
@@ -3705,6 +3798,7 @@
       contextLinkState.body = split.querySelector('[data-context-link-body]');
       contextLinkState.title = split.querySelector('[data-context-link-title]');
       contextLinkState.back = split.querySelector('[data-context-link-back]');
+      contextLinkState.nav = split.querySelector('[data-context-link-nav]');
       contextLinkState.shell = shell;
       contextLinkState.originalParent = shell.parentNode;
       contextLinkState.originalNextSibling = shell.nextSibling;
@@ -3738,7 +3832,7 @@
       }
       contextLinkState.split?.remove();
       document.body.classList.remove('context-link-open');
-      Object.assign(contextLinkState, { active:false, split:null, source:null, target:null, body:null, title:null, back:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null, stack:[] });
+      Object.assign(contextLinkState, { active:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null, stack:[] });
       requestAnimationFrame(() => {
         window.scrollTo({ top:scroll, behavior:'auto' });
         if (opener?.isConnected) opener.focus({ preventScroll:true });
@@ -4138,6 +4232,7 @@
     }
 
     function handleQuestionShortcut(event) {
+      if (contextLinkState.active) { handleContextQuestionShortcut(event); return; }
       if (event.repeat || event.altKey || event.ctrlKey || event.metaKey) return;
       if (event.target instanceof Element && event.target.closest('input, textarea, select, button, [contenteditable="true"]')) return;
       if (document.querySelector('#jbl-image-modal').classList.contains('show')) return;
