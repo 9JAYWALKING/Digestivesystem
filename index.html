@@ -1025,6 +1025,7 @@
     .context-link-target {
       display: grid;
       grid-template-rows: auto minmax(0, 1fr) auto;
+      grid-template-columns: minmax(0, 1fr);
       overflow: hidden;
       background: #f7fafc;
       box-shadow: -12px 0 30px rgba(31, 68, 87, .09);
@@ -1145,6 +1146,222 @@
       .bookmark-category-buttons { gap:7px; }
     }
 
+
+    /* Esophageal pathology map prototype */
+
+.quick-map-card {grid-column:auto;display:block;}
+.quick-map-preview {display:flex;align-items:center;justify-content:center;background:#f4f8fa;padding:25px;min-width:0;border-right:1px solid #e6edf1;}
+.quick-map-preview svg {display:block;width:100%;max-width:480px;height:auto;}
+.quick-map-card {border-color:#e2e8f0;box-shadow:0 8px 24px rgba(15,23,42,.05);}
+.quick-map-content {padding:30px;display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;}
+.quick-map-content h3 {margin:0;font-size:24px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:#0f172a;}
+.quick-map-content .map-quick-nav {width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));}
+.quick-map-content .map-quick-nav button {min-width:0;padding:9px 4px;}
+.map-category-buttons {display:flex;flex-wrap:wrap;gap:10px;}
+.map-category-buttons button,.map-home-button {font:inherit;border:1px solid #d3e1e7;border-radius:10px;background:white;color:#365c6e;padding:11px 18px;cursor:pointer;}
+.quick-map-content .map-category-buttons {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
+.quick-map-content .map-category-buttons button {padding:13px 8px;}
+.map-category-buttons button:hover:not(:disabled),.map-home-button:hover {background:#edf5f8;border-color:#8baebf;}
+.map-category-buttons button[aria-current="page"] {background:#183f52;border-color:#183f52;color:white;}
+.map-category-buttons button:disabled {color:#8999a2;background:#f7f9fa;cursor:default;}
+.map-category-buttons small {display:block;font-size:10px;margin-top:4px;font-weight:400;}
+.map-category-buttons button:focus-visible,.map-home-button:focus-visible {outline:3px solid #2590b9;outline-offset:3px;}
+#disease-map-root {container-type:inline-size;min-width:0;}
+.map-page-heading {display:flex;align-items:center;flex-wrap:wrap;gap:18px 32px;margin:0 0 18px;padding:18px 24px;border:1px solid #e2e8f0;border-radius:22px;background:#fff;box-shadow:0 8px 24px rgba(15,23,42,.05);color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;}
+.map-page-heading h2 {flex:none;margin:0;font-family:inherit;font-size:24px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:#0f172a;}
+.map-page-nav {display:flex;align-items:center;gap:4px;min-width:0;padding:5px;border-radius:16px;background:#f1f5f9;}
+.map-page-nav button {flex:1 0 auto;min-width:62px;min-height:42px;padding:9px 18px;border:0;border-radius:12px;background:transparent;color:#475569;font:inherit;font-size:15px;font-weight:700;line-height:1.4;cursor:pointer;transition:background .15s ease,color .15s ease;}
+.map-page-nav button:hover:not(:disabled):not([aria-current="page"]) {background:#e2e8f0;color:#0f172a;}
+.map-page-nav button[aria-current="page"] {background:#0f172a;color:#fff;box-shadow:0 2px 5px rgba(15,23,42,.12);}
+.map-page-nav button:disabled {color:#94a3b8;cursor:default;}
+.map-page-nav button:focus-visible {outline:3px solid #60a5fa;outline-offset:2px;}
+@container(max-width:620px){
+ .map-page-heading {gap:14px;padding:16px;border-radius:18px;}
+ .map-page-heading h2 {width:100%;font-size:22px;}
+ .map-page-nav {width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));}
+ .map-page-nav button {min-width:0;padding:9px 4px;}
+}
+.map-page-panel {border:1px solid #dce6eb;border-radius:16px;padding:24px;background:white;min-width:0;}
+@media(max-width:700px){
+ .quick-map-card {grid-template-columns:1fr;}
+ .quick-map-preview {border-right:0;border-bottom:1px solid #e6edf1;padding:16px;}
+ .quick-map-preview svg {max-width:350px;}
+ .quick-map-content {padding:20px;gap:17px;}
+ .quick-map-content h3 {font-size:22px;}
+ .map-page-heading {gap:14px;padding:16px;border-radius:18px;}
+ .map-page-heading h2 {width:100%;font-size:22px;}
+ .map-page-nav {width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));}
+ .map-page-nav button {min-width:0;padding:9px 4px;}
+ .map-category-buttons {gap:7px;}
+ .map-category-buttons button,.map-home-button {padding:9px 12px;font-size:13px;}
+ .map-page-panel {padding:12px;}
+}
+
+/* Esophagus classification mode; does not affect the stomach quiz. */
+.em-shell {--em-line:#cadce4;color:#244b5c;min-width:0;}
+.em-toolbar {display:flex;justify-content:flex-end;margin:0 0 10px;}
+.em-shell .em-collapse {font:inherit;font-size:12px;background:#fff;color:#58717e;border:1px solid #dce6eb;border-radius:7px;padding:6px 10px;cursor:pointer;}
+.em-viewport {width:100%;height:clamp(340px,66dvh,760px);overflow:auto;overscroll-behavior:contain;overflow-anchor:none;scrollbar-width:thin;scrollbar-color:#bdced7 #f7fafb;border-radius:9px;background:#fff;}
+.em-tree {display:flex;align-items:center;box-sizing:border-box;width:max-content;min-width:100%;min-height:100%;padding:24px 18px;}
+.em-node {display:flex;align-items:center;position:relative;flex:none;}
+.em-shell .em-label {font:inherit;font-size:14px;line-height:1.45;box-sizing:border-box;flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;width:154px;padding:8px 11px;border:1px solid #dce6eb;border-radius:7px;color:#315565;background:#fff;text-align:left;overflow-wrap:anywhere;}
+.em-shell button.em-label {cursor:pointer;font-weight:650;background:#f5f9fb;}
+.em-shell button.em-label:hover {border-color:#a2bdca;background:#edf5f9;}
+.em-shell button.em-label[aria-expanded="true"] {border-color:#a9c4d2;color:#1f5269;background:#eaf3f8;}
+.em-shell .em-root>.em-node-head>.em-label {width:66px;justify-content:center;font-weight:750;background:#173f50;border-color:#173f50;color:#fff;}
+.em-shell .em-leaf {font-size:13px;font-weight:400;width:166px;}
+.em-symbol {font-size:16px;line-height:1;color:#7b97a5;flex:none;}
+.em-children {position:relative;display:flex;flex-direction:column;margin-left:34px;}
+.em-children[hidden] {display:none;}
+.em-children::before {content:'';position:absolute;left:-34px;width:17px;top:50%;border-top:1px solid var(--em-line);}
+.em-children>.em-node {padding:6px 0;}
+.em-children>.em-node::before {content:'';position:absolute;left:-17px;top:50%;width:17px;border-top:1px solid var(--em-line);}
+.em-children>.em-node::after {content:'';position:absolute;left:-17px;top:0;bottom:0;border-left:1px solid var(--em-line);}
+.em-children>.em-node:first-child::after {top:50%;}
+.em-children>.em-node:last-child::after {bottom:50%;}
+.em-shell button:focus-visible,.em-viewport:focus-visible {outline:2px solid #4086ab;outline-offset:3px;}
+@media(max-width:700px){
+ .em-viewport {height:68dvh;min-height:320px;}
+ .em-tree {padding:18px 10px;}
+ .em-shell .em-label {width:142px;font-size:13px;padding:9px 10px;gap:8px;}
+ .em-shell .em-leaf {width:152px;font-size:12px;}
+ .em-children {margin-left:26px;}
+ .em-children::before {left:-26px;width:13px;}
+ .em-children>.em-node::before {left:-13px;width:13px;}
+ .em-children>.em-node::after {left:-13px;}
+}
+@media(pointer:coarse){.em-shell button.em-label {min-height:44px;}}
+
+.em-shell button.em-leaf {background:#fff;font-weight:400;cursor:pointer;}
+.em-viewport {container-type:inline-size;}
+.em-node-head {display:flex;align-items:center;gap:4px;flex:none;}
+.em-shell .em-info {font:inherit;font-size:12px;font-weight:650;flex:none;width:26px;height:28px;border:0;border-radius:50%;background:transparent;color:#7d96a3;cursor:pointer;padding:0;}
+.em-shell .em-info:hover,.em-shell .em-info[aria-expanded="true"] {background:#eaf3f8;color:#1f5269;}
+.em-shell button.em-leaf[aria-expanded="true"] {background:#edf6fa;border-color:#8fb7c9;}
+.em-wiki-panel {box-sizing:border-box;position:relative;flex:none;width:min(300px,calc(100cqw - 24px));margin-left:24px;border:1px solid #cadde7;border-radius:9px;background:#fff;box-shadow:0 3px 12px #173f500b;}
+.em-wiki-panel::before {content:'';position:absolute;left:-25px;top:50%;width:24px;border-top:1px solid var(--em-line);}
+.em-wiki-head {display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px;border-bottom:1px solid #e8eff3;font-size:12px;color:#58717e;}
+.em-wiki-head strong {min-width:0;overflow-wrap:anywhere;}
+.em-wiki-head button {flex:none;}
+.em-wiki-head button {font:inherit;font-size:20px;line-height:1;width:28px;height:28px;padding:0;border:0;background:transparent;color:#58717e;cursor:pointer;border-radius:5px;}
+.em-wiki-head button:hover {background:#edf5f9;}
+.em-wiki-list {max-height:min(360px,43dvh);overflow:auto;padding:4px 10px;overscroll-behavior:contain;}
+.em-wiki-list .em-wiki-link,.em-wiki-unavailable {display:flex;flex-direction:column;gap:3px;padding:10px 2px;font-size:13px;line-height:1.5;text-decoration:none;border:0;font-weight:600;overflow-wrap:anywhere;}
+.em-wiki-list>*+* {border-top:1px solid #edf2f5;}
+.em-wiki-list .em-wiki-link:hover {background:#f4f9fc;color:#075985;}
+.em-wiki-list .em-wiki-link:focus-visible {outline:2px solid #4086ab;outline-offset:0;border-radius:4px;}
+.em-wiki-meta {font-size:11px;color:#758a96;font-weight:400;}
+.em-wiki-unavailable {color:#758a96;}
+.em-wiki-unavailable small {font-weight:400;font-size:11px;}
+.em-wiki-list p {margin:12px 0;font-size:12px;}
+.em-wiki-list .em-clue {font-size:13px;line-height:1.75;color:#244b5c;margin:12px 2px;}
+.em-ref-group {padding:10px 2px;}
+.em-ref-group h3 {font:inherit;font-size:11px;font-weight:700;color:#758a96;margin:0 0 5px;line-height:1.5;}
+.em-ref-group .em-wiki-link,.em-ref-group .em-wiki-unavailable {padding:7px 2px;gap:2px;font-weight:550;}
+.em-j-links {display:flex;gap:6px;flex-wrap:wrap;padding:4px 0;}
+.em-j-links a {font-size:12px;line-height:1.5;padding:4px 8px;border-radius:5px;background:#f0f6f9;text-decoration:none;color:#256582;}
+.em-j-links a:hover {background:#e1eef5;}
+.em-j-links a:focus-visible {outline:2px solid #4086ab;outline-offset:2px;}
+@media(max-width:700px){.em-wiki-panel {margin-left:20px;}.em-wiki-panel::before {left:-21px;width:20px;}}
+@media(pointer:coarse){.em-shell .em-info {width:32px;height:44px;}}
+
+.pm-shell { color:#263f4b; --pm-line:#cedfe5; container-type:inline-size; }
+.pm-header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:24px; background:#eef7fa; border:1px solid #deedf1; border-radius:18px; }
+.pm-kicker { color:#547984; font-size:12px; letter-spacing:.07em; }
+.pm-header h3 { font-size:28px; margin:6px 0; color:#173f50; }
+.pm-header p { margin:0; color:#58707b; font-size:15px; }
+.pm-progress { white-space:nowrap; padding:10px 14px; background:#fff; border-radius:12px; font-size:14px; font-weight:700; }
+.pm-toolbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:20px 0 8px; }
+.pm-shell button,.pm-shell select { font:inherit; font-size:14px; border:1px solid #d5e3e8; background:#fff; color:#31596a; border-radius:9px; padding:9px 12px; cursor:pointer; }
+.pm-shell button:hover { background:#eef6f9; }
+.pm-shell button[aria-pressed="true"] { background:#173f50; color:#fff; border-color:#173f50; }
+.pm-modes { display:flex; gap:5px; flex-wrap:wrap; }
+.pm-group-select { display:flex; align-items:center; gap:6px; font-size:13px; color:#58707b; }
+.pm-note,.pm-secondary { font-size:13px; color:#627985; }
+.pm-note { margin:8px 0 25px; }
+.pm-map { display:grid; grid-template-columns:100px minmax(0,1fr); gap:28px; align-items:start; }
+.pm-root { background:#173f50; color:#fff; padding:14px 10px; border-radius:12px; text-align:center; font-weight:800; position:relative; margin-top:10px; }
+.pm-root::after { content:''; position:absolute; height:1px; background:var(--pm-line); width:28px; left:100%; top:50%; }
+.pm-branches { border-left:1px solid var(--pm-line); padding-left:22px; min-width:0; }
+.pm-group { position:relative; margin-bottom:24px; }
+.pm-group::before { content:''; position:absolute; width:22px; height:1px; background:var(--pm-line); left:-22px; top:32px; }
+.pm-group-head { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+.pm-group-head button { display:flex; justify-content:space-between; gap:20px; min-width:200px; font-weight:800; background:#eaf3f7; color:#234f61; padding:13px 15px; }
+.pm-group-head > span { font-size:12px; color:#69818c; }
+.pm-nodes { display:grid; gap:10px; }
+.pm-nodes[hidden] { display:none; }
+.pm-node { display:grid; grid-template-columns:minmax(150px,210px) minmax(0,1fr); border:1px solid #e0e9ed; border-radius:13px; background:#fff; overflow:hidden; }
+.pm-disease { padding:17px; background:#f7fafb; border-right:1px solid #e0e9ed; }
+.pm-disease h4 { font-size:17px; line-height:1.5; margin:0 0 9px; color:#244f63; overflow-wrap:anywhere; }
+.pm-links { display:flex; flex-wrap:wrap; gap:7px 10px; margin:9px 0; }
+.pm-links a { font-size:12px; }
+.pm-shell .pm-photo-toggle { font-size:12px; padding:6px 9px; margin-top:8px; }
+.pm-features { padding:16px 20px; min-width:0; }
+.pm-clue { font-size:15px; line-height:1.7; margin:0 0 12px; }
+.pm-features dl { display:grid; gap:7px; margin:0; }
+.pm-features dl > div { display:grid; grid-template-columns:minmax(115px,.8fr) minmax(0,1fr); gap:14px; font-size:14px; line-height:1.6; }
+.pm-features dt { color:#627985; }
+.pm-features dd { margin:0; color:#173f50; font-weight:700; }
+.pm-field { border-top:1px solid #e7eef1; margin-top:12px; padding-top:12px; }
+.pm-field label { display:block; margin-bottom:7px; font-size:14px; font-weight:700; }
+.pm-answer-form { display:flex; gap:7px; }
+.pm-answer-form input { min-width:0; flex:1; width:100%; font:inherit; font-size:16px; border:1px solid #bfcfd7; border-radius:8px; padding:9px 11px; background:#fff; color:#263f4b; }
+.pm-answer-form input[readonly] { background:#f0f7f5; }
+.pm-shell button:disabled { opacity:.6; cursor:default; }
+.pm-field-actions { display:flex; gap:6px; margin-top:6px; }
+.pm-field-actions button { padding:5px 8px; font-size:12px; border-color:transparent; }
+.pm-result,.pm-hint { font-size:13px; line-height:1.6; margin-top:7px; color:#795721; }
+.pm-result.is-correct { color:#21624e; }
+.pm-result:empty { display:none; }
+.pm-solution { font-weight:800; font-size:16px; color:#173f50; margin:5px 0; }
+.pm-result button { font-size:12px; margin-top:5px; }
+.pm-figure { margin:15px 0 0; text-align:center; }
+.pm-figure img { max-width:min(100%,420px); max-height:300px; object-fit:contain; cursor:zoom-in; }
+.pm-figure figcaption { font-size:12px; color:#627985; margin:8px 0; }
+.pm-image-dialog { width:min(95vw,1100px); max-height:95dvh; padding:15px; border:0; border-radius:12px; }
+.pm-image-dialog::backdrop { background:rgba(15,30,40,.7); }
+.pm-image-dialog button { display:block; margin:0 0 12px auto; padding:8px 18px; font:inherit; cursor:pointer; }
+.pm-image-dialog img { max-width:100%; max-height:80dvh; display:block; margin:auto; object-fit:contain; }
+.pm-empty,.pm-storage-warning { padding:20px; background:#f5f8fa; border-radius:12px; line-height:1.7; }
+@media(max-width:850px) {
+  .pm-map { grid-template-columns:1fr; gap:13px; }
+  .pm-root { width:130px; margin:0; }
+  .pm-root::after { display:none; }
+  .pm-branches { margin-left:12px; padding-left:13px; }
+  .pm-group::before { width:13px; left:-13px; }
+  .pm-node { grid-template-columns:1fr; }
+  .pm-disease { border-right:0; border-bottom:1px solid #e0e9ed; padding:13px 15px; }
+  .pm-disease h4 { margin-bottom:4px; }
+  .pm-features { padding:14px; }
+  .pm-header { align-items:flex-start; flex-direction:column; padding:18px; }
+  .pm-header h3 { font-size:24px; }
+  .pm-group-head { flex-wrap:wrap; gap:5px; }
+  .pm-group-head button { min-width:0; flex:1; }
+  .pm-group-head > span { display:none; }
+  .pm-features dl > div { grid-template-columns:1fr; gap:1px; }
+  .pm-toolbar { align-items:stretch; }
+  .pm-modes { width:100%; }
+  .pm-modes button { flex:1; padding:10px 6px; }
+  .pm-group-select { flex-wrap:wrap; }
+  .pm-group-select select { max-width:100%; }
+}
+@media(pointer:coarse) { .pm-shell button { min-height:44px; } }
+@container(max-width:700px) {
+  .pm-map { grid-template-columns:1fr; gap:13px; }
+  .pm-root { width:130px; margin:0; }
+  .pm-root::after { display:none; }
+  .pm-branches { margin-left:12px; padding-left:13px; }
+  .pm-group::before { width:13px; left:-13px; }
+  .pm-node { grid-template-columns:1fr; }
+  .pm-disease { border-right:0; border-bottom:1px solid #e0e9ed; padding:13px 15px; }
+  .pm-features { padding:14px; }
+  .pm-header { align-items:flex-start; flex-direction:column; padding:18px; }
+  .pm-features dl > div { grid-template-columns:1fr; gap:1px; }
+  .pm-group-head { flex-wrap:wrap; }
+  .pm-group-head > span { display:none; }
+  .pm-group-head button { min-width:0; flex:1; }
+}
+
   </style>
 </head>
 <body class=""><div class="site-shell">
@@ -1174,6 +1391,7 @@
 
     <main>
       <section id="home-view" class="view" hidden><div id="quick-start-root"></div></section>
+      <section id="map-view" class="view" hidden><div id="disease-map-root"></div></section>
       <section id="bookmarks-view" class="view" hidden><div id="bookmark-collection-root"></div></section>
       <section id="catalog-view" class="view" aria-labelledby="catalog-title">
         <div id="domain-tabs" class="domain-tabs" aria-label="최상위 범주"><button class="domain-tab active" style="--tab-color:var(--basic);--tab-soft:var(--basic-soft)" data-domain="기초의학" type="button"><strong>기초의학</strong></button><button class="domain-tab " style="--tab-color:var(--clinical);--tab-soft:var(--clinical-soft)" data-domain="임상의학" type="button"><strong>임상의학</strong></button></div>
@@ -1237,7 +1455,7 @@
           <div class="grid-cell day-head" style="grid-column:2;grid-row:1">월<small>9월 21일</small></div><div class="grid-cell day-head" style="grid-column:3;grid-row:1">화<small>9월 22일</small></div><div class="grid-cell day-head" style="grid-column:4;grid-row:1">수<small>9월 23일</small></div><div class="grid-cell day-head" style="grid-column:5;grid-row:1">목<small>9월 24일</small></div><div class="grid-cell day-head" style="grid-column:6;grid-row:1">금<small>9월 25일</small></div>
           <div class="grid-cell time-cell " style="grid-column:1;grid-row:2">09:00</div><div class="grid-cell " style="grid-column:2;grid-row:2"></div><div class="grid-cell " style="grid-column:3;grid-row:2"></div><div class="grid-cell " style="grid-column:4;grid-row:2"></div><div class="grid-cell " style="grid-column:5;grid-row:2"></div><div class="grid-cell " style="grid-column:6;grid-row:2"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:3">10:00</div><div class="grid-cell " style="grid-column:2;grid-row:3"></div><div class="grid-cell " style="grid-column:3;grid-row:3"></div><div class="grid-cell " style="grid-column:4;grid-row:3"></div><div class="grid-cell " style="grid-column:5;grid-row:3"></div><div class="grid-cell " style="grid-column:6;grid-row:3"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:4">11:00</div><div class="grid-cell " style="grid-column:2;grid-row:4"></div><div class="grid-cell " style="grid-column:3;grid-row:4"></div><div class="grid-cell " style="grid-column:4;grid-row:4"></div><div class="grid-cell " style="grid-column:5;grid-row:4"></div><div class="grid-cell " style="grid-column:6;grid-row:4"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:5">12:00</div><div class="grid-cell " style="grid-column:2;grid-row:5"></div><div class="grid-cell " style="grid-column:3;grid-row:5"></div><div class="grid-cell " style="grid-column:4;grid-row:5"></div><div class="grid-cell " style="grid-column:5;grid-row:5"></div><div class="grid-cell " style="grid-column:6;grid-row:5"></div><div class="grid-cell time-cell lunch-cell" style="grid-column:1;grid-row:6">13:00</div><div class="grid-cell lunch-cell" style="grid-column:2;grid-row:6"></div><div class="grid-cell lunch-cell" style="grid-column:3;grid-row:6"></div><div class="grid-cell lunch-cell" style="grid-column:4;grid-row:6"></div><div class="grid-cell lunch-cell" style="grid-column:5;grid-row:6"></div><div class="grid-cell lunch-cell" style="grid-column:6;grid-row:6"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:7">14:00</div><div class="grid-cell " style="grid-column:2;grid-row:7"></div><div class="grid-cell " style="grid-column:3;grid-row:7"></div><div class="grid-cell " style="grid-column:4;grid-row:7"></div><div class="grid-cell " style="grid-column:5;grid-row:7"></div><div class="grid-cell " style="grid-column:6;grid-row:7"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:8">15:00</div><div class="grid-cell " style="grid-column:2;grid-row:8"></div><div class="grid-cell " style="grid-column:3;grid-row:8"></div><div class="grid-cell " style="grid-column:4;grid-row:8"></div><div class="grid-cell " style="grid-column:5;grid-row:8"></div><div class="grid-cell " style="grid-column:6;grid-row:8"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:9">16:00</div><div class="grid-cell " style="grid-column:2;grid-row:9"></div><div class="grid-cell " style="grid-column:3;grid-row:9"></div><div class="grid-cell " style="grid-column:4;grid-row:9"></div><div class="grid-cell " style="grid-column:5;grid-row:9"></div><div class="grid-cell " style="grid-column:6;grid-row:9"></div><div class="grid-cell time-cell " style="grid-column:1;grid-row:10">17:00</div><div class="grid-cell " style="grid-column:2;grid-row:10"></div><div class="grid-cell " style="grid-column:3;grid-row:10"></div><div class="grid-cell " style="grid-column:4;grid-row:10"></div><div class="grid-cell " style="grid-column:5;grid-row:10"></div><div class="grid-cell " style="grid-column:6;grid-row:10"></div>
           <div class="holiday-column" style="grid-column:5;grid-row:2 / span 9"><span>추석</span></div><div class="holiday-column" style="grid-column:6;grid-row:2 / span 9"><span>추석</span></div>
-          <div class="course-slot" style="grid-column:2;grid-row:2 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="44" aria-label="44 간질환 환자의 진단법 / 빌리루빈 대사 질환, 임상의학 · 소화기 내과 · 간장학"><span class="number">44</span><span class="name">간질환 환자의 진단법 / 빌리루빈 대사 질환</span><span class="teacher">진영주 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:3 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="45" aria-label="45 간농양, 임상의학 · 소화기 내과 · 간장학"><span class="number">45</span><span class="name">간농양</span><span class="teacher">진영주 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:4 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="46" aria-label="46 소화기계 방사선 종양학, 임상의학 · 진단 치료 지원 분과 · 방사선종양학과"><span class="number">46</span><span class="name">소화기계 방사선 종양학</span><span class="teacher">이정심 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 진단 치료 지원 분과 · 방사선종양학과</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:7 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="47" aria-label="47 알코올성 간염, 임상의학 · 소화기 내과 · 간장학"><span class="number">47</span><span class="name">알코올성 간염</span><span class="teacher">유정환 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:8 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="48" aria-label="48 대사이상 지방간질환 / 대사성 및 유전성 간질환, 임상의학 · 소화기 내과 · 간장학"><span class="number">48</span><span class="name">대사이상 지방간질환 / 대사성 및 유전성 간질환</span><span class="teacher">유정환 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:3;grid-row:2 / span 2;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="49" aria-label="49 급성간염 (바이러스성 / 약물중독성), 임상의학 · 소화기 내과 · 간장학"><span class="number">49</span><span class="name">급성간염 (바이러스성 / 약물중독성)</span><span class="teacher">고윤미 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button></div><div class="course-slot" style="grid-column:3;grid-row:7 / span 2;--course-color:var(--basic);--course-soft:var(--basic-soft)"><button class="course-card" type="button" data-course="50" aria-label="50 소화기 종양의 항암약물치료, 기초의학 · 약리학"><span class="number">50</span><span class="name">소화기 종양의 항암약물치료</span><span class="teacher">이문희 교수</span><span class="course-tooltip" role="tooltip">기초의학 · 약리학</span></button></div>
+          <div class="course-slot" style="grid-column:2;grid-row:2 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="44" aria-label="44 간질환 환자의 진단법 / 빌리루빈 대사 질환, 임상의학 · 소화기 내과 · 간장학"><span class="number">44</span><span class="name">간질환 환자의 진단법 / 빌리루빈 대사 질환</span><span class="teacher">진영주 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:3 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="45" aria-label="45 간농양, 임상의학 · 소화기 내과 · 간장학"><span class="number">45</span><span class="name">간농양</span><span class="teacher">진영주 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:4 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="46" aria-label="46 소화기계 방사선 종양학, 임상의학 · 진단 치료 지원 분과 · 방사선종양학과"><span class="number">46</span><span class="name">소화기계 방사선 종양학</span><span class="teacher">이정심 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 진단 치료 지원 분과 · 방사선종양학과</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:7 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="47" aria-label="47 알코올성 간염, 임상의학 · 소화기 내과 · 간장학"><span class="number">47</span><span class="name">알코올성 간염</span><span class="teacher">유정환 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button><img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async"></div><div class="course-slot" style="grid-column:2;grid-row:8 / span 1;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="48" aria-label="48 대사이상 지방간질환 / 대사성 및 유전성 간질환, 임상의학 · 소화기 내과 · 간장학"><span class="number">48</span><span class="name">대사이상 지방간질환 / 대사성 및 유전성 간질환</span><span class="teacher">유정환 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button></div><div class="course-slot" style="grid-column:3;grid-row:2 / span 2;--course-color:var(--clinical);--course-soft:var(--clinical-soft)"><button class="course-card" type="button" data-course="49" aria-label="49 급성간염 (바이러스성 / 약물중독성), 임상의학 · 소화기 내과 · 간장학"><span class="number">49</span><span class="name">급성간염 (바이러스성 / 약물중독성)</span><span class="teacher">고윤미 교수</span><span class="course-tooltip" role="tooltip">임상의학 · 소화기 내과 · 간장학</span></button></div><div class="course-slot" style="grid-column:3;grid-row:7 / span 2;--course-color:var(--basic);--course-soft:var(--basic-soft)"><button class="course-card" type="button" data-course="50" aria-label="50 소화기 종양의 항암약물치료, 기초의학 · 약리학"><span class="number">50</span><span class="name">소화기 종양의 항암약물치료</span><span class="teacher">이문희 교수</span><span class="course-tooltip" role="tooltip">기초의학 · 약리학</span></button></div>
         </div></div></article><article class="week-card"><div class="week-title"><strong>5주차</strong><span>9월 28일 – 10월 2일</span></div><div class="timetable-scroll"><div class="timetable">
           <div class="grid-cell day-head" style="grid-column:1;grid-row:1">시간</div>
           <div class="grid-cell day-head" style="grid-column:2;grid-row:1">월<small>9월 28일</small></div><div class="grid-cell day-head" style="grid-column:3;grid-row:1">화<small>9월 29일</small></div><div class="grid-cell day-head" style="grid-column:4;grid-row:1">수<small>9월 30일</small></div><div class="grid-cell day-head" style="grid-column:5;grid-row:1">목<small>10월 1일</small></div><div class="grid-cell day-head" style="grid-column:6;grid-row:1">금<small>10월 2일</small></div>
@@ -1273,6 +1491,7 @@
 
   <script src="./lecture-notes.js"></script>
   <script src="./jbl-data.js"></script>
+  <script src="./pathology-map.js"></script>
   <script>
     // Personal study progress is browser-local, keyed by immutable question IDs.
     const wrongQuestionIds = () => jblQuestions.filter(q => wrongAnswers[q.id]?.pending === true).map(q => q.id);
@@ -1371,6 +1590,49 @@
     function quickPreview(name) {
       return `<span class="quick-preview" aria-hidden="true"><img src="./assets/quick-start/${name}.png" alt="" loading="lazy" /></span>`;
     }
+
+    const diseaseMapCategories = [
+      {id:'esophagus',label:'식도',courseId:10}, {id:'stomach',label:'위',courseId:11},
+      {id:'intestine',label:'장',courseId:12}, {id:'liver',label:'간'},
+      {id:'pancreatobiliary',label:'담췌'}
+    ];
+    function mapCategoryButtons(active='',compact=false) {
+      return diseaseMapCategories.map(item=>'<button type="button" data-map-open="'+item.id+'"'+
+        (item.id===active?' aria-current="page"':'')+(item.courseId?'':' disabled aria-label="'+item.label+' 준비 중" title="준비 중"')+'>'+item.label+
+        (item.courseId||compact?'':'<small>준비 중</small>')+'</button>').join('');
+    }
+    function bindMapCategoryButtons(root) {
+      root.querySelectorAll('[data-map-open]').forEach(button=>button.onclick=()=>quickNavigate('#map-'+button.dataset.mapOpen));
+    }
+    function mapPreviewImage() {
+      return '<svg viewBox="0 0 480 225" role="img" aria-label="식도에서 선천성, 비종양성, 종양성 질환으로 이어지는 구조도 미리보기">'+
+        '<g fill="none" stroke="#9cb8c6" stroke-width="2"><path d="M110 112H155V40H210M155 112H210M155 112V184H210M318 40H346M318 112H346M318 184H346"/></g>'+
+        '<g fill="white" stroke="#c7dce6"><rect x="20" y="87" width="90" height="50" rx="12" fill="#204b60" stroke="none"/>'+
+        '<rect x="210" y="20" width="108" height="40" rx="9"/><rect x="210" y="92" width="108" height="40" rx="9"/><rect x="210" y="164" width="108" height="40" rx="9"/></g>'+
+        '<g font-family="inherit" text-anchor="middle" font-size="15" fill="#355a6c"><text x="65" y="118" fill="white" font-size="18">식도</text><text x="264" y="46">선천성</text><text x="264" y="118">비종양성</text><text x="264" y="190">종양성</text></g>'+
+        '<g font-family="inherit" font-size="13" fill="#617e8c"><text x="356" y="45">Atresia</text><text x="356" y="117">Achalasia</text><text x="356" y="189">SCC</text></g></svg>';
+    }
+    function resolveMapWikiReference(courseId,heading) {
+      const course=byId(canonicalContentCourseId(courseId));
+      if(!course)return null;
+      const matches=wikiSourceHeadingRecords(course).filter(record=>normalizeWikiKey(record.heading)===normalizeWikiKey(heading));
+      if(matches.length!==1)return null;
+      return {courseId:course.id,heading:matches[0].heading,slug:matches[0].slug};
+    }
+
+    function renderDiseaseMap(categoryId='esophagus') {
+      const category=diseaseMapCategories.find(item=>item.id===categoryId) || diseaseMapCategories[0];
+      const root=document.querySelector('#disease-map-root');
+      root.innerHTML='<header class="map-page-heading"><h2>모든 병 주행</h2>'+
+        '<nav class="map-page-nav" aria-label="장기별 MAP">'+mapCategoryButtons(category.id,true)+'</nav></header><div class="map-page-panel" data-map-panel></div>';
+      bindMapCategoryButtons(root);
+      const panel=root.querySelector('[data-map-panel]');
+      if(!category.courseId){panel.textContent='준비 중';return;}
+      if(!window.PATHOLOGY_MAP){panel.textContent='MAP 파일을 불러오지 못했습니다. pathology-map.js를 확인해주세요.';return;}
+      const course=byId(category.courseId);
+      window.PATHOLOGY_MAP.render(panel,{courseId:category.courseId,headings:wikiSourceHeadingRecords(course),questions:jblQuestions,resolveWikiReference:resolveMapWikiReference});
+    }
+
     function renderQuickStart() {
       const root = document.querySelector('#quick-start-root');
       root.innerHTML = `<header class="quick-heading"><h2>빠른 시작</h2><span data-quick-clock></span></header>
@@ -1379,7 +1641,9 @@
           <article class="quick-card quick-schedule-card"><button class="quick-schedule-main" type="button" data-quick-schedule>${quickPreview('schedule')}<span class="quick-card-copy"><strong>시간표 보기</strong><span>원하는 주차로 바로 이동</span><b aria-hidden="true">↗</b></span></button><div class="quick-week-buttons" aria-label="시간표 주차">${Object.keys(weekCalendar).map(week=>`<button type="button" data-quick-week="${week}">${week}주차</button>`).join('')}</div></article>
           <button class="quick-card" type="button" data-quick-wrong>${quickPreview('wrong')}<span class="quick-card-copy"><strong>내가 틀린 문항만 보기</strong><span>다시 풀 문항 ${wrongQuestionIds().length}개</span><b aria-hidden="true">↗</b></span></button>
           <button class="quick-card" type="button" data-quick-bookmarks>${quickPreview('bookmarks')}<span class="quick-card-copy"><strong>즐겨찾기 문단만 모아 보기</strong><span>과목별로 이어 읽는 나만의 핵심 문단</span><b aria-hidden="true">↗</b></span></button>
+          <article class="quick-card quick-map-card"><div class="quick-map-content"><h3>모든 병 주행</h3><nav class="map-page-nav map-quick-nav" aria-label="장기별 MAP">${mapCategoryButtons('',true)}</nav></div></article>
         </div>`;
+      bindMapCategoryButtons(root);
       updateQuickReviewLabel();
       refreshQuickClock().then(updateQuickReviewLabel);
       root.querySelector('[data-quick-review]').onclick = async event => {
@@ -2364,6 +2628,7 @@
         document.removeEventListener('keydown', keys, true);
         overlay.remove();
         if (opener?.isConnected) opener.focus({ preventScroll:true });
+        window.PATHOLOGY_MAP?.refreshLayout?.();
       };
       const keys = event => {
         if (event.key === 'Escape') { event.preventDefault(); event.stopImmediatePropagation(); close(); }
@@ -2901,6 +3166,7 @@
       clone.querySelectorAll('.anki-dialog').forEach(element => element.remove());
       clone.querySelector('#content-panel')?.replaceChildren();
       clone.querySelector('#quick-start-root')?.replaceChildren();
+      clone.querySelector('#disease-map-root')?.replaceChildren();
       clone.querySelector('#bookmark-collection-root')?.replaceChildren();
       clone.querySelector('#jbl-standalone')?.replaceChildren();
       clone.querySelector('#jbl-image-modal')?.classList.remove('show');
@@ -2918,6 +3184,7 @@
       downloadCurrentFile('index.html', `<!DOCTYPE html>\n${clone.outerHTML}`, 'text/html;charset=utf-8', 0);
       downloadCurrentFile('jbl-data.js', `window.JBL_DATA = ${payload};\n`, 'text/javascript;charset=utf-8', 180);
       downloadCurrentFile('lecture-notes.js', `window.LECTURE_NOTE_SOURCES = ${notePayload};\n`, 'text/javascript;charset=utf-8', 360);
+      if (window.PATHOLOGY_MAP) downloadCurrentFile('pathology-map.js', window.PATHOLOGY_MAP.exportSource(), 'text/javascript;charset=utf-8', 540);
       jblHasUnsavedChanges = false;
     }
 
@@ -3119,6 +3386,7 @@
     let scheduleOpVisible = false;
 
     function renderScheduleOp(course) {
+      if (Number(course.id) === 48) return '';
       const professor = course.professor.trim();
       if (!scheduleOpProfessors.has(professor)) return '';
       const bee = '<img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async">';
@@ -3184,6 +3452,11 @@
       const previousCourse = courseIndex > 0 ? orderedCourses[courseIndex - 1] : null;
       const nextCourse = courseIndex >= 0 && courseIndex < orderedCourses.length - 1 ? orderedCourses[courseIndex + 1] : null;
       previousView = from;
+      if (['MAP','구조도'].includes(initialTab) && [10,11].includes(course.id)) {
+        const category = course.id === 10 ? 'esophagus' : 'stomach';
+        history.replaceState(null, '', '#map-' + category);
+        renderDiseaseMap(category); showView('map', false); return;
+      }
       activeDetailTab = ['정리본','J','KMLE'].includes(initialTab) ? initialTab : '정리본';
       noteEditingCourseId = null;
       const slotText = course.id === 8
@@ -4058,7 +4331,7 @@
         renderContextLinkTarget(contextLinkState.stack.at(-1));
       });
       split.querySelector('[data-context-link-close]').addEventListener('click', closeContextLinkSplit);
-      requestAnimationFrame(() => { source.scrollTop = contextLinkState.sourceScroll; });
+      requestAnimationFrame(() => { source.scrollTop = contextLinkState.sourceScroll; window.PATHOLOGY_MAP?.refreshLayout?.(); });
       showContextLinkTarget(target, true);
     }
 
@@ -4086,7 +4359,7 @@
     function handleContextLinkClick(event) {
       if (event.defaultPrevented || event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
       const link = event.target.closest?.('[data-wiki-course], [data-jbl-question-link]');
-      if (!link || !link.closest('.wiki-note, .jbl-card') || link.closest('.anki-dialog, [data-anki-study-card]')) return;
+      if (!link || !link.closest('.wiki-note, .jbl-card, .pm-shell, .em-shell') || link.closest('.anki-dialog, [data-anki-study-card]')) return;
       const personalDocument = link.closest('[data-personal-document-render]');
       if (personalDocument && link.hasAttribute('data-wiki-course') && Number(link.dataset.wikiCourse) === Number(personalDocument.dataset.personalCourse)) return;
       const target = contextLinkTargetFromElement(link);
@@ -4427,6 +4700,8 @@
       if (contextLinkState.active) closeContextLinkSplit(false);
       setMainMenuOpen(false);
       const hash = location.hash;
+      const mapRoute = hash.match(/^#map(?:-([a-z]+))?$/);
+      if (mapRoute) { renderDiseaseMap(mapRoute[1]); return showView('map', false); }
       const linkedQuestion = hash.match(/^#jbl-q-(\d+)$/);
       if (linkedQuestion) {
         standaloneState().linkedQuestionNumber = Number(linkedQuestion[1]);
