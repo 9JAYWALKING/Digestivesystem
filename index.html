@@ -1906,13 +1906,21 @@
         jblLastScrollY = currentScrollY;
       });
     }
+    // legacyProfessor records the exam author; professor is the mapped course's teacher.
+    // Read metadata at render time so edits and the latest JBL_DATA feed every view.
+    const questionExamProfessor = question => String(question.legacyProfessor || '').trim() || String(question.professor || '').trim();
+    const questionLectureIds = question => [...new Set(
+      (Array.isArray(question.lectureIds) && question.lectureIds.length ? question.lectureIds : [question.lectureId])
+        .map(canonicalContentCourseId).filter(id => Number.isInteger(id) && id > 0)
+    )];
+    const questionBelongsToCourse = (question, id) => questionLectureIds(question).includes(canonicalContentCourseId(id));
     const jblFilterSignature = filters => JSON.stringify([filters.year, filters.lectureId, filters.professor, filters.favoritesOnly, filters.wrongOnly]);
     const filteredJblQuestions = () => {
       const { filters } = standaloneState();
       return jblQuestions.filter(question => {
         if (filters.year && Number(question.year) !== Number(filters.year)) return false;
-        if (filters.lectureId && !question.lectureIds.includes(Number(filters.lectureId))) return false;
-        if (filters.professor && question.professor !== filters.professor) return false;
+        if (filters.lectureId && !questionBelongsToCourse(question, filters.lectureId)) return false;
+        if (filters.professor && questionExamProfessor(question) !== filters.professor) return false;
         if (filters.favoritesOnly && !jblFavorites.has(question.id)) return false;
         if (filters.wrongOnly && !(standaloneState().wrongBatch || wrongQuestionIds()).includes(question.id)) return false;
         return true;
@@ -1928,6 +1936,9 @@
       const signature = jblFilterSignature(state.filters);
       if (!state.randomOrder.length || state.randomSignature !== signature) return filtered;
       const byQuestionId = new Map(filtered.map(question => [question.id, question]));
+      if (state.randomOrder.length !== filtered.length || state.randomOrder.some(id => !byQuestionId.has(id))) {
+        state.randomOrder = shuffleQuestions(filtered).map(question => question.id);
+      }
       return state.randomOrder.map(id => byQuestionId.get(id)).filter(Boolean);
     };
     const clearJblRandomOrder = state => { state.randomOrder = []; state.randomSignature = ''; };
@@ -1939,7 +1950,7 @@
       }
       return shuffled;
     };
-    const questionCourseText = question => question.lectureIds.map(id => { const course = byId(id); return course ? contentCourseText(course) : `${id}강`; }).join(' / ');
+    const questionCourseText = question => questionLectureIds(question).map(id => { const course = byId(id); return course ? contentCourseText(course) : `${id}강`; }).join(' / ');
     const legacyLectureNotes = {
       1: `<article class="wiki-note">
         <header class="wiki-hero">
@@ -2993,13 +3004,13 @@
       const images = question.images.length ? `<div class="jbl-page-block"><div class="jbl-page-title">문항 이미지</div>${question.images.map(filename => `<figure style="margin:0"><img class="jbl-page-img" data-jbl-image src="${escapeHtml(encodeURI(filename))}" alt="${escapeHtml(question.displayId)} 문항 이미지" /></figure>`).join('')}</div>` : '';
       const explanationImageItems = Array.isArray(question.explanationImages) ? question.explanationImages.map(item => typeof item === 'string' ? { src:item, caption:'해설 자료' } : item).filter(item => item && item.src) : [];
       const explanationImages = explanationImageItems.length ? `<div class="jbl-page-block"><div class="jbl-page-title">해설 그림</div>${explanationImageItems.map(item => `<figure style="margin:0"><img class="jbl-page-img" data-jbl-image src="${escapeHtml(encodeURI(item.src))}" alt="${escapeHtml(item.caption || `${question.displayId} 해설 그림`)}" />${item.caption ? `<figcaption>${renderJblInline(item.caption)}</figcaption>` : ''}</figure>`).join('')}</div>` : '';
-      const lecturePills = question.lectureIds.map(id => { const course = byId(id); return `<span class="jbl-lecture-map">${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</span>`; }).join('');
+      const lecturePills = questionLectureIds(question).map(id => { const course = byId(id); return `<span class="jbl-lecture-map">${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</span>`; }).join('');
       const isEditing = state.editing === question.id;
-      const lectureEditor = isEditing ? `<div class="jbl-editor-field full"><label>강의 분류 · 여러 강의를 함께 선택할 수 있습니다.</label><details class="jbl-lecture-picker" data-jbl-edit-lecture-picker><summary>${escapeHtml(questionCourseText(question) || '강의를 선택하세요')}</summary><div class="jbl-lecture-options">${courses.slice().sort((a,b) => a.id - b.id).map(course => `<label class="jbl-lecture-option"><input type="checkbox" value="${course.id}" data-jbl-edit-lecture ${question.lectureIds.includes(course.id) ? 'checked' : ''} /><span>${escapeHtml(contentCourseText(course))} · ${escapeHtml(course.professor)} 교수</span></label>`).join('')}</div></details><p class="jbl-editor-validation" data-jbl-edit-lecture-error hidden>강의를 하나 이상 선택하세요.</p></div>` : '';
+      const lectureEditor = isEditing ? `<div class="jbl-editor-field full"><label>강의 분류 · 여러 강의를 함께 선택할 수 있습니다.</label><details class="jbl-lecture-picker" data-jbl-edit-lecture-picker><summary>${escapeHtml(questionCourseText(question) || '강의를 선택하세요')}</summary><div class="jbl-lecture-options">${courses.filter(course => course.id === canonicalContentCourseId(course.id)).sort((a,b) => a.id - b.id).map(course => `<label class="jbl-lecture-option"><input type="checkbox" value="${course.id}" data-jbl-edit-lecture ${questionBelongsToCourse(question, course.id) ? 'checked' : ''} /><span>${escapeHtml(contentCourseText(course))} · ${escapeHtml(course.professor)} 교수</span></label>`).join('')}</div></details><p class="jbl-editor-validation" data-jbl-edit-lecture-error hidden>강의를 하나 이상 선택하세요.</p></div>` : '';
       const editor = isEditing ? `<section class="jbl-editor jbl-question-editor" aria-label="문제 수정"><div class="jbl-editor-grid">${lectureEditor}<div class="jbl-editor-field full"><label for="jbl-edit-question-${escapeHtml(question.id)}">문제 발문</label><textarea id="jbl-edit-question-${escapeHtml(question.id)}" data-jbl-edit-question>${escapeHtml(question.question)}</textarea></div><div class="jbl-editor-field full"><label for="jbl-edit-passage-${escapeHtml(question.id)}">제시문 · ㄱ/ㄴ/ㄷ/ㄹ, I/II/III 등</label><textarea id="jbl-edit-passage-${escapeHtml(question.id)}" data-jbl-edit-passage>${escapeHtml(question.passage || '')}</textarea></div><div class="jbl-editor-field full"><label for="jbl-edit-choices-${escapeHtml(question.id)}">선지 · 한 줄에 하나씩 입력</label><textarea id="jbl-edit-choices-${escapeHtml(question.id)}" data-jbl-edit-choices>${escapeHtml(question.choices.join('\n'))}</textarea></div><div class="jbl-editor-field"><label for="jbl-edit-indices-${escapeHtml(question.id)}">정답 번호 · 복수 정답은 쉼표로 구분</label><input id="jbl-edit-indices-${escapeHtml(question.id)}" data-jbl-edit-indices type="text" inputmode="numeric" value="${escapeHtml(answerIndices.join(', '))}" placeholder="예: 2 또는 2, 4" /></div><div class="jbl-editor-field"><label for="jbl-edit-label-${escapeHtml(question.id)}">정답 표시</label><input id="jbl-edit-label-${escapeHtml(question.id)}" data-jbl-edit-label type="text" value="${escapeHtml(question.answerLabel)}" /></div><div class="jbl-editor-field full"><label for="jbl-edit-explanation-${escapeHtml(question.id)}">해설</label><textarea id="jbl-edit-explanation-${escapeHtml(question.id)}" data-jbl-edit-explanation>${escapeHtml(question.explanation)}</textarea></div></div><p class="jbl-editor-help">강의 분류·발문·제시문·선지·정답·해설을 한 번에 수정합니다. Wiki와 같은 문법 및 {{123}} 형식의 문항 링크를 사용할 수 있습니다.</p>${wikiSyntaxHelpMarkup()}<div class="jbl-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-edit-apply>수정 반영</button></div></section>` : '';
       return `<article class="jbl-card" data-jbl-question="${escapeHtml(question.id)}">
-        <header class="jbl-card-head"><div class="jbl-meta"><span class="jbl-prof">${escapeHtml(question.legacyProfessor || question.professor)} 교수</span><div class="jbl-meta-right"><span class="jbl-qid">${escapeHtml(question.displayId)}</span><button class="jbl-favorite ${jblFavorites.has(question.id) ? 'active' : ''}" type="button" data-jbl-favorite aria-label="${jblFavorites.has(question.id) ? '즐겨찾기 해제' : '즐겨찾기 추가'}" aria-pressed="${jblFavorites.has(question.id)}">${jblFavorites.has(question.id) ? '★' : '☆'}</button></div></div><h2 class="jbl-title">${renderJblInline(question.question)}</h2><div class="jbl-source">${escapeHtml(question.source)}</div></header>
-        <div class="jbl-card-body">${passage}${images}${choices}<div class="jbl-btns"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-answer>${revealAnswer ? '정답 닫기' : '정답 보기'}</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-explanation>${revealExplanation ? '해설 닫기' : '해설 보기'}</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit>${isEditing ? '문제 수정 닫기' : '문제 수정'}</button></div>${editor}${revealAnswer ? `<div class="jbl-answer-box">${renderJblWikiFragment(question.answerLabel, question, 'answer')}</div>` : ''}${revealExplanation ? `<section class="jbl-explanation"><div class="jbl-explanation-title">해설</div><div class="jbl-lecture-row">${lecturePills}<span class="jbl-professor-name">${escapeHtml(question.professor)} 교수</span></div>${explanationImages}<div class="jbl-explanation-text">${renderJblWikiFragment(question.explanation, question, 'explanation')}</div></section>` : ''}</div>
+        <header class="jbl-card-head"><div class="jbl-meta"><span class="jbl-prof">${escapeHtml(questionExamProfessor(question))} 교수</span><div class="jbl-meta-right"><span class="jbl-qid">${escapeHtml(question.displayId)}</span><button class="jbl-favorite ${jblFavorites.has(question.id) ? 'active' : ''}" type="button" data-jbl-favorite aria-label="${jblFavorites.has(question.id) ? '즐겨찾기 해제' : '즐겨찾기 추가'}" aria-pressed="${jblFavorites.has(question.id)}">${jblFavorites.has(question.id) ? '★' : '☆'}</button></div></div><h2 class="jbl-title">${renderJblInline(question.question)}</h2><div class="jbl-source">${escapeHtml(question.source)}</div></header>
+        <div class="jbl-card-body">${passage}${images}${choices}<div class="jbl-btns"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-answer>${revealAnswer ? '정답 닫기' : '정답 보기'}</button><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-explanation>${revealExplanation ? '해설 닫기' : '해설 보기'}</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-edit>${isEditing ? '문제 수정 닫기' : '문제 수정'}</button></div>${editor}${revealAnswer ? `<div class="jbl-answer-box">${renderJblWikiFragment(question.answerLabel, question, 'answer')}</div>` : ''}${revealExplanation ? `<section class="jbl-explanation"><div class="jbl-explanation-title">해설</div><div class="jbl-lecture-row">${lecturePills}<span class="jbl-professor-name">${escapeHtml(questionExamProfessor(question))} 교수</span></div>${explanationImages}<div class="jbl-explanation-text">${renderJblWikiFragment(question.explanation, question, 'explanation')}</div></section>` : ''}</div>
       </article>`;
     }
 
@@ -3085,6 +3096,8 @@
         question.lectureIds = editedLectureIds;
         question.lectureId = primaryCourse.id;
         question.lectureTitle = contentTitleText(primaryCourse);
+        // Changing a lecture must not replace the historical exam author.
+        if (!String(question.legacyProfessor || '').trim()) question.legacyProfessor = questionExamProfessor(question);
         question.professor = primaryCourse.professor;
         question.domain = primaryCourse.domain;
         question.discipline = primaryCourse.discipline;
@@ -3194,7 +3207,7 @@
 
     function renderCourseJ(course) {
       const target = document.querySelector('#content-panel');
-      const questions = jblQuestions.filter(question => question.lectureIds.includes(course.id));
+      const questions = jblQuestions.filter(question => questionBelongsToCourse(question, course.id));
       const key = `course-${course.id}`;
       const state = viewerState(key);
       const rerender = () => renderCourseJ(course);
@@ -3212,9 +3225,9 @@
       state.index = Math.max(0, Math.min(state.index, Math.max(questions.length - 1, 0)));
       const currentQuestion = questions[state.index];
       const years = [...new Set(jblQuestions.map(question => Number(question.year)).filter(Boolean))].sort((a,b) => b-a);
-      const lectureIds = [...new Set(jblQuestions.flatMap(question => question.lectureIds))].sort((a,b) => a-b);
-      const professors = [...new Set(jblQuestions.map(question => question.professor).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ko'));
-      const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">교수명</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-wrong ${state.filters.wrongOnly ? 'checked' : ''} /> 틀린 문항만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p>${state.filters.wrongOnly ? '<div class="jbl-wrong-session"><span>다시 맞힌 문항은 다음 복습부터 제외됩니다.</span><button type="button" data-wrong-restart>남은 오답으로 다시 시작</button></div>' : ''}</section>` : '';
+      const lectureIds = [...new Set(jblQuestions.flatMap(questionLectureIds))].sort((a,b) => a-b);
+      const professors = [...new Set(jblQuestions.map(questionExamProfessor).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'ko'));
+      const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">출제교수</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-wrong ${state.filters.wrongOnly ? 'checked' : ''} /> 틀린 문항만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p>${state.filters.wrongOnly ? '<div class="jbl-wrong-session"><span>다시 맞힌 문항은 다음 복습부터 제외됩니다.</span><button type="button" data-wrong-restart>남은 오답으로 다시 시작</button></div>' : ''}</section>` : '';
       const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files>현재 파일 저장</button></div></section>` : '';
       target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-home>홈으로</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
       const infoButton = document.createElement('button');
@@ -3388,7 +3401,7 @@
     function renderScheduleOp(course) {
       if (Number(course.id) === 48) return '';
       const professor = course.professor.trim();
-      if (!scheduleOpProfessors.has(professor)) return '';
+      if (![19, 33, 38, 39].includes(Number(course.id)) && !scheduleOpProfessors.has(professor)) return '';
       const bee = '<img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async">';
       if (professor !== '조순구') return bee;
       return '<span class="course-op-stack" aria-hidden="true">' + bee + '<img class="course-op-badge" src="./assets/op-cho-soon-gu.png" width="1672" height="941" alt="" aria-hidden="true" draggable="false" decoding="async"></span>';
@@ -4477,7 +4490,7 @@
         const passage = globalSearchPlainText(question.passage);
         const choices = globalSearchPlainText((question.choices || []).map((choice, index) => (index + 1) + '번 ' + choice).join(' '));
         const explanation = globalSearchPlainText([question.answerLabel, question.explanation].filter(Boolean).join(' '));
-        const metadata = globalSearchPlainText([question.globalNumber + '번', question.year, question.source, question.lectureTitle, question.professor, question.legacyProfessor, course ? contentCourseText(course) : ''].filter(Boolean).join(' '));
+        const metadata = globalSearchPlainText([question.globalNumber + '번', question.year, question.source, questionCourseText(question), questionExamProfessor(question)].filter(Boolean).join(' '));
         return {
           type:'j', globalNumber:question.globalNumber, question:questionText, passage, choices, explanation, metadata,
           questionSearch:globalSearchNormalize(questionText), passageSearch:globalSearchNormalize(passage), choicesSearch:globalSearchNormalize(choices), explanationSearch:globalSearchNormalize(explanation), metadataSearch:globalSearchNormalize(metadata)
@@ -4735,7 +4748,7 @@
         const course = match ? byId(match[1]) : null;
         if (!course) return null;
         return {
-          questions:jblQuestions.filter(question => question.lectureIds.includes(course.id)),
+          questions:jblQuestions.filter(question => questionBelongsToCourse(question, course.id)),
           key:`course-${course.id}`,
           rerender:() => renderCourseJ(course)
         };
