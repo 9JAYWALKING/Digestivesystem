@@ -124,6 +124,24 @@ function finish(ask){
  if(ask){const remaining=questions.filter(q=>!answered(q)).length;if(!window.confirm(`${remaining?`미응답 ${remaining}문항이 있습니다.\n`:''}답안을 저장하고 채점을 진행할까요? 저장 후 답안을 변경할 수 없습니다.`))return;}
  state.submittedAt=Math.min(Date.now(),state.deadline);persist();showResults();tick();
 }
+function restartTraining(){
+ if(!state.submittedAt)return;
+ if(!window.confirm('이 시험의 답안·점수·채점 정정·문제 표시 기록을 지우고 다시 훈련할까요? 160분이 새로 시작됩니다.'))return;
+ const now=Date.now();
+ const fresh={index:0,answers:{},flags:[],overrides:{},startedAt:now,deadline:now+durationMs,submittedAt:null};
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify({...fresh,signature,version:1}));}
+ catch{el('storage-notice').hidden=false;el('storage-notice').textContent='새 응시 기록을 저장하지 못해 초기화하지 않았습니다. 브라우저 저장소를 확인해 주세요.';return;}
+ closeDetail(false);
+ if(timer!==null)clearInterval(timer);
+ Object.assign(state,fresh);
+ el('storage-notice').hidden=true;
+ el('earned-grade').textContent='0.00';el('final-score').textContent='';
+ el('result-screen').hidden=true;el('exam-screen').hidden=false;
+ history.replaceState(null,'',location.href.split('#')[0]);
+ timer=setInterval(tick,1000);render();tick();
+ window.scrollTo(0,0);el('question-text').focus({preventScroll:true});
+}
+el('restart-training').addEventListener('click',restartTraining);
 let timer=null;
 function tick(){
  const seconds=Math.max(0,Math.ceil((state.deadline-(state.submittedAt||Date.now()))/1000));
