@@ -1643,7 +1643,7 @@
           <button class="quick-card" type="button" data-quick-wrong>${quickPreview('wrong')}<span class="quick-card-copy"><strong>내가 틀린 문항만 보기</strong><span>다시 풀 문항 ${wrongQuestionIds().length}개</span><b aria-hidden="true">↗</b></span></button>
           <button class="quick-card" type="button" data-quick-bookmarks>${quickPreview('bookmarks')}<span class="quick-card-copy"><strong>즐겨찾기 문단만 모아 보기</strong><span>과목별로 이어 읽는 나만의 핵심 문단</span><b aria-hidden="true">↗</b></span></button>
           <article class="quick-card quick-map-card"><div class="quick-map-content"><h3>모든 병 주행</h3><nav class="map-page-nav map-quick-nav" aria-label="장기별 MAP">${mapCategoryButtons('',true)}</nav></div></article>
-          <article class="quick-card quick-map-card quick-exam-card"><div class="quick-map-content"><h3>실전처럼 풀어보기</h3><nav class="map-page-nav map-quick-nav" aria-label="실전풀이 연도">${[25,23,22,21,20].map(year=>year===25?'<button type="button" data-exam-2025 aria-label="2025 소화기계 실전풀이">25</button>':`<button type="button" disabled aria-label="20${year} 실전풀이 · 준비 중" title="준비 중">${year}</button>`).join('')}</nav></div></article>
+          <article class="quick-card quick-map-card quick-exam-card"><div class="quick-map-content"><h3>실전처럼 풀어보기</h3><nav class="map-page-nav map-quick-nav" aria-label="실전풀이 연도">${[25,23,22,21,20].map(year=>`<button type="button" data-exam-${2000+year} aria-label="${2000+year} 소화기계 실전풀이">${year}</button>`).join('')}</nav></div></article>
         </div>`;
       bindMapCategoryButtons(root);
       updateQuickReviewLabel();
@@ -1660,6 +1660,10 @@
       root.querySelector('[data-quick-wrong]').onclick=()=>quickNavigate('#jbl-wrong');
       root.querySelector('[data-quick-bookmarks]').onclick=()=>quickNavigate('#bookmarks');
       root.querySelector('[data-exam-2025]').onclick=()=>{ location.href='./exam-2025.html'; };
+      root.querySelector('[data-exam-2023]').onclick=()=>{ location.href='./exam-2023.html'; };
+      root.querySelector('[data-exam-2022]').onclick=()=>{ location.href='./exam-2022.html'; };
+      root.querySelector('[data-exam-2021]').onclick=()=>{ location.href='./exam-2021.html'; };
+      root.querySelector('[data-exam-2020]').onclick=()=>{ location.href='./exam-2020.html'; };
     }
     function showScheduleWeek(week) {
       renderSchedule(); showView('schedule', false, false);
