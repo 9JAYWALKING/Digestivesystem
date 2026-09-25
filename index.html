@@ -1157,6 +1157,7 @@
 .quick-map-content h3 {margin:0;font-size:24px;font-weight:800;line-height:1.4;letter-spacing:-.04em;color:#0f172a;}
 .quick-map-content .map-quick-nav {width:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));}
 .quick-map-content .map-quick-nav button {min-width:0;padding:9px 4px;}
+.quick-exam-card .map-quick-nav button:disabled {background:#e2e8f0;color:#94a3b8;cursor:not-allowed;box-shadow:none;}
 .map-category-buttons {display:flex;flex-wrap:wrap;gap:10px;}
 .map-category-buttons button,.map-home-button {font:inherit;border:1px solid #d3e1e7;border-radius:10px;background:white;color:#365c6e;padding:11px 18px;cursor:pointer;}
 .quick-map-content .map-category-buttons {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}
@@ -1642,6 +1643,7 @@
           <button class="quick-card" type="button" data-quick-wrong>${quickPreview('wrong')}<span class="quick-card-copy"><strong>내가 틀린 문항만 보기</strong><span>다시 풀 문항 ${wrongQuestionIds().length}개</span><b aria-hidden="true">↗</b></span></button>
           <button class="quick-card" type="button" data-quick-bookmarks>${quickPreview('bookmarks')}<span class="quick-card-copy"><strong>즐겨찾기 문단만 모아 보기</strong><span>과목별로 이어 읽는 나만의 핵심 문단</span><b aria-hidden="true">↗</b></span></button>
           <article class="quick-card quick-map-card"><div class="quick-map-content"><h3>모든 병 주행</h3><nav class="map-page-nav map-quick-nav" aria-label="장기별 MAP">${mapCategoryButtons('',true)}</nav></div></article>
+          <article class="quick-card quick-map-card quick-exam-card"><div class="quick-map-content"><h3>실전처럼 풀어보기</h3><nav class="map-page-nav map-quick-nav" aria-label="실전풀이 연도">${[25,23,22,21,20].map(year=>year===25?'<button type="button" data-exam-2025 aria-label="2025 소화기계 실전풀이">25</button>':`<button type="button" disabled aria-label="20${year} 실전풀이 · 준비 중" title="준비 중">${year}</button>`).join('')}</nav></div></article>
         </div>`;
       bindMapCategoryButtons(root);
       updateQuickReviewLabel();
@@ -1657,6 +1659,7 @@
       root.querySelectorAll('[data-quick-week]').forEach(button=>button.onclick=()=>quickNavigate(`#schedule-week-${button.dataset.quickWeek}`));
       root.querySelector('[data-quick-wrong]').onclick=()=>quickNavigate('#jbl-wrong');
       root.querySelector('[data-quick-bookmarks]').onclick=()=>quickNavigate('#bookmarks');
+      root.querySelector('[data-exam-2025]').onclick=()=>{ location.href='./exam-2025.html'; };
     }
     function showScheduleWeek(week) {
       renderSchedule(); showView('schedule', false, false);
@@ -4927,4 +4930,5 @@
 <div class="wiki-footnote-preview-box" data-wiki-footnote-preview-box="" role="tooltip" data-placement="above" style="left: 954.725px; top: 408.938px; --wiki-footnote-arrow-left: 170px;"><span data-wiki-footnote-preview-text="">별표의 두 그래프는 ‘충분히 쓰고 유지해야 한다’는 메시지다. 연구의 세부 수치와 105일이라는 구분값까지 공통 처방 기준으로 외울 필요는 없다.</span><span class="wiki-footnote-preview-arrow" aria-hidden="true"></span></div>
 
 
+<script src="./exam-j-bridge.js"></script>
 </body></html>
