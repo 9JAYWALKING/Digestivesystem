@@ -4,6 +4,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="2026학년도 2학기 의학과 1학년 소화기계 강의 정리">
   <title>소화기계 · 강의 정리</title>
+  <script id="site-theme-controller">
+    // Apply before first paint. Exam detail frames always stay light without changing the saved preference.
+    (() => {
+      const key = 'digestive-site-theme-v1';
+      const examPreview = new URLSearchParams(location.search).get('examPreview') === '1';
+      const root = document.documentElement;
+      const icons = {
+        light: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.4A8.8 8.8 0 0 1 10.6 3.5a8.8 8.8 0 1 0 9.9 9.9Z"/></svg>',
+        dark: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+      };
+      function syncButtons() {
+        document.querySelectorAll('[data-theme-toggle]').forEach(button => {
+          const dark = root.dataset.theme === 'dark';
+          button.innerHTML = icons[dark ? 'dark' : 'light'];
+          button.setAttribute('aria-label', dark ? '라이트모드로 전환' : '다크모드로 전환');
+          button.setAttribute('aria-pressed', String(dark));
+          button.title = dark ? '라이트모드' : '다크모드';
+          button.hidden = examPreview;
+        });
+      }
+      function apply(value) {
+        root.dataset.theme = !examPreview && value === 'dark' ? 'dark' : 'light';
+        syncButtons();
+      }
+      let initial = 'light';
+      try { initial = localStorage.getItem(key) || 'light'; } catch (_) { /* Storage may be unavailable. */ }
+      apply(initial);
+      window.DigestiveTheme = { syncButtons };
+      document.addEventListener('DOMContentLoaded', syncButtons);
+      document.addEventListener('click', event => {
+        if (!event.target.closest?.('[data-theme-toggle]') || examPreview) return;
+        apply(root.dataset.theme === 'dark' ? 'light' : 'dark');
+        try { localStorage.setItem(key, root.dataset.theme); } catch (_) { /* Keep this session usable. */ }
+      });
+      window.addEventListener('storage', event => {
+        if (event.key === key || event.key === null) apply(event.newValue);
+      });
+    })();
+  </script>
   <style>
     :root {
       --ink: #17212b;
@@ -1364,6 +1403,443 @@
 }
 
   </style>
+<style id="site-dark-theme">
+/* Static theme layer; generated from light rules by work/build-dark-theme.cjs.
+   Only screen styles are changed. Exams use separate documents; examPreview never sets dark. */
+.theme-button{display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;padding:9px;border:1px solid #c9dfe8;border-radius:50%;background:#fff;color:#315f75;cursor:pointer;}
+.theme-button[hidden]{display:none!important;}
+.theme-button svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.theme-button:hover{background:#edf6fa;}
+.theme-button:focus-visible{outline:3px solid #7fb9d2;outline-offset:3px;}
+.quick-clock-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;min-width:0;}
+.quick-clock-actions [data-quick-clock]{font-size:12px;color:#7c8d96;}
+.quick-clock-actions .information-button{width:28px;height:28px;flex-basis:28px;font-size:16px;}
+@media(max-width:600px){.quick-heading{flex-wrap:wrap;gap:12px;}.quick-clock-actions{flex-wrap:wrap;justify-content:flex-start;gap:8px;}}
+@media print{.theme-button,.quick-clock-actions .information-button{display:none!important;}html{color-scheme:light;}}
+@media screen{
+:root[data-theme="dark"]{--ink:#fff;--muted:#999fa4;--paper:#000;--card:#000;--line:rgba(48,48,48,1);--deep:hsla(199.8,40.3%,30%,1);--deep-2:hsla(199.5,34.4%,30%,1);--basic:hsl(198.9 48.0% 68%);--basic-soft:rgba(12,12,12,1);--clinical:hsl(354.8 48.0% 68%);--clinical-soft:#000;--violet:#999fa4;--topbar:rgba(12,12,12,1);--topbar-ink:#fff;--shadow:0 16px 38px rgba(0,0,0,0.09)}
+:root[data-theme="dark"] body{background-color:#000}
+:root[data-theme="dark"] .masthead{color:#fff;border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .site-logo:hover,:root[data-theme="dark"] .site-logo:focus-visible{background-color:rgba(0,0,0,0.12);outline-color:rgba(48,48,48,0.72)}
+:root[data-theme="dark"] .global-search-input{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff;box-shadow:rgba(0,0,0,0.08) 0px 2px 8px}
+:root[data-theme="dark"] .global-search-input::placeholder{color:#999fa4}
+:root[data-theme="dark"] .global-search-input:hover{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-input:focus{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.3) 0px 0px 0px 3px}
+:root[data-theme="dark"] .global-search-submit{color:#fff}
+:root[data-theme="dark"] .global-search-submit:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .global-search-submit:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-dialog{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff;box-shadow:rgba(0,0,0,0.3) 0px 28px 90px}
+:root[data-theme="dark"] .global-search-dialog::backdrop{background-color:hsla(202.9,48.0%,13.333333333333334%,0.48)}
+:root[data-theme="dark"] .global-search-head{background-color:rgba(12,12,12,1);border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-head h2{color:#fff}
+:root[data-theme="dark"] .global-search-close{color:#fff}
+:root[data-theme="dark"] .global-search-close:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .global-search-close:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-dialog-form{background-color:#000}
+:root[data-theme="dark"] .global-search-dialog-input{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .global-search-dialog-input:focus{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.25) 0px 0px 0px 3px}
+:root[data-theme="dark"] .global-search-dialog-run{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:hsla(199.4,41.0%,30%,1);color:#fff}
+:root[data-theme="dark"] .global-search-dialog-run:hover{background-color:hsla(199.0,46.7%,26.47058823529412%,1)}
+:root[data-theme="dark"] .global-search-tabs{background-color:#000;border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-tab{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .global-search-tab:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .global-search-tab[aria-selected="true"]{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(12,12,12,1);color:hsl(198.5 48.0% 68%)}
+:root[data-theme="dark"] .global-search-summary{color:#999fa4;background-color:#000}
+:root[data-theme="dark"] .global-search-group-head{color:#fff}
+:root[data-theme="dark"] .global-search-group-head small{color:#999fa4}
+:root[data-theme="dark"] .global-search-result{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.04) 0px 2px 8px}
+:root[data-theme="dark"] .global-search-result:hover{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.09) 0px 7px 18px}
+:root[data-theme="dark"] .global-search-result:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .global-search-kind{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .global-search-kind.j{background-color:hsla(266.3,25.0%,15%,1);color:#999fa4}
+:root[data-theme="dark"] .global-search-result-title{color:#fff}
+:root[data-theme="dark"] .global-search-result-meta{color:#999fa4}
+:root[data-theme="dark"] .global-search-result-snippet{color:#fff}
+:root[data-theme="dark"] .global-search-result mark{background-color:hsla(49.7,25.0%,22%,1);color:#fff}
+:root[data-theme="dark"] .global-search-empty{color:#999fa4}
+:root[data-theme="dark"] .main-menu-button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .main-menu-button:hover,:root[data-theme="dark"] .main-menu-button[aria-expanded="true"]{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .main-menu-button:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .masthead-menu{border-top-color:rgba(48,48,48,0.95);border-right-color:rgba(48,48,48,0.95);border-bottom-color:rgba(48,48,48,0.95);border-left-color:rgba(48,48,48,0.95);background-color:#000;box-shadow:rgba(0,0,0,0.16) 0px 12px 30px}
+:root[data-theme="dark"] .masthead-menu .nav-button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .masthead-menu .nav-button:hover,:root[data-theme="dark"] .masthead-menu .nav-button:focus-visible{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .masthead-menu .nav-button[aria-current="page"]{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(12,12,12,1);color:hsl(198.5 48.0% 68%)}
+:root[data-theme="dark"] .information-button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .information-button:hover{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .information-button:focus-visible,:root[data-theme="dark"] .information-dialog button:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .information-dialog{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff;box-shadow:rgba(0,0,0,0.24) 0px 24px 80px}
+:root[data-theme="dark"] .information-dialog::backdrop{background-color:hsla(204.4,44.4%,14.117647058823529%,0.42)}
+:root[data-theme="dark"] .information-head{background-color:rgba(12,12,12,1);border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .information-head h2{color:#fff}
+:root[data-theme="dark"] .information-close{color:#fff}
+:root[data-theme="dark"] .information-close:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .information-status{color:#999fa4}
+:root[data-theme="dark"] .information-text{color:#fff}
+:root[data-theme="dark"] .information-file-button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .nav-button,:root[data-theme="dark"] .back-button{border-top-color:hsla(198.1,24%,38%,1);border-right-color:hsla(198.1,24%,38%,1);border-bottom-color:hsla(198.1,24%,38%,1);border-left-color:hsla(198.1,24%,38%,1);color:#fff;background-color:rgba(0,0,0,0.68)}
+:root[data-theme="dark"] .nav-button:hover,:root[data-theme="dark"] .nav-button:focus-visible,:root[data-theme="dark"] .back-button:hover,:root[data-theme="dark"] .back-button:focus-visible{background-color:#000}
+:root[data-theme="dark"] .nav-button.primary{color:#fff;background-color:hsla(197.1,25.0%,22%,1);border-top-color:hsla(197.1,24%,38%,1);border-right-color:hsla(197.1,24%,38%,1);border-bottom-color:hsla(197.1,24%,38%,1);border-left-color:hsla(197.1,24%,38%,1)}
+:root[data-theme="dark"] .nav-button[data-go="catalog"]{color:#fff;background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .domain-tab{background-color:#000}
+:root[data-theme="dark"] .domain-tab.active{box-shadow:rgba(0,0,0,0.06) 0px 10px 30px}
+:root[data-theme="dark"] .discipline-card{background-color:#000}
+:root[data-theme="dark"] .discipline-head{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .section-block + .section-block{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .professor{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .professor-toggle:hover{background-color:#000}
+:root[data-theme="dark"] .lecture-link{background-color:#000}
+:root[data-theme="dark"] .legend span{background-color:#000}
+:root[data-theme="dark"] .schedule-op-toggle{background-color:#000}
+:root[data-theme="dark"] .schedule-op-toggle[aria-pressed="true"]{background-color:hsla(47.8,25.0%,18%,1);border-top-color:hsla(47.3,24%,38%,1);border-right-color:hsla(47.3,24%,38%,1);border-bottom-color:hsla(47.3,24%,38%,1);border-left-color:hsla(47.3,24%,38%,1);color:hsl(38.4 48.0% 68%)}
+:root[data-theme="dark"] .schedule-op-toggle:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .week-card{background-color:#000}
+:root[data-theme="dark"] .week-title{color:#fff}
+:root[data-theme="dark"] .week-title span{color:#999fa4}
+:root[data-theme="dark"] .grid-cell{border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .day-head{color:#fff;background-color:hsla(42.9,15.6%,18%,1)}
+:root[data-theme="dark"] .time-cell{background-color:#000}
+:root[data-theme="dark"] .lunch-cell{background-image:repeating-linear-gradient(135deg, #000, #000 8px, rgba(12,12,12,1) 8px, rgba(12,12,12,1) 16px)}
+:root[data-theme="dark"] .holiday-column{border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);color:hsl(355.2 48.0% 68%);background-image:repeating-linear-gradient(135deg, #000, #000 8px, rgba(12,12,12,1) 8px, rgba(12,12,12,1) 16px)}
+:root[data-theme="dark"] .course-card:hover,:root[data-theme="dark"] .course-card:focus-visible{box-shadow:rgba(0,0,0,0.16) 0px 10px 23px}
+:root[data-theme="dark"] .course-tooltip{color:#fff;background-color:hsla(197.8,40.3%,13.137254901960786%,1);box-shadow:rgba(0,0,0,0.22) 0px 10px 25px}
+:root[data-theme="dark"] .course-tooltip::after{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .detail-bar{color:#fff}
+:root[data-theme="dark"] .detail-breadcrumb{color:#999fa4}
+:root[data-theme="dark"] .detail-info{color:#999fa4}
+:root[data-theme="dark"] .detail-number{background-color:hsla(41.3,25.0%,22%,1)}
+:root[data-theme="dark"] .detail-number:hover,:root[data-theme="dark"] .detail-number:focus-visible{box-shadow:rgba(0,0,0,0.28) 0px 0px 0px 3px}
+:root[data-theme="dark"] .detail-number-input{border-top-color:hsla(41.3,24%,38%,1);border-right-color:hsla(41.3,24%,38%,1);border-bottom-color:hsla(41.3,24%,38%,1);border-left-color:hsla(41.3,24%,38%,1);background-color:#000}
+:root[data-theme="dark"] .detail-number-input:focus{box-shadow:rgba(0,0,0,0.24) 0px 0px 0px 4px}
+:root[data-theme="dark"] .content-tab{border-top-color:rgba(48,48,48,0.22);border-right-color:rgba(48,48,48,0.22);border-bottom-color:rgba(48,48,48,0.22);border-left-color:rgba(48,48,48,0.22);color:#fff;background-color:rgba(0,0,0,0.07)}
+:root[data-theme="dark"] .content-tab.active{background-color:#000}
+:root[data-theme="dark"] .empty-state{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .wiki-note{color:#fff}
+:root[data-theme="dark"] .wiki-hero{background-image:linear-gradient(135deg, rgba(12,12,12,1) 0%, #000 56%, #000 100%);border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-kicker{color:hsl(196.7 48.0% 68%)}
+:root[data-theme="dark"] .wiki-hero h3{color:#fff}
+:root[data-theme="dark"] .wiki-hero > p{color:#fff}
+:root[data-theme="dark"] .wiki-stat{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(0,0,0,0.82);color:#fff}
+:root[data-theme="dark"] .wiki-toc{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(0,0,0,0.97);box-shadow:rgba(0,0,0,0.05) 0px 8px 24px}
+:root[data-theme="dark"] .wiki-toc strong{color:#fff}
+:root[data-theme="dark"] .wiki-toc-toggle{color:#fff}
+:root[data-theme="dark"] .wiki-toc-toggle:hover,:root[data-theme="dark"] .wiki-toc-toggle:focus-visible{background-color:rgba(12,12,12,1);color:hsl(197.4 48.0% 68%)}
+:root[data-theme="dark"] .wiki-toc-link{color:#999fa4}
+:root[data-theme="dark"] .wiki-toc-link:hover{background-color:rgba(12,12,12,1);color:hsl(197.4 48.0% 68%)}
+:root[data-theme="dark"] .wiki-section{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-section h4{color:hsl(197.9 48.0% 68%)}
+:root[data-theme="dark"] .wiki-section-action{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .wiki-section-action:hover,:root[data-theme="dark"] .wiki-section-action:focus-visible{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(12,12,12,1);color:hsl(197.4 48.0% 68%)}
+:root[data-theme="dark"] .wiki-section h5{color:#fff}
+:root[data-theme="dark"] .wiki-note [data-wiki-level="4"],:root[data-theme="dark"] .jbl-wiki-text [data-wiki-level="4"]{color:#fff}
+:root[data-theme="dark"] .wiki-section p{color:#fff}
+:root[data-theme="dark"] .wiki-section ul{color:#fff}
+:root[data-theme="dark"] .wiki-term{color:hsl(195.8 48.0% 68%)}
+:root[data-theme="dark"] .wiki-callout{border-left-color:hsla(195.1,24%,38%,1);background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .wiki-strong-purple .wiki-link{color:hsl(263.4 48.0% 68%);border-bottom-color:hsla(258.3,24%,38%,1)}
+:root[data-theme="dark"] .wiki-strong-purple .wiki-link-strong{color:hsl(263.4 48.0% 68%);border-bottom-color:hsla(258.3,24%,38%,1)}
+:root[data-theme="dark"] .wiki-callout.exam{border-left-color:hsla(3.6,24%,38%,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .wiki-muted,:root[data-theme="dark"] .wiki-muted a,:root[data-theme="dark"] .wiki-muted strong,:root[data-theme="dark"] .wiki-muted em{color:#999fa4 !important}
+:root[data-theme="dark"] .wiki-bookmark{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#999fa4}
+:root[data-theme="dark"] .wiki-bookmark:hover{border-top-color:hsla(43.3,24%,38%,1);border-right-color:hsla(43.3,24%,38%,1);border-bottom-color:hsla(43.3,24%,38%,1);border-left-color:hsla(43.3,24%,38%,1);color:hsl(37.7 48.0% 68%)}
+:root[data-theme="dark"] .wiki-bookmark[aria-pressed="true"]{border-top-color:hsla(43.3,24%,38%,1);border-right-color:hsla(43.3,24%,38%,1);border-bottom-color:hsla(43.3,24%,38%,1);border-left-color:hsla(43.3,24%,38%,1);background-color:hsla(48.0,25.0%,15%,1);color:hsl(37.7 48.0% 68%)}
+:root[data-theme="dark"] .anki-card{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-side-label{color:#999fa4}
+:root[data-theme="dark"] .anki-dialog{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;background-color:#000}
+:root[data-theme="dark"] .anki-dialog::backdrop{background-color:hsla(222.2,47.4%,12%,0.45)}
+:root[data-theme="dark"] .anki-dialog .content-tab{color:#fff;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .anki-dialog .content-tab.active{color:hsl(197.8 48.0% 68%);background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-close{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .anki-fields textarea{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-status{color:#999fa4}
+:root[data-theme="dark"] .anki-fav-row{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-fav-row a{color:hsl(195.8 48.0% 68%)}
+:root[data-theme="dark"] .anki-preview{border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-preview-head{background-color:#000}
+:root[data-theme="dark"] .anki-card-row [data-anki-delete-id]{color:#999fa4;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-card[data-anki-study-card]{background-color:#000}
+:root[data-theme="dark"] .anki-study-head{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .anki-card[data-anki-study-card] [data-anki-face]{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.08) 0px 10px 32px}
+:root[data-theme="dark"] .anki-card[data-anki-study-card] .jbl-wiki-text{color:#fff}
+:root[data-theme="dark"] .anki-card[data-anki-study-card] .jbl-wiki-text h3,:root[data-theme="dark"] .anki-card[data-anki-study-card] .jbl-wiki-text h4{color:#fff}
+:root[data-theme="dark"] .anki-card[data-anki-study-card] .wiki-figure figcaption{color:#fff}
+:root[data-theme="dark"] .anki-study-footer{border-top-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .anki-study-footer [data-anki-action="know"]{color:#fff}
+@media (max-width: 700px) {
+:root[data-theme="dark"] .anki-preview{border-top-color:rgba(48,48,48,1)}
+}
+:root[data-theme="dark"] .personal-notes-toolbar{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(0,0,0,0.96);box-shadow:rgba(0,0,0,0.08) 0px 10px 28px}
+:root[data-theme="dark"] .personal-notes-toolbar h2{color:#fff}
+:root[data-theme="dark"] .personal-note-card{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.055) 0px 8px 24px}
+:root[data-theme="dark"] .personal-note-open{color:#fff}
+:root[data-theme="dark"] .personal-note-open:hover,:root[data-theme="dark"] .personal-note-open:focus-visible{background-color:#000}
+:root[data-theme="dark"] .personal-note-open strong{color:hsl(200.3 48.0% 68%)}
+:root[data-theme="dark"] .personal-note-open span{color:#999fa4}
+:root[data-theme="dark"] .personal-note-delete{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#999fa4}
+:root[data-theme="dark"] .personal-note-empty{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#999fa4}
+:root[data-theme="dark"] .personal-note-empty strong{color:#fff}
+:root[data-theme="dark"] .personal-document-editor{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .personal-document-title-field label{color:#fff}
+:root[data-theme="dark"] .personal-document-title-field input{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;background-color:#000}
+:root[data-theme="dark"] .personal-document-meta{color:#999fa4}
+:root[data-theme="dark"] .personal-export-tools{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .personal-export-row{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .personal-export-row:hover{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .personal-export-row input{accent-color:#fff}
+:root[data-theme="dark"] .personal-export-row strong{color:#fff}
+:root[data-theme="dark"] .personal-export-row small{color:#999fa4}
+:root[data-theme="dark"] .wiki-strong-purple,:root[data-theme="dark"] .wiki-strong-purple a,:root[data-theme="dark"] .wiki-strong-purple strong,:root[data-theme="dark"] .wiki-strong-purple em{color:hsl(263.4 48.0% 68%) !important}
+:root[data-theme="dark"] .wiki-figure{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.06) 0px 8px 22px}
+:root[data-theme="dark"] .wiki-figure img{background-color:#000}
+:root[data-theme="dark"] .wiki-figure figcaption{color:#999fa4}
+:root[data-theme="dark"] .wiki-image-toggle{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .wiki-image-toggle:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-table-wrap{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-table{background-color:#000}
+:root[data-theme="dark"] .wiki-table th,:root[data-theme="dark"] .wiki-table td{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-table th{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .wiki-link{color:hsl(194.6 48.0% 68%);border-bottom-color:hsla(195.1,24%,38%,1)}
+:root[data-theme="dark"] .wiki-link:hover,:root[data-theme="dark"] .wiki-link:focus-visible{color:hsl(201.0 48.0% 68%)}
+:root[data-theme="dark"] .wiki-link-missing{color:hsl(0.0 48.0% 68%);border-bottom-color:hsla(0.0,24%,38%,1)}
+:root[data-theme="dark"] .wiki-footnote-ref{color:hsl(196.7 48.0% 68%)}
+:root[data-theme="dark"] .wiki-footnote-preview-box{color:#fff;background-color:hsla(197.8,43.5%,16.666666666666668%,1);box-shadow:rgba(0,0,0,0.22) 0px 10px 28px}
+:root[data-theme="dark"] .wiki-footnote-preview-box[data-placement="above"] .wiki-footnote-preview-arrow{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-footnote-preview-box[data-placement="below"] .wiki-footnote-preview-arrow{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-footnotes{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-footnotes h4{color:#fff}
+:root[data-theme="dark"] .wiki-footnotes ol{color:#fff}
+:root[data-theme="dark"] .wiki-footnotes li:hover,:root[data-theme="dark"] .wiki-footnotes li:focus-visible{background-color:rgba(12,12,12,1);box-shadow:rgba(0,0,0,0.18) 0px 0px 0px 2px}
+:root[data-theme="dark"] .wiki-footnote-back{color:hsl(196.7 48.0% 68%)}
+:root[data-theme="dark"] .wiki-source-page{color:#999fa4}
+:root[data-theme="dark"] .wiki-editor-shell{background-color:#000}
+:root[data-theme="dark"] .wiki-editor-head h3{color:#fff}
+:root[data-theme="dark"] .wiki-editor-head p{color:#999fa4}
+:root[data-theme="dark"] .wiki-source-editor{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .wiki-source-editor:focus{border-top-color:hsla(195.1,24%,38%,1);border-right-color:hsla(195.1,24%,38%,1);border-bottom-color:hsla(195.1,24%,38%,1);border-left-color:hsla(195.1,24%,38%,1);box-shadow:rgba(0,0,0,0.13) 0px 0px 0px 4px}
+:root[data-theme="dark"] .wiki-syntax-help{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .wiki-syntax-help summary{color:#fff}
+:root[data-theme="dark"] .wiki-syntax-grid{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-syntax-grid code,:root[data-theme="dark"] .wiki-syntax-grid span{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .wiki-syntax-grid code{color:hsl(201.0 48.0% 68%);background-color:#000}
+:root[data-theme="dark"] .wiki-syntax-grid span{color:#fff}
+:root[data-theme="dark"] .wiki-render-warning{border-left-color:hsla(3.6,24%,38%,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .wiki-section-editor-overlay{background-color:hsla(222.2,47.4%,12%,0.48)}
+:root[data-theme="dark"] .wiki-section-editor-dialog{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.28) 0px 24px 70px}
+:root[data-theme="dark"] .wiki-section-editor-head h3{color:#fff}
+:root[data-theme="dark"] .wiki-section-editor-head p{color:#999fa4}
+:root[data-theme="dark"] .wiki-section-editor-body .wiki-editor-actions{border-top-color:rgba(48,48,48,1);background-color:rgba(0,0,0,0.96)}
+:root[data-theme="dark"] body.jbl-mode{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .nav-button.jbl-launch{color:#fff;background-color:hsla(222.2,47.4%,12%,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-standalone,:root[data-theme="dark"] .jbl-embed{color:#fff}
+:root[data-theme="dark"] .jbl-standalone{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .jbl-panel,:root[data-theme="dark"] .jbl-card,:root[data-theme="dark"] .jbl-filter-panel{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.05) 0px 8px 24px}
+:root[data-theme="dark"] .jbl-toolbar-btn.active{background-color:hsla(222.2,47.4%,12%,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .jbl-filter-title{color:#fff}
+:root[data-theme="dark"] .jbl-filter-item{background-color:#000}
+:root[data-theme="dark"] .jbl-filter-item label{color:#fff}
+:root[data-theme="dark"] .jbl-select,:root[data-theme="dark"] .jbl-jump-box input{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .jbl-favorite-filter input{accent-color:hsl(37.7 48.0% 68%)}
+:root[data-theme="dark"] .jbl-filter-summary{color:#999fa4}
+:root[data-theme="dark"] .jbl-select:focus,:root[data-theme="dark"] .jbl-jump-box input:focus{border-top-color:hsla(213.1,24%,38%,1);border-right-color:hsla(213.1,24%,38%,1);border-bottom-color:hsla(213.1,24%,38%,1);border-left-color:hsla(213.1,24%,38%,1);box-shadow:rgba(0,0,0,0.15) 0px 0px 0px 4px}
+:root[data-theme="dark"] .jbl-btn-primary{background-color:hsla(222.2,47.4%,12%,1);color:#fff}
+:root[data-theme="dark"] .jbl-btn-sub{background-color:#000;color:#fff;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-card-head{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-prof{color:#999fa4}
+:root[data-theme="dark"] .jbl-qid{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .jbl-favorite{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#999fa4}
+:root[data-theme="dark"] .jbl-favorite:hover{border-top-color:hsla(43.3,24%,38%,1);border-right-color:hsla(43.3,24%,38%,1);border-bottom-color:hsla(43.3,24%,38%,1);border-left-color:hsla(43.3,24%,38%,1);color:hsl(37.7 48.0% 68%)}
+:root[data-theme="dark"] .jbl-favorite.active{border-top-color:hsla(43.3,24%,38%,1);border-right-color:hsla(43.3,24%,38%,1);border-bottom-color:hsla(43.3,24%,38%,1);border-left-color:hsla(43.3,24%,38%,1);background-color:hsla(48.0,25.0%,15%,1);color:hsl(37.7 48.0% 68%)}
+:root[data-theme="dark"] .jbl-source{color:#999fa4}
+:root[data-theme="dark"] .jbl-passage{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .jbl-passage-title{background-color:rgba(12,12,12,1);color:hsl(221.2 48.0% 68%)}
+:root[data-theme="dark"] .jbl-passage-text{color:#fff}
+:root[data-theme="dark"] .jbl-choices{background-color:#000}
+:root[data-theme="dark"] .jbl-choice{background-color:#000}
+:root[data-theme="dark"] .jbl-choice:hover{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-choice-num{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .jbl-choice.selected{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .jbl-choice.selected .jbl-choice-num{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .jbl-choice.correct{background-color:rgba(12,12,12,1);border-top-color:hsla(211.7,24%,38%,1);border-right-color:hsla(211.7,24%,38%,1);border-bottom-color:hsla(211.7,24%,38%,1);border-left-color:hsla(211.7,24%,38%,1);color:hsl(224.3 48.0% 68%)}
+:root[data-theme="dark"] .jbl-choice.correct .jbl-choice-num{background-color:rgba(12,12,12,1);color:hsl(224.3 48.0% 68%)}
+:root[data-theme="dark"] .jbl-choice.wrong{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:hsl(0.0 48.0% 68%)}
+:root[data-theme="dark"] .jbl-choice.wrong .jbl-choice-num{background-color:hsla(0.0,25.0%,15%,1);color:hsl(0.0 48.0% 68%)}
+:root[data-theme="dark"] .jbl-answer-box{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:hsl(224.3 48.0% 68%)}
+:root[data-theme="dark"] .jbl-editor{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .jbl-editor-field label{color:#fff}
+:root[data-theme="dark"] .jbl-editor input,:root[data-theme="dark"] .jbl-editor select,:root[data-theme="dark"] .jbl-editor textarea{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .jbl-lecture-picker{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .jbl-lecture-picker summary{color:#fff}
+:root[data-theme="dark"] .jbl-lecture-options{border-top-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .jbl-lecture-option{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .jbl-lecture-option input{accent-color:hsl(200.4 48.0% 68%)}
+:root[data-theme="dark"] .jbl-editor-validation{color:hsl(345.3 48.0% 68%)}
+:root[data-theme="dark"] .jbl-editor-help{color:#999fa4}
+:root[data-theme="dark"] .jbl-editor input:focus,:root[data-theme="dark"] .jbl-editor select:focus,:root[data-theme="dark"] .jbl-editor textarea:focus{border-top-color:hsla(198.4,24%,38%,1);border-right-color:hsla(198.4,24%,38%,1);border-bottom-color:hsla(198.4,24%,38%,1);border-left-color:hsla(198.4,24%,38%,1);box-shadow:rgba(0,0,0,0.14) 0px 0px 0px 4px}
+:root[data-theme="dark"] .jbl-save-btn{background-color:hsla(175.3,48.0%,26.078431372549023%,1);color:#fff}
+:root[data-theme="dark"] .jbl-page-block{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-page-title{color:#fff}
+:root[data-theme="dark"] .jbl-page-img{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .content-image-error{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .jbl-explanation{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .jbl-explanation-title{color:#fff}
+:root[data-theme="dark"] .jbl-lecture-map{background-color:rgba(12,12,12,1);color:hsl(201.0 48.0% 68%)}
+:root[data-theme="dark"] .jbl-professor-name{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .jbl-explanation-text{color:#fff}
+:root[data-theme="dark"] .jbl-wiki-text{color:#fff}
+:root[data-theme="dark"] .jbl-wiki-text h3{border-bottom-color:rgba(48,48,48,1);color:hsl(197.9 48.0% 68%)}
+:root[data-theme="dark"] .jbl-wiki-text h4{color:#fff}
+:root[data-theme="dark"] .jbl-wiki-text blockquote{border-left-color:rgba(48,48,48,1);background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .jbl-question-link{color:hsl(196.6 48.0% 68%)}
+:root[data-theme="dark"] .jbl-question-link::before{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .jbl-question-link-missing{color:hsl(343.4 48.0% 68%)}
+:root[data-theme="dark"] .jbl-empty{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#999fa4}
+:root[data-theme="dark"] .jbl-counter{color:#fff}
+:root[data-theme="dark"] .jbl-bottom-nav{background-color:#000;border-top-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.05) 0px -8px 24px}
+:root[data-theme="dark"] .jbl-image-modal{background-color:hsla(222.2,47.4%,12%,0.88)}
+:root[data-theme="dark"] .jbl-image-modal img{box-shadow:rgba(0,0,0,0.35) 0px 20px 60px;background-color:#000}
+:root[data-theme="dark"] .jbl-image-close{background-color:hsla(0.0,48.0%,30%,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;box-shadow:rgba(0,0,0,0.35) 0px 0px 0px 4px, rgba(0,0,0,0.45) 0px 14px 34px}
+:root[data-theme="dark"] .context-link-split{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .context-link-source,:root[data-theme="dark"] .context-link-target{background-color:#000}
+:root[data-theme="dark"] .context-link-source{border-right-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .context-link-target{background-color:#000;box-shadow:rgba(0,0,0,0.09) -12px 0px 30px}
+:root[data-theme="dark"] .context-link-head{color:#fff;background-color:rgba(12,12,12,1);border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .context-link-eyebrow{color:#999fa4}
+:root[data-theme="dark"] .context-link-title{color:#fff}
+:root[data-theme="dark"] .context-link-control{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;background-color:#000}
+:root[data-theme="dark"] .context-link-control:hover,:root[data-theme="dark"] .context-link-control:focus-visible{background-color:#000;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);outline-color:rgba(48,48,48,0.24)}
+:root[data-theme="dark"] .context-link-empty{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#999fa4;background-color:#000}
+:root[data-theme="dark"] .context-question-nav{border-top-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .context-question-counter{color:#fff}
+@media (orientation: portrait), (max-width: 700px) {
+:root[data-theme="dark"] .context-link-source{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .context-link-target{box-shadow:rgba(0,0,0,0.09) 0px -12px 30px}
+}
+:root[data-theme="dark"] .quick-heading h2{color:var(--ink,#fff)}
+:root[data-theme="dark"] .quick-heading > span{color:#999fa4}
+:root[data-theme="dark"] .quick-card{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff;box-shadow:rgba(0,0,0,0.027) 0px 5px 20px}
+:root[data-theme="dark"] .quick-card:hover{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.063) 0px 7px 24px}
+:root[data-theme="dark"] .quick-card:focus-visible,:root[data-theme="dark"] .quick-schedule-main:focus-visible{outline-color:hsla(196.6,24%,38%,1)}
+:root[data-theme="dark"] .quick-preview{background-color:rgba(12,12,12,1);border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .quick-card-copy > span{color:#999fa4}
+:root[data-theme="dark"] .quick-card-copy b{color:#999fa4}
+:root[data-theme="dark"] .quick-week-buttons button{background-color:rgba(12,12,12,1);color:#fff;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .quick-week-buttons button:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .bookmark-collection{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .bookmark-collected-section{border-bottom-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .bookmark-missing{color:#999fa4}
+:root[data-theme="dark"] .bookmark-collection h4{color:#fff}
+:root[data-theme="dark"] .jbl-wrong-session{color:#999fa4}
+:root[data-theme="dark"] .jbl-wrong-session button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .quick-map-preview{background-color:rgba(12,12,12,1);border-right-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .quick-map-card{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);box-shadow:rgba(0,0,0,0.05) 0px 8px 24px}
+:root[data-theme="dark"] .quick-map-content{color:#fff}
+:root[data-theme="dark"] .quick-map-content h3{color:#fff}
+:root[data-theme="dark"] .quick-exam-card .map-quick-nav button:disabled{background-color:rgba(12,12,12,1);color:#999fa4}
+:root[data-theme="dark"] .map-category-buttons button,:root[data-theme="dark"] .map-home-button{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .map-category-buttons button:hover:not(:disabled),:root[data-theme="dark"] .map-home-button:hover{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .map-category-buttons button[aria-current="page"]{background-color:hsla(199.7,48.0%,20.784313725490197%,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .map-category-buttons button:disabled{color:#999fa4;background-color:#000}
+:root[data-theme="dark"] .map-category-buttons button:focus-visible,:root[data-theme="dark"] .map-home-button:focus-visible{outline-color:hsla(196.6,24%,38%,1)}
+:root[data-theme="dark"] .map-page-heading{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.05) 0px 8px 24px;color:#fff}
+:root[data-theme="dark"] .map-page-heading h2{color:#fff}
+:root[data-theme="dark"] .map-page-nav{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .map-page-nav button{color:#fff}
+:root[data-theme="dark"] .map-page-nav button:hover:not(:disabled):not([aria-current="page"]){background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .map-page-nav button[aria-current="page"]{background-color:hsla(222.2,47.4%,12%,1);color:#fff;box-shadow:rgba(0,0,0,0.12) 0px 2px 5px}
+:root[data-theme="dark"] .map-page-nav button:disabled{color:#999fa4}
+:root[data-theme="dark"] .map-page-nav button:focus-visible{outline-color:hsla(213.1,24%,38%,1)}
+:root[data-theme="dark"] .map-page-panel{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+@media (max-width: 700px) {
+:root[data-theme="dark"] .quick-map-preview{border-bottom-color:rgba(48,48,48,1)}
+}
+:root[data-theme="dark"] .em-shell{--em-line:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .em-shell .em-collapse{background-color:#000;color:#fff;border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .em-viewport{background-color:#000}
+:root[data-theme="dark"] .em-shell .em-label{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;background-color:#000}
+:root[data-theme="dark"] .em-shell button.em-label{background-color:#000}
+:root[data-theme="dark"] .em-shell button.em-label:hover{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .em-shell button.em-label[aria-expanded="true"]{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);color:#fff;background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .em-shell .em-root > .em-node-head > .em-label{background-color:hsla(197.9,48.0%,20.19607843137255%,1);border-top-color:hsla(197.9,24%,38%,1);border-right-color:hsla(197.9,24%,38%,1);border-bottom-color:hsla(197.9,24%,38%,1);border-left-color:hsla(197.9,24%,38%,1);color:#fff}
+:root[data-theme="dark"] .em-symbol{color:#999fa4}
+:root[data-theme="dark"] .em-shell button:focus-visible,:root[data-theme="dark"] .em-viewport:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .em-shell button.em-leaf{background-color:#000}
+:root[data-theme="dark"] .em-shell .em-info{color:#999fa4}
+:root[data-theme="dark"] .em-shell .em-info:hover,:root[data-theme="dark"] .em-shell .em-info[aria-expanded="true"]{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .em-shell button.em-leaf[aria-expanded="true"]{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .em-wiki-panel{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;box-shadow:rgba(0,0,0,0.043) 0px 3px 12px}
+:root[data-theme="dark"] .em-wiki-head{border-bottom-color:rgba(48,48,48,1);color:#fff}
+:root[data-theme="dark"] .em-wiki-head button{color:#fff}
+:root[data-theme="dark"] .em-wiki-head button:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .em-wiki-list > * + *{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .em-wiki-list .em-wiki-link:hover{background-color:#000;color:hsl(201.0 48.0% 68%)}
+:root[data-theme="dark"] .em-wiki-list .em-wiki-link:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .em-wiki-meta{color:#999fa4}
+:root[data-theme="dark"] .em-wiki-unavailable{color:#999fa4}
+:root[data-theme="dark"] .em-wiki-list .em-clue{color:#fff}
+:root[data-theme="dark"] .em-ref-group h3{color:#999fa4}
+:root[data-theme="dark"] .em-j-links a{background-color:rgba(12,12,12,1);color:hsl(198.7 48.0% 68%)}
+:root[data-theme="dark"] .em-j-links a:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .em-j-links a:focus-visible{outline-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .pm-shell{color:#fff;--pm-line:rgba(48,48,48,1)}
+:root[data-theme="dark"] .pm-header{background-color:rgba(12,12,12,1);border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .pm-kicker{color:#fff}
+:root[data-theme="dark"] .pm-header h3{color:hsl(197.9 48.0% 68%)}
+:root[data-theme="dark"] .pm-header p{color:#fff}
+:root[data-theme="dark"] .pm-progress{background-color:#000}
+:root[data-theme="dark"] .pm-shell button,:root[data-theme="dark"] .pm-shell select{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .pm-shell button:hover{background-color:rgba(12,12,12,1)}
+:root[data-theme="dark"] .pm-shell button[aria-pressed="true"]{background-color:hsla(197.9,48.0%,20.19607843137255%,1);color:#fff;border-top-color:hsla(197.9,24%,38%,1);border-right-color:hsla(197.9,24%,38%,1);border-bottom-color:hsla(197.9,24%,38%,1);border-left-color:hsla(197.9,24%,38%,1)}
+:root[data-theme="dark"] .pm-group-select{color:#fff}
+:root[data-theme="dark"] .pm-note,:root[data-theme="dark"] .pm-secondary{color:#999fa4}
+:root[data-theme="dark"] .pm-root{background-color:hsla(197.9,48.0%,20.19607843137255%,1);color:#fff}
+:root[data-theme="dark"] .pm-group-head button{background-color:rgba(12,12,12,1);color:#fff}
+:root[data-theme="dark"] .pm-group-head > span{color:#999fa4}
+:root[data-theme="dark"] .pm-node{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000}
+:root[data-theme="dark"] .pm-disease{background-color:#000;border-right-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .pm-disease h4{color:#fff}
+:root[data-theme="dark"] .pm-features dt{color:#999fa4}
+:root[data-theme="dark"] .pm-features dd{color:hsl(197.9 48.0% 68%)}
+:root[data-theme="dark"] .pm-field{border-top-color:rgba(48,48,48,1)}
+:root[data-theme="dark"] .pm-answer-form input{border-top-color:rgba(48,48,48,1);border-right-color:rgba(48,48,48,1);border-bottom-color:rgba(48,48,48,1);border-left-color:rgba(48,48,48,1);background-color:#000;color:#fff}
+:root[data-theme="dark"] .pm-answer-form input[readonly]{background-color:hsla(162.9,25.0%,15%,1)}
+:root[data-theme="dark"] .pm-result,:root[data-theme="dark"] .pm-hint{color:hsl(36.8 48.0% 68%)}
+:root[data-theme="dark"] .pm-result.is-correct{color:#fff}
+:root[data-theme="dark"] .pm-solution{color:hsl(197.9 48.0% 68%)}
+:root[data-theme="dark"] .pm-figure figcaption{color:#999fa4}
+:root[data-theme="dark"] .pm-image-dialog::backdrop{background-color:hsla(204.0,45.5%,12%,0.7)}
+:root[data-theme="dark"] .pm-empty,:root[data-theme="dark"] .pm-storage-warning{background-color:#000}
+@media (max-width: 850px) {
+:root[data-theme="dark"] .pm-disease{border-bottom-color:rgba(48,48,48,1)}
+}
+@container (max-width: 700px) {
+:root[data-theme="dark"] .pm-disease{border-bottom-color:rgba(48,48,48,1)}
+}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#fff;--muted:#999fa4;--paper:#000;--card:#000;--line:#303030;--deep:#294959;--deep-2:#365c70;--basic:#82adc2;--basic-soft:#14232b;--clinical:#c58f98;--clinical-soft:#291e22;--violet:#ad94c7;--topbar:#000;--topbar-ink:#b5bec4;}
+:root[data-theme="dark"] body,:root[data-theme="dark"] body.jbl-mode{background:#000;color:#fff;}
+:root[data-theme="dark"] .masthead{background:#0a0a0a;color:#c5cbd0;border-bottom-color:#282828;}
+:root[data-theme="dark"] :is(input,textarea,select){color:#fff;background-color:#000;border-color:#383838;caret-color:#fff;}
+:root[data-theme="dark"] :is(.detail-bar,.wiki-hero,.anki-study-stage,.anki-study-head,.anki-study-footer,.jbl-topbar,.jbl-bottom-nav,.personal-notes-toolbar){background:#000;}
+:root[data-theme="dark"] :is(.information-dialog,.global-search-dialog,.wiki-section-editor-dialog,.anki-dialog,.wiki-footnote-preview-box){background:#111;border-color:#383838;}
+:root[data-theme="dark"] :is(input,textarea)::placeholder{color:#999fa4;opacity:1;}
+:root[data-theme="dark"] .theme-button{background:#000;border-color:#444;color:#c3b382;}
+:root[data-theme="dark"] .theme-button:hover{background:#222;}
+:root[data-theme="dark"] .quick-clock-actions [data-quick-clock]{color:#999fa4;}
+:root[data-theme="dark"] .course-slot{--course-soft:#292438!important;}
+:root[data-theme="dark"] .course-slot[style*="--basic-soft"]{--course-soft:var(--basic-soft)!important;}
+:root[data-theme="dark"] .course-slot[style*="--clinical-soft"]{--course-soft:var(--clinical-soft)!important;}
+:root[data-theme="dark"] .jbl-jump-box label{color:#fff!important;}
+:root[data-theme="dark"] .detail-number{background:#2b261b;color:#cbb77f;}
+:root[data-theme="dark"] .detail-number-input,:root[data-theme="dark"] .content-tab.active{color:#8cb5c8;}
+:root[data-theme="dark"] .anki-study-footer [data-anki-action="know"]{background:var(--deep);border-color:var(--deep);color:#fff;}
+:root[data-theme="dark"] .anki-study-footer [data-anki-action="know"]:hover{background:var(--deep-2);border-color:var(--deep-2);}
+:root[data-theme="dark"] :is(.wiki-note,.jbl-wiki-text) a{color:#82adc2;}
+:root[data-theme="dark"] :is(.wiki-muted,.wiki-muted a,.wiki-muted strong,.wiki-muted em){color:#949494!important;}
+:root[data-theme="dark"] :is(.wiki-strong-purple,.wiki-strong-purple a,.wiki-strong-purple strong,.wiki-strong-purple em){color:#ad94c7!important;}
+:root[data-theme="dark"] :is(.wiki-link,.wiki-footnote-ref,.jbl-question-link){color:#82adc2;}
+:root[data-theme="dark"] :is(.wiki-note,.jbl-wiki-text) ::selection{background:#294959;color:#dedede;}
+:root[data-theme="dark"] .anki-card[data-anki-study-card]{background:#000;}
+:root[data-theme="dark"] .wiki-figure img,:root[data-theme="dark"] .jbl-page-img,:root[data-theme="dark"] .jbl-image-modal img{background:#fff;}
+}
+</style>
 </head>
 <body class=""><div class="site-shell">
     <header class="masthead">
@@ -1377,7 +1853,7 @@
           <button class="main-menu-button" type="button" data-main-menu-toggle="" aria-expanded="false" aria-controls="site-main-menu" aria-label="주요 메뉴 열기" title="메뉴">
             <span class="main-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
           </button>
-          <button class="information-button" type="button" data-information-open="" aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button>
+          <button class="theme-button" type="button" data-theme-toggle aria-label="다크모드로 전환" aria-pressed="false" title="다크모드"></button>
         </nav>
       </div>
       <nav id="site-main-menu" class="masthead-menu" aria-label="주요 화면" hidden="">
@@ -1636,7 +2112,7 @@
 
     function renderQuickStart() {
       const root = document.querySelector('#quick-start-root');
-      root.innerHTML = `<header class="quick-heading"><h2>빠른 시작</h2><span data-quick-clock></span></header>
+      root.innerHTML = `<header class="quick-heading"><h2>빠른 시작</h2><div class="quick-clock-actions"><span data-quick-clock></span><button class="information-button" type="button" data-information-open aria-label="업데이트 현황 보기" aria-haspopup="dialog" title="업데이트 현황">i</button></div></header>
         <div class="quick-grid">
           <button class="quick-card" type="button" data-quick-review>${quickPreview('review')}<span class="quick-card-copy"><strong>오늘 수업한 내용 복습하기</strong><span data-quick-review-label></span><b aria-hidden="true">↗</b></span></button>
           <article class="quick-card quick-schedule-card"><button class="quick-schedule-main" type="button" data-quick-schedule>${quickPreview('schedule')}<span class="quick-card-copy"><strong>시간표 보기</strong><span>원하는 주차로 바로 이동</span><b aria-hidden="true">↗</b></span></button><div class="quick-week-buttons" aria-label="시간표 주차">${Object.keys(weekCalendar).map(week=>`<button type="button" data-quick-week="${week}">${week}주차</button>`).join('')}</div></article>
@@ -3177,6 +3653,8 @@
 
     function saveCurrentFiles() {
       const clone = document.documentElement.cloneNode(true);
+      // A downloaded site must not impose this browser's theme on other users.
+      clone.removeAttribute('data-theme');
       clone.querySelector('body')?.classList.remove('jbl-mode', 'information-open', 'context-link-open');
       const clonedContextSplit = clone.querySelector('.context-link-split');
       const clonedContextShell = clonedContextSplit?.querySelector('.site-shell');
@@ -3239,15 +3717,12 @@
       const filterPanel = state.panel === 'filter' ? `<section class="jbl-filter-panel" aria-label="문항 필터"><h2 class="jbl-filter-title">필터</h2><div class="jbl-filter-grid"><div class="jbl-filter-item"><label for="jbl-filter-year">연도</label><select id="jbl-filter-year" class="jbl-select" data-jbl-filter-year><option value="">전체 연도</option>${years.map(year => `<option value="${year}" ${String(state.filters.year) === String(year) ? 'selected' : ''}>${year}</option>`).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-lecture">강의명</label><select id="jbl-filter-lecture" class="jbl-select" data-jbl-filter-lecture><option value="">전체 강의</option>${lectureIds.map(id => { const course = byId(id); return `<option value="${id}" ${String(state.filters.lectureId) === String(id) ? 'selected' : ''}>${escapeHtml(course ? contentCourseText(course) : `${id}강`)}</option>`; }).join('')}</select></div><div class="jbl-filter-item"><label for="jbl-filter-professor">출제교수</label><select id="jbl-filter-professor" class="jbl-select" data-jbl-filter-professor><option value="">전체 교수</option>${professors.map(professor => `<option value="${escapeHtml(professor)}" ${state.filters.professor === professor ? 'selected' : ''}>${escapeHtml(professor)} 교수</option>`).join('')}</select></div><div class="jbl-filter-item"><label>즐겨찾기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-favorites ${state.filters.favoritesOnly ? 'checked' : ''} /> 즐겨찾기한 문제만 보기</label><label class="jbl-favorite-filter"><input type="checkbox" data-jbl-filter-wrong ${state.filters.wrongOnly ? 'checked' : ''} /> 틀린 문항만 보기</label></div></div><p class="jbl-filter-summary">전체 ${jblQuestions.length}문항 중 ${questions.length}문항 표시${state.randomOrder.length ? ' · 랜덤 순서' : ''}</p>${state.filters.wrongOnly ? '<div class="jbl-wrong-session"><span>다시 맞힌 문항은 다음 복습부터 제외됩니다.</span><button type="button" data-wrong-restart>남은 오답으로 다시 시작</button></div>' : ''}</section>` : '';
       const settingsPanel = state.panel === 'settings' ? `<section class="jbl-filter-panel" aria-label="JBL 설정"><h2 class="jbl-filter-title">설정</h2><div class="jbl-settings-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-random>문항 랜덤 표시</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-reset>초기화</button><button class="jbl-btn jbl-btn-sub" type="button" data-jbl-exit>강의 화면</button><button class="jbl-btn jbl-save-btn" type="button" data-jbl-save-files>현재 파일 저장</button></div></section>` : '';
       target.innerHTML = `<div class="jbl-wrap"><section class="jbl-panel jbl-topbar"><div class="jbl-top-actions">${linkedMode ? `<button class="jbl-btn jbl-btn-sub" type="button" data-jbl-linked-back>← 돌아가기</button>` : `<button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'filter' ? 'active' : ''}" type="button" data-jbl-panel="filter" aria-expanded="${state.panel === 'filter'}">필터</button><button class="jbl-btn jbl-btn-sub jbl-toolbar-btn ${state.panel === 'settings' ? 'active' : ''}" type="button" data-jbl-panel="settings" aria-expanded="${state.panel === 'settings'}">설정</button>`}<button class="jbl-btn jbl-btn-primary" type="button" data-jbl-home>홈으로</button></div><div class="jbl-jump-box"><label for="jbl-jump" style="font-size:14px;font-weight:800;color:#475569">문제 번호 이동</label><input id="jbl-jump" type="text" inputmode="numeric" placeholder="예: 472" /><button class="jbl-btn jbl-btn-primary" type="button" data-jbl-jump>이동</button></div></section>${linkedMode ? '' : filterPanel}${linkedMode ? '' : settingsPanel}<div data-jbl-root></div></div><div class="jbl-bottom-nav"><div class="jbl-bottom-inner">${navMarkup(state, questions)}</div></div>`;
-      const infoButton = document.createElement('button');
-      infoButton.className = 'information-button';
-      infoButton.type = 'button';
-      infoButton.dataset.informationOpen = '';
-      infoButton.setAttribute('aria-label', '업데이트 현황 보기');
-      infoButton.setAttribute('aria-haspopup', 'dialog');
-      infoButton.title = '업데이트 현황';
-      infoButton.textContent = 'i';
-      target.querySelector('.jbl-top-actions').append(infoButton);
+      const themeButton = document.createElement('button');
+      themeButton.className = 'theme-button';
+      themeButton.type = 'button';
+      themeButton.dataset.themeToggle = '';
+      target.querySelector('.jbl-top-actions').append(themeButton);
+      window.DigestiveTheme.syncButtons();
       const rerender = renderJblStandalone;
       renderQuestionCard(target.querySelector('[data-jbl-root]'), questions, key, rerender);
       bindViewerNav(target.querySelector('.jbl-bottom-inner'), questions, key, rerender);
