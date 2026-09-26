@@ -1,0 +1,5550 @@
+{
+  "created": "2026-09-26T08:38:42.087Z",
+  "version": "ab59bf51e1703107",
+  "total": 168,
+  "baseline": {
+    "index.html": "c97c7d83e6d17a5f54f8a2123a688ad91e9ca3621661e649dae9675d9bf96f8d",
+    "jbl-data.js": "ee748c095039f2080f47e127631c2d69c7983be63c05f0be828b63ead77e783d",
+    "lecture-notes.js": "6defa3522b5fb7822a908ab176ca2102fbd9c8dc6eb3dbfe18cc348a3288e0e3",
+    "exam-2025.html": "9d31af5d762eef76dddd7334e6f73293bde6e89b3390a55a7ab4091fb93c7b7b",
+    "exam-2025.js": "2dbf88eb85a99f687eb7e09db3e341df796635358893a6a6deea99281d74c149",
+    "exam-2025-data.js": "9b8024db355aae1f6fdebd1c645f14209b6d316f839a1a45e509dcfe82e236d2",
+    "exam-2025-rules.js": "872a8b18ec4b013dbb6a0f17bae98c843b3dae9a8b144ac92f7ab6795ed23161"
+  },
+  "quota": [
+    {
+      "course": 1,
+      "title": "구강 및 소화관의 조직학",
+      "professor": "이은주",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 2,
+      "title": "구강 및 소화관의 조직학",
+      "professor": "이은주",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 3,
+      "title": "물질의 소화과정",
+      "professor": "한인옥",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 4,
+      "title": "영양소의 흡수",
+      "professor": "한인옥",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 5,
+      "title": "소화액의 분비",
+      "professor": "한인옥",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 6,
+      "title": "간, 이자의 조직학",
+      "professor": "이은주",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 7,
+      "title": "간, 이자의 조직학",
+      "professor": "이은주",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 8,
+      "title": "소화관의 운동 I",
+      "professor": "한인옥",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 10,
+      "title": "식도질환",
+      "professor": "김준미",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 11,
+      "title": "위질환",
+      "professor": "김준미",
+      "hours": 2,
+      "count": 5,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 12,
+      "title": "장질환",
+      "professor": "김준미",
+      "hours": 3,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 13,
+      "title": "상부위장관 병리실습",
+      "professor": "김준미",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 14,
+      "title": "하부위장관 병리실습",
+      "professor": "김준미",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 15,
+      "title": "간과 췌장의 기능",
+      "professor": "한인옥",
+      "hours": 3,
+      "count": 5,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 16,
+      "title": "간질환",
+      "professor": "김준미",
+      "hours": 3,
+      "count": 5,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 17,
+      "title": "간질환, 담도, 췌장, 횡경막 질환",
+      "professor": "김준미",
+      "hours": 3,
+      "count": 5,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 18,
+      "title": "소화기 증상학 및 진단적 접근법",
+      "professor": "이정남",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 19,
+      "title": "영상의학",
+      "professor": "김미영",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 20,
+      "title": "소아 소화기 질환 (I)",
+      "professor": "백남선",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 21,
+      "title": "소아 소화기 질환 (II)",
+      "professor": "최윤미",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 22,
+      "title": "위장관 내시경 진단 및 치료 (위장관 출혈 포함)",
+      "professor": "차보람",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 23,
+      "title": "혈관성 장질환",
+      "professor": "박호정",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 24,
+      "title": "항문질환",
+      "professor": "최문석",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 25,
+      "title": "소화성궤양치료제",
+      "professor": "강주희",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 26,
+      "title": "간질환 실습",
+      "professor": "김준미",
+      "hours": 2,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 27,
+      "title": "담도, 췌장, 횡경막질환 실습",
+      "professor": "김준미",
+      "hours": 1,
+      "count": 1,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 28,
+      "title": "소화관 감염성 질환",
+      "professor": "이세주",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 29,
+      "title": "염증성 장질환",
+      "professor": "백일현",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 30,
+      "title": "소장 및 대장 종양 (I) 원인, 빈도, 진단, 항암화학요법",
+      "professor": "백일현",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 31,
+      "title": "위염 및 소화성 궤양",
+      "professor": "차보람",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 32,
+      "title": "기능성 소화불량증",
+      "professor": "차보람",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 33,
+      "title": "핵의학 진단검사",
+      "professor": "유민영",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 34,
+      "title": "소화기질환의 방사선 중재적 치료",
+      "professor": "조순구",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 35,
+      "title": "식도질환 (식도암 포함)",
+      "professor": "차보람",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 36,
+      "title": "위 종양 (I) 원인, 빈도, 진단, 항암 화학요법",
+      "professor": "차보람",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 37,
+      "title": "식도질환의 외과적 치료",
+      "professor": "윤용한",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 38,
+      "title": "운동성 장질환 (IBS, 가성장폐색, 변비 포함)",
+      "professor": "권계숙",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 39,
+      "title": "설사",
+      "professor": "권계숙",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 40,
+      "title": "위장관 흡수장애",
+      "professor": "권계숙",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 41,
+      "title": "위장관 및 간 질환에서의 약동학",
+      "professor": "강주희",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 42,
+      "title": "설사, 변비, 연동장애의 약물치료",
+      "professor": "김채균",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 43,
+      "title": "소장 및 대장 종양 (II) 치료, 예후, 합병증",
+      "professor": "최선근",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 44,
+      "title": "간질환 환자의 진단법 / 빌리루빈 대사 질환",
+      "professor": "진영주",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 45,
+      "title": "간농양",
+      "professor": "진영주",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 46,
+      "title": "소화기계 방사선 종양학",
+      "professor": "이정심",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 47,
+      "title": "알코올성 간염",
+      "professor": "유정환",
+      "hours": 1,
+      "count": 2,
+      "bee": true,
+      "wiki": true
+    },
+    {
+      "course": 48,
+      "title": "대사이상 지방간질환 / 대사성 및 유전성 간질환",
+      "professor": "유정환",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 49,
+      "title": "급성간염 (바이러스성 / 약물중독성)",
+      "professor": "고윤미",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 50,
+      "title": "소화기 종양의 항암약물치료",
+      "professor": "이문희",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 51,
+      "title": "만성 바이러스 간염",
+      "professor": "이진우",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 52,
+      "title": "자가면역 간질환",
+      "professor": "이진우",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 53,
+      "title": "간경변 및 합병증",
+      "professor": "이진우",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 54,
+      "title": "간의 종양",
+      "professor": "김경덕",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 55,
+      "title": "급성 복증 (장폐색, 복부외상, 충수염, 게실염 포함)",
+      "professor": "김경덕",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 56,
+      "title": "위 종양 (II) 치료, 예후, 합병증",
+      "professor": "오승종",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": false
+    },
+    {
+      "course": 57,
+      "title": "복막 및 복벽 질환 (탈장포함)",
+      "professor": "서지현",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 58,
+      "title": "간 담관계의 치료약물",
+      "professor": "김채균",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 59,
+      "title": "담낭 및 담도질환 (PSC 포함)",
+      "professor": "정석",
+      "hours": 2,
+      "count": 3,
+      "bee": true,
+      "wiki": false
+    },
+    {
+      "course": 60,
+      "title": "담도 종양",
+      "professor": "신우영",
+      "hours": 2,
+      "count": 3,
+      "bee": false,
+      "wiki": true
+    },
+    {
+      "course": 61,
+      "title": "췌장암",
+      "professor": "이돈행",
+      "hours": 1,
+      "count": 2,
+      "bee": false,
+      "wiki": false
+    },
+    {
+      "course": 62,
+      "title": "췌장염, 췌장종양",
+      "professor": "이돈행",
+      "hours": 3,
+      "count": 5,
+      "bee": false,
+      "wiki": false
+    }
+  ],
+  "images": [
+    {
+      "question": "mock-2-1",
+      "from": "assets/lecture-02-practical-0831/p09-img01.jpg",
+      "to": "assets/mock-2026/figure-002-01-1.jpg",
+      "hash": "3a692b5df7a4292419ccfa53f0dfc9e17840c28ea0b914ce3a58dddd14595700",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-2-2",
+      "from": "assets/lecture-02-practical-0831/p17-img01.jpg",
+      "to": "assets/mock-2026/figure-002-02-1.jpg",
+      "hash": "0026b3973f79b9c9456f9c5ae9c68830ca00cd74d27bfb6a9dd6727811ec3c51",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-2-3",
+      "from": "assets/lecture-02-practical-0831/p22-img01.jpg",
+      "to": "assets/mock-2026/figure-002-03-1.jpg",
+      "hash": "723d3278dcca8f7448120b294f95fdbd5da23b043c907368703e05bae2031b1a",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-7-1",
+      "from": "assets/lecture-07-practical-v2/p04-img01.jpg",
+      "to": "assets/mock-2026/figure-007-01-1.jpg",
+      "hash": "adac71f5bbb808ef14968f673e1d0f4c82512b7b4af5d4c3465f6a1f7414dd46",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-7-2",
+      "from": "assets/lecture-07-practical-v2/p06-img01.jpg",
+      "to": "assets/mock-2026/figure-007-02-1.jpg",
+      "hash": "86aa82374cb6df7b98791169da4cf0825f8be9a9e20201698448f319fd61a536",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-7-3",
+      "from": "assets/lecture-07-practical-v2/p14-img01.jpg",
+      "to": "assets/mock-2026/figure-007-03-1.jpg",
+      "hash": "2ad8a3c0b57de22e2dad318d440804383503015d5f9e4ef5b8ec09d1d11eaccd",
+      "wikiImage": true
+    },
+    {
+      "question": "mock-18-2",
+      "from": "2025_소화기_문항별_사진/2025_086_02.png",
+      "to": "assets/mock-2026/figure-018-02-1.png",
+      "hash": "c5bc40ca75b5f3ad7af0540e4b0155f977526b6c6eba9f81c49b0d20c8116da2",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-1",
+      "from": "2025_소화기_문항별_사진/2025_023_01.png",
+      "to": "assets/mock-2026/figure-019-01-1.png",
+      "hash": "93d6e538a940a1b02b6c9cd6f2f175a1664890baa3fd18657821ea2fe6558945",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-2",
+      "from": "2025_소화기_문항별_사진/2025_024_01.png",
+      "to": "assets/mock-2026/figure-019-02-1.png",
+      "hash": "a7453668a0cebadb4ff543700d44b6ec41df5438b2b00301d1806a84248d9e2c",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-2",
+      "from": "2025_소화기_문항별_사진/2025_024_02.png",
+      "to": "assets/mock-2026/figure-019-02-2.png",
+      "hash": "0546ac6d2e27b4dc22efcc1920598c864c477ec726f35f14a0b3fa1985943aed",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-2",
+      "from": "2025_소화기_문항별_사진/2025_024_03.png",
+      "to": "assets/mock-2026/figure-019-02-3.png",
+      "hash": "610adf59dc620902f9e402d07d62c72295f0de3f1374ecd6efc0d16249a39949",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-3",
+      "from": "2025_소화기_문항별_사진/2025_025_restored_01.jpg",
+      "to": "assets/mock-2026/figure-019-03-1.jpg",
+      "hash": "ad86475c5afe48734c3084b0ed1d623cf885093f062fcbe952bd7c1ddd43903f",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-19-3",
+      "from": "2025_소화기_문항별_사진/2025_025_restored_02.jpg",
+      "to": "assets/mock-2026/figure-019-03-2.jpg",
+      "hash": "fce9e7919a1e6fb27217dee810d6e37000778c8a7a2555f8ef978e00a7371d49",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-23-2",
+      "from": "2025_소화기_문항별_사진/2025_051_01.jpg",
+      "to": "assets/mock-2026/figure-023-02-1.jpg",
+      "hash": "403eaf1643af0323c77e15ed1805718069c08fd806f4fcc384ab507ab7faa1f5",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-24-2",
+      "from": "2025_소화기_문항별_사진/2025_125_01.jpg",
+      "to": "assets/mock-2026/figure-024-02-1.jpg",
+      "hash": "00a4618dca82e8c60f0ed6ec86c4684a29131c50143204fd83dcfec2a38fcbb1",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-24-3",
+      "from": "2025_소화기_문항별_사진/2025_126_01.png",
+      "to": "assets/mock-2026/figure-024-03-1.png",
+      "hash": "d623a90e053a01b3994a3f7ade48d0ec3906c6317993cd1e641f9b4df00614aa",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-28-2",
+      "from": "assets/lecture-28-infectious-2026/j805-abdominal-xray.jpg",
+      "to": "assets/mock-2026/figure-028-02-1.jpg",
+      "hash": "61247f1eb51938b72b9731f829ba0918dc86ed95252739d07db6d53f2e0f2aa9",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-28-2",
+      "from": "assets/lecture-28-infectious-2026/j805-pseudomembranous-colitis.jpg",
+      "to": "assets/mock-2026/figure-028-02-2.jpg",
+      "hash": "672e787056d5fec9948bf5fcc4425b12fae61b7db3405e316788f278b4a1a04e",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-29-1",
+      "from": "2025_소화기_문항별_사진/2025_057_01.png",
+      "to": "assets/mock-2026/figure-029-01-1.png",
+      "hash": "bbc8b2a9afed4ccd6343412ba1bf749e8e8cd3314349f3e8639c0e8b5a746189",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-29-2",
+      "from": "2023_소화기_문항별_사진/2023_official_p21_01.jpg",
+      "to": "assets/mock-2026/figure-029-02-1.jpg",
+      "hash": "187ba29b98208c8d0d1a058b2c802d2e4fadd7965932b36d46a43f2c83759886",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-30-1",
+      "from": "2025_소화기_문항별_사진/2025_059_01.png",
+      "to": "assets/mock-2026/figure-030-01-1.png",
+      "hash": "bcfd643af7f3fdecccbe52a2fb71cd3c0cf92dbf8f4bf7374a78573ed04ad30d",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-33-2",
+      "from": "2025_소화기_문항별_사진/2025_067_01.png",
+      "to": "assets/mock-2026/figure-033-02-1.png",
+      "hash": "b2a84b407dbaae04edde46554df68822e2408a25676b9e039cb176cdb98be91c",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-43-3",
+      "from": "user attachment; deterministic label-only edit",
+      "to": "assets/mock-2026/figure-043-03-1.png",
+      "hash": "b9cbfddb8ca30ba22ca5cc3eb06a2d6e28a6eda6a48be90e5d61af643993443e",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-45-2",
+      "from": "2022_소화기_문항별_사진/2022_002_01.png",
+      "to": "assets/mock-2026/figure-045-02-1.png",
+      "hash": "d7b4a1d292443c62f04c8da48637e914629af9e1013d218673291b68d8145fe8",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-55-1",
+      "from": "2025_소화기_문항별_사진/2025_017_01.jpg",
+      "to": "assets/mock-2026/figure-055-01-1.jpg",
+      "hash": "707af6ab4db2c5d4abf1c19f956f75679b8b655c30db1f871f01b40432c56411",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-62-2",
+      "from": "2023_소화기_문항별_사진/60.png",
+      "to": "assets/mock-2026/figure-062-02-1.png",
+      "hash": "6ec659033cf2c994bc5d63d178c225429296271966dd428e733f048c2abedd7e",
+      "wikiImage": false
+    },
+    {
+      "question": "mock-13-1",
+      "from": "assets/lecture-13-upper-gi-practical/p1-erosion-01-original.jpg",
+      "to": "assets/mock-2026/figure-013-01-2.jpg",
+      "hash": "76eb9d37797329f0b3ceeecd7bcc371ebaf0309f100f9ca155b311a5c15e4db9",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-13-2",
+      "from": "assets/lecture-13-upper-gi-practical/p1-adenocarcinoma-04-original.jpg",
+      "to": "assets/mock-2026/figure-013-02-2.jpg",
+      "hash": "975f23f53f6e1ec3b6982c5305a3fba05c38cc37817d5f3393a670fc951e5366",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-13-3",
+      "from": "assets/lecture-13-upper-gi-practical/p1-scc-03-original.jpg",
+      "to": "assets/mock-2026/figure-013-03-2.jpg",
+      "hash": "842a8d67c6789dd713965885043fee3aa938e5baa7819017b856465623cfa24f",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-14-1",
+      "from": "assets/lecture-14-lower-gi-practical/appendix-02-original.jpg",
+      "to": "assets/mock-2026/figure-014-01-2.jpg",
+      "hash": "93b6b4a701ddca7920a68f16fa1efbd5992c394e9f149c65f9eaa1dc7266cdc0",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-14-2",
+      "from": "assets/lecture-14-lower-gi-practical/diverticulitis-01-original.jpg",
+      "to": "assets/mock-2026/figure-014-02-2.jpg",
+      "hash": "bca28fb57e57e7944187a6af7d8e7626c85fdb96e9d1eea685f492fb6c87657e",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-14-3",
+      "from": "assets/lecture-14-lower-gi-practical/hemorrhoid-03-original.jpg",
+      "to": "assets/mock-2026/figure-014-03-2.jpg",
+      "hash": "0d27e6a2708b6d44a7ca4e83f39a26c38a024f696902548c2a945f40d49b3d62",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-26-1",
+      "from": "assets/lecture-26-liver-practical/hemangioma-05-original.jpg",
+      "to": "assets/mock-2026/figure-026-01-2.jpg",
+      "hash": "ef70d021de87fd2f16c66173edb3c5884c3c6982a35948424c4b8037664733c4",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-26-2",
+      "from": "assets/lecture-26-liver-practical/hbv-a-01-original.jpg",
+      "to": "assets/mock-2026/figure-026-02-2.jpg",
+      "hash": "27a46a614ec0c0db6685ae96c03f51756f0881001660ac8eef2d505e15f9ef72",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-27-1",
+      "from": "assets/lecture-27-biliary-pancreas-practical/serous-cystadenoma-02-original.jpg",
+      "to": "assets/mock-2026/figure-027-01-2.jpg",
+      "hash": "f3bcffeaf42ec6ac2d2fd951e2ed724df3154babd009b3ff9cd5b2b99a4b8b33",
+      "wikiImage": true,
+      "originalAuthored": true
+    },
+    {
+      "question": "mock-30-3",
+      "from": "assets/lecture-30-colon-2026/fap-colon.jpg",
+      "to": "assets/mock-2026/figure-030-03-10.jpg",
+      "wikiImage": true,
+      "hash": "1c092a76d73f99bfd1794cd1ed73492cb80503e76ca3c3c73423550d04d2f6d9",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-35-1",
+      "from": "assets/lecture-35-esophagus-2026/slide-125-pair.jpg",
+      "to": "assets/mock-2026/figure-035-01-10.jpg",
+      "wikiImage": true,
+      "hash": "db36befb43a2badabe8059fb75d6bab8aba89128529c93bb44c653ebf2cfe03e",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-22-3",
+      "from": "2022_소화기_문항별_사진/2022_official28_q347_figures.jpg",
+      "to": "assets/mock-2026/figure-022-03-10.jpg",
+      "wikiImage": false,
+      "hash": "a20aa4e5bcf7ea96d8a795f94c0a96c92110ee5aff9cee2da28804bb292ef757",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-36-1",
+      "from": "assets/lecture-36-gastric-tumor-2026/benign-lipoma-endoscopy-p13.jpg",
+      "to": "assets/mock-2026/figure-036-01-10.jpg",
+      "wikiImage": true,
+      "hash": "7eef020e11316a8bd636cd3a78c2247571951bea9480310140dc13ab710e84ab",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-36-1",
+      "from": "assets/lecture-36-gastric-tumor-2026/benign-lipoma-cushion-p13.jpg",
+      "to": "assets/mock-2026/figure-036-01-11.jpg",
+      "wikiImage": true,
+      "hash": "e4a71ebd9c4b4a78a2d92f25f9874117891766ead4f3c852000fa4ade3cadc1e",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-36-1",
+      "from": "assets/lecture-36-gastric-tumor-2026/benign-lipoma-eus-p13.jpg",
+      "to": "assets/mock-2026/figure-036-01-12.jpg",
+      "wikiImage": true,
+      "hash": "f8bd03eae7e596633b5512e4757314c656829544e0a6a527f48acb8972a5a778",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-31-1",
+      "from": "assets/lecture-22-endoscopy-2026/ulcer-scar-red.jpg",
+      "to": "assets/mock-2026/figure-031-01-10.jpg",
+      "wikiImage": true,
+      "hash": "fb2b0496d2b82ad7b2506392e565392be5536fd658a09393867705cc85a96270",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-31-1",
+      "from": "assets/lecture-22-endoscopy-2026/ulcer-scar-white.jpg",
+      "to": "assets/mock-2026/figure-031-01-11.jpg",
+      "wikiImage": true,
+      "hash": "035289f4e59cbfbe82af646f5baf3741dfa6a18cdd696e9f3205ee80a03d790a",
+      "visuallyReviewed": true,
+      "unmodifiedOriginal": true
+    },
+    {
+      "question": "mock-23-1",
+      "from": "2025_소화기_문항별_사진/2025_050_01.png",
+      "to": "2025_소화기_문항별_사진/2025_050_01.png",
+      "hash": "46e76344d3077062a59ae9fd0ac3f907ed5cea18598abdbed2692bf466cb16c1",
+      "wikiImage": false,
+      "originalJ": 51
+    },
+    {
+      "question": "mock-10-1",
+      "from": "assets/lecture-10-esophagus-pathology/herpes-esophagitis-histology.jpg",
+      "to": "assets/mock-2026/figure-010-01-1.jpg",
+      "hash": "a65499c303457060cfc2b643ef3d9275a702ae1b86ba7c2716d2fc1bc697c17a",
+      "wikiImage": true,
+      "label": "A"
+    },
+    {
+      "question": "mock-10-1",
+      "from": "assets/lecture-10-esophagus-pathology/cmv-esophagitis-histology.jpg",
+      "to": "assets/mock-2026/figure-010-01-2.jpg",
+      "hash": "e5b207a1b1851153c0751a4ce46d53a3bb069dba63892ec38e6ee6c3832d6342",
+      "wikiImage": true,
+      "label": "B"
+    }
+  ],
+  "questions": [
+    {
+      "display": 1,
+      "id": "mock-25-1",
+      "lecture": 25,
+      "professor": "강주희",
+      "J": 697,
+      "refs": [
+        697
+      ],
+      "year": 2020,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "H. pylori 음성 소화성궤양 환자에게 omeprazole을 매일 투여하였다. 혈중 약물 농도가 크게 감소한 뒤에도 위산 분비 억제가 지속되었다. 이 현상을 가장 잘 설명하는 것은?",
+      "images": [],
+      "transformation": "2020 J697의 반감기–작용 시간 구별을 5지선다 기전 판단형으로 변형",
+      "sections": [
+        "PPI는 왜 반감기보다 오래 작용하는가",
+        "Sulfenamide와 비가역적 disulfide bond"
+      ]
+    },
+    {
+      "display": 2,
+      "id": "mock-25-2",
+      "lecture": 25,
+      "professor": "강주희",
+      "J": 439,
+      "refs": [
+        439
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "Aluminum hydroxide와 magnesium hydroxide가 포함된 제산제를 복용하는 환자가 경구 fluoroquinolone을 같은 시각에 복용하기 시작하였다. 항생제의 흡수 감소를 가장 잘 설명하는 기전은?",
+      "images": [],
+      "transformation": "2021 J439의 상호작용 약물 목록을 동시 복용 시 흡수 저하의 기전을 묻는 문항으로 변형",
+      "sections": [
+        "제산제의 상호작용은 흡수 단계에서 시작한다"
+      ]
+    },
+    {
+      "display": 3,
+      "id": "mock-41-1",
+      "lecture": 41,
+      "professor": "강주희",
+      "J": 394,
+      "refs": [
+        394
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "지용성 약물 X가 간에서 친수성 대사체 M으로 전환되었다. 간세포에서 담즙 쪽으로 M이 배출되는 속도를 측정하니, M의 농도가 높아질수록 배출 속도가 증가하다가 일정 수준에서 포화되었다. 이 과정에 대한 설명으로 가장 옳은 것은?",
+      "images": [],
+      "transformation": "2022 공식 오답30 J394의 방향성 담즙 배출에 포화 관찰을 더해 수송체의 특성을 묻도록 변형",
+      "sections": [
+        "확산과 수송체를 구분하는 기준"
+      ]
+    },
+    {
+      "display": 4,
+      "id": "mock-41-2",
+      "lecture": 41,
+      "professor": "강주희",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "59세 여자가 간경변과 portal-systemic shunt로 추적 관찰 중이다. 발작성 상심실성 빈맥의 재발 예방을 위해 경구 verapamil을 정상 간기능 성인의 통상 용량으로 시작하였다. 수일 뒤 어지럼이 발생하였고 맥박은 46회/분, 혈압은 88/54 mmHg였다. AST·ALT는 정상 범위였으며 신기능은 유지되어 있었다. 병용 약물 변화나 과량 복용은 없었다. Verapamil은 간 추출률이 높은 약물로 경구 초회통과소실이 크며, 주로 간에서 대사된다. 간경변에서는 간혈류·간세포 대사능과 문맥혈의 이동 경로가 달라질 수 있다. 이 유해반응에 대한 설명과 이후 용량 조절 원칙으로 가장 옳은 것은?",
+      "images": [],
+      "transformation": "기존 4번의 간경변·약물 유해반응 증례 형식을 참고하되, Wiki의 verapamil·first-pass·청소율·축적 원칙을 통합한 신규 문항",
+      "sections": [
+        "간혈류와 shunt, 경구 생체이용률",
+        "AST·ALT·albumin만으로 청소율을 정하지 않는다",
+        "High risk 약물은 낮게 시작하고 축적을 본다"
+      ]
+    },
+    {
+      "display": 5,
+      "id": "mock-25-3",
+      "lecture": 25,
+      "professor": "강주희",
+      "J": 137,
+      "refs": [
+        137
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "임신 12주인 여성이 식후 소화불량, 속쓰림과 흑색변으로 내원하였다. 위내시경에서 0.5 cm 크기의 위궤양이 관찰되었고 조직검사에서 악성세포는 없었으나 H. pylori 검사는 양성이었다. 이 환자의 위궤양 치료에 사용해서는 안 되는 약물은?",
+      "images": []
+    },
+    {
+      "display": 6,
+      "id": "mock-41-3",
+      "lecture": 41,
+      "professor": "강주희",
+      "J": 284,
+      "refs": [
+        284
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간에서 99% 대사되는 약물을 투여받는 간경변 환자에서 약물 청소율을 감소시키는 요인이 아닌 것은?",
+      "images": []
+    },
+    {
+      "display": 7,
+      "id": "mock-49-1",
+      "lecture": 49,
+      "professor": "고윤미",
+      "J": 91,
+      "refs": [
+        91
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "60세 남자가 최근 한 달간 허리 통증 때문에 한약을 복용한 뒤 황달과 소양증으로 내원하였다. 간수치가 상승했으나 바이러스 검사와 담도 폐쇄 검사에서 원인을 찾지 못했다. 우선 치료는?",
+      "images": []
+    },
+    {
+      "display": 8,
+      "id": "mock-49-3",
+      "lecture": 49,
+      "professor": "고윤미",
+      "J": 92,
+      "refs": [
+        92
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "기존 만성 간질환이 없던 여자가 다이어트 보조제 복용 후 수 주 내 황달과 의식 혼동, flapping tremor로 내원하였다. 총 bilirubin은 20 mg/dL, PT INR은 2.0이었고, 급성 바이러스 간염 검사는 음성이었다. 진단은?",
+      "images": []
+    },
+    {
+      "display": 9,
+      "id": "mock-49-2",
+      "lecture": 49,
+      "professor": "고윤미",
+      "J": 93,
+      "refs": [
+        93
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "27세 남자가 발열·근육통 후 소화불량으로 내원하였다. IgM anti-HAV(+), HBsAg(−), anti-HBs(+), anti-HCV(−)이며 의식은 명료하고 PT INR은 정상이다. 적절한 치료는?",
+      "images": []
+    },
+    {
+      "display": 10,
+      "id": "mock-38-1",
+      "lecture": 38,
+      "professor": "권계숙",
+      "J": 8,
+      "refs": [
+        8
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "식도의 운동질환에 대한 설명 중 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 11,
+      "id": "mock-38-2",
+      "lecture": 38,
+      "professor": "권계숙",
+      "J": 9,
+      "refs": [
+        9
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 변비의 원인에 따른 치료법이다. 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 12,
+      "id": "mock-38-3",
+      "lecture": 38,
+      "professor": "권계숙",
+      "J": 10,
+      "refs": [
+        10
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "74세 여자가 3개월 이상 지속되는 소화불량과 복부 팽만, 변비 등을 주소로 내원하였다. 특별한 과거력은 없었고 위 및 대장내시경 검사에서 구조적 이상은 보이지 않으나 위 내용물의 저류가 관찰되었다. 이와 같이 위 출구 폐쇄 없이 만성적인 위저류 또는 장 운동 저하를 일으키는 질환이 아닌 것은?",
+      "images": []
+    },
+    {
+      "display": 13,
+      "id": "mock-39-1",
+      "lecture": 39,
+      "professor": "권계숙",
+      "J": 11,
+      "refs": [
+        11
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 고위험군에 따른 설사의 원인에 대한 설명이다. 옳지 않은 조합은?",
+      "images": []
+    },
+    {
+      "display": 14,
+      "id": "mock-39-2",
+      "lecture": 39,
+      "professor": "권계숙",
+      "J": 12,
+      "refs": [
+        12
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "87세 여성 환자가 3일 전부터 발생한 발열과 복통을 주소로 내원했다. 하루 5~7차례의 수양성 설사를 한다. 다음 중 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 15,
+      "id": "mock-40-1",
+      "lecture": 40,
+      "professor": "권계숙",
+      "J": 13,
+      "refs": [
+        13
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "흡수 장애 환자의 진단 방법에 대한 설명으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 16,
+      "id": "mock-40-2",
+      "lecture": 40,
+      "professor": "권계숙",
+      "J": 291,
+      "refs": [
+        291
+      ],
+      "year": 2022,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "담즙성 설사와 지방성 설사에 대한 설명으로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 17,
+      "id": "mock-55-1",
+      "lecture": 55,
+      "professor": "김경덕",
+      "J": 17,
+      "refs": [
+        17
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "복부 수술력이 있는 환자의 장폐색 영상이다. 혈역학적으로 안정적이며 장허혈·교액·복막염 소견은 없다. 초기 처치로 적절한 것은?",
+      "images": [
+        "assets/mock-2026/figure-055-01-1.jpg"
+      ]
+    },
+    {
+      "display": 18,
+      "id": "mock-55-2",
+      "lecture": 55,
+      "professor": "김경덕",
+      "J": 18,
+      "refs": [
+        18
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "임신 11주 임산부가 급성 복통으로 입원했다. 검사 결과 충수돌기염으로 진단되었을 때 해야 하는 조치는?",
+      "images": []
+    },
+    {
+      "display": 19,
+      "id": "mock-54-3",
+      "lecture": 54,
+      "professor": "김경덕",
+      "J": 20,
+      "refs": [
+        20
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "만성 B형간염이 있는 65세 남자가 단일 2 cm HCC로 진단되었다. Child–Pugh A이고 혈관침범·전이는 없으며 위치는 경피적 소작에 적합하다. 동반 질환 때문에 간절제술은 어렵고 간이식 적응증은 아니다. 적절한 근치적 국소치료는?",
+      "images": []
+    },
+    {
+      "display": 20,
+      "id": "mock-54-1",
+      "lecture": 54,
+      "professor": "김경덕",
+      "J": 22,
+      "refs": [
+        22
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간샘종 (hepatic adenoma)에 대한 설명으로 맞는 것은?",
+      "images": []
+    },
+    {
+      "display": 21,
+      "id": "mock-54-2",
+      "lecture": 54,
+      "professor": "김경덕",
+      "J": 294,
+      "refs": [
+        294
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "hemangioma에 대해 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 22,
+      "id": "mock-19-1",
+      "lecture": 19,
+      "professor": "김미영",
+      "J": 23,
+      "refs": [
+        23
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "간종양 환자의 역동적 조영 CT이다. 가장 가능성 높은 진단은?",
+      "images": [
+        "assets/mock-2026/figure-019-01-1.png"
+      ]
+    },
+    {
+      "display": 23,
+      "id": "mock-19-2",
+      "lecture": 19,
+      "professor": "김미영",
+      "J": 24,
+      "refs": [
+        24
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "cholangiopancreatography 소견이다. 진단은?",
+      "images": [
+        "assets/mock-2026/figure-019-02-1.png",
+        "assets/mock-2026/figure-019-02-2.png",
+        "assets/mock-2026/figure-019-02-3.png"
+      ]
+    },
+    {
+      "display": 24,
+      "id": "mock-19-3",
+      "lecture": 19,
+      "professor": "김미영",
+      "J": 803,
+      "refs": [],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "직장암의 골반 MRI 사진이다. 이 검사 범위에서 직접 평가하기 어려운 것은?",
+      "images": [
+        "assets/mock-2026/figure-019-03-1.jpg",
+        "assets/mock-2026/figure-019-03-2.jpg"
+      ]
+    },
+    {
+      "display": 25,
+      "id": "mock-10-1",
+      "lecture": 10,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "두 환자의 식도 생검 사진 A와 B이다. 원인 병원체를 옳게 짝지은 것은?",
+      "images": [
+        "assets/mock-2026/figure-010-01-1.jpg",
+        "assets/mock-2026/figure-010-01-2.jpg"
+      ]
+    },
+    {
+      "display": 26,
+      "id": "mock-11-1",
+      "lecture": 11,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "H. pylori의 urease를 억제하면 가장 직접적으로 감소하는 것은?",
+      "images": []
+    },
+    {
+      "display": 27,
+      "id": "mock-11-2",
+      "lecture": 11,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "두개내압 상승과 관련하여 발생하는 급성 소화성 궤양은?",
+      "images": []
+    },
+    {
+      "display": 28,
+      "id": "mock-12-1",
+      "lecture": 12,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "수양성 설사 환자 A는 subepithelial collagen band가 18 μm, B는 collagen band 비후 없이 표면상피 100개당 lymphocyte가 30개였다. 진단은?",
+      "images": []
+    },
+    {
+      "display": 29,
+      "id": "mock-11-5",
+      "lecture": 11,
+      "professor": "김준미",
+      "J": 259,
+      "refs": [
+        259
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "Lauren 분류의 diffuse type 위암에 대한 설명으로 옳지 않은 것은?",
+      "images": [],
+      "format": "choice"
+    },
+    {
+      "display": 30,
+      "id": "mock-16-1",
+      "lecture": 16,
+      "professor": "김준미",
+      "J": 37,
+      "refs": [
+        37
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Massive hepatic necrosis의 대표적 육안소견은?",
+      "images": [],
+      "format": "choice"
+    },
+    {
+      "display": 31,
+      "id": "mock-16-2",
+      "lecture": 16,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "HBV·HDV coinfection보다 HDV superinfection의 만성화 위험이 높은 이유는?",
+      "images": []
+    },
+    {
+      "display": 32,
+      "id": "mock-16-3",
+      "lecture": 16,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간세포의 feathery degeneration과 가장 관련 깊은 것은?",
+      "images": []
+    },
+    {
+      "display": 33,
+      "id": "mock-17-1",
+      "lecture": 17,
+      "professor": "김준미",
+      "J": 39,
+      "refs": [
+        39
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Hepatoblastoma의 주 호발 연령은?",
+      "images": [],
+      "format": "choice"
+    },
+    {
+      "display": 34,
+      "id": "mock-17-2",
+      "lecture": 17,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "Hepatocellular adenoma에서 LFABP 소실(A), CTNNB1 exon 3 변이(B)가 확인되었다. 아형과 악성화 위험을 옳게 연결한 것은?",
+      "images": []
+    },
+    {
+      "display": 35,
+      "id": "mock-17-3",
+      "lecture": 17,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "감염성 담석 형성에서 세균의 β-glucuronidase가 촉진하는 반응은?",
+      "images": []
+    },
+    {
+      "display": 36,
+      "id": "mock-17-4",
+      "lecture": 17,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "Pancreas divisum에서 췌장 대부분의 주된 배액 경로는?",
+      "images": []
+    },
+    {
+      "display": 37,
+      "id": "mock-17-5",
+      "lecture": 17,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "췌장의 solid-pseudopapillary neoplasm에서 pseudopapilla가 형성되는 기전은?",
+      "images": []
+    },
+    {
+      "display": 38,
+      "id": "mock-16-4",
+      "lecture": 16,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "간염에서 관찰되는 Councilman body에 대한 설명으로 옳은 것은?",
+      "images": []
+    },
+    {
+      "display": 39,
+      "id": "mock-11-3",
+      "lecture": 11,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "벽세포 자가항체 양성인 무위산증 환자에서 위 NET이 발생하였다. 종양의 기원 세포는?",
+      "images": []
+    },
+    {
+      "display": 40,
+      "id": "mock-11-4",
+      "lecture": 11,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "위 폴립에서 구불구불한 foveola, 낭성 샘확장, 염증성 기질이 보이고 dysplasia는 없다. 진단은?",
+      "images": []
+    },
+    {
+      "display": 41,
+      "id": "mock-12-2",
+      "lecture": 12,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "관절통·흡수장애 환자의 소장 고유판에 PAS 양성·diastase resistant foamy macrophage가 보인다. Acid-fast stain은 음성이다. 진단은?",
+      "images": []
+    },
+    {
+      "display": 42,
+      "id": "mock-16-5",
+      "lecture": 16,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "신생아 간생검의 giant cell transformation에 대한 설명으로 옳은 것은?",
+      "images": []
+    },
+    {
+      "display": 43,
+      "id": "mock-13-1",
+      "lecture": 13,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "위 생검 사진이다. Erosion과 ulcer를 구분하는 기준은?",
+      "images": [
+        "assets/mock-2026/figure-013-01-2.jpg"
+      ]
+    },
+    {
+      "display": 44,
+      "id": "mock-10-2",
+      "lecture": 10,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "식도 주변 낭종에 pseudostratified ciliated columnar epithelium과 낭벽의 연골이 보인다. 진단은?",
+      "images": []
+    },
+    {
+      "display": 45,
+      "id": "mock-13-2",
+      "lecture": 13,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "위 종양의 조직 사진이다. 관찰되는 소견은?",
+      "images": [
+        "assets/mock-2026/figure-013-02-2.jpg"
+      ]
+    },
+    {
+      "display": 46,
+      "id": "mock-13-3",
+      "lecture": 13,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "식도 종양의 조직 사진이다. 이 분화를 뒷받침하는 소견은?",
+      "images": [
+        "assets/mock-2026/figure-013-03-2.jpg"
+      ]
+    },
+    {
+      "display": 47,
+      "id": "mock-14-1",
+      "lecture": 14,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "충수절제 표본이다. 급성충수염의 핵심 진단 소견은?",
+      "images": [
+        "assets/mock-2026/figure-014-01-2.jpg"
+      ]
+    },
+    {
+      "display": 48,
+      "id": "mock-14-2",
+      "lecture": 14,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "결장 절제 표본이다. 사진의 게실을 구성하는 층은?",
+      "images": [
+        "assets/mock-2026/figure-014-02-2.jpg"
+      ]
+    },
+    {
+      "display": 49,
+      "id": "mock-14-3",
+      "lecture": 14,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "항문 병변의 혈관 내 조직 사진이다. 관찰되는 변화는?",
+      "images": [
+        "assets/mock-2026/figure-014-03-2.jpg"
+      ]
+    },
+    {
+      "display": 50,
+      "id": "mock-26-1",
+      "lecture": 26,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간 조직 사진의 큰 공간에 대한 설명으로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-026-01-2.jpg"
+      ]
+    },
+    {
+      "display": 51,
+      "id": "mock-26-2",
+      "lecture": 26,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "간세포의 ground-glass change를 보이는 사진이다. 축적 물질과 위치는?",
+      "images": [
+        "assets/mock-2026/figure-026-02-2.jpg"
+      ]
+    },
+    {
+      "display": 52,
+      "id": "mock-27-1",
+      "lecture": 27,
+      "professor": "김준미",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "췌장 낭성 병변의 조직 사진이다. 가장 적절한 진단은?",
+      "images": [
+        "assets/mock-2026/figure-027-01-2.jpg"
+      ]
+    },
+    {
+      "display": 53,
+      "id": "mock-42-1",
+      "lecture": 42,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "다음 변비 치료제에 대한 설명으로 옳지 않은 것은?",
+      "images": [],
+      "format": "drug-description-matching",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [
+        "Bulk-forming과 Stool softener",
+        "Osmotic laxatives",
+        "Stimulant laxatives",
+        "말초 μ-opioid 길항제와 5-HT₄ 작용제"
+      ],
+      "styleReferenceNumbers": [
+        686,
+        888
+      ]
+    },
+    {
+      "display": 54,
+      "id": "mock-58-1",
+      "lecture": 58,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Somatostatin 유사체로 정맥류 출혈 치료와 VIPoma의 설사 조절에 사용하며, 지방변과 담석이 생길 수 있는 약물은?",
+      "images": [],
+      "format": "drug-name-identification",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [],
+      "styleReferenceNumbers": [
+        266,
+        387
+      ]
+    },
+    {
+      "display": 55,
+      "id": "mock-42-2",
+      "lecture": 42,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 항구토제로 분류되지 않는 약물은?",
+      "images": [],
+      "format": "drug-category-exclusion",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [
+        "구역·구토 치료제",
+        "5-HT₃ 차단과 5-HT₄ 자극"
+      ],
+      "styleReferenceNumbers": [
+        598
+      ]
+    },
+    {
+      "display": 56,
+      "id": "mock-58-2",
+      "lecture": 58,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간성뇌증에 사용하는 약물에 대한 설명으로 옳은 것은?",
+      "images": [],
+      "format": "drug-description-matching",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [],
+      "styleReferenceNumbers": [
+        177,
+        488,
+        886
+      ]
+    },
+    {
+      "display": 57,
+      "id": "mock-58-3",
+      "lecture": 58,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음 약물과 주의해야 할 이상반응의 연결로 옳지 않은 것은?",
+      "images": [],
+      "format": "drug-adverse-effect-matching",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [],
+      "styleReferenceNumbers": [
+        300,
+        432,
+        390
+      ]
+    },
+    {
+      "display": 58,
+      "id": "mock-42-3",
+      "lecture": 42,
+      "professor": "김채균",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "다음 IBD 치료제에 대한 설명으로 옳지 않은 것은?",
+      "images": [],
+      "format": "drug-description-matching",
+      "transformation": "기출의 약물 암기·매칭형 형식을 참고하여 새 선지 조합으로 재출제",
+      "sections": [
+        "5-ASA: 성분과 전달 부위를 함께 기억하기",
+        "Azathioprine과 6-MP",
+        "Methotrexate",
+        "Anti-TNF: 네 이름과 Certolizumab의 구조"
+      ],
+      "styleReferenceNumbers": [
+        175,
+        397,
+        487
+      ]
+    },
+    {
+      "display": 59,
+      "id": "mock-23-1",
+      "lecture": 23,
+      "professor": "박호정",
+      "J": 51,
+      "refs": [
+        51
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "70세 남자가 갑자기 시작된 복통으로 응급실에 내원하였다. 혈압은 130/90 mmHg, 심박수 110회/분, 호흡수 20회/분, 체온 37.8℃였다. 수술받은 적은 없었으며, 건강검진에서 부정맥을 진단받고 약을 복용하던 중 최근 치과치료 때문에 일주일간 중단하였다고 한다. 내원하여 시행한 CT는 다음과 같다. 이 환자의 복통을 일으킨 기저 질환으로 가장 가능성이 높은 것은?",
+      "images": [
+        "2025_소화기_문항별_사진/2025_050_01.png"
+      ]
+    },
+    {
+      "display": 60,
+      "id": "mock-23-2",
+      "lecture": 23,
+      "professor": "박호정",
+      "J": 52,
+      "refs": [
+        52
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "최근 급성 췌장염을 앓은 환자가 복통으로 내원하여 CT에서 장간막정맥 혈전증이 확인되었다. 혈역학적으로 안정적이고 복막염·장괴사 소견은 없다. 치료로 적절하지 않은 것은?",
+      "images": [
+        "assets/mock-2026/figure-023-02-1.jpg"
+      ]
+    },
+    {
+      "display": 61,
+      "id": "mock-20-1",
+      "lecture": 20,
+      "professor": "백남선",
+      "J": 15,
+      "refs": [
+        15
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "생후 3주 남아가 반복되는 비담즙성 구토로 내원하였다. 토한 뒤 다시 먹으려 한다. 의심되는 질환에 대한 설명으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 62,
+      "id": "mock-20-2",
+      "lecture": 20,
+      "professor": "백남선",
+      "J": 279,
+      "refs": [
+        279
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "4세 남아가 갑자기 혈변을 보았다. 복통·설사·구토는 없고 복부의 압통이나 만져지는 종괴도 없다. 이소성 위점막을 가진 병변이 의심될 때 시행할 검사는?",
+      "images": []
+    },
+    {
+      "display": 63,
+      "id": "mock-20-3",
+      "lecture": 20,
+      "professor": "백남선",
+      "J": 280,
+      "refs": [
+        280
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "10세 남아가 6개월간 설사와 복통, 체중 감소 및 성장 지연을 보였다. 검사에서 Crohn disease로 진단되었다. 관해 유도와 영양·성장 회복을 함께 기대할 수 있는 치료는?",
+      "images": []
+    },
+    {
+      "display": 64,
+      "id": "mock-29-1",
+      "lecture": 29,
+      "professor": "백일현",
+      "J": 57,
+      "refs": [
+        57
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "내시경 사진의 질환에 대한 설명으로 옳은 것을 고르시오.",
+      "images": [
+        "assets/mock-2026/figure-029-01-1.png"
+      ]
+    },
+    {
+      "display": 65,
+      "id": "mock-30-1",
+      "lecture": 30,
+      "professor": "백일현",
+      "J": 59,
+      "refs": [
+        59
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음 그림은 대장용종절제술 중 하나를 나타낸 그림이다. 맞는 설명은?",
+      "images": [
+        "assets/mock-2026/figure-030-01-1.png"
+      ]
+    },
+    {
+      "display": 66,
+      "id": "mock-30-2",
+      "lecture": 30,
+      "professor": "백일현",
+      "J": 60,
+      "refs": [
+        60
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Adenoma–carcinoma sequence에서 adenoma가 carcinoma로 진행하는 후기 단계에 중요한 종양억제유전자 변이는?",
+      "images": []
+    },
+    {
+      "display": 67,
+      "id": "mock-29-2",
+      "lecture": 29,
+      "professor": "백일현",
+      "J": 261,
+      "refs": [
+        261
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "36세 남자가 복통과 설사를 주소로 외래에 내원하였다. 최근 체중이 감소하고 야간에 발열이 있었으며, 가끔 가래가 나온다고 했으나 흡연 중으로 큰 변화는 없는 것 같다고 했다. 대장내시경에서 회맹판 주위에 다음과 같은 염증 소견이 관찰되었다. 이 질환에 대한 설명 중 옳은 것을 고르시오.",
+      "images": [
+        "assets/mock-2026/figure-029-02-1.jpg"
+      ]
+    },
+    {
+      "display": 68,
+      "id": "mock-29-3",
+      "lecture": 29,
+      "professor": "백일현",
+      "J": 303,
+      "refs": [],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "염증성 장질환의 치료약에 대한 설명 중 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 69,
+      "id": "mock-30-3",
+      "lecture": 30,
+      "professor": "백일현",
+      "J": 305,
+      "refs": [
+        305
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "22세 남자가 반복되는 혈변으로 대장내시경을 받았다. 사진과 같은 양상이 대장 전반에서 관찰되었으며 알려진 가족력은 없다. 이 소견에서 우선 의심할 질환과 이후 평가에 대한 설명으로 가장 적절한 것은?",
+      "transformation": "FAP 관리 항목을 외워 고르던 조합형을 내시경 소견에서 FAP를 의심하고 CD·Lynch와 구분하는 사진 문제로 전환.",
+      "sections": [
+        "FAP와 AFAP",
+        "FAP에서 대장과 상부위장관을 함께 감시하는 이유"
+      ],
+      "images": [
+        "assets/mock-2026/figure-030-03-10.jpg"
+      ]
+    },
+    {
+      "display": 70,
+      "id": "mock-57-1",
+      "lecture": 57,
+      "professor": "서지현",
+      "J": 61,
+      "refs": [
+        61
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "Hesselbach’s triangle과 서혜부탈장에 대한 설명으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 71,
+      "id": "mock-57-2",
+      "lecture": 57,
+      "professor": "서지현",
+      "J": 337,
+      "refs": [
+        337
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "서혜부 탈장의 특징으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 72,
+      "id": "mock-60-1",
+      "lecture": 60,
+      "professor": "신우영",
+      "J": 71,
+      "refs": [
+        71
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 담도(담관)에 대하여 잘못 기술한 것은?",
+      "images": []
+    },
+    {
+      "display": 73,
+      "id": "mock-60-2",
+      "lecture": 60,
+      "professor": "신우영",
+      "J": 263,
+      "refs": [
+        263
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "담낭암의 위험 인자가 아닌 것은?",
+      "images": []
+    },
+    {
+      "display": 74,
+      "id": "mock-60-3",
+      "lecture": 60,
+      "professor": "신우영",
+      "J": 645,
+      "refs": [
+        645
+      ],
+      "year": 2020,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Distal CBD adenocarcinoma의 수술법으로 알맞은 것은?",
+      "images": []
+    },
+    {
+      "display": 75,
+      "id": "mock-56-1",
+      "lecture": 56,
+      "professor": "오승종",
+      "J": 63,
+      "refs": [
+        63
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "위암 근치적 절제 원칙에 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 76,
+      "id": "mock-56-2",
+      "lecture": 56,
+      "professor": "오승종",
+      "J": 64,
+      "refs": [
+        64
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "위 종양 절제 시 림프절 전이 staging을 위해 제거해야 할 최소 림프절의 개수는?",
+      "images": []
+    },
+    {
+      "display": 77,
+      "id": "mock-56-3",
+      "lecture": 56,
+      "professor": "오승종",
+      "J": 233,
+      "refs": [
+        233
+      ],
+      "year": 2023,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "73세 남성이 다량의 흑색변으로 내원하였다. 위내시경과 조직검사에서 위식도접합부의 poorly differentiated adenocarcinoma가 확인되었고 임상 병기는 2기 이상이었다. 가장 적절한 수술법은?",
+      "images": []
+    },
+    {
+      "display": 78,
+      "id": "mock-33-1",
+      "lecture": 33,
+      "professor": "유민영",
+      "J": 66,
+      "refs": [
+        66
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "GI bleeding scan에 대해 옳은 것만 고른 것은?",
+      "images": [],
+      "format": "combination",
+      "transformation": "저속 출혈 검출 능력을 잠혈 선별검사 적응증으로 확대하는 함정과 역행성 장내 이동을 결합",
+      "sections": [
+        "표지 적혈구가 혈관 밖으로 나오는 곳을 찾는다",
+        "저속 출혈을 찾는 능력과 증상의 시간차",
+        "양성 판독은 새 집적·증가·장내 이동을 묶는다"
+      ]
+    },
+    {
+      "display": 79,
+      "id": "mock-33-2",
+      "lecture": 33,
+      "professor": "유민영",
+      "J": 67,
+      "refs": [
+        67
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "우상복부 통증으로 내원한 환자가 4시간 금식 후 Tc-99m DISIDA scan을 시행하였다. 다음 영상과 검사에 관한 설명 중 옳은 것만 고른 것은?",
+      "images": [
+        "assets/mock-2026/figure-033-02-1.png"
+      ],
+      "format": "combination",
+      "transformation": "DISIDA의 세망내피계·간세포 구별, 만성 질환 기능 평가, 검사 전 지방식과 충만 후 수축 자극의 구별",
+      "sections": [
+        "담즙의 길과 DISIDA",
+        "검사 전 금식과 검사 후 수축 자극",
+        "급성 담낭염은 담낭관의 길이 막힌 상태로 읽기",
+        "어디에 쓰고 무엇과 구별하는가"
+      ]
+    },
+    {
+      "display": 80,
+      "id": "mock-47-1",
+      "lecture": 47,
+      "professor": "유정환",
+      "J": 68,
+      "refs": [
+        68
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "중증 알코올성간염으로 prednisolone 치료를 시작한 환자이다. 이후 치료에 대한 설명으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 81,
+      "id": "mock-47-2",
+      "lecture": 47,
+      "professor": "유정환",
+      "J": 191,
+      "refs": [
+        191
+      ],
+      "year": 2023,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "매일 소주 한 병을 마시는 45세 남성이 황달과 복부 불편감으로 내원하였다. 중증 알코올성간염으로 판단되어 스테로이드 치료를 고려할 때, 치료 전에 고려할 사항이 아닌 것은?",
+      "images": []
+    },
+    {
+      "display": 82,
+      "id": "mock-48-1",
+      "lecture": 48,
+      "professor": "유정환",
+      "J": 192,
+      "refs": [
+        192
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "NAFLD에 대한 설명으로 옳지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 83,
+      "id": "mock-48-2",
+      "lecture": 48,
+      "professor": "유정환",
+      "J": 318,
+      "refs": [
+        318
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "환자에게서 kayser fleischer ring 보임. 다음 중 환자의 질환에 대한 설명으로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 84,
+      "id": "mock-37-1",
+      "lecture": 37,
+      "professor": "윤용한",
+      "J": 1,
+      "refs": [
+        1
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [],
+      "modelAnswer": "문합부 누출의 처치가 쉽고 담즙 역류가 적다. 넓은 근위부 절제연을 확보할 수 있으며 문합부를 방사선 조사 범위 밖에 둘 수 있다.",
+      "topic": "식도암의 수술적인 치료에서 식도절제술 시행 후 식도와 conduit의 봉합을 경부에서 진행하는 수술 방법에 대한 장점에 대해서 기술하세요.",
+      "images": []
+    },
+    {
+      "display": 85,
+      "id": "mock-37-2",
+      "lecture": 37,
+      "professor": "윤용한",
+      "J": 133,
+      "refs": [
+        133
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [],
+      "modelAnswer": "Hiatus, Intrathoracic, Substernal, Subcutaneous",
+      "topic": "식도 절제술 후 식도 대용 장기를 목 부위에서 문합할 때 많이 사용하는 이동 경로를 순서대로 쓰시오.",
+      "images": []
+    },
+    {
+      "display": 86,
+      "id": "mock-62-1",
+      "lecture": 62,
+      "professor": "이돈행",
+      "J": 112,
+      "refs": [
+        112
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "췌장의 신경내분비 종양에 대해 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 87,
+      "id": "mock-61-1",
+      "lecture": 61,
+      "professor": "이돈행",
+      "J": 134,
+      "refs": [
+        134
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [],
+      "modelAnswer": "EUS-guided FNA",
+      "topic": "췌장두부암의 조직학적 진단에 가장 유용한 검사법은 무엇인가?(주관식)",
+      "images": []
+    },
+    {
+      "display": 88,
+      "id": "mock-62-2",
+      "lecture": 62,
+      "professor": "이돈행",
+      "J": 179,
+      "refs": [
+        179
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "알코올성 급성 췌장염을 앓은 지 6주가 지난 40세 남자의 CT이다. 내부 고형 괴사 물질 없이 벽으로 둘러싸인 액체 저류가 보인다. 진단은?",
+      "images": [
+        "assets/mock-2026/figure-062-02-1.png"
+      ]
+    },
+    {
+      "display": 89,
+      "id": "mock-62-3",
+      "lecture": 62,
+      "professor": "이돈행",
+      "J": 180,
+      "refs": [
+        180
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "만성 췌장염의 치료로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 90,
+      "id": "mock-62-4",
+      "lecture": 62,
+      "professor": "이돈행",
+      "J": 181,
+      "refs": [
+        181
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "급성 췌장염의 치료에 대한 설명이다. 옳은 것을 고르시오",
+      "images": []
+    },
+    {
+      "display": 91,
+      "id": "mock-62-5",
+      "lecture": 62,
+      "professor": "이돈행",
+      "J": 182,
+      "refs": [
+        182
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "만성 췌장염의 합병증에 대한 설명이다 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 92,
+      "id": "mock-61-2",
+      "lecture": 61,
+      "professor": "이돈행",
+      "J": 515,
+      "refs": [
+        515
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "67세 남자가 2달간 10kg의 체중 감소와 황달을 주소로 내원하였다. 우상복부에서 무통성의 담낭이 촉지되었고 복부 전산화단층 촬영에서 췌장두부의 종괴와 총담관의 확장이 관찰되었다. 이 환자에게 의심되는 진단에 대한 설명으로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 93,
+      "id": "mock-50-3",
+      "lecture": 50,
+      "professor": "이문희",
+      "J": 77,
+      "refs": [],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 면역관문억제제 반응을 예측하는 대표적인 양성 바이오마커로 보기 어려운 것은?",
+      "images": []
+    },
+    {
+      "display": 94,
+      "id": "mock-50-1",
+      "lecture": 50,
+      "professor": "이문희",
+      "J": 78,
+      "refs": [
+        78
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 암 관련 유전자와 표적치료제의 조합으로 효과가 밝혀지지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 95,
+      "id": "mock-50-2",
+      "lecture": 50,
+      "professor": "이문희",
+      "J": 199,
+      "refs": [
+        199
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "47세 남자 환자가 삼킴곤란으로 내원하여 식도암 (편평상피암)으로 진단되었다. 여러 가지 방사선학적 검사상 T3N1M0로 진단되었다. 우선 어떤 치료를 해야 할까?",
+      "images": []
+    },
+    {
+      "display": 96,
+      "id": "mock-28-1",
+      "lecture": 28,
+      "professor": "이세주",
+      "J": 804,
+      "refs": [
+        804
+      ],
+      "year": 2026,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "16세 남자가 2일 전부터 발생한 구토로 내원했다. 전날부터는 물 같은 설사를 하루 5회 했다. 배꼽 주변 통증이 간간이 있다고 한다. 진찰상 복부 반동 압통은 없었고 체온은 38.0도였다. 학교 친구들 중에서도 설사하는 친구가 있다고 했다. 혈액검사에서 백혈구 13,000/mm³(중성구 25%, 림프구 70%), 혈색소 13.5 g/dL, 혈소판 180,000/mm³, 크레아티닌 0.7 mg/dL였다. 가장 가능성 높은 원인은?",
+      "images": []
+    },
+    {
+      "display": 97,
+      "id": "mock-28-2",
+      "lecture": 28,
+      "professor": "이세주",
+      "J": 805,
+      "refs": [
+        805
+      ],
+      "year": 2026,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "69세 여자가 5일 전부터 하루 3차례 이상 설사를 하고 배가 아파 병원에 왔다. 1개월 전 폐렴으로 입원 치료 후 요양병원 입원 중이었다. 혈압 110/50 mmHg, 맥박 110회/분, 호흡 18회/분, 체온 38.5도였고 배 전체에 압통이 있었다. 혈액검사에서 백혈구 23,500/mm³, 혈색소 12.5 g/dL, 혈소판 160,000/mm³, 크레아티닌 1.8 mg/dL였다. 대장내시경 및 복부 X선 사진은 다음과 같으며, 복부 영상에서 심한 대장 확장과 ileus가 확인되었다. 치료는?",
+      "images": [
+        "assets/mock-2026/figure-028-02-1.jpg",
+        "assets/mock-2026/figure-028-02-2.jpg"
+      ]
+    },
+    {
+      "display": 98,
+      "id": "mock-2-1",
+      "lecture": 2,
+      "professor": "이은주",
+      "J": 79,
+      "refs": [],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 혀의 조직 사진이다. 유두 측벽의 난원형 구조에 대한 설명 중 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-002-01-1.jpg"
+      ]
+    },
+    {
+      "display": 99,
+      "id": "mock-1-1",
+      "lecture": 1,
+      "professor": "이은주",
+      "J": 83,
+      "refs": [
+        83
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "소화관의 조직학적 설명 중 옳은 것?",
+      "images": []
+    },
+    {
+      "display": 100,
+      "id": "mock-7-2",
+      "lecture": 7,
+      "professor": "이은주",
+      "J": 84,
+      "refs": [],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음 간 조직 사진에서 portal tract를 구성하는 구조의 조합으로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-007-02-1.jpg"
+      ]
+    },
+    {
+      "display": 101,
+      "id": "mock-6-1",
+      "lecture": 6,
+      "professor": "이은주",
+      "J": 110,
+      "refs": [
+        110
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "bile이 만들어져서 가장 먼저 지나는 관은 어디인가?",
+      "images": []
+    },
+    {
+      "display": 102,
+      "id": "mock-1-2",
+      "lecture": 1,
+      "professor": "이은주",
+      "J": 201,
+      "refs": [
+        201
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "소화관에 대한 것 중 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 103,
+      "id": "mock-1-3",
+      "lecture": 1,
+      "professor": "이은주",
+      "J": 519,
+      "refs": [
+        519
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "혀의 조직학적 특성에 관한 설명 중 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 104,
+      "id": "mock-2-2",
+      "lecture": 2,
+      "professor": "이은주",
+      "J": 523,
+      "refs": [],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 위의 조직 사진이다. 이 부위의 세포와 분비물의 연결로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-002-02-1.jpg"
+      ]
+    },
+    {
+      "display": 105,
+      "id": "mock-2-3",
+      "lecture": 2,
+      "professor": "이은주",
+      "J": 524,
+      "refs": [],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 소장의 조직 사진이다. 점막하층에서 관찰되는 구조의 이름과 기능으로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-002-03-1.jpg"
+      ]
+    },
+    {
+      "display": 106,
+      "id": "mock-7-1",
+      "lecture": 7,
+      "professor": "이은주",
+      "J": 526,
+      "refs": [],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 침샘의 조직 사진이다. 이 샘에 대한 설명으로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-007-01-1.jpg"
+      ]
+    },
+    {
+      "display": 107,
+      "id": "mock-7-3",
+      "lecture": 7,
+      "professor": "이은주",
+      "J": 530,
+      "refs": [],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 이자의 조직 사진이다. 샘꽈리 중심부의 밝은 세포에 대한 설명으로 옳은 것은?",
+      "images": [
+        "assets/mock-2026/figure-007-03-1.jpg"
+      ]
+    },
+    {
+      "display": 108,
+      "id": "mock-6-2",
+      "lecture": 6,
+      "professor": "이은주",
+      "J": 899,
+      "refs": [
+        899
+      ],
+      "year": 2019,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "췌장 세포와 분비물의 연결로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 109,
+      "id": "mock-6-3",
+      "lecture": 6,
+      "professor": "이은주",
+      "J": 900,
+      "refs": [
+        900
+      ],
+      "year": 2019,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "고전적 간소엽에서 혈액과 담즙의 흐름에 대한 설명으로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 110,
+      "id": "mock-18-1",
+      "lecture": 18,
+      "professor": "이정남",
+      "J": 49,
+      "refs": [
+        49
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "82세 여자가 하루 전 발생한 복통을 주소로 내원하여 병력 청취와 신체 검진을 하였다. 추가적으로 시행한 검사 소견까지 종합하여 최종 급성담낭염이 진단되었다. 다음 중 급성 담낭염에서 보일 수 있는 특징으로 옳은 것을 고르면?",
+      "images": []
+    },
+    {
+      "display": 111,
+      "id": "mock-18-2",
+      "lecture": 18,
+      "professor": "이정남",
+      "J": 87,
+      "refs": [
+        87
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "위의 그림이 설명하는 신체검사에 대한 설명 중 옳은 것을 고르시오.",
+      "images": [
+        "assets/mock-2026/figure-018-02-1.png"
+      ]
+    },
+    {
+      "display": 112,
+      "id": "mock-46-1",
+      "lecture": 46,
+      "professor": "이정심",
+      "J": 89,
+      "refs": [
+        89
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "항문연 6 cm 위의 직장암에서 bulky mass와 다수의 국소 림프절 전이가 확인되었다. 원격전이는 없고 pMMR/MSS이며, 완전 장폐색이나 응급 감압이 필요한 상태는 아니다. 수술 전에 시행할 치료 전략으로 가장 적절한 것은?",
+      "images": []
+    },
+    {
+      "display": 113,
+      "id": "mock-46-2",
+      "lecture": 46,
+      "professor": "이정심",
+      "J": 90,
+      "refs": [
+        90
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "60대 남자가 항문 출혈과 종괴감으로 내원하였다. 생검에서 항문관 squamous cell carcinoma로 진단되었고 원격전이는 없다. 표준 근치치료는?",
+      "images": []
+    },
+    {
+      "display": 114,
+      "id": "mock-52-1",
+      "lecture": 52,
+      "professor": "이진우",
+      "J": 50,
+      "refs": [
+        50
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "중년 여성, 가려움증 있는 환자. AMA(+),GGT,ALP 상승 등으로 PBC 소견 보임. 이 환자에게 콜레스테롤 담석이 생겨서 쓰일 수 있는 치료로 옳은 것을 고르시오.",
+      "images": []
+    },
+    {
+      "display": 115,
+      "id": "mock-53-1",
+      "lecture": 53,
+      "professor": "이진우",
+      "J": 74,
+      "refs": [
+        74
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "간경변 환자가 토혈로 내원하였다. 내시경에서 활동성 식도정맥류 출혈을 확인하여 결찰술을 시행하였다. 함께 사용할 약물은?",
+      "images": []
+    },
+    {
+      "display": 116,
+      "id": "mock-53-2",
+      "lecture": 53,
+      "professor": "이진우",
+      "J": 75,
+      "refs": [
+        75
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "C형간염 간경변 환자가 발열과 복부 불편감으로 내원하였다. 복수 백혈구 800/mm³, 호중구 50%이며 복강 내 천공이나 다른 감염원은 없다. 가장 적절한 진단은?",
+      "images": []
+    },
+    {
+      "display": 117,
+      "id": "mock-51-1",
+      "lecture": 51,
+      "professor": "이진우",
+      "J": 111,
+      "refs": [
+        111
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "50세 여자가 최근 피로감을 느껴 간검사를 위해 병원에 왔다. 환자의 어머니는 만성 B형 간염 환자이었고 환자는 30대에 B형 바이러스 간염으로 lamivudine을 약 1년 정도 복용하였다. 키는 160 cm, 체중은 54kg이었고 음주나 흡연은 하지 않았다. 약물 복용력, 당뇨 및 골다공증은 없었으나 10년 전부터 고혈압 약을 복용 중이다. 복부 초음파 검사에서 간에코의 거친 소견을 보였다. 다음은 내원 당시 시행한 혈액검사 결과이다. 이 환자에서 치료 약제는? 혈색소 12.1g/dL, 혈소판 160,000/mm3, 알부민 4.2 mg/dL, 총빌리루빈 1.1 mg/dL, 아스파르테이트아미노전달효소 84 JU/mL, 알라닌아미노전달효소 102 IU/mL, 알칼리인산분해효소 146 JU/L, 감마글루타밀전달효소 84 IU/L, 프로트롬빈시간(INR) 1.2, 크레아티닌 1.7 mg/dL, eGFR 35 mL/min/1.73 ml, HBsAg/Ab(+/-), HBeAg/Ab(-/+), HBV DNA 260,000 IU/mL",
+      "images": []
+    },
+    {
+      "display": 118,
+      "id": "mock-51-2",
+      "lecture": 51,
+      "professor": "이진우",
+      "J": 414,
+      "refs": [
+        414
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "55세 남자가 간기능 이상 소견으로 방문하였다. 환자는 30년 전 B형 간염을 진단받았으나 정기 추적 관찰하지 않았고, 최근 건강 검진에서 Anti-HCV Ab 양성으로 진단되었다. 술은 거의 마시지 않았으며, 다른 약물 복용력은 없었다. 초음파에서는 비장 종대 및 간경변증 소견을 보였으며, 혈액검사 소견은 다음과 같았다. 올바른 치료는? 백혈구 2,470/mm3, 혈색소 14.3g/dL, 혈소판 89,000/mm3, 알부민 3.6 mg/dL, 총빌리루빈 0.9 mg/dL, 아스파르테이트아미노전달효소 74 IU/mL, 알라닌아미노전달효소 98 IU/mL, 크레아티닌 0.6 mg/dL, 프로트롬빈시간(INR) 1.3, HBsAg/Ab(+/-), HBeAg/Ab(-/+), HBV DNA <15 IU/mL, HCV RNA 255,000 IU/mL, 알파태아단백 8.7 ng/mL",
+      "images": []
+    },
+    {
+      "display": 119,
+      "id": "mock-52-2",
+      "lecture": 52,
+      "professor": "이진우",
+      "J": 533,
+      "refs": [
+        533
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "46세 여자가 2주 전부터 피로감이 심해서 병원에 왔다. 술이나 약물 복용은 하지 않는다고 한다. 3년 전에 갑상샘염을 앓은 적이 있다. 키 160 cm, 몸무게 55 kg이고, 신체검사에서 간장과 비장종대 소견이 관찰되었다. 혈액검사에서 AST 698 IU/mL, ALT 565 IU/mL, ALP 125 IU/mL(참고치 35–130), 총빌리루빈 1.9 mg/dL, PT INR 1.5였다. IgM anti-HAV, HBsAg, anti-HBs, IgM anti-HBc, HCV RNA PCR은 모두 음성이었다. Anti-nuclear Ab는 1:160, IgG는 2,680 mg/dL(참고치 870–1,700)였으며, Anti-LKM1은 음성, pANCA는 양성이었다. 가장 의심되는 질환에 대한 설명으로 적합하지 않은 것은?",
+      "images": []
+    },
+    {
+      "display": 120,
+      "id": "mock-59-1",
+      "lecture": 59,
+      "professor": "정석",
+      "J": 130,
+      "refs": [
+        130
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1,
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "콜레스테롤 담석의 발생 기전으로 옳은 것을 모두 고르시오.",
+      "images": []
+    },
+    {
+      "display": 121,
+      "id": "mock-59-2",
+      "lecture": 59,
+      "professor": "정석",
+      "J": 131,
+      "refs": [
+        131
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3,
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 담낭담석 환자의 전형적인 담석 산통의 특징은 (옳은 것을 모두 고르시오.)",
+      "images": []
+    },
+    {
+      "display": 122,
+      "id": "mock-59-3",
+      "lecture": 59,
+      "professor": "정석",
+      "J": 132,
+      "refs": [
+        132
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2,
+        3,
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "다음 중 담낭절제술의 적응증으로 옳은 것을 모두 고르시오.",
+      "images": []
+    },
+    {
+      "display": 123,
+      "id": "mock-34-1",
+      "lecture": 34,
+      "professor": "조순구",
+      "J": 113,
+      "refs": [
+        113
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": true,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "PTBD 금기가 아닌 것은?",
+      "images": []
+    },
+    {
+      "display": 124,
+      "id": "mock-34-2",
+      "lecture": 34,
+      "professor": "조순구",
+      "J": 114,
+      "refs": [
+        114
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": true,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "TACE에 관해 옳은 것은?",
+      "images": []
+    },
+    {
+      "display": 125,
+      "id": "mock-44-1",
+      "lecture": 44,
+      "professor": "진영주",
+      "J": 80,
+      "refs": [
+        80
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "56세 여자가 몸이 노래지고 열이 나서 병원에 왔다. 최근 소변 색깔이 진해졌다고 한다. 눈이 노란 것 외에 간종대는 없었다. 검사실 소견에서 total bilirubin 6.6 mg/dL, direct bilirubin 5.5 mg/dL, AST/ALT=210/334 iu/L, ALP 1280iu/L, GGT 1379 iu/dL이었다. 다음으로 시행해야 할 검사는?",
+      "images": []
+    },
+    {
+      "display": 126,
+      "id": "mock-44-2",
+      "lecture": 44,
+      "professor": "진영주",
+      "J": 115,
+      "refs": [
+        115
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "32세 여자가 체중 감량을 위해 4일간 단식을 하던 중에 눈이 노래져서 병원에 왔다. 약물을 복용한 병력은 없었다. 간기능 검사상 AST 20, ALT 32, ALP 76이었고 총 빌리루빈은 4.6 mg/dL, 직접 빌리루빈은 0.6 mg/dL이었다. 소변 검사상 빌리루빈은 검출되지 않았으며 혈색소와 망상적혈구분율은 정상이다. 다음 중 가장 의심되는 질환은?",
+      "images": []
+    },
+    {
+      "display": 127,
+      "id": "mock-45-1",
+      "lecture": 45,
+      "professor": "진영주",
+      "J": 116,
+      "refs": [
+        116
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "간 농양에 대한 설명으로 맞는 내용은?",
+      "images": []
+    },
+    {
+      "display": 128,
+      "id": "mock-45-2",
+      "lecture": 45,
+      "professor": "진영주",
+      "J": 267,
+      "refs": [
+        267
+      ],
+      "year": 2022,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [],
+      "modelAnswer": "간농양(pyogenic liver abscess). 항생제 치료와 함께 경피적 카테터 배액술(percutaneous catheter drainage, PCD)을 고려한다.",
+      "topic": "당뇨병을 앓는 50세 환자가 발열과 우상복부 통증으로 내원하였다. 초음파와 CT는 다음과 같다. 진단명과 항생제 외에 함께 고려할 시술을 쓰시오.",
+      "images": [
+        "assets/mock-2026/figure-045-02-1.png"
+      ]
+    },
+    {
+      "display": 129,
+      "id": "mock-22-1",
+      "lecture": 22,
+      "professor": "차보람",
+      "J": 876,
+      "refs": [
+        876,
+        55
+      ],
+      "year": 2019,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 감염 소견이 없는 환자들의 내시경 전 예방적 항생제 계획이다. 수정해야 할 계획은?",
+      "transformation": "PEG라는 익숙한 정답을 그대로 고르는 대신, ERCP의 완전 배액과 불완전 배액을 나누었다. 이미 생긴 감염의 치료와 아직 감염이 없을 때의 예방은 다른 판단이다.",
+      "sections": [
+        "항생제는 모든 내시경에 필요한 것이 아니다"
+      ],
+      "images": []
+    },
+    {
+      "display": 130,
+      "id": "mock-22-2",
+      "lecture": 22,
+      "professor": "차보람",
+      "J": 670,
+      "refs": [
+        670,
+        56
+      ],
+      "year": 2020,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "심방세동으로 warfarin을 복용하는 환자에게 계획 ERCP를 시행하려 한다. INR은 치료 범위이고 최근 뇌졸중·VTE나 기계판막은 없다. Sphincterotomy 없이 담관 스텐트만 삽입하는 계획 A에서, sphincterotomy 후 담석을 제거하는 계획 B로 변경하였다. 이 변경에 대한 판단으로 가장 적절한 것은?",
+      "transformation": "공식 기출의 저위험 담도 스텐트에 sphincterotomy라는 조건을 추가했다. 검사 이름이 아니라 실제 술기, 그리고 출혈 위험과 혈전 위험을 각각 읽어야 한다.",
+      "sections": [
+        "약을 끊기 전에 시술 위험과 혈전 위험을 나눈다"
+      ],
+      "images": []
+    },
+    {
+      "display": 131,
+      "id": "mock-35-1",
+      "lecture": 35,
+      "professor": "차보람",
+      "J": 119,
+      "refs": [
+        119
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "식도 병변을 관찰한 뒤 색소를 적용하였다. 사진 A는 적용 전, B는 적용 후이다. 이 검사 소견을 가장 적절하게 설명한 것은?",
+      "transformation": "발문에서 갈색 정상 점막과 비염색 병변을 미리 설명하던 문장을 제거하고 실제 염색 전후 사진을 판독하도록 변경.",
+      "sections": [
+        "Lugol staining의 원리",
+        "림프절 전이와 내시경 절제의 한계"
+      ],
+      "images": [
+        "assets/mock-2026/figure-035-01-10.jpg"
+      ]
+    },
+    {
+      "display": 132,
+      "id": "mock-35-2",
+      "lecture": 35,
+      "professor": "차보람",
+      "J": 218,
+      "refs": [
+        218,
+        758
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "지속적인 heartburn으로 세 환자를 평가하였다. 모두 PPI 중단 상태에서 검사했으며, 증상을 설명할 내시경 병변과 주요 식도운동질환은 배제되었다. 환자 A의 AET는 8.0%, SI는 10%, SAP는 40%였다. 환자 B의 AET는 2.0%, SI는 70%, SAP는 99%였고, 환자 C의 AET는 2.0%, SI는 10%, SAP는 40%였다. 진단을 가장 적절하게 연결한 것은?",
+      "transformation": "정상 산 노출·양성 SAP 한 증례를 세 증례로 확장했다. 산 노출과 증상 연관성은 독립된 축이며, 음성 SI·SAP가 비정상 AET를 정상으로 바꾸지는 않는다.",
+      "sections": [
+        "산 노출과 증상 연관성의 해석",
+        "Reflux hypersensitivity와 Functional heartburn"
+      ],
+      "images": []
+    },
+    {
+      "display": 133,
+      "id": "mock-35-3",
+      "lecture": 35,
+      "professor": "차보람",
+      "J": 220,
+      "refs": [
+        220,
+        449
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "연하곤란과 비심인성 흉통이 있는 두 환자에게 HRM을 시행하였다. 내시경에서 기계적 폐쇄는 없었고 opioid 사용력도 없었다. 검사실의 IRP 정상 상한은 15 mmHg였다. 환자 A는 IRP 28 mmHg이고 정상 peristalsis가 없었으며, 삼킴의 60%에서 DL 3.8초의 premature contraction이 나타났다. 환자 B는 IRP 10 mmHg이고 삼킴의 60%에서 DL 3.8초의 premature contraction이 나타났다. 두 환자의 premature contraction DCI는 모두 800 mmHg·s·cm였다. 진단과 치료의 원리를 가장 적절하게 설명한 것은?",
+      "transformation": "Bird-beak와 corkscrew 단어만 대조하던 문항을 IRP와 DL의 분기 문제로 바꿨다. 조기 수축이 같아도 출구 이완 여부가 다르면 진단이 달라진다.",
+      "sections": [
+        "Chicago classification의 분기",
+        "Achalasia",
+        "Achalasia의 치료와 POEM",
+        "Distal esophageal spasm"
+      ],
+      "images": []
+    },
+    {
+      "display": 134,
+      "id": "mock-36-2",
+      "lecture": 36,
+      "professor": "차보람",
+      "J": 225,
+      "refs": [
+        225,
+        122
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "위에 국한된 stage IE MALT lymphoma 환자 두 명을 추적 관찰 중이다. 병기 평가에서 다른 부위 침범은 없었고 출혈·천공도 없었다. H. pylori 양성이었던 환자 A는 제균 후 4주로, 증상과 내시경 소견은 호전 중이지만 생검에 일부 lymphoma가 남아 있어 감염 소실 확인과 추적 평가를 계획하고 있다. 환자 B는 제균 성공을 확인한 뒤 12개월 이상 관찰했으나 병변이 진행했고, 재평가에서도 위에 국한되어 있었다. 치료에 대한 판단으로 가장 적절한 것은?",
+      "transformation": "제균·병기 평가를 아는지에 그치지 않고, 치료 직후의 잔존과 충분한 관찰 후 진행을 구별하도록 시간 조건을 바꿨다.",
+      "sections": [
+        "MALT lymphoma: 제균이 종양 치료가 되는 경우"
+      ],
+      "images": []
+    },
+    {
+      "display": 135,
+      "id": "mock-32-1",
+      "lecture": 32,
+      "professor": "차보람",
+      "J": 255,
+      "refs": [
+        255,
+        505
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "29세 여자가 10개월 전 시작된 명치 불편감으로 내원하였다. 최근 3개월 동안 식후 더부룩함과 식사를 끝내기 어려운 조기 만복감이 주 4일, 명치 통증·화끈거림이 주 2일 나타나 업무와 식사를 방해한다. 최근 내시경에서 증상을 설명할 병변은 없고 H. pylori 음성이며 경고 증상도 없다. 설명과 생활습관 조정 후 약물치료를 시작할 때 가장 적절한 판단은?",
+      "transformation": "식후 증례의 정답 prokinetics를 그대로 외워 고르지 못하도록 EPS 증상과 정확한 주당 빈도를 함께 넣었다. 기간·불편감 조건을 충족시켜 기존 복원문항의 모호함은 없앴다.",
+      "sections": [
+        "식사 후 불편한 PDS와 통증이 중심인 EPS",
+        "PDS와 EPS의 치료 순서"
+      ],
+      "images": []
+    },
+    {
+      "display": 136,
+      "id": "mock-22-3",
+      "lecture": 22,
+      "professor": "차보람",
+      "J": 347,
+      "refs": [
+        347,
+        258,
+        671
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "다음은 서로 다른 소화성 궤양의 내시경 사진이다. 활동성 출혈이 없는 소견 중에서도 노출 혈관 때문에 고위험으로 판단하여 내시경 지혈을 시행해야 하는 사진은?",
+      "transformation": "공식 오답30의 같은 사진에서 최상위 재출혈 위험 대신 비출혈성 노출 혈관을 묻도록 발문의 방향을 변경.",
+      "sections": [
+        "Forrest 분류와 지혈 대상"
+      ],
+      "images": [
+        "assets/mock-2026/figure-022-03-10.jpg"
+      ]
+    },
+    {
+      "display": 137,
+      "id": "mock-36-1",
+      "lecture": 36,
+      "professor": "차보람",
+      "J": 456,
+      "refs": [
+        456,
+        350
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "무증상 환자에서 1.8 cm의 위 상피하병변을 발견하였다. 다음은 순서대로 내시경 관찰, 겸자로 눌렀을 때의 모습, EUS 영상이다. 세 소견을 종합한 진단과 접근으로 가장 적절한 것은?",
+      "transformation": "모든 SET를 GIST로 가정하기 쉬운 기출의 함정을 실제 지방종의 내시경·압박·EUS 사진 조합으로 변형.",
+      "sections": [
+        "지방종 · Lipoma",
+        "SET는 위치를 묘사하는 말이지, GIST라는 진단명이 아니다"
+      ],
+      "images": [
+        "assets/mock-2026/figure-036-01-10.jpg",
+        "assets/mock-2026/figure-036-01-11.jpg",
+        "assets/mock-2026/figure-036-01-12.jpg"
+      ]
+    },
+    {
+      "display": 138,
+      "id": "mock-36-3",
+      "lecture": 36,
+      "professor": "차보람",
+      "J": 459,
+      "refs": [
+        459,
+        665,
+        351
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "위암을 ESD로 일괄 절제하였다. 시술 전 EUS에서는 점막 또는 얕은 점막밑층 침윤이 의심되었고, CT에서 림프절·원격 전이는 확인되지 않았다. 절제 검체는 2.4 cm 크기의 분화형 선암으로, 점막근판 아래 300 μm까지 침윤하였다. 수평·수직 절제연은 음성이었으나 lymphatic invasion은 양성이었다. 최종 판단으로 가장 적절한 것은?",
+      "transformation": "검사명 EUS를 고르던 문제를 절제 후 판단으로 바꿨다. SM1·작은 크기·음성 절제연이라는 유리한 조건에 lymphatic invasion 한 가지를 추가하여 치료 결론을 바꾸었다.",
+      "sections": [
+        "EGC와 AGC를 가르는 것은 침윤 깊이",
+        "조기암이어도 모두 내시경 절제할 수는 없다"
+      ],
+      "images": []
+    },
+    {
+      "display": 139,
+      "id": "mock-31-1",
+      "lecture": 31,
+      "professor": "차보람",
+      "J": 783,
+      "refs": [
+        783,
+        347
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "위궤양 치료 후 추적한 두 환자의 내시경 사진이다. 첫 번째 사진을 A, 두 번째 사진을 B라고 할 때 치유 단계와 해석을 가장 적절하게 연결한 것은?",
+      "transformation": "치유 단계의 설명문을 지우고 적색·백색 반흔을 직접 판독하도록 구성. Forrest 분류를 섞은 선지로 단순 색 암기와 분류 축 혼동을 점검.",
+      "sections": [
+        "치유 단계: A1·A2·H1·H2·S1·S2"
+      ],
+      "images": [
+        "assets/mock-2026/figure-031-01-10.jpg",
+        "assets/mock-2026/figure-031-01-11.jpg"
+      ]
+    },
+    {
+      "display": 140,
+      "id": "mock-31-2",
+      "lecture": 31,
+      "professor": "차보람",
+      "J": 398,
+      "refs": [
+        398
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "난치성 궤양과 hypergastrinemia가 있는 두 환자를 평가하였다. 환자 A는 H. pylori 제균 후에도 원위 십이지장 궤양과 설사가 반복되었으며, 산 억제제 복용 중 fasting gastrin 300 pg/mL, 위내 pH 6.0이었다. 환자 B는 약물 영향을 검토한 상태에서 fasting gastrin 800 pg/mL, 위내 pH 1.0이었고 고칼슘혈증이 동반되었다. 가장 적절한 해석은?",
+      "transformation": "Gastrin을 측정한다는 기출 정답 다음 단계로 옮겼다. 높은 gastrin이 산 억제에 대한 보상인지, 산이 많은데도 높게 유지되는지를 구분한다.",
+      "sections": [
+        "Gastrin을 확인하고 종양을 찾는다",
+        "언제 보통의 PUD가 아니라고 생각할까"
+      ],
+      "images": []
+    },
+    {
+      "display": 141,
+      "id": "mock-32-2",
+      "lecture": 32,
+      "professor": "차보람",
+      "J": 505,
+      "refs": [
+        505,
+        255
+      ],
+      "year": 2021,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "기질적 질환을 배제한 FD 환자 두 명에게 초기 치료 후에도 증상이 남았다. 환자 A는 조금만 먹어도 배가 불러 식사를 마치기 어려웠다. 위 배출은 지연되지 않았으나 식후 위저부 이완이 감소해 있었다. 환자 B는 위 배출과 accommodation이 보존되어 있었지만, 적은 팽창 자극에도 명치 통증과 트림이 재현되었고 충분한 산 억제와 운동촉진제에도 통증이 지속되었다. 증상 기전과 치료의 연결로 가장 적절한 것은?",
+      "transformation": "공식 기출의 증상–기전 표를 거꾸로 적용하게 했다. 두 환자의 배출 기능은 같지만 음식 수용과 팽창 감각은 다르게 제시하여 치료 표적을 나누었다.",
+      "sections": [
+        "기전별 증상과 치료 연결",
+        "PDS와 EPS의 치료 순서"
+      ],
+      "images": []
+    },
+    {
+      "display": 142,
+      "id": "mock-31-3",
+      "lecture": 31,
+      "professor": "차보람",
+      "J": 136,
+      "refs": [
+        136,
+        349,
+        783
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "76세 남자가 심근경색 후 관상동맥 스텐트 시술을 받았고 항혈소판제를 복용 중이다. 과거 NSAID 관련 궤양 출혈이 있었으며 H. pylori 제균 성공을 확인했다. 통증 때문에 장기간 NSAID가 계속 필요한 상황에서 가장 적절한 치료 방침은?",
+      "transformation": "공식 오답30의 심혈관질환·NSAID 증례에 제균 성공이라는 조건을 추가했다. 위험인자 하나를 제거해도 남아 있는 NSAID·항혈소판제·출혈 과거력까지 없어지는 것은 아니다.",
+      "sections": [
+        "예방의 중심은 고위험군의 PPI",
+        "COX-1과 COX-2를 구별하는 이유",
+        "현재 궤양의 치료와 재발 예방은 다르다"
+      ],
+      "images": []
+    },
+    {
+      "display": 143,
+      "id": "mock-24-1",
+      "lecture": 24,
+      "professor": "최문석",
+      "J": 124,
+      "refs": [
+        124
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "젊은 여성 환자가 용변을 본 후 변기가 붉게 물드는 선홍색 출혈과 함께 항문이 튀어나와 내원하였다. 환자는 일어날 때 어지러움을 느낀다. 튀어나온 항문 조직은 손으로 밀어 넣으면 다시 들어간다. 이 환자의 질환의 진단과 Grade는?",
+      "images": []
+    },
+    {
+      "display": 144,
+      "id": "mock-24-2",
+      "lecture": 24,
+      "professor": "최문석",
+      "J": 125,
+      "refs": [
+        125
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "다음 그림의 a에 해당하는 fistula의 분류는?",
+      "images": [
+        "assets/mock-2026/figure-024-02-1.jpg"
+      ]
+    },
+    {
+      "display": 145,
+      "id": "mock-24-3",
+      "lecture": 24,
+      "professor": "최문석",
+      "J": 126,
+      "refs": [
+        126
+      ],
+      "year": 2025,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "30세 남자가 과로 및 음주 다음 날 항문 통증과 열감 및 심한 부종을 주소로 내원하였다. 담당 의사는 원인을 확인하기 위해 검사를 시행하였다. 환자가 받은 검사는 무엇이고, 의심되는 질환은 무엇인가? 하나를 선택하세요.",
+      "images": [
+        "assets/mock-2026/figure-024-03-1.png"
+      ]
+    },
+    {
+      "display": 146,
+      "id": "mock-43-1",
+      "lecture": 43,
+      "professor": "최선근",
+      "J": 807,
+      "refs": [
+        807
+      ],
+      "year": 2017,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": true,
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "건강검진 중 우연히 소장에 B-cell lymphoma가 발견되었다. 별다른 증상은 없다. 가장 적절한 치료는?",
+      "images": [],
+      "transformation": "2017 J807의 무증상 소장 B-cell lymphoma 증례. 선지 문구와 순서는 원문 유지.",
+      "sections": [
+        "Lymphoma — 무증상과 장폐색을 먼저 구분"
+      ]
+    },
+    {
+      "display": 147,
+      "id": "mock-43-3",
+      "lecture": 43,
+      "professor": "최선근",
+      "J": 556,
+      "refs": [
+        556
+      ],
+      "year": 2021,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "대장암의 수술로 인해 발기가 되지 않는 부작용이 생겼다. 다음 중 어느 신경이 손상되었는가?",
+      "images": [
+        "assets/mock-2026/figure-043-03-1.png"
+      ]
+    },
+    {
+      "display": 148,
+      "id": "mock-43-2",
+      "lecture": 43,
+      "professor": "최선근",
+      "J": 810,
+      "refs": [
+        810
+      ],
+      "year": 2018,
+      "bee": true,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "공장에 국한된 5 cm GIST가 진단되었다. 원격전이나 주변 장기 침범이 없고 절제가 가능하다. 알맞은 수술법은?",
+      "images": []
+    },
+    {
+      "display": 149,
+      "id": "mock-21-1",
+      "lecture": 21,
+      "professor": "최윤미",
+      "J": 129,
+      "refs": [
+        129
+      ],
+      "year": 2025,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "생후 45일 여아가 황달과 회백색 변으로 내원하였다. Total bilirubin 16 mg/dL, direct bilirubin 12 mg/dL이다. 담도폐쇄증이 의심될 때 확진을 위한 검사는?",
+      "images": []
+    },
+    {
+      "display": 150,
+      "id": "mock-21-2",
+      "lecture": 21,
+      "professor": "최윤미",
+      "J": 232,
+      "refs": [
+        232
+      ],
+      "year": 2023,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "2.7 kg으로 출생한 남아가 출생 직후부터 다량의 침을 흘리고 수유 시 choking과 청색증이 있었다. 산모의 임신력상 양수과다증이 있었다. 이 병의 진단을 위해 가장 중요한 검사는?",
+      "images": []
+    },
+    {
+      "display": 151,
+      "id": "mock-21-3",
+      "lecture": 21,
+      "professor": "최윤미",
+      "J": 361,
+      "refs": [
+        361
+      ],
+      "year": 2022,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": false,
+      "advancedVariant": false,
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "생후 6개월인 아이가 발작에 가깝게 통증을 호소하다가 무증상인 경우를 반복하고, 경미한 복부 팽만이 일어났으며, 점액성 혈변이 나타날 때 진단 검사는 무엇인가?",
+      "images": []
+    },
+    {
+      "display": 152,
+      "id": "mock-3-1",
+      "lecture": 3,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "single-choice",
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "정상 성인의 소장에서 하루에 흡수되는 액체의 양은?",
+      "images": [],
+      "transformation": "사용자 요청에 따라 J 238번의 발문과 수치형 5지선다를 그대로 사용",
+      "sections": [
+        "하루 체액의 이동"
+      ],
+      "sourceRefs": [
+        238
+      ]
+    },
+    {
+      "display": 153,
+      "id": "mock-3-2",
+      "lecture": 3,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "삼킨 뒤 남아 있는 음식 덩어리로 식도가 팽창하였다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 154,
+      "id": "mock-4-1",
+      "lecture": 4,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "식후 parietal cell의 HCl 분비가 증가하였다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 155,
+      "id": "mock-15-1",
+      "lecture": 15,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "장세포 내강측의 단당류 흡수 실험에서 내강의 Na⁺만 제거하였다. 세포는 정상적으로 생존하며, 당의 흡수에 필요한 농도 기울기는 유지된다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 156,
+      "id": "mock-5-1",
+      "lecture": 5,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "공복 상태에서 위에서 소장으로 전파되는 수축이 관찰되었다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 157,
+      "id": "mock-15-2",
+      "lecture": 15,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "장세포의 세포질 peptidase만 억제하였다. 장 내강과 brush border에서의 소화 및 peptide 수송체 기능은 유지된다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 158,
+      "id": "mock-8-1",
+      "lecture": 8,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "Lactate에 붙인 표지가 이후 간에서 새로 합성된 glucose에서 검출되었다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 159,
+      "id": "mock-8-2",
+      "lecture": 8,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        2
+      ],
+      "modelAnswer": "",
+      "topic": "간세포의 bilirubin conjugation은 유지되지만, 담즙이 장으로 흐르는 경로는 완전히 막혔다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 160,
+      "id": "mock-15-3",
+      "lecture": 15,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "장세포의 triglyceride 재합성과 chylomicron 형성은 정상이나, central lacteal을 통한 배출이 막혔다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 161,
+      "id": "mock-3-3",
+      "lecture": 3,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "타액의 완충 작용과 윤활 작용에 관한 설명이다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 162,
+      "id": "mock-15-4",
+      "lecture": 15,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "고전적 feeding-center 모형을 기준으로, lateral hypothalamic area에 관한 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 163,
+      "id": "mock-4-3",
+      "lecture": 4,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "위 내강의 낮은 pH에 대한 D cell의 반응만 차단하였다. G cell, ECL cell, parietal cell의 기능은 유지된다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 164,
+      "id": "mock-4-2",
+      "lecture": 4,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        3
+      ],
+      "modelAnswer": "",
+      "topic": "위 평활근의 기록 A와 B에서 slow-wave 빈도는 같지만, 각 정점의 spike potential 수는 B가 더 많다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 165,
+      "id": "mock-5-2",
+      "lecture": 5,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "아침 식사 직후 변의를 느꼈다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 166,
+      "id": "mock-15-5",
+      "lecture": 15,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "single-choice",
+      "answers": [
+        4
+      ],
+      "modelAnswer": "",
+      "topic": "표준 저삼투압 경구수분보충액(ORS) 1 L에 포함되는 trisodium citrate dihydrate의 양은?",
+      "images": [],
+      "sections": [],
+      "outsideLecture": true,
+      "transformation": "사용자 승인에 따라 GOAT 문항을 ORS의 구연산삼나트륨 이수화물 배합량 문항으로 교체"
+    },
+    {
+      "display": 167,
+      "id": "mock-8-3",
+      "lecture": 8,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        1
+      ],
+      "modelAnswer": "",
+      "topic": "담즙산 재흡수율이 95%에서 80%로 감소하였다. 한 순환 동안 장으로 분비되는 양은 같으며, 보상성 변화는 계산에서 제외한다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    },
+    {
+      "display": 168,
+      "id": "mock-5-3",
+      "lecture": 5,
+      "professor": "한인옥",
+      "J": null,
+      "refs": [],
+      "year": null,
+      "bee": false,
+      "exact": false,
+      "originalAuthored": true,
+      "advancedVariant": false,
+      "format": "roman-combination",
+      "answers": [
+        5
+      ],
+      "modelAnswer": "",
+      "topic": "정상적인 배변 반응이 시작되는 과정에 관한 설명이다. 옳은 설명을 모두 포함한 조합은?",
+      "images": []
+    }
+  ],
+  "updated": "2026-09-26T11:04:10.517Z",
+  "optionRevision": {
+    "changed": [
+      "mock-38-1",
+      "mock-38-2",
+      "mock-55-1",
+      "mock-54-3",
+      "mock-16-1",
+      "mock-16-4",
+      "mock-11-3",
+      "mock-10-2",
+      "mock-30-3",
+      "mock-57-1",
+      "mock-33-1",
+      "mock-33-2",
+      "mock-61-2",
+      "mock-45-1",
+      "mock-22-2",
+      "mock-35-1",
+      "mock-43-1",
+      "mock-21-1",
+      "mock-21-3",
+      "mock-15-1",
+      "mock-5-1",
+      "mock-15-2",
+      "mock-8-1",
+      "mock-8-2",
+      "mock-3-3",
+      "mock-15-4",
+      "mock-4-3",
+      "mock-15-5",
+      "mock-8-3",
+      "mock-5-3"
+    ],
+    "shortConverted": [
+      "mock-38-1",
+      "mock-38-2",
+      "mock-55-1",
+      "mock-54-3",
+      "mock-16-1",
+      "mock-16-4",
+      "mock-11-3",
+      "mock-10-2",
+      "mock-30-3",
+      "mock-57-1",
+      "mock-45-1",
+      "mock-22-2",
+      "mock-35-1",
+      "mock-43-1",
+      "mock-21-1",
+      "mock-21-3",
+      "mock-8-1",
+      "mock-15-4"
+    ],
+    "combinations": [
+      "mock-30-3",
+      "mock-33-1",
+      "mock-33-2",
+      "mock-61-2",
+      "mock-15-1",
+      "mock-5-1",
+      "mock-15-2",
+      "mock-8-2",
+      "mock-3-3",
+      "mock-4-3",
+      "mock-15-5",
+      "mock-8-3",
+      "mock-5-3"
+    ]
+  },
+  "originalRevision": {
+    "count": 51,
+    "professors": [
+      "김채균",
+      "김준미",
+      "한인옥"
+    ],
+    "replaced": [
+      {
+        "id": "mock-10-1",
+        "professor": "김준미",
+        "lecture": 10,
+        "previousJ": 25,
+        "previousQuestion": "Achalasia의 병태생리로 알맞은 것은?",
+        "newQuestion": "면역저하 환자의 식도 궤양을 생검하려 한다. 두 검체의 채취 위치와 예상되는 감염세포를 가장 적절하게 연결한 것은?",
+        "section": "감염성 식도염"
+      },
+      {
+        "id": "mock-11-1",
+        "professor": "김준미",
+        "lecture": 11,
+        "previousJ": 27,
+        "previousQuestion": "자가면역성 위염에 대한 설명으로 옳은 것을 고르시오.",
+        "newQuestion": "Helicobacter pylori의 urease 기능만 선택적으로 억제한 실험에서 가장 직접적으로 감소할 현상은?",
+        "section": "정착과 점막 손상 기전"
+      },
+      {
+        "id": "mock-11-2",
+        "professor": "김준미",
+        "lecture": 11,
+        "previousJ": 30,
+        "previousQuestion": "MSI high type과 EBV 양성 type의 공통점은?",
+        "newQuestion": "다음 두 환자에서 발생한 급성 스트레스 궤양의 명칭을 옳게 짝지은 것은?",
+        "section": "급성위궤양 · Acute gastric ulcer"
+      },
+      {
+        "id": "mock-12-1",
+        "professor": "김준미",
+        "lecture": 12,
+        "previousJ": 31,
+        "previousQuestion": "Crohn disease와 intestinal tuberculosis의 감별에 대한 설명 중 옳은 것을 고르시오.",
+        "newQuestion": "만성 비혈성 수양성 설사 환자 A와 B의 대장내시경은 거의 정상이었다. 생검 결과를 올바르게 해석한 것은?",
+        "section": "미세대장염 · Microscopic colitis"
+      },
+      {
+        "id": "mock-11-5",
+        "professor": "김준미",
+        "lecture": 11,
+        "previousJ": 33,
+        "previousQuestion": "절제한 위의 종양이 병리검사에서 GIST로 진단되었다. 이 종양의 위험도를 평가할 때 가장 중요한 요소의 조합은?",
+        "newQuestion": "위 NET 두 검체의 세포 형태와 증식 지표가 비슷하였다. 발생 배경에 따른 유형 구분으로 옳은 것은?",
+        "section": "위 NET의 세 유형"
+      },
+      {
+        "id": "mock-16-1",
+        "professor": "김준미",
+        "lecture": 16,
+        "previousJ": 34,
+        "previousQuestion": "Ischemia hepatitis에 대한 병리학적 소견은?",
+        "newQuestion": "만성간염 환자 A와 B의 생검을 비교하였다. 현재 염증 활동성과 축적된 구조 손상을 가장 적절하게 구분한 것은?",
+        "section": "소엽 내 손상과 섬유화"
+      },
+      {
+        "id": "mock-16-2",
+        "professor": "김준미",
+        "lecture": 16,
+        "previousJ": 37,
+        "previousQuestion": "Massive hepatic necrosis에서 간의 육안 소견은?",
+        "newQuestion": "HDV 감염의 경과를 비교할 때 A보다 B에서 지속감염과 빠른 진행을 더 우려하는 이유는?",
+        "section": "Coinfection과 superinfection"
+      },
+      {
+        "id": "mock-16-3",
+        "professor": "김준미",
+        "lecture": 16,
+        "previousJ": 38,
+        "previousQuestion": "Steatohepatitis에서 첫 번째로 일어나는 현상은?",
+        "newQuestion": "담즙 정체가 있는 간 조직에서 feathery degeneration과 황갈색 색소가 관찰되었다. 이 변화와 가장 직접적으로 연결되는 것은?",
+        "section": "Feathery degeneration"
+      },
+      {
+        "id": "mock-17-1",
+        "professor": "김준미",
+        "lecture": 17,
+        "previousJ": 39,
+        "previousQuestion": "Hepatoblastoma의 주 호발 연령은?",
+        "newQuestion": "문맥고혈압 환자의 간에 재생결절이 광범위하게 보였다. 다음 소견에서 간경변과의 감별에 가장 중요한 판단은?",
+        "section": "Nodular regenerative hyperplasia · NRH"
+      },
+      {
+        "id": "mock-17-2",
+        "professor": "김준미",
+        "lecture": 17,
+        "previousJ": 41,
+        "previousQuestion": "Budd-Chiari syndrome의 발병 기전은?",
+        "newQuestion": "두 hepatocellular adenoma의 분자아형을 비교하였다. 관찰 결과와 위험 해석을 옳게 연결한 것은?",
+        "section": "Hepatocellular adenoma · HCA"
+      },
+      {
+        "id": "mock-17-3",
+        "professor": "김준미",
+        "lecture": 17,
+        "previousJ": 43,
+        "previousQuestion": "담석증(cholelithiasis)의 위험 인자는?",
+        "newQuestion": "반복 담관염 환자의 담석 형성에서 세균성 β-glucuronidase가 기여하는 단계를 고르시오.",
+        "section": "Pigment stone의 형성"
+      },
+      {
+        "id": "mock-17-4",
+        "professor": "김준미",
+        "lecture": 17,
+        "previousJ": 44,
+        "previousQuestion": "급성 췌장염의 가장 흔한 원인 두 가지를 옳게 묶은 것은?",
+        "newQuestion": "췌장 영상검사에서 dorsal duct와 ventral duct가 융합하지 않은 상태가 확인되었다. 가장 타당한 해부학적 설명은?",
+        "section": "Pancreas divisum"
+      },
+      {
+        "id": "mock-17-5",
+        "professor": "김준미",
+        "lecture": 17,
+        "previousJ": 45,
+        "previousQuestion": "췌장암의 육안 소견은?",
+        "newQuestion": "젊은 여성의 췌장 종양에서 solid area와 pseudopapillary area가 함께 보였다. Pseudopapillary 구조의 형성 원리로 가장 알맞은 것은?",
+        "section": "왜 pseudopapillary인가"
+      },
+      {
+        "id": "mock-16-4",
+        "professor": "김준미",
+        "lecture": 16,
+        "previousJ": 163,
+        "previousQuestion": "6개월 이상 간기능 검사 이상이 지속된 40세 남성에서 anti-HCV가 양성이었다. 간생검에서 관찰될 수 있는 소견을 모두 고르시오.",
+        "newQuestion": "간염 조직의 세포 A와 B를 비교하였다. 주변 조직에 직접 유발하는 반응까지 고려한 설명으로 옳은 것은?",
+        "section": "Apoptosis와 Councilman body"
+      },
+      {
+        "id": "mock-11-3",
+        "professor": "김준미",
+        "lecture": 11,
+        "previousJ": 259,
+        "previousQuestion": "다음은 위암의 Lauren 분류의 diffuse type에 관한 설명이다. 틀린 것을 고르시오.",
+        "newQuestion": "위암 절제 검체 A와 B를 비교하였다. 조기위암(EGC)의 정의를 적용한 판단으로 옳은 것은?",
+        "section": "조기위암 · Early gastric cancer"
+      },
+      {
+        "id": "mock-11-4",
+        "professor": "김준미",
+        "lecture": 11,
+        "previousJ": 271,
+        "previousQuestion": "만성 소화성 궤양의 바닥에서 표면부터 깊은 쪽으로 관찰되는 층의 순서로 옳은 것을 고르시오.",
+        "newQuestion": "위의 작은 폴립을 생검하였다. 아래 소견에서 adenoma보다 재생성 병변을 지지하는 해석은?",
+        "section": "과형성용종 · Hyperplastic polyp"
+      },
+      {
+        "id": "mock-12-2",
+        "professor": "김준미",
+        "lecture": 12,
+        "previousJ": 273,
+        "previousQuestion": "대장의 serrated lesion에 대한 설명 중 옳은 것을 고르시오.",
+        "newQuestion": "흡수장애 환자의 소장 생검에서 villous blunting이 관찰되었다. 다음 추가 소견이 확인되었다면 가장 타당한 해석은?",
+        "section": "Whipple disease"
+      },
+      {
+        "id": "mock-16-5",
+        "professor": "김준미",
+        "lecture": 16,
+        "previousJ": 275,
+        "previousQuestion": "Viral marker 음성, ANA와 anti-smooth muscle antibody 양성, AMA 음성인 환자이다. 간생검에서 가장 기대되는 소견의 조합은?",
+        "newQuestion": "신생아 황달 환자의 간생검에서 giant cell transformation을 확인하였다. 병리보고서의 결론으로 가장 적절한 것은?",
+        "section": "신생아간염의 병리 소견"
+      },
+      {
+        "id": "mock-13-1",
+        "professor": "김준미",
+        "lecture": 13,
+        "previousJ": 425,
+        "previousQuestion": "간이식 후 면역억제제를 복용하는 환자의 위 생검 사진이다. 가장 가능성 높은 감염은?",
+        "newQuestion": "위 생검의 두 조직 조각을 비교한 사진이다. 표면 결손을 해석할 때 가장 적절한 관찰 방법은?",
+        "section": "손상된 표면과 보존된 표면"
+      },
+      {
+        "id": "mock-10-2",
+        "professor": "김준미",
+        "lecture": 10,
+        "previousJ": 769,
+        "previousQuestion": "Sliding hernia와 Paraesophageal hernia를 비교할 때, Paraesophageal hernia의 대표적인 합병증으로 연결되는 것을 모두 고르시오.",
+        "newQuestion": "식도 주변의 선천성 낭종을 절제하였다. 다음 소견을 이용한 해석으로 가장 타당한 것은?",
+        "section": "기관지원성 낭종과 장원성·중복 낭종"
+      },
+      {
+        "id": "mock-13-2",
+        "professor": "김준미",
+        "lecture": 13,
+        "previousJ": null,
+        "previousQuestion": "장기간 역류 증상이 있는 환자의 하부 식도 생검이다. 사진과 가장 잘 맞는 진단은?",
+        "newQuestion": "위 종양의 조직 사진이다. 정상 위샘과 비교할 때 이 사진에서 가장 중요하게 평가할 구조적 변화는?",
+        "section": "불규칙한 샘, hyperchromasia와 stratification"
+      },
+      {
+        "id": "mock-13-3",
+        "professor": "김준미",
+        "lecture": 13,
+        "previousJ": null,
+        "previousQuestion": "위 생검에서 작은 림프구들이 샘 상피를 침윤하고 파괴하는 소견이 관찰된다. 진단은?",
+        "newQuestion": "식도 종양의 사진에서 분홍색 세포질을 가진 종양세포 집단이 관찰된다. 이 소견과 추가 관찰 항목을 가장 적절히 연결한 것은?",
+        "section": "Keratinization"
+      },
+      {
+        "id": "mock-14-1",
+        "professor": "김준미",
+        "lecture": 14,
+        "previousJ": null,
+        "previousQuestion": "직장에서 시작한 연속적인 대장 염증을 보이는 환자의 조직이다. 진단으로 가장 알맞은 것은?",
+        "newQuestion": "절제한 충수의 근육층 사진이다. 내강의 염증세포와 구별하여 이 시야에서 진단적으로 중요한 점은?",
+        "section": "근육층 내 Neutrophil"
+      },
+      {
+        "id": "mock-14-2",
+        "professor": "김준미",
+        "lecture": 14,
+        "previousJ": null,
+        "previousQuestion": "사진처럼 장벽이 두꺼워지고 깊은 fissuring ulcer가 관찰되는 질환에서 함께 기대되는 소견은?",
+        "newQuestion": "결장의 저배율 사진이다. 점막의 샘 구조가 근육층 사이를 따라 깊은 쪽으로 이어지는 모습이 보인다. 암의 침윤과 구별하기 위해 가장 먼저 확인할 것은?",
+        "section": "근육층 사이로 내려가는 점막"
+      },
+      {
+        "id": "mock-14-3",
+        "professor": "김준미",
+        "lecture": 14,
+        "previousJ": null,
+        "previousQuestion": "대장 폴립 사진에서 serration은 주로 표층에 있고 crypt 기저부는 비교적 곧게 유지된다. 진단은?",
+        "newQuestion": "혈전이 있는 항문 혈관 병변의 사진이다. 혈전 안에 작은 혈관과 섬유성·세포성 기질이 들어오는 변화를 가장 적절하게 설명한 것은?",
+        "section": "Organization과 Recanalization"
+      },
+      {
+        "id": "mock-26-1",
+        "professor": "김준미",
+        "lecture": 26,
+        "previousJ": null,
+        "previousQuestion": "간 조직의 저배율 사진이다. 병변을 가장 잘 설명하는 것은?",
+        "newQuestion": "간 조직사진에서 커다란 혈관 공간과 그 안을 채우는 물질이 관찰된다. 간세포의 fatty change와 비교한 설명으로 가장 적절한 것은?",
+        "section": "Thrombus와 간실질 내 확장 혈관"
+      },
+      {
+        "id": "mock-26-2",
+        "professor": "김준미",
+        "lecture": 26,
+        "previousJ": null,
+        "previousQuestion": "간 종괴의 조직 사진이다. 두꺼운 trabecula와 핵의 이형성이 관찰된다. 진단은?",
+        "newQuestion": "HBV 감염 환자의 간세포 사진이다. 옅고 균질하지만 비어 있지는 않은 세포질 변화의 기전과 해석을 옳게 연결한 것은?",
+        "section": "Ground-glass change의 모양"
+      },
+      {
+        "id": "mock-27-1",
+        "professor": "김준미",
+        "lecture": 27,
+        "previousJ": null,
+        "previousQuestion": "췌장염 병력이 있는 환자의 낭성 병변이다. 낭벽에 상피 lining 없이 섬유조직과 염증이 관찰된다. 진단은?",
+        "newQuestion": "췌장 낭성 병변의 벽 사진이다. 낮은 cuboidal epithelium이 내면을 덮는다. 이 관찰로 가장 직접적으로 판단할 수 있는 것은?",
+        "section": "Cuboidal serous epithelium"
+      },
+      {
+        "id": "mock-42-1",
+        "professor": "김채균",
+        "lecture": 42,
+        "previousJ": 47,
+        "previousQuestion": "장의 상피세포에서 말단 ClC-2의 활성화에 의해 염화물(Cl)이 풍부한 장액의 분비를 촉진시키고 장의 운동을 촉진시키는 약물은?",
+        "newQuestion": "Opioid 진통제를 유지해야 하는 환자의 변비를 치료하려 한다. 기계적 장폐색은 없다. Methylnaltrexone을 선택하는 약리학적 근거로 가장 적절한 것은?",
+        "section": "말초 μ-opioid 길항제와 5-HT₄ 작용제"
+      },
+      {
+        "id": "mock-58-1",
+        "professor": "김채균",
+        "lecture": 58,
+        "previousJ": 48,
+        "previousQuestion": "환자에게 portal hypertension, variceal bleeding이 있다. 비선택적 베타 아드레날린성 수용체 길항제인 이것은 무엇인가?",
+        "newQuestion": "간경변성 복수로 spironolactone을 복용하던 환자에게 근력 저하가 생겼다. 검사에서 K⁺ 6.0 mmol/L가 확인되었다. 가장 우선적으로 고려할 약물 관련 설명은?",
+        "section": null
+      },
+      {
+        "id": "mock-42-2",
+        "professor": "김채균",
+        "lecture": 42,
+        "previousJ": 175,
+        "previousQuestion": "TNF-α에 대한 항체 약물은 moderate–severe inflammatory bowel disease의 치료에 사용된다. 다음 중 TNF-α에 대한 항체 약물은?",
+        "newQuestion": "항암치료 전 ondansetron과 dexamethasone에 fosaprepitant를 추가하였다. 추가 약물의 역할을 가장 정확하게 설명한 것은?",
+        "section": "NK₁ antagonist"
+      },
+      {
+        "id": "mock-58-2",
+        "professor": "김채균",
+        "lecture": 58,
+        "previousJ": 177,
+        "previousQuestion": "간성뇌증(hepatic encephalopathy)과 치료제에 대한 설명으로 적절한 것은?",
+        "newQuestion": "간성뇌증 치료 중 의식이 호전된 환자가 lactulose를 계속 증량하여 하루 10회의 수양변과 어지럼을 호소한다. 가장 적절한 판단은?",
+        "section": null
+      },
+      {
+        "id": "mock-58-3",
+        "professor": "김채균",
+        "lecture": 58,
+        "previousJ": 266,
+        "previousQuestion": "Somatostatin 유사체로 splanchnic blood flow와 portal pressure를 줄여 정맥류 출혈에 사용하는 약물은?",
+        "newQuestion": "문맥압을 낮추기 위한 혈관작용 약물의 안전성을 검토하고 있다. Vasopressin 유사체인 terlipressin 투여 중 새로 발생한 말단의 창백·냉감·통증을 설명하는 가장 적절한 기전은?",
+        "section": null
+      },
+      {
+        "id": "mock-42-3",
+        "professor": "김채균",
+        "lecture": 42,
+        "previousJ": 297,
+        "previousQuestion": "5-HT₄ receptor를 자극하여 enteric neuron의 acetylcholine 분비를 촉진하고 위장관 연동운동을 증가시키는 약물은?",
+        "newQuestion": "IBD 치료에 methotrexate를 사용한 뒤 macrocytic anemia가 발생하였다. 약물의 작용과 부작용을 연결하는 가장 적절한 설명은?",
+        "section": "Methotrexate"
+      },
+      {
+        "id": "mock-3-1",
+        "professor": "한인옥",
+        "lecture": 3,
+        "previousJ": 94,
+        "previousQuestion": "성인이 음식과 음료로 하루에 섭취하는 물의 양은 약 몇 L인가?",
+        "newQuestion": "소화 실험 A와 B의 차이를 가장 정확하게 설명한 것은?",
+        "section": "기계적 소화와 화학적 소화 개념"
+      },
+      {
+        "id": "mock-3-2",
+        "professor": "한인옥",
+        "lecture": 3,
+        "previousJ": 96,
+        "previousQuestion": "침샘 중 amylase가 풍부한 serous secretion을 분비하는 것은?",
+        "newQuestion": "한 번 삼킨 뒤 식도에 음식덩이가 일부 남아 식도벽을 팽창시켰다. 추가 삼킴 없이 이를 내려보내는 반응은?",
+        "section": "삼킴의 과정"
+      },
+      {
+        "id": "mock-4-1",
+        "professor": "한인옥",
+        "lecture": 4,
+        "previousJ": 99,
+        "previousQuestion": "Hydrochloric acid를 분비하는 세포는?",
+        "newQuestion": "벽세포가 HCl 분비를 증가시킬 때 혈액 쪽에서 관찰되는 식후 alkaline tide를 가장 직접적으로 설명하는 과정은?",
+        "section": "HCl 생성 과정"
+      },
+      {
+        "id": "mock-15-1",
+        "professor": "한인옥",
+        "lecture": 15,
+        "previousJ": 100,
+        "previousQuestion": "Pepsinogen에 대한 설명 중 옳은 것만으로 짝지어진 것은?",
+        "newQuestion": "장상피의 꼭대기막 수송을 연구하면서 내강의 Na⁺를 제거하였다. 포도당 유입은 크게 감소했지만 과당 유입은 상대적으로 유지되었다. 이 차이를 설명하는 것은?",
+        "section": "단당류 흡수"
+      },
+      {
+        "id": "mock-5-1",
+        "professor": "한인옥",
+        "lecture": 5,
+        "previousJ": 104,
+        "previousQuestion": "ileum에 대한 설명으로 옳은 것을 고르시오.",
+        "newQuestion": "공복 상태의 위·소장 운동 기록에서 음식물 잔여물을 아래로 쓸어내리는 전파성 수축이 반복된다. 이 기록의 가장 적절한 기능적 해석은?",
+        "section": "Interdigestive state와 migrating motor complex"
+      },
+      {
+        "id": "mock-15-2",
+        "professor": "한인옥",
+        "lecture": 15,
+        "previousJ": 105,
+        "previousQuestion": "다음 설명 중 옳은 것을 고르시오.",
+        "newQuestion": "Dipeptide 운반체는 정상이지만 장상피 세포질의 peptidase만 선택적으로 억제하였다. 가장 직접적으로 예상되는 결과는?",
+        "section": "아미노산과 작은 펩타이드 흡수"
+      },
+      {
+        "id": "mock-8-1",
+        "professor": "한인옥",
+        "lecture": 8,
+        "previousJ": 107,
+        "previousQuestion": "췌장 분비에 관한 설명 중 옳은 것을 고르시오 (옳은 것을 모두 고르시오.)",
+        "newQuestion": "간의 glucose 공급원을 구분하는 동위원소 실험에서, lactate에 붙인 표지가 새로 생성된 glucose에 나타났다. 이 결과를 가장 직접적으로 설명하는 경로는?",
+        "section": "탄수화물 대사"
+      },
+      {
+        "id": "mock-8-2",
+        "professor": "한인옥",
+        "lecture": 8,
+        "previousJ": 109,
+        "previousQuestion": "Which of following is correct about hepatic portal system?",
+        "newQuestion": "간세포에서 bilirubin의 포합은 정상이나 담즙이 장으로 들어가는 경로가 완전히 막혔다. 장내 변화로 가장 직접적으로 예상되는 것은?",
+        "section": "Bilirubin 대사"
+      },
+      {
+        "id": "mock-15-3",
+        "professor": "한인옥",
+        "lecture": 15,
+        "previousJ": 239,
+        "previousQuestion": "다음 '당(sugar)' 중 monomer로 분해되었을 때 그 구성 성분이 다른 하나는?",
+        "newQuestion": "장상피 안에서 지방 재합성과 chylomicron 생성은 정상이지만 중심 암죽관으로의 배출 경로가 차단되었다. 가장 직접적으로 제한되는 것은?",
+        "section": "킬로미크론 형성과 림프수송"
+      },
+      {
+        "id": "mock-3-3",
+        "professor": "한인옥",
+        "lecture": 3,
+        "previousJ": 240,
+        "previousQuestion": "옳은 것을 고르시오.",
+        "newQuestion": "침의 두 기능을 각각 평가하는 실험이다. A와 B의 손상으로 가장 직접적으로 감소할 기능을 옳게 연결한 것은?",
+        "section": "침의 성분과 기능"
+      },
+      {
+        "id": "mock-15-4",
+        "professor": "한인옥",
+        "lecture": 15,
+        "previousJ": 241,
+        "previousQuestion": "장내에서 pancreatic lipase가 triglyceride를 분해할 때 free fatty acid와 함께 주로 생성되는 것은?",
+        "newQuestion": "두 실험에서 시상하부 가쪽핵에 서로 다른 조작을 하였다. 강의에서 제시한 전통적 섭식중추 모델과 맞는 결과는?",
+        "section": "가쪽핵과 배안쪽핵"
+      },
+      {
+        "id": "mock-4-3",
+        "professor": "한인옥",
+        "lecture": 4,
+        "previousJ": 243,
+        "previousQuestion": "GI smooth m.에 관한 내용 중 옳은 것?",
+        "newQuestion": "위내 pH가 낮아졌을 때 D cell의 반응만 선택적으로 억제하였다. 정상의 되먹임과 비교하여 가장 예상되는 변화는?",
+        "section": "Somatostatin"
+      },
+      {
+        "id": "mock-4-2",
+        "professor": "한인옥",
+        "lecture": 4,
+        "previousJ": 244,
+        "previousQuestion": "Gastric emptying을 억제하는 것이 아닌 것은?",
+        "newQuestion": "위 평활근의 두 전기기록에서 slow wave 빈도는 같지만 B에서 수축력이 더 컸다. 이를 설명하는 관찰로 가장 적절한 것은?",
+        "section": "느린파와 Cajal 사이질세포"
+      },
+      {
+        "id": "mock-5-2",
+        "professor": "한인옥",
+        "lecture": 5,
+        "previousJ": 249,
+        "previousQuestion": "소장에서 분비되는 것과 가장 거리가 먼 것은?",
+        "newQuestion": "아침 식사 직후 배변 욕구가 생겼다. 방금 먹은 음식이 이미 대변이 된 것이 아니라면 가장 적절한 설명은?",
+        "section": "Mass movement"
+      },
+      {
+        "id": "mock-15-5",
+        "professor": "한인옥",
+        "lecture": 15,
+        "previousJ": 254,
+        "previousQuestion": "Mineral 흡수에 대해 옳은 것을 고르시오.",
+        "newQuestion": "위의 ghrelin 생성 경로에서 GOAT 작용만 억제하였다. Preproghrelin 생성은 유지될 때 가장 직접적으로 감소하는 것은?",
+        "section": "섭식조절 호르몬"
+      },
+      {
+        "id": "mock-8-3",
+        "professor": "한인옥",
+        "lecture": 8,
+        "previousJ": 265,
+        "previousQuestion": "다음 Bile에 관한 설명 중 옳은 것만으로 짝지워진 것은?",
+        "newQuestion": "담즙산의 장간순환에서 재흡수율이 95%에서 80%로 감소하였다. 1회 장으로 분비된 담즙산량이 같다고 할 때, 이 회차의 대변 소실량은 원래의 몇 배인가?",
+        "section": "쓸개즙산의 장간순환"
+      },
+      {
+        "id": "mock-5-3",
+        "professor": "한인옥",
+        "lecture": 5,
+        "previousJ": 578,
+        "previousQuestion": "Which of following is correct about intestinal cells?",
+        "newQuestion": "정상 배변반사가 시작되는 사건을 시간 순서로 가장 타당하게 배열한 것은?",
+        "section": "Defecation"
+      }
+    ],
+    "storageKey": "digestive-mock-2026-original-v2",
+    "medicalChecks": [
+      "https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-lactulose-and-rifaximin-hepatic",
+      "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2008/021964s000_PharmR_P3.pdf",
+      "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fe044bd2-cb08-4cfd-a3d5-a4809d05aa62",
+      "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3f942e4c-e26a-4155-9e14-344b2970b189",
+      "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=3a35b86c-f451-4fac-8499-43019e4da354"
+    ]
+  },
+  "latestRevision": {
+    "type": "advanced-variants-english-combinations-no-image-hints",
+    "cha": 14,
+    "han": 17,
+    "histology": 15,
+    "storageKey": "digestive-mock-2026-original-v3",
+    "previousVersion": "f2d6f80f99677569",
+    "changedIds": [
+      "mock-13-1",
+      "mock-13-2",
+      "mock-13-3",
+      "mock-14-1",
+      "mock-14-2",
+      "mock-14-3",
+      "mock-26-1",
+      "mock-26-2",
+      "mock-27-1",
+      "mock-2-1",
+      "mock-7-2",
+      "mock-2-2",
+      "mock-2-3",
+      "mock-7-1",
+      "mock-7-3",
+      "mock-22-1",
+      "mock-22-2",
+      "mock-35-1",
+      "mock-35-2",
+      "mock-35-3",
+      "mock-36-2",
+      "mock-32-1",
+      "mock-22-3",
+      "mock-36-1",
+      "mock-36-3",
+      "mock-31-1",
+      "mock-31-2",
+      "mock-32-2",
+      "mock-31-3",
+      "mock-3-1",
+      "mock-3-2",
+      "mock-4-1",
+      "mock-15-1",
+      "mock-5-1",
+      "mock-15-2",
+      "mock-8-1",
+      "mock-8-2",
+      "mock-15-3",
+      "mock-3-3",
+      "mock-15-4",
+      "mock-4-3",
+      "mock-4-2",
+      "mock-5-2",
+      "mock-15-5",
+      "mock-8-3",
+      "mock-5-3"
+    ],
+    "verificationSources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10984749/",
+      "https://www.jgca.jp/guideline/sixth/002_02.html",
+      "https://www.niddk.nih.gov/health-information/digestive-diseases/zollinger-ellison-syndrome"
+    ]
+  },
+  "endoscopyRevision": {
+    "type": "endoscopy-photo-replacement",
+    "count": 5,
+    "storageKey": "digestive-mock-2026-original-v4",
+    "images": 8,
+    "previousVersion": "5a1b3844cab5b18c",
+    "questions": [
+      "mock-30-3",
+      "mock-35-1",
+      "mock-22-3",
+      "mock-36-1",
+      "mock-31-1"
+    ],
+    "medicalChecks": [
+      "https://www.asge.org/home/resources/publications/guidelines/the-role-of-endoscopy-in-subepithelial-lesions-of-the-gi-tract",
+      "https://www.esge.com/diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage"
+    ]
+  },
+  "question144Revision": {
+    "target": "a",
+    "answer": 4,
+    "previousVersion": "243b7e0205bc9b31"
+  },
+  "kangRevision": {
+    "display": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pastSources": [
+      697,
+      439,
+      394
+    ],
+    "newCase": "mock-41-2",
+    "previousVersion": "3774eb0fee9f2634"
+  },
+  "question146Revision": {
+    "source": 807,
+    "answer": 2,
+    "choicesUnchanged": true,
+    "previousVersion": "1cc3388fed41fac2"
+  },
+  "hanKoreanStemsRevision": {
+    "count": 17,
+    "previousVersion": "83074939951eb6d5",
+    "statements": "en",
+    "choicesAndAnswersUnchanged": true
+  },
+  "kimMemoryRevision": {
+    "display": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "nameOnly": 2,
+    "descriptionMatching": 4,
+    "previousVersion": "aaf234999e9933c5"
+  },
+  "simpleExplanationRevision": {
+    "reviewed": 168,
+    "changed": [
+      1,
+      2,
+      3,
+      4,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      69,
+      124,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      144,
+      146,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168
+    ],
+    "previousVersion": "2db8507c03a6bf6e",
+    "questionContentUnchanged": true
+  },
+  "fluidRevision": {
+    "display": 152,
+    "previousVersion": "b58c739be0f799b8",
+    "sourceRefs": [
+      238
+    ],
+    "section": "하루 체액의 이동",
+    "referenceImage": "assets/lecture-03-digestion/p12-img01.jpg"
+  },
+  "choice66Revision": {
+    "previousVersion": "c3f814c9ef0eca12",
+    "display": 66,
+    "choices": [
+      "KRAS",
+      "BRAF",
+      "p53",
+      "APC",
+      "MMR"
+    ],
+    "answers": [
+      3
+    ]
+  },
+  "nuclearVariantRevision": {
+    "previousVersion": "2592f489efeb0447",
+    "displays": [
+      78,
+      79
+    ],
+    "answers": [
+      [
+        4
+      ],
+      [
+        3
+      ]
+    ],
+    "imagesUnchanged": true
+  },
+  "style17Revision": {
+    "display": 17,
+    "previousVersion": "7382000eb5a4125e",
+    "choices": [
+      "L-tube 삽입 후 금식",
+      "응급 수술",
+      "항생제 투여",
+      "즉시 경구 식이 시작",
+      "자극성 하제 단독 투여"
+    ]
+  },
+  "outsideLecture166Revision": {
+    "previousVersion": "96138d60f19ac7a7",
+    "display": 166,
+    "userApproved": true,
+    "answer": "2.9 g",
+    "verification": "WHO electronic essential medicines list, Oral rehydration salts, recommendation 1112"
+  },
+  "releaseWordingReview": {
+    "previousVersion": "0e7ff1221abcbc4e",
+    "reviewed": 168,
+    "changed": [
+      129,
+      134,
+      140,
+      141,
+      142,
+      6,
+      12,
+      15,
+      19,
+      24,
+      68,
+      77,
+      85,
+      95,
+      112,
+      122,
+      123,
+      124,
+      130,
+      143,
+      146,
+      148,
+      162
+    ],
+    "outsideLecture166Preserved": true
+  },
+  "stemAndKimReview": {
+    "previousVersion": "f3bfe361c4f28462",
+    "merged": [
+      4,
+      8,
+      25,
+      26,
+      27,
+      28,
+      31,
+      32,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      96,
+      97,
+      119,
+      130,
+      132,
+      133,
+      134,
+      138,
+      140,
+      141
+    ],
+    "replaced": [
+      29,
+      30,
+      33
+    ],
+    "kimEdited": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52
+    ],
+    "verifiedSources": [
+      {
+        "J": 259,
+        "file": "2023소화기계 하위 30.pdf",
+        "page": 24
+      },
+      {
+        "J": 37,
+        "file": "소화기계_정답률 30% 미만 문항.pdf",
+        "page": 2
+      },
+      {
+        "J": 39,
+        "file": "소화기계_정답률 30% 미만 문항.pdf",
+        "page": 3
+      }
+    ],
+    "imagesAndQuotasPreserved": true
+  },
+  "question59Revision": {
+    "previousVersion": "cc80064cf2d33b67",
+    "source": 51,
+    "originalImages": true,
+    "originalChoiceOrder": true,
+    "removedDiagnosticGiveaway": true
+  },
+  "question25ImageRevision": {
+    "previousVersion": "e0c3773b9fdc6c4a",
+    "sourceLecture": 10,
+    "labels": [
+      "A",
+      "B"
+    ],
+    "unmodifiedPhotos": true,
+    "removedTextHints": true,
+    "answerUnchanged": true
+  },
+  "question27Revision": {
+    "previousVersion": "1aec4d45f6a3b6e8",
+    "topic": "Cushing ulcer",
+    "removedAB": true
+  },
+  "question39Revision": {
+    "previousVersion": "2c7c11597db1198e",
+    "topic": "자가면역위염과 type I 위 NET의 기원 세포",
+    "newOriginal": true,
+    "removedAB": true,
+    "verification": "https://gastro.org/clinical-guidance/diagnosis-and-management-of-atrophic-gastritis/"
+  }
+}
