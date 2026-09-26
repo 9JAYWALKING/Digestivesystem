@@ -3408,7 +3408,7 @@
     function renderScheduleOp(course) {
       if (Number(course.id) === 48) return '';
       const professor = course.professor.trim();
-      if (![19, 33, 38, 39].includes(Number(course.id)) && !scheduleOpProfessors.has(professor)) return '';
+      if (![19, 33, 38, 39, 40].includes(Number(course.id)) && !scheduleOpProfessors.has(professor)) return '';
       const bee = '<img class="course-op-image" src="./assets/op-bee.png" alt="" aria-hidden="true" draggable="false" decoding="async">';
       if (professor !== '조순구') return bee;
       return '<span class="course-op-stack" aria-hidden="true">' + bee + '<img class="course-op-badge" src="./assets/op-cho-soon-gu.png" width="1672" height="941" alt="" aria-hidden="true" draggable="false" decoding="async"></span>';
