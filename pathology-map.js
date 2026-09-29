@@ -988,6 +988,382 @@ const esophagusTree=b('식도',
     it('Turcot phenotype','대장 종양성 병변과 뇌종양이 연결되는 표현이다. 단일 유전자 질환으로 단정하기보다 강의의 대표 조합으로 기억한다.',[ic(30,'그 밖의 증후군')])
   ];
 
+  // One disease location, with pathology, clinical and treatment references together.
+  const liverWikiReferences={},liverStudyNotes={};
+  const lr=(courseId,heading)=>({courseId,heading});
+  const lt=(label,clue,refs,questions=[],children=[])=>{
+    liverWikiReferences[label]=refs;
+    liverStudyNotes[label]={clue,questions};
+    return children.length?{label,children}:{label};
+  };
+  const liverTree=lt('간','먼저 손상의 원인을 나누고, 여러 원인이 공통으로 만드는 간경변·간부전과 종양을 이어 본다. 질환명과 조직 소견, 진행 단계는 서로 다른 분류축이다.',[
+    lr(16,'간손상의 기본 구조와 평가'),lr(44,'간검사를 읽는 세 축'),lr(53,'간경변을 이해하는 두 개의 축')
+  ],[],[
+    lt('감염성 질환','바이러스간염은 전파·만성화·혈청표지자로, 간농양은 원인균과 배액의 필요성으로 나눈다.',[
+      lr(16,'간염바이러스 비교'),lr(45,'간 안의 고름집을 어떻게 읽을까')
+    ],[],[
+      lt('바이러스간염','HAV·HEV는 주로 fecal–oral, HBV·HCV·HDV는 혈액 노출과 연결한다. 급성·만성은 바이러스 종류와 별도로 판단한다.',[
+        lr(49,'전파 경로와 만성화'),lr(16,'급성바이러스간염'),lr(16,'만성간염')
+      ],[],[
+        lt('A형 간염 · HAV','IgM anti-HAV가 급성감염의 단서다. 만성화하지 않으며 IgG 양성만으로 현재 간염을 진단하지 않는다.',[
+          lr(49,'IgM anti-HAV와 IgG anti-HAV'),lr(16,'혈청학과 감염력 도식')
+        ],[93,651,794,950]),
+        lt('B형 간염 · HBV','HBsAg·anti-HBc·anti-HBs와 HBV DNA를 함께 읽는다. 만성감염은 비활동성 상태와 활동성 간염을 구별해야 한다.',[
+          lr(16,'HBV 혈청학'),lr(49,'항원과 항체의 역할'),lr(51,'만성간염의 출발점 — 원인, 활동도, 섬유화')
+        ],[],[
+          lt('급성 B형 간염','HBsAg와 IgM anti-HBc가 전형적인 조합이다. Window period에는 HBsAg가 사라지고 anti-HBs가 아직 검출되지 않을 수 있다.',[
+            lr(49,'회복하는 급성간염과 만성 감염'),lr(16,'Window period와 조합 판독')
+          ],[650,949]),
+          lt('만성 B형 간염','자연경과의 단계와 치료 기준을 구분한다. HBeAg 음성이라도 DNA·ALT가 상승하면 활동성 간염일 수 있다.',[
+            lr(51,'과거 기출을 읽는 자연경과 분류'),lr(51,'2026년에는 바이러스혈증을 중심으로 다시 나눈다'),lr(51,'올해의 핵심 치료 시작 표'),lr(51,'일차 경구약과 환자 조건별 선택'),lr(26,'Chronic hepatitis B · Ground-glass hepatocyte')
+          ],[111,416,481,534,750]),
+          lt('HBV 재활성화','면역억제 전 현재 감염과 과거 감염을 확인한다. 급성 B형간염과 만성감염의 flare는 병력·검사 경과까지 보아야 구분된다.',[
+            lr(51,'면역억제 치료 전 재활성화 예방'),lr(49,'임상 경과와 chronic flare 감별')
+          ],[])
+        ]),
+        lt('C형 간염 · HCV','Anti-HCV는 노출의 흔적, HCV RNA는 현재 감염의 단서다. 항체 양성이 예방 면역을 의미하지 않으며 급성·만성 모두 치료를 검토한다.',[
+          lr(49,'Anti-HCV와 HCV RNA'),lr(51,'Anti-HCV와 HCV RNA — 전체 판독 표'),lr(51,'치료 대상과 두 가지 중심 요법'),lr(16,'경과와 조직 단서'),lr(58,'HCV DAA — 자르기, 복제·조립, RNA 합성의 세 표적')
+        ],[163,396,414,480,531,535,678,751]),
+        lt('D형 간염 · HDV','HBV의 HBsAg를 필요로 한다. HBV와 동시에 감염되는 coinfection과 기존 HBV 감염에 더해지는 superinfection을 구별한다.',[
+          lr(49,'HDV — 동시감염과 중복감염'),lr(16,'Coinfection과 superinfection')
+        ],[]),
+        lt('E형 간염 · HEV','오염된 물뿐 아니라 일부 유전자형의 동물·육류 노출도 단서다. 임신 중 중증화와 면역억제 환자의 만성화 예외를 기억한다.',[
+          lr(49,'오염된 물, 임신, 만성화의 예외'),lr(49,'HEV 1·2형과 3·4형 비교'),lr(16,'E형 간염바이러스')
+        ],[207,942]),
+        lt('CMV 간염','간염바이러스 A–E만 간염을 일으키는 것은 아니다. CMV는 조직에서 커진 세포와 특징적인 봉입체를 확인하는 감별이다.',[
+          lr(16,'Glycogen과 viral inclusion'),lr(16,'감염성 원인과 neonatal hepatitis')
+        ],[945])
+      ]),
+      lt('간농양','발열·우상복부 통증과 간내 감염성 병변이 공통이다. 세균성인지 아메바성인지에 따라 배양·혈청검사와 치료 방향이 달라진다.',[
+        lr(45,'간 안의 고름집을 어떻게 읽을까')
+      ],[],[
+        lt('Pyogenic liver abscess','항생제와 PCD를 함께 연결한다. K. pneumoniae 간농양에서는 안구·중추신경계 등 원격 감염도 중요하다.',[
+          lr(45,'감염 경로와 원인균을 구분하기'),lr(45,'K. pneumoniae와 전이성 감염'),lr(45,'치료는 PCD와 항생제를 함께'),lr(45,'PCD 영상과 수술로 전환하는 조건')
+        ],[116,217,267,434,548,612,733]),
+        lt('Amebic liver abscess','E. histolytica가 장에서 문맥을 거쳐 간에 도달한다. Metronidazole 뒤 장내 원충 제거가 필요하며, 모든 환자가 배액 대상인 것은 아니다.',[
+          lr(45,'장에서 간으로 오는 E. histolytica'),lr(45,'Metronidazole 뒤에는 장내 원충 제거'),lr(45,'배액이 필요한 예외와 파열 위험')
+        ],[])
+      ])
+    ]),
+    lt('지방간·독성 손상','지방이 있다는 조직 소견과 그 원인을 구별한다. 알코올·대사성 손상은 겹칠 수 있고 약물은 여러 형태의 간손상을 만들 수 있다.',[
+      lr(16,'Steatosis'),lr(47,'지방간·간염·간경변은 같은 말이 아니다'),lr(49,'Intrinsic·idiosyncratic·indirect injury')
+    ],[],[
+      lt('알코올성 간질환','지방축적, 활동성 간염, 섬유화·간경변을 나누어 읽는다. 알코올성간염은 반드시 간경변이 있어야 생기는 질환이 아니다.',[
+        lr(16,'알코올 간질환의 발병기전'),lr(47,'지방간·간염·간경변은 같은 말이 아니다')
+      ],[165,276],[
+        lt('Alcoholic fatty liver','알코올 손상에서 먼저 나타나는 변화는 간세포 내 지방축적이다. 간염의 ballooning·염증 소견과는 구별한다.',[
+          lr(16,'Alcoholic fatty liver'),lr(16,'지방축적과 간세포 손상')
+        ],[38,165]),
+        lt('Alcoholic hepatitis','Ballooning·Mallory-Denk body·neutrophil을 묶어 읽는다. 임상에서는 최근 황달, 중증도, steroid 반응을 순서대로 평가한다.',[
+          lr(16,'Alcoholic hepatitis'),lr(47,'최근 황달과 AST 우세의 간손상'),lr(47,'mDF·MELD·Lille의 역할 구분'),lr(47,'Prednisolone과 Lille 반응 평가')
+        ],[68,191,316,405,478,508,768,792,822]),
+        lt('Alcoholic fibrosis·cirrhosis','Pericellular·perivenular fibrosis가 누적되어 재생결절과 구조 왜곡으로 이어진다. 이후 합병증은 원인과 별개로 간경변 가지에서 함께 본다.',[
+          lr(16,'Alcoholic fibrosis'),lr(16,'Alcoholic cirrhosis'),lr(53,'Compensated와 decompensated cirrhosis')
+        ],[165,276])
+      ]),
+      lt('대사성 지방간','MASLD는 대사 위험인자와 연결한 질환 범주이고, MASH는 그 안에서 염증·간세포 손상을 동반한 형태다. 예전 NAFLD·NASH 명칭도 함께 읽는다.',[
+        lr(48,'NAFLD·MAFLD·MASLD를 시대에 맞게 읽기'),lr(16,'MASLD와 MASH')
+      ],[],[
+        lt('MASLD','간의 지방축적에 심대사 위험인자를 연결한다. 진단 후에는 지방의 양만이 아니라 섬유화 위험을 평가한다.',[
+          lr(48,'NAFLD·MAFLD·MASLD를 시대에 맞게 읽기'),lr(48,'첫 단계는 병력과 FIB-4'),lr(48,'TE·SWE·MRE·생검의 자리를 구분')
+        ],[69,70,192,193,509]),
+        lt('MASH · 이전 NASH','Steatosis에 ballooning·염증이 더해진다. 알코올성 손상과 조직이 닮았으므로 병력·대사 위험인자로 원인을 구분하며, 섬유화와 HCC로 진행할 수 있다.',[
+          lr(16,'병리 소견과 알코올성 간질환의 비교'),lr(26,'NASH · Steatosis와 Ballooning'),lr(48,'Steatosis에서 MASH·섬유화로'),lr(48,'올해는 승인 약제가 있다는 점이 바뀌었다')
+        ],[428,743,824]),
+        lt('MetALD','대사 위험인자와 일정 범위의 음주가 겹친 지방간 범주다. 알코올성과 대사성을 언제나 완전히 배타적인 원인으로 나누지는 않는다.',[
+          lr(48,'NAFLD·MAFLD·MASLD를 시대에 맞게 읽기')
+        ],[])
+      ]),
+      lt('약인성 간손상 · DILI','노출 약물과 시간 관계를 확인한다. R ratio는 손상 형태, RUCAM은 인과 가능성, Hy’s law는 중증 위험을 읽는 도구다.',[
+        lr(49,'Intrinsic·idiosyncratic·indirect injury'),lr(49,'R ratio — 어떤 모양으로 손상되었는가'),lr(49,'RUCAM — 그 약이 원인일 가능성'),lr(49,'Hy’s law — signal과 case를 구별')
+      ],[91,334,652,795,819],[
+        lt('Intrinsic injury','용량과 관련된 예측 가능한 독성이다. 대표적인 acetaminophen에서는 NAPQI·glutathione과 N-acetylcysteine을 연결한다.',[
+          lr(49,'Acetaminophen — NAPQI와 glutathione'),lr(49,'Acetaminophen 중독의 치료 흐름')
+        ],[]),
+        lt('Idiosyncratic injury','개인의 감수성과 관련되며 잠복기가 다양하다. Isoniazid와 amoxicillin/clavulanate 등은 약을 끊은 시점까지 포함해 병력을 읽는다.',[
+          lr(49,'Intrinsic·idiosyncratic·indirect injury'),lr(49,'Isoniazid — 일시적 적응과 임상 간염을 구별'),lr(49,'Amoxicillin/clavulanate — 다 먹고 난 뒤에도 발생')
+        ],[532,653]),
+        lt('Indirect injury','직접적인 세포 독성보다 약물의 면역·생물학적 작용을 거쳐 손상이 발생하는 범주다. 용량 의존 독성과 같은 뜻이 아니다.',[
+          lr(49,'Intrinsic·idiosyncratic·indirect injury')
+        ],[])
+      ])
+    ]),
+    lt('자가면역성 질환','AIH는 간세포·interface, PBC는 작은 간내 담관, PSC는 간내·간외 담관을 중심으로 본다. 항체 하나보다 손상 위치와 검사 양상을 먼저 연결한다.',[
+      lr(52,'간세포가 손상되는가, 담관이 손상되는가'),lr(17,'PBC와 PSC 비교')
+    ],[],[
+      lt('Autoimmune hepatitis · AIH','Interface hepatitis·plasma cell·rosette와 IgG 상승을 묶는다. 활동성에 따라 면역억제치료를 결정하며 AZA의 관해 유도·유지 역할을 구별한다.',[
+        lr(16,'자가면역간염'),lr(52,'조직에서 보는 interface hepatitis'),lr(52,'언제 적극적으로 치료하는가'),lr(52,'관해 유도와 유지치료'),lr(52,'관해와 중단 후 재발')
+      ],[164,275,404,429,533,772],[
+        lt('Type 1 AIH','ANA·SMA가 대표적인 항체다. 모든 연령에서 가능하며 성인 AIH에서 흔히 보는 유형이다.',[
+          lr(52,'Type 1과 Type 2를 가르는 항체'),lr(52,'다른 원인을 배제하고 점수를 더한다')
+        ],[847]),
+        lt('Type 2 AIH','Anti-LKM1·anti-LC1을 연결한다. Type 1과 항체를 바꾸어 외우지 않는다.',[
+          lr(52,'Type 1과 Type 2를 가르는 항체'),lr(16,'임상 특징과 감별')
+        ],[])
+      ]),
+      lt('Primary biliary cholangitis · PBC','작은 간내 담관의 비화농성 파괴, AMA·IgM, ALP·GGT 상승이 한 묶음이다. UDCA의 질병 조절 효과와 소양증 치료는 분리한다.',[
+        lr(17,'PBC의 조직학적 진행'),lr(26,'Primary biliary cholangitis · PBC'),lr(52,'AMA와 IgM이 가리키는 방향'),lr(52,'UDCA가 좋아지게 하는 것과 못 하는 것'),lr(52,'소양증과 진행성 질환의 별도 치료')
+      ],[50,264,393,484,596,846,848]),
+      lt('Primary sclerosing cholangitis · PSC','간내·간외 담관의 협착과 확장이 만드는 beading, onion-skin fibrosis, UC와의 연관을 묶는다. 담관암 위험도 함께 연결한다.',[
+        lr(17,'Primary sclerosing cholangitis · PSC'),lr(17,'PSC의 병리'),lr(52,'담즙정체성 자가면역 질환의 위치')
+      ],[479,744]),
+      lt('Overlap syndrome','AIH 소견에 담관 손상이 겹치면 PBC·PSC를 함께 평가한다. 항체가 둘 나온다는 사실만으로 overlap을 확정하지 않는다.',[
+        lr(52,'AIH와 PBC가 겹치면 경과를 다시 읽는다'),lr(52,'두 질환을 함께 확인하는 Paris 기준')
+      ],[],[
+        lt('AIH–PBC overlap','Interface hepatitis와 담관 손상, 두 질환의 검사·항체 기준을 함께 확인한다. Paris 기준은 AIH와 PBC 각 영역을 따로 충족하는 구조다.',[
+          lr(52,'두 질환을 함께 확인하는 Paris 기준'),lr(52,'AIH와 PBC가 겹치면 경과를 다시 읽는다')
+        ],[]),
+        lt('AIH–PSC overlap','AIH에서 담즙정체 소견이 두드러지면 MRCP 등으로 PSC의 담관 병변을 확인한다.',[
+          lr(52,'두 질환을 함께 확인하는 Paris 기준'),lr(17,'Primary sclerosing cholangitis · PSC')
+        ],[])
+      ])
+    ]),
+    lt('축적·유전성 황달','철·구리의 축적과 bilirubin 처리 이상을 분리한다. 황달에서는 비포합형인지 포합형인지가 첫 갈림길이다.',[
+      lr(16,'철, 구리, lipofuscin과 담즙'),lr(44,'비포합형과 포합형')
+    ],[],[
+      lt('금속 축적','철은 hepcidin–ferroportin, 구리는 ATP7B·담즙 배설과 연결한다. 색소의 모양만으로 단정하지 않고 염색과 검사를 함께 본다.',[
+        lr(16,'Hemochromatosis'),lr(16,'Wilson disease')
+      ],[],[
+        lt('Hemochromatosis','철과부하가 간·췌장·심장 등을 손상시킨다. HFE 관련 유전성 질환의 hepcidin 저하와 Prussian blue 양성 철침착을 연결한다.',[
+          lr(16,'Hepcidin과 ferroportin의 정상 조절'),lr(16,'Hereditary hemochromatosis에서 달라지는 경로'),lr(26,'Hemochromatosis'),lr(19,'Hemochromatosis')
+        ],[42,482,745]),
+        lt('Wilson disease','ATP7B 이상으로 구리의 담즙 배설이 감소한다. 간·신경정신 증상과 Kayser–Fleischer ring, ceruloplasmin·소변 구리를 함께 읽는다.',[
+          lr(16,'정상 구리의 흡수·운반·배설'),lr(16,'Rhodanine stain과 구리 정량'),lr(48,'Ceruloplasmin·소변 구리·임상 소견을 묶어 진단'),lr(48,'치료는 구리를 제거하는 방향')
+        ],[318,422,510,823,937])
+      ]),
+      lt('비포합형 bilirubin 증가','포합 능력이 감소하는 질환들이다. Gilbert와 Crigler–Najjar를 중증도와 UGT1A1 기능으로 나눈다.',[
+        lr(44,'비포합형과 포합형'),lr(44,'Crigler–Najjar syndrome')
+      ],[],[
+        lt('Gilbert syndrome','단식·스트레스 뒤 가벼운 비포합형 황달이 나타난다. 다른 간검사는 정상이고 소변 bilirubin은 음성인 전형적 조합을 기억한다.',[
+          lr(44,'Gilbert syndrome'),lr(44,'Bilirubin만 높은가 먼저 묻기')
+        ],[115,344,546,609,816]),
+        lt('Crigler–Najjar type I','UGT1A1 기능이 거의 없어 심한 비포합형 고빌리루빈혈증과 kernicterus 위험이 생긴다. Phenobarbital 반응이 없는 쪽이다.',[
+          lr(44,'Crigler–Najjar syndrome')
+        ],[]),
+        lt('Crigler–Najjar type II','일부 포합 기능이 남아 type I보다 경하며, phenobarbital 반응이 구별점이다.',[
+          lr(44,'Crigler–Najjar syndrome')
+        ],[])
+      ]),
+      lt('포합형 bilirubin 증가','포합 뒤 수송·배설의 이상을 본다. Dubin–Johnson과 Rotor는 담도 폐쇄에 의한 황달과도 구별한다.',[
+        lr(44,'Dubin–Johnson과 Rotor syndrome'),lr(44,'담즙정체에서는 초음파부터')
+      ],[],[
+        lt('Dubin–Johnson syndrome','MRP2 관련 담세관 배설 이상으로 포합형 bilirubin이 증가한다. 검게 착색된 간이 Rotor와의 대표적인 차이다.',[
+          lr(44,'Dubin–Johnson과 Rotor syndrome')
+        ],[]),
+        lt('Rotor syndrome','포합형 고빌리루빈혈증을 보이지만 Dubin–Johnson의 검은 간은 없다. 두 질환을 모두 간세포 파괴성 간염으로 해석하지 않는다.',[
+          lr(44,'Dubin–Johnson과 Rotor syndrome')
+        ],[])
+      ]),
+      lt('유전성 담즙정체','진행성 PFIC와 재발성 BRIC를 구별한다. 아형에 따라 GGT가 정상일 수 있으므로 담즙정체가 항상 GGT 상승을 뜻하지 않는다.',[
+        lr(44,'Dubin–Johnson과 Rotor syndrome')
+      ],[],[
+        lt('PFIC','Progressive familial intrahepatic cholestasis. FIC1·BSEP·MDR3 등 수송 기능에 따라 나누며 PFIC 3의 GGT 상승을 구별한다.',[
+          lr(44,'Dubin–Johnson과 Rotor syndrome')
+        ],[]),
+        lt('BRIC','Benign recurrent intrahepatic cholestasis. 진행성 PFIC와 달리 반복되는 담즙정체 발작이라는 경과를 중심으로 읽는다.',[
+          lr(44,'Dubin–Johnson과 Rotor syndrome')
+        ],[])
+      ])
+    ]),
+    lt('낭성·영아 질환','낭종이 담관과 통하는지, 문맥역 섬유화가 중심인지, 영아 황달에서 담도 폐쇄를 놓치지 않았는지를 구분한다.',[
+      lr(17,'간내 담관 기형과 낭성 질환'),lr(20,'영아 황달 · indirect와 direct를 먼저 나눈다')
+    ],[],[
+      lt('간낭종·담관 발생 이상','PLD의 독립 낭종과 Caroli의 담관 확장은 연결성이 다르다. Congenital hepatic fibrosis는 낭종의 크기보다 문맥역 섬유화가 핵심이다.',[
+        lr(17,'담관 기형 비교 그림 읽기'),lr(54,'Hepatic cyst와 polycystic liver disease')
+      ],[277],[
+        lt('Simple hepatic cyst','담관과 통하지 않는 장액성 공간이다. 대개 무증상이지만 출혈·감염 또는 복잡한 낭성 소견이 있으면 단순 낭종과 구별한다.',[
+          lr(54,'Hepatic cyst와 polycystic liver disease'),lr(60,'단순 낭종과 다른 소견')
+        ],[]),
+        lt('Polycystic liver disease','다발성 독립 낭종과 ADPKD의 연관을 기억한다. 담관 자체가 늘어나는 Caroli disease와 달리 보통 담관과 연결되지 않는다.',[
+          lr(17,'Polycystic liver disease'),lr(54,'Hepatic cyst와 polycystic liver disease')
+        ],[277]),
+        lt('Von Meyenburg complex','작고 불규칙한 담관들이 섬유성 바탕에 모인 bile duct hamartoma다. 악성 gland의 침윤과 구별한다.',[
+          lr(17,'Von Meyenburg complex')
+        ],[277]),
+        lt('Congenital hepatic fibrosis','넓은 문맥역 섬유화와 비정상 담관, ARPKD와의 연관이 핵심이다. 문맥고혈압을 만들 수 있지만 흔한 간세포 손상성 간경변과 구조가 다르다.',[
+          lr(17,'Congenital hepatic fibrosis'),lr(17,'담관 기형 비교 그림 읽기')
+        ],[277]),
+        lt('Caroli disease','간내 담관의 비폐쇄성·분절성 낭성 확장이다. 담관과 연결되며 congenital hepatic fibrosis와 동반할 수 있다.',[
+          lr(17,'Caroli disease'),lr(17,'담관 기형 비교 그림 읽기')
+        ],[277])
+      ]),
+      lt('영아 담즙정체','영아의 direct bilirubin 증가는 생리적 황달과 다르게 접근한다. 담도폐쇄증과 신생아간염을 먼저 구별한다.',[
+        lr(16,'Neonatal cholestasis'),lr(20,'황달 감별을 압축하는 기준')
+      ],[],[
+        lt('Biliary atresia','지속 황달·회백색 변에서 놓치지 않아야 할 진행성 담도 폐쇄다. 진단과 Kasai 수술의 시기가 중요하다.',[
+          lr(17,'Biliary atresia와 Secondary biliary cirrhosis'),lr(20,'담도폐쇄증의 진단과 수술 시기')
+        ],[]),
+        lt('Neonatal hepatitis','Giant-cell transformation을 보일 수 있는 영아 간염 패턴이다. 조직 모습만으로 원인 감염이나 대사질환까지 한 번에 확정하지 않는다.',[
+          lr(16,'감염성 원인과 neonatal hepatitis'),lr(16,'신생아간염의 병리 소견')
+        ],[746])
+      ])
+    ]),
+    lt('혈류·혈관 장애','간으로 들어오는 혈류, sinusoid, 간정맥으로 나가는 혈류 중 어느 위치가 막히거나 부족한지 찾는다.',[
+      lr(17,'간의 순환장애'),lr(16,'Lobule, acinus와 혈류'),lr(16,'Portal hypertension의 기준과 위치')
+    ],[],[
+      lt('유입·관류 장애','문맥 폐쇄와 동맥·전신 관류 부족을 구별한다. 저산소 손상은 산소 공급에 취약한 zone 3와 연결한다.',[
+        lr(17,'간의 순환장애'),lr(16,'괴사의 분포와 범위')
+      ],[],[
+        lt('Portal vein thrombosis','문맥 유입이 막히는 prehepatic portal hypertension의 원인이다. 간정맥 유출 폐쇄인 Budd–Chiari와 위치가 다르다.',[
+          lr(16,'Portal hypertension의 기준과 위치'),lr(34,'문맥 혈류를 확인하는 이유')
+        ],[]),
+        lt('Ischemic hepatitis','저관류·저산소 손상에서 centrilobular, zone 3 necrosis를 연결한다. 원인이 다른 간염에서도 간수치는 높아질 수 있으므로 상황을 함께 읽는다.',[
+          lr(16,'괴사의 분포와 범위'),lr(17,'간의 순환장애')
+        ],[34]),
+        lt('Hepatic infarct','국소 혈류 공급 장애로 생기는 간의 경색이다. 광범위 저관류성 간손상과 같은 범위의 병변으로 보지 않는다.',[
+          lr(17,'간의 순환장애')
+        ],[])
+      ]),
+      lt('유출·sinusoid 장애','심장성 울혈, 큰 간정맥 폐쇄, 작은 sinusoid·terminal venule 손상을 구분한다.',[
+        lr(17,'간의 순환장애')
+      ],[],[
+        lt('Passive congestion · 심장성 울혈','우심부전으로 zone 3에 울혈·출혈·섬유화가 생긴다. Nutmeg liver와 central-to-central의 reverse pattern을 연결한다.',[
+          lr(17,'Passive congestion · 심장성 울혈'),lr(53,'새 복수는 진단적 천자부터')
+        ],[40,169,431,679]),
+        lt('Budd–Chiari syndrome','간정맥 또는 유출 부위 IVC의 폐쇄다. 간비대·복통·복수와 간정맥 혈전, 울혈·괴사를 연결한다.',[
+          lr(17,'Budd–Chiari syndrome'),lr(19,'Budd-Chiari syndrome')
+        ],[41,747]),
+        lt('SOS · Veno-occlusive disease','Sinusoidal endothelial injury와 terminal hepatic venule의 폐쇄가 중심이다. 조혈모세포 이식·conditioning 치료 같은 배경을 확인한다.',[
+          lr(17,'Veno-occlusive disease · VOD')
+        ],[])
+      ])
+    ]),
+    lt('간경변·간부전','여러 원인 질환이 공유하는 결과를 모았다. 원인 이름, 간기능 저하, 문맥고혈압 합병증은 같은 환자에게 함께 붙을 수 있다.',[
+      lr(53,'간경변을 이해하는 두 개의 축'),lr(49,'간수치가 높은 것과 간부전은 다르다')
+    ],[],[
+      lt('급성 간부전 · ALF','기존 간경변 없이 급성 손상 뒤 응고장애와 간성뇌증이 생기는 상황이다. AST·ALT 높이만으로 중증도를 판단하지 않는다.',[
+        lr(16,'급성간부전'),lr(49,'간수치가 높은 것과 간부전은 다르다'),lr(49,'King’s College criteria')
+      ],[37,92,335,532,820]),
+      lt('간경변 · Cirrhosis','Fibrous septa와 regenerative nodules가 함께 정상 구조를 재편한다. 보상 상태와 비대상화 여부가 치료·예후의 중요한 갈림길이다.',[
+        lr(16,'원인과 진단 형태'),lr(26,'Liver cirrhosis'),lr(53,'Compensated와 decompensated cirrhosis'),lr(53,'Child-Pugh: 다섯 항목을 같은 방식으로 계산한다'),lr(53,'MELD 계열: 어떤 변수가 들어가는가')
+      ],[209,338,423,537,749,850],[
+        lt('대상성 간경변','뚜렷한 비대상화 합병증 없이 기능을 유지하는 단계다. 문맥고혈압을 찾아 첫 비대상화를 예방하고 원인 치료·HCC 감시를 계속한다.',[
+          lr(53,'Compensated와 decompensated cirrhosis'),lr(53,'CSPH를 찾아 비대상화를 예방한다'),lr(53,'HCC surveillance')
+        ],[]),
+        lt('비대상성 간경변','복수·정맥류 출혈·간성뇌증 같은 사건은 질환이 한 단계 진행했다는 신호다. 합병증 치료와 간이식 평가를 함께 생각한다.',[
+          lr(53,'Compensated와 decompensated cirrhosis'),lr(53,'간이식을 의뢰할 신호')
+        ],[73,208,395]),
+        lt('이차성 담즙성 간경변','담석·협착·종양 등으로 담즙 배출이 오래 막혀 생긴 결과다. PBC의 옛 명칭인 primary biliary cirrhosis와 혼동하지 않는다.',[
+          lr(17,'Biliary atresia와 Secondary biliary cirrhosis'),lr(17,'간내 담관 질환')
+        ],[])
+      ]),
+      lt('문맥고혈압·정맥류','문맥의 저항·유입과 우회혈류를 연결한다. 정맥류는 급성 지혈과 초출혈·재출혈 예방이 서로 다른 단계다.',[
+        lr(53,'Portal circulation과 HVPG'),lr(53,'CSPH를 찾아 비대상화를 예방한다'),lr(58,'급성 출혈과 출혈 예방은 약부터 다르다')
+      ],[536,688],[
+        lt('식도정맥류·출혈','급성 출혈에서는 혈관수축제·항생제·EVL을 함께 생각한다. 예방에는 NSBB의 β₁·β₂ 작용과 적합성을 확인한다.',[
+          lr(53,'내시경에서 보는 크기와 red color sign'),lr(53,'급성 정맥류 출혈: 세 가지를 동시에 시작한다'),lr(53,'1차 예방과 2차 예방'),lr(53,'Carvedilol 선택: 문맥압을 낮추되 관류를 지킨다'),lr(58,'Somatostatin과 Octreotide — 분비와 혈류를 함께 낮춘다')
+        ],[48,74,176,211,339,387,538,788,884]),
+        lt('위정맥류','식도정맥류와 위치·배액 경로가 다르다. EVO와 TIPS, BRTO/PARTO를 혈류 방향에 맞추어 구별한다.',[
+          lr(53,'위정맥류와 EVO'),lr(53,'TIPS와 BRTO/PARTO는 혈류 방향이 반대다')
+        ],[])
+      ]),
+      lt('체액 저류·감염','복수의 원인에는 SAAG·단백, 감염에는 PMN을 사용한다. 복부와 흉부의 체액 공간을 구분하면 SBP·SBE도 섞이지 않는다.',[
+        lr(53,'새 복수는 진단적 천자부터'),lr(53,'간성흉수: 복강의 물이 흉막강으로 이동한다')
+      ],[],[
+        lt('복수','새 복수는 진단적 천자로 원인과 감염을 평가한다. Spironolactone·furosemide와 대량천자 후 albumin의 역할을 구별한다.',[
+          lr(53,'새 복수는 진단적 천자부터'),lr(53,'복수의 단계별 치료와 이뇨제'),lr(53,'Albumin은 상황에 따라 목적과 용량이 다르다'),lr(58,'Spironolactone과 Furosemide를 함께 쓰는 이유')
+        ],[679,849,885]),
+        lt('난치성 복수','충분히 치료해도 반응하지 않는 경우와 부작용 때문에 이뇨제를 못 쓰는 경우를 나눈다. 반복 천자·TIPS·간이식의 자리를 함께 본다.',[
+          lr(53,'난치성 복수: 효과가 없을 때와 쓸 수 없을 때'),lr(53,'간이식을 의뢰할 신호')
+        ],[395]),
+        lt('Spontaneous bacterial peritonitis · SBP','복수 PMN ≥250/mm³이면 배양 결과를 기다리지 않고 치료를 시작한다. 단순 복수의 양 증가와 구별한다.',[
+          lr(53,'PMN 250: 배양을 기다리지 않는 이유'),lr(53,'예방과 다른 감염의 확인'),lr(53,'Albumin은 상황에 따라 목적과 용량이 다르다')
+        ],[75,210]),
+        lt('간성흉수','복강의 체액이 횡격막 결손을 통해 흉막강으로 이동하며 흔히 우측에 생긴다. 단순 간성흉수의 일반 흉관 지속 배액은 피한다.',[
+          lr(53,'간성흉수: 복강의 물이 흉막강으로 이동한다'),lr(53,'간성흉수의 치료와 난치성 흉수')
+        ],[]),
+        lt('Spontaneous bacterial empyema · SBE','폐렴 없이 간성흉수에 생긴 감염이다. 흉수 배양 여부에 따라 PMN 기준이 달라지며, 육안상 고름이 필수는 아니다.',[
+          lr(53,'SBE: 고름이 없어도 흉수 감염일 수 있다')
+        ],[]),
+        lt('저나트륨혈증','체액이 부족한 저혈량형과 물이 상대적으로 과다한 희석성 저나트륨혈증을 구분한다. 낮은 Na 수치 하나만 보고 같은 처치를 하지 않는다.',[
+          lr(53,'저나트륨혈증: 저혈량인가 희석성인가')
+        ],[])
+      ]),
+      lt('신장·뇌·폐 합병증','신장 관류 저하, 뇌기능 변화, 폐혈관 이상을 나눈다. 합병증이 생기면 감염·출혈·약물 같은 촉발 요인도 다시 찾는다.',[
+        lr(53,'AKI와 HRS-AKI'),lr(53,'간성뇌증: 수치보다 임상과 유발인자'),lr(53,'폐합병증: 같은 호흡곤란을 세 가지 기전으로 나눈다')
+      ],[],[
+        lt('HRS-AKI','간경변·복수 환자의 AKI에서 적절한 혈량 평가·보충과 다른 원인 감별 뒤 판단한다. Creatinine 변화와 혈관수축제·albumin·이식 평가를 연결한다.',[
+          lr(53,'작은 creatinine 변화도 의미가 있다'),lr(53,'HRS 진단: 적절한 혈량 보충 후에도 회복되지 않는가'),lr(53,'HRS 치료와 간이식 평가')
+        ],[]),
+        lt('간성뇌증 · HE','의식·행동 변화와 유발인자를 임상적으로 판단한다. Ammonia 숫자만으로 등급을 정하지 않으며 lactulose·rifaximin과 원인 교정을 연결한다.',[
+          lr(53,'진단과 West Haven grade'),lr(53,'유발인자 전체를 한 묶음으로 외운다'),lr(53,'치료: Lactulose와 rifaximin, 보조제, 간이식'),lr(53,'단백질을 줄이지 않고 근육을 지킨다'),lr(58,'Lactulose와 Lactitol — 대장을 산성화하는 비흡수성 이당류')
+        ],[73,88,177,208,340,408,488,539,852,886]),
+        lt('Hepatopulmonary syndrome · HPS','폐내 혈관확장으로 산소화가 나빠진다. 간질환·문맥고혈압, A–a 산소차 증가, 폐내 혈관확장의 세 조건을 함께 확인한다.',[
+          lr(53,'HPS: 폐혈관이 넓어졌는데 왜 저산소증이 생길까'),lr(53,'HPS의 진단: 세 조건을 함께 확인한다'),lr(53,'HPS의 중증도와 치료: A–a 차와 PaO₂의 역할을 구분한다')
+        ],[]),
+        lt('Portopulmonary hypertension · PoPH','문맥고혈압에 동반되는 전모세혈관성 폐고혈압이다. HPS의 혈관확장과 달리 폐혈관 저항·우심실 부담이 중심이며 우심도자로 확인한다.',[
+          lr(53,'PoPH: 폐동맥압만 높다고 진단하지 않는다'),lr(53,'PoPH의 약물과 간이식')
+        ],[])
+      ]),
+      lt('혈구·지혈 이상','혈구가 줄어드는 기전과 응고·항응고의 균형은 별개다. 간경변 환자에게 출혈과 혈전이 모두 생길 수 있다.',[
+        lr(53,'혈액학적 이상: 혈구 수와 지혈의 균형을 나눈다')
+      ],[],[
+        lt('비장기능항진·혈구 감소','문맥고혈압성 비장 격리뿐 아니라 thrombopoietin 감소, 골수 억제·영양·감염·출혈도 확인한다.',[
+          lr(53,'혈구 감소: 비장 격리와 생성 저하를 함께 본다'),lr(16,'Ascites와 splenomegaly')
+        ],[]),
+        lt('Rebalanced hemostasis','응고인자 감소와 항응고인자 감소 등이 공존하는 취약한 균형이다. INR 상승만으로 항응고 상태 또는 출혈 위험 전체를 판단하지 않는다.',[
+          lr(53,'Rebalanced hemostasis: 출혈과 혈전이 공존한다'),lr(53,'활동성 출혈: 원인 지혈이 먼저다')
+        ],[])
+      ])
+    ]),
+    lt('결절·종양','재생·과형성인지 진정한 종양인지 먼저 나눈다. 악성 종양에서는 원발성·전이성을 구별하고, HCC는 종양 병기와 간기능을 함께 읽는다.',[
+      lr(17,'간 종양과 종양 유사 병변'),lr(54,'간에 종괴가 보이면 세 가지를 나누어 생각한다')
+    ],[],[
+      lt('과형성·전암 결절','FNH·NRH는 종양 유사 병변이다. Dysplastic nodule은 세포 밀도·이형성과 HCC로의 진행 가능성을 따로 본다.',[
+        lr(17,'간 종양과 종양 유사 병변'),lr(17,'Hepatocellular dysplasia와 Dysplastic nodule')
+      ],[],[
+        lt('Focal nodular hyperplasia · FNH','혈류 이상에 대한 국소 과형성으로 central stellate scar가 대표 단서다. HCA의 출혈·악성 전환 위험을 그대로 적용하지 않는다.',[
+          lr(17,'Focal nodular hyperplasia · FNH'),lr(19,'Focal nodular hyperplasia · FNH'),lr(54,'FNH — 종양처럼 보여도 국소 혈류에 대한 과형성')
+        ],[170,171,427,706]),
+        lt('Nodular regenerative hyperplasia · NRH','간 전체의 작은 재생결절에 뚜렷한 fibrous septum이 없다는 점이 간경변과 다르다. 비간경변성 문맥고혈압을 만들 수 있다.',[
+          lr(17,'Nodular regenerative hyperplasia · NRH')
+        ],[]),
+        lt('Dysplastic nodule','Large cell change와 small cell change를 구별한다. 특히 작은 세포의 밀도 증가와 N:C ratio 변화는 HCC로 향하는 결절을 읽는 단서다.',[
+          lr(17,'Large cell change와 Small cell change'),lr(54,'다단계 발암과 arterial enhancement·washout')
+        ],[168,485,941])
+      ]),
+      lt('양성 종양','Hemangioma는 혈관성 공간, HCA는 간세포성 신생물이다. 둘 다 양성이라는 말만으로 치료 위험을 같게 보지 않는다.',[
+        lr(54,'양성 종양 — 관찰해도 되는 종괴와 위험을 평가할 종괴')
+      ],[],[
+        lt('Cavernous hemangioma','혈액으로 찬 확장 혈관 공간과 주변부에서 중심부로 채워지는 조영 양상을 연결한다. 흔히 파열하므로 모두 수술한다는 설명은 틀리다.',[
+          lr(17,'Hemangioma'),lr(26,'Cavernous hemangioma'),lr(19,'Hepatic hemangioma'),lr(54,'Hemangioma — 혈액이 차는 공간이 영상의 답이 된다')
+        ],[294,506,692,827]),
+        lt('Hepatocellular adenoma · HCA','경구피임약·호르몬과의 연관, 출혈·괴사, 악성 전환 위험을 함께 본다. 분자 아형에 따라 중요한 단서가 다르다.',[
+          lr(17,'Hepatocellular adenoma · HCA'),lr(19,'Hepatocellular adenoma'),lr(54,'HCA — 양성이라는 이름보다 출혈과 악성 전환을 기억한다')
+        ],[22,293,691,790],[
+          lt('HNF1α-inactivated HCA','Steatosis와 LFABP 발현 소실을 연결한다. 일부 germline HNF1A 이상은 MODY 3와 연관된다.',[
+            lr(17,'HNF1α-inactivated HCA')
+          ],[]),
+          lt('β-catenin-activated HCA','CTNNB1 활성화와 HCC 진행 위험을 연결한다. 특히 exon 3 변이를 다른 아형과 구별한다.',[
+            lr(17,'β-catenin-activated HCA'),lr(54,'HCA — 양성이라는 이름보다 출혈과 악성 전환을 기억한다')
+          ],[]),
+          lt('Inflammatory HCA','염증과 IL-6/JAK/STAT 경로, 비만·지방간과의 연관이 핵심이다. HNF1α형의 지방 변화와 같은 분류 기준이 아니다.',[
+            lr(17,'Inflammatory HCA'),lr(17,'HCA의 분류표 보충')
+          ],[])
+        ])
+      ]),
+      lt('악성 종양','간에서 시작한 암과 다른 장기에서 전이한 암을 나눈다. HCC와 iCCA는 조직·조영 양상뿐 아니라 이식의 적용 원칙도 다르다.',[
+        lr(54,'HCC가 아닌 악성 종양 — 같은 간종괴에도 규칙은 다르다'),lr(17,'간 종양과 종양 유사 병변')
+      ],[],[
+        lt('Hepatocellular carcinoma · HCC','간세포성 암의 trabecular 구조와 arterial enhancement·washout을 연결한다. 치료는 종양 부담과 남은 간의 기능을 함께 평가한다.',[
+          lr(17,'HCC의 조직 패턴과 Desmoplasia'),lr(26,'세 번째 사진 · Malignant 부위'),lr(26,'Trabecular pattern과 핵 이형성'),lr(54,'다단계 발암과 arterial enhancement·washout'),lr(54,'BCLC의 큰 흐름'),lr(54,'간이식 — Milan criteria와 확장 기준'),lr(34,'TACE'),lr(50,'HCC — 면역·혈관신생을 동시에 겨냥')
+        ],[20,693,791,825,829]),
+        lt('Hepatoblastoma','영유아, 특히 어린 소아의 악성 간종양이다. AFP 상승과 fetal·embryonal 분화, 경우에 따라 mesenchymal 성분을 함께 본다.',[
+          lr(17,'Hepatoblastoma'),lr(26,'Hepatoblastoma')
+        ],[39]),
+        lt('Intrahepatic cholangiocarcinoma · iCCA','담관 상피성 암으로 gland와 desmoplasia, mass-forming 성장을 연결한다. 기본 근치 치료는 절제이며 HCC의 이식 기준을 그대로 옮기지 않는다.',[
+          lr(17,'담관암의 성장형과 조직'),lr(27,'Cholangiocarcinoma'),lr(54,'Intrahepatic cholangiocarcinoma'),lr(54,'iCCA의 절제와 이식 — 일반 원칙과 선택된 예외'),lr(60,'간내담관암 · Intrahepatic cholangiocarcinoma')
+        ],[21,36,707,826]),
+        lt('Angiosarcoma','악성 내피세포가 만드는 공격적인 혈관성 종양이다. 혈관에서 생겼다는 이유로 hemangioma와 같은 질환군으로 취급하지 않는다.',[
+          lr(54,'Angiosarcoma와 metastatic tumor')
+        ],[]),
+        lt('Metastatic liver tumor','간의 악성 종양 전체로 범위를 넓히면 전이암이 가장 흔하다. 대장암 간전이는 선별된 경우 절제할 수 있어 전이 자체를 수술 불가와 동일시하지 않는다.',[
+          lr(54,'Angiosarcoma와 metastatic tumor'),lr(43,'간전이 — 개수보다 완전 절제와 남길 간')
+        ],[694])
+      ])
+    ])
+  ]);
+
   function createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,namespace,storageName,title){
   // Independent expansion state; legacy quiz records are intentionally untouched.
   const esophagusBranches=new Map();
@@ -1060,7 +1436,7 @@ const esophagusTree=b('식도',
       const list=document.createElement('div');list.className='em-wiki-list';panel.append(list);
       const note=esophagusStudyNotes[node.label];
       if(note?.clue){const clue=document.createElement('p');clue.className='em-clue';clue.textContent=note.clue;list.append(clue);}
-      const domains={12:'병리·형태',14:'병리·형태',23:'진단·치료',28:'진단·치료',29:'진단·치료',30:'진단·치료',39:'진단·치료',40:'진단·치료',42:'약물',43:'수술·합병증',4:'생리·기전',11:'병리·형태',22:'진단·치료',25:'약물',31:'진단·치료',32:'진단·치료',36:'진단·치료',56:'수술·합병증',5:'생리·기전',10:'병리·형태',13:'병리·형태',20:'소아',21:'소아',35:'진단·치료',37:'수술·합병증',38:'생리·기전'};
+      const domains={16:'병리·형태',17:'병리·형태',26:'병리·형태',27:'병리·형태',19:'진단·치료',44:'진단·치료',45:'진단·치료',47:'진단·치료',48:'진단·치료',49:'진단·치료',51:'진단·치료',52:'진단·치료',53:'진단·치료',54:'진단·치료',58:'약물',34:'수술·합병증',50:'약물',60:'수술·합병증',41:'생리·기전',12:'병리·형태',14:'병리·형태',23:'진단·치료',28:'진단·치료',29:'진단·치료',30:'진단·치료',39:'진단·치료',40:'진단·치료',42:'약물',43:'수술·합병증',4:'생리·기전',11:'병리·형태',22:'진단·치료',25:'약물',31:'진단·치료',32:'진단·치료',36:'진단·치료',56:'수술·합병증',5:'생리·기전',10:'병리·형태',13:'병리·형태',20:'소아',21:'소아',35:'진단·치료',37:'수술·합병증',38:'생리·기전'};
       const refs=esophagusWikiReferences[node.label]||[];
       const seen=new Set(),groups=new Map();
       refs.forEach(ref=>{
@@ -1177,7 +1553,7 @@ const esophagusTree=b('식도',
 
     return {render:renderEsophagusTree,disconnect:()=>esophagusResizeObserver?.disconnect(),refreshLayout:()=>esophagusRefreshLayout()};
   }
-  const taxonomies={10:createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,'es','esophagus','식도'),11:createTaxonomy(stomachTree,stomachWikiReferences,stomachStudyNotes,'st','stomach','위'),12:createTaxonomy(intestineTree,intestineWikiReferences,intestineStudyNotes,'in','intestine','장')};
+  const taxonomies={10:createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,'es','esophagus','식도'),11:createTaxonomy(stomachTree,stomachWikiReferences,stomachStudyNotes,'st','stomach','위'),12:createTaxonomy(intestineTree,intestineWikiReferences,intestineStudyNotes,'in','intestine','장'),16:createTaxonomy(liverTree,liverWikiReferences,liverStudyNotes,'li','liver','간')};
   let activeTaxonomy=null;
 
   const controllers = new Map();
@@ -1194,5 +1570,5 @@ const esophagusTree=b('식도',
     const deck=decks[courseId];
     return deck?.data.some(g=>g.nodes.some(n=>n.id===nodeId)) ? 'pathology:'+deck.namespace+':'+nodeId : null;
   }
-  return {data,decks,esophagusTree,esophagusWikiReferences,esophagusStudyNotes,stomachTree,stomachWikiReferences,stomachStudyNotes,intestineTree,intestineWikiReferences,intestineStudyNotes,refreshLayout:()=>activeTaxonomy?.refreshLayout(),matches,render,conceptId,supports:id=>!!(decks[id]||taxonomies[id]),exportSource:()=> 'window.PATHOLOGY_MAP = ('+createPathologyMap.toString()+')();\n'};
+  return {data,decks,esophagusTree,esophagusWikiReferences,esophagusStudyNotes,stomachTree,stomachWikiReferences,stomachStudyNotes,intestineTree,intestineWikiReferences,intestineStudyNotes,liverTree,liverWikiReferences,liverStudyNotes,refreshLayout:()=>activeTaxonomy?.refreshLayout(),matches,render,conceptId,supports:id=>!!(decks[id]||taxonomies[id]),exportSource:()=> 'window.PATHOLOGY_MAP = ('+createPathologyMap.toString()+')();\n'};
 })();
