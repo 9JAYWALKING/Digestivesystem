@@ -1364,6 +1364,170 @@ const esophagusTree=b('식도',
     ])
   ]);
 
+  // One disease hierarchy across pathology, clinical medicine, imaging and surgery.
+  // Missing clinical Wikis are not represented by fabricated section links.
+  const pancreatobiliaryWikiReferences={},pancreatobiliaryStudyNotes={};
+  const pbr=(courseId,heading)=>({courseId,heading});
+  const pbt=(label,clue,refs,questions=[],children=[])=>{
+    pancreatobiliaryWikiReferences[label]=refs;
+    pancreatobiliaryStudyNotes[label]={clue,questions};
+    return children.length?{label,children}:{label};
+  };
+  const pancreatobiliaryTree=pbt('담췌','담즙의 저장·배출 경로인 담낭·담도와 소화효소·호르몬을 만드는 췌장을 나눈다. 두 경로가 만나는 팽대부에서는 한 병변이 황달과 췌장염을 함께 일으킬 수 있다.',[pbr(6,'간·담낭·이자의 해부학적 연결'),pbr(59,'담석의 이름보다, 어디가 막혔는지를 먼저 생각하자')],[],[
+    pbt('담낭·담도','담낭 안의 돌, 담낭벽의 염증, 담관의 폐쇄는 서로 다른 문제다. 구조 이상 → 담석·폐쇄 → 염증 → 종양의 순서로 위치와 병변의 성격을 구분한다.',[pbr(59,'산통·담낭염·담관염의 갈림길'),pbr(60,'담즙이 흐르는 길을 따라 수술을 이해하기')],[71,315], [
+      pbt('발생·구조 이상','담관이 닫혔는지, 늘어났는지, 췌관과 비정상적으로 합류하는지를 나눈다. 낭성 공간이 담관과 연결되는지도 중요하다.',[pbr(17,'간내 담관 기형과 낭성 질환'),pbr(21,'황달 · 수술이 필요한 환아 찾기')],[277], [
+        pbt('담도폐쇄증','영아의 회색변·직접고빌리루빈혈증·triangular cord sign을 연결한다. 수술 중 담관조영으로 확인하고 조기에 Kasai 수술을 고려하는 진행성 폐쇄성 질환이다.',[pbr(17,'Biliary atresia와 Secondary biliary cirrhosis'),pbr(20,'담도폐쇄증의 진단과 수술 시기'),pbr(21,'Biliary atresia'),pbr(33,'어디에 쓰고 무엇과 구별하는가')],[129,561,649,815]),
+        pbt('담관낭 · Choledochal cyst','담관 자체의 낭성·방추형 확장이다. 담즙정체·감염과 악성화 위험을 함께 보며, 독립적인 낭성종양과 구별한다.',[pbr(21,'Choledochal cyst'),pbr(59,'담관낭과 Caroli disease'),pbr(60,'Todani 분류와 치료')],[860], [
+          pbt('I형 · 간외담관 확장','간외담관이 낭성 또는 방추형으로 늘어난다. 낭 절제와 hepaticojejunostomy로 연결한다.',[pbr(60,'Todani 분류와 치료')]),
+          pbt('II형 · 담관 게실','담관 옆으로 돌출된 게실 형태다. 확장된 담관 전체를 뜻하는 I형과 구분한다.',[pbr(60,'Todani 분류와 치료')]),
+          pbt('III형 · Choledochocele','십이지장 벽 안의 원위 담관이 낭성으로 확장된다. 내시경적 sphincterotomy를 연결한다.',[pbr(60,'Todani 분류와 치료')]),
+          pbt('IVa형 · 간내·간외','간내·간외담관 모두에 다발성 확장이 있다. 간외 병변의 절제·재건과 간내 병변의 범위를 함께 판단한다.',[pbr(60,'Todani 분류와 치료'),pbr(59,'담관낭과 Caroli disease')],[860]),
+          pbt('IVb형 · 간외 다발성','다발성 확장이 간외담관에 국한된다. 간내담관까지 확장되는 IVa형과 대비한다.',[pbr(60,'Todani 분류와 치료')]),
+          pbt('V형 · Caroli disease','큰 간내담관의 분절성·낭성 확장으로 담관계와 연결된다. 반복 담관염·담석·담관암 위험을 보며, congenital hepatic fibrosis가 동반되면 Caroli syndrome이다.',[pbr(17,'Caroli disease'),pbr(59,'담관낭과 Caroli disease'),pbr(60,'Todani 분류와 치료')],[277])
+        ]),
+        pbt('췌담관 합류 이상 · APBDU','췌관과 담관의 비정상적인 합류로 췌장액 역류와 담도 점막 손상이 생길 수 있다. 담관낭이 없어도 담도계암, 특히 담낭암과 연결된다.',[pbr(60,'구조 이상에서 암 위험까지')],[643]),
+        pbt('간내 담관발생 이상','작은 담관 과오종, 담관과 연결되지 않는 낭종, 문맥역 섬유화를 구분한다. 담관 자체가 확장되는 Caroli disease는 담관낭 V형에서 본다.',[pbr(17,'담관 기형 비교 그림 읽기')],[277], [
+          pbt('Von Meyenburg complex','담관 과오종. 섬유성 기질 안에 작고 불규칙한 담관들이 모여 있으며 대개 우연히 발견된다.',[pbr(17,'Von Meyenburg complex')],[277]),
+          pbt('Polycystic liver disease','담관계와 직접 연결되지 않는 다발성 간낭종. ADPKD와의 강한 연관을 Caroli disease·ARPKD 계열과 비교한다.',[pbr(17,'Polycystic liver disease')],[277]),
+          pbt('Congenital hepatic fibrosis','넓은 문맥역 섬유화 속 비정상 담관이 특징이며 ARPKD와 연결된다. 간세포 기능이 비교적 보존돼도 문맥고혈압이 생길 수 있다.',[pbr(17,'Congenital hepatic fibrosis')],[277])
+        ])
+      ]),
+      pbt('담석·기계적 폐쇄','담석은 성분과 위치라는 두 축으로 분류한다. 어떤 돌인가와 어디를 막았는가를 섞지 않아야 증상과 치료가 정리된다.',[pbr(59,'성분·위치·증상은 서로 다른 분류 축이다'),pbr(17,'Cholelithiasis · 담석증')],[43,130], [
+        pbt('담석의 성분','Cholesterol 과포화, bilirubin 부하, 감염에 의한 탈포합은 다른 기전이다.',[pbr(59,'성분·모양·감염을 한 표로 묶기')],[130,214,590,861], [
+          pbt('Cholesterol stone','Cholesterol supersaturation → crystal nucleation → 담낭 저운동·정체. 선택된 작고 비석회화된 돌에서 기능이 남은 담낭에 한해 UDCA 용해를 고려한다.',[pbr(17,'Cholesterol stone의 형성'),pbr(59,'Cholesterol stone — 과포화·핵화·저운동'),pbr(58,'Ursodiol — Cholesterol 담석을 녹이는 조건')],[43,130,861,432]),
+          pbt('Black pigment stone','용혈 등으로 bilirubin 부하가 늘어 생기는 검은 색소석. 주로 감염되지 않은 담낭에서 생기며, 갈색석의 감염 기전과 구별한다.',[pbr(17,'Pigment stone의 형성'),pbr(59,'Black과 Brown — bilirubin이 많아졌는가, 감염이 있는가')],[214,590]),
+          pbt('Brown pigment stone','담관의 감염·정체와 연결된다. 세균의 β-glucuronidase가 conjugated bilirubin을 탈포합하여 calcium bilirubinate 침전을 돕는다.',[pbr(17,'Pigment stone의 형성'),pbr(59,'Black과 Brown — bilirubin이 많아졌는가, 감염이 있는가')])
+        ]),
+        pbt('담석의 위치','담낭담석의 관찰·절제 원칙을 담관 안의 돌에 그대로 적용하지 않는다. 담관결석은 담즙 배출 장애와 감염의 원인이 된다.',[pbr(59,'담낭에서 내려온 돌과 담관에서 생긴 돌')],[],[
+          pbt('담낭담석','단순 무증상 담석은 관찰이 기본이다. 전형적 biliary colic이나 합병증 병력이 있으면 담낭절제술을 고려하며, 1cm 담석과 1cm 담낭용종은 기준이 다르다.',[pbr(59,'Biliary colic — 산통이라는 이름과 통증의 양상은 다르다'),pbr(59,'무증상 담석과 수술 적응증을 나누기')],[131,132,341,591,862]),
+          pbt('총담관결석','담낭에서 내려온 secondary stone과 담관에서 생긴 primary stone을 나눈다. 황달·담관염·췌장염을 일으킬 수 있으며 ERCP 배액·결석 제거와 담낭 치료를 구분한다.',[pbr(59,'담낭에서 내려온 돌과 담관에서 생긴 돌'),pbr(59,'Ultrasound에서 시작해 담낭과 담관을 나눈다')]),
+          pbt('간내담관담석','반복 담관염·담관 협착·간농양과 연결되며 담관암 위험인자다. 조직에서는 담관 확장·반응성 상피·담관 주위 섬유화를 함께 본다.',[pbr(27,'Intrahepatic duct stone · Hepatolithiasis'),pbr(59,'담낭에서 내려온 돌과 담관에서 생긴 돌'),pbr(60,'담관암의 위험인자')],[514])
+        ]),
+        pbt('담석의 폐쇄·누공 합병증','담관 밖에서 누르는지, 누공이 생겼는지, 돌이 장으로 이동해 막았는지를 구분한다.',[pbr(59,'Mirizzi·누공·Gallstone ileus')],[],[
+          pbt('Mirizzi syndrome','담낭 경부·담낭관에 감돈된 돌이 옆의 담관을 외부에서 압박한다. 총담관 내 결석과는 폐쇄 위치와 방식이 다르다.',[pbr(59,'Mirizzi·누공·Gallstone ileus')]),
+          pbt('담낭–장관 누공','염증으로 담낭과 인접 장 사이의 길이 생긴다. 담낭–십이지장 누공이 흔하며, 돌이 이 길을 지나 장으로 내려갈 수 있다.',[pbr(59,'Mirizzi·누공·Gallstone ileus'),pbr(17,'급성·만성 담낭염의 합병증')]),
+          pbt('Gallstone ileus','누공을 통해 내려온 큰 담석에 의한 기계적 장폐쇄다. 장폐쇄·pneumobilia·장내 이소성 담석을 함께 본다.',[pbr(59,'Mirizzi·누공·Gallstone ileus')])
+        ])
+      ]),
+      pbt('염증·담즙정체성 손상','담낭벽의 염증과 담관의 감염·자가면역성 손상을 나눈다. RUQ pain이라는 공통 증상만으로 같은 질환으로 묶지 않는다.',[pbr(59,'산통·담낭염·담관염의 갈림길'),pbr(17,'PBC와 PSC 비교')],[],[
+        pbt('담낭염','급성은 염증·허혈·괴사가, 만성은 섬유화와 반복 손상이 중심이다. 담석이 없는 중환자에서도 급성 담낭염이 생긴다.',[pbr(17,'Cholecystitis · 담낭염'),pbr(59,'Acute cholecystitis와 특수 형태')],[49,764], [
+          pbt('급성 담낭염','지속되는 RUQ pain·Murphy sign·발열과 담낭벽 비후를 연결한다. 담도스캔에서 담낭 비시각화는 담낭관 폐쇄를 시사한다.',[pbr(59,'Acute cholecystitis와 특수 형태'),pbr(33,'급성 담낭염은 담낭관의 길이 막힌 상태로 읽기')],[67,190,472,550,657], [
+            pbt('결석성 담낭염','담낭 경부·cystic duct의 담석 감돈으로 내압 상승과 화학적 염증이 시작된다. 초기부터 세균감염이 반드시 필요한 것은 아니다.',[pbr(17,'Acute calculous cholecystitis'),pbr(59,'Acute cholecystitis와 특수 형태')]),
+            pbt('무결석성 담낭염','외상·화상·대수술·TPN·패혈증 등 중증 상태에서 담낭 허혈·정체가 생긴다. 담석이 보이지 않아도 배제하지 않는다.',[pbr(17,'Acute acalculous cholecystitis'),pbr(59,'Acute cholecystitis와 특수 형태')]),
+            pbt('기종성 담낭염','가스 형성 감염으로 담낭벽·내강에 가스가 보이는 특수 형태다. 고령·당뇨 환자와 괴저·천공 위험을 연결한다.',[pbr(59,'Acute cholecystitis와 특수 형태')],[216,593])
+          ]),
+          pbt('만성 담낭염','반복 손상에 따른 벽의 섬유화와 만성 염증. Rokitansky–Aschoff sinus는 점막 함입으로, 깊은 gland가 보인다고 바로 침윤암은 아니다.',[pbr(17,'Chronic cholecystitis'),pbr(17,'Rokitansky–Aschoff sinus'),pbr(27,'Chronic cholecystitis')])
+        ]),
+        pbt('담낭의 폐쇄·염증 합병증','내용물이 맑은 점액인지 고름인지, 벽이 괴사·천공되었는지를 나눈다.',[pbr(59,'Hydrops와 Empyema는 내용물이 다르다')],[216,593], [
+          pbt('Hydrops · Mucocele','지속적인 담낭관 폐쇄로 담즙 대신 맑은 액체·점액이 차서 팽창한다. 통증이 없더라도 단순 무증상 담석과 다르다.',[pbr(59,'Hydrops와 Empyema는 내용물이 다르다')],[216,593]),
+          pbt('Empyema','폐쇄된 담낭 안에 고름이 고인 화농성 감염이다. 고열·백혈구 증가와 패혈증·천공 위험을 연결한다.',[pbr(59,'Hydrops와 Empyema는 내용물이 다르다'),pbr(17,'Acute calculous cholecystitis')]),
+          pbt('괴저·천공성 담낭염','혈류 저하로 담낭벽이 괴사하고 파열하면 국소 농양 또는 복막염으로 이어진다.',[pbr(59,'Hydrops와 Empyema는 내용물이 다르다'),pbr(17,'급성·만성 담낭염의 합병증')])
+        ]),
+        pbt('감염성 담관 질환','폐쇄된 담즙에 세균감염이 겹친 급성 담관염과 담관 안의 기생충 감염을 구분한다.',[pbr(59,'Charcot triad와 중증 담관염'),pbr(27,'Clonorchiasis · 간흡충')],[],[
+          pbt('급성 담관염','Charcot triad는 RUQ pain·황달·발열/오한이다. 저혈압·의식혼동이 더해지면 중증 감염을 생각하며 항생제와 필요한 담도배액으로 연결한다.',[pbr(59,'Charcot triad와 중증 담관염')],[215,342,592,863]),
+          pbt('간흡충증 · Clonorchiasis','담관 안의 기생충과 egg를 확인한다. 만성 담관 자극·담즙정체와 담관암 위험을 연결하며 담낭암의 위험인자와 섞지 않는다.',[pbr(27,'Clonorchiasis · 간흡충'),pbr(60,'담관암의 위험인자')],[36,707])
+        ]),
+        pbt('만성 담관 손상','작은 간내담관을 파괴하는 PBC, 간내·간외담관을 협착시키는 PSC, 오래된 폐쇄의 결과인 이차성 담도성 간경변을 나눈다.',[pbr(17,'PBC와 PSC 비교')],[],[
+          pbt('PBC','중년 여성·소양증·AMA와 작은 간내담관의 florid duct lesion을 연결한다. 치료는 UDCA가 중심이며 초기부터 간경변인 것은 아니다.',[pbr(17,'Primary biliary cholangitis · PBC'),pbr(52,'AMA와 IgM이 가리키는 방향'),pbr(52,'UDCA가 좋아지게 하는 것과 못 하는 것')],[50,484]),
+          pbt('PSC','간내·간외담관의 다발성 협착과 확장으로 beading, 조직에서는 onion-skin fibrosis. UC 동반과 담관암 위험을 함께 기억한다.',[pbr(17,'Primary sclerosing cholangitis · PSC'),pbr(17,'PSC의 병리'),pbr(59,'Beading과 Onion-skin을 연결하기')],[479,744,951]),
+          pbt('이차성 담도성 간경변','담석·협착·종양·담도폐쇄증 등으로 담즙 배출이 오래 막힌 결과다. 담즙정체와 portal fibrosis를 원인 폐쇄에 연결한다.',[pbr(17,'Biliary atresia와 Secondary biliary cirrhosis')])
+        ])
+      ]),
+      pbt('담낭벽·용종성 병변','용종은 돌출된 모양이지 조직 진단이 아니다. 비신생물성 가성 용종·과형성과 진성 선종을 나누고, 악성은 아래 종양 가지에서 본다.',[pbr(60,'진성 용종과 가성 용종'),pbr(59,'Adenomyomatosis와 Cholesterolosis')],[513], [
+        pbt('Cholesterolosis · 용종','Lamina propria의 foamy macrophage에 cholesterol이 축적된 비신생물성 병변이다. Cholesterol polyp은 진성 선종과 다르다.',[pbr(60,'진성 용종과 가성 용종'),pbr(59,'Adenomyomatosis와 Cholesterolosis')]),
+        pbt('Adenomyomatosis','점막·근층 과형성과 Rokitansky–Aschoff sinus가 특징이다. 담낭벽 속 점막 함입을 침윤성 암으로 오인하지 않는다.',[pbr(60,'진성 용종과 가성 용종'),pbr(17,'Rokitansky–Aschoff sinus'),pbr(59,'Adenomyomatosis와 Cholesterolosis')]),
+        pbt('Inflammatory polyp','염증세포를 포함한 육아·섬유조직으로 이루어진 비신생물성 용종이다.',[pbr(60,'진성 용종과 가성 용종')]),
+        pbt('담낭 선종','신생물성 진성 용종이자 전암병변이다. 단일·유경성 병변이 흔하며 크기·무경성 여부·성장·증상을 함께 판단한다.',[pbr(60,'진성 용종과 가성 용종'),pbr(60,'악성 위험인자와 10 mm 기준')],[513]),
+        pbt('Porcelain gallbladder','만성 손상에 따른 담낭벽 석회화다. 내강의 calcium salt 침전인 limey bile과 다르며, 기출에서는 수술 적응증·암 위험과 연결된다.',[pbr(17,'Chronic cholecystitis'),pbr(59,'무증상 담석과 수술 적응증을 나누기'),pbr(60,'담낭암과 담관암의 위험인자를 섞지 않기')],[132,643,862])
+      ]),
+      pbt('담도계 종양','담관·담낭·팽대부 중 어디에 생겼는지가 수술을 바꾼다. 상피내·유두상 전구병변과 기질로 침윤한 adenocarcinoma도 구분한다.',[pbr(60,'위치에 따라 달라지는 수술'),pbr(60,'전암병변과 성장 형태')],[197,400], [
+        pbt('상피내·유두상 전구병변','담관의 BilIN·IPNB와 담낭의 ICPN을 나눈다. 이름이 비슷한 췌장의 PanIN·IPMN과는 장기가 다르다.',[pbr(60,'전암병변과 성장 형태')],[],[
+          pbt('BilIN','담관의 현미경적 상피내 종양성 병변이다. 기질 침윤을 보이는 담관선암과 구분한다.',[pbr(60,'전암병변과 성장 형태')]),
+          pbt('IPNB','담관 내 유두상 종양이다. 실습 표본의 papillary adenocarcinoma에서는 관 내 유두상 병변과 기질 침윤성 선암이 함께 보인다.',[pbr(27,'Common bile duct의 Papillary adenocarcinoma'),pbr(60,'전암병변과 성장 형태')]),
+          pbt('ICPN','담낭의 intracholecystic papillary neoplasm이다. 담관 IPNB·췌관 IPMN과 위치를 구별하고, 침윤암 동반 여부를 별도로 본다.',[pbr(60,'전암병변과 성장 형태'),pbr(60,'담낭암과 담관암의 위험인자를 섞지 않기')])
+        ]),
+        pbt('담관의 낭성 종양','두꺼운 벽·격벽·벽결절을 가진 낭성 병변은 단순 낭종과 다르다. 담관 자체의 확장인 choledochal cyst와도 구분한다.',[pbr(60,'담관의 낭성 종양')],[],[
+          pbt('Biliary cystadenoma','강의의 전통적 낭선종 명칭. 점액성 상피와 복잡한 낭벽을 보며, 흡인·unroofing만으로 끝내지 않고 완전 절제의 필요성을 판단한다.',[pbr(60,'단순 낭종과 다른 소견'),pbr(60,'흡인이나 unroofing만으로 끝내지 않기')]),
+          pbt('Biliary cystadenocarcinoma','강의에서 낭선암으로 제시한 악성 낭성 병변이다. 과거 명칭을 현대 MCN·IPNB와 단순히 일대일 대응시키지 않는다.',[pbr(60,'단순 낭종과 다른 소견'),pbr(60,'흡인이나 unroofing만으로 끝내지 않기')])
+        ]),
+        pbt('담관암 · Cholangiocarcinoma','불규칙 gland와 풍부한 desmoplasia를 보이는 선암이다. 간내담석·간흡충·PSC·담관낭 등의 위험인자와 발생 위치를 함께 본다.',[pbr(17,'Cholangiocarcinoma'),pbr(27,'Cholangiocarcinoma'),pbr(60,'담관암의 위험인자'),pbr(50,'담도암 — GemCis에 면역치료를 더한다')],[36,197,400,514,707], [
+          pbt('간내담관암 · iCCA','간실질 내 종괴형이 가장 흔하다. 담관을 바로 막지 않으면 초기 황달이 없을 수 있고, 절제 가능하면 간절제와 림프절 곽청을 연결한다.',[pbr(17,'담관암의 성장형과 조직'),pbr(60,'종괴형이 가장 흔하다'),pbr(60,'간절제와 림프절 곽청')],[292,514,826]),
+          pbt('간문부담관암 · Klatskin','좌우 간관의 합류부 부근 종양으로 폐쇄성 황달이 중요하다. Bismuth–Corlette는 담관의 길이 방향 침범 범위이지 TNM 자체가 아니다.',[pbr(17,'위치와 위험인자'),pbr(60,'좌우 간관의 합류부를 먼저 찾는다'),pbr(60,'Bismuth-Corlette 분류'),pbr(60,'길이 방향 침윤과 남길 간의 기능')],[260,386,644], [
+            pbt('Bismuth I형','합류부 아래에 병변이 있고 좌우 간관의 합류는 보존된다. 상류 담관 확장만으로 높은 형으로 올리지 않는다.',[pbr(60,'Bismuth-Corlette 분류')],[644]),
+            pbt('Bismuth II형','좌우 간관 합류부를 침범하지만 2차 분지까지는 이르지 않는다.',[pbr(60,'Bismuth-Corlette 분류')]),
+            pbt('Bismuth IIIa형','우측 2차 담관 분지까지 연장된다. IIIa는 right, IIIb는 left로 구분한다.',[pbr(60,'Bismuth-Corlette 분류')]),
+            pbt('Bismuth IIIb형','좌측 2차 담관 분지까지 연장된다.',[pbr(60,'Bismuth-Corlette 분류')]),
+            pbt('Bismuth IV형','양측 2차 담관 분지 침범 또는 다발성 침범 형태다. 범위와 함께 혈관 관계·남길 간의 기능을 평가한다.',[pbr(60,'Bismuth-Corlette 분류'),pbr(60,'길이 방향 침윤과 남길 간의 기능')])
+          ]),
+          pbt('원위부 담관암','췌장 두부·십이지장과 밀접한 원위 CBD의 선암이다. 근치 수술은 Whipple·PPPD로, distal pancreatectomy와 다르다.',[pbr(60,'Distal CBD cancer의 수술')],[645,793])
+        ]),
+        pbt('담낭암','대부분 adenocarcinoma이며 침윤 깊이가 절제 범위를 결정한다. T1a는 단순절제, T2는 간 쐐기절제·regional LND를 포함한 확대절제와 연결한다.',[pbr(17,'Carcinoma of the gallbladder'),pbr(60,'담낭암과 담관암의 위험인자를 섞지 않기'),pbr(60,'T 병기가 수술 범위를 결정한다'),pbr(60,'이미 담낭을 뗀 뒤 T2가 발견되었다면')],[263,512,643]),
+        pbt('팽대부 종양','담관·췌관의 출구에 생겨 작은 병변도 황달·췌장염을 일으킬 수 있다. 선종의 국소절제와 침윤암의 수술을 분리한다.',[pbr(60,'팽대부 선종과 침윤암')],[],[
+          pbt('팽대부 선종','담관·췌관 내 침범이 없는 선종은 endoscopic papillectomy를 고려한다. 절제 후 재발 추적이 필요하다.',[pbr(60,'팽대부 선종과 침윤암')]),
+          pbt('팽대부 선암','침윤암은 작은 크기라도 림프절 전이를 배제할 수 없다. PD·PPPD를 생각하며 선종의 내시경절제와 혼동하지 않는다.',[pbr(60,'팽대부 선종과 침윤암'),pbr(43,'Adenocarcinoma — 발생 위치에 맞는 절제')],[624])
+        ])
+      ]),
+      pbt('기능장애·수술 후·출혈','담낭을 제거해도 담관의 돌·협착, 말단 출구의 기능장애, 담즙산 설사 등은 남을 수 있다. 수술 후 증상을 모두 수술 합병증으로 단정하지 않는다.',[pbr(59,'담도 안과 담도 밖을 함께 살펴야 한다')],[864], [
+        pbt('기능성 담낭질환','담석 없이 반복되는 전형적 산통과 담낭 배출 기능 저하를 보는 질환이다. 중환자의 급성 무결석성 담낭염과 구별한다.',[pbr(59,'Acute cholecystitis와 특수 형태')]),
+        pbt('담도 협착','수술 손상·만성 염증 등으로 담즙 배출이 좁아질 수 있다. 폐쇄의 위치·원인을 확인하며 악성 협착과 구별한다.',[pbr(59,'Hemobilia와 담도폐쇄의 다른 원인'),pbr(59,'담도 안과 담도 밖을 함께 살펴야 한다')],[864]),
+        pbt('Oddi 괄약근 장애','담낭을 제거해도 담즙·췌장액의 말단 출구가 남아 있다. 통증만으로 확정하지 않고 검사 이상·담관 확장 등 객관적 소견을 함께 평가한다.',[pbr(59,'담도 안과 담도 밖을 함께 살펴야 한다')],[864]),
+        pbt('담낭절제 후 담즙산 설사','대장으로 유입된 담즙산에 의한 수양성 설사다. 잔류 담석·담도 협착과는 기전이 다르며 담즙산 결합제를 연결한다.',[pbr(59,'담도 안과 담도 밖을 함께 살펴야 한다'),pbr(40,'담즙산 설사와 지방산 설사')],[864]),
+        pbt('Hemobilia','담도 안의 출혈이다. 간생검·담도 시술·외상 뒤 RUQ pain·황달·위장관 출혈을 연결하며, 발열·오한이 중심인 담관염과 구별한다.',[pbr(59,'Hemobilia와 담도폐쇄의 다른 원인')])
+      ])
+    ]),
+    pbt('췌장','Acini·duct의 외분비 기능과 islet의 내분비 기능을 구분한다. 염증·섬유화, 염증 뒤 저류, 낭성종양, 고형종양은 서로 다른 가지다.',[pbr(17,'췌장의 구조와 기능'),pbr(6,'이자 · Pancreas')],[],[
+      pbt('선천·발생 이상','조직이 없는지, 관이 융합하지 않았는지, 십이지장을 둘러싸는지, 다른 장기에 췌장 조직이 있는지를 구분한다.',[pbr(17,'선천기형 · Congenital anomalies')],[],[
+        pbt('Agenesis','췌장 전체 또는 일부의 발생 결손이다. 결손 범위에 따라 외분비·내분비 기능에 영향을 줄 수 있다.',[pbr(17,'Agenesis')]),
+        pbt('Pancreas divisum','Dorsal·ventral duct가 융합하지 않은 췌관 이상이다. 많은 췌장액이 minor papilla로 배액되지만 대부분 무증상이다.',[pbr(17,'Pancreas divisum')]),
+        pbt('Annular pancreas','췌장 조직이 십이지장 제2부를 고리처럼 둘러싸 협착·폐쇄를 일으킬 수 있다.',[pbr(17,'Annular pancreas'),pbr(21,'Duodenal atresia')]),
+        pbt('Ectopic pancreas','정상 췌장과 직접 연결되지 않은 이소성 췌장 조직이다. 위의 SET로 보일 때 중앙 umbilication을 GIST의 표면 궤양과 구별한다.',[pbr(17,'Ectopic pancreas'),pbr(36,'미입췌 · Ectopic pancreas'),pbr(22,'상피하종양: 매끈한 융기와 표면 궤양을 구분한다')])
+      ]),
+      pbt('췌장염','급성은 조기 효소 활성화와 염증·괴사, 만성은 반복 손상에 따른 섬유화·실질 소실이다. 혈중 효소 상승과 기능 소실을 같은 것으로 보지 않는다.',[pbr(17,'급성췌장염 · Acute pancreatitis'),pbr(17,'만성췌장염 · Chronic pancreatitis')],[309,811,813], [
+        pbt('급성췌장염','등으로 뻗는 심한 상복부 통증·췌장효소 상승·영상 소견을 함께 본다. 흔한 원인은 담석과 음주이며, 효소 수치가 높다고 그만큼 중증이라는 뜻은 아니다.',[pbr(17,'원인 분류'),pbr(17,'세 가지 시작점과 공통 결과'),pbr(20,'췌장효소는 중증도 점수가 아니다')],[308,309,497,615,811], [
+          pbt('간질성·부종성 손상','부종·염증이 중심인 급성 손상이다. 경증에서는 견디는 범위의 조기 경구식이를, 경구 섭취가 어렵다면 경장영양을 생각한다. 일률적인 장기 금식·예방적 항생제와 구별한다.',[pbr(17,'정의와 손상 범위')],[181,502,812]),
+          pbt('괴사성·출혈성 손상','췌장 실질·주변 지방의 괴사와 혈관 손상·출혈을 본다. 효소성 지방괴사의 chalky appearance·saponification을 염증성 부종과 구별한다.',[pbr(17,'급성췌장염의 병리'),pbr(17,'활성효소가 만드는 네 가지 손상'),pbr(27,'Enzymatic fat necrosis와 췌장 손상')],[309,811])
+        ]),
+        pbt('만성췌장염','Fibrosis + acinar atrophy + 상대적으로 남은 islet이 핵심이다. 금주·금연과 통증·영양 관리를 연결하고, 외분비부전에는 효소를 보충한다.',[pbr(17,'만성췌장염 · Chronic pancreatitis'),pbr(17,'만성췌장염의 병리'),pbr(58,'Pancreatin과 Pancrelipase')],[180,182,310,499,500,614,616,813], [
+          pbt('독성·폐쇄성 만성췌장염','장기간 음주와 지속적인 췌관 폐쇄가 반복 손상·섬유화로 이어질 수 있다. 관 확장·췌관 결석을 기능 소실과 함께 본다.',[pbr(17,'원인과 유전적 소인'),pbr(17,'발병기전의 네 축')],[180,500]),
+          pbt('유전성 췌장염','PRSS1 등 효소 활성화·억제와 관련된 유전적 소인이 중요하다. 원인불명 췌장염을 모두 cystic fibrosis와 같은 말로 쓰지 않는다.',[pbr(17,'원인과 유전적 소인')],[813])
+        ])
+      ]),
+      pbt('비종양성 저류·기능부전','췌장염 뒤 생긴 액체·괴사물 저류는 낭성종양과 분리한다. 외분비 소실은 지방변, 내분비 소실은 당뇨병으로 연결한다.',[pbr(17,'Pancreatic pseudocyst'),pbr(17,'비가역적 기능장애와 반복 손상'),pbr(58,'Pancreatin과 Pancrelipase')],[182,499,616], [
+        pbt('Pancreatic pseudocyst','췌장염·췌관 손상 뒤 생기는 액체 저류다. Granulation·fibrous wall은 있지만 epithelial lining은 없으며, 고형 괴사물이 많은 WON과 구분한다.',[pbr(17,'형성과 구조'),pbr(17,'Pseudocyst와 walled-off necrosis 구별'),pbr(27,'상피가 없는 내면')],[179,498,610]),
+        pbt('Walled-off necrosis · WON','괴사성 췌장염 뒤 괴사조직을 포함한 저류에 성숙한 벽이 생긴 상태다. 대개 4주 이후이며, 액체 중심인 pseudocyst와 내용물이 다르다.',[pbr(17,'Pseudocyst와 walled-off necrosis 구별')]),
+        pbt('췌장 외분비부전','소화효소 부족으로 지방변·체중 감소·지용성 비타민 흡수 저하가 생긴다. Pancrelipase는 췌장을 자극하는 약이 아니라 부족한 효소를 음식과 함께 공급하는 약이다.',[pbr(58,'Pancreatin과 Pancrelipase'),pbr(40,'대변 지방과 D-xylose'),pbr(40,'위·췌장·회장의 역할')],[147,470,182]),
+        pbt('췌장성 당뇨병','췌장 손상이 내분비 기능 소실까지 이르면 발생할 수 있다. Islet의 상대적 보존은 끝까지 손상되지 않는다는 뜻이 아니다.',[pbr(17,'비가역적 기능장애와 반복 손상'),pbr(17,'네 가지 핵심 소견')],[813]),
+        pbt('Cystic fibrosis · 췌장 침범','CFTR 관련 유전질환으로 췌장 외분비부전을 일으킬 수 있다. 소아에서 지방변·성장부진·대변 elastase 감소를 연결하고 효소 보충을 생각한다.',[pbr(20,'만성 설사의 소아 특이 감별'),pbr(17,'원인과 유전적 소인'),pbr(58,'Pancreatin과 Pancrelipase')])
+      ]),
+      pbt('종양·전구병변','낭성이라고 모두 양성은 아니고, 고형이라고 모두 PDAC는 아니다. 관과의 연결·점액·기질·세포 분화를 기준으로 묶는다.',[pbr(17,'감별과 연결'),pbr(19,'낭성 종양의 비교 축')],[],[
+        pbt('상피성 낭성종양','SCN은 장액성 작은 낭, MCN은 ovarian-type stroma, IPMN은 췌관과 연결된 점액성 유두상 증식으로 구분한다. Pseudocyst는 이 가지에 속하지 않는다.',[pbr(17,'MCN과 IPMN의 감별'),pbr(19,'낭성 종양의 비교 축')],[173,940], [
+          pbt('Serous cystic neoplasm · SCN','여러 작은 낭의 벌집·스펀지 모양과 맑은 액체, cuboidal serous lining이 특징이다. 대표적인 양성 낭성종양으로 점액성 종양과 구별한다.',[pbr(17,'Serous cystadenoma'),pbr(19,'Serous cystic neoplasm · SCN'),pbr(27,'Serous cystadenoma')]),
+          pbt('Mucinous cystic neoplasm · MCN','여성·body/tail·thick mucin·ovarian-type stroma를 묶는다. 보통 췌관과 연결되지 않으며, 이형성 등급과 침윤암 동반 여부를 따로 본다.',[pbr(17,'Mucinous cystic neoplasm · MCN'),pbr(17,'이형성과 침윤'),pbr(19,'Mucinous cystic neoplasm · MCN')],[173]),
+          pbt('IPMN','췌관과 연결된 점액성 유두상 종양이며 ovarian-type stroma는 없다. Fish-mouth papilla의 점액 배출과 확장된 duct 안의 papilla를 연결한다.',[pbr(17,'Intraductal papillary mucinous neoplasm · IPMN'),pbr(27,'Intraductal papillary mucinous neoplasm · IPMN'),pbr(17,'MCN과 IPMN의 감별')],[173,430,483,604,940,952], [
+            pbt('Main-duct IPMN','주췌관을 침범하는 형태다. 확장된 주췌관과 유두부의 점액 배출 소견을 연결한다.',[pbr(17,'췌관과 연결된 점액성 종양'),pbr(27,'늘어난 duct와 cystic space')],[952,483]),
+            pbt('Branch-duct IPMN','분지췌관을 침범하는 형태다. 낭성 병변과 췌관의 연결이 MCN을 구분하는 단서가 된다.',[pbr(17,'췌관과 연결된 점액성 종양'),pbr(17,'MCN과 IPMN의 감별')]),
+            pbt('Mixed-type IPMN','주췌관과 분지췌관에 함께 관여한다. 점액성 상피의 이형성과 침윤 여부는 관의 형태 분류와 별도로 평가한다.',[pbr(17,'췌관과 연결된 점액성 종양'),pbr(17,'유두상 구조와 조직 판독')])
+          ])
+        ]),
+        pbt('췌관 상피·췌관암','PanIN은 상피 안의 현미경적 전구병변이고 PDAC는 침윤성 선암이다. 낭성 전구병변인 MCN·IPMN과도 구분한다.',[pbr(17,'PanIN과 췌관암의 전구병변'),pbr(17,'Pancreatic ductal carcinoma')],[],[
+          pbt('PanIN','현미경적 비침윤성 췌관 상피 병변이다. KRAS·p16·p53/SMAD4 등의 변화 축적을 침윤암 발생과 연결하며 high-grade도 침윤암 자체는 아니다.',[pbr(17,'Pancreatic intraepithelial neoplasia'),pbr(17,'형태 변화와 유전자 도식')]),
+          pbt('췌관선암 · PDAC','단단한 회백색 침윤성 종괴와 풍부한 desmoplasia가 특징이다. 두부 병변은 폐쇄성 황달·double duct sign, 체부·미부 병변은 늦은 발견을 연결한다. 조직 확인이 필요할 때 EUS 유도 검체 획득을 생각한다.',[pbr(17,'Pancreatic ductal carcinoma'),pbr(17,'위치에 따른 증상과 진행'),pbr(19,'Pancreatic cancer와 double duct sign'),pbr(19,'췌장암의 혈관 침범과 전이'),pbr(50,'수술 후 보조치료와 전이성 치료')],[24,45,134,152,268,322,433,473,515,603,703,734,762,880,922,923])
+        ]),
+        pbt('다른 고형·혼합형 종양','고형 종괴 안에 출혈성 낭성변성이 있을 수 있다. SPN·acinar cell carcinoma·신경내분비종양은 PDAC와 다른 분화의 종양이다.',[pbr(17,'Solid-pseudopapillary tumor'),pbr(17,'위치에 따른 증상과 진행')],[],[
+          pbt('Solid pseudopapillary neoplasm · SPN','젊은 여성의 경계 좋은 고형·출혈성 낭성 종괴다. 작은 혈관 주위에 남은 세포가 pseudopapilla를 만들며, 대체로 경과가 좋아도 완전한 양성으로 보지는 않는다.',[pbr(17,'Solid-pseudopapillary tumor'),pbr(17,'왜 pseudopapillary인가'),pbr(17,'생물학적 성격'),pbr(19,'Solid pseudopapillary tumor · SPN')],[837]),
+          pbt('Acinar cell carcinoma','선방세포 분화를 보이는 췌장의 악성종양이다. 췌관 상피 분화의 PDAC, 신경내분비 분화의 pNET와 구분한다.',[pbr(17,'위치에 따른 증상과 진행')]),
+          pbt('췌장 신경내분비종양 · pNET','신경분비과립·시냅스 소포 등의 신경내분비 분화가 특징이다. 과혈관성 조영증강과 간전이를 연결하며, 기능성은 호르몬 증후군으로, 비기능성은 종괴 효과로 접근한다.',[],[112,183,501,617], [
+            pbt('기능성 pNET','분비 호르몬에 따라 임상 증후군이 달라진다. 수업에서 반복 연결된 gastrinoma와 VIPoma를 먼저 구분한다.',[pbr(11,'Zollinger–Ellison 증후군'),pbr(39,'삼투성·분비성 원인의 연결')],[112,183], [
+              pbt('Gastrinoma · ZES','Gastrin 과다 → 위산 과다 → 반복·다발성 궤양과 설사. 췌장뿐 아니라 십이지장에도 생기며, gastrin과 위내 pH·secretin 검사를 맥락에 맞게 읽는다.',[pbr(11,'Zollinger–Ellison 증후군'),pbr(31,'언제 보통의 PUD가 아니라고 생각할까'),pbr(31,'Gastrin을 확인하고 종양을 찾는다'),pbr(25,'PPI의 임상적응증')],[160,774,919]),
+              pbt('VIPoma','VIP에 의한 분비성 수양성 설사를 연결한다. 탈수·전해질 소실을 평가하고, somatostatin analogue인 octreotide의 분비 억제 작용을 떠올린다.',[pbr(39,'삼투성·분비성 원인의 연결'),pbr(42,'Somatostatin과 Octreotide'),pbr(58,'Somatostatin과 Octreotide — 분비와 혈류를 함께 낮춘다')])
+            ]),
+            pbt('비기능성 pNET','뚜렷한 호르몬 과다 증후군 없이 종괴의 성장·전이로 발견될 수 있다. 비기능성이라는 말이 신경내분비 분화가 없거나 양성이라는 뜻은 아니다.',[],[112,183,501,617])
+          ])
+        ])
+      ])
+    ])
+  ]);
+
   function createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,namespace,storageName,title){
   // Independent expansion state; legacy quiz records are intentionally untouched.
   const esophagusBranches=new Map();
@@ -1436,7 +1600,7 @@ const esophagusTree=b('식도',
       const list=document.createElement('div');list.className='em-wiki-list';panel.append(list);
       const note=esophagusStudyNotes[node.label];
       if(note?.clue){const clue=document.createElement('p');clue.className='em-clue';clue.textContent=note.clue;list.append(clue);}
-      const domains={16:'병리·형태',17:'병리·형태',26:'병리·형태',27:'병리·형태',19:'진단·치료',44:'진단·치료',45:'진단·치료',47:'진단·치료',48:'진단·치료',49:'진단·치료',51:'진단·치료',52:'진단·치료',53:'진단·치료',54:'진단·치료',58:'약물',34:'수술·합병증',50:'약물',60:'수술·합병증',41:'생리·기전',12:'병리·형태',14:'병리·형태',23:'진단·치료',28:'진단·치료',29:'진단·치료',30:'진단·치료',39:'진단·치료',40:'진단·치료',42:'약물',43:'수술·합병증',4:'생리·기전',11:'병리·형태',22:'진단·치료',25:'약물',31:'진단·치료',32:'진단·치료',36:'진단·치료',56:'수술·합병증',5:'생리·기전',10:'병리·형태',13:'병리·형태',20:'소아',21:'소아',35:'진단·치료',37:'수술·합병증',38:'생리·기전'};
+      const domains={6:'병리·형태',15:'생리·기전',18:'진단·치료',33:'진단·치료',55:'수술·합병증',59:'진단·치료',16:'병리·형태',17:'병리·형태',26:'병리·형태',27:'병리·형태',19:'진단·치료',44:'진단·치료',45:'진단·치료',47:'진단·치료',48:'진단·치료',49:'진단·치료',51:'진단·치료',52:'진단·치료',53:'진단·치료',54:'진단·치료',58:'약물',34:'수술·합병증',50:'약물',60:'수술·합병증',41:'생리·기전',12:'병리·형태',14:'병리·형태',23:'진단·치료',28:'진단·치료',29:'진단·치료',30:'진단·치료',39:'진단·치료',40:'진단·치료',42:'약물',43:'수술·합병증',4:'생리·기전',11:'병리·형태',22:'진단·치료',25:'약물',31:'진단·치료',32:'진단·치료',36:'진단·치료',56:'수술·합병증',5:'생리·기전',10:'병리·형태',13:'병리·형태',20:'소아',21:'소아',35:'진단·치료',37:'수술·합병증',38:'생리·기전'};
       const refs=esophagusWikiReferences[node.label]||[];
       const seen=new Set(),groups=new Map();
       refs.forEach(ref=>{
@@ -1553,7 +1717,7 @@ const esophagusTree=b('식도',
 
     return {render:renderEsophagusTree,disconnect:()=>esophagusResizeObserver?.disconnect(),refreshLayout:()=>esophagusRefreshLayout()};
   }
-  const taxonomies={10:createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,'es','esophagus','식도'),11:createTaxonomy(stomachTree,stomachWikiReferences,stomachStudyNotes,'st','stomach','위'),12:createTaxonomy(intestineTree,intestineWikiReferences,intestineStudyNotes,'in','intestine','장'),16:createTaxonomy(liverTree,liverWikiReferences,liverStudyNotes,'li','liver','간')};
+  const taxonomies={10:createTaxonomy(esophagusTree,esophagusWikiReferences,esophagusStudyNotes,'es','esophagus','식도'),11:createTaxonomy(stomachTree,stomachWikiReferences,stomachStudyNotes,'st','stomach','위'),12:createTaxonomy(intestineTree,intestineWikiReferences,intestineStudyNotes,'in','intestine','장'),16:createTaxonomy(liverTree,liverWikiReferences,liverStudyNotes,'li','liver','간'),17:createTaxonomy(pancreatobiliaryTree,pancreatobiliaryWikiReferences,pancreatobiliaryStudyNotes,'pb','pancreatobiliary','담췌')};
   let activeTaxonomy=null;
 
   const controllers = new Map();
@@ -1570,5 +1734,5 @@ const esophagusTree=b('식도',
     const deck=decks[courseId];
     return deck?.data.some(g=>g.nodes.some(n=>n.id===nodeId)) ? 'pathology:'+deck.namespace+':'+nodeId : null;
   }
-  return {data,decks,esophagusTree,esophagusWikiReferences,esophagusStudyNotes,stomachTree,stomachWikiReferences,stomachStudyNotes,intestineTree,intestineWikiReferences,intestineStudyNotes,liverTree,liverWikiReferences,liverStudyNotes,refreshLayout:()=>activeTaxonomy?.refreshLayout(),matches,render,conceptId,supports:id=>!!(decks[id]||taxonomies[id]),exportSource:()=> 'window.PATHOLOGY_MAP = ('+createPathologyMap.toString()+')();\n'};
+  return {data,decks,esophagusTree,esophagusWikiReferences,esophagusStudyNotes,stomachTree,stomachWikiReferences,stomachStudyNotes,intestineTree,intestineWikiReferences,intestineStudyNotes,liverTree,liverWikiReferences,liverStudyNotes,pancreatobiliaryTree,pancreatobiliaryWikiReferences,pancreatobiliaryStudyNotes,refreshLayout:()=>activeTaxonomy?.refreshLayout(),matches,render,conceptId,supports:id=>!!(decks[id]||taxonomies[id]),exportSource:()=> 'window.PATHOLOGY_MAP = ('+createPathologyMap.toString()+')();\n'};
 })();
