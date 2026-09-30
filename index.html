@@ -2023,7 +2023,7 @@
     <img alt="확대된 문항 이미지">
   </div>
 
-  <script src="./theme-wiki-data.js?v=f8ee24d874b4"></script>
+  <script src="./theme-wiki-data.js?v=7bb1444cc819"></script>
   <script src="./lecture-notes.js"></script>
   <script src="./jbl-data.js"></script>
   <script src="./pathology-map.js"></script>
@@ -4543,9 +4543,10 @@
       }));
     }
 
-    // Shared theme documents are bundled with the site, not written to personal storage.
+    // Shared sources stay bundled; browser edits are stored separately from personal notes.
     const themeWikiRenderCourseId = 990002;
-    const themeWikiDocuments = (() => {
+    const themeWikiEditsStorageKey = 'digestive-theme-wiki-edits-v1';
+    const themeWikiBaseDocuments = (() => {
       try {
         const payload = window.THEME_WIKI_DATA || {};
         const seen = new Set();
@@ -4556,14 +4557,47 @@
         });
       } catch (_) { return []; }
     })();
+    let themeWikiEdits = readStudyStorage(themeWikiEditsStorageKey, []);
+    if (!Array.isArray(themeWikiEdits)) themeWikiEdits = [];
+    themeWikiEdits = themeWikiEdits.filter(note => note && typeof note.id === 'string' && typeof note.title === 'string' && typeof note.source === 'string' && themeWikiBaseDocuments.some(base => base.id === note.id));
+    function currentThemeWikiDocuments() {
+      return themeWikiBaseDocuments.map(base => ({ ...base, ...themeWikiEdits.find(edit => edit.id === base.id && (!base.revision || edit.baseRevision === base.revision)) }));
+    }
+
+    function renderThemeWikiEditor(id) {
+      const root = document.querySelector('#theme-wiki-root');
+      const note = currentThemeWikiDocuments().find(item => item.id === id);
+      if (!root || !note) return;
+      root.innerHTML = `<header class="personal-notes-toolbar"><h2 id="theme-wiki-title">테마별 정리 WIKI</h2><button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-favorites>즐겨찾기 불러오기</button></header><section class="personal-document-editor"><div class="personal-document-title-field"><label for="theme-document-title">문서 제목</label><input id="theme-document-title" type="text" data-personal-title value="${escapeHtml(note.title)}" maxlength="120" autocomplete="off"></div><textarea class="wiki-source-editor" data-personal-source spellcheck="false">${escapeHtml(note.source)}</textarea>${wikiSyntaxHelpMarkup()}<p class="anki-status" data-personal-status></p><div class="personal-document-editor-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-theme-wiki-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-theme-wiki-save>저장하기</button></div></section>`;
+      root.querySelector('[data-theme-wiki-favorites]').onclick = () => openPersonalFavoritesIntoEditor(root);
+      root.querySelector('[data-theme-wiki-cancel]').onclick = () => renderThemeWiki(id);
+      root.querySelector('[data-theme-wiki-save]').onclick = () => {
+        const titleInput = root.querySelector('[data-personal-title]');
+        const title = titleInput.value.trim();
+        if (!title) { root.querySelector('[data-personal-status]').textContent = '문서 제목을 입력해 주세요.'; titleInput.focus(); return; }
+        const saved = { id:note.id, title, source:root.querySelector('[data-personal-source]').value, updatedAt:Date.now(), baseRevision:themeWikiBaseDocuments.find(base => base.id === note.id)?.revision };
+        const next = [...themeWikiEdits.filter(item => item.id !== id), saved];
+        if (!writeStudyStorage(themeWikiEditsStorageKey, next)) return;
+        themeWikiEdits = next;
+        renderThemeWiki(id);
+      };
+      root.querySelector('[data-personal-title]').focus();
+    }
+
+    function openThemeWikiExportDialog() {
+      openDocumentExportDialog(currentThemeWikiDocuments(), '테마별 정리 WIKI 저장', '테마별-정리-Wiki');
+    }
 
     function renderThemeWiki(selectedId = null) {
       const root = document.querySelector('#theme-wiki-root');
       if (!root) return;
+      const themeWikiDocuments = currentThemeWikiDocuments();
       const note = themeWikiDocuments.find(item => item.id === selectedId);
-      root.innerHTML = `<header class="personal-notes-toolbar"><h2 id="theme-wiki-title">테마별 정리 WIKI</h2>${note ? '<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-list>목록</button>' : ''}<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-home>홈으로</button></header>`;
+      root.innerHTML = `<header class="personal-notes-toolbar"><h2 id="theme-wiki-title">테마별 정리 WIKI</h2>${note ? '<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-list>목록</button>' : ''}${themeWikiDocuments.length ? '<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-export>저장하기</button>' : ''}${note ? '<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-edit>편집하기</button>' : ''}<button type="button" class="jbl-btn jbl-btn-sub" data-theme-wiki-home>홈으로</button></header>`;
       root.querySelector('[data-theme-wiki-home]').onclick = () => quickNavigate('#home');
       root.querySelector('[data-theme-wiki-list]')?.addEventListener('click', () => quickNavigate('#theme-wiki'));
+      root.querySelector('[data-theme-wiki-export]')?.addEventListener('click', openThemeWikiExportDialog);
+      root.querySelector('[data-theme-wiki-edit]')?.addEventListener('click', () => renderThemeWikiEditor(note.id));
       if (!note) {
         const list = document.createElement('div');
         list.className = 'personal-notes-list theme-wiki-list';
@@ -4645,9 +4679,13 @@
     }
 
     function openPersonalExportDialog() {
-      if (!personalNotes.length) { alert('저장할 문서가 없습니다.'); return; }
-      const dialog = makeAnkiDialog('나만의 정리 저장');
-      const ordered = [...personalNotes].sort((a,b) => Number(b.updatedAt || 0) - Number(a.updatedAt || 0));
+      openDocumentExportDialog(personalNotes, '나만의 정리 저장', '나만의-정리');
+    }
+
+    function openDocumentExportDialog(notes, dialogTitle, filenamePrefix) {
+      if (!notes.length) { alert('저장할 문서가 없습니다.'); return; }
+      const dialog = makeAnkiDialog(dialogTitle);
+      const ordered = [...notes].sort((a,b) => Number(b.updatedAt || 0) - Number(a.updatedAt || 0));
       dialog.innerHTML = `<div class="anki-dialog-head"><h3>저장할 문서 선택</h3><button type="button" class="anki-close" data-personal-export-close aria-label="저장 창 닫기">×</button></div><div class="personal-export-tools"><label><input type="checkbox" data-personal-export-all checked> 전체 선택</label><span data-personal-export-count>${ordered.length}개 선택</span></div><div class="personal-export-list">${ordered.map(note => `<label class="personal-export-row"><input type="checkbox" value="${escapeHtml(note.id)}" data-personal-export-item checked><span><strong>${escapeHtml(note.title || '제목 없는 문서')}</strong><small>${escapeHtml(personalNoteDate(note.updatedAt))}</small></span></label>`).join('')}</div><div class="personal-export-actions"><button class="jbl-btn jbl-btn-sub" type="button" data-personal-export-cancel>취소</button><button class="jbl-btn jbl-btn-primary" type="button" data-personal-export-save>선택 문서 저장</button></div>`;
       const all = dialog.querySelector('[data-personal-export-all]');
       const items = [...dialog.querySelectorAll('[data-personal-export-item]')];
@@ -4680,7 +4718,7 @@
           documents
         };
         const date = new Date().toISOString().slice(0,10);
-        downloadCurrentFile(`나만의-정리-${date}.json`, JSON.stringify(payload,null,2), 'application/json;charset=utf-8');
+        downloadCurrentFile(`${filenamePrefix}-${date}.json`, JSON.stringify(payload,null,2), 'application/json;charset=utf-8');
         dialog.close();
       };
       update();
