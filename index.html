@@ -618,6 +618,7 @@
     .personal-notes-shell { width:min(1420px,100%); margin:0 auto; text-align:left; }
     .personal-notes-toolbar { position:sticky; top:10px; z-index:30; display:flex; align-items:center; gap:9px; flex-wrap:wrap; margin-bottom:18px; padding:13px 15px; border:1px solid #dce8ed; border-radius:17px; background:rgba(255,255,255,.96); box-shadow:0 10px 28px rgba(38,78,99,.08); backdrop-filter:blur(12px); }
     .personal-notes-toolbar h2 { margin:0 auto 0 0; color:#244f63; font-size:clamp(20px,2.5vw,27px); }
+    :is(#personal-notes-view, #theme-wiki-view) .personal-notes-toolbar { position:static; top:auto; }
     .personal-notes-toolbar .jbl-btn[disabled] { opacity:.42; cursor:not-allowed; transform:none; }
     .personal-notes-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr)); gap:14px; }
     .personal-note-card { position:relative; min-height:150px; padding:0; overflow:hidden; border:1px solid #dce8ed; border-radius:18px; background:#fff; box-shadow:0 8px 24px rgba(38,78,99,.055); }
@@ -1103,6 +1104,10 @@
     .context-link-control:hover, .context-link-control:focus-visible { background: #f5fbfe; border-color: #7fb9d2; outline: 3px solid rgba(127,185,210,.24); outline-offset: 1px; }
     .context-link-control:disabled { opacity: .35; cursor: default; outline: none; }
     .context-link-close { width: 38px; padding: 0; font-size: 24px; line-height: 1; }
+    .context-link-expand { width: 38px; padding: 0; font-size: 24px; line-height: 1; }
+    .context-link-split.is-expanded { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+    .context-link-split.is-expanded .context-link-source { display: none; }
+    .context-link-split.is-expanded .context-link-target { box-shadow: none; }
     .context-link-body {
       min-width: 0;
       min-height: 0;
@@ -1129,7 +1134,7 @@
       .context-link-target { box-shadow: 0 -12px 30px rgba(31, 68, 87, .09); }
       .context-link-head { min-height: 52px; padding: 7px 12px; }
       .context-link-control { min-width: 34px; height: 34px; padding: 0 9px; }
-      .context-link-close { width: 34px; padding: 0; }
+      .context-link-close, .context-link-expand { width: 34px; padding: 0; }
       .context-link-body { padding: 10px; }
     }
 
@@ -4720,9 +4725,9 @@
 
     // Internal Wiki and J links open beside the current view instead of replacing it.
     const contextLinkState = {
-      active:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null,
+      active:false, expanded:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null, expand:null,
       shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null,
-      stack:[], renderToken:0
+      stack:[], renderToken:0, sourcePaneScroll:0
     };
 
     function validContextQuestionNumbers(numbers) {
@@ -4912,6 +4917,28 @@
       renderContextLinkTarget(target);
     }
 
+    function toggleContextLinkExpanded() {
+      const state = contextLinkState;
+      if (!state.active) return;
+      const expanding = !state.expanded;
+      const contentScroll = state.body.scrollTop;
+      if (expanding) state.sourcePaneScroll = state.source.scrollTop;
+      state.expanded = expanding;
+      state.split.classList.toggle('is-expanded', expanding);
+      state.source.inert = expanding;
+      if (expanding) state.source.setAttribute('aria-hidden', 'true');
+      else state.source.removeAttribute('aria-hidden');
+      state.expand.setAttribute('aria-pressed', String(expanding));
+      const label = expanding ? '분할 화면으로 돌아가기' : '연결된 내용 전체화면으로 확대';
+      state.expand.setAttribute('aria-label', label);
+      state.expand.title = label;
+      state.split.setAttribute('aria-label', expanding ? '연결된 내용 전체화면' : '현재 화면과 연결된 내용을 함께 보기');
+      if (expanding && state.source.contains(document.activeElement)) state.expand.focus({ preventScroll:true });
+      if (!expanding) state.source.scrollTop = state.sourcePaneScroll;
+      state.body.scrollTop = contentScroll;
+      window.PATHOLOGY_MAP?.refreshLayout?.();
+    }
+
     function openContextLinkSplit(target, opener) {
       if (contextLinkState.active) {
         showContextLinkTarget(target, true);
@@ -4923,7 +4950,7 @@
       split.className = 'context-link-split';
       split.setAttribute('role', 'group');
       split.setAttribute('aria-label', '현재 화면과 연결된 내용을 함께 보기');
-      split.innerHTML = `<section class="context-link-source" data-context-link-source aria-label="현재 화면"></section><aside class="context-link-target" data-context-link-target aria-label="연결된 내용"><header class="context-link-head"><div class="context-link-heading"><span class="context-link-eyebrow">연결된 내용</span><strong class="context-link-title" data-context-link-title></strong></div><div class="context-link-controls"><button class="context-link-control" type="button" data-context-link-back aria-label="이전 연결 내용으로 돌아가기">←</button><button class="context-link-control context-link-close" type="button" data-context-link-close aria-label="분할 화면 닫기">×</button></div></header><div class="context-link-body" data-context-link-body aria-live="polite"></div><nav class="context-question-nav" data-context-link-nav aria-label="이 Wiki의 연결 문항 탐색" hidden></nav></aside>`;
+      split.innerHTML = `<section class="context-link-source" data-context-link-source aria-label="현재 화면"></section><aside class="context-link-target" data-context-link-target aria-label="연결된 내용"><header class="context-link-head" title="더블클릭으로 전체화면 전환"><div class="context-link-heading"><span class="context-link-eyebrow">연결된 내용</span><strong class="context-link-title" data-context-link-title></strong></div><div class="context-link-controls"><button class="context-link-control" type="button" data-context-link-back aria-label="이전 연결 내용으로 돌아가기">←</button><button class="context-link-control context-link-expand" type="button" data-context-link-expand aria-label="연결된 내용 전체화면으로 확대" aria-pressed="false" title="연결된 내용 전체화면으로 확대">−</button><button class="context-link-control context-link-close" type="button" data-context-link-close aria-label="분할 화면 닫기">×</button></div></header><div class="context-link-body" data-context-link-body aria-live="polite"></div><nav class="context-question-nav" data-context-link-nav aria-label="이 Wiki의 연결 문항 탐색" hidden></nav></aside>`;
       const source = split.querySelector('[data-context-link-source]');
       contextLinkState.active = true;
       contextLinkState.split = split;
@@ -4932,6 +4959,7 @@
       contextLinkState.body = split.querySelector('[data-context-link-body]');
       contextLinkState.title = split.querySelector('[data-context-link-title]');
       contextLinkState.back = split.querySelector('[data-context-link-back]');
+      contextLinkState.expand = split.querySelector('[data-context-link-expand]');
       contextLinkState.nav = split.querySelector('[data-context-link-nav]');
       contextLinkState.shell = shell;
       contextLinkState.originalParent = shell.parentNode;
@@ -4948,6 +4976,12 @@
         renderContextLinkTarget(contextLinkState.stack.at(-1));
       });
       split.querySelector('[data-context-link-close]').addEventListener('click', closeContextLinkSplit);
+      contextLinkState.expand.addEventListener('click', toggleContextLinkExpanded);
+      split.querySelector('.context-link-head').addEventListener('dblclick', event => {
+        if (event.target.closest('button, a, input, textarea, select, [contenteditable]')) return;
+        event.preventDefault();
+        toggleContextLinkExpanded();
+      });
       requestAnimationFrame(() => { source.scrollTop = contextLinkState.sourceScroll; window.PATHOLOGY_MAP?.refreshLayout?.(); });
       showContextLinkTarget(target, true);
     }
@@ -4955,7 +4989,7 @@
     function closeContextLinkSplit(restorePosition = true) {
       if (!contextLinkState.active) return;
       hideWikiFootnotePreview();
-      const scroll = contextLinkState.source?.scrollTop || 0;
+      const scroll = contextLinkState.expanded ? contextLinkState.sourcePaneScroll : contextLinkState.source?.scrollTop || 0;
       const shell = contextLinkState.shell;
       const parent = contextLinkState.originalParent;
       const next = contextLinkState.originalNextSibling;
@@ -4966,7 +5000,7 @@
       }
       contextLinkState.split?.remove();
       document.body.classList.remove('context-link-open');
-      Object.assign(contextLinkState, { active:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, opener:null, stack:[] });
+      Object.assign(contextLinkState, { active:false, expanded:false, split:null, source:null, target:null, body:null, title:null, back:null, nav:null, expand:null, shell:null, originalParent:null, originalNextSibling:null, sourceScroll:0, sourcePaneScroll:0, opener:null, stack:[] });
       if (restorePosition) requestAnimationFrame(() => {
         window.scrollTo({ top:scroll, behavior:'auto' });
         if (opener?.isConnected) opener.focus({ preventScroll:true });
