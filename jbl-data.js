@@ -9921,25 +9921,32 @@ window.JBL_DATA = {
       "answerIndices": [
         1
       ],
-      "answerLabel": "정답 추정: 1번 · Body, greater curvature",
-      "explanation": "정답 추정: 1번 · Body, greater curvature\n\n== 배경 지식 ==\n위는 cardia, fundus, body, pyloric antrum과 pylorus로 구분한다. Greater curvature는 위의 왼쪽 아래쪽으로 길게 이어지는 볼록한 경계이고, lesser curvature의 꺾이는 지점은 angle에 해당한다. [[4강#위벽의 구조|위벽의 구조]]를 참고한다.\n\n== 정답 선지 ==\n① 표시된 부위는 위 체부의 greater curvature 쪽으로 보이므로 Body, greater curvature가 정답으로 추정된다.\n\n== 오답 선지 ==\n* ② Pyloric antrum: 위의 원위부에서 pylorus로 이어지는 구간이다.\n* ③ Angle: lesser curvature에서 body와 antrum의 경계를 이루는 incisure 부위이다.\n* ④ Fundus: cardia 위쪽의 둥근 지붕 모양 부위이다.\n* ⑤ Cardia: 식도위접합부 주변의 위 입구이다.\n\n== 출제 의도 ==\n위 도식에서 주요 구획과 greater curvature·lesser curvature의 방향을 구분하게 한다.\n\n== Wiki 연결 ==\n* [[4강#위벽의 구조|위벽의 구조]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerLabel": "정답: 1번 · Body, greater curvature",
+      "explanation": "정답: 1번 · Body, greater curvature\n\n== 이 문제를 풀기 위해 알아야 할 것 ==\n파란 원은 '''위 체부(body)의 대만(greater curvature) 쪽'''에 놓여 있다. 위의 구역 이름과 두 곡률을 함께 읽는 문항이다. 그림을 보자마자 화면의 좌우로 판단하기보다, '''식도가 들어오는 입구와 십이지장으로 나가는 출구를 먼저 찾은 뒤''' 그 사이의 위저부·체부·전정부를 구별하면 방향이 바뀐 그림에도 적용할 수 있다.\n\n== 출제 근거 개념 정리 ==\n식도가 연결되는 곳이 '''cardia'''이고, 그보다 위쪽으로 둥글게 솟은 부분이 '''fundus'''다. 그 아래 넓은 중심부가 '''body'''이며, 원위부로 따라가면 '''pyloric antrum'''을 거쳐 좁은 출구인 '''pylorus'''로 이어진다. 이 그림의 파란 원은 식도 입구나 위저부의 둥근 지붕이 아니라, 넓은 체부의 바깥쪽 볼록한 가장자리에 있다.\n\n|| = 위치를 가르는 축 || = 그림에서 찾을 기준 ||\n|| Cardia || 식도가 위로 들어오는 접합부 주변 ||\n|| Fundus || Cardia보다 위쪽으로 솟은 둥근 부분 ||\n|| Body || 위의 넓은 중심부. 표시된 원이 있는 구역 ||\n|| Pyloric antrum || 십이지장으로 나가는 유문 직전의 넓은 원위부 ||\n|| Pylorus || 위에서 십이지장으로 이어지는 좁은 출구 ||\n|| Greater curvature || 위의 바깥쪽으로 길게 이어지는 볼록한 경계 ||\n|| Lesser curvature || 위 안쪽의 상대적으로 짧은 오목한 경계 ||\n|| Angle, incisura angularis || 소만에서 body와 antrum의 경계를 잡는 꺾임·패임 ||\n\n> '''구역은 body인가 antrum인가, 경계는 greater curvature인가 lesser curvature인가'''를 따로 판단한 뒤 합친다. '''Body + greater curvature'''가 이 문항의 위치다.\n\n== 선지별 해설 ==\n* '''1번 — Body, greater curvature: 정답.''' 위저부 아래의 넓은 체부이며, 표시가 소만의 오목한 쪽이 아니라 대만의 볼록한 쪽에 있다.\n* '''2번 — Pyloric antrum: 오답.''' 그림에서 십이지장으로 이어지는 출구 직전의 원위부다. 표시된 원은 그보다 체부 쪽에 놓여 있다. Antrum과 pylorus도 구역과 출구라는 차이가 있다.\n* '''3번 — Angle: 오답.''' Body와 antrum의 경계를 잡는 소만의 꺾임이다. 그림의 파란 원은 반대쪽인 대만에 있으므로 angle로 읽을 수 없다.\n* '''4번 — Fundus: 오답.''' 식도 입구보다 위쪽으로 솟은 둥근 부분이다. 파란 원이 있는 체부의 아래쪽 대만과 구별한다.\n* '''5번 — Cardiac: 오답.''' 이 선지에서는 cardia, 즉 식도위접합부 주변을 가리키는 표현으로 읽는다. 식도가 연결된 위 입구와 파란 원의 위치가 다르다.\n\n== 출제 의도와 변형 대비 ==\n이 해부학적 위치 구분은 56강에서 '''종양의 위치에 따른 절제 범위'''를 이해하는 출발점이다. 상부·접합부 병변인지, 중·하부 병변인지에 따라 충분한 절제연을 확보하면서 남길 수 있는 위의 범위가 달라진다. 다만 '''대만의 체부에 있다는 정보만으로 수술 종류를 확정하는 문제는 아니다.''' 실제 수술 범위는 침윤 깊이·병기·종양의 범위와 절제연까지 함께 판단해야 한다.\n\n변형에서는 원을 소만의 angle, 유문 앞 antrum, 위저부 또는 식도 입구로 옮길 수 있다. 그림의 방향을 통째로 외우기보다 '''입구 → 위저부·체부 → 전정부·출구'''의 위치 관계와 '''대만·소만'''을 함께 기억하자.\n\n== Wiki 연결 ==\n* [[56강#위의 구역과 수술 이름|위의 구역과 수술 이름]]\n* [[56강#식도위접합부의 진행성 위암은 무엇을 절제할까|위치와 진행 정도에 따른 수술 범위]]\n\n== 관련 J ==\n위 도식에서 antrum을 찾는 {{365}}로 위치 구분을 확인하고, 접합부의 진행성 위암에서 수술 범위를 고르는 {{233}}·{{389}}로 연결해 보자.\n\n== 검토 기록 ==\n2023년 137번의 수록 사진을 직접 확인하여 위치를 판독했다. 사용자 지정에 따라 56강으로 재분류하고 출제교수를 최윤석으로 수정했다. 공식 오답30의 해설을 근거로 인용한 문항은 아니다.",
       "images": [
         "2023_소화기_문항별_사진/137.png"
       ],
-      "legacyProfessor": "한인옥",
+      "legacyProfessor": "최윤석",
       "lectureIds": [
-        4
+        56
       ],
-      "lectureId": 4,
-      "lectureTitle": "위에서의 소화",
-      "professor": "한인옥",
-      "domain": "기초의학",
-      "discipline": "생리학",
-      "section": "생리학",
+      "lectureId": 56,
+      "lectureTitle": "위 종양 (II) 치료, 예후, 합병증",
+      "professor": "최윤석",
+      "domain": "임상의학",
+      "discipline": "외과",
+      "section": "외과",
       "source": "2023 소화기계 풀이 · 276-278page",
-      "mappingConfidence": "실제 강의록 범위(3 총론·구강 / 4 위 / 5 장 / 8·9 간·췌장) 기준 전면 재분류",
+      "mappingConfidence": "사용자 지정: 위종양 수술의 위치 해부 문항으로 56강 재분류, 출제교수 최윤석",
       "legacyDisplayId": "2023 137번",
-      "globalNumber": 235
+      "globalNumber": 235,
+      "answerVerification": "수록 원본 그림의 위 체부·대만 위치 직접 확인 및 56강 Wiki의 구역 설명에 근거한 풀이",
+      "wikiReview": {
+        "date": "2026-10-01",
+        "lectureId": 56,
+        "source": "최신 56강 Wiki 및 2023년 137번 수록 사진",
+        "officialSource": null
+      }
     },
     {
       "id": "2023-138",
