@@ -1174,7 +1174,7 @@ window.JBL_DATA = {
         2
       ],
       "answerLabel": "정답: 2번 · CDH1 mutation",
-      "explanation": "정답: 2번 · CDH1 mutation\n\n== 배경 지식 ==\nLauren diffuse type 위샘암종은 세포 간 결합이 약한 반지세포가 개별적으로 침윤하며 linitis plastica를 만들 수 있다. E-cadherin을 암호화하는 CDH1의 기능 소실이 대표적인 분자 이상이다.\n\n== 정답 선지 ==\n* '''2번''': CDH1 이상은 E-cadherin 매개 세포접착을 잃게 하여 diffuse type의 산재성 침윤을 설명한다.\n\n== 오답 선지 ==\n* '''1번''': TP53 이상은 특히 염색체불안정성형과 장형 위암에서 흔하지만 diffuse type을 가장 특징적으로 나타내는 답은 아니다.\n* '''3번''': KRAS는 diffuse type의 대표 표지 변이가 아니다.\n* '''4번''': MSI-high는 TCGA MSI군의 특징이며 diffuse type의 핵심 변화가 아니다.\n* '''5번''': EBV 양성은 TCGA EBV군에 해당한다. 보기의 'Ebstein barr virus'는 Epstein–Barr virus의 오기다.\n\n== 출제 의도 ==\n조직 형태로 Lauren diffuse type을 인식하고 이를 CDH1–E-cadherin 경로와 연결하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#TCGA 분자분류|TCGA 분자분류]]\n\n== 관련 J ==\n{{259}} {{270}} {{272}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 2번 · CDH1 mutation\n\n== 배경 지식 ==\nLauren diffuse type 위샘암종은 세포 간 결합이 약한 반지세포가 개별적으로 침윤하며 linitis plastica를 만들 수 있다. E-cadherin을 암호화하는 CDH1의 기능 소실이 대표적인 분자 이상이다.\n\n== 정답 선지 ==\n* '''2번''': CDH1 이상은 E-cadherin 매개 세포접착을 잃게 하여 diffuse type의 산재성 침윤을 설명한다.\n\n== 오답 선지 ==\n* '''1번''': TP53 이상은 특히 염색체불안정성형과 장형 위암에서 흔하지만 diffuse type을 가장 특징적으로 나타내는 답은 아니다.\n* '''3번''': KRAS는 diffuse type의 대표 표지 변이가 아니다.\n* '''4번''': MSI-high는 TCGA MSI군의 특징이며 diffuse type의 핵심 변화가 아니다.\n* '''5번''': EBV 양성은 TCGA EBV군에 해당한다. 보기의 'Ebstein barr virus'는 Epstein–Barr virus의 오기다.\n\n== 출제 의도 ==\n조직 형태로 Lauren diffuse type을 인식하고 이를 CDH1–E-cadherin 경로와 연결하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#TCGA 분자분류|TCGA 분자분류]]\n\n== 관련 J ==\n{{259}} {{270}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2025_소화기_문항별_사진/2025_028_01.png"
       ],
@@ -1210,10 +1210,10 @@ window.JBL_DATA = {
         "hypertrophy",
         "heterotopia"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답 확정 곤란",
-      "explanation": "정답 확정 곤란\n\n== 배경 지식 ==\n화생(metaplasia)은 한 종류의 성숙한 세포가 다른 종류의 성숙한 세포로 가역적으로 대체되는 적응반응이다. 이형성(dysplasia)은 세포의 크기·모양·배열과 성숙이 비정상적인 전암성 변화이고, 역형성(anaplasia)은 악성종양에서 분화가 소실된 상태이다. 비대(hypertrophy)는 개별 세포의 크기 증가, 이소증(heterotopia)은 정상 조직이 비정상 위치에 존재하는 상태다.\n\n== 정답 선지 ==\n'''3번 metaplasia''': 발문이 의도한 ‘분화된 위샘세포가 다른 성숙 세포형으로 바뀌는 현상’은 화생이다.\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 성숙 세포형의 대체가 아니라 세포학적·구조적 비정형이다.\n* '''2번 anaplasia''': 악성세포의 분화 소실을 뜻한다.\n* '''4번 hypertrophy''': 세포 종류는 그대로이고 크기만 증가한다.\n* '''5번 heterotopia''': 정상 조직이 원래 위치와 다른 곳에 존재한다.\n\n== 출제 의도 ==\n화생과 이형성·역형성·비대·이소증의 정의를 구별하게 한다. 다만 복원 발문의 '''fundus gland와 body gland는 모두 oxyntic mucosa에 속하므로 서로 다른 세포형의 대체라는 표현이 성립하지 않는다.''' Metaplasia를 의도했을 가능성은 있지만 원문 일부가 잘못 복원되었을 가능성이 있다.\n\n== WIKI 연결 ==\n* [[11강#만성위염|만성위염]]\n* [[11강#병리 소견|위점막의 화생]]\n\n== 문항 오류 가능성 ==\nFundus와 body는 모두 oxyntic gland가 분포하는 부위이므로 현재 발문만으로 성숙 세포형이 바뀌었다는 사실을 입증할 수 없다. 기존 ③은 확인된 공식 정답이 아니다. 실제로 어떤 세포에서 어떤 세포로 바뀌었는지 원래 발문 확인이 필요하다.\n\n== 검토 상태 ==\n오답30 미수록.",
+      "answerIndex": 3,
+      "answerIndices": [3],
+      "answerLabel": "정답: ③ metaplasia",
+      "explanation": "정답: ③ metaplasia\n\n== 배경 지식 ==\n화생(metaplasia)은 한 종류의 성숙한 세포가 다른 종류의 성숙한 세포로 가역적으로 대체되는 적응반응이다. 이형성(dysplasia)은 세포의 크기·모양·배열과 성숙이 비정상적인 전암성 변화이고, 역형성(anaplasia)은 악성종양에서 분화가 소실된 상태이다. 비대(hypertrophy)는 개별 세포의 크기 증가, 이소증(heterotopia)은 정상 조직이 비정상 위치에 존재하는 상태다.\n\n== 정답 선지 ==\n'''3번 metaplasia''': 이 문항은 ‘분화된 세포가 다른 성숙 세포형으로 바뀌는 현상’을 묻는 것으로 해석하여 '''화생'''을 고른다.[* 복원 발문의 fundus와 body는 모두 oxyntic gland가 분포하는 부위여서, 두 부위의 이름만으로 서로 다른 세포형의 대체를 설명하기는 어렵다. 발문은 보존하되 출제 의도에 따라 정답은 3번으로 확정하였다.]\n\n== 오답 선지 ==\n* '''1번 dysplasia''': 성숙 세포형의 대체가 아니라 세포학적·구조적 비정형이다.\n* '''2번 anaplasia''': 악성세포의 분화 소실을 뜻한다.\n* '''4번 hypertrophy''': 세포 종류는 그대로이고 크기만 증가한다.\n* '''5번 heterotopia''': 정상 조직이 원래 위치와 다른 곳에 존재한다.\n\n> 다른 성숙 세포형으로 대체되면 '''metaplasia''', 세포의 형태와 배열이 비정상적이면 '''dysplasia''', 악성세포가 분화를 잃으면 '''anaplasia'''이다.\n\n== WIKI 연결 ==\n* [[11강#만성위염|만성위염]]\n* [[11강#병리 소견|위점막의 화생]]",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -6672,7 +6672,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 식도 칸디다증",
-      "explanation": "정답: 식도 칸디다증(Candida esophagitis)\n\n== 배경 지식 ==\nCandida esophagitis는 면역저하, 광범위 항생제 사용, 당뇨병 등에서 흔하며 내시경에서 잘 떨어지지 않는 흰색 판(plaque)을 만든다. 조직에서는 편평상피 표면과 염증성 삼출물 안에 효모와 거짓균사(pseudohyphae)가 관찰된다.\n\n== 정답 해설 ==\n제시된 흰색 부착성 판과 조직의 진균 형태는 식도 칸디다증에 합당하다. 음식물 찌꺼기와 달리 병변이 점막에 부착되어 있고, PAS 또는 GMS 염색으로 진균을 확인할 수 있다.\n\n== 출제 의도 ==\n식도 감염의 내시경·조직 소견을 보고 Candida를 식별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#칸디다 식도염|칸디다 식도염]]\n* [[10강#감염성 식도염|감염성 식도염]]\n\n== 관련 J ==\n{{736}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 식도 칸디다증(Candida esophagitis)\n\n== 모범답안 ==\n'''Candida esophagitis(식도 칸디다증)'''이다. 내시경에서 백색의 부착성 plaque 또는 거짓막이 관찰되고, 조직에서 염증성 삼출물과 상피를 침범하는 yeast 및 pseudohyphae가 보인다.\n\n== 배경 지식 ==\nCandida esophagitis는 면역저하, 광범위 항생제 사용, 당뇨병 등에서 흔하며 내시경에서 잘 떨어지지 않는 흰색 판(plaque)을 만든다. 조직에서는 편평상피 표면과 염증성 삼출물 안에 효모와 거짓균사(pseudohyphae)가 관찰된다.\n\n== 정답 해설 ==\n제시된 흰색 부착성 판과 조직의 진균 형태는 식도 칸디다증에 합당하다. 음식물 찌꺼기와 달리 병변이 점막에 부착되어 있고, PAS 또는 GMS 염색으로 진균을 확인할 수 있다.\n\n== 출제 의도 ==\n식도 감염의 내시경·조직 소견을 보고 Candida를 식별하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#칸디다 식도염|칸디다 식도염]]\n* [[10강#감염성 식도염|감염성 식도염]]\n\n== 관련 J ==\n{{736}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2023_소화기_문항별_사진/29(1).png",
         "2023_소화기_문항별_사진/29(2).png"
@@ -6742,7 +6742,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 위 선암(adenocarcinoma)",
-      "explanation": "정답: 위샘암종(gastric adenocarcinoma)\n\n== 배경 지식 ==\n위샘암종은 위의 가장 흔한 악성종양으로 비정상 샘 구조를 형성하는 장형과 결합력이 약한 세포가 산재 침윤하는 미만형을 포함한다. 침윤성 샘, 세포 이형성, desmoplasia 또는 반지세포가 진단의 핵심이다.\n\n== 정답 해설 ==\n제시된 병변은 정상 위샘 배열을 파괴하며 침윤하는 악성 상피성 종양으로 위샘암종에 합당하다. 정확한 아형은 샘 형성 여부와 반지세포·산재 침윤 양상을 함께 평가한다.\n\n== 출제 의도 ==\n육안·조직 영상을 보고 위샘암종을 GIST, 림프종, NET 같은 비상피성 종양과 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{159}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 7page 수록.",
+      "explanation": "정답: 위샘암종(gastric adenocarcinoma)\n\n== 모범답안 ==\n'''Gastric adenocarcinoma(위샘암종)'''이다.\n\n== 배경 지식 ==\n위샘암종은 위의 가장 흔한 악성종양으로 비정상 샘 구조를 형성하는 장형과 결합력이 약한 세포가 산재 침윤하는 미만형을 포함한다. 침윤성 샘, 세포 이형성, desmoplasia 또는 반지세포가 진단의 핵심이다.\n\n== 정답 해설 ==\n제시된 병변은 정상 위샘 배열을 파괴하며 침윤하는 악성 상피성 종양으로 위샘암종에 합당하다. 정확한 아형은 샘 형성 여부와 반지세포·산재 침윤 양상을 함께 평가한다.\n\n== 출제 의도 ==\n육안·조직 영상을 보고 위샘암종을 GIST, 림프종, NET 같은 비상피성 종양과 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{159}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 7page 수록.\n\n== 오답30 원문 정답 ==\n> adenocarcinoma\n\n2023 소화기계 오답30 p.7",
       "images": [
         "2023_소화기_문항별_사진/31.png"
       ],
@@ -6773,7 +6773,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 조기위암 Type III(0-III, 함몰/궤양형)",
-      "explanation": "정답: 조기위암 육안형 0-III(함몰·궤양형)\n\n== 배경 지식 ==\n조기위암은 림프절 전이 여부와 관계없이 암의 침윤이 점막 또는 점막밑층에 국한된 위암이다. 육안형은 0-I 융기형, 0-II 표면형(IIa·IIb·IIc), 0-III 함몰형으로 나눈다.\n\n== 정답 해설 ==\n병변이 점막에 국한되어 있으면서 뚜렷한 깊은 함몰 또는 궤양 모양을 보이므로 0-III로 분류한다. 조기위암의 정의는 병변의 넓이나 림프절 전이가 아니라 침윤 깊이에 따른다.\n\n== 출제 의도 ==\n침윤 깊이로 조기위암을 정의하고 표면 형태에 따라 0형의 세부 유형을 판정하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#조기위암 · Early gastric cancer|조기위암]]\n\n== 관련 J ==\n{{158}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 1page 수록.",
+      "explanation": "정답: 조기위암 육안형 0-III(함몰·궤양형)\n\n== 모범답안 ==\n'''조기위암의 육안형 0-III형(excavated type, 함몰·궤양형)'''이다. 병변이 점막에 국한되어 있으므로 조기위암이며, 사진의 뚜렷한 함몰·궤양 형태에 따라 III형으로 분류한다.\n\n== 배경 지식 ==\n조기위암은 림프절 전이 여부와 관계없이 암의 침윤이 점막 또는 점막밑층에 국한된 위암이다. 육안형은 0-I 융기형, 0-II 표면형(IIa·IIb·IIc), 0-III 함몰형으로 나눈다.\n\n== 정답 해설 ==\n병변이 점막에 국한되어 있으면서 뚜렷한 깊은 함몰 또는 궤양 모양을 보이므로 0-III로 분류한다. 조기위암의 정의는 병변의 넓이나 림프절 전이가 아니라 침윤 깊이에 따른다.\n\n== 출제 의도 ==\n침윤 깊이로 조기위암을 정의하고 표면 형태에 따라 0형의 세부 유형을 판정하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#조기위암 · Early gastric cancer|조기위암]]\n\n== 관련 J ==\n{{158}} {{419}} {{739}}\n\n== 검토 상태 ==\n오답률 30 1page 수록.\n\n== 오답30 원문 정답 ==\n> Type III\n\n2023 소화기계 오답30 p.1",
       "images": [
         "2023_소화기_문항별_사진/32.png"
       ],
@@ -6842,7 +6842,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 유사분열 수(mitotic count), Ki-67 증식지수(Ki-67 proliferation index)",
-      "explanation": "정답: 유사분열 수(mitotic count), Ki-67 증식지수(Ki-67 proliferation index)\n\n== 배경 지식 ==\n잘 분화된 위장관 신경내분비종양(NET)의 grade는 종양세포의 증식활성을 나타내는 '''유사분열 수'''와 '''Ki-67 증식지수'''로 정한다. 두 지표가 서로 다른 등급을 가리키면 더 높은 등급을 적용한다. 분화도와 증식등급은 별개의 축이며, 종양 크기와 침윤깊이는 병기·전이위험 평가에 사용한다.\n\n== 정답 해설 ==\n직장 점막하 종양의 조직이 NET에 합당하다면 요구되는 두 지표는 '''mitotic count'''와 '''Ki-67 proliferation index'''이다.\n\n== 출제 의도 ==\n신경내분비 분화를 진단하는 형태·면역표지와, 진단 뒤 증식등급을 결정하는 두 수치를 구분하게 한다.\n\n== WIKI 연결 ==\n* [[11강#WHO 분류와 등급|위장관 NET의 WHO 분류와 등급]]\n\n== 관련 J ==\n{{426}}\n\n== 검토 상태 ==\n오답률 30 46page 수록.",
+      "explanation": "정답: 유사분열 수(mitotic count), Ki-67 증식지수(Ki-67 proliferation index)\n\n== 모범답안 ==\n종양의 증식등급을 결정하는 두 요소는 '''유사분열 수(mitotic count)'''와 '''Ki-67 proliferation index'''이다.\n\n== 배경 지식 ==\n잘 분화된 위장관 신경내분비종양(NET)의 grade는 종양세포의 증식활성을 나타내는 '''유사분열 수'''와 '''Ki-67 증식지수'''로 정한다. 두 지표가 서로 다른 등급을 가리키면 더 높은 등급을 적용한다. 분화도와 증식등급은 별개의 축이며, 종양 크기와 침윤깊이는 병기·전이위험 평가에 사용한다.\n\n== 정답 해설 ==\n직장 점막하 종양의 조직이 NET에 합당하다면 요구되는 두 지표는 '''mitotic count'''와 '''Ki-67 proliferation index'''이다.\n\n== 출제 의도 ==\n신경내분비 분화를 진단하는 형태·면역표지와, 진단 뒤 증식등급을 결정하는 두 수치를 구분하게 한다.\n\n== WIKI 연결 ==\n* [[11강#WHO 분류와 등급|위장관 NET의 WHO 분류와 등급]]\n\n== 관련 J ==\n{{426}}\n\n== 검토 상태 ==\n오답률 30 46page 수록.\n\n== 오답30 원문 정답 ==\n> 유사분열 수, ki67\n\n2023 소화기계 오답30 p.46",
       "images": [
         "2023_소화기_문항별_사진/37.png"
       ],
@@ -10832,7 +10832,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · MSI와 관련이 높다.",
-      "explanation": "정답: 4번 · MSI와 관련이 높다.\n\n== 배경 지식 ==\nLauren diffuse type 위암은 비교적 젊은 연령에서도 발생하고, E-cadherin을 암호화하는 CDH1 이상과 관련되며, 반지세포의 미만성 침윤으로 Borrmann IV형(linitis plastica)을 만들 수 있다. MSI-high는 주로 TCGA MSI군 및 장형 형태와 연결된다.\n\n== 정답 선지 ==\n* '''4번''': diffuse type의 대표 분자 이상은 CDH1이며 MSI-high와의 높은 연관성은 전형적이지 않으므로 틀린 설명이다.\n\n== 오답 선지 ==\n* '''1번''': diffuse type은 intestinal type보다 젊은 환자에서도 나타날 수 있다.\n* '''2번''': 미만성 벽 침윤은 Borrmann IV형을 형성할 수 있다.\n* '''3번''': CDH1 기능 소실은 diffuse type의 핵심 분자 변화다.\n\n== 출제 의도 ==\nLauren diffuse type의 임상·육안·분자 특징을 한 묶음으로 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{28}} {{270}} {{272}}\n\n== 검토 상태 ==\n오답률 30 24page 수록.",
+      "explanation": "정답: 4번 · MSI와 관련이 높다.\n\n== 배경 지식 ==\nLauren diffuse type 위암은 비교적 젊은 연령에서도 발생하고, E-cadherin을 암호화하는 CDH1 이상과 관련되며, 반지세포의 미만성 침윤으로 Borrmann IV형(linitis plastica)을 만들 수 있다. MSI-high는 주로 TCGA MSI군 및 장형 형태와 연결된다.\n\n== 정답 선지 ==\n* '''4번''': diffuse type의 대표 분자 이상은 CDH1이며 MSI-high와의 높은 연관성은 전형적이지 않으므로 틀린 설명이다.\n\n== 오답 선지 ==\n* '''1번''': diffuse type은 intestinal type보다 젊은 환자에서도 나타날 수 있다.\n* '''2번''': 미만성 벽 침윤은 Borrmann IV형을 형성할 수 있다.\n* '''3번''': CDH1 기능 소실은 diffuse type의 핵심 분자 변화다.\n\n== 출제 의도 ==\nLauren diffuse type의 임상·육안·분자 특징을 한 묶음으로 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{28}} {{270}}\n\n== 검토 상태 ==\n오답률 30 24page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -11192,7 +11192,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답:\n1. Lauren classification: intestinal type은 장상피화생이 있는 위점막에서 발생하며 남성에 더 흔하고 평균 연령은 55세이다. 주로 fungating·expansile growth를 보이고 현미경적으로 gland formation이 뚜렷하다. Diffuse type은 장상피화생이 없는 위점막에서 발생하며 남녀 비는 1:1, 평균 연령은 48세이다. Borrmann IV형의 infiltrative growth와 poor differentiation, signet ring cell이 특징이다.\n2. Borrmann classification: I형은 fungating, II형은 ulcerative, III형은 ulceroinfiltrative이며 가장 흔하고, IV형은 diffuse infiltrative로 linitis plastica를 형성한다.\n3. TCGA classification: CIN은 intestinal histology·TP53 mutation·RTK–RAS activation, GS는 diffuse histology·CDH1/RHOA mutation·CLDN18–ARHGAP fusion·cell adhesion 이상, EBV형은 PIK3CA mutation·PD-L1/2 overexpression·EBV-CIMP·CDKN2A silencing·immune cell signalling, MSI형은 hypermutation·gastric-CIMP·MLH1 silencing·mitotic pathway 이상이 특징이다.",
-      "explanation": "정답:\n1. Lauren classification: intestinal type과 diffuse type\n2. Borrmann classification: I형 fungating, II형 ulcerative, III형 ulceroinfiltrative, IV형 diffuse infiltrative\n3. TCGA classification: CIN, GS, EBV, MSI\n\n== 배경 지식 ==\n이 문항은 위샘암종을 서로 다른 세 축으로 분류하게 한다. '''Lauren classification'''은 주로 조직학적 성장 양상과 역학적 특징을, '''Borrmann classification'''은 진행위암의 육안 형태를, '''TCGA classification'''은 분자·유전체 특징을 기준으로 한다. 세 분류는 서로 대체하는 체계가 아니므로 각각의 유형과 대표 특징을 독립적으로 기술해야 한다.\n\n== 모범답안 ==\n=== 1. Lauren classification (1점) ===\n* '''Intestinal type''': intestinal metaplasia를 보이는 위점막에서 발생한다. 남녀 비는 2:1 이상으로 남성에 많고 평균 발생 연령은 약 55세이다. 육안적으로 주로 fungating 또는 expansile growth를 보인다. 현미경적으로 gland formation이 뚜렷하며, 배경 위점막에 severe atrophic gastritis와 intestinal metaplasia가 동반된다.\n* '''Diffuse type''': intestinal metaplasia가 없는 위점막에서도 발생한다. 남녀 비는 약 1:1이고 평균 발생 연령은 약 48세이다. 육안적으로 Borrmann IV형에 해당하는 infiltrative growth를 보일 수 있다. 현미경적으로 poor differentiation과 signet ring cell이 특징적이며 종양세포가 응집된 샘보다 개별 세포 형태로 미만성 침윤한다.\n\n=== 2. Borrmann classification (1점) ===\n* '''Type I — Fungating''': 내강으로 돌출하는 융기성·버섯모양 종괴이다.\n* '''Type II — Ulcerative''': 비교적 경계가 뚜렷한 궤양형 병변이다.\n* '''Type III — Ulceroinfiltrative''': 궤양과 주변 위벽 침윤이 함께 나타나며 네 유형 중 가장 흔하다.\n* '''Type IV — Diffuse infiltrative''': 뚜렷한 종괴보다 위벽을 광범위하게 침윤하고 두껍고 경직되게 만드는 형태로, '''linitis plastica'''를 형성한다.\n\n=== 3. TCGA classification (1점) ===\n* '''CIN · Chromosomal instability''': intestinal histology가 흔하고 '''TP53 mutation'''과 '''RTK–RAS activation'''이 특징이다.\n* '''GS · Genomically stable''': diffuse histology가 흔하며 '''CDH1 mutation''', '''RHOA mutation''', '''CLDN18–ARHGAP fusion''' 및 cell adhesion pathway 이상이 특징이다.\n* '''EBV · Epstein–Barr virus-positive''': '''PIK3CA mutation''', '''PD-L1/PD-L2 overexpression''', '''EBV-CIMP''', '''CDKN2A silencing''' 및 immune cell signalling이 특징이다.\n* '''MSI · Microsatellite instability''': '''hypermutation''', '''gastric-CIMP''', '''MLH1 silencing''' 및 mitotic pathway 이상이 특징이다.\n\n== 채점 핵심 ==\n각 분류에 1점이 배정되어 있다. Lauren에서는 두 유형의 조직학·역학·육안 차이, Borrmann에서는 I–IV형의 육안 형태, TCGA에서는 네 분자 아형과 대표 분자 이상을 빠뜨리지 않는 것이 핵심이다. 원문은 중요한 특징의 누락이나 잘못된 기술에 부분 감점이 있음을 명시한다.\n\n== 출제 의도 ==\n위암을 단순히 하나의 이름으로 기억하는 것이 아니라, '''조직학적 분류(Lauren)''', '''진행위암의 육안 분류(Borrmann)''', '''분자유전학적 분류(TCGA)'''를 구분하고 각 분류가 제공하는 정보를 연결하여 서술할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[11강#위암의 분류 축|위암의 분류 축]]\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#진행위암 · Advanced gastric cancer|Borrmann 분류]]\n* [[11강#TCGA 분자분류|TCGA 분자분류]]\n\n== 관련 J ==\n{{28}} {{272}} {{419}}\n\n== 검토 상태 ==\n오답률 30 40-41page 수록.",
+      "explanation": "정답:\n1. Lauren classification: intestinal type과 diffuse type\n2. Borrmann classification: I형 fungating, II형 ulcerative, III형 ulceroinfiltrative, IV형 diffuse infiltrative\n3. TCGA classification: CIN, GS, EBV, MSI\n\n== 배경 지식 ==\n이 문항은 위샘암종을 서로 다른 세 축으로 분류하게 한다. '''Lauren classification'''은 주로 조직학적 성장 양상과 역학적 특징을, '''Borrmann classification'''은 진행위암의 육안 형태를, '''TCGA classification'''은 분자·유전체 특징을 기준으로 한다. 세 분류는 서로 대체하는 체계가 아니므로 각각의 유형과 대표 특징을 독립적으로 기술해야 한다.\n\n== 모범답안 ==\n=== 1. Lauren classification (1점) ===\n* '''Intestinal type''': intestinal metaplasia를 보이는 위점막에서 발생한다. 남녀 비는 2:1 이상으로 남성에 많고 평균 발생 연령은 약 55세이다. 육안적으로 주로 fungating 또는 expansile growth를 보인다. 현미경적으로 gland formation이 뚜렷하며, 배경 위점막에 severe atrophic gastritis와 intestinal metaplasia가 동반된다.\n* '''Diffuse type''': intestinal metaplasia가 없는 위점막에서도 발생한다. 남녀 비는 약 1:1이고 평균 발생 연령은 약 48세이다. 육안적으로 Borrmann IV형에 해당하는 infiltrative growth를 보일 수 있다. 현미경적으로 poor differentiation과 signet ring cell이 특징적이며 종양세포가 응집된 샘보다 개별 세포 형태로 미만성 침윤한다.\n\n=== 2. Borrmann classification (1점) ===\n* '''Type I — Fungating''': 내강으로 돌출하는 융기성·버섯모양 종괴이다.\n* '''Type II — Ulcerative''': 비교적 경계가 뚜렷한 궤양형 병변이다.\n* '''Type III — Ulceroinfiltrative''': 궤양과 주변 위벽 침윤이 함께 나타나며 네 유형 중 가장 흔하다.\n* '''Type IV — Diffuse infiltrative''': 뚜렷한 종괴보다 위벽을 광범위하게 침윤하고 두껍고 경직되게 만드는 형태로, '''linitis plastica'''를 형성한다.\n\n=== 3. TCGA classification (1점) ===\n* '''CIN · Chromosomal instability''': intestinal histology가 흔하고 '''TP53 mutation'''과 '''RTK–RAS activation'''이 특징이다.\n* '''GS · Genomically stable''': diffuse histology가 흔하며 '''CDH1 mutation''', '''RHOA mutation''', '''CLDN18–ARHGAP fusion''' 및 cell adhesion pathway 이상이 특징이다.\n* '''EBV · Epstein–Barr virus-positive''': '''PIK3CA mutation''', '''PD-L1/PD-L2 overexpression''', '''EBV-CIMP''', '''CDKN2A silencing''' 및 immune cell signalling이 특징이다.\n* '''MSI · Microsatellite instability''': '''hypermutation''', '''gastric-CIMP''', '''MLH1 silencing''' 및 mitotic pathway 이상이 특징이다.\n\n== 채점 핵심 ==\n각 분류에 1점이 배정되어 있다. Lauren에서는 두 유형의 조직학·역학·육안 차이, Borrmann에서는 I–IV형의 육안 형태, TCGA에서는 네 분자 아형과 대표 분자 이상을 빠뜨리지 않는 것이 핵심이다. 원문은 중요한 특징의 누락이나 잘못된 기술에 부분 감점이 있음을 명시한다.\n\n== 출제 의도 ==\n위암을 단순히 하나의 이름으로 기억하는 것이 아니라, '''조직학적 분류(Lauren)''', '''진행위암의 육안 분류(Borrmann)''', '''분자유전학적 분류(TCGA)'''를 구분하고 각 분류가 제공하는 정보를 연결하여 서술할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[11강#위암의 분류 축|위암의 분류 축]]\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#진행위암 · Advanced gastric cancer|Borrmann 분류]]\n* [[11강#TCGA 분자분류|TCGA 분자분류]]\n\n== 관련 J ==\n{{28}} {{419}}\n\n== 검토 상태 ==\n오답률 30 40-41page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -11249,37 +11249,6 @@ window.JBL_DATA = {
       ]
     },
     {
-      "id": "2022-10",
-      "displayId": "272번",
-      "year": 2022,
-      "sourceType": "족보",
-      "originalNumber": 10,
-      "question": "Lauren, Borrmann, TCGA 분류를 설명하고 각각의 특징을 쓰시오.",
-      "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답:\n1. Lauren classification은 위샘암종을 조직학적 성장 양상에 따라 intestinal type과 diffuse type으로 나눈다. Intestinal type은 장상피화생·위축성 위염을 배경으로 샘을 형성하며 주로 고령 남성에서 expansile growth를 보인다. Diffuse type은 결합력이 약한 signet ring cell이 개별적으로 침윤하고 CDH1 이상과 관련되며 linitis plastica를 형성할 수 있다.\n2. Borrmann classification은 진행위암을 육안 형태에 따라 I형 fungating, II형 ulcerative, III형 ulceroinfiltrative, IV형 diffuse infiltrative로 나눈다. III형이 가장 흔하고 IV형은 linitis plastica를 형성한다.\n3. TCGA classification은 위암을 분자유전학적으로 EBV-positive, MSI, GS, CIN의 네 군으로 나눈다. EBV형은 PIK3CA mutation·EBV-CIMP·PD-L1/2 증가, MSI형은 MLH1 silencing과 hypermutation, GS형은 diffuse histology·CDH1/RHOA mutation·CLDN18–ARHGAP fusion, CIN형은 intestinal histology·TP53 mutation·RTK–RAS activation이 특징이다.",
-      "explanation": "정답: Lauren classification은 조직학적 성장 양상, Borrmann classification은 진행위암의 육안 형태, TCGA classification은 분자유전학적 특징을 기준으로 위암을 분류한다.\n\n== 배경 지식 ==\n세 분류는 같은 위암을 서로 다른 관점에서 기술한다. '''Lauren'''은 종양세포의 결합성과 샘 형성 여부를 중심으로 한 조직학적 분류이고, '''Borrmann'''은 진행위암이 위벽에서 보이는 육안 형태를 나타낸다. '''TCGA'''는 유전자 변이, 후성유전학적 변화와 염색체 이상을 기준으로 한 분자분류이다. 따라서 한 종양은 Lauren type, Borrmann type, TCGA subtype을 각각 동시에 가질 수 있다. [[11강#위암의 분류 축|위암의 분류 축]]을 참고한다.\n\n== 모범답안 ==\n=== 1. Lauren classification ===\nLauren classification은 위샘암종을 주된 조직학적 성장 양상에 따라 '''intestinal type'''과 '''diffuse type'''으로 나눈다.\n\n* '''Intestinal type''': 종양세포가 서로 결합하여 관상 또는 샘 구조를 형성한다. 만성 위축성 위염과 intestinal metaplasia가 있는 위점막에서 발생하는 경우가 많고 H. pylori 및 환경요인과 연관된다. 남성에서 더 흔하고 평균 발생 연령이 비교적 높다. 육안적으로 fungating·expansile growth를 보이는 경우가 많다.\n* '''Diffuse type''': 종양세포의 결합력이 떨어져 개별 세포 또는 작은 세포군으로 위벽에 미만성 침윤한다. Poorly cohesive cell과 '''signet ring cell'''이 특징적이며, intestinal metaplasia가 없는 위점막에서도 발생한다. '''CDH1''' 이상에 의한 E-cadherin 기능 저하와 관련될 수 있다. 비교적 젊은 연령에서도 발생하고 성별 차이가 적으며, 심한 경우 위벽 전체가 두껍고 단단해지는 '''linitis plastica'''를 형성한다.\n\nLauren 분류의 핵심은 '''샘을 형성하며 응집성으로 자라는 intestinal type'''과 '''결합력이 약한 세포가 미만성 침윤하는 diffuse type'''의 대비이다. [[11강#Lauren 분류|Lauren 분류]]를 참고한다.\n\n=== 2. Borrmann classification ===\nBorrmann classification은 '''진행위암'''을 육안적 성장 형태에 따라 네 유형으로 나눈다.\n\n* '''Type I · Fungating 또는 polypoid type''': 경계가 비교적 뚜렷한 융기성 종괴가 위 내강으로 돌출한다.\n* '''Type II · Ulcerative type''': 중심부에 궤양이 있고 궤양 가장자리가 융기하지만, 종양과 주변 점막의 경계가 비교적 명확하다.\n* '''Type III · Ulceroinfiltrative type''': 궤양을 형성하면서 종양이 주변 위벽으로 침윤하므로 경계가 불명확하다. 네 유형 중 가장 흔하다.\n* '''Type IV · Diffuse infiltrative type''': 뚜렷한 종괴나 궤양보다 종양세포가 위벽을 광범위하게 침윤한다. 위벽이 두꺼워지고 유연성을 잃어 가죽물병 모양의 '''linitis plastica'''가 될 수 있다.\n\nType II와 III는 모두 궤양을 형성하지만, '''II형은 경계가 비교적 명확하고 III형은 주변 침윤 때문에 경계가 불명확하다'''는 점이 핵심 감별점이다. [[11강#진행위암 · Advanced gastric cancer|진행위암]]과 [[11강#Borrmann II형과 III형의 육안 감별|Borrmann II형과 III형의 감별]]을 참고한다.\n\n=== 3. TCGA classification ===\nTCGA classification은 위샘암종을 분자유전학적 특징에 따라 '''EBV-positive, MSI, GS, CIN'''의 네 아형으로 나눈다.\n\n* '''EBV-positive type''': Epstein–Barr virus 감염과 관련되며 '''PIK3CA mutation''', 광범위한 DNA hypermethylation인 '''EBV-CIMP''', '''CDKN2A silencing''' 및 '''PD-L1/PD-L2 overexpression'''이 특징이다. 면역세포 신호와 면역관문 관련 변화가 두드러진다.\n* '''MSI · Microsatellite instability type''': mismatch repair 결함, 특히 '''MLH1 silencing'''과 관련된다. 반복서열 불안정성과 매우 많은 체세포 변이가 축적되는 '''hypermutation''' 및 gastric-CIMP가 특징이다.\n* '''GS · Genomically stable type''': 염색체 수와 구조가 상대적으로 안정적이며 Lauren diffuse histology가 풍부하다. 세포접착과 세포운동에 관여하는 '''CDH1 mutation''', '''RHOA mutation''', '''CLDN18–ARHGAP fusion'''이 대표적이다.\n* '''CIN · Chromosomal instability type''': 현저한 aneuploidy와 염색체 불안정성을 보이며 Lauren intestinal histology가 흔하다. '''TP53 mutation'''과 receptor tyrosine kinase–RAS pathway의 활성화 또는 증폭이 특징이다.\n\nTCGA 분류의 핵심 연결은 '''EBV–PIK3CA/PD-L1·2''', '''MSI–MLH1/hypermutation''', '''GS–diffuse/CDH1·RHOA''', '''CIN–intestinal/TP53/RTK–RAS'''이다. [[11강#TCGA 분자분류|TCGA 분자분류]]를 참고한다.\n\n== 채점 핵심 ==\n* Lauren은 intestinal type과 diffuse type의 '''샘 형성·세포 결합성·배경 점막·침윤 양상'''을 대조해야 한다.\n* Borrmann은 I–IV형을 모두 쓰고, 특히 II형과 III형의 경계 차이 및 IV형의 linitis plastica를 설명해야 한다.\n* TCGA는 네 아형을 모두 제시하고 각 아형의 대표 분자 이상을 최소 한 가지 이상 연결해야 한다.\n\n== 출제 의도 ==\n위암을 하나의 분류체계로만 암기하지 않고, '''조직학적 형태(Lauren)''', '''진행위암의 육안 형태(Borrmann)''', '''분자유전학적 아형(TCGA)'''이라는 서로 다른 분류 축을 구별하면서 각 유형의 대표 특징을 체계적으로 서술할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n* [[11강#위암의 분류 축|위암의 분류 축]]\n* [[11강#Lauren 분류|Lauren 분류]]\n* [[11강#진행위암 · Advanced gastric cancer|Borrmann 분류]]\n* [[11강#Borrmann II형과 III형의 육안 감별|Borrmann II형과 III형의 감별]]\n* [[11강#TCGA 분자분류|TCGA 분자분류]]\n\n== 관련 J ==\n{{28}} {{270}} {{419}}\n\n== 검토 상태 ==\n오답30 미수록.",
-      "images": [],
-      "legacyProfessor": "김준미",
-      "lectureIds": [
-        11
-      ],
-      "lectureId": 11,
-      "lectureTitle": "위질환",
-      "professor": "김준미",
-      "domain": "기초의학",
-      "discipline": "병리학",
-      "section": "상부위장관 병리",
-      "source": "2022 소화기계 풀이 16-18page",
-      "mappingConfidence": "출제자·병리 주제",
-      "officialPriorityApplied": false,
-      "sourceOrdinal": 10,
-      "legacyDisplayId": "2022 10번",
-      "globalNumber": 272
-    },
-    {
       "id": "2022-11",
       "displayId": "273번",
       "year": 2022,
@@ -11291,7 +11260,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Hyperplastic polyp, sessile serrated lesion, traditional serrated adenoma",
-      "explanation": "정답: Hyperplastic polyp, sessile serrated lesion, traditional serrated adenoma\n\n== 배경 지식 ==\nSerrated lesion은 crypt 내강이 톱니모양으로 접히는 병변군이다. 진단은 serration의 위치, crypt base의 모양, 성장방향, 세포질과 핵의 형태 및 conventional dysplasia의 유무를 함께 본다.\n\n== 정답 해설 ==\n* '''Hyperplastic polyp''': 매끈하고 촉촉한 작은 sessile lesion이다. 성숙한 비종양성 상피가 잘 형성된 crypt를 덮고 serration은 주로 crypt 상부에 국한된다.\n* '''Sessile serrated lesion(SSL)''': crypt base까지 dilatation·serration·branching이 내려가며, 바닥이 수평으로 자라 L 또는 T 모양을 만든다. 초기에는 conventional cytologic dysplasia가 없을 수 있다.\n* '''Traditional serrated adenoma(TSA)''': 융모상·톱니모양 구조, 풍부한 호산성 세포질과 길쭉한 pencillate nucleus, ectopic crypt formation 및 뚜렷한 dysplasia가 특징이다.\n\n== 출제 의도 ==\n세 serrated lesion을 단순히 이름만 나열하지 않고 crypt 상부·기저부 변화와 세포학적 이형성으로 감별하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Serrated lesion의 유형과 형태|Serrated lesion의 유형과 형태]]\n* [[12강#Hyperplastic polyp|Hyperplastic polyp]]\n* [[12강#Serrated pathway|Serrated pathway]]\n\n== 관련 J ==\n{{32}} {{421}}\n\n== 검토 상태 ==\n오답률 30 9page 수록.",
+      "explanation": "정답: Hyperplastic polyp, sessile serrated lesion, traditional serrated adenoma\n\n== 모범답안 ==\n세 병변은 공통적으로 '''gland의 luminal serration'''을 보인다.\n* '''Hyperplastic polyp''': 작고 매끈한 sessile lesion이며, 잘 형성된 gland와 crypt를 비종양성 상피가 덮는다. Serration은 주로 crypt 상부에 나타난다.\n* '''Sessile serrated lesion''': crypt base까지 dilatation·serration·branching이 내려가고, 기저부가 수평으로 자라 '''L- 또는 T-shaped crypt'''를 만든다. 전형적인 초기 병변에서는 conventional cytologic dysplasia가 없다.\n* '''Traditional serrated adenoma''': 호산성 세포질을 가진 층화된 원주세포와 serrated architecture가 보이며, '''cytologic dysplasia'''가 동반된다.\n\n== 배경 지식 ==\nSerrated lesion은 crypt 내강이 톱니모양으로 접히는 병변군이다. 진단은 serration의 위치, crypt base의 모양, 성장방향, 세포질과 핵의 형태 및 conventional dysplasia의 유무를 함께 본다.\n\n== 정답 해설 ==\n* '''Hyperplastic polyp''': 매끈하고 촉촉한 작은 sessile lesion이다. 성숙한 비종양성 상피가 잘 형성된 crypt를 덮고 serration은 주로 crypt 상부에 국한된다.\n* '''Sessile serrated lesion(SSL)''': crypt base까지 dilatation·serration·branching이 내려가며, 바닥이 수평으로 자라 L 또는 T 모양을 만든다. 초기에는 conventional cytologic dysplasia가 없을 수 있다.\n* '''Traditional serrated adenoma(TSA)''': 융모상·톱니모양 구조, 풍부한 호산성 세포질과 길쭉한 pencillate nucleus, ectopic crypt formation 및 뚜렷한 dysplasia가 특징이다.\n\n== 출제 의도 ==\n세 serrated lesion을 단순히 이름만 나열하지 않고 crypt 상부·기저부 변화와 세포학적 이형성으로 감별하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Serrated lesion의 유형과 형태|Serrated lesion의 유형과 형태]]\n* [[12강#Hyperplastic polyp|Hyperplastic polyp]]\n* [[12강#Serrated pathway|Serrated pathway]]\n\n== 관련 J ==\n{{32}} {{421}}\n\n== 검토 상태 ==\n오답률 30 9page 수록.\n\n== 오답30 원문 모범답안 ==\n> 정답 : 공통적으로 gland의 luminal serration을 나타내는 병변이다. 1. Hyperplastic polyp : - Smooth, moist, round to finger like tan sessile lesion - Well-formed glands and crypts lined by non-neoplastic epithelium 2. Sessile serrated lesion : - Dilatation, serration, branching down to crypt base - Horizontal. L- or T- shaped crypt base - Lack conventional cytologic dysplasia 3. Traditional serrated adenoma : - Eosinophilic stratified columnar cell - presence of cytologic dysplasia\n\n2022 소화기계 오답30 p.9",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -17143,7 +17112,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 양성 소화성 궤양은 둥글고 주름이 궤양까지 이어지며, 위암성 궤양은 불규칙하고 융기된 경계와 끊긴 주름을 보인다.",
-      "explanation": "정답: 양성 소화성 궤양과 궤양형 위암의 육안 감별\n\n== 배경 지식 ==\n양성 소화성 궤양은 대개 둥글거나 타원형이고 경계가 예리하며, 점막 주름이 궤양 가장자리까지 매끈하게 방사상으로 이어진다. 바닥은 비교적 깨끗하고 주변 점막의 불규칙한 융기가 적다. 궤양형 위암은 경계가 불규칙하고 융기되어 있으며 점막 주름이 병변에 도달하기 전에 끊기거나 뭉툭해진다.\n\n== 정답 해설 ==\n규칙적인 punched-out 병변과 중심으로 모이는 매끈한 주름은 양성 궤양을, 불규칙한 융기 가장자리·주름 절단·주변 벽 침윤은 위암을 지지한다. 의심 병변은 여러 지점에서 생검하여 확진한다.\n\n== 출제 의도 ==\n위의 궤양성 병변에서 양성 소화성 궤양과 궤양형 샘암종을 육안으로 구분하는 기준을 묻는다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{271}} {{738}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 양성 소화성 궤양과 궤양형 위암의 육안 감별\n\n== 모범답안 ==\n'''양성 소화성 궤양'''은 둥글거나 타원형의 경계가 명확한 punched-out defect로, 벽이 곧고 바닥이 매끈하고 깨끗하다. 점막주름은 crater까지 끊기지 않고 방사상으로 모인다. 가장자리가 약간 overhang할 수는 있지만 종괴처럼 불규칙하게 쌓이는 heaping은 없다.\n\n'''위암성 궤양'''은 모양과 경계가 불규칙하고, 가장자리에 융기된 종양조직이 남아 있으며 바닥이 괴사성으로 지저분하다. 점막주름은 궤양까지 매끈하게 이어지지 않고 중간에서 끊기거나 뭉툭해지며, 주변 위벽의 침윤과 비후가 동반될 수 있다.\n\n== 배경 지식 ==\n양성 소화성 궤양은 대개 둥글거나 타원형이고 경계가 예리하며, 점막 주름이 궤양 가장자리까지 매끈하게 방사상으로 이어진다. 바닥은 비교적 깨끗하고 주변 점막의 불규칙한 융기가 적다. 궤양형 위암은 경계가 불규칙하고 융기되어 있으며 점막 주름이 병변에 도달하기 전에 끊기거나 뭉툭해진다.\n\n== 정답 해설 ==\n규칙적인 punched-out 병변과 중심으로 모이는 매끈한 주름은 양성 궤양을, 불규칙한 융기 가장자리·주름 절단·주변 벽 침윤은 위암을 지지한다. 의심 병변은 여러 지점에서 생검하여 확진한다.\n\n== 출제 의도 ==\n위의 궤양성 병변에서 양성 소화성 궤양과 궤양형 샘암종을 육안으로 구분하는 기준을 묻는다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{271}} {{738}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -17178,7 +17147,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 가스트린종에 의한 고가스트린혈증과 위산 과다분비",
-      "explanation": "정답: Zollinger–Ellison 증후군\n\n== 배경 지식 ==\nGastrinoma가 분비하는 gastrin은 벽세포와 산분비샘을 증식시키고 위산 분비를 크게 증가시킨다. 그 결과 치료에 잘 반응하지 않는 다발성·재발성 궤양, 원위 십이지장 또는 공장의 궤양, 설사와 지방변이 나타날 수 있다. 일부는 MEN1과 연관된다.\n\n== 정답 해설 ==\n고가스트린혈증과 췌장·십이지장 신경내분비종양, 심한 산과다성 궤양이 함께 있으면 Zollinger–Ellison 증후군으로 진단한다. 위 점막에서는 벽세포 과형성과 두꺼워진 산분비샘이 보일 수 있다.\n\n== 출제 의도 ==\n재발성 소화성 궤양의 원인을 gastrinoma에 의한 병적 gastrin 과다로 연결하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Zollinger–Ellison 증후군|Zollinger–Ellison 증후군]]\n\n== 관련 J ==\n{{160}} {{774}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: Zollinger–Ellison 증후군\n\n== 모범답안 ==\n'''Zollinger–Ellison syndrome'''은 주로 '''췌장 또는 십이지장의 gastrinoma'''가 gastrin을 과다 분비하여 생기는 증후군이다. 고가스트린혈증은 위산 과다분비와 벽세포·산분비샘의 증식 및 비후를 일으킨다.\n\n그 결과 위·십이지장뿐 아니라 공장에도 '''다발성·재발성이고 치료에 잘 반응하지 않는 소화성 궤양'''이 발생할 수 있다. 위점막은 두꺼워지고 '''giant cerebriform rugal folds'''가 나타나며, 설사나 지방변을 동반할 수 있다. 일부는 '''MEN1'''과 연관된다.\n\n== 배경 지식 ==\nGastrinoma가 분비하는 gastrin은 벽세포와 산분비샘을 증식시키고 위산 분비를 크게 증가시킨다. 그 결과 치료에 잘 반응하지 않는 다발성·재발성 궤양, 원위 십이지장 또는 공장의 궤양, 설사와 지방변이 나타날 수 있다. 일부는 MEN1과 연관된다.\n\n== 정답 해설 ==\n고가스트린혈증과 췌장·십이지장 신경내분비종양, 심한 산과다성 궤양이 함께 있으면 Zollinger–Ellison 증후군으로 진단한다. 위 점막에서는 벽세포 과형성과 두꺼워진 산분비샘이 보일 수 있다.\n\n== 출제 의도 ==\n재발성 소화성 궤양의 원인을 gastrinoma에 의한 병적 gastrin 과다로 연결하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#Zollinger–Ellison 증후군|Zollinger–Ellison 증후군]]\n\n== 관련 J ==\n{{160}} {{774}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -17213,7 +17182,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Borrmann I 융기형 · II 경계 명확 궤양형 · III 침윤성 궤양형 · IV 미만 침윤형",
-      "explanation": "정답: 진행위암의 Borrmann 분류\n\n== 배경 지식 ==\nBorrmann 분류는 진행위암의 육안 형태를 네 가지로 나눈다. I형은 polypoid/fungating, II형은 경계가 뚜렷한 ulcerofungating, III형은 주위 벽으로 침윤하여 경계가 불명확한 ulceroinfiltrative, IV형은 뚜렷한 종괴 없이 위벽을 광범위하게 두껍게 만드는 diffuse infiltrative형(linitis plastica)이다.\n\n== 정답 해설 ==\n판정할 때에는 궤양의 존재만 보지 말고 종괴의 돌출, 궤양 가장자리의 경계, 주변 벽 침윤, 위 전체의 가죽병 모양 경화를 순서대로 확인한다.\n\n== 출제 의도 ==\n진행위암을 육안 성장 방식에 따라 Borrmann I–IV형으로 정확히 분류하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{417}} {{738}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 진행위암의 Borrmann 분류\n\n== 모범답안 ==\nBorrmann 분류는 '''진행위암의 육안 형태'''를 다음 네 가지로 구분한다.\n* '''I형 — Polypoid/Fungating''': 내강으로 돌출하는 경계가 비교적 뚜렷한 융기성 종괴이다.\n* '''II형 — Ulcerofungating''': 융기된 종괴에 궤양이 있고, 종양과 주변 위벽의 경계가 비교적 명확하다.\n* '''III형 — Ulceroinfiltrative''': 궤양 주변으로 종양이 위벽을 침윤하여 경계가 불명확한 형태이며 가장 흔하다.\n* '''IV형 — Diffuse infiltrative''': 뚜렷한 국소 종괴보다 위벽의 미만성 침윤·비후·경직이 두드러지며 '''linitis plastica'''를 형성한다.\n\n== 배경 지식 ==\nBorrmann 분류는 진행위암의 육안 형태를 네 가지로 나눈다. I형은 polypoid/fungating, II형은 경계가 뚜렷한 ulcerofungating, III형은 주위 벽으로 침윤하여 경계가 불명확한 ulceroinfiltrative, IV형은 뚜렷한 종괴 없이 위벽을 광범위하게 두껍게 만드는 diffuse infiltrative형(linitis plastica)이다.\n\n== 정답 해설 ==\n판정할 때에는 궤양의 존재만 보지 말고 종괴의 돌출, 궤양 가장자리의 경계, 주변 벽 침윤, 위 전체의 가죽병 모양 경화를 순서대로 확인한다.\n\n== 출제 의도 ==\n진행위암을 육안 성장 방식에 따라 Borrmann I–IV형으로 정확히 분류하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{417}} {{738}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -17283,7 +17252,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: adenoma-carcinoma sequence, mismatch repair pathway, serrated pathway",
-      "explanation": "정답: adenoma-carcinoma sequence, mismatch repair pathway, serrated pathway\n\n== 배경 지식 ==\n대장암은 하나의 경로가 아니라 형태학적 전구병변과 분자이상이 연결된 여러 경로로 발생한다. 강의에서는 conventional adenoma를 거치는 chromosomal instability 경로, mismatch repair deficiency에 의한 MSI 경로, serrated precursor를 거치는 BRAF–CIMP 경로를 구분한다.\n\n== 정답 해설 ==\n* '''Adenoma–carcinoma sequence''': APC 불활성화로 시작해 KRAS 활성화, 18q의 SMAD2/SMAD4 소실과 TP53 이상 등이 축적된다.\n* '''Mismatch repair pathway''': MLH1·MSH2·MSH6·PMS2 등의 기능소실로 반복서열 복제오류가 쌓여 MSI-high 종양이 된다. Germline 결함이면 Lynch syndrome을 고려한다.\n* '''Serrated pathway''': BRAF 변이와 CpG island methylator phenotype(CIMP)이 핵심이며, MLH1 promoter methylation이 추가되면 dMMR/MSI-high carcinoma로 진행할 수 있다.\n\n== 출제 의도 ==\n대장암의 세 대표 발생경로를 전구병변, 초기 유전자 변화와 최종 분자표현형까지 연결해 설명하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Adenoma–carcinoma sequence|Adenoma–carcinoma sequence]]\n* [[12강#Serrated pathway|Serrated pathway]]\n* [[12강#Microsatellite instability · MSI|Microsatellite instability]]\n\n== 관련 J ==\n{{273}} {{742}}\n\n== 검토 상태 ==\n오답률 30 24page 수록.",
+      "explanation": "정답: adenoma-carcinoma sequence, mismatch repair pathway, serrated pathway\n\n== 모범답안 ==\n* '''Adenoma–carcinoma sequence(classic pathway)''': chromosomal instability를 통해 conventional adenoma가 carcinoma로 진행한다. '''APC, KRAS, PIK3CA, SMAD4, TP53''' 등의 유전자 변화가 축적되며, 공식 답안의 분자표현형은 '''CIN+, CIMP−'''이다.\n* '''Mismatch repair pathway''': '''MLH1·MSH2 등 MMR gene의 germline mutation'''으로 DNA 복제오류의 교정이 되지 않아 microsatellite instability가 발생한다. 공식 답안에서는 유전성 경로를 기준으로 '''MSI-H, CIMP−'''를 제시한다.\n* '''Serrated pathway''': serrated precursor에서 '''BRAF V600E mutation'''과 CpG island hypermethylation이 관여한다. '''CIMP+, MSS 또는 MSI-H'''이며, MLH1 promoter methylation으로 MMR 기능이 소실되면 MSI-H로 진행할 수 있다.\n\n== 배경 지식 ==\n대장암은 하나의 경로가 아니라 형태학적 전구병변과 분자이상이 연결된 여러 경로로 발생한다. 강의에서는 conventional adenoma를 거치는 chromosomal instability 경로, mismatch repair deficiency에 의한 MSI 경로, serrated precursor를 거치는 BRAF–CIMP 경로를 구분한다.\n\n== 정답 해설 ==\n* '''Adenoma–carcinoma sequence''': APC 불활성화로 시작해 KRAS 활성화, 18q의 SMAD2/SMAD4 소실과 TP53 이상 등이 축적된다.\n* '''Mismatch repair pathway''': MLH1·MSH2·MSH6·PMS2 등의 기능소실로 반복서열 복제오류가 쌓여 MSI-high 종양이 된다. Germline 결함이면 Lynch syndrome을 고려한다.\n* '''Serrated pathway''': BRAF 변이와 CpG island methylator phenotype(CIMP)이 핵심이며, MLH1 promoter methylation이 추가되면 dMMR/MSI-high carcinoma로 진행할 수 있다.\n\n== 출제 의도 ==\n대장암의 세 대표 발생경로를 전구병변, 초기 유전자 변화와 최종 분자표현형까지 연결해 설명하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Adenoma–carcinoma sequence|Adenoma–carcinoma sequence]]\n* [[12강#Serrated pathway|Serrated pathway]]\n* [[12강#Microsatellite instability · MSI|Microsatellite instability]]\n\n== 관련 J ==\n{{273}} {{742}}\n\n== 검토 상태 ==\n오답률 30 24page 수록.\n\n== 오답30 원문 모범답안 ==\n> 1. Adenoma-carcinoma sequence (classic pathway) : - via chromosomal instability pathway - Mutation in APC, KRAS, PI3KCA, SMAD4, and TP53 - CIN+, CIMP- 2. Mismatch repair pathway - Germline mutations in MMR genes-MLH1/MSH2 - MSI-H, CIMP- 3. Serrated pathway - via hypermethylation pathway - BRAF V600E mutation - Epigenetic CpG island methylation phenotype - CIMP+, MSS/MSI-H\n\n2021 소화기계 오답30 p.24",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -17453,7 +17422,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: cytomegalovirus gastritis",
-      "explanation": "정답: cytomegalovirus gastritis\n\n== 배경 지식 ==\n장기이식 후 면역억제는 CMV의 위장관 감염 위험을 높인다. [[13강#CMV gastritis|CMV gastritis]]에서는 위점막의 염증·위샘 감소를 저배율로 본 다음, 고배율에서 cytomegaly와 큰 핵내봉입체 및 주변 halo를 찾는다. 염증이나 위축만으로 CMV라고 진단하지 않는다.\n\n== 정답 해설 ==\n이식 환자의 위 병변과 특징적인 감염세포 소견을 종합하면 '''cytomegalovirus gastritis'''이다. 핵내봉입체와 주변 halo가 이루는 owl-eye 형태가 중요한 단서다. 13강의 [[13강#CMV 감염 의심 세포|감염 의심 세포]] 설명처럼 큰 핵 하나만으로 확정하지 않고 필요하면 CMV 면역염색을 함께 평가한다.\n\n== 출제 의도 ==\n면역저하라는 임상 배경 → 위 병변의 염증 → 바이러스 감염세포의 핵 변화 순서로 판독한다. HSV의 다핵화·nuclear molding 및 Candida의 yeast·pseudohyphae와 구별한다.\n\n== Wiki 연결 ==\n* [[13강#CMV gastritis|CMV gastritis]]\n* [[13강#CMV 감염 의심 세포|CMV 감염세포 판독]]\n* [[10강#거대세포바이러스 식도염|다른 위장관 부위의 CMV]]\n\n== 검토 상태 ==\n오답률 30 61page 수록.",
+      "explanation": "정답: cytomegalovirus gastritis\n\n== 모범답안 ==\n'''Cytomegalovirus gastritis(CMV 위염)'''이다. 간이식 후 면역억제라는 배경에서 위점막 궤양이 발생했고, 생검에서 CMV 감염에 특징적인 큰 핵내봉입체와 주변 halo가 관찰된다.\n\n== 배경 지식 ==\n장기이식 후 면역억제는 CMV의 위장관 감염 위험을 높인다. [[13강#CMV gastritis|CMV gastritis]]에서는 위점막의 염증·위샘 감소를 저배율로 본 다음, 고배율에서 cytomegaly와 큰 핵내봉입체 및 주변 halo를 찾는다. 염증이나 위축만으로 CMV라고 진단하지 않는다.\n\n== 정답 해설 ==\n이식 환자의 위 병변과 특징적인 감염세포 소견을 종합하면 '''cytomegalovirus gastritis'''이다. 핵내봉입체와 주변 halo가 이루는 owl-eye 형태가 중요한 단서다. 13강의 [[13강#CMV 감염 의심 세포|감염 의심 세포]] 설명처럼 큰 핵 하나만으로 확정하지 않고 필요하면 CMV 면역염색을 함께 평가한다.\n\n== 출제 의도 ==\n면역저하라는 임상 배경 → 위 병변의 염증 → 바이러스 감염세포의 핵 변화 순서로 판독한다. HSV의 다핵화·nuclear molding 및 Candida의 yeast·pseudohyphae와 구별한다.\n\n== Wiki 연결 ==\n* [[13강#CMV gastritis|CMV gastritis]]\n* [[13강#CMV 감염 의심 세포|CMV 감염세포 판독]]\n* [[10강#거대세포바이러스 식도염|다른 위장관 부위의 CMV]]\n\n== 검토 상태 ==\n오답률 30 61page 수록.\n\n== 오답30 원문해설 ==\n> 위점막의 궤양이 관찰되고 조직 검사에서 cytomegalovirus inclusion이 관찰됨\n\n2021 소화기계 오답30 p.61",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_061_01.png",
         "2021_소화기_문항별_사진/2021_wrong30_061_02.png",
@@ -17492,7 +17461,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 유사분열 수와 Ki-67 증식지수",
-      "explanation": "정답: 유사분열 수와 Ki-67 증식지수\n\n== 배경 지식 ==\n[[11강#WHO 분류와 등급|NET의 grade]]는 종양세포의 증식활동을 수치화한다. 형태상 신경내분비 분화의 확인과 G1·G2·G3의 등급 판정은 서로 다른 단계다.\n\n== 정답 해설 ==\n'''유사분열 수(mitotic count)와 Ki-67 proliferation index'''이다. 전자는 분열 중인 세포를 세고, 후자는 증식기에 있는 종양세포의 비율을 평가한다. 강의 표는 G1을 <2/10 HPF 및 Ki-67 ≤2%, G2를 2–20/10 HPF 또는 3–20%, G3를 >20/10 HPF 또는 >20%로 제시한다.[* 현재 분류 자료에서는 유사분열 수를 2 mm²당 표기하고 Ki-67의 G1/G2 경계를 <3%/≥3%로 표시하기도 한다. 현미경 시야 면적을 모른 채 10 HPF와 2 mm²를 자동 환산하지 않는다. 본 문항은 절단값 암기보다 두 증식지표를 쓰는 것이 핵심이다.]\n\n== 출제 의도 ==\nNET의 진단표지(chromogranin·synaptophysin)와 등급지표(mitotic count·Ki-67)를 구별하여 서술한다.\n\n== Wiki 연결 ==\n* [[11강#WHO 분류와 등급|강의의 NET 등급 표]]\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 유사분열 수와 Ki-67 증식지수\n\n== 모범답안 ==\n'''유사분열 수(mitotic count)'''와 '''Ki-67 proliferation index'''이다. 전자는 분열 중인 종양세포의 수, 후자는 증식 중인 종양세포의 비율을 나타낸다.\n\n== 배경 지식 ==\n[[11강#WHO 분류와 등급|NET의 grade]]는 종양세포의 증식활동을 수치화한다. 형태상 신경내분비 분화의 확인과 G1·G2·G3의 등급 판정은 서로 다른 단계다.\n\n== 정답 해설 ==\n'''유사분열 수(mitotic count)와 Ki-67 proliferation index'''이다. 전자는 분열 중인 세포를 세고, 후자는 증식기에 있는 종양세포의 비율을 평가한다. 강의 표는 G1을 <2/10 HPF 및 Ki-67 ≤2%, G2를 2–20/10 HPF 또는 3–20%, G3를 >20/10 HPF 또는 >20%로 제시한다.[* 현재 분류 자료에서는 유사분열 수를 2 mm²당 표기하고 Ki-67의 G1/G2 경계를 <3%/≥3%로 표시하기도 한다. 현미경 시야 면적을 모른 채 10 HPF와 2 mm²를 자동 환산하지 않는다. 본 문항은 절단값 암기보다 두 증식지표를 쓰는 것이 핵심이다.]\n\n== 출제 의도 ==\nNET의 진단표지(chromogranin·synaptophysin)와 등급지표(mitotic count·Ki-67)를 구별하여 서술한다.\n\n== Wiki 연결 ==\n* [[11강#WHO 분류와 등급|강의의 NET 등급 표]]\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -25439,7 +25408,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 진단명 (Peutz-Jegher syndrome), 다른 신체적 특징: 구강점막의 갈색 반점",
-      "explanation": "정답: 진단명 (Peutz-Jegher syndrome), 다른 신체적 특징: 구강점막의 갈색 반점\n\n== 배경 지식 ==\nPeutz–Jeghers polyp은 점막근육층의 smooth muscle이 나뭇가지처럼 뻗는 arborizing core를 만들고, 그 사이를 비교적 정상적인 상피가 덮는 hamartomatous polyp이다. Peutz–Jeghers syndrome은 STK11 관련 유전질환으로 위장관 다발성 폴립과 입술·구강점막·손가락의 점상 멜라닌 색소침착이 특징이다.\n\n== 정답 해설 ==\n조직의 arborizing smooth muscle core는 '''Peutz–Jeghers polyp'''에 합당하다. 다발성 폴립이면 Peutz–Jeghers syndrome을 고려하며, 함께 관찰되는 신체소견은 '''입술과 구강점막의 갈색 색소반점'''이다.\n\n== 출제 의도 ==\nHamartomatous polyp의 조직구조를 유전증후군의 점막피부 색소침착과 연결하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Hamartomatous polyp|Hamartomatous polyp]]\n* [[12강#대장 폴립|대장 폴립]]\n\n== 관련 J ==\n{{32}}\n\n== 검토 상태 ==\n오답률 30 9page 수록.",
+      "explanation": "정답: 진단명 (Peutz-Jegher syndrome), 다른 신체적 특징: 구강점막의 갈색 반점\n\n== 모범답안 ==\n진단은 '''Peutz–Jeghers syndrome'''이며, 동반되는 신체적 특징은 '''구강점막과 입술의 갈색 색소반점'''이다. 용종의 조직에서는 가지처럼 뻗는 평활근 다발을 중심으로 이형성이 없는 샘상피가 배열되는 hamartomatous polyp이 관찰된다.\n\n== 배경 지식 ==\nPeutz–Jeghers polyp은 점막근육층의 smooth muscle이 나뭇가지처럼 뻗는 arborizing core를 만들고, 그 사이를 비교적 정상적인 상피가 덮는 hamartomatous polyp이다. Peutz–Jeghers syndrome은 STK11 관련 유전질환으로 위장관 다발성 폴립과 입술·구강점막·손가락의 점상 멜라닌 색소침착이 특징이다.\n\n== 정답 해설 ==\n조직의 arborizing smooth muscle core는 '''Peutz–Jeghers polyp'''에 합당하다. 다발성 폴립이면 Peutz–Jeghers syndrome을 고려하며, 함께 관찰되는 신체소견은 '''입술과 구강점막의 갈색 색소반점'''이다.\n\n== 출제 의도 ==\nHamartomatous polyp의 조직구조를 유전증후군의 점막피부 색소침착과 연결하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Hamartomatous polyp|Hamartomatous polyp]]\n* [[12강#대장 폴립|대장 폴립]]\n\n== 관련 J ==\n{{32}}\n\n== 검토 상태 ==\n오답률 30 9page 수록.\n\n== 오답30 원문해설 ==\n> 평활근이 가지처럼 뻗어 있는 주변에 이형성이 없는 선구조가 관찰되므로 Peutz-Jegher polyp에 합당함. 이러한 용종이 다수 있으므로 Peutz-Jegher polyposis이며 구강 점막의 반점을 동반하는 Peutz-Jegher syndrome임\n\n2021 소화기계 오답30 p.9",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_009_01.png"
       ],
@@ -25947,7 +25916,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: c-kit mutation, 크기, 유사분열 수",
-      "explanation": "정답: c-kit mutation, 크기, 유사분열 수\n\n== 배경 지식 ==\nGIST는 Cajal 사이질세포 계통의 종양으로 KIT 또는 PDGFRA의 활성화 변화가 흔하다. 방추세포 다발 또는 상피모양세포로 구성되고 c-KIT와 DOG1 양성이 진단을 지지한다. 위험도는 종양 크기, 유사분열 수, 발생부위와 파열 여부를 종합한다.\n\n== 정답 해설 ==\n분자유전학적 특징은 '''KIT(c-KIT) activating mutation'''이고, 강의표에서 예후를 결정하는 핵심 두 항목은 '''종양 크기'''와 '''유사분열 수'''이다.\n\n== 출제 의도 ==\nGIST의 발생기전인 KIT 변화와 생물학적 위험도 평가변수를 구분해 서술하게 한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|GIST 생물학적 위험도]]\n\n== 관련 J ==\n{{33}} {{236}}\n\n== 검토 상태 ==\n오답률 30 55page 수록.",
+      "explanation": "정답: c-kit mutation, 크기, 유사분열 수\n\n== 모범답안 ==\n* '''분자유전학적 특징''': GIST의 주요 병인인 '''KIT(c-KIT) activating mutation'''이다.\n* '''가장 중요한 예후인자 두 가지''': '''종양의 크기'''와 '''유사분열 수(mitotic count)'''이다.\n\n== 배경 지식 ==\nGIST는 Cajal 사이질세포 계통의 종양으로 KIT 또는 PDGFRA의 활성화 변화가 흔하다. 방추세포 다발 또는 상피모양세포로 구성되고 c-KIT와 DOG1 양성이 진단을 지지한다. 위험도는 종양 크기, 유사분열 수, 발생부위와 파열 여부를 종합한다.\n\n== 정답 해설 ==\n분자유전학적 특징은 '''KIT(c-KIT) activating mutation'''이고, 강의표에서 예후를 결정하는 핵심 두 항목은 '''종양 크기'''와 '''유사분열 수'''이다.\n\n== 출제 의도 ==\nGIST의 발생기전인 KIT 변화와 생물학적 위험도 평가변수를 구분해 서술하게 한다.\n\n== WIKI 연결 ==\n* [[11강#위장관기질종양 · Gastrointestinal stromal tumor|위장관기질종양]]\n* [[11강#생물학적 위험도|GIST 생물학적 위험도]]\n\n== 관련 J ==\n{{33}} {{236}}\n\n== 검토 상태 ==\n오답률 30 55page 수록.\n\n== 오답30 원문해설 ==\n> 점막하 종양으로 방추형세포가 관찰되어 gastrointestinal stromal tumor에 합당함. 가장 중요한 병인은 c-kit mutation 예후인자는 종양의 크기와 유사분열 수가 가장 중요\n\n2021 소화기계 오답30 p.55",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_055_01.png"
       ],
@@ -31145,7 +31114,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Sliding hernia: axial type, reflux esophagitis / Paraesophageal hernia: rolling type, strangulation·obstruction",
-      "explanation": "정답: 미끄럼형(sliding)과 식도곁형(paraesophageal) 식도열공탈장\n\n== 배경 지식 ==\n식도열공탈장은 위식도접합부의 위치에 따라 구분한다. 미끄럼형은 위식도접합부와 위 분문부가 함께 흉강으로 올라가 역류를 잘 일으킨다. 식도곁형은 위식도접합부는 제 위치에 있으면서 위저부 일부가 식도 옆으로 탈출해 폐색·감돈·교액 위험이 크다.\n\n== 정답 해설 ==\n그림에서 접합부가 횡격막 위로 함께 이동하면 미끄럼형이며, 접합부를 남겨 둔 채 위 일부가 별도로 올라가면 식도곁형이다. 전자는 역류성 식도염, 후자는 기계적 합병증이 핵심이다.\n\n== 출제 의도 ==\n두 식도열공탈장을 해부학적 위치와 대표 합병증으로 구분하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n\n== 관련 J ==\n{{26}} {{769}} {{770}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 미끄럼형(sliding)과 식도곁형(paraesophageal) 식도열공탈장\n\n== 모범답안 ==\n* '''Sliding hernia = axial type''': 위식도접합부와 위 분문부가 함께 횡격막 위로 올라가며, 대표 합병증은 '''reflux esophagitis'''이다.\n* '''Paraesophageal hernia = nonaxial/rolling type''': 위식도접합부는 정상 위치에 남고 위의 일부가 식도 옆으로 올라간다. 대표 합병증은 '''incarceration·strangulation·obstruction'''이다.\n\n== 배경 지식 ==\n식도열공탈장은 위식도접합부의 위치에 따라 구분한다. 미끄럼형은 위식도접합부와 위 분문부가 함께 흉강으로 올라가 역류를 잘 일으킨다. 식도곁형은 위식도접합부는 제 위치에 있으면서 위저부 일부가 식도 옆으로 탈출해 폐색·감돈·교액 위험이 크다.\n\n== 정답 해설 ==\n그림에서 접합부가 횡격막 위로 함께 이동하면 미끄럼형이며, 접합부를 남겨 둔 채 위 일부가 별도로 올라가면 식도곁형이다. 전자는 역류성 식도염, 후자는 기계적 합병증이 핵심이다.\n\n== 출제 의도 ==\n두 식도열공탈장을 해부학적 위치와 대표 합병증으로 구분하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#식도열공탈장 · Hiatal hernia|식도열공탈장]]\n\n== 관련 J ==\n{{26}} {{769}} {{770}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_130_02.png",
         "2020_소화기_문항별_사진/2020_130_03.png"
@@ -31179,7 +31148,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 식도 칸디다증(Candida esophagitis)",
-      "explanation": "정답: 식도 칸디다증(Candida esophagitis)\n\n== 배경 지식 ==\nCandida 감염은 식도 점막에 흰색 또는 황백색의 부착성 판을 만들고, 현미경에서 출아효모와 거짓균사가 편평상피를 침범한다. 면역저하 환자에서 연하통과 연하곤란을 일으키는 대표 감염성 식도염이다.\n\n== 정답 해설 ==\n제시 영상의 다발성 흰색 판과 진균성 염증 소견을 함께 보면 식도 칸디다증이다. 확진은 생검과 PAS·GMS 같은 특수염색으로 균체를 확인하여 내린다.\n\n== 출제 의도 ==\n감염성 식도염의 형태를 보고 Candida를 진단하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#칸디다 식도염|칸디다 식도염]]\n\n== 관련 J ==\n{{156}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 식도 칸디다증(Candida esophagitis)\n\n== 모범답안 ==\n'''Candida esophagitis(식도 칸디다증)'''이다. 내시경의 백색 부착성 plaque와 조직의 yeast·pseudohyphae가 진단의 단서이다.\n\n== 배경 지식 ==\nCandida 감염은 식도 점막에 흰색 또는 황백색의 부착성 판을 만들고, 현미경에서 출아효모와 거짓균사가 편평상피를 침범한다. 면역저하 환자에서 연하통과 연하곤란을 일으키는 대표 감염성 식도염이다.\n\n== 정답 해설 ==\n제시 영상의 다발성 흰색 판과 진균성 염증 소견을 함께 보면 식도 칸디다증이다. 확진은 생검과 PAS·GMS 같은 특수염색으로 균체를 확인하여 내린다.\n\n== 출제 의도 ==\n감염성 식도염의 형태를 보고 Candida를 진단하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#칸디다 식도염|칸디다 식도염]]\n\n== 관련 J ==\n{{156}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_131_01.png"
       ],
@@ -31212,7 +31181,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: chronic gastritis, peptic ulcer, gastric carcinoma, gastric MALT lymphoma",
-      "explanation": "정답: Helicobacter pylori 관련 위질환\n\n== 배경 지식 ==\nH. pylori는 점액층에 정착해 만성 활동성 위염을 일으킨다. 감염 양상과 숙주 반응에 따라 전정부 우세 위염에서는 산분비 증가와 십이지장궤양이, 몸통을 포함한 다병소성 위축위염에서는 저산증·장상피화생·위궤양 및 장형 위샘암종 위험 증가가 나타날 수 있다.\n\n== 정답 해설 ==\nH. pylori 감염은 만성 위염, 소화성 궤양, 위샘암종, 위 MALT 림프종과 연관된다. MALT 림프종은 초기 단계에서 제균 치료 후 퇴축할 수 있다.\n\n== 출제 의도 ==\n하나의 H. pylori 감염이 위염·궤양·샘암종·MALT 림프종으로 이어지는 병리 연결고리를 묻는다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#MALT 림프종|MALT 림프종]]\n\n== 관련 J ==\n{{741}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: Helicobacter pylori 관련 위질환\n\n== 모범답안 ==\nH. pylori와 관련된 주요 질환은 다음과 같다.\n* '''Chronic gastritis''': 만성 활동성 위염 및 만성 위축성 위염\n* '''Peptic ulcer disease''': 위궤양과 십이지장궤양\n* '''Gastric adenocarcinoma''': 특히 장형 위샘암종\n* '''Gastric MALT lymphoma''': 위의 extranodal marginal zone B-cell lymphoma\n\n== 배경 지식 ==\nH. pylori는 점액층에 정착해 만성 활동성 위염을 일으킨다. 감염 양상과 숙주 반응에 따라 전정부 우세 위염에서는 산분비 증가와 십이지장궤양이, 몸통을 포함한 다병소성 위축위염에서는 저산증·장상피화생·위궤양 및 장형 위샘암종 위험 증가가 나타날 수 있다.\n\n== 정답 해설 ==\nH. pylori 감염은 만성 위염, 소화성 궤양, 위샘암종, 위 MALT 림프종과 연관된다. MALT 림프종은 초기 단계에서 제균 치료 후 퇴축할 수 있다.\n\n== 출제 의도 ==\n하나의 H. pylori 감염이 위염·궤양·샘암종·MALT 림프종으로 이어지는 병리 연결고리를 묻는다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#MALT 림프종|MALT 림프종]]\n\n== 관련 J ==\n{{741}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -31243,7 +31212,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 양성: 둥글고 경계가 매끈하며 주름이 궤양까지 방사상으로 모임 / 악성: 불규칙하고 융기된 가장자리, 주름 절단·융합, 괴사성 바닥",
-      "explanation": "정답: 양성 소화성 궤양과 궤양형 위암의 감별\n\n== 배경 지식 ==\n양성 궤양은 경계가 예리하고 둥글며 바닥이 비교적 깨끗하고, 주변 점막 주름이 병변 중심까지 균일하게 모인다. 위암은 가장자리가 불규칙하고 융기되어 있으며, 주름이 병변 앞에서 끊기고 주변 벽이 두꺼워지거나 단단해질 수 있다.\n\n== 정답 해설 ==\n육안만으로 확정할 수 없으므로 악성이 의심되면 궤양 가장자리 여러 곳에서 생검한다. 현미경에서 침윤성 비정형 샘 또는 반지세포와 desmoplasia가 보이면 위샘암종이다.\n\n== 출제 의도 ==\n궤양성 위 병변의 양성·악성 육안 기준과 생검 필요성을 이해하는지 평가한다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{417}} {{271}}\n\n== 검토 상태 ==\n오답률 30 41page 수록.",
+      "explanation": "정답: 양성 소화성 궤양과 궤양형 위암의 감별\n\n== 모범답안 ==\n'''양성 소화성 궤양'''은 둥글거나 타원형의 경계가 명확한 punched-out defect로, 벽이 곧고 바닥이 매끈하고 깨끗하다. 점막주름은 crater까지 끊기지 않고 방사상으로 모인다. 가장자리가 약간 overhang할 수는 있지만 종괴처럼 불규칙하게 쌓이는 heaping은 없다.\n\n'''위암성 궤양'''은 모양과 경계가 불규칙하고, 가장자리에 융기된 종양조직이 남아 있으며 바닥이 괴사성으로 지저분하다. 점막주름은 궤양까지 매끈하게 이어지지 않고 중간에서 끊기거나 뭉툭해지며, 주변 위벽의 침윤과 비후가 동반될 수 있다.\n\n== 배경 지식 ==\n양성 궤양은 경계가 예리하고 둥글며 바닥이 비교적 깨끗하고, 주변 점막 주름이 병변 중심까지 균일하게 모인다. 위암은 가장자리가 불규칙하고 융기되어 있으며, 주름이 병변 앞에서 끊기고 주변 벽이 두꺼워지거나 단단해질 수 있다.\n\n== 정답 해설 ==\n육안만으로 확정할 수 없으므로 악성이 의심되면 궤양 가장자리 여러 곳에서 생검한다. 현미경에서 침윤성 비정형 샘 또는 반지세포와 desmoplasia가 보이면 위샘암종이다.\n\n== 출제 의도 ==\n궤양성 위 병변의 양성·악성 육안 기준과 생검 필요성을 이해하는지 평가한다.\n\n== WIKI 연결 ==\n* [[11강#소화성 궤양 · Peptic ulcer|소화성 궤양]]\n* [[11강#위샘암종 · Gastric adenocarcinoma|위샘암종]]\n\n== 관련 J ==\n{{417}} {{271}}\n\n== 검토 상태 ==\n오답률 30 41page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -31274,7 +31243,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Borrmann type III",
-      "explanation": "정답: Borrmann III형 진행위암(ulceroinfiltrative type)\n\n== 배경 지식 ==\nBorrmann III형은 중앙의 궤양과 불규칙한 융기 가장자리를 가지며 종양이 주변 위벽으로 넓게 침윤하여 정상 점막과의 경계가 불명확하다. 경계가 비교적 선명하고 원형 제방을 만드는 II형과 구별한다.\n\n== 정답 해설 ==\n제시 병변은 궤양을 형성하면서 주변 벽으로 침윤해 경계가 흐려지는 형태이므로 Borrmann III형이다. 절단면에서도 종양이 궤양 가장자리 밖으로 퍼지는 양상이 감별에 도움이 된다.\n\n== 출제 의도 ==\n진행위암의 궤양형 가운데 경계가 뚜렷한 II형과 침윤성인 III형을 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{419}} {{158}}\n\n== 검토 상태 ==\n오답률 30 42page 수록.",
+      "explanation": "정답: Borrmann III형 진행위암(ulceroinfiltrative type)\n\n== 모범답안 ==\n'''Borrmann type III — ulceroinfiltrative type(궤양침윤형 진행위암)'''이다. 궤양을 중심으로 종양이 주변 위벽까지 침윤하여 정상 점막과의 경계가 불명확하다.\n\n== 배경 지식 ==\nBorrmann III형은 중앙의 궤양과 불규칙한 융기 가장자리를 가지며 종양이 주변 위벽으로 넓게 침윤하여 정상 점막과의 경계가 불명확하다. 경계가 비교적 선명하고 원형 제방을 만드는 II형과 구별한다.\n\n== 정답 해설 ==\n제시 병변은 궤양을 형성하면서 주변 벽으로 침윤해 경계가 흐려지는 형태이므로 Borrmann III형이다. 절단면에서도 종양이 궤양 가장자리 밖으로 퍼지는 양상이 감별에 도움이 된다.\n\n== 출제 의도 ==\n진행위암의 궤양형 가운데 경계가 뚜렷한 II형과 침윤성인 III형을 구별하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#진행위암 · Advanced gastric cancer|진행위암]]\n\n== 관련 J ==\n{{419}} {{158}}\n\n== 검토 상태 ==\n오답률 30 42page 수록.\n\n== 오답30 원문 정답 ==\n> Borrmann type 3\n\n2020 소화기계 오답30 p.42",
       "images": [
         "2020_소화기_문항별_사진/2020_wrong30_042_01.png"
       ],
@@ -31307,7 +31276,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Crohn disease",
-      "explanation": "정답: Crohn disease\n\n== 배경 지식 ==\nCrohn disease의 깊은 종주성·구불구불한 궤양 사이에는 부종성 점막섬이 남아 조약돌처럼 보이는 '''cobblestone appearance'''를 만든다. 병변은 분절적으로 떨어져 있고 장벽 전층 염증, fissure, fistula와 creeping fat이 동반될 수 있다.\n\n== 정답 해설 ==\n제시된 내시경의 울퉁불퉁한 점막섬과 깊게 갈라진 궤양은 '''Crohn disease'''의 cobblestone appearance이다.\n\n== 출제 의도 ==\n염증성 장질환의 육안상만 보고 Crohn disease를 식별하고, 연속적이고 표재성인 ulcerative colitis와 구분하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#Crohn disease와 ulcerative colitis 비교|염증성 장질환 비교]]\n\n== 관련 J ==\n{{31}} {{477}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: Crohn disease\n\n== 모범답안 ==\n'''Crohn disease'''이다. 깊은 종주성 궤양 사이에 부종성 점막섬이 남아 '''cobblestone appearance'''를 형성한다.\n\n== 배경 지식 ==\nCrohn disease의 깊은 종주성·구불구불한 궤양 사이에는 부종성 점막섬이 남아 조약돌처럼 보이는 '''cobblestone appearance'''를 만든다. 병변은 분절적으로 떨어져 있고 장벽 전층 염증, fissure, fistula와 creeping fat이 동반될 수 있다.\n\n== 정답 해설 ==\n제시된 내시경의 울퉁불퉁한 점막섬과 깊게 갈라진 궤양은 '''Crohn disease'''의 cobblestone appearance이다.\n\n== 출제 의도 ==\n염증성 장질환의 육안상만 보고 Crohn disease를 식별하고, 연속적이고 표재성인 ulcerative colitis와 구분하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Crohn disease|Crohn disease]]\n* [[12강#Crohn disease와 ulcerative colitis 비교|염증성 장질환 비교]]\n\n== 관련 J ==\n{{31}} {{477}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_135_01.png"
       ],
@@ -31340,7 +31309,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 위 MALT 림프종; H. pylori 연관, 점막고유판 림프구 침윤 및 lymphoepithelial lesion",
-      "explanation": "정답: 위 MALT 림프종\n\n== 배경 지식 ==\n위 MALT 림프종은 대개 H. pylori에 의한 만성 항원 자극을 배경으로 발생하는 extranodal marginal zone B-cell lymphoma다. 작은 B세포가 점막과 샘 주변에 침윤하고 샘 상피를 파괴하는 lymphoepithelial lesion을 형성한다.\n\n== 정답 해설 ==\n초기 H. pylori 의존성 종양은 제균 치료로 퇴축할 수 있다. t(11;18)(q21;q21) API2–MALT1 융합이 있으면 항원 자극과 독립적으로 NF-κB 신호가 활성화되어 제균 치료 반응이 낮다.\n\n== 출제 의도 ==\n위의 림프구성 병변을 MALT 림프종으로 진단하고 H. pylori 및 t(11;18)의 치료적 의미를 설명하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#MALT 림프종|MALT 림프종]]\n\n== 관련 J ==\n{{737}}\n\n== 검토 상태 ==\n오답30 미수록.",
+      "explanation": "정답: 위 MALT 림프종\n\n== 모범답안 ==\n진단은 '''gastric MALT lymphoma(extranodal marginal zone B-cell lymphoma)'''이다. 특징은 다음 두 가지이다.\n* '''H. pylori 만성감염과 연관'''되며, 초기 H. pylori 의존성 병변은 제균치료 후 퇴축할 수 있다.\n* 점막고유판에 작은 B림프구가 침윤하고, 종양세포가 위샘 상피로 파고들어 샘을 파괴하는 '''lymphoepithelial lesion'''을 만든다.\n\n== 배경 지식 ==\n위 MALT 림프종은 대개 H. pylori에 의한 만성 항원 자극을 배경으로 발생하는 extranodal marginal zone B-cell lymphoma다. 작은 B세포가 점막과 샘 주변에 침윤하고 샘 상피를 파괴하는 lymphoepithelial lesion을 형성한다.\n\n== 정답 해설 ==\n초기 H. pylori 의존성 종양은 제균 치료로 퇴축할 수 있다. t(11;18)(q21;q21) API2–MALT1 융합이 있으면 항원 자극과 독립적으로 NF-κB 신호가 활성화되어 제균 치료 반응이 낮다.\n\n== 출제 의도 ==\n위의 림프구성 병변을 MALT 림프종으로 진단하고 H. pylori 및 t(11;18)의 치료적 의미를 설명하는 문제다.\n\n== WIKI 연결 ==\n* [[11강#MALT 림프종|MALT 림프종]]\n\n== 관련 J ==\n{{737}}\n\n== 검토 상태 ==\n오답30 미수록.",
       "images": [
         "2020_소화기_문항별_사진/2020_136_01.png"
       ],
@@ -31373,7 +31342,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Lynch syndrome",
-      "explanation": "정답: Lynch syndrome\n\n== 배경 지식 ==\nMMR 단백은 MLH1–PMS2와 MSH2–MSH6의 heterodimer로 작동한다. MSH2가 소실되면 결합상대인 MSH6도 함께 불안정해져 두 단백의 핵발현이 같이 사라질 수 있다. MSI-high이면서 MSH2·MSH6 동시소실은 MSH2 계열 결함을 시사하며, BRAF V600E 음성은 sporadic MLH1 methylation 경로보다 Lynch syndrome에 더 부합한다.\n\n== 정답 해설 ==\n'''Lynch syndrome''': MSI-high, BRAF mutation 음성 및 MSH2·MSH6 동시소실의 조합이 유전성 mismatch repair defect를 지지한다.\n\n== 출제 의도 ==\nMSI 결과만 보는 것이 아니라 MMR 면역염색의 짝 소실 패턴과 BRAF 결과를 함께 해석하여 Lynch syndrome을 판정하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Microsatellite instability · MSI|Microsatellite instability]]\n* [[12강#Lynch syndrome · HNPCC|Lynch syndrome]]\n\n== 관련 J ==\n{{421}}\n\n== 검토 상태 ==\n오답률 30 43page 수록.",
+      "explanation": "정답: Lynch syndrome\n\n== 모범답안 ==\n'''Lynch syndrome(HNPCC)'''이다. MSI-high와 MSH2·MSH6 단백 소실이 유전성 mismatch repair 결함을 시사한다.\n\n== 배경 지식 ==\nMMR 단백은 MLH1–PMS2와 MSH2–MSH6의 heterodimer로 작동한다. MSH2가 소실되면 결합상대인 MSH6도 함께 불안정해져 두 단백의 핵발현이 같이 사라질 수 있다. MSI-high이면서 MSH2·MSH6 동시소실은 MSH2 계열 결함을 시사하며, BRAF V600E 음성은 sporadic MLH1 methylation 경로보다 Lynch syndrome에 더 부합한다.\n\n== 정답 해설 ==\n'''Lynch syndrome''': MSI-high, BRAF mutation 음성 및 MSH2·MSH6 동시소실의 조합이 유전성 mismatch repair defect를 지지한다.\n\n== 출제 의도 ==\nMSI 결과만 보는 것이 아니라 MMR 면역염색의 짝 소실 패턴과 BRAF 결과를 함께 해석하여 Lynch syndrome을 판정하게 한다.\n\n== WIKI 연결 ==\n* [[12강#Microsatellite instability · MSI|Microsatellite instability]]\n* [[12강#Lynch syndrome · HNPCC|Lynch syndrome]]\n\n== 관련 J ==\n{{421}}\n\n== 검토 상태 ==\n오답률 30 43page 수록.\n\n== 오답30 원문 정답 ==\n> Lynch syndrome\n\n2020 소화기계 오답30 p.43",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -32525,7 +32494,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Herpes esophagitis",
-      "explanation": "정답: 단순헤르페스바이러스 식도염(Herpes simplex virus esophagitis)\n\n== 배경 지식 ==\nHSV 식도염은 주로 면역저하 환자에서 발생한다. 내시경에서는 작은 수포성 병변 뒤 얕고 경계가 뚜렷한 화산분화구 모양 궤양이 나타나며, 궤양 가장자리의 편평상피세포에서 다핵화·핵 molding·핵내봉입체가 관찰된다.\n\n== 정답 해설 ==\n제시된 궤양성 병변과 바이러스성 세포변화는 HSV 식도염에 합당하다. 생검은 바이러스 감염세포가 남아 있는 궤양 가장자리에서 시행하는 것이 진단에 유리하다.\n\n== 출제 의도 ==\nCandida의 백색 판, CMV의 깊고 긴 궤양과 구별하여 HSV 식도염을 진단하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#단순헤르페스바이러스 식도염|단순헤르페스바이러스 식도염]]\n* [[10강#감염성 식도염|감염성 식도염]]\n\n== 검토 상태 ==\n오답률 30 40page 수록.",
+      "explanation": "정답: 단순헤르페스바이러스 식도염(Herpes simplex virus esophagitis)\n\n== 모범답안 ==\n'''Herpes esophagitis(HSV 식도염)'''이다. 궤양 가장자리의 편평상피세포에서 다핵화, nuclear molding 및 핵내봉입체가 관찰되는 것이 특징이다.\n\n== 배경 지식 ==\nHSV 식도염은 주로 면역저하 환자에서 발생한다. 내시경에서는 작은 수포성 병변 뒤 얕고 경계가 뚜렷한 화산분화구 모양 궤양이 나타나며, 궤양 가장자리의 편평상피세포에서 다핵화·핵 molding·핵내봉입체가 관찰된다.\n\n== 정답 해설 ==\n제시된 궤양성 병변과 바이러스성 세포변화는 HSV 식도염에 합당하다. 생검은 바이러스 감염세포가 남아 있는 궤양 가장자리에서 시행하는 것이 진단에 유리하다.\n\n== 출제 의도 ==\nCandida의 백색 판, CMV의 깊고 긴 궤양과 구별하여 HSV 식도염을 진단하는 문제다.\n\n== WIKI 연결 ==\n* [[10강#단순헤르페스바이러스 식도염|단순헤르페스바이러스 식도염]]\n* [[10강#감염성 식도염|감염성 식도염]]\n\n== 검토 상태 ==\n오답률 30 40page 수록.\n\n== 오답30 원문 정답 ==\n> Herpes esophagitis\n\n2020 소화기계 오답30 p.40",
       "images": [
         "2020_소화기_문항별_사진/2020_wrong30_040_01.png",
         "2020_소화기_문항별_사진/2020_wrong30_040_02.png"
@@ -40509,7 +40478,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 연하곤란; 식도 연동운동 소실, LES 이완 불완전, LES 휴식기 긴장 증가",
-      "explanation": "정답: 연하곤란; 식도 연동운동 소실, LES 이완 불완전, LES 휴식기 긴장 증가\n\n== 확인 사항 ==\n공식 답안의 세 항목을 보존했다. 현대 내압 진단에서 모든 achalasia 환자가 기저 LES 고압을 보이는 것은 아니며, EGJ 이완장애와 연동 이상을 함께 평가한다.\n\n== 오답30 원문해설 ==\n> 정답 - Dysphagis 1) Aperistalsis 2) Partial or incomplete relaxation of the LES 3) Increased resting tone of the LES\n\n2019 소화기계 오답30 p.17\n\n[[파일:2019_소화기_문항별_사진/official-929-explanation.jpg|공식 오답30 원문해설에 첨부된 자료.]]\n\n== 배경 지식 ==\nAchalasia는 식도체부가 음식을 정상적으로 밀지 못하고 LES가 충분히 풀리지 않는 질환이다. 음식이 정체되어 식도가 늘어나고 식도조영에서 원위부가 bird-beak처럼 좁아질 수 있다.\n\n== 풀이 흐름 ==\n공식 사진과 답안은 achalasia를 가리킨다. '''증상 한 가지와 주요 이상 세 가지'''를 나누어 적어야 하며, 단순히 병명만 쓰면 요구한 답을 채우지 못한다.\n\n== 서술형 답안 ==\n특징적인 임상소견은 연하곤란(dysphagia)이다. 주요 이상은 ① 식도체부의 연동운동 소실(aperistalsis), ② 삼킴 때 하부식도괄약근의 불완전 이완, ③ 하부식도괄약근의 휴식기 긴장 증가이다.\n\n== 출제 의도 ==\n사진의 병명을 기능 이상으로 풀어 설명할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n[[10강#식도이완불능증 · Achalasia|식도이완불능증 · Achalasia]] · [[35강#Achalasia|Achalasia]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.17",
+      "explanation": "정답: 연하곤란; 식도 연동운동 소실, LES 이완 불완전, LES 휴식기 긴장 증가\n\n== 모범답안 ==\n특징적인 임상소견은 연하곤란(dysphagia)이다. 주요 이상은 ① 식도체부의 연동운동 소실(aperistalsis), ② 삼킴 때 하부식도괄약근의 불완전 이완, ③ 하부식도괄약근의 휴식기 긴장 증가이다.\n\n== 확인 사항 ==\n공식 답안의 세 항목을 보존했다. 현대 내압 진단에서 모든 achalasia 환자가 기저 LES 고압을 보이는 것은 아니며, EGJ 이완장애와 연동 이상을 함께 평가한다.\n\n== 오답30 원문해설 ==\n> 정답 - Dysphagis 1) Aperistalsis 2) Partial or incomplete relaxation of the LES 3) Increased resting tone of the LES\n\n2019 소화기계 오답30 p.17\n\n[[파일:2019_소화기_문항별_사진/official-929-explanation.jpg|공식 오답30 원문해설에 첨부된 자료.]]\n\n== 배경 지식 ==\nAchalasia는 식도체부가 음식을 정상적으로 밀지 못하고 LES가 충분히 풀리지 않는 질환이다. 음식이 정체되어 식도가 늘어나고 식도조영에서 원위부가 bird-beak처럼 좁아질 수 있다.\n\n== 풀이 흐름 ==\n공식 사진과 답안은 achalasia를 가리킨다. '''증상 한 가지와 주요 이상 세 가지'''를 나누어 적어야 하며, 단순히 병명만 쓰면 요구한 답을 채우지 못한다.\n\n== 출제 의도 ==\n사진의 병명을 기능 이상으로 풀어 설명할 수 있는지 평가한다.\n\n== Wiki 연결 ==\n[[10강#식도이완불능증 · Achalasia|식도이완불능증 · Achalasia]] · [[35강#Achalasia|Achalasia]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.17",
       "images": [
         "2019_소화기_문항별_사진/2019-130-figure-1.jpg"
       ],
@@ -40923,7 +40892,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Kayser–Fleischer ring",
-      "explanation": "정답: Kayser–Fleischer ring\n\n== 오답30 원문해설 ==\n> Wilson disease의 특징적 소견임.\n\n2019 소화기계 오답30 p.20\n\n== 배경 지식 ==\nWilson disease의 구리는 간뿐 아니라 뇌·각막 등에 축적된다. 각막의 Descemet membrane에 구리가 침착하면 주변부의 갈색·녹갈색 고리로 보일 수 있다.\n\n== 풀이 흐름 ==\n젊은 환자의 간손상과 요중 구리 증가에 각막 주변 고리가 더해졌다. 질환 이름만 쓰지 말고 사진 소견인 '''Kayser–Fleischer ring'''을 적는다.\n\n== 서술형 답안 ==\nKayser–Fleischer ring이다. Wilson disease에서 각막 Descemet membrane에 구리가 침착하여 각막 주변부에 형성되는 고리이다.\n\n== 출제 의도 ==\n대사성 간질환의 전신 소견을 조직 침착 물질과 연결한다.\n\n== Wiki 연결 ==\n[[16강#장기별 형태와 임상 양상|장기별 형태와 임상 양상]] · [[48강#Ceruloplasmin·소변 구리·임상 소견을 묶어 진단|Ceruloplasmin·소변 구리·임상 소견을 묶어 진단]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.20",
+      "explanation": "정답: Kayser–Fleischer ring\n\n== 모범답안 ==\nKayser–Fleischer ring이다. Wilson disease에서 각막 Descemet membrane에 구리가 침착하여 각막 주변부에 형성되는 고리이다.\n\n== 오답30 원문해설 ==\n> Wilson disease의 특징적 소견임.\n\n2019 소화기계 오답30 p.20\n\n== 배경 지식 ==\nWilson disease의 구리는 간뿐 아니라 뇌·각막 등에 축적된다. 각막의 Descemet membrane에 구리가 침착하면 주변부의 갈색·녹갈색 고리로 보일 수 있다.\n\n== 풀이 흐름 ==\n젊은 환자의 간손상과 요중 구리 증가에 각막 주변 고리가 더해졌다. 질환 이름만 쓰지 말고 사진 소견인 '''Kayser–Fleischer ring'''을 적는다.\n\n== 출제 의도 ==\n대사성 간질환의 전신 소견을 조직 침착 물질과 연결한다.\n\n== Wiki 연결 ==\n[[16강#장기별 형태와 임상 양상|장기별 형태와 임상 양상]] · [[48강#Ceruloplasmin·소변 구리·임상 소견을 묶어 진단|Ceruloplasmin·소변 구리·임상 소견을 묶어 진단]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.20",
       "images": [
         "2019_소화기_문항별_사진/2019-134-figure-1.jpg"
       ],
@@ -41315,7 +41284,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Cytomegalovirus (CMV)",
-      "explanation": "정답: Cytomegalovirus (CMV)\n\n== 오답30 원문해설 ==\n> 답) cytomegalovirus\n\n2019 소화기계 오답30 p.20\n\n== 배경 지식 ==\n바이러스성 inclusion은 위치와 모양이 중요하다. CMV는 커진 세포와 특징적인 '''owl’s-eye intranuclear inclusion'''을 만들며, 간 손상 원인으로도 감별한다.\n\n== 풀이 흐름 ==\n공식 사진의 핵내 봉입체를 보고 원인을 CMV로 적는다. Mallory–Denk body는 세포질 응집이고 Councilman body는 apoptotic cell 자체라는 점과 구분한다.\n\n== 서술형 답안 ==\nCytomegalovirus(CMV) 감염이다. 커진 세포에서 관찰되는 owl’s-eye 형태의 핵내 봉입체가 특징적인 단서이다.\n\n== 출제 의도 ==\n조직 변화의 원인을 봉입체의 위치·형태로 판독한다.\n\n== Wiki 연결 ==\n[[16강#Glycogen과 viral inclusion|Glycogen과 viral inclusion]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.20",
+      "explanation": "정답: Cytomegalovirus (CMV)\n\n== 모범답안 ==\nCytomegalovirus(CMV) 감염이다. 커진 세포에서 관찰되는 owl’s-eye 형태의 핵내 봉입체가 특징적인 단서이다.\n\n== 오답30 원문해설 ==\n> 답) cytomegalovirus\n\n2019 소화기계 오답30 p.20\n\n== 배경 지식 ==\n바이러스성 inclusion은 위치와 모양이 중요하다. CMV는 커진 세포와 특징적인 '''owl’s-eye intranuclear inclusion'''을 만들며, 간 손상 원인으로도 감별한다.\n\n== 풀이 흐름 ==\n공식 사진의 핵내 봉입체를 보고 원인을 CMV로 적는다. Mallory–Denk body는 세포질 응집이고 Councilman body는 apoptotic cell 자체라는 점과 구분한다.\n\n== 출제 의도 ==\n조직 변화의 원인을 봉입체의 위치·형태로 판독한다.\n\n== Wiki 연결 ==\n[[16강#Glycogen과 viral inclusion|Glycogen과 viral inclusion]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.20",
       "images": [
         "2019_소화기_문항별_사진/2019-143-figure-1.jpg"
       ],
@@ -41361,7 +41330,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Alcohol 또는 diabetes mellitus 등",
-      "explanation": "정답: Alcohol 또는 diabetes mellitus 등\n\n== 오답30 원문해설 ==\n> 답) alcohol 또는 DM 등\n\n2019 소화기계 오답30 p.21\n\n== 배경 지식 ==\n간세포의 지방 축적은 H&E에서 지방이 빠져나간 빈 공간으로 보인다. 큰 지방방울이 핵을 가장자리로 밀면 macrovesicular steatosis에 해당한다.\n\n== 풀이 흐름 ==\n공식 사진은 steatosis이며 원문 답은 '''alcohol 또는 DM 등'''이다. 형태만으로 알코올성이 확정되는 것은 아니므로 발문의 ‘원인’에는 가능한 대표 원인을 적는다.\n\n== 서술형 답안 ==\n지방변성(steatosis)이며 대표 원인은 알코올과 당뇨병·비만 등 대사 이상이다. 간세포 내 지방방울이 축적되어 공포처럼 보이고, 큰 지방방울은 핵을 주변으로 밀 수 있다.\n\n== 출제 의도 ==\n조직 형태를 인식한 뒤 가능한 원인과 특정 원인의 확진을 구별한다.\n\n== Wiki 연결 ==\n[[16강#Steatosis|Steatosis]] · [[16강#Alcoholic fatty liver|Alcoholic fatty liver]] · [[48강#Steatosis에서 MASH·섬유화로|Steatosis에서 MASH·섬유화로]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.21",
+      "explanation": "정답: Alcohol 또는 diabetes mellitus 등\n\n== 모범답안 ==\n지방변성(steatosis)이며 대표 원인은 알코올과 당뇨병·비만 등 대사 이상이다. 간세포 내 지방방울이 축적되어 공포처럼 보이고, 큰 지방방울은 핵을 주변으로 밀 수 있다.\n\n== 오답30 원문해설 ==\n> 답) alcohol 또는 DM 등\n\n2019 소화기계 오답30 p.21\n\n== 배경 지식 ==\n간세포의 지방 축적은 H&E에서 지방이 빠져나간 빈 공간으로 보인다. 큰 지방방울이 핵을 가장자리로 밀면 macrovesicular steatosis에 해당한다.\n\n== 풀이 흐름 ==\n공식 사진은 steatosis이며 원문 답은 '''alcohol 또는 DM 등'''이다. 형태만으로 알코올성이 확정되는 것은 아니므로 발문의 ‘원인’에는 가능한 대표 원인을 적는다.\n\n== 출제 의도 ==\n조직 형태를 인식한 뒤 가능한 원인과 특정 원인의 확진을 구별한다.\n\n== Wiki 연결 ==\n[[16강#Steatosis|Steatosis]] · [[16강#Alcoholic fatty liver|Alcoholic fatty liver]] · [[48강#Steatosis에서 MASH·섬유화로|Steatosis에서 MASH·섬유화로]]\n\n== 검토 상태 ==\n2019 소화기계 오답30 p.21",
       "images": [
         "2019_소화기_문항별_사진/2019-144-figure-1.jpg"
       ],
