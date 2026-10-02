@@ -2643,7 +2643,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · iliac vessel",
-      "explanation": "정답: 4번 · iliac vessel\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 4번 · iliac vessel\n\n== 핵심 해설 ==\nHesselbach’s triangle의 경계는 '''안쪽 rectus sheath, 바깥쪽 inferior epigastric vessels, 아래쪽 inguinal ligament'''다. 따라서 iliac vessel은 경계에 포함되지 않는다.\n\n> '''Inf. epigastric a. 안쪽 = direct, 바깥쪽 = indirect.''' Direct hernia는 이 삼각형을 통해 나오고, indirect hernia는 혈관 바깥의 deep inguinal ring을 통해 들어온다.\n\n1·2·3번은 각각 삼각형의 바깥·안쪽·아래 경계다.\n\n== Wiki 연결 ==\n[[57강#Hesselbach’s triangle의 세 경계|Hesselbach’s triangle의 세 경계]]",
       "images": [],
       "legacyProfessor": "",
       "lectureIds": [
@@ -2660,7 +2660,13 @@ window.JBL_DATA = {
       "sourceQuestionNumber": 68,
       "priorMatch": 1,
       "legacyDisplayId": "2025 61번",
-      "globalNumber": 61
+      "globalNumber": 61,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2025-62",
@@ -2678,8 +2684,8 @@ window.JBL_DATA = {
       "answerIndices": [
         1
       ],
-      "answerLabel": "정답: 1번 · 응급수술",
-      "explanation": "정답: 1번 · 응급수술\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "기존 정답: 1번 · 응급 수술 — 복원 자료 불일치",
+      "explanation": "기존 정답: 1번 · 응급 수술 — 복원 자료 불일치\n\n== 핵심 해설 ==\n교액·장허혈이 의심되는 탈장은 응급 수술이 필요하다. '''백혈구 증가 자체가 곧 교액을 뜻하지는 않으며''', 지속 통증, 정복 불가, 복막자극과 영상 소견을 함께 읽어야 한다.\n\n수록 CT에서는 '''앞쪽 복벽 결손으로 장이 돌출'''되어 보인다. 발문의 '서혜부'와 사진의 위치가 맞지 않고 나머지 선지도 복원되지 않아, 이 자료만으로 원래 증례와 모든 오답을 확정할 수 없다. 기존 정답 1번은 유지하되 '''사진·발문 매칭 확인이 필요한 문항'''으로 표시한다. 소아의 단순 감돈탈장에 정복을 우선하는 {{558}}과는 교액 여부를 나누어 생각한다.\n\n== Wiki 연결 ==\n[[57강#Watchful waiting·정복·응급수술|Watchful waiting·정복·응급수술]]",
       "images": [
         "2025_소화기_문항별_사진/2025_062_01.png"
       ],
@@ -2698,7 +2704,13 @@ window.JBL_DATA = {
       "sourceQuestionNumber": 69,
       "priorMatch": 1,
       "legacyDisplayId": "2025 62번",
-      "globalNumber": 62
+      "globalNumber": 62,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2025-63",
@@ -10004,8 +10016,8 @@ window.JBL_DATA = {
       "answerIndices": [
         5
       ],
-      "answerLabel": "정답 추정: 5번 · Inguinal hernia",
-      "explanation": "정답 추정: 5번 · Inguinal hernia\n\n[핵심 해설]\n서혜부에서 힘줄 때 커지는 종괴와 육안/CT가 합당하다. Spigelian hernia는 반월선 부위 복벽 외측에 생긴다. CT 표지 누락으로 세부 유형 확정에 제한이 있다.\n\n[선지별 해설]\n① Spigelian hernia: Spigelian hernia는 반월선 부위 복벽 외측에 생긴다.\n\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 5번 · Inguinal hernia",
+      "explanation": "정답: 5번 · Inguinal hernia\n\n== 핵심 해설 ==\n힘줄 때 커지는 '''서혜부 종괴'''와 CT에서 서혜부로 돌출된 내용물을 함께 보면 inguinal hernia가 가장 적절하다. 복압이 높아질 때 돌출이 두드러지는 점이 탈장의 단서다.\n\n* Spigelian hernia는 복직근 외측의 반월선 부위, umbilical hernia는 배꼽, obturator hernia는 폐쇄공을 통해 나온다.\n* 3번 hydrops는 복원된 표현 그대로이며, 이를 hydrocele의 의미로 의도했다면 액체 저류와 탈장 내용물을 구별해야 한다.\n\n이 사진만으로 직접·간접까지 단정하지는 않는다. 세부 구분은 '''inferior epigastric a.와의 관계'''를 확인한다.\n\n== Wiki 연결 ==\n[[57강#진단의 출발점은 서혜부 돌출|진단의 출발점은 서혜부 돌출]]",
       "images": [
         "2023_소화기_문항별_사진/139.png"
       ],
@@ -10022,7 +10034,13 @@ window.JBL_DATA = {
       "source": "2023 소화기계 풀이 · 282-284page",
       "mappingConfidence": "명칭 확장/높음",
       "legacyDisplayId": "2023 139번",
-      "globalNumber": 237
+      "globalNumber": 237,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2023-140",
@@ -13860,7 +13878,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · 간접 탈장보다 직접 탈장이 더 많다.",
-      "explanation": "정답: 4번 · 간접 탈장보다 직접 탈장이 더 많다.\n\n[핵심 해설]\n4) 간접 탈장보다 직접 탈장이 더 많다.  간접 탈장이 더 많다.\n\n[선지별 해설]\n② 우측 탈장이 좌측 탈장보다 많다.: 4) 간접 탈장보다 직접 탈장이 더 많다.\n③ Femoral hernia는 여성에서 더 많다.: 4) 간접 탈장보다 직접 탈장이 더 많다.\n④ 간접 탈장보다 직접 탈장이 더 많다.: 4) 간접 탈장보다 직접 탈장이 더 많다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 4번 · 간접 탈장보다 직접 탈장이 더 많다.\n\n== 핵심 해설 ==\n강의 3쪽은 '''연령·성별에 관계없이 가장 흔한 탈장이 간접서혜탈장'''이라고 제시한다. 그러므로 직접탈장이 더 많다는 4번이 틀렸다. 남성에서 서혜탈장이 더 흔하고, femoral hernia는 여성에서 상대적으로 중요하다는 점도 함께 구별한다.\n\n> '''전체적으로 indirect가 가장 흔하다.''' 고령 여성의 서혜인대 아래 종괴는 별도로 femoral hernia를 생각한다.\n\n[* 2번의 우측 우세와 5번의 교액 1–3%는 옛 기출에 실린 표현으로, 이번 강의록에 해당 숫자가 직접 제시되지는 않는다. 가장 확실한 정답 근거는 간접탈장이 가장 흔하다는 강의 내용이다.]\n\n== Wiki 연결 ==\n[[57강#Femoral hernia는 서혜인대 아래|Femoral hernia는 서혜인대 아래]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -13877,7 +13895,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 113,
       "legacyDisplayId": "2022 113번",
-      "globalNumber": 337
+      "globalNumber": 337,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2022-114",
@@ -14868,7 +14892,7 @@ window.JBL_DATA = {
         4
       ],
       "answerLabel": "정답: 4번 · 수술이 끝난 후 체내에 흡수되지 않는다",
-      "explanation": "정답: 4번 · 수술이 끝난 후 체내에 흡수되지 않는다\n\n[핵심 해설]\n해당 문제는 20강 ‘최소침습수술‘ part에 해당하는 문제이며, 2023학년도에는 해당 part가 시간표에서 빠졌습니다. 역대 시간표를 살펴보니 2020~2022년까지 최윤석 교수님께서 매년 ‘최소침습수술’이라는 강의에서 출제하신 킹족 문제입니다. 해설 및 PPT 사진은 2021년 소화기계 족보 풀이를 참조하였습니다. 혹시나 싶어 2023학년도의 최윤석 교수님 PPT에서 CO2 관련 내용을 찾아보았지만, 올해에는 아무런 내용도 발견할 수 없었습니다. 무시하셔도 될 듯 합니다.\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 4번 · 수술이 끝난 후 체내에 흡수되지 않는다\n\n== 핵심 해설 ==\nCO2는 기복을 만들어 수술 공간을 확보하고, '''흡수된 뒤 폐를 통해 배출'''될 수 있다. 따라서 '체내에 흡수되지 않는다'는 4번이 틀렸다. 저렴하고 비가연성인 점도 사용 이유다.\n\n'''흡수가 가능하다는 장점'''과 '''많이 흡수되면 고탄산혈증을 일으킬 수 있다는 점'''은 함께 성립한다. '생물학적으로 안정'을 생리적 영향이 전혀 없다는 뜻으로 확대하지 않는다. 이번 57강에서 상세히 다루지 않는 예전 최소침습수술 문항이다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -14885,7 +14909,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 155,
       "legacyDisplayId": "2022 155번",
-      "globalNumber": 362
+      "globalNumber": 362,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2022-156",
@@ -14907,7 +14937,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · Tactile sense가 좋다.",
-      "explanation": "정답: 3번 · Tactile sense가 좋다.\n\n[핵심 해설]\n올해는 수업하지 않은 최소 침습 수술이지만 복벽, 탈장 수업에서 로봇 수술에 대해서 언급하시긴 했으니 한 번 보고 가시는 것도… 작년 선배 강의록 첨부하겠습니다. 최윤석 교수님 최윤석 교수님 최윤석 교수님 (22) 20. 최소 침습 수술 55, 56P 최윤석 교수님\n\n[선지별 해설]\n⑤ 수술 시간이 오래걸린다.: 최소 침습 수술 55, 56P 최윤석 교수님\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 3번 · Tactile sense가 좋다.\n\n== 핵심 해설 ==\n이 기출에서 다루는 로봇 수술의 특징은 '''EndoWrist에 의한 관절 운동과 정교한 조작'''이며, 촉각이 좋아진다는 뜻은 아니다. 전통적인 로봇 수술에서는 직접 만지는 감각이 제한된다.\n\n비용 증가와 준비·도킹 시간은 단점으로 다뤄지며, remote surgery는 기술적 가능성을 가리킨다. 모든 로봇 수술이 실제 원격으로 시행된다는 뜻은 아니다. {{564}}와 같은 구별이다.[* 최신 장비의 촉각 기능 유무와 별개로, 여기서는 출제 당시 시스템을 기준으로 읽는다.]\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -14924,7 +14954,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 156,
       "legacyDisplayId": "2022 156번",
-      "globalNumber": 363
+      "globalNumber": 363,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2022-159",
@@ -15090,8 +15126,8 @@ window.JBL_DATA = {
       "answerIndices": [
         3
       ],
-      "answerLabel": "정답: 3번 · idirect hernia",
-      "explanation": "정답: 3번 · idirect hernia\n\n[핵심 해설]\n위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다. Direct hernia는 약해진 복벽에 구멍이 생긴 모습을 확인할 수 있다고 설명해 주셨는데, indirect hernia는 구멍이 없어 구분할 수 있습니다. 강의록에 inguinal hernia의 사진도 있는데 뭘 보고 구분해야 하는지는 모르겠고 다르게 생기긴 했습니다^^;; Inguinal hernia\n\n[선지별 해설]\n① Femoral hernia: 위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다.\n② Direct inguinal hernia: 위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다.\n③ Indirect inguinal hernia: 위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다.\n④ Epigastric hernia: 위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다.\n⑤ Umbilical hernia: 위의 세 사진은 Direct hernia의 사진이고, 밑의 세 사진은 indirect hernia의 사진이라고 설명해 주셨습니다.\n\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "기존 정답: 3번 · Indirect inguinal hernia",
+      "explanation": "기존 정답: 3번 · Indirect inguinal hernia\n\n== 핵심 해설 ==\n판독 기준은 '''inferior epigastric a. 바깥쪽의 deep inguinal ring을 통한 탈장 = indirect'''다. 혈관 안쪽 Hesselbach’s triangle을 통한 탈장이 direct이고, 서혜인대 아래가 femoral이다. Epigastric·umbilical hernia는 각각 상복부 정중선·배꼽의 탈장이다.\n\n수록 복강경 사진에는 혈관과 탈장 입구의 표지가 없어 세부 구조를 확정하는 데 한계가 있다. '''기존 정답 3번은 유지'''하되, '구멍이 안 보여서 간접탈장'이라는 이전 설명은 근거로 사용하지 않는다. 앞·뒤에서 본 화면 방향보다 혈관과 탈장 입구의 상대 위치를 먼저 확인한다.\n\n== Wiki 연결 ==\n[[57강#Inferior epigastric artery를 기준으로|Inferior epigastric artery를 기준으로]]",
       "images": [
         "2022_소화기_문항별_사진/2022_164_01.png"
       ],
@@ -15110,7 +15146,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 164,
       "legacyDisplayId": "2022 164번",
-      "globalNumber": 367
+      "globalNumber": 367,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2022-165",
@@ -23575,7 +23617,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 대퇴 탈장 (femoral hernia)",
-      "explanation": "정답: 3번 · 대퇴 탈장 (femoral hernia)\n\n[핵심 해설]\n서혜인대 아래쪽으로 나오는 femoral hernia\n\n[선지별 해설]\n① 서혜부 간접탈장 (indirect inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n② 서혜부 직접탈장 (direct inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n③ 대퇴 탈장 (femoral hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n④ 반흔 탈장 (incisional hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n⑤ 폐쇄공 탈장 (obturator hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n\n[검토 상태]\n오답률 30 31page 수록.",
+      "explanation": "정답: 3번 · 대퇴 탈장 (femoral hernia)\n\n== 핵심 해설 ==\n'''고령 여성 + 서혜인대 아래의 단단한 종괴'''가 femoral hernia를 가리킨다. 서혜부라는 넓은 위치만 보고 inguinal hernia를 고르지 말고, '''inguinal ligament 위인지 아래인지'''를 확인한다. 정복되지 않는다는 점은 감돈을 시사하며 수술 평가가 필요하다.\n\n1·2번 서혜탈장은 인대 위쪽, 4번 incisional hernia는 수술 흉터, 5번 obturator hernia는 폐쇄공과 연결한다.\n\n== Wiki 연결 ==\n[[57강#Femoral hernia는 서혜인대 아래|Femoral hernia는 서혜인대 아래]]\n\n== 오답30 원문 해설 ==\n2021 오답30 31쪽\n\n> 서혜인대 아래쪽으로 나오는 femoral hernia",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_031_01.png"
       ],
@@ -23599,7 +23641,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         482,
         484
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2021-169",
@@ -23621,7 +23669,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 도수 정복 (manual reduction) 시행",
-      "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n[핵심 해설]\n우선 manual reduction을 시행하는 것이 처음 치료임\n\n[선지별 해설]\n③ 도수 정복 (manual reduction) 시행: 우선 manual reduction을 시행하는 것이 처음 치료임\n\n[검토 상태]\n오답률 30 39page 수록.",
+      "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n== 핵심 해설 ==\n갑자기 단단해진 서혜부·음낭 종괴는 소아의 '''감돈성 서혜탈장'''을 생각하게 한다. 이 공식 기출은 교액·괴사의 증거가 따로 제시되지 않아 '''의료진의 manual reduction을 첫 치료'''로 고른다.\n\n항생제나 관찰만으로 갇힌 내용물이 풀리는 것은 아니며, 공기 관장술은 장중첩증에 사용하는 방법이다. 정복이 실패하거나 교액이 의심되면 응급수술이 필요하다. 정복 성공 후에도 탈장을 근본적으로 교정하는 수술 계획이 필요하다는 점을 구별하자.\n\n== Wiki 연결 ==\n[[57강#Watchful waiting·정복·응급수술|Watchful waiting·정복·응급수술]]\n\n== 오답30 원문 해설 ==\n2021 오답30 39쪽\n\n> 우선 manual reduction을 시행하는 것이 처음 치료임",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -23643,7 +23691,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         485,
         487
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2021-170",
@@ -23917,7 +23971,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · endowrist system",
-      "explanation": "정답: 1번 · endowrist system\n\n[핵심 해설]\n1번 endowrist system은 로봇수술의 가장 큰 장점이다. 좁은공간에서 정밀한 수술 가능하다.\n\n[선지별 해설]\n① endowrist system: 1번 endowrist system은 로봇수술의 가장 큰 장점이다.\n\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 1번 · endowrist system\n\n== 핵심 해설 ==\n'''EndoWrist'''는 손목처럼 관절 운동을 하여 정교한 조작을 돕는 로봇 수술의 특징이다. '''기구의 운동 자유도'''와 '''tactile sense'''는 다른 개념이다.\n\n상처·회복·미용상의 이점은 개복술과 최소침습수술을 비교할 때 쓰는 축으로, 일반 복강경보다 로봇이 항상 우월하다고 단정할 수 없다. 2번의 촉각 개선도 이 기출의 로봇 시스템에 맞지 않는다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -23938,7 +23992,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         513,
         515
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2021-180",
@@ -23959,8 +24019,8 @@ window.JBL_DATA = {
       "answerIndices": [
         2
       ],
-      "answerLabel": "정답: 2번 · better tactile sense",
-      "explanation": "정답: 2번 · better tactile sense\n\n[핵심 해설]\n2번 복강경 수술이면 당연히 촉감은 느껴지지 않습니다..\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "기존 정답: 2번 · better tactile sense — 복수정답 가능",
+      "explanation": "기존 정답: 2번 · better tactile sense — 복수정답 가능\n\n== 핵심 해설 ==\n개복술에 비해 복강경 수술은 작은 절개로 상처·회복·미용 측면의 이점을 기대하지만, '''직접 촉각이 더 좋아지는 것은 아니다.''' 따라서 기존 정답 2번은 타당한 오답 선지다.\n\n다만 '''1번 EndoWrist도 일반 복강경이 아니라 로봇 수술의 특징'''이므로, 현재 발문 그대로라면 1번 역시 '복강경의 장점으로 보기 힘든 것'에 해당한다. 인접한 {{564}}의 로봇 수술 문항과 비교 대상이나 선지가 혼재했을 가능성이 있다. 기존 정답 표시는 보존하되 '''현재 복원문으로는 단일정답이 성립하기 어렵다'''고 구분한다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -23981,7 +24041,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         516,
         517
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2021-181",
@@ -24002,8 +24068,8 @@ window.JBL_DATA = {
       "answerIndices": [
         3
       ],
-      "answerLabel": "정답: 3번 · L3 - L4",
-      "explanation": "정답: 3번 · L3 - L4\n[검토 상태]\n오답30 미수록.",
+      "answerLabel": "정답: 3번 · L3–L4",
+      "explanation": "정답: 3번 · L3–L4\n\n== 핵심 해설 ==\n배꼽의 표면 해부학적 높이를 묻는 기출로 '''L3–L4'''를 고른다. 배꼽 부근에서 복강으로 진입할 때는 뒤쪽 큰 혈관과의 관계를 고려해야 한다.\n\n'''배꼽의 피부절 T10'''과 '''척추에 투영한 위치 L3–L4'''를 혼동하지 않는다. 체형·자세에 따른 실제 위치 차이는 있을 수 있으며, 이번 강의록에 직접 제시된 암기 항목은 아닌 예전 기출이다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -24024,7 +24090,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         518,
         520
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2021-182",
@@ -25619,7 +25691,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 대퇴 탈장 (femoral hernia)",
-      "explanation": "정답: 3번 · 대퇴 탈장 (femoral hernia)\n\n[핵심 해설]\n서혜인대 아래쪽으로 나오는 femoral hernia\n\n[선지별 해설]\n① 서혜부 간접탈장 (indirect inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n② 서혜부 직접탈장 (direct inguinal hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n③ 대퇴 탈장 (femoral hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n④ 반흔 탈장 (incisional hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n⑤ 폐쇄공 탈장 (obturator hernia): 서혜인대 아래쪽으로 나오는 femoral hernia\n\n[검토 상태]\n오답률 30 31page 수록.",
+      "explanation": "정답: 3번 · 대퇴 탈장 (femoral hernia)\n\n== 핵심 해설 ==\n'''고령 여성 + 서혜인대 아래의 단단한 종괴'''가 femoral hernia를 가리킨다. 서혜부라는 넓은 위치만 보고 inguinal hernia를 고르지 말고, '''inguinal ligament 위인지 아래인지'''를 확인한다. 정복되지 않는다는 점은 감돈을 시사하며 수술 평가가 필요하다.\n\n1·2번 서혜탈장은 인대 위쪽, 4번 incisional hernia는 수술 흉터, 5번 obturator hernia는 폐쇄공과 연결한다.\n\n== Wiki 연결 ==\n[[57강#Femoral hernia는 서혜인대 아래|Femoral hernia는 서혜인대 아래]]\n\n== 오답30 원문 해설 ==\n2021 오답30 31쪽\n\n> 서혜인대 아래쪽으로 나오는 femoral hernia",
       "images": [
         "2021_소화기_문항별_사진/2021_wrong30_031_01.png"
       ],
@@ -25643,7 +25715,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         482,
         484
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2021-wrong30-8",
@@ -25783,7 +25861,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 3번 · 도수 정복 (manual reduction) 시행",
-      "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n[핵심 해설]\n우선 manual reduction을 시행하는 것이 처음 치료임\n\n[선지별 해설]\n③ 도수 정복 (manual reduction) 시행: 우선 manual reduction을 시행하는 것이 처음 치료임\n\n[검토 상태]\n오답률 30 39page 수록.",
+      "explanation": "정답: 3번 · 도수 정복 (manual reduction) 시행\n\n== 핵심 해설 ==\n갑자기 단단해진 서혜부·음낭 종괴는 소아의 '''감돈성 서혜탈장'''을 생각하게 한다. 이 공식 기출은 교액·괴사의 증거가 따로 제시되지 않아 '''의료진의 manual reduction을 첫 치료'''로 고른다.\n\n항생제나 관찰만으로 갇힌 내용물이 풀리는 것은 아니며, 공기 관장술은 장중첩증에 사용하는 방법이다. 정복이 실패하거나 교액이 의심되면 응급수술이 필요하다. 정복 성공 후에도 탈장을 근본적으로 교정하는 수술 계획이 필요하다는 점을 구별하자.\n\n== Wiki 연결 ==\n[[57강#Watchful waiting·정복·응급수술|Watchful waiting·정복·응급수술]]\n\n== 오답30 원문 해설 ==\n2021 오답30 39쪽\n\n> 우선 manual reduction을 시행하는 것이 처음 치료임",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -25805,7 +25883,13 @@ window.JBL_DATA = {
       "sourcePdfPages": [
         485,
         487
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2021-wrong30-11",
@@ -26891,7 +26975,7 @@ window.JBL_DATA = {
         5
       ],
       "answerLabel": "정답: 5번 · preperitoneal fat",
-      "explanation": "정답: 5번 · preperitoneal fat\n\n[핵심 해설]\n복벽의 깊은 층은 배가로근, 배가로근막, 복막앞지방, 벽쪽복막 순으로 배열된다. 따라서 복막 바로 앞에는 복막앞지방이 위치한다.\n[검토 상태]\n오답률 30 21page 수록.",
+      "explanation": "정답: 5번 · preperitoneal fat\n\n== 핵심 해설 ==\n깊은 복벽은 '''transversus abdominis → transversalis fascia → preperitoneal fat → parietal peritoneum''' 순서다. 따라서 복막 바로 앞에 놓이는 것은 '''preperitoneal fat'''이다.\n\n배가로근막이 복막과 바로 붙는다고 외우면 4번을 고르게 된다. 그 사이의 지방층을 기억하자.\n\n== Wiki 연결 ==\n[[57강#복벽의 층과 다른 탈장|복벽의 층과 다른 탈장]]\n\n== 오답30 원문 해설 ==\n2020 오답30 21쪽\n\n> 복벽 9개층 묻는 문제임",
       "images": [],
       "legacyProfessor": "최윤미",
       "lectureIds": [
@@ -26908,7 +26992,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "sourceOrdinal": 24,
       "legacyDisplayId": "2020 24번",
-      "globalNumber": 632
+      "globalNumber": 632,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2020-25",
@@ -26930,7 +27020,7 @@ window.JBL_DATA = {
         1
       ],
       "answerLabel": "정답: 1번 · Watchful waiting",
-      "explanation": "정답: 1번 · Watchful waiting\n\n[핵심 해설]\n증상이 거의 없는 서혜부탈장 환자에서 고령과 심부전으로 수술 위험이 높다면 정기적으로 상태를 관찰하는 watchful waiting을 고려할 수 있다. 통증, 감돈 또는 교액 소견이 생기면 수술 필요성을 다시 평가한다.\n[검토 상태]\n오답30 미수록.",
+      "explanation": "정답: 1번 · Watchful waiting\n\n== 핵심 해설 ==\n'''기침할 때만 조금 돌출되고 다른 증상이 없는 고령 남성'''이며, 심부전으로 수술 위험도 고려해야 한다. 강의 11쪽의 '''무증상·경미한 증상의 남성에서는 조심스럽게 watchful waiting'''이라는 기준에 맞는다.\n\n현재 감돈·교액의 근거가 없어 응급수술이 우선은 아니다. 조직검사도 탈장의 기본 처치가 아니다. 관찰 중 통증·환원 불가 등 변화가 생기면 다시 평가하며, '''여성의 서혜탈장이나 femoral hernia에는 같은 관찰 원칙을 적용하지 않는다.'''\n\n== Wiki 연결 ==\n[[57강#Watchful waiting·정복·응급수술|Watchful waiting·정복·응급수술]]",
       "images": [],
       "legacyProfessor": "최윤미",
       "lectureIds": [
@@ -26947,7 +27037,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": false,
       "sourceOrdinal": 25,
       "legacyDisplayId": "2020 25번",
-      "globalNumber": 633
+      "globalNumber": 633,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      }
     },
     {
       "id": "2020-26",
@@ -31862,8 +31958,8 @@ window.JBL_DATA = {
       "answerIndices": [
         2
       ],
-      "answerLabel": "정답: 2번 · 상처가 적으므로 wound complication이 적다",
-      "explanation": "정답: 2번 · 상처가 적으므로 wound complication이 적다\n\n[핵심 해설]\n단일공 복강경 수술은 주로 복부에서 가장 더러운 배꼽을 통해서 수술을 시행하게 되므로 wound complication 확률이 일반 복강경에 비해 높다.\n[검토 상태]\n오답률 30 5page 수록.",
+      "answerLabel": "공식 정답: 2번 · 상처가 적으므로 wound complication이 적다",
+      "explanation": "공식 정답: 2번 · 상처가 적으므로 wound complication이 적다\n\n== 핵심 해설 ==\n공식 오답30은 '''단일공 수술의 상처 수가 적다고 상처 합병증도 반드시 적지는 않다'''는 취지로 2번을 정답 처리한다. 원문 해설은 배꼽을 통한 접근을 그 근거로 설명한다.\n\n[* 원본에도 3번 '시야가 더 좋다', 4번 'learning curve case가 더 적다', 5번 '수술하기 더 용이하다'가 그대로 실려 있다. 이 문장들을 단일공 수술의 일반적 장점으로 모두 받아들이기는 어렵다. 공식 정답 2번은 유지하되, 나머지 선지까지 보편적인 사실로 암기하지 않는다. 이번 57강의 직접 학습 범위는 아니다.]\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]\n\n== 오답30 원문 해설 ==\n2020 오답30 5쪽\n\n> 단일공 복강경 수술은 주로 복부에서 가장 더러운 배꼽을 통해서 수술을 시행하게 되므로 wound complication 확률이 일반 복강경에 비해 높다.",
       "images": [],
       "legacyProfessor": "최윤석",
       "lectureIds": [
@@ -31880,7 +31976,13 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "sourceOrdinal": 1,
       "legacyDisplayId": "2020 오답30 1번",
-      "globalNumber": 756
+      "globalNumber": 756,
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2020-wrong30-2",
@@ -33786,14 +33888,20 @@ window.JBL_DATA = {
       "answerIndices": [
         5
       ],
-      "answerLabel": "원문 풀이 정답: 5번 · Heavier than air (독립 검토 보류)",
+      "answerLabel": "정답: 5번 · Heavier than air",
       "sourceAnswer": "5번",
-      "explanation": "== 해설 작성 상태 ==\n문항과 원문 풀이의 정답 표기를 복원했다. 이 문항은 1–17강 범위 밖이므로 요청에 따라 해설 작성과 독립적인 정답 검증을 보류한다.\n\n== 검토 상태 ==\n오답30 미수록.",
-      "answerVerification": "원문 풀이 표기만 복원 · 독립 풀이 보류",
+      "explanation": "정답: 5번 · Heavier than air\n\n== 핵심 해설 ==\nCO2를 사용하는 이유는 '''저렴함, 비가연성, 흡수 후 배출 가능성, 기복을 통한 수술 공간 확보'''다. 5번은 CO2의 물성 자체로는 맞지만, '''기복용 가스를 선택하는 대표적 임상적 장점'''으로 묻는 나머지 항목과 구별하여 고른다.\n\n'CO2는 공기보다 무겁지 않다'는 뜻으로 해석하면 안 된다. 흡수는 가능하고 과도하면 고탄산혈증이 생길 수 있어 환기가 중요하다. {{362}}의 '흡수되지 않는다'와 함께 비교한다. 이번 PDF에는 이 가스 선택 표가 없어 예전 최소침습수술 보충으로 분리한다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]",
+      "answerVerification": "CO2의 성질과 사용 이유를 구별한 독립 검토; 현 강의 직접 근거 없음",
       "sourcePdfPages": [
         510,
         512
-      ]
+      ],
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      }
     },
     {
       "id": "2021-restored-193",
@@ -35186,10 +35294,12 @@ window.JBL_DATA = {
         "Transversalis fascia",
         "Peritoneum"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "",
-      "explanation": "",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "정답: 1번 · External oblique muscle",
+      "explanation": "정답: 1번 · External oblique muscle\n\n== 핵심 해설 ==\nInguinal ligament는 '''external oblique aponeurosis의 아래쪽 가장자리'''가 접혀 만들어진 구조다. 따라서 기원을 근육명으로 제시한 선지에서는 1번이다.\n\nInternal oblique·transversus abdominis·transversalis fascia는 서혜부 구조와 관련되지만 서혜인대 자체의 기원은 아니다. Hesselbach 삼각형의 아래 경계이기도 하므로 {{61}}과 함께 기억한다.\n\n== Wiki 연결 ==\n[[57강#Hesselbach’s triangle의 세 경계|Hesselbach’s triangle의 세 경계]]\n\n== 오답30 원문 해설 ==\n2019 오답30 10쪽\n\n> external oblique muscle 이고 암기 문제입니다.",
       "images": [],
       "legacyProfessor": "최윤미",
       "professor": "최윤미",
@@ -35206,7 +35316,14 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "mappingConfidence": "2019 문항정보의 출제교수·출제강의 매핑 반영",
       "importReason": "오답30",
-      "sourceOriginalId": "2019-023"
+      "sourceOriginalId": "2019-023",
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      },
+      "answerVerification": "2019 공식 오답30 원문 화면의 정답·해설 직접 확인"
     },
     {
       "id": "2019-024",
@@ -35225,10 +35342,12 @@ window.JBL_DATA = {
         "공기 관장술",
         "응급 수술"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "",
-      "explanation": "",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "정답: 3번 · 도수정복(manual reduction)",
+      "explanation": "정답: 3번 · 도수정복(manual reduction)\n\n== 핵심 해설 ==\n갑자기 단단해진 서혜부·음낭 종괴는 소아의 '''감돈성 서혜탈장'''을 생각하게 한다. 이 공식 기출은 교액·괴사의 증거가 따로 제시되지 않아 '''의료진의 manual reduction을 첫 치료'''로 고른다.\n\n항생제나 관찰만으로 갇힌 내용물이 풀리는 것은 아니며, 공기 관장술은 장중첩증에 사용하는 방법이다. 정복이 실패하거나 교액이 의심되면 응급수술이 필요하다. 정복 성공 후에도 탈장을 근본적으로 교정하는 수술 계획이 필요하다는 점을 구별하자.\n\n== Wiki 연결 ==\n[[57강#Watchful waiting·정복·응급수술|Watchful waiting·정복·응급수술]]\n\n== 오답30 원문 해설 ==\n2019 오답30 10쪽\n\n> inguinal hernia 는 우선 도수 정복 치료가 먼저입니다 (manual reduction)",
       "images": [],
       "legacyProfessor": "최윤미",
       "professor": "최윤미",
@@ -35245,7 +35364,14 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "mappingConfidence": "2019 문항정보의 출제교수·출제강의 매핑 반영",
       "importReason": "오답30",
-      "sourceOriginalId": "2019-024"
+      "sourceOriginalId": "2019-024",
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "57강 본문 및 공식 기출 연결"
+      },
+      "answerVerification": "2019 공식 오답30 원문 화면의 정답·해설 직접 확인"
     },
     {
       "id": "2019-026",
@@ -40242,10 +40368,12 @@ window.JBL_DATA = {
         "There is an air leak at the trocar.",
         "None of the above"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "",
-      "explanation": "",
+      "answerIndex": 1,
+      "answerIndices": [
+        1
+      ],
+      "answerLabel": "정답: 1번 · The patient is not adequately relaxed.",
+      "explanation": "정답: 1번 · The patient is not adequately relaxed.\n\n== 핵심 해설 ==\n'''압력은 높은데 gas flow는 낮고 시야를 확보할 공간이 부족'''하다. 복벽이 충분히 이완되지 않으면 적은 주입량에도 압력이 높아지고, 주입기는 압력 한계 때문에 유량을 줄인다. 선지 중에는 '''근육 이완 부족'''이 가장 잘 맞는다.\n\n가스통 고갈이나 누출은 이 압력·유량 조합을 가장 잘 설명하지 못한다. 센서 이상도 점검 대상일 수 있지만, 공식 문항의 정답은 1번이다. 이번 57강에서 상세히 다루지 않는 예전 최소침습수술 내용이다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]\n\n== 오답30 원문 해설 ==\n2019 오답30 28쪽\n\n> 답) a. The patient is not adequately relaxed.",
       "images": [],
       "legacyProfessor": "최윤석",
       "professor": "최윤석",
@@ -40262,7 +40390,14 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "mappingConfidence": "2019 문항정보의 출제교수·출제강의 매핑 반영",
       "importReason": "오답30",
-      "sourceOriginalId": "2019-020"
+      "sourceOriginalId": "2019-020",
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      },
+      "answerVerification": "2019 공식 오답30 원문 화면의 정답·해설 직접 확인"
     },
     {
       "id": "2019-021",
@@ -40281,10 +40416,12 @@ window.JBL_DATA = {
         "With significant abdominal distension, an open Hasson technique is preferred because peritoneal space is decreased.",
         "None of the above"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "",
-      "explanation": "",
+      "answerIndex": 4,
+      "answerIndices": [
+        4
+      ],
+      "answerLabel": "정답: 4번 · Open Hasson technique",
+      "explanation": "정답: 4번 · Open Hasson technique\n\n== 핵심 해설 ==\n공식 정답은 '''심한 복부 팽만에서는 open Hasson 접근을 선호'''한다는 4번이다. 팽창한 장이 복벽에 가까워져 첫 진입 시 손상 위험이 커지는 상황을 묻는다.\n\n* Veress needle의 보호장치가 '''혈관 손상을 완전히 막지는 않는다'''.\n* Bladed trocar라고 port-site hernia가 더 적다고 단정할 수 없다.\n* Visiport 진입에 angled scope가 필요하다는 3번도 공식 정답이 아니다.\n\n이는 첫 복강 진입의 안전성을 묻는 옛 기출이며, 모든 환자에게 한 가지 접근법을 강제하는 설명은 아니다.\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]\n\n== 오답30 원문 해설 ==\n2019 오답30 28쪽\n\n> 답) d. If significant abdominal distension is present, an open Hasson technique is preferred due to decreased peritoneal space.",
       "images": [],
       "legacyProfessor": "최윤석",
       "professor": "최윤석",
@@ -40301,7 +40438,14 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "mappingConfidence": "2019 문항정보의 출제교수·출제강의 매핑 반영",
       "importReason": "오답30",
-      "sourceOriginalId": "2019-021"
+      "sourceOriginalId": "2019-021",
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      },
+      "answerVerification": "2019 공식 오답30 원문 화면의 정답·해설 직접 확인"
     },
     {
       "id": "2019-022",
@@ -40320,10 +40464,12 @@ window.JBL_DATA = {
         "Hypovolemic shock",
         "None of the above"
       ],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "",
-      "explanation": "",
+      "answerIndex": 3,
+      "answerIndices": [
+        3
+      ],
+      "answerLabel": "정답: 3번 · Diaphragmatic injury",
+      "explanation": "정답: 3번 · Diaphragmatic injury\n\n== 핵심 해설 ==\n발문은 복강경 수술의 '''절대 금기가 아닌 것'''을 묻는다. 공식 정답은 '''diaphragmatic injury'''이며, 안정적인 환자에서는 복강경으로 평가·치료를 고려할 수 있다는 구별이다.\n\n전신마취를 견디지 못하거나 저혈량성 쇼크가 있는 환자는 마취·기복의 생리적 부담을 감당하기 어렵다. 거대한 복벽탈장과 loss of domain도 이 공식 문항에서는 금기 쪽으로 제시한다.[* 금기의 구체적 적용은 시대·술식·환자 상태에 따라 달라질 수 있다. 여기서는 2019 공식 문항의 정답 기준으로 정리하며, 이번 57강 PDF에는 이 목록이 없다.]\n\n== Wiki 연결 ==\n[[57강#예전 최소침습수술 J의 보충|예전 최소침습수술 J의 보충]]\n\n== 오답30 원문 해설 ==\n2019 오답30 28쪽\n\n> 답) c. Diaphragmatic injury",
       "images": [],
       "legacyProfessor": "김준미",
       "professor": "김준미",
@@ -40340,7 +40486,14 @@ window.JBL_DATA = {
       "officialPriorityApplied": true,
       "mappingConfidence": "2019 문항정보의 출제교수·출제강의 매핑 반영",
       "importReason": "오답30",
-      "sourceOriginalId": "2019-022"
+      "sourceOriginalId": "2019-022",
+      "wikiReview": {
+        "date": "2026-10-02",
+        "lectureId": 57,
+        "source": "20290929 강의.pdf · 사용자 수업 강조 · 대응 공식 오답30",
+        "scope": "옛 최소침습수술 기출: 현 강의 직접 근거 부족"
+      },
+      "answerVerification": "2019 공식 오답30 원문 화면의 정답·해설 직접 확인"
     },
     {
       "id": "2019-130",
