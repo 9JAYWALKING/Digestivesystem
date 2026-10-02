@@ -15336,45 +15336,6 @@ window.JBL_DATA = {
       "globalNumber": 373
     },
     {
-      "id": "2022-182",
-      "displayId": "374번",
-      "year": 2022,
-      "sourceType": "족보",
-      "originalNumber": 182,
-      "question": "Which is correct?",
-      "passage": "Ⅰ. PTH and calcium are inversely correlated.\nⅡ. Iron absorption is mediated by ferritin.\nⅢ. PTH stimulates the synthesis of vitamin B3.",
-      "choices": [
-        "Ⅰ",
-        "Ⅰ,Ⅱ",
-        "Ⅰ,Ⅲ",
-        "Ⅱ,Ⅲ",
-        "Ⅰ,Ⅱ,Ⅲ"
-      ],
-      "answerIndex": 1,
-      "answerIndices": [
-        1
-      ],
-      "answerLabel": "정답: 1번 · Ⅰ",
-      "explanation": "정답: 1번 · Ⅰ\n\n== 배경 지식 ==\n혈중 Ca2+가 감소하면 부갑상샘의 calcium-sensing receptor 자극이 줄어 PTH 분비가 증가한다. 철은 DMT1·ferroportin을 통해 흡수되고 ferritin은 세포 내 저장을 담당한다. PTH는 vitamin B3가 아니라 콩팥에서 vitamin D의 활성형 calcitriol 생성을 촉진한다.\n\n== 정답 선지 ==\nⅠ은 혈중 Ca2+와 PTH 분비가 생리적 음성 되먹임 관계를 이루므로 옳다.\n\n== 오답 선지 ==\n* Ⅱ: Ferritin은 철 흡수를 매개하는 막수송체가 아니라 저장 단백질이다.\n* Ⅲ: PTH는 vitamin B3 합성을 촉진하지 않는다.\n\n== 출제 의도 ==\n칼슘 항상성, 철 저장과 vitamin 명칭을 정확히 구분하게 한다.\n\n== Wiki 연결 ==\n* [[15강#칼슘 흡수|칼슘 흡수]]\n* [[15강#철 흡수와 항상성|철 흡수와 항상성]]\n\n== 검토 상태 ==\n오답30 미수록.",
-      "images": [],
-      "legacyProfessor": "한인옥",
-      "lectureIds": [
-        15
-      ],
-      "lectureId": 15,
-      "lectureTitle": "영양소의 흡수",
-      "professor": "한인옥",
-      "domain": "기초의학",
-      "discipline": "생리학",
-      "section": "생리학",
-      "source": "2022 소화기계 풀이 309-311page",
-      "mappingConfidence": "15강 「영양소의 흡수」 강의록 48쪽 기준 재분류·Wiki식 해설 갱신",
-      "officialPriorityApplied": false,
-      "sourceOrdinal": 182,
-      "legacyDisplayId": "2022 182번",
-      "globalNumber": 374
-    },
-    {
       "id": "2022-183",
       "displayId": "375번",
       "year": 2022,
