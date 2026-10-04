@@ -11291,7 +11291,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: 간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.",
-      "explanation": "정답: 간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 배경 지식 ==\n\n만성 C형간염의 조직은 '''portal inflammation·interface hepatitis·lobular injury·fibrosis'''라는 네 축으로 읽는다. [[16강#C형 간염바이러스|C형 간염바이러스]]에서 문맥역 lymphoid aggregate가 단서가 될 수 있으나 HCV만의 확진 소견은 아니다. Anti-HCV 양성은 노출의 증거이고 현재 감염은 HCV RNA로 확인한다. 조직의 염증 활성도와 섬유화 단계는 별개로 평가한다.\n\n== 서술형 모범답안 ==\n\n간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 핵심 해설 ==\n\n* '''Ballooning degeneration''': 간세포가 부풀고 세포질이 옅어지는 손상이다.\n* '''Acidophilic degeneration·Councilman body''': 손상된 간세포가 호산성으로 변하고 수축한 apoptotic body를 만드는 과정이다. 공식 채점표는 둘을 나누어 제시하지만 서로 무관한 두 현상이 아니라 겹치는 개념이다.\n* '''Spotty necrosis''': 소엽 내 산재한 개별 또는 작은 군집의 간세포 소실이다.\n* '''Regeneration''': 남은 간세포의 재생 반응으로 크기·핵 및 세포판 배열의 변화를 평가한다.\n* '''Kupffer cell activity 증가''': 손상세포·잔해 처리에 관여하는 대식세포 반응이다.\n* '''Portal inflammation''': 문맥역에 주로 단핵구성 염증이 모인다. HCV에서는 lymphoid aggregate도 단서다.\n* '''Interface hepatitis''': 염증이 limiting plate를 넘어 인접 간세포를 손상한다. Piecemeal necrosis는 과거 표현이다.\n* '''Bridging necrosis''': 괴사 부위가 문맥역·중심정맥 사이를 잇는 활성 손상이다.\n* '''Bridging fibrosis''': collagen 격막이 구조 사이를 잇는 만성 반흔이다. Necrosis와 같은 뜻이 아니다.\n* '''Cirrhosis''': 광범위한 fibrosis와 재생결절로 정상 구조가 재편된 진행 단계다.\n\n공식 모범답안은 '''가능한 만성간염 소견'''을 폭넓게 인정한다. 한 생검에서 이 항목 전부가 동시에 있어야 한다는 뜻이 아니며, anti-HCV 양성만으로 간경화 단계를 예측할 수도 없다.\n\n== 출제 의도 ==\n\n만성간염에서 간세포 손상·염증·재생·섬유화를 위치와 단계별로 정리해 서술하는 능력을 평가한다.\n\n== WIKI 연결 ==\n\n* [[16강#만성간염|만성간염]]\n* [[16강#Portal inflammation과 interface hepatitis|Portal inflammation과 interface hepatitis]]\n* [[16강#소엽 내 손상과 섬유화|소엽 내 손상과 섬유화]]\n\n== 관련 J ==\n\n{{396}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-importance-and-interpretation|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 24page 수록.",
+      "explanation": "정답: 간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 배경 지식 ==\n\n만성 C형간염의 조직은 '''portal inflammation·interface hepatitis·lobular injury·fibrosis'''라는 네 축으로 읽는다. [[16강#C형 간염바이러스|C형 간염바이러스]]에서 문맥역 lymphoid aggregate가 단서가 될 수 있으나 HCV만의 확진 소견은 아니다. Anti-HCV 양성은 노출의 증거이고 현재 감염은 HCV RNA로 확인한다. 조직의 염증 활성도와 섬유화 단계는 별개로 평가한다.\n\n== 서술형 모범답안 ==\n\n간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 핵심 해설 ==\n\n* '''Ballooning degeneration''': 간세포가 부풀고 세포질이 옅어지는 손상이다.\n* '''Acidophilic degeneration·Councilman body''': 손상된 간세포가 호산성으로 변하고 수축한 apoptotic body를 만드는 과정이다. 공식 채점표는 둘을 나누어 제시하지만 서로 무관한 두 현상이 아니라 겹치는 개념이다.\n* '''Spotty necrosis''': 소엽 내 산재한 개별 또는 작은 군집의 간세포 소실이다.\n* '''Regeneration''': 남은 간세포의 재생 반응으로 크기·핵 및 세포판 배열의 변화를 평가한다.\n* '''Kupffer cell activity 증가''': 손상세포·잔해 처리에 관여하는 대식세포 반응이다.\n* '''Portal inflammation''': 문맥역에 주로 단핵구성 염증이 모인다. HCV에서는 lymphoid aggregate도 단서다.\n* '''Interface hepatitis''': 염증이 limiting plate를 넘어 인접 간세포를 손상한다. Piecemeal necrosis는 과거 표현이다.\n* '''Bridging necrosis''': 괴사 부위가 문맥역·중심정맥 사이를 잇는 활성 손상이다.\n* '''Bridging fibrosis''': collagen 격막이 구조 사이를 잇는 만성 반흔이다. Necrosis와 같은 뜻이 아니다.\n* '''Cirrhosis''': 광범위한 fibrosis와 재생결절로 정상 구조가 재편된 진행 단계다.\n\n공식 모범답안은 '''가능한 만성간염 소견'''을 폭넓게 인정한다. 한 생검에서 이 항목 전부가 동시에 있어야 한다는 뜻이 아니며, anti-HCV 양성만으로 간경화 단계를 예측할 수도 없다.\n\n== 출제 의도 ==\n\n만성간염에서 간세포 손상·염증·재생·섬유화를 위치와 단계별로 정리해 서술하는 능력을 평가한다.\n\n== WIKI 연결 ==\n\n* [[16강#만성간염|만성간염]]\n* [[16강#Portal inflammation과 interface hepatitis|Portal inflammation과 interface hepatitis]]\n* [[16강#소엽 내 손상과 섬유화|소엽 내 손상과 섬유화]]\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-importance-and-interpretation|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 24page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -11335,7 +11335,7 @@ window.JBL_DATA = {
       "answerIndex": null,
       "answerIndices": [],
       "answerLabel": "정답: Interface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.",
-      "explanation": "정답: Interface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 배경 지식 ==\n\n자가면역간염(AIH)은 간세포에 대한 면역매개 손상으로, 바이러스·약물 등 다른 원인을 배제하고 자가항체, IgG, 조직 소견을 종합한다. [[16강#자가면역간염|자가면역간염]]의 핵심은 '''interface hepatitis, plasma cell-rich inflammation, hepatocellular rosette'''다. 이들은 진단을 지지하지만 각각 AIH에만 특이적이지 않다. 반대로 뚜렷한 담관 손상·소실은 PBC·PSC 또는 overlap을 감별하게 한다.\n\n== 서술형 모범답안 ==\n\nInterface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 핵심 해설 ==\n\n1. '''Interface hepatitis''': 문맥역 염증이 간세포 실질 경계로 확장되어 인접 간세포 손상을 일으키는지 본다.\n2. '''Plasma cell infiltration''': 문맥역·interface의 염증에 형질세포가 두드러지는지 평가한다. 없다고 AIH가 무조건 배제되는 것은 아니다.\n3. '''Rosette formation''': 간세포가 샘처럼 배열된 재생 구조를 확인한다. 염증·재생의 반응으로 다른 간염에서도 가능하다.\n4. '''Biliary change''': 담관 손상·소실 등 담도 중심 병변의 유무를 살핀다. 공식 답은 ‘관찰되는 경우 가능성이 떨어짐’이라고 명시한다. '''네 가지를 쓰라는 요구를 네 가지 모두 양성 소견으로 쓰라는 뜻으로 오해하면 안 된다.'''\n\n원문의 Interphase는 표준 용어 interface hepatitis로 설명한다. ANA·SMA·AMA는 감별에 도움이 되지만 조직과 임상을 종합해야 하며, 항체 하나만으로 확진하지 않는다.\n\n== 출제 의도 ==\n\nAIH를 지지하는 항목과 다른 담관 질환을 시사하는 항목을 함께 평가하는 진단 접근을 묻는다.\n\n== WIKI 연결 ==\n\n* [[16강#자가면역간염|자가면역간염]]\n* [[16강#Revised AIH scoring system|Revised AIH scoring system]]\n\n== 관련 J ==\n\n{{404}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/pathology-pearls-post-6-autoimmune-hepatitis-aih|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 39page 수록.",
+      "explanation": "정답: Interface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 배경 지식 ==\n\n자가면역간염(AIH)은 간세포에 대한 면역매개 손상으로, 바이러스·약물 등 다른 원인을 배제하고 자가항체, IgG, 조직 소견을 종합한다. [[16강#자가면역간염|자가면역간염]]의 핵심은 '''interface hepatitis, plasma cell-rich inflammation, hepatocellular rosette'''다. 이들은 진단을 지지하지만 각각 AIH에만 특이적이지 않다. 반대로 뚜렷한 담관 손상·소실은 PBC·PSC 또는 overlap을 감별하게 한다.\n\n== 서술형 모범답안 ==\n\nInterface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 핵심 해설 ==\n\n1. '''Interface hepatitis''': 문맥역 염증이 간세포 실질 경계로 확장되어 인접 간세포 손상을 일으키는지 본다.\n2. '''Plasma cell infiltration''': 문맥역·interface의 염증에 형질세포가 두드러지는지 평가한다. 없다고 AIH가 무조건 배제되는 것은 아니다.\n3. '''Rosette formation''': 간세포가 샘처럼 배열된 재생 구조를 확인한다. 염증·재생의 반응으로 다른 간염에서도 가능하다.\n4. '''Biliary change''': 담관 손상·소실 등 담도 중심 병변의 유무를 살핀다. 공식 답은 ‘관찰되는 경우 가능성이 떨어짐’이라고 명시한다. '''네 가지를 쓰라는 요구를 네 가지 모두 양성 소견으로 쓰라는 뜻으로 오해하면 안 된다.'''\n\n원문의 Interphase는 표준 용어 interface hepatitis로 설명한다. ANA·SMA·AMA는 감별에 도움이 되지만 조직과 임상을 종합해야 하며, 항체 하나만으로 확진하지 않는다.\n\n== 출제 의도 ==\n\nAIH를 지지하는 항목과 다른 담관 질환을 시사하는 항목을 함께 평가하는 진단 접근을 묻는다.\n\n== WIKI 연결 ==\n\n* [[16강#자가면역간염|자가면역간염]]\n* [[16강#Revised AIH scoring system|Revised AIH scoring system]]\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/pathology-pearls-post-6-autoimmune-hepatitis-aih|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 39page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [
@@ -16228,50 +16228,6 @@ window.JBL_DATA = {
       }
     },
     {
-      "id": "2022-wrong30-15",
-      "displayId": "396번",
-      "year": 2022,
-      "sourceType": "오답30",
-      "originalNumber": null,
-      "question": "40세 남자 환자가 6개월 이상 지속된 간기능 검사 이상을 주소로 내원하였다. 혈액 검사에서 anti-HCV가 양성이었다면 본 환자의 간생검 조직에서 기대되는 병리학적 소견을 쓰시오. (10가지 이상 기술 시 2점)",
-      "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: 간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.",
-      "explanation": "정답: 간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 배경 지식 ==\n\n만성 C형간염의 조직은 '''portal inflammation·interface hepatitis·lobular injury·fibrosis'''라는 네 축으로 읽는다. [[16강#C형 간염바이러스|C형 간염바이러스]]에서 문맥역 lymphoid aggregate가 단서가 될 수 있으나 HCV만의 확진 소견은 아니다. Anti-HCV 양성은 노출의 증거이고 현재 감염은 HCV RNA로 확인한다. 조직의 염증 활성도와 섬유화 단계는 별개로 평가한다.\n\n== 서술형 모범답안 ==\n\n간생검에서 '''ballooning degeneration, acidophilic degeneration, Councilman body, spotty necrosis, regeneration, increased Kupffer cell activity, portal inflammation, interface hepatitis(piecemeal necrosis), bridging necrosis, bridging fibrosis'''가 관찰될 수 있으며, 진행된 경우 '''cirrhosis'''를 보일 수 있다.\n\n== 핵심 해설 ==\n\n* '''Ballooning degeneration''': 간세포가 부풀고 세포질이 옅어지는 손상이다.\n* '''Acidophilic degeneration·Councilman body''': 손상된 간세포가 호산성으로 변하고 수축한 apoptotic body를 만드는 과정이다. 공식 채점표는 둘을 나누어 제시하지만 서로 무관한 두 현상이 아니라 겹치는 개념이다.\n* '''Spotty necrosis''': 소엽 내 산재한 개별 또는 작은 군집의 간세포 소실이다.\n* '''Regeneration''': 남은 간세포의 재생 반응으로 크기·핵 및 세포판 배열의 변화를 평가한다.\n* '''Kupffer cell activity 증가''': 손상세포·잔해 처리에 관여하는 대식세포 반응이다.\n* '''Portal inflammation''': 문맥역에 주로 단핵구성 염증이 모인다. HCV에서는 lymphoid aggregate도 단서다.\n* '''Interface hepatitis''': 염증이 limiting plate를 넘어 인접 간세포를 손상한다. Piecemeal necrosis는 과거 표현이다.\n* '''Bridging necrosis''': 괴사 부위가 문맥역·중심정맥 사이를 잇는 활성 손상이다.\n* '''Bridging fibrosis''': collagen 격막이 구조 사이를 잇는 만성 반흔이다. Necrosis와 같은 뜻이 아니다.\n* '''Cirrhosis''': 광범위한 fibrosis와 재생결절로 정상 구조가 재편된 진행 단계다.\n\n공식 모범답안은 '''가능한 만성간염 소견'''을 폭넓게 인정한다. 한 생검에서 이 항목 전부가 동시에 있어야 한다는 뜻이 아니며, anti-HCV 양성만으로 간경화 단계를 예측할 수도 없다.\n\n== 출제 의도 ==\n\n만성간염에서 간세포 손상·염증·재생·섬유화를 위치와 단계별로 정리해 서술하는 능력을 평가한다.\n\n== WIKI 연결 ==\n\n* [[16강#만성간염|만성간염]]\n* [[16강#Portal inflammation과 interface hepatitis|Portal inflammation과 interface hepatitis]]\n* [[16강#소엽 내 손상과 섬유화|소엽 내 손상과 섬유화]]\n\n== 관련 J ==\n\n{{274}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/liver-biopsy-importance-and-interpretation|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 24page 수록.",
-      "images": [],
-      "legacyProfessor": "김준미",
-      "lectureIds": [
-        16
-      ],
-      "lectureId": 16,
-      "lectureTitle": "간질환",
-      "professor": "김준미",
-      "domain": "기초의학",
-      "discipline": "병리학",
-      "section": "간 담 췌 병리",
-      "source": "2022 소화기계 오답률30 · 24page",
-      "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
-      "officialPriorityApplied": true,
-      "sourceOrdinal": 15,
-      "legacyDisplayId": "2022 오답30 15번",
-      "globalNumber": 396,
-      "wikiReview": {
-        "date": "2026-09-07",
-        "lectureId": 16,
-        "method": "Wiki 기반 풀이 + 외부 의학 근거 독립 검증; 기존 해설은 오답30 수록 문항만 참고",
-        "officialPages": "24",
-        "issue": null,
-        "grading": "reviewed",
-        "basis": [
-          "만성간염",
-          "Portal inflammation과 interface hepatitis",
-          "소엽 내 손상과 섬유화"
-        ]
-      }
-    },
-    {
       "id": "2022-wrong30-16",
       "displayId": "397번",
       "year": 2022,
@@ -16519,49 +16475,6 @@ window.JBL_DATA = {
       "sourceOrdinal": 22,
       "legacyDisplayId": "2022 오답30 22번",
       "globalNumber": 403
-    },
-    {
-      "id": "2022-wrong30-23",
-      "displayId": "404번",
-      "year": 2022,
-      "sourceType": "오답30",
-      "originalNumber": null,
-      "question": "50세 여자 환자가 간기능 검사 이상을 주소로 내원하였다. 혈액 검사에서 모든 viral marker가 음성이고 anti-nuclear antibody 양성, anti-smooth muscle antibody 양성, anti-mitochondrial antibody 음성 소견을 나타내었다. 본 환자가 간조직 검사를 시행하였다면 진단을 위해 특히 유념하여 관찰하여야 하는 병리학적 소견 4가지를 쓰시오. (2점)",
-      "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: Interface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.",
-      "explanation": "정답: Interface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 배경 지식 ==\n\n자가면역간염(AIH)은 간세포에 대한 면역매개 손상으로, 바이러스·약물 등 다른 원인을 배제하고 자가항체, IgG, 조직 소견을 종합한다. [[16강#자가면역간염|자가면역간염]]의 핵심은 '''interface hepatitis, plasma cell-rich inflammation, hepatocellular rosette'''다. 이들은 진단을 지지하지만 각각 AIH에만 특이적이지 않다. 반대로 뚜렷한 담관 손상·소실은 PBC·PSC 또는 overlap을 감별하게 한다.\n\n== 서술형 모범답안 ==\n\nInterface hepatitis, plasma cell infiltration, hepatocellular rosette formation 및 biliary change의 유무를 평가한다. 앞의 세 소견은 AIH를 지지하며, 뚜렷한 biliary change가 관찰되면 전형적 AIH의 가능성이 낮아져 PBC·PSC 또는 overlap을 감별한다.\n\n== 핵심 해설 ==\n\n1. '''Interface hepatitis''': 문맥역 염증이 간세포 실질 경계로 확장되어 인접 간세포 손상을 일으키는지 본다.\n2. '''Plasma cell infiltration''': 문맥역·interface의 염증에 형질세포가 두드러지는지 평가한다. 없다고 AIH가 무조건 배제되는 것은 아니다.\n3. '''Rosette formation''': 간세포가 샘처럼 배열된 재생 구조를 확인한다. 염증·재생의 반응으로 다른 간염에서도 가능하다.\n4. '''Biliary change''': 담관 손상·소실 등 담도 중심 병변의 유무를 살핀다. 공식 답은 ‘관찰되는 경우 가능성이 떨어짐’이라고 명시한다. '''네 가지를 쓰라는 요구를 네 가지 모두 양성 소견으로 쓰라는 뜻으로 오해하면 안 된다.'''\n\n원문의 Interphase는 표준 용어 interface hepatitis로 설명한다. ANA·SMA·AMA는 감별에 도움이 되지만 조직과 임상을 종합해야 하며, 항체 하나만으로 확진하지 않는다.\n\n== 출제 의도 ==\n\nAIH를 지지하는 항목과 다른 담관 질환을 시사하는 항목을 함께 평가하는 진단 접근을 묻는다.\n\n== WIKI 연결 ==\n\n* [[16강#자가면역간염|자가면역간염]]\n* [[16강#Revised AIH scoring system|Revised AIH scoring system]]\n\n== 관련 J ==\n\n{{275}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/pathology-pearls-post-6-autoimmune-hepatitis-aih|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 39page 수록.",
-      "images": [],
-      "legacyProfessor": "김준미",
-      "lectureIds": [
-        16
-      ],
-      "lectureId": 16,
-      "lectureTitle": "간질환",
-      "professor": "김준미",
-      "domain": "기초의학",
-      "discipline": "병리학",
-      "section": "간 담 췌 병리",
-      "source": "2022 소화기계 오답률30 · 39page",
-      "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
-      "officialPriorityApplied": true,
-      "sourceOrdinal": 23,
-      "legacyDisplayId": "2022 오답30 23번",
-      "globalNumber": 404,
-      "wikiReview": {
-        "date": "2026-09-07",
-        "lectureId": 16,
-        "method": "Wiki 기반 풀이 + 외부 의학 근거 독립 검증; 기존 해설은 오답30 수록 문항만 참고",
-        "officialPages": "39",
-        "issue": null,
-        "grading": "reviewed",
-        "basis": [
-          "자가면역간염",
-          "Revised AIH scoring system"
-        ]
-      }
     },
     {
       "id": "2022-wrong30-24",
@@ -19988,51 +19901,6 @@ window.JBL_DATA = {
         212,
         214
       ]
-    },
-    {
-      "id": "2021-75",
-      "displayId": "483번",
-      "year": 2021,
-      "sourceType": "오답30",
-      "originalNumber": null,
-      "question": "55세 남자 환자가 췌장의 낭성 종괴를 주소로 내원하였다. 다음과 같은 내시경 소견이 관찰되었다면 가장 가능성 있는 질환은?",
-      "passage": "",
-      "choices": [],
-      "answerIndex": null,
-      "answerIndices": [],
-      "answerLabel": "정답: Intraductal papillary mucinous neoplasm(IPMN).",
-      "explanation": "정답: Intraductal papillary mucinous neoplasm(IPMN).\n\n== 배경 지식 ==\n\n[[17강#Intraductal papillary mucinous neoplasm · IPMN|IPMN]]은 췌관과 연결된 점액성 종양이다. 확장된 췌관 안으로 점액성 상피가 유두상으로 증식하고, 점액이 [[17강#췌관과 연결된 점액성 종양|ampulla of Vater]]를 통해 배출될 수 있다. '''Ovarian-type stroma가 없고 췌관과 연결'''된다는 점이 MCN과의 핵심 차이다. Low-grade·high-grade dysplasia와 침윤암 동반을 구별한다.\n\n== 서술형 모범답안 ==\n\nIntraductal papillary mucinous neoplasm(IPMN).\n\n== 핵심 해설 ==\n\n내시경 사진은 췌장 단면이 아니라 십이지장의 ampulla를 본 것이다. 열린 유두부에서 끈끈한 점액이 나오는 소견을 췌장의 낭성 종괴와 연결하면 IPMN에 합당하다. 사진의 돌출 부위를 곧바로 췌장 종양 자체라고 설명하면 안 된다. MCN은 대개 췌관과 직접 연결되지 않고 ovarian-type stroma를 가지며, serous cystadenoma의 내용물은 맑은 장액성이다. 이 문항의 공식 해설도 ampulla의 점액을 진단 근거로 든다.\n\n== 출제 의도 ==\n\n내시경으로 본 유두부의 점액 배출과 췌관 내 점액성 종양을 연결한다.\n\n== WIKI 연결 ==\n\n* [[17강#Intraductal papillary mucinous neoplasm · IPMN|Intraductal papillary mucinous neoplasm · IPMN]]\n* [[17강#MCN과 IPMN의 감별|MCN과 IPMN의 감별]]\n\n== 관련 J ==\n\n{{604}} {{173}}\n\n== 검토 상태 ==\n\n오답률 30 25page 수록.",
-      "images": [
-        "2021_소화기_문항별_사진/2021_wrong30_025_01.png"
-      ],
-      "legacyProfessor": "김준미",
-      "lectureIds": [
-        17
-      ],
-      "lectureId": 17,
-      "lectureTitle": "간질환, 담도, 췌장, 횡경막 질환",
-      "professor": "김준미",
-      "domain": "기초의학",
-      "discipline": "병리학",
-      "section": "간 담 췌 병리",
-      "source": "2021 소화기계 오답률30 · 25page",
-      "mappingConfidence": "16·17강 최신 Wiki의 병태생리·형태학 범위와 원문 문항에 근거한 재분류",
-      "officialPriorityApplied": true,
-      "sourceOrdinal": 25,
-      "legacyDisplayId": "2021 오답30 · 25page",
-      "globalNumber": 483,
-      "wikiReview": {
-        "date": "2026-09-07",
-        "lectureId": 17,
-        "method": "Wiki 기반 풀이 + 외부 의학 근거 독립 검증; 기존 해설은 오답30 수록 문항만 참고",
-        "officialPages": "25",
-        "issue": null,
-        "grading": "reviewed",
-        "basis": [
-          "Intraductal papillary mucinous neoplasm · IPMN",
-          "MCN과 IPMN의 감별"
-        ]
-      }
     },
     {
       "id": "2021-76",
@@ -32537,7 +32405,7 @@ window.JBL_DATA = {
         3
       ],
       "answerLabel": "정답: 1, 2, 3번 · Interphase hepatitis / Plasma cell / Rosettes",
-      "explanation": "정답: 1, 2, 3번 · Interphase hepatitis / Plasma cell / Rosettes\n\n== 배경 지식 ==\n\n자가면역간염(AIH)은 간세포에 대한 면역매개 손상으로, 바이러스·약물 등 다른 원인을 배제하고 자가항체, IgG, 조직 소견을 종합한다. [[16강#자가면역간염|자가면역간염]]의 핵심은 '''interface hepatitis, plasma cell-rich inflammation, hepatocellular rosette'''다. 이들은 진단을 지지하지만 각각 AIH에만 특이적이지 않다. 반대로 뚜렷한 담관 손상·소실은 PBC·PSC 또는 overlap을 감별하게 한다.\n\n== 정답 선지 ==\n\n1번 Interface hepatitis, 2번 plasma cell infiltration, 3번 rosette formation은 AIH를 지지하는 조직학적 소견이다. 원문의 Interphase는 interface hepatitis를 가리키는 오기로 읽는다.\n\n== 오답 선지 ==\n\n* 4번 Biliary change: 뚜렷한 담관 손상·소실은 전형적인 AIH를 지지하기보다 PBC·PSC 또는 overlap 감별을 요구한다. 담관 변화가 있는 모든 환자에서 AIH가 절대 불가능하다는 뜻은 아니다.\n\n== 출제 의도 ==\n\nAIH의 지지 소견 세 가지를 알고 담관 중심 손상과 구분한다.\n\n== WIKI 연결 ==\n\n* [[16강#자가면역간염|자가면역간염]]\n* [[16강#Revised AIH scoring system|Revised AIH scoring system]]\n\n== 관련 J ==\n\n{{275}} {{404}} {{162}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/pathology-pearls-post-6-autoimmune-hepatitis-aih|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 50page 수록.",
+      "explanation": "정답: 1, 2, 3번 · Interphase hepatitis / Plasma cell / Rosettes\n\n== 배경 지식 ==\n\n자가면역간염(AIH)은 간세포에 대한 면역매개 손상으로, 바이러스·약물 등 다른 원인을 배제하고 자가항체, IgG, 조직 소견을 종합한다. [[16강#자가면역간염|자가면역간염]]의 핵심은 '''interface hepatitis, plasma cell-rich inflammation, hepatocellular rosette'''다. 이들은 진단을 지지하지만 각각 AIH에만 특이적이지 않다. 반대로 뚜렷한 담관 손상·소실은 PBC·PSC 또는 overlap을 감별하게 한다.\n\n== 정답 선지 ==\n\n1번 Interface hepatitis, 2번 plasma cell infiltration, 3번 rosette formation은 AIH를 지지하는 조직학적 소견이다. 원문의 Interphase는 interface hepatitis를 가리키는 오기로 읽는다.\n\n== 오답 선지 ==\n\n* 4번 Biliary change: 뚜렷한 담관 손상·소실은 전형적인 AIH를 지지하기보다 PBC·PSC 또는 overlap 감별을 요구한다. 담관 변화가 있는 모든 환자에서 AIH가 절대 불가능하다는 뜻은 아니다.\n\n== 출제 의도 ==\n\nAIH의 지지 소견 세 가지를 알고 담관 중심 손상과 구분한다.\n\n== WIKI 연결 ==\n\n* [[16강#자가면역간염|자가면역간염]]\n* [[16강#Revised AIH scoring system|Revised AIH scoring system]]\n\n== 관련 J ==\n\n{{275}} {{162}}\n\n== 외부 검증 근거 ==\n\n* [[https://www.aasld.org/liver-fellow-network/core-series/pathology-pearls/pathology-pearls-post-6-autoimmune-hepatitis-aih|aasld.org · 관련 근거 1]]\n\n== 검토 상태 ==\n\n오답률 30 50page 수록.",
       "images": [],
       "legacyProfessor": "김준미",
       "lectureIds": [

@@ -153,13 +153,13 @@ function tick(){
 }
 let detailOpen=false,detailQuestion=null,detailTimeout=null,detailScroll=0;
 function loadDetail(){
- const q=questions[state.index];if(detailQuestion===q.globalNumber)return;
- detailQuestion=q.globalNumber;clearTimeout(detailTimeout);
- el('detail-title').textContent=`문제 ${state.index+1} · J ${q.globalNumber}번`;
- el('detail-original').href=`./index.html#jbl-q-${q.globalNumber}`;
+ const q=questions[state.index],jNumber=q.globalNumber===483?430:q.globalNumber;if(detailQuestion===jNumber)return;
+ detailQuestion=jNumber;clearTimeout(detailTimeout);
+ el('detail-title').textContent=`문제 ${state.index+1} · J ${jNumber}번`;
+ el('detail-original').href=`./index.html#jbl-q-${jNumber}`;
  el('detail-message').textContent='J 문항을 불러오는 중…';el('detail-status').hidden=false;
- el('detail-frame').title=`J ${q.globalNumber}번 문항과 상세 해설`;
- el('detail-frame').src=`./index.html?examPreview=1&question=${q.globalNumber}#jbl-q-${q.globalNumber}`;
+ el('detail-frame').title=`J ${jNumber}번 문항과 상세 해설`;
+ el('detail-frame').src=`./index.html?examPreview=1&question=${jNumber}#jbl-q-${jNumber}`;
  detailTimeout=setTimeout(()=>{el('detail-message').textContent='표시되지 않으면 원래 J를 열어주세요.'},15000);
 }
 function openDetail(){if(!state.submittedAt||el('exam-screen').hidden)return;if(!detailOpen)detailScroll=window.scrollY;detailOpen=true;document.body.classList.add('detail-open');el('detail-pane').hidden=false;el('show-detail').setAttribute('aria-expanded','true');loadDetail();el('question-top').scrollIntoView({block:'start',behavior:'instant'});}
