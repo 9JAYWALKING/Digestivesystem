@@ -9,6 +9,14 @@ const questions=[...data.questions].sort((a,b)=>collator.compare(a.currentProfes
 const signature=questions.map(q=>q.id).join('|');
 let saved=null;
 try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null')}catch{}
+// Preserve answers when verified missing questions are added.
+if(saved&&saved.signature!==signature&&Array.isArray(data.addedQuestionIds)){
+ const oldIds=String(saved.signature||'').split('|'),added=new Set(data.addedQuestionIds),newIds=questions.map(q=>q.id);
+ if(oldIds.length>0&&new Set(oldIds).size===oldIds.length&&oldIds.every(id=>newIds.includes(id))&&newIds.filter(id=>oldIds.includes(id)).join('|')===oldIds.join('|')&&newIds.every(id=>oldIds.includes(id)||added.has(id))){
+  try{const key=STORAGE_KEY+'-before-restoration-20261005';if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(saved));}catch{}
+  const oldActive=oldIds[saved.index||0];saved={...saved,signature,index:Math.max(0,newIds.indexOf(oldActive))};
+ }
+}
 const state={index:0,answers:{},flags:[],overrides:{},startedAt:Date.now(),deadline:Date.now()+durationMs,submittedAt:null};
 if(saved&&saved.signature===signature){
  if(Number.isFinite(saved.startedAt)&&Number.isFinite(saved.deadline)&&saved.deadline>saved.startedAt){state.startedAt=saved.startedAt;state.deadline=saved.deadline;}
